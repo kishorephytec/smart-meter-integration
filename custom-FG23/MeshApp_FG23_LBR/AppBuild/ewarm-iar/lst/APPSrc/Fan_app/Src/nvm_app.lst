@@ -1,0 +1,1475 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         30/Apr/2024  13:12:18
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\ProAppSrc\NVM\nvm_app.c
+#    Command line                 =
+#        -f
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\APPSrc\Fan_app\Src\nvm_app.lst.rsp
+#        (D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\ProAppSrc\NVM\nvm_app.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\APPSrc\Fan_app\Src
+#        --diag_suppress Pa050 -o
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\APPSrc\Fan_app\Src
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\APPSrc\Fan_app\Src\nvm_app.o.d
+#    Locale                       =  C
+#    List file                    =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\APPSrc\Fan_app\Src\nvm_app.lst
+#    Object file                  =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\APPSrc\Fan_app\Src\nvm_app.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\ProAppSrc\NVM\nvm_app.c
+      1          /** \file nvm_app.c
+      2           *******************************************************************************
+      3           ** \brief This file has the function to store and retrieve data from NVM
+      4           **
+      5           ** \cond STD_FILE_HEADER
+      6           **
+      7           ** COPYRIGHT(c) 2023-24 Procubed Innovations Pvt Ltd.
+      8           ** All rights reserved.
+      9           **
+     10           ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     11           ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     12           ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     13           ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     14           ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     15           ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     16           ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     17           **
+     18           *******************************************************************************
+     19           **  \endcond
+     20           */
+     21          
+     22          /*
+     23          ********************************************************************************
+     24          * File inclusion
+     25          ********************************************************************************
+     26          */
+     27          
+     28          #include "StackAppConf.h"
+     29          #include "common.h"
+     30          
+     31          #if(APP_NVM_FEATURE_ENABLED == 1)
+     32          
+     33          #include "stddef.h"
+     34          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 1) 
+     35          #include "mx25flash_spi.h"
+     36          #include "em_gpio.h"
+     37          #include "em_cmu.h"
+     38          #else
+     39          #include "eeprom_emulation.h"
+     40          #endif
+     41          
+     42          #include "queue_latest.h"
+     43          #include "mac_config.h"
+     44          #include "mac.h"
+     45          #include "mac_interface_layer.h"
+     46          #include "ie_element_info.h"
+     47          #include "sm.h"
+     48          #include "network-manager.h"
+     49          #include "fan_app_test_harness.h"
+     50          #include "fan_mac_interface.h"
+     51          #include "mac_defs_sec.h"
+     52          #include "fan_mac_security.h"
+     53          #include "contiki-net.h"
+     54          #include "sw_timer.h"
+     55          #include "timer_service.h"
+     56          #include "fan_api.h"
+     57          #include "nvm_app.h"
+     58          
+     59          
+     60          /*****************************************************************************
+     61          ******************************************************************************/ 
+     62          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0) 
+     63          #define TOTAL_TOKENS                 128  // Raka : 10 - Aug- 2018 Do not use NVM
+     64          //#define NVM_EAPOL_TOKEN              110 //suneet :: store the eapol cread
+     65          #define NVM_MAC_JOIN_STATE_TOKEN     8 //suneet :: store mac join state info
+     66          #define NVM_MAC_SELF_INFO_TOKEN      140 //suneet :: store 
+     67          #define NVM_MAC_SEC_TOKEN            36 //suneet :: store information mac seurity
+     68          #define NVM_MAC_FRAME_COUNTER        2 //use for mac frame counter
+     69          ////#define NVM_EAPOL_PARENT_TOKEN       84 //use for eapol parents and child information
+     70          #define NVM_DEV_DESC_DATA_TOKEN      14*5 //suneet :: store Dev Desc data
+     71          #define NVM_MAC_NBR_TOKEN            160*5 //suneet:: used for store Mac NBR TABLE
+     72          #define NVM_DS6_DATA_TOKEN           38*5 //use for ds6 table data
+     73          #define NVM_NODE_INFO_TOKEN           18*5  //use for store RPL DIO INFO
+     74          #if (EFR32FG13P_LBR == 0x00)
+     75          #define NVM_RPL_DIO_INFO_TOKEN       56*5  //use for store RPL DIO INFO
+     76          #define NVM_LINK_STATS_TOKEN         32*5       // use for nbr link states
+     77          #endif
+     78          #define NVM_MAC_WHITE_LIST_TOKEN     122  //use fo mac white list 
+     79          
+     80          
+     81          ///* Define the non-volatile variables. */
+     82          //static EE_Variable_TypeDef token[TOTAL_TOKENS] = {0};  // Raka : 10 - Aug- 2018 Do not use NVM
+     83          //static EE_Variable_TypeDef MAC_INFO[NVM_MAC_NBR_TOKEN] = {0};
+     84          ////static EE_Variable_TypeDef EAPOL_INFO[NVM_EAPOL_TOKEN] = {0};
+     85          //static EE_Variable_TypeDef JOIN_StATE[NVM_MAC_JOIN_STATE_TOKEN] = {0};
+     86          //static EE_Variable_TypeDef MAC_SELF_INFO[NVM_MAC_SELF_INFO_TOKEN] = {0};
+     87          //static EE_Variable_TypeDef MAC_SECURITY[NVM_MAC_SEC_TOKEN] = {0};
+     88          //static EE_Variable_TypeDef DEV_DESC[NVM_DEV_DESC_DATA_TOKEN] = {0};
+     89          //static EE_Variable_TypeDef MAC_FRAME_COUNTER[NVM_MAC_FRAME_COUNTER] = {0};
+     90          ////static EE_Variable_TypeDef EAPOL_PAR_CHI_INFO[NVM_EAPOL_PARENT_TOKEN] = {0};
+     91          //static EE_Variable_TypeDef DS6_DATA_INFO[NVM_DS6_DATA_TOKEN] = {0};
+     92          //static EE_Variable_TypeDef DAO_INFO[NVM_NODE_INFO_TOKEN] = {0};
+     93          ////static EE_Variable_TypeDef LINK_STATES_INFO[NVM_LINK_STATS_TOKEN] = {0};
+     94          //static EE_Variable_TypeDef WHITE_LIST[NVM_MAC_WHITE_LIST_TOKEN] = {0};
+     95          
+     96          //void update_parameter_from_nvm (nvm_structure_t store_nvm_param);
+     97          //void update_parameter_to_nvm (nvm_structure_t *store_nvm_param);
+     98          //void update_nvm_parameter();
+     99          //void format_nvm();
+    100          #else
+    101          #define  START_NVM_FLASH_TARGET_ADDR  0x000E0000
+    102          #endif  //APP_EXTERNAL_FLASH_FEATURE_ENABLED
+    103          //extern uint8_t select_best_prefered_parent(void);
+    104          
+    105          
+    106          void add_ds6_nbr_from_nvm(uip_ds6_nbr_t *nbr);
+    107          extern void store_device_desc_from_nvm(device_descriptor_t *dev_desc);
+    108          extern void store_mac_nbr_from_nvm(mac_nbr_descriptor_t *p_nbr_desc);
+    109          extern void *app_bm_alloc(uint16_t length);      
+    110          extern void app_bm_free(uint8_t *pMem);
+    111          static nvm_structure_t store_nvm_param;
+    112          extern fan_mac_information_sm_t fan_mac_information_data;
+    113          extern self_info_fan_mac_t mac_self_fan_info;
+    114          extern fan_mac_security mac_key_list;
+    115          extern mac_security_data_t     mac_security_data;
+    116          extern fan_mac_nbr_t fan_mac_nbr;
+    117          extern white_list_t white_mac_list;
+    118          extern fan_nwk_manager_sm_t fan_nwk_manager_app;
+    119          extern void store_device_desc(device_descriptor_t *dev_desc);
+    120          //void nvm_store_dao_info(rpl_dag_t *dag,const uip_ipaddr_t *child_address, const uip_ipaddr_t *parents_address);
+    121          sw_tmr_t update_nvm_dur_tmr;
+    122          extern void fan_nwk_manager_init( );
+    123          extern void update_parameter_to_nvm (nvm_structure_t *store_nvm_param);
+    124          //extern void store_mac_key_table_from_nvm(key_descriptor_t *p_kd);
+    125          
+    126          /*****************************************************************************
+    127          ******************************************************************************/ 
+    128          
+    129          void init_nvm(void)
+    130          {
+    131          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)   
+    132            EE_Variable_TypeDef token[TOTAL_TOKENS] = {0};
+    133            memset(&token[0],0,TOTAL_TOKENS);
+    134            EE_Variable_TypeDef JOIN_StATE[NVM_MAC_JOIN_STATE_TOKEN] = {0};
+    135            memset(&JOIN_StATE[0],0,NVM_MAC_JOIN_STATE_TOKEN);
+    136            EE_Variable_TypeDef MAC_SECURITY[NVM_MAC_SEC_TOKEN] = {0};
+    137            memset(&MAC_SECURITY[0],0,NVM_MAC_SEC_TOKEN);
+    138            EE_Variable_TypeDef MAC_FRAME_COUNTER[NVM_MAC_FRAME_COUNTER] = {0};
+    139            memset(&MAC_FRAME_COUNTER[0],0,NVM_MAC_FRAME_COUNTER);
+    140            EE_Variable_TypeDef MAC_SELF_INFO[NVM_MAC_SELF_INFO_TOKEN] = {0};
+    141            memset(&MAC_SELF_INFO[0],0,NVM_MAC_SELF_INFO_TOKEN);
+    142            EE_Variable_TypeDef DEV_DESC[NVM_DEV_DESC_DATA_TOKEN] = {0};
+    143            memset(&DEV_DESC[0],0,NVM_DEV_DESC_DATA_TOKEN);
+    144            EE_Variable_TypeDef MAC_INFO[NVM_MAC_NBR_TOKEN] = {0};
+    145            memset(&MAC_INFO[0],0,NVM_MAC_NBR_TOKEN);
+    146            EE_Variable_TypeDef DS6_DATA_INFO[NVM_DS6_DATA_TOKEN] = {0};
+    147            memset(&DS6_DATA_INFO[0],0,NVM_DS6_DATA_TOKEN);
+    148            EE_Variable_TypeDef DAO_INFO[NVM_NODE_INFO_TOKEN] = {0};
+    149            memset(&DAO_INFO[0],0,NVM_NODE_INFO_TOKEN);
+    150          #if (EFR32FG13P_LBR == 0x00)   
+    151            EE_Variable_TypeDef LINK_STATES_INFO[NVM_LINK_STATS_TOKEN] = {0};
+    152            memset(&LINK_STATES_INFO[0],0,NVM_LINK_STATS_TOKEN);
+    153            EE_Variable_TypeDef RPL_DIO_INFO[NVM_RPL_DIO_INFO_TOKEN] = {0};
+    154            memset(&RPL_DIO_INFO[0],0,NVM_RPL_DIO_INFO_TOKEN);
+    155          #endif  
+    156              /* Initialize the eeprom emulator using 3 pages. */
+    157              if ( !EE_Init(3) ) {
+    158                
+    159                /* If the initialization fails we have to take some measure
+    160                * to obtain a valid set of pages. In this example we simply 
+    161                * format the pages */
+    162                EE_Format(3);
+    163              }
+    164              
+    165              for(int i =0;i<TOTAL_TOKENS;i++)
+    166              {
+    167                EE_DeclareVariable(&token[i]);
+    168              }
+    169              
+    170              for(int i =0;i<NVM_MAC_NBR_TOKEN;i++)
+    171              {
+    172                EE_DeclareVariable(&MAC_INFO[i]);
+    173              }
+    174          //    
+    175          //    for(int i =0;i<NVM_EAPOL_TOKEN;i++)
+    176          //    {
+    177          //      EE_DeclareVariable(&EAPOL_INFO[i]);
+    178          //    }
+    179          //    
+    180              for(int i =0;i<NVM_MAC_JOIN_STATE_TOKEN;i++)
+    181              {
+    182                EE_DeclareVariable(&JOIN_StATE[i]);
+    183              }
+    184              
+    185              for(int i =0;i<NVM_MAC_SELF_INFO_TOKEN;i++)
+    186              {
+    187                EE_DeclareVariable(&MAC_SELF_INFO[i]);
+    188              }
+    189              
+    190              for(int i =0;i<NVM_MAC_SEC_TOKEN;i++)
+    191              {
+    192                EE_DeclareVariable(&MAC_SECURITY[i]);
+    193              }
+    194              for(int i =0;i<NVM_DEV_DESC_DATA_TOKEN;i++)
+    195              {
+    196                EE_DeclareVariable(&DEV_DESC[i]);
+    197              }
+    198              for(int i =0;i<NVM_MAC_FRAME_COUNTER;i++)
+    199              {
+    200                EE_DeclareVariable(&MAC_FRAME_COUNTER[i]);
+    201              }
+    202          ////    for(int i =0;i<NVM_EAPOL_PARENT_TOKEN;i++)
+    203          ////    {
+    204          ////      EE_DeclareVariable(&EAPOL_PAR_CHI_INFO[i]);
+    205          ////    }
+    206              for(int i =0;i<NVM_DS6_DATA_TOKEN;i++)
+    207              {
+    208                EE_DeclareVariable(&DS6_DATA_INFO[i]);
+    209              }
+    210               for(int i =0;i<NVM_NODE_INFO_TOKEN;i++)
+    211              {
+    212                EE_DeclareVariable(&DAO_INFO[i]);
+    213              }
+    214          #if (EFR32FG13P_LBR == 0x00)    
+    215              for(int i =0;i<NVM_LINK_STATS_TOKEN;i++)
+    216              {
+    217                EE_DeclareVariable(&LINK_STATES_INFO[i]);
+    218              }
+    219              
+    220              for(int i =0;i<NVM_RPL_DIO_INFO_TOKEN;i++)
+    221              {
+    222                EE_DeclareVariable(&RPL_DIO_INFO[i]);
+    223              }
+    224          #endif    
+    225              
+    226              for(int i =0;i<NVM_MAC_WHITE_LIST_TOKEN;i++)
+    227              {
+    228                EE_DeclareVariable(&WHITE_LIST[i]);
+    229              }
+    230          #endif  //APP_EXTERNAL_FLASH_FEATURE_ENABLED
+    231          }
+    232          /******************************************************************************/ 
+    233          void check_status_to_start_network()
+    234          {
+    235             nvm_load_read_fan_join_info();
+    236             if((fan_mac_information_data.state_ind == JOIN_STATE_5)
+    237                &&(fan_mac_information_data.upper_layer_started == TRUE))
+    238             {
+    239               fan_nwk_manager_app.nvm_write_to_start = true;
+    240             }
+    241             
+    242            if(fan_nwk_manager_app.nvm_write_to_start == true)
+    243            {
+    244              tmr_create_one_shot_timer
+    245                (
+    246                 &update_nvm_dur_tmr,
+    247                 150000000,//3,min Delay
+    248                 (sw_tmr_cb_t)&update_nvm_parameter,
+    249                 NULL
+    250                   );
+    251              
+    252              nvm_load_read_node_basic_info();
+    253              /*Loading Node basic configuration from EEAPROM */
+    254              if((fan_mac_information_data.state_ind == JOIN_STATE_5)
+    255                 &&(fan_mac_information_data.upper_layer_started == TRUE))
+    256              {
+    257                fan_mac_information_data.is_start_from_nvm = true;
+    258                fan_nwk_manager_init( );
+    259              }
+    260              else
+    261              {
+    262                fan_mac_information_data.is_start_from_nvm = false;
+    263                fan_mac_information_data.upper_layer_started = false;
+    264                tmr_start_relative(&update_nvm_dur_tmr);
+    265              }
+    266            }
+    267            else
+    268            {
+    269               nvm_load_read_node_basic_info();
+    270            }
+    271          }
+    272          /******************************************************************************/ 
+    273          /*Loading Node Basic Configuration From EEAPROM*/
+    274          void nvm_load_read_node_basic_info( void )
+    275          {
+    276          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)  
+    277            EE_Variable_TypeDef token[TOTAL_TOKENS] = {0};
+    278            memset(&token[0],0,TOTAL_TOKENS);
+    279            uint16_t yy = 1;
+    280            for(uint16_t ii = 0; ii < TOTAL_TOKENS; ++ii)
+    281            {
+    282              token[ii].virtualAddress = yy;
+    283              yy++;
+    284            }
+    285            uint16_t i;
+    286            uint16_t number_of_token = sizeof (store_nvm_param) / 2;
+    287           
+    288            memset ((uint8_t *)&store_nvm_param, 0, sizeof (store_nvm_param));
+    289            uint16_t* p_node_basic_info = (uint16_t*)&(store_nvm_param);
+    290            
+    291            for (i = 0; i < number_of_token; i++)
+    292            {      
+    293              EE_Read(&token[i], p_node_basic_info);
+    294              p_node_basic_info++;
+    295            }
+    296          #else
+    297              uint32_t  flash_addr = START_NVM_FLASH_TARGET_ADDR;
+    298              memset ((uint8_t *)&store_nvm_param, 0, sizeof (store_nvm_param));
+    299              uint8_t* p_node_basic_info = (uint8_t*)&(store_nvm_param);
+    300              /* Read flash memory data to memory buffer */
+    301              MX25_READ( flash_addr, p_node_basic_info, sizeof (store_nvm_param) );
+    302          #endif
+    303            update_parameter_from_nvm(store_nvm_param);
+    304          }
+    305          /******************************************************************************/
+    306          /*Storeing Node Basic Configuration To EEAPROM*/
+    307          void nvm_store_node_basic_info( void )
+    308          {
+    309          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)  
+    310              EE_Variable_TypeDef token[TOTAL_TOKENS] = {0};
+    311              memset(&token[0],0,TOTAL_TOKENS);
+    312              uint16_t yy = 1;
+    313              for(uint16_t ii = 0; ii < TOTAL_TOKENS; ++ii)
+    314              {
+    315                token[ii].virtualAddress = yy;
+    316                yy++;
+    317              }
+    318              uint16_t i;
+    319              uint16_t number_of_token = sizeof (store_nvm_param) / 2;
+    320            
+    321            uint16_t* p_node_basic_info = (uint16_t*)&(store_nvm_param);
+    322            
+    323            memset (&store_nvm_param, 0, sizeof (store_nvm_param));
+    324            update_parameter_to_nvm (&store_nvm_param); 
+    325              for (i = 0; i < number_of_token; i++)
+    326              { 
+    327                EE_Write(&token[i], *p_node_basic_info);
+    328                p_node_basic_info++;
+    329              }
+    330          #else
+    331            uint32_t  flash_addr = START_NVM_FLASH_TARGET_ADDR;
+    332            uint8_t* p_node_basic_info = (uint8_t*)&(store_nvm_param);
+    333            memset (&store_nvm_param, 0, sizeof (store_nvm_param));
+    334            update_parameter_to_nvm (&store_nvm_param);
+    335            MX25_PP( flash_addr, p_node_basic_info, sizeof (store_nvm_param) );
+    336          #endif
+    337           
+    338          }
+    339          /******************************************************************************/
+    340          void nvm_load_read_mac_nbr(void)
+    341          {
+    342          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)   
+    343            EE_Variable_TypeDef MAC_INFO[NVM_MAC_NBR_TOKEN] = {0};
+    344            memset(&MAC_INFO[0],0,NVM_MAC_NBR_TOKEN);
+    345            uint16_t yy = 1;
+    346            for(uint16_t ii = 0 ; ii < NVM_MAC_NBR_TOKEN; ++ii)
+    347            {
+    348              MAC_INFO[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER +NVM_MAC_SELF_INFO_TOKEN + NVM_DEV_DESC_DATA_TOKEN + yy;
+    349              yy++;
+    350            }
+    351            
+    352            uint16_t device_index = 0 ;
+    353            EE_Read(&MAC_INFO[0], &device_index);
+    354            uint16_t device_token = 0;
+    355            while(device_index)
+    356            {
+    357              mac_nbr_descriptor_t *nbr_desc = NULL;
+    358              nbr_desc = (mac_nbr_descriptor_t *)app_bm_alloc (sizeof (mac_nbr_descriptor_t));
+    359              static uint16_t i = 0;
+    360              uint16_t number_of_token = sizeof (nbr_desc[0]) / 2;
+    361              device_token += number_of_token;
+    362              memset (nbr_desc, 0, sizeof (nbr_desc[0]));
+    363              uint16_t* mac_nbr_info = (uint16_t*)&(nbr_desc->index);
+    364              
+    365              for (; i < device_token; i++)
+    366              {      
+    367                EE_Read(&MAC_INFO[i+1], mac_nbr_info);
+    368                mac_nbr_info++;
+    369              }
+    370              nbr_desc->nbrchannel_usable_list.broad_usable_channel_list = NULL;
+    371              nbr_desc->nbrchannel_usable_list.unicast_usable_channel_list = NULL;
+    372              store_mac_nbr_from_nvm(nbr_desc);
+    373              device_index--;
+    374            }
+    375          #else
+    376          
+    377          #endif  
+    378          }
+    379          /******************************************************************************/
+    380          void nvm_store_write_mac_nbr()
+    381          {
+    382          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)   
+    383            EE_Variable_TypeDef MAC_INFO[NVM_MAC_NBR_TOKEN] = {0};
+    384            memset(&MAC_INFO[0],0,NVM_MAC_NBR_TOKEN);
+    385            uint16_t yy = 1;
+    386            for(uint16_t ii = 0 ; ii < NVM_MAC_NBR_TOKEN; ++ii)
+    387            {
+    388              MAC_INFO[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER +NVM_MAC_SELF_INFO_TOKEN + NVM_DEV_DESC_DATA_TOKEN + yy;
+    389              yy++;
+    390            }
+    391            
+    392           
+    393            mac_nbr_descriptor_t *p_nbr_desc = NULL;
+    394            uint16_t ii = 0;
+    395            uint16_t number_of_token = 0;
+    396            uchar i = fan_mac_nbr.mac_nbr_info_table_entries;
+    397            for(uchar j = 0;j<=i;j++)
+    398            {
+    399              p_nbr_desc =  (mac_nbr_descriptor_t*)queue_item_read_from (&fan_mac_nbr.desc_table, j);
+    400              if (p_nbr_desc != NULL_POINTER)
+    401              {
+    402                EE_Write(&MAC_INFO[0], j+1);
+    403                mac_nbr_descriptor_t *nbr_dev = &p_nbr_desc[0];
+    404                number_of_token += sizeof (nbr_dev[0]) / 2;
+    405                uint16_t* mac_nbr_info = (uint16_t*)&(nbr_dev->index);
+    406                for (; ii < number_of_token; ii++)
+    407                {             
+    408                  EE_Write(&MAC_INFO[ii+1], *mac_nbr_info);
+    409                  mac_nbr_info++;
+    410                }  
+    411              }
+    412            }
+    413          #else
+    414          
+    415          #endif  
+    416          }
+    417          /******************************************************************************/
+    418          //void nvm_load_read_eapol_info(void)
+    419          //{
+    420          //  uint16_t i;
+    421          //  uint16_t number_of_token = sizeof (supp_cred) / 2;
+    422          //  
+    423          //  memset ((uint8_t *)&supp_cred, 0, sizeof (supp_cred));
+    424          //  uint16_t* p_node_eapol_info = (uint16_t*)&(supp_cred);
+    425          //  
+    426          //  for (i = 0; i < number_of_token; i++)
+    427          //  {      
+    428          //    EE_Read(&EAPOL_INFO[i], p_node_eapol_info);
+    429          //    p_node_eapol_info++;
+    430          //  }
+    431          //  
+    432          //}
+    433          /******************************************************************************/
+    434          //void nvm_store_write_eapol_info(void)
+    435          //{
+    436          //  uint16_t i;
+    437          //  uint16_t number_of_token = sizeof (supp_cred) / 2;
+    438          //  uint16_t* p_node_eapol_info = (uint16_t*)&(supp_cred);
+    439          //  //  memset (&supp_cred, 0, sizeof (supp_cred));  
+    440          //  for (i = 0; i < number_of_token; i++)
+    441          //  {             
+    442          //    EE_Write(&EAPOL_INFO[i], *p_node_eapol_info);
+    443          //    p_node_eapol_info++;
+    444          //  }  
+    445          //}
+    446          
+    447          /******************************************************************************/
+    448          
+    449          void nvm_load_read_fan_join_info(void)
+    450          {
+    451          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)  
+    452              EE_Variable_TypeDef JOIN_StATE[NVM_MAC_JOIN_STATE_TOKEN] = {0};
+    453              memset(&JOIN_StATE[0],0,NVM_MAC_JOIN_STATE_TOKEN);
+    454              uint16_t yy = 1;
+    455              for(uint16_t ii = 0; ii < NVM_MAC_JOIN_STATE_TOKEN; ++ii)
+    456              {
+    457                JOIN_StATE[ii].virtualAddress = TOTAL_TOKENS + yy;
+    458                 yy++;
+    459              }
+    460              
+    461              uint16_t i;
+    462              int16_t number_of_token  = (1 + sizeof (fan_mac_information_data) / 2 );
+    463            
+    464              memset ((uint8_t *)&fan_mac_information_data, 0, sizeof (fan_mac_information_data));
+    465              uint16_t* p_node_join_state_info = (uint16_t*)&(fan_mac_information_data);
+    466              
+    467              for (i = 0; i < number_of_token; i++)
+    468              {      
+    469                EE_Read(&JOIN_StATE[i], p_node_join_state_info);
+    470                p_node_join_state_info++;
+    471              }
+    472          #else
+    473              uint32_t  flash_addr = START_NVM_FLASH_TARGET_ADDR + sizeof (store_nvm_param)+27;
+    474              uint8_t* p_node_join_state_info = (uint8_t*)&(fan_mac_information_data);
+    475              memset ((uint8_t *)&fan_mac_information_data, 0, sizeof (fan_mac_information_data));  
+    476              MX25_READ( flash_addr, p_node_join_state_info, sizeof (fan_mac_information_data) );
+    477          #endif  
+    478          }
+    479          
+    480          /******************************************************************************/
+    481          
+    482          void nvm_store_write_fan_join_info(void)
+    483          {
+    484          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)  
+    485            EE_Variable_TypeDef JOIN_StATE[NVM_MAC_JOIN_STATE_TOKEN] = {0};
+    486            memset(&JOIN_StATE[0],0,NVM_MAC_JOIN_STATE_TOKEN);
+    487            uint16_t yy = 1;
+    488            for(uint16_t ii = 0 ; ii < NVM_MAC_JOIN_STATE_TOKEN; ++ii)
+    489            {
+    490              JOIN_StATE[ii].virtualAddress = TOTAL_TOKENS + yy;
+    491              yy++;
+    492            }
+    493            
+    494            if(fan_nwk_manager_app.nvm_write_to_start == true)
+    495            {
+    496              uint16_t i;
+    497              uint16_t number_of_token  = (1 + sizeof (fan_mac_information_data) / 2 );
+    498              uint16_t* p_node_join_state_info = (uint16_t*)&(fan_mac_information_data);
+    499              //  memset (&supp_cred, 0, sizeof (supp_cred));  
+    500              for (i = 0; i < number_of_token; i++)
+    501              {             
+    502                EE_Write(&JOIN_StATE[i], *p_node_join_state_info);
+    503                p_node_join_state_info++;
+    504              }  
+    505            }
+    506            else
+    507            {
+    508              //do nothing
+    509            }
+    510          #else
+    511            uint32_t  flash_addr = START_NVM_FLASH_TARGET_ADDR + sizeof (store_nvm_param)+27;
+    512            uint8_t* p_node_join_state_info = (uint8_t*)&(fan_mac_information_data);
+    513            MX25_PP( flash_addr, p_node_join_state_info, sizeof (fan_mac_information_data) );  
+    514          #endif  
+    515            
+    516          }
+    517          /******************************************************************************/
+    518          
+    519          void nvm_load_read_fan_macself_info(void)
+    520          {
+    521          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)  
+    522            EE_Variable_TypeDef MAC_SELF_INFO[NVM_MAC_SELF_INFO_TOKEN] = {0};
+    523            memset(&MAC_SELF_INFO[0],0,NVM_MAC_SELF_INFO_TOKEN);
+    524            uint16_t yy = 1;
+    525            for(uint16_t ii = 0 ; ii < NVM_MAC_SELF_INFO_TOKEN; ++ii)
+    526            {
+    527              MAC_SELF_INFO[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER + yy;
+    528              yy++;
+    529            }
+    530            
+    531            uint16_t i;
+    532            uint16_t number_of_token = sizeof (mac_self_fan_info) / 2;
+    533            
+    534            memset ((uint8_t *)&mac_self_fan_info, 0, sizeof (mac_self_fan_info));
+    535            uint16_t* p_node_macself_info = (uint16_t*)&(mac_self_fan_info);
+    536            
+    537            for (i = 0; i < number_of_token; i++)
+    538            {      
+    539              EE_Read(&MAC_SELF_INFO[i], p_node_macself_info);
+    540              p_node_macself_info++;
+    541            }
+    542          #else
+    543          
+    544            
+    545          #endif  
+    546          }
+    547          /******************************************************************************/
+    548          
+    549          void nvm_store_write_fan_macself_info(void)
+    550          {
+    551          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)  
+    552            EE_Variable_TypeDef MAC_SELF_INFO[NVM_MAC_SELF_INFO_TOKEN] = {0};
+    553            memset(&MAC_SELF_INFO[0],0,NVM_MAC_SELF_INFO_TOKEN);
+    554            uint16_t yy = 1;
+    555            for(uint16_t ii = 0 ; ii < NVM_MAC_SELF_INFO_TOKEN; ++ii)
+    556            {
+    557              MAC_SELF_INFO[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER + yy;
+    558              yy++;
+    559            }
+    560            
+    561            if(fan_nwk_manager_app.nvm_write_to_start == true)
+    562            {
+    563              uint16_t i;
+    564              uint16_t number_of_token = sizeof (mac_self_fan_info) / 2;
+    565              uint16_t* p_node_macself_info = (uint16_t*)&(mac_self_fan_info);
+    566              //  memset (&supp_cred, 0, sizeof (supp_cred));  
+    567              for (i = 0; i < number_of_token; i++)
+    568              {             
+    569                EE_Write(&MAC_SELF_INFO[i], *p_node_macself_info);
+    570                p_node_macself_info++;
+    571              }  
+    572            }
+    573            else
+    574            {
+    575              
+    576            }
+    577          #else
+    578          
+    579          #endif  
+    580            
+    581          }
+    582          /******************************************************************************/
+    583          
+    584          void nvm_load_read_fan_macsecurity_info(void)
+    585          {
+    586          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)  
+    587            EE_Variable_TypeDef MAC_SEC[NVM_MAC_SEC_TOKEN] = {0};
+    588            memset(&MAC_SEC[0],0,NVM_MAC_SEC_TOKEN);
+    589            uint16_t yy = 1;
+    590            for(uint16_t ii = 0; ii < NVM_MAC_SEC_TOKEN; ++ii)
+    591            {
+    592              MAC_SEC[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + yy;
+    593              yy++;
+    594            }
+    595            
+    596            uint16_t i;
+    597            uint16_t number_of_token = 1+ sizeof (mac_key_list) / 2;
+    598            
+    599            memset ((uint8_t *)&mac_key_list, 0, sizeof (mac_key_list));
+    600            uint16_t* p_node_macsecurity_info = (uint16_t*)&(mac_key_list);
+    601            
+    602            for (i = 0; i < number_of_token; i++)
+    603            {      
+    604              EE_Read(&MAC_SEC[i], p_node_macsecurity_info);
+    605              p_node_macsecurity_info++;
+    606            }
+    607          #else
+    608          
+    609          #endif  
+    610          }
+    611          /******************************************************************************/
+    612          
+    613          void nvm_store_write_fan_macsecurity_info(void)
+    614          {
+    615          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)  
+    616            EE_Variable_TypeDef MAC_SEC[NVM_MAC_SEC_TOKEN] = {0};
+    617            memset(&MAC_SEC[0],0,NVM_MAC_SEC_TOKEN);
+    618            uint16_t yy = 1;
+    619            for(uint16_t ii = 0 ; ii < NVM_MAC_SEC_TOKEN; ++ii)
+    620            {
+    621              MAC_SEC[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + yy;
+    622              yy++;
+    623            }
+    624            
+    625            if(fan_nwk_manager_app.nvm_write_to_start == true)
+    626            {
+    627              uint16_t i;
+    628              uint16_t number_of_token =  1+ sizeof (mac_key_list) / 2;  
+    629              uint16_t* p_node_macsecurity_info = (uint16_t*)&(mac_key_list);
+    630              //  memset (&supp_cred, 0, sizeof (supp_cred));  
+    631              for (i = 0; i < number_of_token; i++)
+    632              {             
+    633                EE_Write(&MAC_SEC[i], *p_node_macsecurity_info);
+    634                p_node_macsecurity_info++;
+    635              }
+    636            }
+    637            else
+    638            {
+    639              //do nothing
+    640            }
+    641          #else
+    642          
+    643          #endif  
+    644          }
+    645          /******************************************************************************/
+    646          
+    647          void nvm_load_read_fan_device_desc_info(void)
+    648          {
+    649          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)  
+    650          //  EE_Variable_TypeDef DEV_DESC[NVM_DEV_DESC_DATA_TOKEN] = {0};
+    651          //  memset(&DEV_DESC[0],0,NVM_DEV_DESC_DATA_TOKEN);
+    652          //  uint16_t yy = 1;
+    653          //  for(uint16_t ii = 0 ; ii < NVM_DEV_DESC_DATA_TOKEN; ++ii)
+    654          //  {
+    655          //    DEV_DESC[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER +NVM_MAC_SELF_INFO_TOKEN + yy;
+    656          //    yy++;
+    657          //  }
+    658          //  
+    659          //  uint16_t device_index = 0 ;
+    660          //  EE_Read(&DEV_DESC[0], &device_index);
+    661          //  uint16_t device_token = 0;
+    662          //  while(device_index)
+    663          //  {
+    664          //    device_descriptor_t *p = NULL;
+    665          //    p = (device_descriptor_t *) app_bm_alloc(sizeof(device_descriptor_t));
+    666          //    static uint16_t i = 0;
+    667          //    uint16_t number_of_token = sizeof (p[0]) / 2;
+    668          //    device_token += number_of_token;
+    669          //    memset (p, 0, sizeof (p[0]));
+    670          //    uint16_t* dev_desc = (uint16_t*)&(p->ieee_addr[0]);
+    671          //    
+    672          //    for (; i < device_token; i++)
+    673          //    {      
+    674          //      EE_Read(&DEV_DESC[i+1], dev_desc);
+    675          //      dev_desc++;
+    676          //    }
+    677          //    store_device_desc_from_nvm(p);
+    678          //    device_index--;
+    679          //  }
+    680          #else
+    681          
+    682          #endif  
+    683            
+    684          }
+    685          /******************************************************************************/
+    686          
+    687          void nvm_store_write_fan_device_desc_info()
+    688          {
+    689          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)  
+    690          //  EE_Variable_TypeDef DEV_DESC[NVM_DEV_DESC_DATA_TOKEN] = {0};
+    691          //  memset(&DEV_DESC[0],0,NVM_DEV_DESC_DATA_TOKEN);
+    692          //  uint16_t yy = 1;
+    693          //  for(uint16_t ii = 0 ; ii < NVM_DEV_DESC_DATA_TOKEN; ++ii)
+    694          //  {
+    695          //    DEV_DESC[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER +NVM_MAC_SELF_INFO_TOKEN + yy;
+    696          //    yy++;
+    697          //  }
+    698          //  
+    699          //  device_descriptor_t *temp;
+    700          //  uint16_t ii = 0;
+    701          //  uint16_t number_of_token = 0;
+    702          //  uchar i = mac_security_data.pib.mac_device_table_entries;
+    703          //  for(uchar j = 0;j<=i;j++)
+    704          //  {
+    705          //    temp =  (device_descriptor_t*) queue_item_read_from( (queue_t *)&mac_security_data.pib.mac_device_table, 
+    706          //                                                        j);
+    707          //    if (temp != NULL_POINTER)
+    708          //    {
+    709          //      EE_Write(&DEV_DESC[0], j+1);
+    710          //      device_descriptor_t *dev_desc = &temp[0];
+    711          //      number_of_token += sizeof (dev_desc[0]) / 2;
+    712          //      uint16_t* dev_desc_info = (uint16_t*)&(dev_desc->ieee_addr[0]);
+    713          //      for (; ii < number_of_token; ii++)
+    714          //      {             
+    715          //        EE_Write(&DEV_DESC[ii+1], *dev_desc_info);
+    716          //        dev_desc_info++;
+    717          //      }  
+    718          //    }
+    719          //  }
+    720          #else
+    721          
+    722          #endif  
+    723          }
+    724          /******************************************************************************/
+    725          
+    726          void nvm_load_mac_frame_counter(void)
+    727          {
+    728          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)  
+    729          //  EE_Variable_TypeDef MAC_FRAME_COUNTER[NVM_MAC_FRAME_COUNTER] = {0};
+    730          //  memset(&MAC_FRAME_COUNTER[0],0,NVM_MAC_FRAME_COUNTER);
+    731          //  uint16_t yy = 1;
+    732          //  for(uint16_t ii = 0 ; ii < NVM_MAC_FRAME_COUNTER; ++ii)
+    733          //  {
+    734          //    MAC_FRAME_COUNTER[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN +yy;
+    735          //    yy++;
+    736          //  }
+    737          //  
+    738          //  uint16_t i;
+    739          //  uint16_t number_of_token = sizeof (mac_security_data.pib.mac_frame_counter) / 2;
+    740          //  
+    741          //  memset ((uint8_t *)&mac_security_data.pib.mac_frame_counter, 0, sizeof (mac_security_data.pib.mac_frame_counter));
+    742          //  uint16_t* mac_frame_counter = (uint16_t*)&(mac_security_data.pib.mac_frame_counter);
+    743          //  
+    744          //  for (i = 0; i < number_of_token; i++)
+    745          //  {      
+    746          //    EE_Read(&MAC_FRAME_COUNTER[i], mac_frame_counter);
+    747          //    mac_frame_counter++;
+    748          //  }
+    749          #else
+    750          
+    751          #endif  
+    752          }
+    753          /******************************************************************************/
+    754          
+    755          void nvm_store_write_mac_frame_counter(void)
+    756          {
+    757          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)  
+    758            EE_Variable_TypeDef MAC_FRAME_COUNTER[NVM_MAC_FRAME_COUNTER] = {0};
+    759            memset(&MAC_FRAME_COUNTER[0],0,NVM_MAC_FRAME_COUNTER);
+    760            uint16_t yy = 1;
+    761            for(uint16_t ii = 0 ; ii < NVM_MAC_FRAME_COUNTER; ++ii)
+    762            {
+    763              MAC_FRAME_COUNTER[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN +yy;
+    764              yy++;
+    765            }
+    766            
+    767            uint16_t i;
+    768            uint16_t number_of_token = sizeof (mac_security_data.pib.mac_frame_counter) / 2;
+    769            uint16_t* mac_frame_counter = (uint16_t*)&(mac_security_data.pib.mac_frame_counter);
+    770            //  memset (&supp_cred, 0, sizeof (supp_cred));  
+    771            for (i = 0; i < number_of_token; i++)
+    772            {             
+    773              EE_Write(&MAC_FRAME_COUNTER[i], *mac_frame_counter);
+    774              mac_frame_counter++;
+    775            }
+    776          #else
+    777          
+    778          #endif  
+    779          }
+    780          
+    781          /******************************************************************************/
+    782          
+    783          //void nvm_load_eapol_parents_and_child_info(void)
+    784          //{
+    785          //  uint16_t i;
+    786          //  uint16_t number_of_token = sizeof (eapol_parent_child_info) / 2;
+    787          //  
+    788          //  memset ((uint8_t *)&eapol_parent_child_info, 0, sizeof (eapol_parent_child_info));
+    789          //  uint16_t* mac_eapol_parents_info = (uint16_t*)&(eapol_parent_child_info);
+    790          //  
+    791          //  for (i = 0; i < number_of_token; i++)
+    792          //  {      
+    793          //    EE_Read(&EAPOL_PAR_CHI_INFO[i], mac_eapol_parents_info);
+    794          //    mac_eapol_parents_info++;
+    795          //  }
+    796          //}
+    797          
+    798          /******************************************************************************/
+    799          
+    800          //void nvm_store_write_eapol_parents_and_child_info(void)
+    801          //{
+    802          //  uint16_t i;
+    803          //  uint16_t number_of_token = sizeof (eapol_parent_child_info) / 2;
+    804          //  uint16_t* mac_eapol_parents_info = (uint16_t*)&(eapol_parent_child_info);
+    805          //  //  memset (&supp_cred, 0, sizeof (supp_cred));  
+    806          //  for (i = 0; i < number_of_token; i++)
+    807          //  {             
+    808          //    EE_Write(&EAPOL_PAR_CHI_INFO[i], *mac_eapol_parents_info);
+    809          //    mac_eapol_parents_info++;
+    810          //  }  
+    811          //}
+    812          /******************************************************************************/
+    813          
+    814          void nvm_load_ds6_info(void)
+    815          {
+    816          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)   
+    817            EE_Variable_TypeDef DS6_DATA_INFO[NVM_DS6_DATA_TOKEN] = {0};
+    818            memset(&DS6_DATA_INFO[0],0,NVM_DS6_DATA_TOKEN);
+    819            uint16_t yy = 1;
+    820            for(uint16_t ii = 0 ; ii < NVM_DS6_DATA_TOKEN; ++ii)
+    821            {
+    822              DS6_DATA_INFO[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER +NVM_MAC_SELF_INFO_TOKEN + NVM_DEV_DESC_DATA_TOKEN + NVM_MAC_NBR_TOKEN + yy ;
+    823              yy++;
+    824            }
+    825            
+    826            uint16_t device_index = 0 ;
+    827            EE_Read(&DS6_DATA_INFO[0], &device_index);
+    828            uint16_t device_token = 0;
+    829            while(device_index)
+    830            {
+    831              uip_ds6_nbr_t nbr;
+    832              static uint16_t i = 0;
+    833              uint16_t number_of_token = sizeof (nbr) / 2;
+    834              device_token += number_of_token;
+    835              memset (&nbr, 0, sizeof (nbr));
+    836              uint16_t* ds6_nbr_info = (uint16_t*)&(nbr);
+    837              
+    838              for (; i < device_token; i++)
+    839              {      
+    840                EE_Read(&DS6_DATA_INFO[i+1], ds6_nbr_info);
+    841                ds6_nbr_info++;
+    842              }
+    843              nbr.state = NBR_PROBE;
+    844              add_ds6_nbr_from_nvm(&nbr);
+    845              device_index--;
+    846            }
+    847          #else
+    848          
+    849          #endif  
+    850          }
+    851          
+    852          /******************************************************************************/
+    853          
+    854          void store_l3_data_after_join_state_5()
+    855          {
+    856          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)   
+    857            EE_Variable_TypeDef DS6_DATA_INFO[NVM_DS6_DATA_TOKEN] = {0};
+    858            memset(&DS6_DATA_INFO[0],0,NVM_DS6_DATA_TOKEN);
+    859            uint16_t yy = 1;
+    860            for(uint16_t ii = 0 ; ii < NVM_DS6_DATA_TOKEN; ++ii)
+    861            {
+    862              DS6_DATA_INFO[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER +NVM_MAC_SELF_INFO_TOKEN + NVM_DEV_DESC_DATA_TOKEN + NVM_MAC_NBR_TOKEN + yy ;
+    863              yy++;
+    864            }
+    865            
+    866            uip_ds6_nbr_t *nbr = nbr_table_head(ds6_neighbors);
+    867            uint16_t total_entry = 0;
+    868            uint16_t i = 0;
+    869            uint16_t total_device_token = 0;
+    870            while(nbr != NULL) 
+    871            {
+    872              uip_ds6_nbr_t l_nbr = *nbr;
+    873              total_entry++;
+    874              EE_Write(&DS6_DATA_INFO[0], total_entry); 
+    875              uint16_t number_of_token = sizeof (l_nbr) / 2;
+    876              total_device_token += number_of_token;
+    877              uint16_t* ds6_nbr = (uint16_t*)&(l_nbr);
+    878              //  memset (&supp_cred, 0, sizeof (supp_cred));  
+    879              for (; i < total_device_token; i++)
+    880              {             
+    881                EE_Write(&DS6_DATA_INFO[i+1], *ds6_nbr);
+    882                ds6_nbr++;
+    883              }  
+    884              nbr = nbr_table_next(ds6_neighbors, nbr);
+    885            }
+    886          #else
+    887          
+    888          #endif  
+    889          }
+    890          
+    891          /******************************************************************************/
+    892          #if (EFR32FG13P_LBR == 0x00) 
+    893          void nvm_load_rpl_dio_info(void)
+    894          {
+    895          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)   
+    896            EE_Variable_TypeDef RPL_DIO_INFO[NVM_RPL_DIO_INFO_TOKEN] = {0};
+    897            memset(&RPL_DIO_INFO[0],0,NVM_RPL_DIO_INFO_TOKEN);
+    898            uint16_t yy = 1;
+    899            for(uint16_t ii = 0 ; ii < NVM_RPL_DIO_INFO_TOKEN; ++ii)
+    900            {
+    901              RPL_DIO_INFO[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER +NVM_MAC_SELF_INFO_TOKEN + NVM_DEV_DESC_DATA_TOKEN + NVM_MAC_NBR_TOKEN + NVM_DS6_DATA_TOKEN +NVM_NODE_INFO_TOKEN + NVM_LINK_STATS_TOKEN + yy ;
+    902              yy++;
+    903            }
+    904            
+    905            rpl_instance_t *instance;
+    906            uint16_t device_index = 0 ;
+    907            EE_Read(&RPL_DIO_INFO[0], &device_index);
+    908            uint16_t device_token = 0;
+    909            while(device_index)
+    910            {
+    911              uip_ipaddr_t from;
+    912              rpl_dio_t dio;
+    913              static uint16_t i = 0;
+    914              uint16_t number_of_token = sizeof (from) / 2;
+    915              device_token += number_of_token;
+    916              memset (&from, 0, sizeof (from));
+    917              uint16_t* rpl_dio_info = (uint16_t*)&(from);
+    918              
+    919              for (; i < device_token; i++)
+    920              {      
+    921                EE_Read(&RPL_DIO_INFO[i+1], rpl_dio_info);
+    922                rpl_dio_info++;
+    923              }
+    924              device_token += sizeof (dio) / 2;
+    925              memset (&dio, 0, sizeof (dio));
+    926              rpl_dio_info = (uint16_t*)&(dio);
+    927              for (; i < device_token; i++)
+    928              {      
+    929                EE_Read(&RPL_DIO_INFO[i+1], rpl_dio_info);
+    930                rpl_dio_info++;
+    931              }
+    932              rpl_process_dio(&from, &dio);
+    933              device_index--;
+    934            }
+    935            instance = rpl_get_instance(instance_table[0].instance_id);
+    936            rpl_schedule_probing(instance);
+    937            rpl_reset_dio_timer(instance);//for sending dio after receiving DAO-ACK input in router
+    938            select_best_prefered_parent();
+    939          #else
+    940          
+    941          #endif  
+    942          }
+    943          /******************************************************************************/
+    944          
+    945          void nvm_store_write_rpl_dio_info(rpl_dio_t *dio,uip_ipaddr_t *from)
+    946          {
+    947          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)   
+    948            EE_Variable_TypeDef RPL_DIO_INFO[NVM_RPL_DIO_INFO_TOKEN] = {0};
+    949            memset(&RPL_DIO_INFO[0],0,NVM_RPL_DIO_INFO_TOKEN);
+    950            uint16_t yy = 1;
+    951            for(uint16_t ii = 0 ; ii < NVM_RPL_DIO_INFO_TOKEN; ++ii)
+    952            {
+    953              RPL_DIO_INFO[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER +NVM_MAC_SELF_INFO_TOKEN + NVM_DEV_DESC_DATA_TOKEN + NVM_MAC_NBR_TOKEN + NVM_DS6_DATA_TOKEN +NVM_NODE_INFO_TOKEN + NVM_LINK_STATS_TOKEN + yy ;
+    954              yy++;
+    955            }
+    956            
+    957            static uint16_t total_entry = 0;
+    958            uip_ds6_nbr_t *nbr;
+    959            nbr = uip_ds6_nbr_lookup(from);
+    960            static uint16_t i = 0;
+    961            static uint16_t total_device_token = 0;
+    962            if(nbr == NULL)
+    963            {
+    964              total_entry++;
+    965              EE_Write(&RPL_DIO_INFO[0], total_entry);
+    966             
+    967              uint16_t number_of_token = sizeof (from[0]) / 2;
+    968              total_device_token += number_of_token;
+    969              uint16_t* rpl_dio_info = (uint16_t*)&(from[0]);
+    970              //  memset (&supp_cred, 0, sizeof (supp_cred));  
+    971              for (; i < total_device_token; i++)
+    972              {             
+    973                EE_Write(&RPL_DIO_INFO[i+1], *rpl_dio_info);
+    974                rpl_dio_info++;
+    975              }
+    976              total_device_token += sizeof (dio[0]) / 2;
+    977              rpl_dio_info = (uint16_t*)&(dio[0]);
+    978              for (; i < total_device_token; i++)
+    979              {             
+    980                EE_Write(&RPL_DIO_INFO[i+1], *rpl_dio_info);
+    981                rpl_dio_info++;
+    982              }
+    983            }
+    984          #else
+    985          
+    986          #endif  
+    987          }
+    988          
+    989          /******************************************************************************/
+    990          
+    991          void nvm_load_link_stats_info(void)
+    992          {
+    993          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)   
+    994            EE_Variable_TypeDef LINK_STATES_INFO[NVM_LINK_STATS_TOKEN] = {0};
+    995            memset(&LINK_STATES_INFO[0],0,NVM_LINK_STATS_TOKEN);
+    996            uint16_t yy = 1;
+    997            for(uint16_t ii = 0 ; ii < NVM_LINK_STATS_TOKEN; ++ii)
+    998            {
+    999              LINK_STATES_INFO[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER +NVM_MAC_SELF_INFO_TOKEN + NVM_DEV_DESC_DATA_TOKEN + NVM_MAC_NBR_TOKEN + NVM_DS6_DATA_TOKEN +NVM_NODE_INFO_TOKEN + yy ;
+   1000              yy++;
+   1001            }
+   1002            
+   1003            uint16_t device_index = 0 ;
+   1004            EE_Read(&LINK_STATES_INFO[0], &device_index);
+   1005            uint16_t device_token = 0;
+   1006            while(device_index)
+   1007            {
+   1008              struct link_stats nbr_stats;
+   1009              static uint16_t i = 0;
+   1010              uint16_t number_of_token = sizeof (nbr_stats) / 2;
+   1011              device_token += number_of_token;
+   1012              memset (&nbr_stats, 0, sizeof (nbr_stats));
+   1013              uint16_t* link_stats = (uint16_t*)&(nbr_stats);
+   1014              
+   1015              for (; i < device_token; i++)
+   1016              {      
+   1017                EE_Read(&LINK_STATES_INFO[i+1], link_stats);
+   1018                link_stats++;
+   1019              }
+   1020              add_link_stats_nbr_from_nvm(&nbr_stats);
+   1021              device_index--;
+   1022            }
+   1023          #else
+   1024          
+   1025          #endif  
+   1026          }
+   1027          
+   1028          /******************************************************************************/
+   1029          
+   1030          void store_link_stats_data()
+   1031          {
+   1032          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)   
+   1033            EE_Variable_TypeDef LINK_STATES_INFO[NVM_LINK_STATS_TOKEN] = {0};
+   1034            memset(&LINK_STATES_INFO[0],0,NVM_LINK_STATS_TOKEN);
+   1035            uint16_t yy = 1;
+   1036            for(uint16_t ii = 0 ; ii < NVM_LINK_STATS_TOKEN; ++ii)
+   1037            {
+   1038              LINK_STATES_INFO[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER +NVM_MAC_SELF_INFO_TOKEN + NVM_DEV_DESC_DATA_TOKEN + NVM_MAC_NBR_TOKEN + NVM_DS6_DATA_TOKEN +NVM_NODE_INFO_TOKEN + yy ;
+   1039              yy++;
+   1040            }
+   1041            
+   1042            rpl_parent_t *p;
+   1043            p = nbr_table_head(rpl_parents);
+   1044            uint16_t total_entry = 0;
+   1045            uint16_t i = 0;
+   1046            uint16_t total_device_token = 0;
+   1047            while(p != NULL) 
+   1048            {
+   1049              const struct link_stats *stats = rpl_get_parent_link_stats(p);
+   1050              struct link_stats nbr_stats = *stats;
+   1051              total_entry++;
+   1052              EE_Write(&LINK_STATES_INFO[0], total_entry); 
+   1053              uint16_t number_of_token = sizeof (nbr_stats) / 2;
+   1054              total_device_token += number_of_token;
+   1055              uint16_t* link_stats = (uint16_t*)&(nbr_stats);
+   1056              //  memset (&supp_cred, 0, sizeof (supp_cred));  
+   1057              for (; i < total_device_token; i++)
+   1058              {             
+   1059                EE_Write(&LINK_STATES_INFO[i+1], *link_stats);
+   1060                link_stats++;
+   1061              }  
+   1062               p = nbr_table_next(rpl_parents, p);
+   1063            }
+   1064          #else
+   1065          
+   1066          #endif  
+   1067          }
+   1068          #endif
+   1069          /******************************************************************************/
+   1070          #if (EFR32FG13P_LBR == 0x01) 
+   1071          void nvm_load_rpl_dio_info(void)
+   1072          {
+   1073          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)   
+   1074            EE_Variable_TypeDef DAO_INFO[NVM_NODE_INFO_TOKEN] = {0};
+   1075            memset(&DAO_INFO[0],0,NVM_NODE_INFO_TOKEN);
+   1076            uint16_t yy = 1;
+   1077            for(uint16_t ii = 0 ; ii < NVM_NODE_INFO_TOKEN; ++ii)
+   1078            {
+   1079              DAO_INFO[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER +NVM_MAC_SELF_INFO_TOKEN + NVM_DEV_DESC_DATA_TOKEN + NVM_MAC_NBR_TOKEN + NVM_DS6_DATA_TOKEN + yy ;
+   1080              yy++;
+   1081            }
+   1082          
+   1083            if(fan_nwk_manager_app.nvm_write_to_start == true)
+   1084            {
+   1085              rpl_instance_t *instance;
+   1086              rpl_dag_t *dag;
+   1087              uint8_t lifetime;
+   1088              uint16_t device_index = 0 ;
+   1089              EE_Read(&DAO_INFO[0], &device_index);
+   1090              uint16_t device_token = 0;
+   1091              instance = rpl_get_instance(instance_table[0].instance_id);
+   1092              dag = instance->current_dag;
+   1093              lifetime = instance->default_lifetime;
+   1094              while(device_index)
+   1095              {
+   1096                uip_ipaddr_t child_address;
+   1097                uip_ipaddr_t parents_address;
+   1098                static uint16_t i = 0;
+   1099                uint16_t number_of_token = sizeof (child_address) / 2;
+   1100                device_token += number_of_token;
+   1101                memset (&child_address, 0, sizeof (child_address));
+   1102                uint16_t* rpl_dao_info = (uint16_t*)&(child_address);
+   1103                
+   1104                for (; i < device_token; i++)
+   1105                {      
+   1106                  EE_Read(&DAO_INFO[i+1], rpl_dao_info);
+   1107                  rpl_dao_info++;
+   1108                }
+   1109                device_token += sizeof (parents_address) / 2;
+   1110                memset (&parents_address, 0, sizeof (parents_address));
+   1111                rpl_dao_info = (uint16_t*)&(parents_address);
+   1112                for (; i < device_token; i++)
+   1113                {      
+   1114                  EE_Read(&DAO_INFO[i+1], rpl_dao_info);
+   1115                  rpl_dao_info++;
+   1116                }
+   1117                rpl_ns_update_node(dag, &child_address, &parents_address, RPL_LIFETIME(instance, lifetime));
+   1118                device_index--;
+   1119              }
+   1120            }
+   1121          #else
+   1122          
+   1123          #endif  
+   1124          }
+   1125          #endif
+   1126          /******************************************************************************/
+   1127          void nvm_store_dao_info(rpl_dag_t *dag,const uip_ipaddr_t *child_address, const uip_ipaddr_t *parents_address)
+   1128          {
+   1129          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)   
+   1130            EE_Variable_TypeDef DAO_INFO[NVM_NODE_INFO_TOKEN] = {0};
+   1131            memset(&DAO_INFO[0],0,NVM_NODE_INFO_TOKEN);
+   1132            uint16_t yy = 1;
+   1133            for(uint16_t ii = 0 ; ii < NVM_NODE_INFO_TOKEN; ++ii)
+   1134            {
+   1135              DAO_INFO[ii].virtualAddress = TOTAL_TOKENS + NVM_MAC_JOIN_STATE_TOKEN + NVM_MAC_SEC_TOKEN + NVM_MAC_FRAME_COUNTER +NVM_MAC_SELF_INFO_TOKEN + NVM_DEV_DESC_DATA_TOKEN + NVM_MAC_NBR_TOKEN + NVM_DS6_DATA_TOKEN + yy ;
+   1136              yy++;
+   1137            }
+   1138            
+   1139            
+   1140            if(fan_nwk_manager_app.nvm_write_to_start == true)
+   1141            {
+   1142              rpl_ns_node_t *child_node = rpl_ns_get_node(dag, child_address);
+   1143              static uint16_t total_entry = 0;
+   1144              static uint16_t total_device_token = 0;
+   1145              static uint16_t i = 0;
+   1146              if(child_node == NULL)
+   1147              {
+   1148                total_entry++;
+   1149                EE_Write(&DAO_INFO[0], total_entry);
+   1150                
+   1151                uint16_t number_of_token = sizeof (child_address[0]) / 2;
+   1152                total_device_token += number_of_token;
+   1153                uint16_t* rpl_dao_info = (uint16_t*)&(child_address[0]);
+   1154                //  memset (&supp_cred, 0, sizeof (supp_cred));  
+   1155                for (; i < total_device_token; i++)
+   1156                {             
+   1157                  EE_Write(&DAO_INFO[i+1], *rpl_dao_info);
+   1158                  rpl_dao_info++;
+   1159                }
+   1160                total_device_token += sizeof (parents_address[0]) / 2;
+   1161                rpl_dao_info = (uint16_t*)&(parents_address[0]);
+   1162                for (; i < total_device_token; i++)
+   1163                {             
+   1164                  EE_Write(&DAO_INFO[i+1], *rpl_dao_info);
+   1165                  rpl_dao_info++;
+   1166                }
+   1167              }
+   1168            }
+   1169            else
+   1170            {
+   1171              //do nothing
+   1172            }
+   1173          #else
+   1174          
+   1175          #endif  
+   1176          }
+   1177          /******************************************************************************/
+   1178          void nvm_load_mac_white_list_info( void )
+   1179          {
+   1180          //  if(fan_nwk_manager_app.nvm_write_to_start == true)
+   1181          //  {
+   1182          //    uint16_t i;
+   1183          //    uint16_t number_of_token = 1 + sizeof (white_mac_list) / 2;
+   1184          //    
+   1185          //    memset ((uint8_t *)&white_mac_list, 0, sizeof (white_mac_list));
+   1186          //    uint16_t* white_addr_list = (uint16_t*)&(white_mac_list);
+   1187          //    
+   1188          //    for (i = 0; i < number_of_token; i++)
+   1189          //    {      
+   1190          //      EE_Read(&WHITE_LIST[i], white_addr_list);
+   1191          //      white_addr_list++;
+   1192          //    }
+   1193          //  }
+   1194          //  else
+   1195          //  {
+   1196          //    //do nothing
+   1197          //  }
+   1198          }
+   1199          
+   1200          /******************************************************************************/
+   1201          
+   1202          void nvm_store_mac_white_list_info( void )
+   1203          {
+   1204          //  if(fan_nwk_manager_app.nvm_write_to_start == true)
+   1205          //  {
+   1206          //    uint16_t i;
+   1207          //    uint16_t number_of_token = 1 + sizeof (white_mac_list) / 2;
+   1208          //    uint16_t* white_addr_list = (uint16_t*)&(white_mac_list);
+   1209          //    for (i = 0; i < number_of_token; i++)
+   1210          //    {             
+   1211          //      EE_Write(&WHITE_LIST[i], *white_addr_list);
+   1212          //      white_addr_list++;
+   1213          //    }  
+   1214          //  }
+   1215          //  else
+   1216          //  {
+   1217          //    //do nothing
+   1218          //  }
+   1219          }
+   1220          
+   1221          /******************************************************************************/
+   1222          
+   1223          void update_nvm_parameter()
+   1224          {
+   1225           if(fan_nwk_manager_app.nvm_write_to_start == true)   
+   1226           {
+   1227            nvm_store_write_mac_nbr();
+   1228            nvm_store_write_fan_device_desc_info();
+   1229            nvm_store_write_mac_frame_counter();
+   1230            //nvm_store_write_eapol_parents_and_child_info();
+   1231            store_l3_data_after_join_state_5();
+   1232          #if (EFR32FG13P_LBR == 0x00)   
+   1233            store_link_stats_data();
+   1234          #endif  
+   1235            tmr_stop(&update_nvm_dur_tmr);
+   1236            tmr_start_relative(&update_nvm_dur_tmr);
+   1237           }
+   1238           else
+   1239           {
+   1240              //do nothing 
+   1241           }
+   1242            
+   1243          }
+   1244          
+   1245          /******************************************************************************/
+   1246          
+   1247          void upload_parameter_from_nvm()
+   1248          {
+   1249            if(fan_nwk_manager_app.nvm_write_to_start == true)  
+   1250            {
+   1251              nvm_load_mac_white_list_info();
+   1252              nvm_load_read_mac_nbr();
+   1253          #if (EFR32FG13P_LBR == 0x00)     
+   1254              nvm_load_read_fan_macself_info();
+   1255          #endif    
+   1256              //nvm_load_read_eapol_info();
+   1257              //nvm_load_eapol_parents_and_child_info();
+   1258              nvm_load_read_fan_macsecurity_info();
+   1259              nvm_load_read_fan_device_desc_info();
+   1260              nvm_load_mac_frame_counter();
+   1261          #if (EFR32FG13P_LBR == 0x00)     
+   1262              store_mac_key_table_from_nvm();
+   1263          #endif    
+   1264              node_start_upper_layer_ready();
+   1265              tmr_start_relative(&update_nvm_dur_tmr);
+   1266            }
+   1267            else
+   1268            {
+   1269              //do nothing
+   1270            }
+   1271          }
+   1272          
+   1273          /******************************************************************************/
+   1274          
+   1275          void rpl_update_info_from_nvm()
+   1276          {
+   1277            if(fan_nwk_manager_app.nvm_write_to_start == true)
+   1278            {
+   1279              if(fan_mac_information_data.is_start_from_nvm == true)
+   1280              {
+   1281                nvm_load_ds6_info();
+   1282                nvm_load_rpl_dio_info();
+   1283              }
+   1284            }
+   1285            else
+   1286            {
+   1287              //do nothing
+   1288            }
+   1289          }
+   1290          
+   1291          /******************************************************************************/
+   1292          
+   1293          void format_nvm()    //suneet :: format nvm every time when its recieve start and stop command from  nvm 
+   1294          {
+   1295          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 0)   
+   1296            EE_Format(3);
+   1297          #endif  
+   1298          }
+   1299          /******************************************************************************/
+   1300          #endif
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

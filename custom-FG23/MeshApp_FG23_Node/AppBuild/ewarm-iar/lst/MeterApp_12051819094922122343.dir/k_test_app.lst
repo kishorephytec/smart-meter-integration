@@ -1,0 +1,1459 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         24/Dec/2024  14:55:17
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\MeterApp\src\k_test_app.c
+#    Command line                 =
+#        -f
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir\k_test_app.o.rsp
+#        (C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\MeterApp\src\k_test_app.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\MeterApp_12051819094922122343.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\.\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\rpl\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\cpu\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\FLASH\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir\k_test_app.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\MeterApp_12051819094922122343.dir\k_test_app.lst
+#    Object file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir\k_test_app.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\MeterApp\src\k_test_app.c
+      1          #include "StackPHYConf.h"
+      2          #include "l3_configuration.h"
+      3          #include "l3_timer_utility.h"
+      4          #include "common.h"
+      5          #include "queue_latest.h"
+      6          #include "buff_mgmt.h"
+      7          #include "list_latest.h"
+      8          #include "queue_latest.h"
+      9          #include "buffer_service.h"
+     10          #include "hw_tmr.h"
+     11          #include "sw_timer.h"
+     12          #include "timer_service.h"
+     13          #include "mac_interface_layer.h"
+     14          #include "sm.h"
+     15          #include "ie_element_info.h"
+     16          #include "fan_api.h"
+     17          #include "k_test_app.h"
+     18          #include "network-manager.h"
+     19          #include "uart_hal.h"
+     20          #include "uip.h"
+     21          #include "k_data_buffer.h"
+     22          #include "AppUDPprocess.h"
+     23          
+     24          // Define identifier tags enum
+     25          typedef enum {
+     26            ID_NONE,
+     27            ID_MAC_ADDR_SRC = 1,
+     28            ID_MAC_ADDR_DST,
+     29            ID_IP_ADDR_SRC,
+     30            ID_IP_ADDR_DST,
+     31            ID_SELF_MAC,
+     32            ID_PAN_ID,
+     33            ID_NET_NAME,
+     34            ID_RSSI,
+     35            ID_NODE_TYPE,
+     36            ID_PAYLOAD,
+     37            ID_NEIGHBOR_COUNT,
+     38            ID_NEIGHBOR_LIST,
+     39            ID_NEIGHBOR,
+     40            ID_PREFERED_PARENT,
+     41            ID_CRC,
+     42            ID_CHAN,
+     43            ID_EVENT_ID,
+     44            ID_FRAME_ID,
+     45            ID_TOTAL_ELEMENTS,
+     46            ID_PATH_COST,
+     47            ID_COMMAND_GET,
+     48            ID_COMMAND_SET,
+     49          } IdentifierTag;
+     50          
+     51          // Define datatype tags enum
+     52          typedef enum {
+     53             DT_NULLDATA = 0,
+     54             DT_ARRAY = 1,
+     55             DT_STRUCTURE = 2,
+     56             DT_BOOLEAN = 3,
+     57             DT_BITSTRING = 4,
+     58             DT_INT32 = 5,
+     59             DT_UINT32 = 6,
+     60             DT_FLOATING_POINT = 7,
+     61             DT_OCTET_STRING = 9,
+     62             DT_VISIBLE_STRING =10,
+     63             DT_GENERALIZED_TIME = 11,
+     64             DT_BCD = 13,
+     65             DT_INT8 =15,
+     66             DT_INT16 =16,
+     67             DT_UINT8 = 17,
+     68             DT_UINT16 = 18,
+     69             DT_COMPACT_ARRAY =19,
+     70             DT_INT64 = 20,
+     71             DT_UINT64 = 21,
+     72             DT_ENUM = 22,
+     73             DT_FLOAT32 = 23,
+     74             DT_FLOAT64 = 24,
+     75             DT_DATETIME = 25,
+     76             DT_DATE = 26,
+     77             DT_TIME = 27,
+     78             DT_DONTCARE = 255
+     79          } DataTypeTag;
+     80          
+     81          //Max number of nbors
+
+   \                                 In section .bss, align 4
+     82          k_nbors_t nbor_list[4];
+   \                     nbor_list:
+   \        0x0                      DS8 48
+     83          
+     84          //Start of packet
+     85          #define SOP "$$KIM"
+     86          #define EOP "##"
+     87          #define SOP_LEN (sizeof(SOP) - 1)
+     88          
+     89          //Extern from Procubed Stack
+     90          extern fan_nwk_manager_sm_t fan_nwk_manager_app;
+     91          extern fan_mac_nbr_t fan_mac_nbr;
+     92          extern void mem_rev_cpy(uint8_t* dest, uint8_t* src, uint16_t len );
+     93          extern uint8_t global_addr_device[16];
+     94          extern uip_ipaddr_t root_global_addr;
+     95          extern uint8_t UART_Data_send_udp(uint8_t *buf, uint16_t length);
+     96          
+     97          //Prototypes
+     98          static void appendNbor(data_struct_t* dt, k_nbors_t nbors);
+     99          static void addOctetString(data_struct_t* dt, IdentifierTag it, uint8_t* data, uint16_t dataLen);
+    100          static void createTestPacket(data_struct_t *dt);
+    101          static int getNborTable();
+    102          void k_start_test_app(void);
+    103          
+    104          
+    105          //Timer declarations
+    106          //static sw_tmr_t oneSecTimerIns; //[Kimbal] do not use sw timer in app
+
+   \                                 In section .bss, align 8
+    107          static struct l3_ctimer oneSecTimerIns; 
+   \                     oneSecTimerIns:
+   \        0x0                      DS8 48
+    108          static void oneSecTimer_cb(void *ptr);
+    109          
+    110          //zero buff
+
+   \                                 In section .bss, align 4
+    111          uint8_t null_buff[16];
+   \                     null_buff:
+   \        0x0                      DS8 16
+    112          
+    113          //Buffer to hold proprietary packet
+
+   \                                 In section .bss, align 4
+    114          data_struct_t m_ds_buff = {0};
+   \                     m_ds_buff:
+   \        0x0                      DS8 12
+
+   \                                 In section .bss, align 4
+    115          uint8_t m_ds_data[500]; //Temp buffer TODO Allocate address from bm_alloc()
+   \                     m_ds_data:
+   \        0x0                      DS8 500
+    116          
+    117          
+    118          //Initialize test app
+
+   \                                 In section .text, align 2, keep-with-next
+    119          void k_init_test_app()
+    120          {
+   \                     k_init_test_app: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    121              init_data_struct(&m_ds_buff, m_ds_data, sizeof(m_ds_data));
+   \        0x2   0xF44F 0x72FA      MOV      R2,#+500
+   \        0x6   0x.... 0x....      LDR.W    R1,??DataTable6_1
+   \        0xA   0x.... 0x....      LDR.W    R0,??DataTable6_2
+   \        0xE   0x.... 0x....      BL       init_data_struct
+    122          }
+   \       0x12   0xBD01             POP      {R0,PC}
+    123          
+    124          
+    125          /*********************TEST_APP_PROCESS**************************************/
+    126          
+    127          typedef enum
+    128          {
+    129            APP_UART_DLMS_PKT_RCV_EVENT,
+    130            APP_UDP_PKT_RCV_EVENT,
+    131            APP_UDP_PKT_SEND_EVENT,
+    132          }k_test_app_event_e;
+    133          
+    134          
+    135          L3_PROCESS_NAME(test_app_process);
+
+   \                                 In section .data, align 4
+    136          L3_PROCESS(test_app_process, "Test App Process");
+   \                     test_app_process:
+   \        0x0   0x0000'0000        DC32 0x0, process_thread_test_app_process
+   \              0x....'....
+   \        0x8                      DS8 4
+    137          
+    138          
+    139          //Call this function to start the process
+
+   \                                 In section .text, align 2, keep-with-next
+    140          void test_app_thread_start( void )
+    141          {
+   \                     test_app_thread_start: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    142            l3_process_start(&test_app_process, NULL);   
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x.... 0x....      LDR.W    R0,??DataTable6_3
+   \        0x8   0x.... 0x....      BL       l3_process_start
+    143          }
+   \        0xC   0xBD01             POP      {R0,PC}
+    144          
+    145          
+    146          //Test process event handler
+
+   \                                 In section .text, align 2, keep-with-next
+    147          static uint8_t 
+    148          test_app_thread_process_event_handler(
+    149                        l3_process_event_t ev, 
+    150                        l3_process_data_t data)
+    151          {
+   \                     test_app_thread_process_event_handler: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+    152            switch (ev)
+   \        0x2   0x0010             MOVS     R0,R2
+   \        0x4   0xB2C0             UXTB     R0,R0
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD003             BEQ.N    ??test_app_thread_process_event_handler_0
+   \        0xA   0x2802             CMP      R0,#+2
+   \        0xC   0xD003             BEQ.N    ??test_app_thread_process_event_handler_1
+   \        0xE   0xD301             BCC.N    ??test_app_thread_process_event_handler_2
+   \       0x10   0xE002             B.N      ??test_app_thread_process_event_handler_3
+    153            {   
+    154            case APP_UART_DLMS_PKT_RCV_EVENT:
+    155              break;
+   \                     ??test_app_thread_process_event_handler_0: (+1)
+   \       0x12   0xE001             B.N      ??test_app_thread_process_event_handler_4
+    156            case APP_UDP_PKT_RCV_EVENT:
+    157              break;
+   \                     ??test_app_thread_process_event_handler_2: (+1)
+   \       0x14   0xE000             B.N      ??test_app_thread_process_event_handler_4
+    158            case APP_UDP_PKT_SEND_EVENT:
+    159              break;
+   \                     ??test_app_thread_process_event_handler_1: (+1)
+   \       0x16   0xE7FF             B.N      ??test_app_thread_process_event_handler_4
+    160            default:
+    161              break;
+    162            }
+    163            return 0;
+   \                     ??test_app_thread_process_event_handler_3: (+1)
+   \                     ??test_app_thread_process_event_handler_4: (+1)
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0x4770             BX       LR
+    164          }
+    165          
+    166          
+    167          //Run process task
+
+   \                                 In section .text, align 2, keep-with-next
+    168          L3_PROCESS_THREAD(test_app_process, ev, data)
+    169          {
+   \                     process_thread_test_app_process: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    170            L3_PROCESS_BEGIN();
+   \        0x8   0x2701             MOVS     R7,#+1
+   \        0xA   0x8820             LDRH     R0,[R4, #+0]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD002             BEQ.N    ??process_thread_test_app_process_0
+   \       0x10   0x28AE             CMP      R0,#+174
+   \       0x12   0xD004             BEQ.N    ??process_thread_test_app_process_1
+   \       0x14   0xE00F             B.N      ??process_thread_test_app_process_2
+    171            
+    172            while(1) 
+    173            {
+    174              L3_PROCESS_YIELD();
+   \                     ??process_thread_test_app_process_0: (+1)
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0x0007             MOVS     R7,R0
+   \       0x1A   0x20AE             MOVS     R0,#+174
+   \       0x1C   0x8020             STRH     R0,[R4, #+0]
+   \                     ??process_thread_test_app_process_1: (+1)
+   \       0x1E   0x0038             MOVS     R0,R7
+   \       0x20   0xB2C0             UXTB     R0,R0
+   \       0x22   0x2800             CMP      R0,#+0
+   \       0x24   0xD101             BNE.N    ??process_thread_test_app_process_3
+   \       0x26   0x2001             MOVS     R0,#+1
+   \       0x28   0xE009             B.N      ??process_thread_test_app_process_4
+    175              test_app_thread_process_event_handler(ev, data);
+   \                     ??process_thread_test_app_process_3: (+1)
+   \       0x2A   0x0031             MOVS     R1,R6
+   \       0x2C   0x0028             MOVS     R0,R5
+   \       0x2E   0xB2C0             UXTB     R0,R0
+   \       0x30   0x.... 0x....      BL       test_app_thread_process_event_handler
+   \       0x34   0xE7EF             B.N      ??process_thread_test_app_process_0
+    176            }
+    177            L3_PROCESS_END();
+   \                     ??process_thread_test_app_process_2: (+1)
+   \       0x36   0x2100             MOVS     R1,#+0
+   \       0x38   0x2000             MOVS     R0,#+0
+   \       0x3A   0x8020             STRH     R0,[R4, #+0]
+   \       0x3C   0x2003             MOVS     R0,#+3
+   \                     ??process_thread_test_app_process_4: (+1)
+   \       0x3E   0xBDF2             POP      {R1,R4-R7,PC}
+    178          }
+    179          
+    180          
+
+   \                                 In section .text, align 2, keep-with-next
+    181          void test_app_thread_post_event( l3_process_event_t ev, uint8_t* data)
+    182          {
+   \                     test_app_thread_post_event: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    183            l3_process_post(&test_app_process, ev, data);
+   \        0x6   0x0022             MOVS     R2,R4
+   \        0x8   0x0029             MOVS     R1,R5
+   \        0xA   0xB2C9             UXTB     R1,R1
+   \        0xC   0x.... 0x....      LDR.W    R0,??DataTable6_3
+   \       0x10   0x.... 0x....      BL       l3_process_post
+    184          }
+   \       0x14   0xBD31             POP      {R0,R4,R5,PC}
+    185          
+    186          
+    187          //void app_uart_data_recvd_send_over_udp(uint8_t* Appdata)
+    188          //{
+    189          //  test_app_thread_post_event(0, NULL);    
+    190          //} 
+    191          
+    192          #define CALLBACK_INTERVAL  ( 10 * CLOCK_SECOND )
+    193          
+    194          extern uint8_t join_state;
+    195          //One second timer
+
+   \                                 In section .text, align 2, keep-with-next
+    196          static void oneSecTimer_cb (void *ptr)
+    197          {
+   \                     oneSecTimer_cb: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB096             SUB      SP,SP,#+88
+   \        0x4   0x0004             MOVS     R4,R0
+    198            
+    199            if(join_state == 0x06)
+   \        0x6   0x.... 0x....      LDR.W    R0,??DataTable6_4
+   \        0xA   0x7800             LDRB     R0,[R0, #+0]
+   \        0xC   0x2806             CMP      R0,#+6
+   \        0xE   0xD153             BNE.N    ??oneSecTimer_cb_0
+    200            {
+    201              char buff[39];
+    202              buff[0]=0x4D;
+   \       0x10   0x204D             MOVS     R0,#+77
+   \       0x12   0xF88D 0x0030      STRB     R0,[SP, #+48]
+    203              buff[1]=0x11;
+   \       0x16   0x2011             MOVS     R0,#+17
+   \       0x18   0xF88D 0x0031      STRB     R0,[SP, #+49]
+    204               for (int ind = 0; ind < 16; ind++) {
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \                     ??oneSecTimer_cb_1: (+1)
+   \       0x1E   0x2810             CMP      R0,#+16
+   \       0x20   0xDA07             BGE.N    ??oneSecTimer_cb_2
+    205                  buff[1 + ind] = global_addr_device[ind];  // Fill IP address starting from index 1
+   \       0x22   0x.... 0x....      LDR.W    R1,??DataTable6_5
+   \       0x26   0x5C09             LDRB     R1,[R1, R0]
+   \       0x28   0xAA0C             ADD      R2,SP,#+48
+   \       0x2A   0x4402             ADD      R2,R2,R0
+   \       0x2C   0x7051             STRB     R1,[R2, #+1]
+    206              }
+   \       0x2E   0x1C40             ADDS     R0,R0,#+1
+   \       0x30   0xE7F5             B.N      ??oneSecTimer_cb_1
+    207              char data[21]={0x00,0x01,0x00,0x01,0x00,0x10,0x00,0x0D,0xC4,0x01,0xC1,0x00,0x0A,0x07,0x73,0x79,0x73,0x74,0x65,0x6D,0x30};
+   \                     ??oneSecTimer_cb_2: (+1)
+   \       0x32   0xA806             ADD      R0,SP,#+24
+   \       0x34   0x.... 0x....      LDR.W    R1,??DataTable6_6
+   \       0x38   0x2218             MOVS     R2,#+24
+   \       0x3A   0x.... 0x....      BL       __aeabi_memcpy4
+    208              memcpy(buff+18,data,21);
+   \       0x3E   0x2515             MOVS     R5,#+21
+   \       0x40   0xAE06             ADD      R6,SP,#+24
+   \       0x42   0xF10D 0x0742      ADD      R7,SP,#+66
+   \       0x46   0x002A             MOVS     R2,R5
+   \       0x48   0x0031             MOVS     R1,R6
+   \       0x4A   0x0038             MOVS     R0,R7
+   \       0x4C   0x.... 0x....      BL       __aeabi_memcpy
+    209              
+    210              
+    211              //uart_hal_write((uint8_t *)buff, 21);
+    212              UART_Data_send_udp((uint8_t *)buff, 39);
+   \       0x50   0x2127             MOVS     R1,#+39
+   \       0x52   0xA80C             ADD      R0,SP,#+48
+   \       0x54   0x.... 0x....      BL       UART_Data_send_udp
+    213            static uint64_t count = 0;
+    214            count++;
+   \       0x58   0x.... 0x....      LDR.W    R2,??DataTable6_7
+   \       0x5C   0xE9D2 0x0100      LDRD     R0,R1,[R2, #+0]
+   \       0x60   0x1C40             ADDS     R0,R0,#+1
+   \       0x62   0xF171 0x31FF      SBCS     R1,R1,#+4294967295
+   \       0x66   0xE9C2 0x0100      STRD     R0,R1,[R2, #+0]
+    215            if(count % 2 == 0)
+   \       0x6A   0x7810             LDRB     R0,[R2, #+0]
+   \       0x6C   0x07C0             LSLS     R0,R0,#+31
+   \       0x6E   0xD423             BMI.N    ??oneSecTimer_cb_0
+    216            {
+    217              char buffer[20];
+    218              buffer[0]=0x07;
+   \       0x70   0x2007             MOVS     R0,#+7
+   \       0x72   0xF88D 0x0004      STRB     R0,[SP, #+4]
+    219              for (int ind = 0; ind < 16; ind++) {
+   \       0x76   0x2000             MOVS     R0,#+0
+   \                     ??oneSecTimer_cb_3: (+1)
+   \       0x78   0x2810             CMP      R0,#+16
+   \       0x7A   0xDA07             BGE.N    ??oneSecTimer_cb_4
+    220                  buffer[1 + ind] = global_addr_device[ind];  // Fill IP address starting from index 1
+   \       0x7C   0x.... 0x....      LDR.W    R1,??DataTable6_5
+   \       0x80   0x5C09             LDRB     R1,[R1, R0]
+   \       0x82   0xAA01             ADD      R2,SP,#+4
+   \       0x84   0x4402             ADD      R2,R2,R0
+   \       0x86   0x7051             STRB     R1,[R2, #+1]
+    221              }
+   \       0x88   0x1C40             ADDS     R0,R0,#+1
+   \       0x8A   0xE7F5             B.N      ??oneSecTimer_cb_3
+    222              char data[3]={0x01,0x02,0x03};
+   \                     ??oneSecTimer_cb_4: (+1)
+   \       0x8C   0x466A             MOV      R2,SP
+   \       0x8E   0x.... 0x....      LDR.W    R0,??DataTable6_8
+   \       0x92   0x6801             LDR      R1,[R0, #+0]
+   \       0x94   0x6011             STR      R1,[R2, #+0]
+    223              memcpy(buffer+17,data,3);
+   \       0x96   0x2503             MOVS     R5,#+3
+   \       0x98   0x466E             MOV      R6,SP
+   \       0x9A   0xF10D 0x0715      ADD      R7,SP,#+21
+   \       0x9E   0x002A             MOVS     R2,R5
+   \       0xA0   0x0031             MOVS     R1,R6
+   \       0xA2   0x0038             MOVS     R0,R7
+   \       0xA4   0x.... 0x....      BL       __aeabi_memcpy
+    224              
+    225               uart_hal_write((uint8_t *)buffer,20);
+   \       0xA8   0x2114             MOVS     R1,#+20
+   \       0xAA   0xA801             ADD      R0,SP,#+4
+   \       0xAC   0x.... 0x....      BL       uart_hal_write
+    226              UART_Data_send_udp((uint8_t *)buffer, 20);
+   \       0xB0   0x2114             MOVS     R1,#+20
+   \       0xB2   0xA801             ADD      R0,SP,#+4
+   \       0xB4   0x.... 0x....      BL       UART_Data_send_udp
+    227              
+    228             /* createTestPacket(&m_ds_buff);
+    229              uart_hal_write((uint8_t *)m_ds_buff.data_buffer, m_ds_buff.data_size);
+    230              UART_Data_send_udp((uint8_t *)m_ds_buff.data_buffer, m_ds_buff.data_size);
+    231          */
+    232            }
+    233            }
+    234            
+    235            
+    236            
+    237            l3_ctimer_set (&oneSecTimerIns, CALLBACK_INTERVAL, oneSecTimer_cb, NULL);
+   \                     ??oneSecTimer_cb_0: (+1)
+   \       0xB8   0x2000             MOVS     R0,#+0
+   \       0xBA   0x9001             STR      R0,[SP, #+4]
+   \       0xBC   0x.... 0x....      LDR.W    R0,??DataTable6_9
+   \       0xC0   0x9000             STR      R0,[SP, #+0]
+   \       0xC2   0xF242 0x7210      MOVW     R2,#+10000
+   \       0xC6   0x2300             MOVS     R3,#+0
+   \       0xC8   0x.... 0x....      LDR.W    R0,??DataTable6_10
+   \       0xCC   0x.... 0x....      BL       l3_ctimer_set
+    238            //tmr_stop(&(oneSecTimerIns));
+    239            //tmr_start_relative(&(oneSecTimerIns));
+    240          }
+   \       0xD0   0xB017             ADD      SP,SP,#+92
+   \       0xD2   0xBDF0             POP      {R4-R7,PC}
+
+   \                                 In section .bss, align 8
+   \                     `oneSecTimer_cb{1}{2}::count`:
+   \        0x0                      DS8 8
+
+   \                                 In section .text, align 2, keep-with-next
+    241          void k_start_test_app()
+    242          {
+   \                     k_start_test_app: (+1)
+   \        0x0   0xB5E0             PUSH     {R5-R7,LR}
+    243              UART_init();
+   \        0x2   0x.... 0x....      BL       UART_init
+    244             //tmr_create_one_shot_timer(&oneSecTimerIns, 833333, (sw_tmr_cb_t)&oneSecTimer_cb, NULL);    
+    245             //tmr_start_relative( &(oneSecTimerIns));
+    246            l3_ctimer_set (&oneSecTimerIns, CALLBACK_INTERVAL, oneSecTimer_cb, NULL);
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x9001             STR      R0,[SP, #+4]
+   \        0xA   0x.... 0x....      LDR.W    R0,??DataTable6_9
+   \        0xE   0x9000             STR      R0,[SP, #+0]
+   \       0x10   0xF242 0x7210      MOVW     R2,#+10000
+   \       0x14   0x2300             MOVS     R3,#+0
+   \       0x16   0x.... 0x....      LDR.W    R0,??DataTable6_10
+   \       0x1A   0x.... 0x....      BL       l3_ctimer_set
+    247          }
+   \       0x1E   0xBD07             POP      {R0-R2,PC}
+    248          
+    249          static void createTestPacket(data_struct_t *dt)
+    250          {
+    251              static uint16_t frameCount;
+    252              init_data_struct(&m_ds_buff, m_ds_data, sizeof(m_ds_data));
+    253              uint8_t totalElements = 10, nborCount = getNborTable();
+                             ^
+Warning[Pe177]: variable "totalElements" was declared but never referenced
+    254              
+    255              //Copy headder
+    256              copy_data_buffer(dt, SOP, SOP_LEN, 1);
+    257              
+    258              //Add length
+    259              set_16(dt, 00, APPND);
+    260              
+    261          //    //Total elements
+    262          //    set_8(dt, ID_TOTAL_ELEMENTS, APPND);
+    263          //    set_8(dt, DT_UINT8, APPND);
+    264          //    set_8(dt, totalElements, APPND);
+    265          //    
+    266          
+    267          
+    268              //EVENT_ID
+    269              set_8(dt, ID_EVENT_ID, APPND);
+    270              set_8(dt, DT_UINT8, APPND);
+    271              set_8(dt, 01, APPND);
+    272          
+    273              //FRAME_ID
+    274              set_8(dt, ID_FRAME_ID, APPND);
+    275              set_8(dt, DT_UINT16, APPND);
+    276              set_16(dt, frameCount++, APPND);
+    277          
+    278              //Source
+    279              addOctetString(dt, ID_MAC_ADDR_SRC, fan_nwk_manager_app.node_basic_cfg.self_ieee_addr, 8);
+    280              addOctetString(dt, ID_IP_ADDR_SRC, global_addr_device, 16);
+    281              
+    282              //Destination
+    283              addOctetString(dt, ID_MAC_ADDR_DST, root_global_addr.u8, 8);
+    284              addOctetString(dt, ID_IP_ADDR_DST, root_global_addr.u8, 16);
+    285          
+    286              //PAN_ID
+    287              set_8(dt, ID_PAN_ID, APPND);
+    288              set_8(dt, DT_UINT16, APPND);
+    289              set_16(dt, fan_nwk_manager_app.node_basic_cfg.selected_pan_id, APPND);
+    290          
+    291              //NET NAME
+    292              set_8(dt, ID_NET_NAME, APPND);
+    293              set_string(dt, STR_TYPE_VISIBLE, fan_nwk_manager_app.node_basic_cfg.netname_ie.network_name, fan_nwk_manager_app.node_basic_cfg.netname_ie.length);
+    294          
+    295              //RSSI
+    296              set_8(dt, ID_RSSI, APPND);
+    297              set_8(dt, DT_UINT8, APPND);
+    298              set_8(dt, fan_nwk_manager_app.node_basic_cfg.pa_level, APPND);//TODO
+    299          
+    300              //PREFERED_PARENT
+    301              addOctetString(dt, ID_PREFERED_PARENT, null_buff, 8);
+    302          
+    303              //Neigbor Count
+    304              set_8(dt, ID_NEIGHBOR_COUNT, APPND);
+    305              set_8(dt, DT_UINT8, APPND);
+    306              set_8(dt, nborCount, APPND);//TODO
+    307          
+    308              //Nbor List
+    309              set_8(dt, ID_NEIGHBOR_LIST, APPND);
+    310              set_8(dt, DT_ARRAY, APPND);
+    311              set_8(dt, nborCount, APPND);
+    312              
+    313              nborCount = getNborTable();
+    314              for (uint8_t i = 0; i < nborCount; i++)
+    315              {
+    316                appendNbor(dt, nbor_list[i]);
+    317              }
+    318              
+    319              //CRC
+    320              set_8(dt, ID_CRC, APPND);
+    321              set_8(dt, DT_UINT16, APPND);
+    322              set_8(dt, 00, APPND);
+    323              
+    324              //EOP
+    325              copy_data_buffer(dt, EOP, 2, 1);
+    326              
+    327              uint16_t pkt_size = dt->data_size;
+    328              
+    329              dt->data_buffer[SOP_LEN] = (pkt_size >> 8) & 0xFF;
+    330              dt->data_buffer[SOP_LEN + 1] =  pkt_size & 0xFF; 
+    331          }
+
+   \                                 In section .text, align 2, keep-with-next
+    332          static void appendNbor(data_struct_t* dt, k_nbors_t nbors)
+    333          {
+   \                     appendNbor: (+1)
+   \        0x0   0xB51F             PUSH     {R0-R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    334              set_8(dt, ID_NEIGHBOR, APPND);
+   \        0x4   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \        0x8   0x210D             MOVS     R1,#+13
+   \        0xA   0x0020             MOVS     R0,R4
+   \        0xC   0x.... 0x....      BL       set_8
+    335              set_8(dt, DT_STRUCTURE, APPND);
+   \       0x10   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x14   0x2102             MOVS     R1,#+2
+   \       0x16   0x0020             MOVS     R0,R4
+   \       0x18   0x.... 0x....      BL       set_8
+    336              set_8(dt, 5, APPND); //NO of elements in nbor table
+   \       0x1C   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x20   0x2105             MOVS     R1,#+5
+   \       0x22   0x0020             MOVS     R0,R4
+   \       0x24   0x.... 0x....      BL       set_8
+    337          
+    338              set_8(dt, ID_SELF_MAC, APPND);
+   \       0x28   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x2C   0x2105             MOVS     R1,#+5
+   \       0x2E   0x0020             MOVS     R0,R4
+   \       0x30   0x.... 0x....      BL       set_8
+    339              set_string(dt, STR_TYPE_OCTAT, nbors.macAddr, 8); //MACAddr
+   \       0x34   0x2308             MOVS     R3,#+8
+   \       0x36   0xAA01             ADD      R2,SP,#+4
+   \       0x38   0x2109             MOVS     R1,#+9
+   \       0x3A   0x0020             MOVS     R0,R4
+   \       0x3C   0x.... 0x....      BL       set_string
+    340          
+    341              set_8(dt, ID_RSSI, APPND);
+   \       0x40   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x44   0x2108             MOVS     R1,#+8
+   \       0x46   0x0020             MOVS     R0,R4
+   \       0x48   0x.... 0x....      BL       set_8
+    342              set_8(dt, DT_UINT8, APPND);
+   \       0x4C   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x50   0x2111             MOVS     R1,#+17
+   \       0x52   0x0020             MOVS     R0,R4
+   \       0x54   0x.... 0x....      BL       set_8
+    343              set_8(dt, nbors.rssi, APPND);
+   \       0x58   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x5C   0xF89D 0x100C      LDRB     R1,[SP, #+12]
+   \       0x60   0x0020             MOVS     R0,R4
+   \       0x62   0x.... 0x....      BL       set_8
+    344          
+    345              set_8(dt, ID_PATH_COST, APPND);
+   \       0x66   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x6A   0x2114             MOVS     R1,#+20
+   \       0x6C   0x0020             MOVS     R0,R4
+   \       0x6E   0x.... 0x....      BL       set_8
+    346              set_8(dt, DT_UINT8, APPND);
+   \       0x72   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x76   0x2111             MOVS     R1,#+17
+   \       0x78   0x0020             MOVS     R0,R4
+   \       0x7A   0x.... 0x....      BL       set_8
+    347              set_8(dt, nbors.routing_cost, APPND);
+   \       0x7E   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x82   0xF89D 0x100D      LDRB     R1,[SP, #+13]
+   \       0x86   0x0020             MOVS     R0,R4
+   \       0x88   0x.... 0x....      BL       set_8
+    348          
+    349              set_8(dt, ID_CHAN, APPND);
+   \       0x8C   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x90   0x2110             MOVS     R1,#+16
+   \       0x92   0x0020             MOVS     R0,R4
+   \       0x94   0x.... 0x....      BL       set_8
+    350              set_8(dt, DT_UINT8, APPND);
+   \       0x98   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x9C   0x2111             MOVS     R1,#+17
+   \       0x9E   0x0020             MOVS     R0,R4
+   \       0xA0   0x.... 0x....      BL       set_8
+    351              set_8(dt, nbors.channel, APPND);
+   \       0xA4   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0xA8   0xF89D 0x100E      LDRB     R1,[SP, #+14]
+   \       0xAC   0x0020             MOVS     R0,R4
+   \       0xAE   0x.... 0x....      BL       set_8
+    352          
+    353          
+    354              set_8(dt, ID_NONE, APPND);
+   \       0xB2   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0xB6   0x2100             MOVS     R1,#+0
+   \       0xB8   0x0020             MOVS     R0,R4
+   \       0xBA   0x.... 0x....      BL       set_8
+    355              set_8(dt, DT_UINT8, APPND);
+   \       0xBE   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0xC2   0x2111             MOVS     R1,#+17
+   \       0xC4   0x0020             MOVS     R0,R4
+   \       0xC6   0x.... 0x....      BL       set_8
+    356              set_8(dt, 0, APPND);
+   \       0xCA   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0xCE   0x2100             MOVS     R1,#+0
+   \       0xD0   0x0020             MOVS     R0,R4
+   \       0xD2   0x.... 0x....      BL       set_8
+    357          }
+   \       0xD6   0xBD1F             POP      {R0-R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+    358          static void addOctetString(data_struct_t *dt, 
+    359                                     IdentifierTag it, 
+    360                                     uint8_t* data,
+    361                                     uint16_t dataLen)
+    362          {
+   \                     addOctetString: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+   \        0x8   0x001E             MOVS     R6,R3
+    363              set_8(dt, it, APPND);
+   \        0xA   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \        0xE   0x0021             MOVS     R1,R4
+   \       0x10   0xB2C9             UXTB     R1,R1
+   \       0x12   0x0038             MOVS     R0,R7
+   \       0x14   0x.... 0x....      BL       set_8
+    364              set_string(dt, STR_TYPE_OCTAT, data, dataLen);
+   \       0x18   0x0033             MOVS     R3,R6
+   \       0x1A   0xB29B             UXTH     R3,R3
+   \       0x1C   0x002A             MOVS     R2,R5
+   \       0x1E   0x2109             MOVS     R1,#+9
+   \       0x20   0x0038             MOVS     R0,R7
+   \       0x22   0x.... 0x....      BL       set_string
+    365          }
+   \       0x26   0xBDF1             POP      {R0,R4-R7,PC}
+    366          
+    367          
+
+   \                                 In section .text, align 2, keep-with-next
+    368          int getNborTable()
+    369          {
+   \                     getNborTable: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+    370              int idx = 0;
+   \        0x4   0x2100             MOVS     R1,#+0
+    371              uint16_t nbr_count = 0;
+   \        0x6   0x2500             MOVS     R5,#+0
+    372              mac_nbr_descriptor_t *p_nbr_desc = NULL;
+   \        0x8   0x2400             MOVS     R4,#+0
+    373              
+    374              //Not valid for LBR
+    375              if(fan_nwk_manager_app.node_basic_cfg.fan_device_type == LBR_TYPE)
+   \        0xA   0x....             LDR.N    R0,??DataTable6_11
+   \        0xC   0x7B40             LDRB     R0,[R0, #+13]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD101             BNE.N    ??getNborTable_0
+    376              {
+    377                return 0;
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0xE028             B.N      ??getNborTable_1
+    378              }
+    379              
+    380              //fill each nbor details
+    381              for (idx = 0; idx < fan_mac_nbr.mac_nbr_info_table_entries; idx++)
+   \                     ??getNborTable_0: (+1)
+   \       0x16   0x2600             MOVS     R6,#+0
+   \                     ??getNborTable_2: (+1)
+   \       0x18   0x....             LDR.N    R0,??DataTable6_12
+   \       0x1A   0x7B01             LDRB     R1,[R0, #+12]
+   \       0x1C   0x428E             CMP      R6,R1
+   \       0x1E   0xDA21             BGE.N    ??getNborTable_3
+    382              {
+    383                //get nbor details from queue
+    384                p_nbr_desc = (mac_nbr_descriptor_t*)queue_item_read_from (&fan_mac_nbr.desc_table, idx);
+   \       0x20   0x0031             MOVS     R1,R6
+   \       0x22   0xB2C9             UXTB     R1,R1
+   \       0x24   0x.... 0x....      BL       queue_item_read_from
+   \       0x28   0x0004             MOVS     R4,R0
+    385                
+    386                if (p_nbr_desc != NULL)
+   \       0x2A   0x2C00             CMP      R4,#+0
+   \       0x2C   0xD018             BEQ.N    ??getNborTable_4
+    387                { 
+    388                  nbr_count++;
+   \       0x2E   0x1C6D             ADDS     R5,R5,#+1
+    389                  mem_rev_cpy( nbor_list[idx].macAddr, p_nbr_desc->mac_addr, 8); 
+   \       0x30   0x....             LDR.N    R7,??DataTable6_13
+   \       0x32   0xF05F 0x080C      MOVS     R8,#+12
+   \       0x36   0x2208             MOVS     R2,#+8
+   \       0x38   0xF114 0x01CC      ADDS     R1,R4,#+204
+   \       0x3C   0xFB08 0xF006      MUL      R0,R8,R6
+   \       0x40   0x4438             ADD      R0,R7,R0
+   \       0x42   0x.... 0x....      BL       mem_rev_cpy
+    390                  nbor_list[idx].rssi = p_nbr_desc->rssi; 
+   \       0x46   0xF8B4 0x0126      LDRH     R0,[R4, #+294]
+   \       0x4A   0xFB08 0xF106      MUL      R1,R8,R6
+   \       0x4E   0x4439             ADD      R1,R7,R1
+   \       0x50   0x7208             STRB     R0,[R1, #+8]
+    391                  nbor_list[idx].routing_cost = p_nbr_desc->rev_pan_metrics.routing_cost;
+   \       0x52   0xF8B4 0x008A      LDRH     R0,[R4, #+138]
+   \       0x56   0xFB08 0xF806      MUL      R8,R8,R6
+   \       0x5A   0xEB07 0x0108      ADD      R1,R7,R8
+   \       0x5E   0x7248             STRB     R0,[R1, #+9]
+    392                }
+    393              } 
+   \                     ??getNborTable_4: (+1)
+   \       0x60   0x1C76             ADDS     R6,R6,#+1
+   \       0x62   0xE7D9             B.N      ??getNborTable_2
+    394            return nbr_count;  
+   \                     ??getNborTable_3: (+1)
+   \       0x64   0xB2AD             UXTH     R5,R5
+   \       0x66   0x0028             MOVS     R0,R5
+   \                     ??getNborTable_1: (+1)
+   \       0x68   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    395          }
+    396          
+    397          
+
+   \                                 In section .text, align 2, keep-with-next
+    398          void send_meter_plus_info_data(uint8_t *payload_buff, uint16_t payload_length, data_struct_t *dt)
+    399          {
+   \                     send_meter_plus_info_data: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0xB086             SUB      SP,SP,#+24
+   \        0x6   0x4680             MOV      R8,R0
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0x0015             MOVS     R5,R2
+    400              static uint16_t frameCount;
+    401              init_data_struct(&m_ds_buff, m_ds_data, sizeof(m_ds_data));
+   \        0xC   0xF44F 0x72FA      MOV      R2,#+500
+   \       0x10   0x....             LDR.N    R1,??DataTable6_1
+   \       0x12   0x....             LDR.N    R0,??DataTable6_2
+   \       0x14   0x.... 0x....      BL       init_data_struct
+    402              uint8_t totalElements = 10, nborCount = getNborTable();
+                             ^
+Warning[Pe177]: variable "totalElements" was declared but never referenced
+
+  static void createTestPacket(data_struct_t *dt)
+              ^
+"C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\MeterApp\src\k_test_app.c",249  Warning[Pe177]: 
+          function "createTestPacket" was declared but never referenced
+   \       0x18   0x200A             MOVS     R0,#+10
+   \       0x1A   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \       0x1E   0x.... 0x....      BL       getNborTable
+   \       0x22   0x4683             MOV      R11,R0
+    403              uint8_t l_address[8];
+    404              
+    405              //Copy headder
+    406              copy_data_buffer(dt, SOP, SOP_LEN, 1);
+   \       0x24   0x2301             MOVS     R3,#+1
+   \       0x26   0x2205             MOVS     R2,#+5
+   \       0x28   0x....             LDR.N    R1,??DataTable6_14
+   \       0x2A   0x0028             MOVS     R0,R5
+   \       0x2C   0x.... 0x....      BL       copy_data_buffer
+    407              
+    408              //Add length
+    409              set_16(dt, 00, APPND);
+   \       0x30   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x34   0x2100             MOVS     R1,#+0
+   \       0x36   0x0028             MOVS     R0,R5
+   \       0x38   0x.... 0x....      BL       set_16
+    410          
+    411              //EVENT_ID
+    412              set_8(dt, ID_EVENT_ID, APPND);
+   \       0x3C   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x40   0x2111             MOVS     R1,#+17
+   \       0x42   0x0028             MOVS     R0,R5
+   \       0x44   0x.... 0x....      BL       set_8
+    413              set_8(dt, DT_UINT8, APPND);
+   \       0x48   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x4C   0x2111             MOVS     R1,#+17
+   \       0x4E   0x0028             MOVS     R0,R5
+   \       0x50   0x.... 0x....      BL       set_8
+    414              set_8(dt, 01, APPND);
+   \       0x54   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x58   0x2101             MOVS     R1,#+1
+   \       0x5A   0x0028             MOVS     R0,R5
+   \       0x5C   0x.... 0x....      BL       set_8
+    415          
+    416              //FRAME_ID
+    417              set_8(dt, ID_FRAME_ID, APPND);
+   \       0x60   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x64   0x2112             MOVS     R1,#+18
+   \       0x66   0x0028             MOVS     R0,R5
+   \       0x68   0x.... 0x....      BL       set_8
+    418              set_8(dt, DT_UINT16, APPND);
+   \       0x6C   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x70   0x2112             MOVS     R1,#+18
+   \       0x72   0x0028             MOVS     R0,R5
+   \       0x74   0x.... 0x....      BL       set_8
+    419              set_16(dt, frameCount++, APPND);
+   \       0x78   0x....             LDR.N    R2,??DataTable6_15
+   \       0x7A   0x8811             LDRH     R1,[R2, #+0]
+   \       0x7C   0x1C48             ADDS     R0,R1,#+1
+   \       0x7E   0x8010             STRH     R0,[R2, #+0]
+   \       0x80   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x84   0xB289             UXTH     R1,R1
+   \       0x86   0x0028             MOVS     R0,R5
+   \       0x88   0x.... 0x....      BL       set_16
+    420          
+    421              //Source
+    422              memcpy(l_address,&global_addr_device[8],8);
+   \       0x8C   0xF05F 0x0908      MOVS     R9,#+8
+   \       0x90   0x....             LDR.N    R6,??DataTable6_5
+   \       0x92   0xF116 0x0008      ADDS     R0,R6,#+8
+   \       0x96   0x9004             STR      R0,[SP, #+16]
+   \       0x98   0xAF01             ADD      R7,SP,#+4
+   \       0x9A   0x464A             MOV      R2,R9
+   \       0x9C   0x9904             LDR      R1,[SP, #+16]
+   \       0x9E   0x0038             MOVS     R0,R7
+   \       0xA0   0x.... 0x....      BL       __aeabi_memcpy
+    423              l_address[0] = 0x00;
+   \       0xA4   0x2000             MOVS     R0,#+0
+   \       0xA6   0xF88D 0x0004      STRB     R0,[SP, #+4]
+    424              addOctetString(dt, ID_MAC_ADDR_SRC, l_address, 8);
+   \       0xAA   0x2308             MOVS     R3,#+8
+   \       0xAC   0xAA01             ADD      R2,SP,#+4
+   \       0xAE   0x2101             MOVS     R1,#+1
+   \       0xB0   0x0028             MOVS     R0,R5
+   \       0xB2   0x.... 0x....      BL       addOctetString
+    425              //addOctetString(dt, ID_MAC_ADDR_SRC, fan_nwk_manager_app.node_basic_cfg.self_ieee_addr, 8);
+    426              addOctetString(dt, ID_IP_ADDR_SRC, global_addr_device, 16);
+   \       0xB6   0x2310             MOVS     R3,#+16
+   \       0xB8   0x0032             MOVS     R2,R6
+   \       0xBA   0x2103             MOVS     R1,#+3
+   \       0xBC   0x0028             MOVS     R0,R5
+   \       0xBE   0x.... 0x....      BL       addOctetString
+    427              
+    428              //Destination
+    429              memcpy(l_address,&root_global_addr.u8[8],8);
+   \       0xC2   0xF05F 0x0A08      MOVS     R10,#+8
+   \       0xC6   0x....             LDR.N    R6,??DataTable6_16
+   \       0xC8   0xF116 0x0008      ADDS     R0,R6,#+8
+   \       0xCC   0x9003             STR      R0,[SP, #+12]
+   \       0xCE   0xAF01             ADD      R7,SP,#+4
+   \       0xD0   0x4652             MOV      R2,R10
+   \       0xD2   0x9903             LDR      R1,[SP, #+12]
+   \       0xD4   0x0038             MOVS     R0,R7
+   \       0xD6   0x.... 0x....      BL       __aeabi_memcpy
+    430              l_address[0] = 0x00;    
+   \       0xDA   0x2000             MOVS     R0,#+0
+   \       0xDC   0xF88D 0x0004      STRB     R0,[SP, #+4]
+    431              addOctetString(dt, ID_MAC_ADDR_DST, l_address, 8);
+   \       0xE0   0x2308             MOVS     R3,#+8
+   \       0xE2   0xAA01             ADD      R2,SP,#+4
+   \       0xE4   0x2102             MOVS     R1,#+2
+   \       0xE6   0x0028             MOVS     R0,R5
+   \       0xE8   0x.... 0x....      BL       addOctetString
+    432          //    addOctetString(dt, ID_MAC_ADDR_DST, root_global_addr.u8, 8);
+    433              addOctetString(dt, ID_IP_ADDR_DST, root_global_addr.u8, 16);
+   \       0xEC   0x2310             MOVS     R3,#+16
+   \       0xEE   0x0032             MOVS     R2,R6
+   \       0xF0   0x2104             MOVS     R1,#+4
+   \       0xF2   0x0028             MOVS     R0,R5
+   \       0xF4   0x.... 0x....      BL       addOctetString
+    434          
+    435              //PAN_ID
+    436              set_8(dt, ID_PAN_ID, APPND);
+   \       0xF8   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0xFC   0x2106             MOVS     R1,#+6
+   \       0xFE   0x0028             MOVS     R0,R5
+   \      0x100   0x.... 0x....      BL       set_8
+    437              set_8(dt, DT_UINT16, APPND);
+   \      0x104   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x108   0x2112             MOVS     R1,#+18
+   \      0x10A   0x0028             MOVS     R0,R5
+   \      0x10C   0x.... 0x....      BL       set_8
+    438              set_16(dt, fan_nwk_manager_app.node_basic_cfg.selected_pan_id, APPND);
+   \      0x110   0x....             LDR.N    R6,??DataTable6_11
+   \      0x112   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x116   0x8A71             LDRH     R1,[R6, #+18]
+   \      0x118   0x0028             MOVS     R0,R5
+   \      0x11A   0x.... 0x....      BL       set_16
+    439          
+    440              //NET NAME
+    441              set_8(dt, ID_NET_NAME, APPND);
+   \      0x11E   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x122   0x2107             MOVS     R1,#+7
+   \      0x124   0x0028             MOVS     R0,R5
+   \      0x126   0x.... 0x....      BL       set_8
+    442              set_string(dt, STR_TYPE_VISIBLE, fan_nwk_manager_app.node_basic_cfg.netname_ie.network_name, fan_nwk_manager_app.node_basic_cfg.netname_ie.length);
+   \      0x12A   0xF896 0x30C2      LDRB     R3,[R6, #+194]
+   \      0x12E   0xB29B             UXTH     R3,R3
+   \      0x130   0xF116 0x02C3      ADDS     R2,R6,#+195
+   \      0x134   0x210A             MOVS     R1,#+10
+   \      0x136   0x0028             MOVS     R0,R5
+   \      0x138   0x.... 0x....      BL       set_string
+    443          
+    444              //RSSI
+    445              set_8(dt, ID_RSSI, APPND);
+   \      0x13C   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x140   0x2108             MOVS     R1,#+8
+   \      0x142   0x0028             MOVS     R0,R5
+   \      0x144   0x.... 0x....      BL       set_8
+    446              set_8(dt, DT_UINT8, APPND);
+   \      0x148   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x14C   0x2111             MOVS     R1,#+17
+   \      0x14E   0x0028             MOVS     R0,R5
+   \      0x150   0x.... 0x....      BL       set_8
+    447              set_8(dt, fan_nwk_manager_app.node_basic_cfg.pa_level, APPND);//TODO
+   \      0x154   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x158   0x7BF1             LDRB     R1,[R6, #+15]
+   \      0x15A   0x0028             MOVS     R0,R5
+   \      0x15C   0x.... 0x....      BL       set_8
+    448          
+    449              //PREFERED_PARENT
+    450              addOctetString(dt, ID_PREFERED_PARENT, null_buff, 8);
+   \      0x160   0x2308             MOVS     R3,#+8
+   \      0x162   0x....             LDR.N    R2,??DataTable6_17
+   \      0x164   0x210E             MOVS     R1,#+14
+   \      0x166   0x0028             MOVS     R0,R5
+   \      0x168   0x.... 0x....      BL       addOctetString
+    451          
+    452              //Neigbor Count
+    453              set_8(dt, ID_NEIGHBOR_COUNT, APPND);
+   \      0x16C   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x170   0x210B             MOVS     R1,#+11
+   \      0x172   0x0028             MOVS     R0,R5
+   \      0x174   0x.... 0x....      BL       set_8
+    454              set_8(dt, DT_UINT8, APPND);
+   \      0x178   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x17C   0x2111             MOVS     R1,#+17
+   \      0x17E   0x0028             MOVS     R0,R5
+   \      0x180   0x.... 0x....      BL       set_8
+    455              set_8(dt, nborCount, APPND);//TODO
+   \      0x184   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x188   0x4659             MOV      R1,R11
+   \      0x18A   0xB2C9             UXTB     R1,R1
+   \      0x18C   0x0028             MOVS     R0,R5
+   \      0x18E   0x.... 0x....      BL       set_8
+    456          
+    457              //Nbor List
+    458              set_8(dt, ID_NEIGHBOR_LIST, APPND);
+   \      0x192   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x196   0x210C             MOVS     R1,#+12
+   \      0x198   0x0028             MOVS     R0,R5
+   \      0x19A   0x.... 0x....      BL       set_8
+    459              set_8(dt, DT_ARRAY, APPND);
+   \      0x19E   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x1A2   0x2101             MOVS     R1,#+1
+   \      0x1A4   0x0028             MOVS     R0,R5
+   \      0x1A6   0x.... 0x....      BL       set_8
+    460              set_8(dt, nborCount, APPND);
+   \      0x1AA   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x1AE   0x4659             MOV      R1,R11
+   \      0x1B0   0xB2C9             UXTB     R1,R1
+   \      0x1B2   0x0028             MOVS     R0,R5
+   \      0x1B4   0x.... 0x....      BL       set_8
+    461              
+    462              nborCount = getNborTable();
+   \      0x1B8   0x.... 0x....      BL       getNborTable
+   \      0x1BC   0x0006             MOVS     R6,R0
+    463              for (uint8_t i = 0; i < nborCount; i++)
+   \      0x1BE   0x2700             MOVS     R7,#+0
+   \                     ??send_meter_plus_info_data_0: (+1)
+   \      0x1C0   0x0039             MOVS     R1,R7
+   \      0x1C2   0x0030             MOVS     R0,R6
+   \      0x1C4   0xB2C9             UXTB     R1,R1
+   \      0x1C6   0xB2C0             UXTB     R0,R0
+   \      0x1C8   0x4281             CMP      R1,R0
+   \      0x1CA   0xD212             BCS.N    ??send_meter_plus_info_data_1
+    464              {
+    465                appendNbor(dt, nbor_list[i]);
+   \      0x1CC   0xA803             ADD      R0,SP,#+12
+   \      0x1CE   0x....             LDR.N    R3,??DataTable6_13
+   \      0x1D0   0x003A             MOVS     R2,R7
+   \      0x1D2   0xB2D2             UXTB     R2,R2
+   \      0x1D4   0x210C             MOVS     R1,#+12
+   \      0x1D6   0x434A             MULS     R2,R1,R2
+   \      0x1D8   0xEB03 0x0102      ADD      R1,R3,R2
+   \      0x1DC   0x220C             MOVS     R2,#+12
+   \      0x1DE   0x.... 0x....      BL       __aeabi_memcpy
+   \      0x1E2   0xA803             ADD      R0,SP,#+12
+   \      0x1E4   0xE890 0x000E      LDM      R0,{R1-R3}
+   \      0x1E8   0x0028             MOVS     R0,R5
+   \      0x1EA   0x.... 0x....      BL       appendNbor
+    466              }
+   \      0x1EE   0x1C7F             ADDS     R7,R7,#+1
+   \      0x1F0   0xE7E6             B.N      ??send_meter_plus_info_data_0
+    467          
+    468              
+    469              //Payload
+    470              addOctetString(dt, ID_PAYLOAD, payload_buff, payload_length);
+   \                     ??send_meter_plus_info_data_1: (+1)
+   \      0x1F2   0x0023             MOVS     R3,R4
+   \      0x1F4   0xB29B             UXTH     R3,R3
+   \      0x1F6   0x4642             MOV      R2,R8
+   \      0x1F8   0x210A             MOVS     R1,#+10
+   \      0x1FA   0x0028             MOVS     R0,R5
+   \      0x1FC   0x.... 0x....      BL       addOctetString
+    471              
+    472              //CRC
+    473              set_8(dt, ID_CRC, APPND);
+   \      0x200   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x204   0x210F             MOVS     R1,#+15
+   \      0x206   0x0028             MOVS     R0,R5
+   \      0x208   0x.... 0x....      BL       set_8
+    474              set_8(dt, DT_UINT16, APPND);
+   \      0x20C   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x210   0x2112             MOVS     R1,#+18
+   \      0x212   0x0028             MOVS     R0,R5
+   \      0x214   0x.... 0x....      BL       set_8
+    475              set_8(dt, 00, APPND);
+   \      0x218   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \      0x21C   0x2100             MOVS     R1,#+0
+   \      0x21E   0x0028             MOVS     R0,R5
+   \      0x220   0x.... 0x....      BL       set_8
+    476              
+    477              //EOP
+    478              copy_data_buffer(dt, EOP, 2, 1);
+   \      0x224   0x2301             MOVS     R3,#+1
+   \      0x226   0x2202             MOVS     R2,#+2
+   \      0x228   0x....             ADR.N    R1,??DataTable6
+   \      0x22A   0x0028             MOVS     R0,R5
+   \      0x22C   0x.... 0x....      BL       copy_data_buffer
+    479              
+    480              uint16_t pkt_size = dt->data_size;
+   \      0x230   0x88E8             LDRH     R0,[R5, #+6]
+    481              
+    482              dt->data_buffer[SOP_LEN] = (pkt_size >> 8) & 0xFF;
+   \      0x232   0x0002             MOVS     R2,R0
+   \      0x234   0xB292             UXTH     R2,R2
+   \      0x236   0x0A12             LSRS     R2,R2,#+8
+   \      0x238   0x6829             LDR      R1,[R5, #+0]
+   \      0x23A   0x714A             STRB     R2,[R1, #+5]
+    483              dt->data_buffer[SOP_LEN + 1] =  pkt_size & 0xFF; 
+   \      0x23C   0x6829             LDR      R1,[R5, #+0]
+   \      0x23E   0x7188             STRB     R0,[R1, #+6]
+    484          }
+   \      0x240   0xB007             ADD      SP,SP,#+28
+   \      0x242   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+
+   \                                 In section .bss, align 2
+   \                     `send_meter_plus_info_data::frameCount`:
+   \        0x0                      DS8 2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x23 0x23          DC8      0x23, 0x23, 0x00, 0x00
+   \              0x00 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x....'....        DC32     m_ds_data
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x....'....        DC32     m_ds_buff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x....'....        DC32     test_app_process
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x....'....        DC32     join_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \        0x0   0x....'....        DC32     global_addr_device
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_7:
+   \        0x0   0x....'....        DC32     `oneSecTimer_cb{1}{2}::count`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_8:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_9:
+   \        0x0   0x....'....        DC32     oneSecTimer_cb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_10:
+   \        0x0   0x....'....        DC32     oneSecTimerIns
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_11:
+   \        0x0   0x....'....        DC32     fan_nwk_manager_app
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_12:
+   \        0x0   0x....'....        DC32     fan_mac_nbr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_13:
+   \        0x0   0x....'....        DC32     nbor_list
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_14:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_15:
+   \        0x0   0x....'....        DC32     `send_meter_plus_info_data::frameCount`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_16:
+   \        0x0   0x....'....        DC32     root_global_addr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_17:
+   \        0x0   0x....'....        DC32     null_buff
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x00 0x01          DC8 0, 1, 0, 1, 0, 16, 0, 13, 196, 1, 193, 0, 10, 7, 115, 121, 115, 116
+   \              0x00 0x01    
+   \              0x00 0x10    
+   \              0x00 0x0D    
+   \              0xC4 0x01    
+   \              0xC1 0x00    
+   \              0x0A 0x07    
+   \              0x73 0x79    
+   \              0x73 0x74
+   \       0x12   0x65 0x6D          DC8 101, 109, 48
+   \              0x30
+   \       0x15                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x01 0x02          DC8 1, 2, 3
+   \              0x03
+   \        0x3                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x24 0x24          DC8 "$$KIM"
+   \              0x4B 0x49    
+   \              0x4D 0x00
+   \        0x6                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x23 0x23          DC8 "##"
+   \              0x00
+   \        0x3                      DS8 1
+    485          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   addOctetString
+        24   -> set_8
+        24   -> set_string
+      24   appendNbor
+        24   -> set_8
+        24   -> set_string
+      24   getNborTable
+        24   -> mem_rev_cpy
+        24   -> queue_item_read_from
+       8   k_init_test_app
+         8   -> init_data_struct
+      16   k_start_test_app
+        16   -> UART_init
+        16   -> l3_ctimer_set
+     112   oneSecTimer_cb
+       112   -> UART_Data_send_udp
+       112   -> __aeabi_memcpy
+       112   -> __aeabi_memcpy4
+       112   -> l3_ctimer_set
+       112   -> uart_hal_write
+      24   process_thread_test_app_process
+        24   -> test_app_thread_process_event_handler
+      64   send_meter_plus_info_data
+        64   -> __aeabi_memcpy
+        64   -> addOctetString
+        64   -> appendNbor
+        64   -> copy_data_buffer
+        64   -> getNborTable
+        64   -> init_data_struct
+        64   -> set_16
+        64   -> set_8
+        64   -> set_string
+      16   test_app_thread_post_event
+        16   -> l3_process_post
+       0   test_app_thread_process_event_handler
+       8   test_app_thread_start
+         8   -> l3_process_start
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_10
+       4  ??DataTable6_11
+       4  ??DataTable6_12
+       4  ??DataTable6_13
+       4  ??DataTable6_14
+       4  ??DataTable6_15
+       4  ??DataTable6_16
+       4  ??DataTable6_17
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+      24  ?_0
+       4  ?_1
+       8  ?_2
+       4  ?_3
+      40  addOctetString
+     216  appendNbor
+       8  count
+       2  frameCount
+     108  getNborTable
+      20  k_init_test_app
+      32  k_start_test_app
+      12  m_ds_buff
+     500  m_ds_data
+      48  nbor_list
+      16  null_buff
+      48  oneSecTimerIns
+     212  oneSecTimer_cb
+      64  process_thread_test_app_process
+     582  send_meter_plus_info_data
+      12  test_app_process
+      22  test_app_thread_post_event
+      28  test_app_thread_process_event_handler
+      14  test_app_thread_start
+
+ 
+   634 bytes in section .bss
+    12 bytes in section .data
+    40 bytes in section .rodata
+ 1'410 bytes in section .text
+ 
+ 1'410 bytes of CODE  memory
+    40 bytes of CONST memory
+   646 bytes of DATA  memory
+
+Errors: none
+Warnings: 3

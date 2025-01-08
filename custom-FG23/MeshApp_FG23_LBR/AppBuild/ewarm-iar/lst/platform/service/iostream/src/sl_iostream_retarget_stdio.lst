@@ -1,0 +1,736 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         30/Apr/2024  13:12:19
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\iostream\src\sl_iostream_retarget_stdio.c
+#    Command line      =
+#        -f
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\service\iostream\src\sl_iostream_retarget_stdio.lst.rsp
+#        (D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\iostream\src\sl_iostream_retarget_stdio.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\service\iostream\src
+#        --diag_suppress Pa050 -o
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\iostream\src
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\iostream\src\sl_iostream_retarget_stdio.o.d
+#    Locale            =  C
+#    List file         =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\service\iostream\src\sl_iostream_retarget_stdio.lst
+#    Object file       =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\iostream\src\sl_iostream_retarget_stdio.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\iostream\src\sl_iostream_retarget_stdio.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Provide stdio retargeting for all supported toolchains.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_iostream.h"
+     32          #include "sl_status.h"
+     33          
+     34          #if !defined(__CROSSWORKS_ARM) && defined(__GNUC__)
+     35          
+     36          #include <sys/stat.h>
+     37          #include <stddef.h>
+     38          #include "em_device.h"
+     39          #include "sl_assert.h"
+     40          
+     41          int _close(int file);
+     42          void _exit(int status);
+     43          int _fstat(int file, struct stat *st);
+     44          int _getpid(void);
+     45          int _isatty(int file);
+     46          int _kill(int pid, int sig);
+     47          int _lseek(int file, int ptr, int dir);
+     48          int _read(int file, char *ptr, int len);
+     49          int _write(int file, const char *ptr, int len);
+     50          
+     51          /**************************************************************************//**
+     52           * Close a file.
+     53           *
+     54           * @param[in] file  File you want to close.
+     55           *
+     56           * @return  Returns 0 when the file is closed.
+     57           *****************************************************************************/
+     58          int _close(int file)
+     59          {
+     60            (void) file;
+     61            return 0;
+     62          }
+     63          
+     64          /**************************************************************************//**
+     65           * Exit the program.
+     66           *
+     67           * @param[in] status The value to return to the parent process as the
+     68           *            exit status (not used).
+     69           *****************************************************************************/
+     70          void _exit(int status)
+     71          {
+     72            (void) status;
+     73            while (1) {
+     74            }                 // Hang here forever...
+     75          }
+     76          
+     77          /**************************************************************************//**
+     78           * Status of an open file.
+     79           *
+     80           * @param[in] file  Check status for this file.
+     81           *
+     82           * @param[in] st    Status information.
+     83           *
+     84           * @return  Returns 0 when st_mode is set to character special.
+     85           *****************************************************************************/
+     86          int _fstat(int file, struct stat *st)
+     87          {
+     88            (void) file;
+     89            st->st_mode = S_IFCHR;
+     90            return 0;
+     91          }
+     92          
+     93          /**************************************************************************//**
+     94           * Get process ID.
+     95           *
+     96           * @return  Return 1 when not implemented.
+     97           *****************************************************************************/
+     98          int _getpid(void)
+     99          {
+    100            return 1;
+    101          }
+    102          
+    103          /**************************************************************************//**
+    104           * Query whether output stream is a terminal.
+    105           *
+    106           * @param[in] file  Descriptor for the file.
+    107           *
+    108           * @return  Returns 1 when query is done.
+    109           *****************************************************************************/
+    110          int _isatty(int file)
+    111          {
+    112            (void) file;
+    113            return 1;
+    114          }
+    115          
+    116          /**************************************************************************//**
+    117           * Send signal to process.
+    118           *
+    119           * @param[in] pid Process id (not used).
+    120           *
+    121           * @param[in] sig Signal to send (not used).
+    122           *****************************************************************************/
+    123          int _kill(int pid, int sig)
+    124          {
+    125            (void)pid;
+    126            (void)sig;
+    127            return -1;
+    128          }
+    129          
+    130          /**************************************************************************//**
+    131           * Set position in a file.
+    132           *
+    133           * @param[in] file  Descriptor for the file.
+    134           *
+    135           * @param[in] ptr   Poiter to the argument offset.
+    136           *
+    137           * @param[in] dir   Directory whence.
+    138           *
+    139           * @return  Returns 0 when position is set.
+    140           *****************************************************************************/
+    141          int _lseek(int file, int ptr, int dir)
+    142          {
+    143            (void) file;
+    144            (void) ptr;
+    145            (void) dir;
+    146            return 0;
+    147          }
+    148          
+    149          /**************************************************************************//**
+    150           * Read from a file.
+    151           *
+    152           * @param[in] file  Descriptor for the file you want to read from.
+    153           *
+    154           * @param[in] ptr   Pointer to the chacaters that are beeing read.
+    155           *
+    156           * @param[in] len   Number of characters to be read.
+    157           *
+    158           * @return  Number of characters that have been read.
+    159           *****************************************************************************/
+    160          int _read(int file, char *ptr, int len)
+    161          {
+    162            size_t bytes_read = 0;
+    163          
+    164            (void)file;
+    165            sl_iostream_read(SL_IOSTREAM_STDIN, ptr, (size_t)len, &bytes_read);
+    166          
+    167            if (bytes_read == 0) {
+    168              return -1;
+    169            }
+    170          
+    171            return (int)bytes_read;
+    172          }
+    173          
+    174          /**************************************************************************//**
+    175           * Write to a file.
+    176           *
+    177           * @param[in] file  Descriptor for the file you want to write to.
+    178           *
+    179           * @param[in] ptr   Pointer to the text you want to write
+    180           *
+    181           * @param[in] len   Number of characters to be written.
+    182           *
+    183           * @return  Number of characters that have been written.
+    184           *****************************************************************************/
+    185          int _write(int file, const char *ptr, int len)
+    186          {
+    187            sl_status_t status;
+    188          
+    189            (void)file;
+    190            status = sl_iostream_write(SL_IOSTREAM_STDOUT, ptr, (size_t)len);
+    191            EFM_ASSERT(status == SL_STATUS_OK);
+    192          
+    193            return len;
+    194          }
+    195          
+    196          #endif /* !defined( __CROSSWORKS_ARM ) && defined( __GNUC__ ) */
+    197          
+    198          #if defined(__ICCARM__)
+    199          /*******************
+    200           *
+    201           * Copyright 1998-2003 IAR Systems.  All rights reserved.
+    202           *
+    203           * $Revision: 38614 $
+    204           *
+    205           * This is a template implementation of the "__write" function used by
+    206           * the standard library.  Replace it with a system-specific
+    207           * implementation.
+    208           *
+    209           * The "__write" function should output "size" number of bytes from
+    210           * "buffer" in some application-specific way.  It should return the
+    211           * number of characters written, or _LLIO_ERROR on failure.
+    212           *
+    213           * If "buffer" is zero then __write should perform flushing of
+    214           * internal buffers, if any.  In this case "handle" can be -1 to
+    215           * indicate that all handles should be flushed.
+    216           *
+    217           * The template implementation below assumes that the application
+    218           * provides the function "MyLowLevelPutchar".  It should return the
+    219           * character written, or -1 on failure.
+    220           *
+    221           ********************/
+    222          
+    223          #include <yfuns.h>
+    224          #include <stdint.h>
+    225          #include "sl_common.h"
+    226          
+    227          _STD_BEGIN
+    228          
+    229          /**************************************************************************//**
+    230           * Transmit buffer to IOStream
+    231           *
+    232           * @param buffer  Array of characters to send
+    233           *
+    234           * @param nbytes  Number of bytes to transmit
+    235           *
+    236           * @return Number of bytes sent
+    237           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    238          static int TxBuf(uint8_t *buffer, int nbytes)
+    239          {
+   \                     TxBuf: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    240            sl_status_t status;
+    241          
+    242            status = sl_iostream_write(SL_IOSTREAM_STDOUT, buffer, nbytes);
+   \        0x6   0x002A             MOVS     R2,R5
+   \        0x8   0x0021             MOVS     R1,R4
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0x.... 0x....      BL       sl_iostream_write
+   \       0x10   0x0001             MOVS     R1,R0
+    243            EFM_ASSERT(status == SL_STATUS_OK);
+   \       0x12   0x2900             CMP      R1,#+0
+   \       0x14   0xD101             BNE.N    ??TxBuf_0
+   \       0x16   0x2001             MOVS     R0,#+1
+   \       0x18   0xE000             B.N      ??TxBuf_1
+   \                     ??TxBuf_0: (+1)
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \                     ??TxBuf_1: (+1)
+   \       0x1C   0xB2C0             UXTB     R0,R0
+    244          
+    245            return nbytes;
+   \       0x1E   0x0028             MOVS     R0,R5
+   \       0x20   0xBD32             POP      {R1,R4,R5,PC}
+    246          }
+    247          
+    248          /**************************************************************************//**
+    249           * Write to.
+    250           *
+    251           * @param[in] handle  Handle
+    252           *
+    253           * @param[in] buffer  Pointer to the buffer you want to write
+    254           *
+    255           * @param[in] size    Number of characters to be written.
+    256           *
+    257           * @return  Number of characters that have been written.
+    258           *
+    259           * @note  If the __write implementation uses internal buffering, uncomment
+    260           *        the following line to ensure that we are called with "buffer" as 0
+    261           *        (i.e. flush) when the application terminates.
+    262           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    263          size_t __write(int handle, const unsigned char * buffer, size_t size)
+    264          {
+   \                     __write: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    265            // Remove the #if #endif pair to enable the implementation
+    266          
+    267            size_t nChars = 0;
+   \        0x8   0x2700             MOVS     R7,#+0
+    268          
+    269            if (buffer == 0) {
+   \        0xA   0x2C00             CMP      R4,#+0
+   \        0xC   0xD101             BNE.N    ??__write_0
+    270              // This means that we should flush internal buffers.  Since we
+    271              // don't we just return.  (Remember, "handle" == -1 means that all
+    272              // handles should be flushed.)
+    273              return 0;
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0xE010             B.N      ??__write_1
+    274            }
+    275          
+    276            // This template only writes to "standard out" and "standard err",
+    277            // for all other file handles it returns failure.
+    278            if (handle != _LLIO_STDOUT && handle != _LLIO_STDERR) {
+   \                     ??__write_0: (+1)
+   \       0x12   0x2D01             CMP      R5,#+1
+   \       0x14   0xD004             BEQ.N    ??__write_2
+   \       0x16   0x2D02             CMP      R5,#+2
+   \       0x18   0xD002             BEQ.N    ??__write_2
+    279              return _LLIO_ERROR;
+   \       0x1A   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \       0x1E   0xE009             B.N      ??__write_1
+    280            }
+    281          
+    282            if (TxBuf((uint8_t *) buffer, size) != size) {
+   \                     ??__write_2: (+1)
+   \       0x20   0x0031             MOVS     R1,R6
+   \       0x22   0x0020             MOVS     R0,R4
+   \       0x24   0x.... 0x....      BL       TxBuf
+   \       0x28   0x42B0             CMP      R0,R6
+   \       0x2A   0xD002             BEQ.N    ??__write_3
+    283              return _LLIO_ERROR;
+   \       0x2C   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \       0x30   0xE000             B.N      ??__write_1
+    284            } else {
+    285              nChars = size;
+   \                     ??__write_3: (+1)
+   \       0x32   0x0030             MOVS     R0,R6
+    286            }
+    287          
+    288            return nChars;
+   \                     ??__write_1: (+1)
+   \       0x34   0xBDF2             POP      {R1,R4-R7,PC}
+    289          }
+    290          
+    291          /**************************************************************************//**
+    292           * Read from.
+    293           *
+    294           * @param[in] handle  Handle
+    295           *
+    296           * @param[in] buffer   Pointer to the characters that have been read.
+    297           *
+    298           * @return  Number of characters that have been read.
+    299           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    300          size_t __read(int handle, unsigned char * buffer, size_t size)
+    301          {
+   \                     __read: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    302            size_t bytes_read = 0;
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0x9000             STR      R0,[SP, #+0]
+    303          
+    304            // This template only reads from "standard in", for all other file
+    305            // handles it returns failure.
+    306            if (handle != _LLIO_STDIN) {
+   \        0xC   0x2C00             CMP      R4,#+0
+   \        0xE   0xD002             BEQ.N    ??__read_0
+    307              return _LLIO_ERROR;
+   \       0x10   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \       0x14   0xE00C             B.N      ??__read_1
+    308            }
+    309          
+    310            sl_iostream_read(SL_IOSTREAM_STDIN, buffer, size, &bytes_read);
+   \                     ??__read_0: (+1)
+   \       0x16   0x466B             MOV      R3,SP
+   \       0x18   0x0032             MOVS     R2,R6
+   \       0x1A   0x0029             MOVS     R1,R5
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \       0x1E   0x.... 0x....      BL       sl_iostream_read
+    311            if (bytes_read == 0) {
+   \       0x22   0x9800             LDR      R0,[SP, #+0]
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD102             BNE.N    ??__read_2
+    312              return -1;
+   \       0x28   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \       0x2C   0xE000             B.N      ??__read_1
+    313            }
+    314          
+    315            return bytes_read;
+   \                     ??__read_2: (+1)
+   \       0x2E   0x9800             LDR      R0,[SP, #+0]
+   \                     ??__read_1: (+1)
+   \       0x30   0xBD76             POP      {R1,R2,R4-R6,PC}
+    316          }
+    317          
+    318          _STD_END
+    319          
+    320          #endif /* defined( __ICCARM__ ) */
+    321          
+    322          #if defined(__CROSSWORKS_ARM)
+    323          
+    324          /**************************************************************************//**
+    325           * Write a character.
+    326           *
+    327           * @param[in] ch  character
+    328           *
+    329           * @return  1
+    330           *****************************************************************************/
+    331          int __putchar(int ch)
+    332          {
+    333            sl_status_t status;
+    334          
+    335            status = sl_iostream_putchar(SL_IOSTREAM_STDOUT, ch);
+    336            EFM_ASSERT(status == SL_STATUS_OK);
+    337          
+    338            return(1);
+    339          }
+    340          
+    341          /**************************************************************************//**
+    342           * Read a character.
+    343           *
+    344           * @return  Character read
+    345           *****************************************************************************/
+    346          int __getchar(void)
+    347          {
+    348            int rtn_val = 0;
+    349            char c;
+    350            sl_status_t status;
+    351          
+    352            status = sl_iostream_getchar(SL_IOSTREAM_STDIN, &c);
+    353            if (status == SL_STATUS_OK) {
+    354              rtn_val = 1;
+    355            } else {
+    356              EFM_ASSERT(status == SL_STATUS_EMPTY);
+    357            }
+    358          
+    359            return(rtn_val);
+    360          }
+    361          
+    362          #endif /* defined( __CROSSWORKS_ARM ) */
+    363          
+    364          #if defined(__CC_ARM)
+    365          /******************************************************************************/
+    366          /* RETARGET.C: 'Retarget' layer for target-dependent low-level functions      */
+    367          /******************************************************************************/
+    368          /* This file is part of the uVision/ARM development tools.                    */
+    369          /* Copyright (c) 2005-2006 Keil Software. All rights reserved.                */
+    370          /* This software may only be used under the terms of a valid, current,        */
+    371          /* end user licence from KEIL for a compatible version of KEIL software       */
+    372          /* development tools. Nothing else gives you the right to use this software.  */
+    373          /******************************************************************************/
+    374          
+    375          #include <stdio.h>
+    376          
+    377          // #pragma import(__use_no_semihosting_swi)
+    378          
+    379          struct __FILE{
+    380            int handle;
+    381          };
+    382          
+    383          //Standard output stream
+    384          FILE __stdout;
+    385          
+    386          /**************************************************************************//**
+    387           * Writes character to file
+    388           *
+    389           * @param[in] f   File
+    390           *
+    391           * @param[in] ch  Character
+    392           *
+    393           * @return  Written character
+    394           *****************************************************************************/
+    395          int fputc(int ch, FILE *f)
+    396          {
+    397            sl_status_t status;
+    398          
+    399            status = sl_iostream_putchar(SL_IOSTREAM_STDOUT, ch);
+    400            EFM_ASSERT(status == SL_STATUS_OK);
+    401          
+    402            return(1);
+    403          }
+    404          
+    405          /**************************************************************************//**
+    406           * Reads character from file
+    407           *
+    408           * @param[in] f File
+    409           *
+    410           * @return  Character
+    411           *****************************************************************************/
+    412          int fgetc(FILE *f)
+    413          {
+    414            int rtn_val = 0;
+    415            char c;
+    416            sl_status_t status;
+    417          
+    418            status = sl_iostream_getchar(SL_IOSTREAM_STDIN, &c);
+    419            if (status == SL_STATUS_OK) {
+    420              rtn_val = 1;
+    421            } else {
+    422              EFM_ASSERT(status == SL_STATUS_EMPTY);
+    423            }
+    424          
+    425            return((int)c);
+    426          }
+    427          
+    428          /**************************************************************************//**
+    429           * Tests the error indicator for the stream pointed to by file
+    430           *
+    431           * @param[in] f File
+    432           *
+    433           * @return  Returns non-zero if it is set
+    434           *****************************************************************************/
+    435          int ferror(FILE *f)
+    436          {
+    437            // Your implementation of ferror
+    438            return EOF;
+    439          }
+    440          
+    441          /**************************************************************************//**
+    442           * Writes a character to the console
+    443           *
+    444           * @param[in] ch  Input character
+    445           *****************************************************************************/
+    446          void _ttywrch(int ch)
+    447          {
+    448            sl_status_t status;
+    449          
+    450            status = sl_iostream_putchar(SL_IOSTREAM_STDOUT, ch);
+    451            EFM_ASSERT(status == SL_STATUS_OK);
+    452          }
+    453          
+    454          /**************************************************************************//**
+    455           * Library exit function. This function is called if stack overflow occurs.
+    456           *
+    457           * @param[in] return_code Return code
+    458           *****************************************************************************/
+    459          void _sys_exit(int return_code)
+    460          {
+    461            label:  goto label; // endless loop
+    462          }
+    463          #endif /* defined( __CC_ARM ) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   TxBuf
+        16   -> sl_iostream_write
+      24   __read
+        24   -> sl_iostream_read
+      24   __write
+        24   -> TxBuf
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      34  TxBuf
+      50  __read
+      54  __write
+
+ 
+ 138 bytes in section .text
+ 
+ 138 bytes of CODE memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,169 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+%.o	Makefile	/^%.o : %.c $(DEPS) $/;"	t
+AT_CMD_PIPE_Data_Reading	PIPE.c	/^int AT_CMD_PIPE_Data_Reading(void)$/;"	f	typeref:typename:int
+AT_CMD_PIPE_recv	PIPE.h	/^char * AT_CMD_PIPE_recv 	= "\/tmp\/AT_CMD_Daemon";	\/*AT CMD App will send data in this PIPE && /;"	v	typeref:typename:char *
+AT_CMD_PIPE_send	PIPE.h	/^char * AT_CMD_PIPE_send 	= "\/tmp\/Daemon_AT_CMD";	\/*Daemon send data on this PIPE read from Ua/;"	v	typeref:typename:char *
+AT_CMD_fd_recv	PIPE.h	/^	AT_CMD_fd_recv,AT_CMD_fd_send$/;"	v	typeref:typename:int
+AT_CMD_fd_send	PIPE.h	/^	AT_CMD_fd_recv,AT_CMD_fd_send$/;"	v	typeref:typename:int
+AT_CMD_pipe_read_state	Hif.c	/^enum state AT_CMD_pipe_read_state = INIT;$/;"	v	typeref:enum:state
+AT_CMD_pipe_rx_buffer	Hif.h	/^unsigned char AT_CMD_pipe_rx_buffer[2250]={'\\0'};$/;"	v	typeref:typename:unsigned char[2250]
+AT_CMD_pipe_rx_thread	PIPE.c	/^void *AT_CMD_pipe_rx_thread(void *unused)$/;"	f	typeref:typename:void *
+AT_CMD_recv_PIPE_Permission	PIPE.h	/^#define AT_CMD_recv_PIPE_Permission /;"	d
+AT_CMD_send_PIPE_Permission	PIPE.h	/^#define AT_CMD_send_PIPE_Permission /;"	d
+BAUDRATE	Uart.h	/^long BAUDRATE;$/;"	v	typeref:typename:long
+BUF_SIZE	PIPE.c	/^#define BUF_SIZE /;"	d	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -I.$/;"	m
+COMMAND_ID_H_	command_id.h	/^#define COMMAND_ID_H_$/;"	d
+COMMON_H_	common.h	/^#define COMMON_H_$/;"	d
+Create_HIF_Packet_And_send	Hif.c	/^void Create_HIF_Packet_And_send(unsigned char* data, unsigned short  len, char CMDId, char Layer/;"	f	typeref:typename:void
+DEBUG	common.h	/^#define DEBUG	/;"	d
+DEBUG_1	common.h	/^#define DEBUG_1	/;"	d
+DEPS	Makefile	/^DEPS = common.h Hif.h PIPE.h Uart.h UDP_Server.h timestamp.h$/;"	m
+DHCP_LAYER_ID	Hif.h	/^#define DHCP_LAYER_ID	/;"	d
+Generate_Checksum_payload	Hif.c	/^unsigned char Generate_Checksum_payload( unsigned char* data ,int payld_len )$/;"	f	typeref:typename:unsigned char
+HDR	Hif.h	/^	HDR,$/;"	e	enum:state
+HIF_H_	Hif.h	/^#define HIF_H_$/;"	d
+HostAPD	common.h	/^#define HostAPD	/;"	d
+HostAPD_PIPE_Data_Reading	PIPE.c	/^int HostAPD_PIPE_Data_Reading(void)$/;"	f	typeref:typename:int
+HostAPD_PIPE_recv	PIPE.h	/^char * HostAPD_PIPE_recv 	= "\/tmp\/hostAPD_Daemon";	\/*Host APD will send data in this PIPE && /;"	v	typeref:typename:char *
+HostAPD_PIPE_send	PIPE.h	/^char * HostAPD_PIPE_send 	= "\/tmp\/Daemon_hostAPD";	\/*Daemon send data on this PIPE read from /;"	v	typeref:typename:char *
+HostAPD_fd_recv	PIPE.h	/^int HostAPD_fd_recv,HostAPD_fd_send$/;"	v	typeref:typename:int
+HostAPD_fd_send	PIPE.h	/^int HostAPD_fd_recv,HostAPD_fd_send$/;"	v	typeref:typename:int
+HostAPD_pipe_read_state	Hif.c	/^enum state HostAPD_pipe_read_state = INIT;$/;"	v	typeref:enum:state
+HostAPD_pipe_rx_buffer	Hif.h	/^unsigned char HostAPD_pipe_rx_buffer[2250]={'\\0'};$/;"	v	typeref:typename:unsigned char[2250]
+HostAPD_pipe_rx_thread	PIPE.c	/^void	*HostAPD_pipe_rx_thread(void	*unused)$/;"	f	typeref:typename:void *
+HostAPD_recv_PIPE_Permission	PIPE.h	/^#define HostAPD_recv_PIPE_Permission /;"	d
+HostAPD_send_PIPE_Permission	PIPE.h	/^#define HostAPD_send_PIPE_Permission /;"	d
+INIT	Hif.h	/^	INIT,$/;"	e	enum:state
+IPv4	common.h	/^#define IPv4	/;"	d
+IPv6	common.h	/^#define IPv6	/;"	d
+Interface	Uart_for_ARM_final.c	/^char	*Interface;$/;"	v	typeref:typename:char *
+LIBS	Makefile	/^LIBS = -lpthread$/;"	m
+OBJ	Makefile	/^OBJ = Uart_for_ARM_final.o Hif.o PIPE.o Uart.o UDP_Server.o timestamp.o$/;"	m
+ONE_ARG	common.h	/^#define ONE_ARG	/;"	d
+OWN_IP_ADDRESS	UDP_Server.c	/^#define OWN_IP_ADDRESS /;"	d	file:
+PIPE_H_	PIPE.h	/^#define PIPE_H_$/;"	d
+PIPE_initialisation	PIPE.c	/^int PIPE_initialisation(void)$/;"	f	typeref:typename:int
+PORT_NO	UDP_Server.h	/^#define PORT_NO	/;"	d
+PORT_NO_RX	DHCP_client.h	/^#define PORT_NO_RX	/;"	d
+PORT_NO_TX	DHCP_client.h	/^#define PORT_NO_TX	/;"	d
+Prev_state	Hif.c	/^enum SS_state Prev_state = STOP;$/;"	v	typeref:enum:SS_state
+RADIUS_CLIENT_H_	DHCP_client.h	/^#define RADIUS_CLIENT_H_$/;"	d
+REST_LAYER_ID	Hif.h	/^#define REST_LAYER_ID	/;"	d
+RX_DATA	Hif.h	/^	RX_DATA$/;"	e	enum:state
+Radius_UDP_Data_Reading	DHCP_client.c	/^int Radius_UDP_Data_Reading (void)$/;"	f	typeref:typename:int
+Radius_UDP_rx_thread	DHCP_client.c	/^void *Radius_UDP_rx_thread(void	*unused)$/;"	f	typeref:typename:void *
+Radius_addr_size	DHCP_client.h	/^socklen_t Radius_addr_size;$/;"	v	typeref:typename:socklen_t
+Radius_rx_client_addr_size	DHCP_client.h	/^socklen_t Radius_tx_addr_size, Radius_rx_client_addr_size;$/;"	v	typeref:typename:socklen_t
+Radius_tx_addr_size	DHCP_client.h	/^socklen_t Radius_tx_addr_size, Radius_rx_client_addr_size;$/;"	v	typeref:typename:socklen_t
+Radius_udpSocket	DHCP_client.h	/^int Radius_udpSocket = 0, Tx_Radius_nBytes = 0, Rx_Radius_nBytes = 0;$/;"	v	typeref:typename:int
+Radius_udpSocket_Rx	DHCP_client.h	/^int Radius_udpSocket_Rx = 0, Rx_Radius_nBytes = 0;$/;"	v	typeref:typename:int
+Radius_udpSocket_Tx	DHCP_client.h	/^int Radius_udpSocket_Tx = 0, Tx_Radius_nBytes = 0;$/;"	v	typeref:typename:int
+Radius_udp_buffer	DHCP_client.h	/^unsigned char Radius_udp_buffer[256]={'\\0'};$/;"	v	typeref:typename:unsigned char[256]
+RestS_cmd_id	Hif.h	/^unsigned char cmd_id,udp_cmd_id,RestS_cmd_id,layer_id,host_cmd_id;$/;"	v	typeref:typename:unsigned char
+RestServer_PIPE_recv	PIPE.h	/^char * RestServer_PIPE_recv = "\/tmp\/RestServer_Daemon";	\/*Rest Server will send data in this /;"	v	typeref:typename:char *
+RestServer_PIPE_send	PIPE.h	/^char * RestServer_PIPE_send = "\/tmp\/Daemon_RestServer";	\/*Daemon send data on this PIPE read /;"	v	typeref:typename:char *
+RestServer_fd_recv	PIPE.h	/^		RestServer_fd_recv,RestServer_fd_send$/;"	v	typeref:typename:int
+RestServer_fd_send	PIPE.h	/^		RestServer_fd_recv,RestServer_fd_send$/;"	v	typeref:typename:int
+RestServer_recv_PIPE_Permission	PIPE.h	/^#define RestServer_recv_PIPE_Permission /;"	d
+RestServer_send_PIPE_Permission	PIPE.h	/^#define RestServer_send_PIPE_Permission /;"	d
+Rest_Server	common.h	/^#define Rest_Server	/;"	d
+Rest_Server_PIPE_Data_Reading	PIPE.c	/^int Rest_Server_PIPE_Data_Reading(void)$/;"	f	typeref:typename:int
+Rest_Server_pipe_read_state	Hif.c	/^enum state Rest_Server_pipe_read_state = INIT;$/;"	v	typeref:enum:state
+Rest_Server_pipe_rx_buffer	Hif.h	/^unsigned char Rest_Server_pipe_rx_buffer[2250]={'\\0'};$/;"	v	typeref:typename:unsigned char[2250]
+Rest_Server_pipe_rx_thread	PIPE.c	/^void *Rest_Server_pipe_rx_thread(void *unused)$/;"	f	typeref:typename:void *
+Rx_Radius_clientAddr	DHCP_client.h	/^struct sockaddr_in Rx_Radius_serverAddr, Rx_Radius_clientAddr;$/;"	v	typeref:struct:sockaddr_in
+Rx_Radius_nBytes	DHCP_client.h	/^int Radius_udpSocket = 0, Tx_Radius_nBytes = 0, Rx_Radius_nBytes = 0;$/;"	v	typeref:typename:int
+Rx_Radius_nBytes	DHCP_client.h	/^int Radius_udpSocket_Rx = 0, Rx_Radius_nBytes = 0;$/;"	v	typeref:typename:int
+Rx_Radius_serverAddr	DHCP_client.h	/^struct sockaddr_in Rx_Radius_serverAddr, Rx_Radius_clientAddr;$/;"	v	typeref:struct:sockaddr_in
+SS_state	Hif.h	/^enum SS_state{$/;"	g
+START	Hif.h	/^	START$/;"	e	enum:SS_state
+STOP	Hif.h	/^	STOP,$/;"	e	enum:SS_state
+STV_LAYER_ID	Hif.h	/^#define STV_LAYER_ID	/;"	d
+Stack_Validation	common.h	/^#define Stack_Validation	/;"	d
+TIMESTAMP_H_	timestamp.h	/^#define TIMESTAMP_H_$/;"	d
+Tx_Radius_clientAddr	DHCP_client.h	/^struct sockaddr_in Tx_Radius_serverAddr, Tx_Radius_clientAddr;$/;"	v	typeref:struct:sockaddr_in
+Tx_Radius_nBytes	DHCP_client.h	/^int Radius_udpSocket = 0, Tx_Radius_nBytes = 0, Rx_Radius_nBytes = 0;$/;"	v	typeref:typename:int
+Tx_Radius_nBytes	DHCP_client.h	/^int Radius_udpSocket_Tx = 0, Tx_Radius_nBytes = 0;$/;"	v	typeref:typename:int
+Tx_Radius_serverAddr	DHCP_client.h	/^struct sockaddr_in Tx_Radius_serverAddr, Tx_Radius_clientAddr;$/;"	v	typeref:struct:sockaddr_in
+UART_Data_Reading	Uart.c	/^int UART_Data_Reading (void)$/;"	f	typeref:typename:int
+UART_H_	Uart.h	/^#define UART_H_$/;"	d
+UDP_Data_Reading	UDP_Server.c	/^int UDP_Data_Reading(void)$/;"	f	typeref:typename:int
+UDP_SERVER_H_	UDP_Server.h	/^#define UDP_SERVER_H_$/;"	d
+UDP_read_state	Hif.c	/^enum state UDP_read_state = INIT;$/;"	v	typeref:enum:state
+UDP_rx_buffer	Hif.h	/^unsigned char UDP_rx_buffer[2250]={'\\0'};$/;"	v	typeref:typename:unsigned char[2250]
+UDP_rx_thread	UDP_Server.c	/^void	*UDP_rx_thread(void	*unused)$/;"	f	typeref:typename:void *
+_AT_CMD	common.h	/^#define _AT_CMD	/;"	d
+_DHCPv6	common.h	/^#define _DHCPv6	/;"	d
+_Radius_Tx_udp_init	DHCP_client.c	/^int _Radius_Tx_udp_init(void)$/;"	f	typeref:typename:int
+_Radius_clientAddr	DHCP_client.h	/^struct sockaddr_in6 _Radius_serverAddr, _Radius_clientAddr;$/;"	v	typeref:struct:sockaddr_in6
+_Radius_serverAddr	DHCP_client.h	/^struct sockaddr_in6 _Radius_serverAddr, _Radius_clientAddr;$/;"	v	typeref:struct:sockaddr_in6
+_RestServer	common.h	/^#define	_RestServer	/;"	d
+_Stack_Validation	common.h	/^#define _Stack_Validation	/;"	d
+addr_size	UDP_Server.h	/^socklen_t addr_size, client_addr_size;$/;"	v	typeref:typename:socklen_t
+check_hostAPD_state	Hif.c	/^void check_hostAPD_state(unsigned char current_state)$/;"	f	typeref:typename:void
+clean	Makefile	/^clean :$/;"	t
+clientAddr	UDP_Server.h	/^struct sockaddr_in serverAddr, clientAddr;$/;"	v	typeref:struct:sockaddr_in
+client_addr_size	UDP_Server.h	/^socklen_t addr_size, client_addr_size;$/;"	v	typeref:typename:socklen_t
+cmd_id	Hif.h	/^unsigned char cmd_id,udp_cmd_id,RestS_cmd_id,layer_id,host_cmd_id;$/;"	v	typeref:typename:unsigned char
+cmd_id	command_id.h	/^typedef struct cmd_id$/;"	s
+cmd_id_t	command_id.h	/^}cmd_id_t;$/;"	t	typeref:struct:cmd_id
+cmd_info	command_id.h	/^	char *cmd_info; $/;"	m	struct:cmd_id	typeref:typename:char *
+cmdid	command_id.h	/^	unsigned int cmdid;$/;"	m	struct:cmd_id	typeref:typename:unsigned int
+command_id	command_id.h	/^static  cmd_id_t command_id[] = {$/;"	v	typeref:typename:cmd_id_t[]
+creat_PIPE	PIPE.c	/^int creat_PIPE(int 	*fd,char	*PIPE_Path,char	*file_permission)$/;"	f	typeref:typename:int
+get_baud	Uart.c	/^int get_baud(int baud)$/;"	f	typeref:typename:int
+get_timestamp	timestamp.c	/^void get_timestamp(char *timestamp) {$/;"	f	typeref:typename:void
+host_cmd_id	Hif.h	/^unsigned char cmd_id,udp_cmd_id,RestS_cmd_id,layer_id,host_cmd_id;$/;"	v	typeref:typename:unsigned char
+i	UDP_Server.h	/^int i=0;$/;"	v	typeref:typename:int
+layer_id	Hif.h	/^unsigned char cmd_id,udp_cmd_id,RestS_cmd_id,layer_id,host_cmd_id;$/;"	v	typeref:typename:unsigned char
+len	UDP_Server.h	/^int len;$/;"	v	typeref:typename:int
+main	Uart_for_ARM_final.c	/^int main(int argc, char	*argv[]) {$/;"	f	typeref:typename:int
+nBytes	UDP_Server.h	/^int udpSocket = 0, nBytes = 0;$/;"	v	typeref:typename:int
+newtio	Uart.h	/^struct termios newtio; \/\/These are the new serial port parameters$/;"	v	typeref:struct:termios
+oldtio	Uart.h	/^struct termios oldtio; \/\/Just for saving old serail port settings$/;"	v	typeref:struct:termios
+print_command_info	Hif.c	/^static void print_command_info(unsigned char cmdid, char *time)$/;"	f	typeref:typename:void	file:
+process_AT_CMD_pipe_byte	Hif.c	/^int process_AT_CMD_pipe_byte(unsigned char at_rx_char)$/;"	f	typeref:typename:int
+process_HostAPD_pipe_byte	Hif.c	/^int process_HostAPD_pipe_byte(unsigned char h_rx_char)$/;"	f	typeref:typename:int
+process_Rest_Server_pipe_byte	Hif.c	/^int process_Rest_Server_pipe_byte(unsigned char rs_rx_char)$/;"	f	typeref:typename:int
+process_UDP_rx_byte	Hif.c	/^int process_UDP_rx_byte(unsigned char udp_rx_char,char *timestamp)$/;"	f	typeref:typename:int
+process_uart_byte	Hif.c	/^int process_uart_byte(unsigned char rx_char, char *timestamp)$/;"	f	typeref:typename:int
+restore_old_port_settings	Uart.c	/^	void restore_old_port_settings(void)$/;"	f	typeref:typename:void
+rx_count	Hif.h	/^int rx_count,tx_count;$/;"	v	typeref:typename:int
+send_2_udp_client	UDP_Server.c	/^int send_2_udp_client(unsigned char *write_bufer,int length)$/;"	f	typeref:typename:int
+send_to_dhcp_server	DHCP_client.c	/^int send_to_dhcp_server(unsigned char *write_bufer,int length)$/;"	f	typeref:typename:int
+serverAddr	UDP_Server.h	/^struct sockaddr_in serverAddr, clientAddr;$/;"	v	typeref:struct:sockaddr_in
+serverStorage	DHCP_client.h	/^struct sockaddr_storage serverStorage;$/;"	v	typeref:struct:sockaddr_storage
+serverStorage	UDP_Server.h	/^struct sockaddr_storage serverStorage;$/;"	v	typeref:struct:sockaddr_storage
+start_AT_CMD_pipe_read_thread	PIPE.c	/^int start_AT_CMD_pipe_read_thread(void)$/;"	f	typeref:typename:int
+start_HostAPD_pipe_read_thread	PIPE.c	/^int start_HostAPD_pipe_read_thread(void)$/;"	f	typeref:typename:int
+start_Radius_UDP_read_thread	DHCP_client.c	/^int start_Radius_UDP_read_thread(void)$/;"	f	typeref:typename:int
+start_Rest_Server_read_thread	PIPE.c	/^int start_Rest_Server_read_thread(void)$/;"	f	typeref:typename:int
+start_UDP_read_thread	UDP_Server.c	/^int start_UDP_read_thread(void)$/;"	f	typeref:typename:int
+start_uart_rx_thread	Uart.c	/^	int start_uart_rx_thread(void)$/;"	f	typeref:typename:int
+state	Hif.h	/^enum state{$/;"	g
+t	UDP_Server.c	/^time_t t;   \/\/ not a primitive datatype$/;"	v	typeref:typename:time_t
+tx_count	Hif.h	/^int rx_count,tx_count;$/;"	v	typeref:typename:int
+uart_deamon	Makefile	/^uart_deamon : $(OBJ)$/;"	t
+uart_file_discripter	Uart.h	/^int uart_file_discripter = -1;$/;"	v	typeref:typename:int
+uart_initialisation	Uart.c	/^int uart_initialisation(char	*Port)$/;"	f	typeref:typename:int
+uart_read_state	Hif.c	/^enum state uart_read_state = INIT;$/;"	v	typeref:enum:state
+uart_rx_buffer	Hif.h	/^unsigned char uart_rx_buffer[2250]={'\\0'};$/;"	v	typeref:typename:unsigned char[2250]
+uart_rx_thread	Uart.c	/^	void *uart_rx_thread( void *unused)$/;"	f	typeref:typename:void *
+udpSocket	UDP_Server.h	/^int udpSocket = 0, nBytes = 0;$/;"	v	typeref:typename:int
+udp_buffer	UDP_Server.h	/^unsigned char udp_buffer[2250]={'\\0'};$/;"	v	typeref:typename:unsigned char[2250]
+udp_cmd_id	Hif.h	/^unsigned char cmd_id,udp_cmd_id,RestS_cmd_id,layer_id,host_cmd_id;$/;"	v	typeref:typename:unsigned char
+udp_init	UDP_Server.c	/^int udp_init(void)$/;"	f	typeref:typename:int
+write_2_AT_CMD_PIPE	PIPE.c	/^int write_2_AT_CMD_PIPE(unsigned char *write_bufer,int length)$/;"	f	typeref:typename:int
+write_2_HostAPD_PIPE	PIPE.c	/^int write_2_HostAPD_PIPE(unsigned char *write_bufer,int length)$/;"	f	typeref:typename:int
+write_2_Rest_Server_PIPE	PIPE.c	/^int write_2_Rest_Server_PIPE(unsigned char *write_bufer,int length)$/;"	f	typeref:typename:int
+write_2_Uart	Uart.c	/^int write_2_Uart(unsigned char *write_bufer,int length)$/;"	f	typeref:typename:int

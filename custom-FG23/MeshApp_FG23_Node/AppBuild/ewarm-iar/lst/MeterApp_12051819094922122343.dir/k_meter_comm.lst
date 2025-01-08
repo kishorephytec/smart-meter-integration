@@ -1,0 +1,1205 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         24/Dec/2024  14:55:17
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\MeterApp\src\k_meter_comm.c
+#    Command line                 =
+#        -f
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir\k_meter_comm.o.rsp
+#        (C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\MeterApp\src\k_meter_comm.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\MeterApp_12051819094922122343.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\.\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\rpl\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\cpu\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\FLASH\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir\k_meter_comm.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\MeterApp_12051819094922122343.dir\k_meter_comm.lst
+#    Object file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir\k_meter_comm.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\MeterApp\src\k_meter_comm.c
+      1          
+      2          #include "common.h"
+      3          #include "queue_latest.h"
+      4          #include "buff_mgmt.h"
+      5          #include "list_latest.h"
+      6          #include "queue_latest.h"
+      7          #include "buffer_service.h"
+      8          #include "l3_configuration.h"
+      9          #include "l3_timer_utility.h"
+     10          #include "hw_tmr.h"
+     11          #include "sw_timer.h"
+     12          #include "timer_service.h"
+     13          #include "mac_interface_layer.h"
+     14          #include "sm.h"
+     15          #include "ie_element_info.h"
+     16          #include "network-manager.h"
+     17          #include "uart_hal.h"
+     18          #include "uip.h"
+     19          #include "AppUDPprocess.h"
+     20          #include "k_meter_comm.h"
+     21          #include "k_test_app.h" 
+     22          #include "k_data_buffer.h"
+     23          /*******************************************************************/
+     24          
+     25          
+
+   \                                 In section .bss, align 4
+     26          int initialisation_done=0;
+   \                     initialisation_done:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     27          int flag_set=0;
+   \                     flag_set:
+   \        0x0                      DS8 4
+     28          extern uint8_t global_addr_device[16];
+     29          extern uint8_t join_state;
+     30          #define APP_CALLBACK_TIMER  ( 50 )
+     31          
+     32          //Timer declarations
+
+   \                                 In section .bss, align 8
+     33          static struct l3_ctimer meter_uart_timer; 
+   \                     meter_uart_timer:
+   \        0x0                      DS8 48
+     34          static void process_meter_data_cb(void *ptr);
+     35          static void process_meter_and_info_data_cb(void *ptr);
+     36          
+     37          #ifdef DEBUG_INFO_COUNT
+     38          volatile uint16_t send_count=0;
+     39          volatile uint16_t memory_overflow_count=0;
+     40          #endif
+     41          //Extern from Procubed Stack
+     42          extern void mem_rev_cpy(uint8_t* dest, uint8_t* src, uint16_t len );
+     43          extern uint8_t UART_Data_send_udp(uint8_t *buf, uint16_t length);
+     44          
+     45          //Extern from k_test_app
+     46          extern data_struct_t m_ds_buff;
+     47          extern void send_meter_plus_info_data(uint8_t *payload_buff, uint16_t payload_length, data_struct_t *dt);
+     48          extern uint8_t m_ds_data[500]; //Temp buffer TODO Allocate address from bm_alloc()
+     49          //
+
+   \                                 In section .bss, align 4
+     50          uart_dlms_data_t ud_dlms;
+   \                     ud_dlms:
+   \        0x0                      DS8 1'504
+     51          
+     52          //ring buffer to collect meter data
+
+   \                                 In section .bss, align 4
+     53          ring_buff_t r_buff;
+   \                     r_buff:
+   \        0x0                      DS8 3'008
+     54          
+     55          //protos
+     56          static void serial_rx(uint8_t ch);
+     57          static uint8_t increment_read_ptr(ring_buff_t* buff);
+     58          
+
+   \                                 In section .bss, align 4
+     59          uart_dlms_callback_t m_dlms_cb;
+   \                     m_dlms_cb:
+   \        0x0                      DS8 4
+     60          
+     61          //using static allocation
+
+   \                                 In section .bss, align 4
+     62          uint8_t m_rx_data[MAX_UART_DATA_BUFF_SIZE]; 
+   \                     m_rx_data:
+   \        0x0                      DS8 3'000
+
+   \                                 In section .bss, align 2
+     63          uint16_t m_rx_data_len = 0;
+   \                     m_rx_data_len:
+   \        0x0                      DS8 2
+     64          
+     65          //Registers DLMS data rcv event
+
+   \                                 In section .text, align 2, keep-with-next
+     66          void register_dlms_callback(uart_dlms_callback_t cb)
+     67          {
+     68            m_dlms_cb = cb;
+   \                     register_dlms_callback: (+1)
+   \        0x0   0x.... 0x....      LDR.W    R1,??DataTable6
+   \        0x4   0x6008             STR      R0,[R1, #+0]
+     69          }
+   \        0x6   0x4770             BX       LR
+     70          
+     71          //Initializes meter interfacing UART 
+
+   \                                 In section .text, align 2, keep-with-next
+     72          void k_init_meter_comm()
+     73          {
+   \                     k_init_meter_comm: (+1)
+   \        0x0   0xB5E0             PUSH     {R5-R7,LR}
+     74            register_uart0_cb(serial_rx);
+   \        0x2   0x.... 0x....      ADR.W    R0,serial_rx
+   \        0x6   0x.... 0x....      BL       register_uart0_cb
+     75            UART_init();
+   \        0xA   0x.... 0x....      BL       UART_init
+     76            init_data_struct(&m_ds_buff, m_ds_data, sizeof(m_ds_data));
+   \        0xE   0xF44F 0x72FA      MOV      R2,#+500
+   \       0x12   0x.... 0x....      LDR.W    R1,??DataTable6_1
+   \       0x16   0x.... 0x....      LDR.W    R0,??DataTable6_2
+   \       0x1A   0x.... 0x....      BL       init_data_struct
+     77            l3_ctimer_set (&meter_uart_timer, APP_CALLBACK_TIMER, process_meter_data_cb, NULL);
+   \       0x1E   0x2000             MOVS     R0,#+0
+   \       0x20   0x9001             STR      R0,[SP, #+4]
+   \       0x22   0x.... 0x....      ADR.W    R0,process_meter_data_cb
+   \       0x26   0x9000             STR      R0,[SP, #+0]
+   \       0x28   0x2232             MOVS     R2,#+50
+   \       0x2A   0x2300             MOVS     R3,#+0
+   \       0x2C   0x.... 0x....      LDR.W    R0,??DataTable6_3
+   \       0x30   0x.... 0x....      BL       l3_ctimer_set
+     78          }
+   \       0x34   0xBD07             POP      {R0-R2,PC}
+     79          
+     80          //Initialize info + meter interfacing UART
+
+   \                                 In section .text, align 2, keep-with-next
+     81          void k_init_info_plus_meter_comm()
+     82          {
+   \                     k_init_info_plus_meter_comm: (+1)
+   \        0x0   0xB5E0             PUSH     {R5-R7,LR}
+     83            register_uart0_cb(serial_rx);
+   \        0x2   0x.... 0x....      ADR.W    R0,serial_rx
+   \        0x6   0x.... 0x....      BL       register_uart0_cb
+     84            UART_init();
+   \        0xA   0x.... 0x....      BL       UART_init
+     85            l3_ctimer_set (&meter_uart_timer, APP_CALLBACK_TIMER, process_meter_and_info_data_cb, NULL);
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0x9001             STR      R0,[SP, #+4]
+   \       0x12   0x.... 0x....      ADR.W    R0,process_meter_and_info_data_cb
+   \       0x16   0x9000             STR      R0,[SP, #+0]
+   \       0x18   0x2232             MOVS     R2,#+50
+   \       0x1A   0x2300             MOVS     R3,#+0
+   \       0x1C   0x.... 0x....      LDR.W    R0,??DataTable6_3
+   \       0x20   0x.... 0x....      BL       l3_ctimer_set
+     86          }
+   \       0x24   0xBD07             POP      {R0-R2,PC}
+     87          
+     88          
+     89          //Interrupt cb meter UART
+
+   \                                 In section .text, align 4, keep-with-next
+     90          static void serial_rx(uint8_t ch)
+     91          {
+   \                     serial_rx: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+     92            r_buff.data[r_buff.data_ptr] = ch;
+   \        0x2   0x.... 0x....      LDR.W    R1,??DataTable6_4
+   \        0x6   0xF8B1 0x2BBA      LDRH     R2,[R1, #+3002]
+   \        0xA   0x5488             STRB     R0,[R1, R2]
+     93            r_buff.data_ptr = (r_buff.data_ptr + 1) % MAX_UART_DATA_BUFF_SIZE;
+   \        0xC   0xF8B1 0x4BBA      LDRH     R4,[R1, #+3002]
+   \       0x10   0x1C64             ADDS     R4,R4,#+1
+   \       0x12   0xF640 0x32B8      MOVW     R2,#+3000
+   \       0x16   0xFB94 0xF3F2      SDIV     R3,R4,R2
+   \       0x1A   0xFB02 0x4413      MLS      R4,R2,R3,R4
+   \       0x1E   0xF8A1 0x4BBA      STRH     R4,[R1, #+3002]
+     94            r_buff.timeout = 0;
+   \       0x22   0x2200             MOVS     R2,#+0
+   \       0x24   0xF8A1 0x2BBE      STRH     R2,[R1, #+3006]
+     95          }
+   \       0x28   0xBC10             POP      {R4}
+   \       0x2A   0x4770             BX       LR
+     96          
+     97          
+     98          // Helper functions for buffer operations
+
+   \                                 In section .text, align 2, keep-with-next
+     99          static uint8_t increment_read_ptr(ring_buff_t* buff) 
+    100          {
+   \                     increment_read_ptr: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    101            
+    102            if (buff->read_ptr == buff->data_ptr)
+   \        0x2   0xF8B1 0x2BBC      LDRH     R2,[R1, #+3004]
+   \        0x6   0xF8B1 0x0BBA      LDRH     R0,[R1, #+3002]
+   \        0xA   0x4282             CMP      R2,R0
+   \        0xC   0xD101             BNE.N    ??increment_read_ptr_0
+    103            {
+    104              return 1; // No data to read
+   \        0xE   0x2001             MOVS     R0,#+1
+   \       0x10   0xE00E             B.N      ??increment_read_ptr_1
+    105            }
+    106            buff->read_ptr++;
+   \                     ??increment_read_ptr_0: (+1)
+   \       0x12   0xF8B1 0x0BBC      LDRH     R0,[R1, #+3004]
+   \       0x16   0x1C40             ADDS     R0,R0,#+1
+   \       0x18   0xF8A1 0x0BBC      STRH     R0,[R1, #+3004]
+    107            if (buff->read_ptr >= MAX_UART_DATA_BUFF_SIZE)
+   \       0x1C   0xF8B1 0x2BBC      LDRH     R2,[R1, #+3004]
+   \       0x20   0xF640 0x30B8      MOVW     R0,#+3000
+   \       0x24   0x4282             CMP      R2,R0
+   \       0x26   0xDB02             BLT.N    ??increment_read_ptr_2
+    108            {
+    109              buff->read_ptr = 0;
+   \       0x28   0x2000             MOVS     R0,#+0
+   \       0x2A   0xF8A1 0x0BBC      STRH     R0,[R1, #+3004]
+    110            }
+    111            return 0;
+   \                     ??increment_read_ptr_2: (+1)
+   \       0x2E   0x2000             MOVS     R0,#+0
+   \                     ??increment_read_ptr_1: (+1)
+   \       0x30   0x4770             BX       LR
+    112          }
+    113          
+    114          //TODO :Anwar add queue
+    115          //Process dlms wrapper data from meter uart. 
+
+   \                                 In section .text, align 2, keep-with-next
+    116          void get_dlms_data( uint8_t *error_code)
+    117          {
+   \                     get_dlms_data: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB097             SUB      SP,SP,#+92
+   \        0x6   0x0004             MOVS     R4,R0
+    118            uint16_t index = 0;
+   \        0x8   0xF05F 0x0900      MOVS     R9,#+0
+    119            uint16_t bytes_to_read = 0;
+   \        0xC   0x2100             MOVS     R1,#+0
+    120            un_data_t un_conversion;
+    121            uint16_t association = 0;
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0xF8AD 0x0006      STRH     R0,[SP, #+6]
+    122            uint16_t temp_data_ptr = r_buff.data_ptr;
+   \       0x14   0x.... 0x....      LDR.W    R7,??DataTable6_4
+   \       0x18   0xF8B7 0x0BBA      LDRH     R0,[R7, #+3002]
+   \       0x1C   0xF8AD 0x0004      STRH     R0,[SP, #+4]
+    123            r_buff.timeout++;
+   \       0x20   0xF8B7 0x0BBE      LDRH     R0,[R7, #+3006]
+   \       0x24   0x1C40             ADDS     R0,R0,#+1
+   \       0x26   0xF8A7 0x0BBE      STRH     R0,[R7, #+3006]
+    124            
+    125            if (temp_data_ptr >= r_buff.read_ptr)
+   \       0x2A   0xF8BD 0x2004      LDRH     R2,[SP, #+4]
+   \       0x2E   0xF8B7 0x0BBC      LDRH     R0,[R7, #+3004]
+   \       0x32   0x4282             CMP      R2,R0
+   \       0x34   0xD306             BCC.N    ??get_dlms_data_0
+    126            {
+    127              bytes_to_read = temp_data_ptr - r_buff.read_ptr;
+   \       0x36   0xF8BD 0xB004      LDRH     R11,[SP, #+4]
+   \       0x3A   0xF8B7 0x0BBC      LDRH     R0,[R7, #+3004]
+   \       0x3E   0xEBBB 0x0B00      SUBS     R11,R11,R0
+   \       0x42   0xE007             B.N      ??get_dlms_data_1
+    128            }
+    129            else
+    130            {
+    131              bytes_to_read = MAX_UART_DATA_BUFF_SIZE + temp_data_ptr - r_buff.read_ptr;
+   \                     ??get_dlms_data_0: (+1)
+   \       0x44   0xF8BD 0xB004      LDRH     R11,[SP, #+4]
+   \       0x48   0xF60B 0x3BB8      ADDW     R11,R11,#+3000
+   \       0x4C   0xF8B7 0x0BBC      LDRH     R0,[R7, #+3004]
+   \       0x50   0xEBBB 0x0B00      SUBS     R11,R11,R0
+    132            }
+    133            // Check for available data
+    134            if (bytes_to_read > 1 && r_buff.timeout > 3) 
+   \                     ??get_dlms_data_1: (+1)
+   \       0x54   0x4658             MOV      R0,R11
+   \       0x56   0xB280             UXTH     R0,R0
+   \       0x58   0x2802             CMP      R0,#+2
+   \       0x5A   0xF2C0 0x8115      BLT.W    ??get_dlms_data_2
+   \       0x5E   0xF8B7 0x0BBE      LDRH     R0,[R7, #+3006]
+   \       0x62   0x2804             CMP      R0,#+4
+   \       0x64   0xF2C0 0x8110      BLT.W    ??get_dlms_data_2
+    135            {
+    136              // Search for packet start
+    137              uint16_t search_ptr = r_buff.read_ptr;
+   \       0x68   0xF8B7 0x5BBC      LDRH     R5,[R7, #+3004]
+    138              while (search_ptr != temp_data_ptr)
+   \                     ??get_dlms_data_3: (+1)
+   \       0x6C   0x0029             MOVS     R1,R5
+   \       0x6E   0xF8BD 0x0004      LDRH     R0,[SP, #+4]
+   \       0x72   0xB289             UXTH     R1,R1
+   \       0x74   0x4281             CMP      R1,R0
+   \       0x76   0xF000 0x8107      BEQ.W    ??get_dlms_data_2
+    139              {
+    140                un_conversion.u8_val[1] = r_buff.data[search_ptr];
+   \       0x7A   0x0028             MOVS     R0,R5
+   \       0x7C   0xB280             UXTH     R0,R0
+   \       0x7E   0x5C38             LDRB     R0,[R7, R0]
+   \       0x80   0xF88D 0x0001      STRB     R0,[SP, #+1]
+    141                un_conversion.u8_val[0] = r_buff.data[(search_ptr + 1) % MAX_UART_DATA_BUFF_SIZE];
+   \       0x84   0x002A             MOVS     R2,R5
+   \       0x86   0xB292             UXTH     R2,R2
+   \       0x88   0x1C52             ADDS     R2,R2,#+1
+   \       0x8A   0xF640 0x30B8      MOVW     R0,#+3000
+   \       0x8E   0xFB92 0xF1F0      SDIV     R1,R2,R0
+   \       0x92   0xFB00 0x2211      MLS      R2,R0,R1,R2
+   \       0x96   0x5CB9             LDRB     R1,[R7, R2]
+   \       0x98   0xF88D 0x1000      STRB     R1,[SP, #+0]
+    142                if (un_conversion.u16_val[0] != VERSION_NUMBER)
+   \       0x9C   0xF8BD 0x1000      LDRH     R1,[SP, #+0]
+   \       0xA0   0x2901             CMP      R1,#+1
+   \       0xA2   0xD005             BEQ.N    ??get_dlms_data_4
+    143                {
+    144                  increment_read_ptr(&r_buff);
+   \       0xA4   0x0038             MOVS     R0,R7
+   \       0xA6   0x.... 0x....      BL       increment_read_ptr
+    145                  *error_code = UART_DLMS_INVALID_DATA;
+   \       0xAA   0x2002             MOVS     R0,#+2
+   \       0xAC   0x7020             STRB     R0,[R4, #+0]
+    146                  return;
+   \       0xAE   0xE0ED             B.N      ??get_dlms_data_5
+    147                }
+    148                if (bytes_to_read < MIN_DLMS_BYTES)
+   \                     ??get_dlms_data_4: (+1)
+   \       0xB0   0x4659             MOV      R1,R11
+   \       0xB2   0xB289             UXTH     R1,R1
+   \       0xB4   0x2908             CMP      R1,#+8
+   \       0xB6   0xDA02             BGE.N    ??get_dlms_data_6
+    149                {
+    150                  // Packet incomplete, wait for more data
+    151                  *error_code = UART_DLMS_INCOMPLETE_DATA;
+   \       0xB8   0x2003             MOVS     R0,#+3
+   \       0xBA   0x7020             STRB     R0,[R4, #+0]
+    152                  return;
+   \       0xBC   0xE0E6             B.N      ??get_dlms_data_5
+    153                }
+    154                search_ptr = r_buff.read_ptr;
+   \                     ??get_dlms_data_6: (+1)
+   \       0xBE   0xF8B7 0x1BBC      LDRH     R1,[R7, #+3004]
+   \       0xC2   0x000D             MOVS     R5,R1
+    155                uint8_t tempBuff[MIN_DLMS_BYTES];
+    156                for (index = 0; index < MIN_DLMS_BYTES; index++)
+   \       0xC4   0x2100             MOVS     R1,#+0
+   \                     ??get_dlms_data_7: (+1)
+   \       0xC6   0x000A             MOVS     R2,R1
+   \       0xC8   0xB292             UXTH     R2,R2
+   \       0xCA   0x2A08             CMP      R2,#+8
+   \       0xCC   0xDA0F             BGE.N    ??get_dlms_data_8
+    157                {
+    158                  tempBuff[index] = r_buff.data[search_ptr++];
+   \       0xCE   0x002A             MOVS     R2,R5
+   \       0xD0   0xB292             UXTH     R2,R2
+   \       0xD2   0x5CBA             LDRB     R2,[R7, R2]
+   \       0xD4   0xAE02             ADD      R6,SP,#+8
+   \       0xD6   0x000B             MOVS     R3,R1
+   \       0xD8   0xB29B             UXTH     R3,R3
+   \       0xDA   0x54F2             STRB     R2,[R6, R3]
+   \       0xDC   0x1C6D             ADDS     R5,R5,#+1
+    159                  if (search_ptr >= MAX_UART_DATA_BUFF_SIZE)
+   \       0xDE   0x002A             MOVS     R2,R5
+   \       0xE0   0xB292             UXTH     R2,R2
+   \       0xE2   0x4282             CMP      R2,R0
+   \       0xE4   0xDB01             BLT.N    ??get_dlms_data_9
+    160                  {
+    161                    search_ptr = 0;
+   \       0xE6   0x2200             MOVS     R2,#+0
+   \       0xE8   0x0015             MOVS     R5,R2
+    162                  }
+    163                }
+   \                     ??get_dlms_data_9: (+1)
+   \       0xEA   0x1C49             ADDS     R1,R1,#+1
+   \       0xEC   0xE7EB             B.N      ??get_dlms_data_7
+    164                index = 2;
+   \                     ??get_dlms_data_8: (+1)
+   \       0xEE   0x2602             MOVS     R6,#+2
+    165                un_conversion.u8_val[1] = tempBuff[index++];
+   \       0xF0   0xA802             ADD      R0,SP,#+8
+   \       0xF2   0x0032             MOVS     R2,R6
+   \       0xF4   0xB292             UXTH     R2,R2
+   \       0xF6   0x5C82             LDRB     R2,[R0, R2]
+   \       0xF8   0xF88D 0x2001      STRB     R2,[SP, #+1]
+   \       0xFC   0x1C76             ADDS     R6,R6,#+1
+    166                un_conversion.u8_val[0] = tempBuff[index++];
+   \       0xFE   0x0032             MOVS     R2,R6
+   \      0x100   0xB292             UXTH     R2,R2
+   \      0x102   0x5C82             LDRB     R2,[R0, R2]
+   \      0x104   0xF88D 0x2000      STRB     R2,[SP, #+0]
+   \      0x108   0x1C76             ADDS     R6,R6,#+1
+    167                if (un_conversion.u16_val[0] != SOURCE_ADDRESS)
+   \      0x10A   0xF8BD 0x2000      LDRH     R2,[SP, #+0]
+   \      0x10E   0x2A01             CMP      R2,#+1
+   \      0x110   0xD005             BEQ.N    ??get_dlms_data_10
+    168                {
+    169                  
+    170                  increment_read_ptr(&r_buff);
+   \      0x112   0x0038             MOVS     R0,R7
+   \      0x114   0x.... 0x....      BL       increment_read_ptr
+    171                  *error_code = UART_DLMS_INVALID_DATA;
+   \      0x118   0x2002             MOVS     R0,#+2
+   \      0x11A   0x7020             STRB     R0,[R4, #+0]
+    172                  return;
+   \      0x11C   0xE0B6             B.N      ??get_dlms_data_5
+    173                }
+    174                un_conversion.u8_val[1] = tempBuff[index++];
+   \                     ??get_dlms_data_10: (+1)
+   \      0x11E   0x0031             MOVS     R1,R6
+   \      0x120   0xB289             UXTH     R1,R1
+   \      0x122   0x5C41             LDRB     R1,[R0, R1]
+   \      0x124   0xF88D 0x1001      STRB     R1,[SP, #+1]
+   \      0x128   0x1C76             ADDS     R6,R6,#+1
+    175                un_conversion.u8_val[0] = tempBuff[index++];
+   \      0x12A   0x0031             MOVS     R1,R6
+   \      0x12C   0xB289             UXTH     R1,R1
+   \      0x12E   0x5C41             LDRB     R1,[R0, R1]
+   \      0x130   0xF88D 0x1000      STRB     R1,[SP, #+0]
+   \      0x134   0x1C76             ADDS     R6,R6,#+1
+    176                
+    177                if ((un_conversion.u16_val[0] != LOWEST_LEVEL_ASSN) &&
+    178                    (un_conversion.u16_val[0] != LOW_LEVEL_ASSN) &&
+    179                      (un_conversion.u16_val[0] != HIGH_LEVEL_ASSN) &&
+    180                        (un_conversion.u16_val[0] != PUSH_ASSOCIATION) &&
+    181                          (un_conversion.u16_val[0] != FW_UPDATE_ASSN))
+   \      0x136   0xF8BD 0x1000      LDRH     R1,[SP, #+0]
+   \      0x13A   0x2910             CMP      R1,#+16
+   \      0x13C   0xD015             BEQ.N    ??get_dlms_data_11
+   \      0x13E   0xF8BD 0x1000      LDRH     R1,[SP, #+0]
+   \      0x142   0x2920             CMP      R1,#+32
+   \      0x144   0xD011             BEQ.N    ??get_dlms_data_11
+   \      0x146   0xF8BD 0x1000      LDRH     R1,[SP, #+0]
+   \      0x14A   0x2930             CMP      R1,#+48
+   \      0x14C   0xD00D             BEQ.N    ??get_dlms_data_11
+   \      0x14E   0xF8BD 0x1000      LDRH     R1,[SP, #+0]
+   \      0x152   0x2940             CMP      R1,#+64
+   \      0x154   0xD009             BEQ.N    ??get_dlms_data_11
+   \      0x156   0xF8BD 0x1000      LDRH     R1,[SP, #+0]
+   \      0x15A   0x2950             CMP      R1,#+80
+   \      0x15C   0xD005             BEQ.N    ??get_dlms_data_11
+    182                {
+    183                  *error_code = UART_DLMS_INVALID_DATA;
+   \      0x15E   0x2002             MOVS     R0,#+2
+   \      0x160   0x7020             STRB     R0,[R4, #+0]
+    184                  increment_read_ptr(&r_buff);
+   \      0x162   0x0038             MOVS     R0,R7
+   \      0x164   0x.... 0x....      BL       increment_read_ptr
+    185                  return;
+   \      0x168   0xE090             B.N      ??get_dlms_data_5
+    186                }
+    187                association = un_conversion.u16_val[0];
+   \                     ??get_dlms_data_11: (+1)
+   \      0x16A   0xF8BD 0x1000      LDRH     R1,[SP, #+0]
+   \      0x16E   0xF8AD 0x1006      STRH     R1,[SP, #+6]
+    188                un_conversion.u8_val[1] = tempBuff[index++];
+   \      0x172   0x0031             MOVS     R1,R6
+   \      0x174   0xB289             UXTH     R1,R1
+   \      0x176   0x5C41             LDRB     R1,[R0, R1]
+   \      0x178   0xF88D 0x1001      STRB     R1,[SP, #+1]
+   \      0x17C   0x1C76             ADDS     R6,R6,#+1
+    189                un_conversion.u8_val[0] = tempBuff[index++];
+   \      0x17E   0x0031             MOVS     R1,R6
+   \      0x180   0xB289             UXTH     R1,R1
+   \      0x182   0x5C40             LDRB     R0,[R0, R1]
+   \      0x184   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \      0x188   0x1C76             ADDS     R6,R6,#+1
+   \      0x18A   0x0030             MOVS     R0,R6
+    190                uint16_t pkt_length = un_conversion.u16_val[0] + MIN_DLMS_BYTES;
+   \      0x18C   0xF8BD 0x6000      LDRH     R6,[SP, #+0]
+   \      0x190   0x3608             ADDS     R6,R6,#+8
+    191                if (bytes_to_read < pkt_length)
+   \      0x192   0x4659             MOV      R1,R11
+   \      0x194   0x0032             MOVS     R2,R6
+   \      0x196   0xB289             UXTH     R1,R1
+   \      0x198   0xB292             UXTH     R2,R2
+   \      0x19A   0x4291             CMP      R1,R2
+   \      0x19C   0xD202             BCS.N    ??get_dlms_data_12
+    192                {
+    193                  // Packet incomplete, wait for more data
+    194                  *error_code = UART_DLMS_INCOMPLETE_DATA;
+   \      0x19E   0x2103             MOVS     R1,#+3
+   \      0x1A0   0x7021             STRB     R1,[R4, #+0]
+    195                  return;
+   \      0x1A2   0xE073             B.N      ??get_dlms_data_5
+    196                }
+    197                //            uart_dlms_data_t ud;
+    198                //            ud = (uart_dlms_data_t*)app_bm_alloc(sizeof(uart_dlms_data_t));
+    199                //            if(ud == NULL)
+    200                //            {          
+    201                //                *error_code = UART_DLMS_MEMEORY_OVERFLOW;
+    202                //		return NULL;
+    203                //            }
+    204                //            ud->data = (uint8_t*)app_bm_alloc(pkt_length);
+    205                //            if (ud->data == NULL)
+    206                //            {
+    207                //                *error_code = UART_DLMS_MEMEORY_OVERFLOW;
+    208                //				return NULL;
+    209                //            }
+    210                ud_dlms.data_len = pkt_length + 1 +16; //1 for 0x07
+   \                     ??get_dlms_data_12: (+1)
+   \      0x1A4   0x.... 0x....      LDR.W    R8,??DataTable6_5
+   \      0x1A8   0xF116 0x0111      ADDS     R1,R6,#+17
+   \      0x1AC   0xF8A8 0x15DC      STRH     R1,[R8, #+1500]
+    211                ud_dlms.association = association;
+   \      0x1B0   0xF8BD 0x1006      LDRH     R1,[SP, #+6]
+   \      0x1B4   0xF8A8 0x15DE      STRH     R1,[R8, #+1502]
+    212                
+    213                ud_dlms.data[0]=0x07;
+   \      0x1B8   0x2107             MOVS     R1,#+7
+   \      0x1BA   0xF888 0x1000      STRB     R1,[R8, #+0]
+    214                      for (int ind = 0; ind < 16; ind++) {
+   \      0x1BE   0x2100             MOVS     R1,#+0
+   \                     ??get_dlms_data_13: (+1)
+   \      0x1C0   0x2910             CMP      R1,#+16
+   \      0x1C2   0xDA06             BGE.N    ??get_dlms_data_14
+    215                  ud_dlms.data[1 + ind] = global_addr_device[ind];  // Fill IP address starting from index 1
+   \      0x1C4   0x....             LDR.N    R2,??DataTable6_6
+   \      0x1C6   0x5C52             LDRB     R2,[R2, R1]
+   \      0x1C8   0xEB08 0x0301      ADD      R3,R8,R1
+   \      0x1CC   0x705A             STRB     R2,[R3, #+1]
+    216              }
+   \      0x1CE   0x1C49             ADDS     R1,R1,#+1
+   \      0x1D0   0xE7F6             B.N      ??get_dlms_data_13
+    217                for (index = 0; index < pkt_length; index++)
+   \                     ??get_dlms_data_14: (+1)
+   \      0x1D2   0xF05F 0x0900      MOVS     R9,#+0
+   \                     ??get_dlms_data_15: (+1)
+   \      0x1D6   0x4649             MOV      R1,R9
+   \      0x1D8   0x0030             MOVS     R0,R6
+   \      0x1DA   0xB289             UXTH     R1,R1
+   \      0x1DC   0xB280             UXTH     R0,R0
+   \      0x1DE   0x4281             CMP      R1,R0
+   \      0x1E0   0xD211             BCS.N    ??get_dlms_data_16
+    218                {
+    219                  ud_dlms.data[index+17] = r_buff.data[r_buff.read_ptr];
+   \      0x1E2   0xF8B7 0x0BBC      LDRH     R0,[R7, #+3004]
+   \      0x1E6   0x5C38             LDRB     R0,[R7, R0]
+   \      0x1E8   0x4649             MOV      R1,R9
+   \      0x1EA   0xB289             UXTH     R1,R1
+   \      0x1EC   0x4441             ADD      R1,R8,R1
+   \      0x1EE   0x7448             STRB     R0,[R1, #+17]
+    220                  if (0 != increment_read_ptr(&r_buff))
+   \      0x1F0   0x0038             MOVS     R0,R7
+   \      0x1F2   0x.... 0x....      BL       increment_read_ptr
+   \      0x1F6   0x2800             CMP      R0,#+0
+   \      0x1F8   0xD002             BEQ.N    ??get_dlms_data_17
+    221                  {
+    222                    *error_code = UART_DLMS_INCOMPLETE_DATA;
+   \      0x1FA   0x2003             MOVS     R0,#+3
+   \      0x1FC   0x7020             STRB     R0,[R4, #+0]
+    223                    //                    app_bm_free(ud->data);
+    224                    //                    app_bm_free((uint8_t *)ud);
+    225                    return;
+   \      0x1FE   0xE045             B.N      ??get_dlms_data_5
+    226                  }
+    227                }
+   \                     ??get_dlms_data_17: (+1)
+   \      0x200   0xF119 0x0901      ADDS     R9,R9,#+1
+   \      0x204   0xE7E7             B.N      ??get_dlms_data_15
+    228                 #if 1
+    229          if(!initialisation_done){
+   \                     ??get_dlms_data_16: (+1)
+   \      0x206   0x.... 0x....      LDR.W    R10,??DataTable6_7
+   \      0x20A   0xF8DA 0x0000      LDR      R0,[R10, #+0]
+   \      0x20E   0x2800             CMP      R0,#+0
+   \      0x210   0xD137             BNE.N    ??get_dlms_data_18
+    230          char buf[51]={0x00, 0x01, 0x00, 0x01, 0x00, 0x10, 0x00, 0x2B, 0x61, 0x29, 0xA1, 0x09, 0x06, 0x07, 0x60, 0x85, 0x74, 0x05, 0x08, 0x01, 0x01, 0xA2, 0x03, 0x02, 0x01, 0x00, 0xA3, 0x05, 0xA1, 0x03, 0x02, 0x01, 0x00, 0xBE, 0x10, 0x04, 0x0E, 0x08, 0x00, 0x06, 0x5F, 0x1F, 0x04, 0x00, 0x00, 0x00, 0x10, 0x03, 0x40, 0x00, 0x07};
+   \      0x212   0xA80A             ADD      R0,SP,#+40
+   \      0x214   0x....             LDR.N    R1,??DataTable6_8
+   \      0x216   0x2234             MOVS     R2,#+52
+   \      0x218   0x.... 0x....      BL       __aeabi_memcpy4
+    231                if(memcmp(&ud_dlms.data[17],buf,(43))==0){
+   \      0x21C   0x222B             MOVS     R2,#+43
+   \      0x21E   0xA90A             ADD      R1,SP,#+40
+   \      0x220   0xF118 0x0011      ADDS     R0,R8,#+17
+   \      0x224   0x.... 0x....      BL       memcmp
+   \      0x228   0x2800             CMP      R0,#+0
+   \      0x22A   0xD108             BNE.N    ??get_dlms_data_19
+    232                  char data_read[21]={0x00, 0x01, 0x00, 0x10, 0x00, 0x01, 0x00, 0x0D, 0xC0, 0x01, 0xC1, 0x00, 0x01, 0x00, 0x00, 0x60, 0x01, 0x00, 0xFF, 0x02, 0x00};
+   \      0x22C   0xA804             ADD      R0,SP,#+16
+   \      0x22E   0x....             LDR.N    R1,??DataTable6_9
+   \      0x230   0x2218             MOVS     R2,#+24
+   \      0x232   0x.... 0x....      BL       __aeabi_memcpy4
+    233                  uart_hal_write((uint8_t *)data_read,21);
+   \      0x236   0x2115             MOVS     R1,#+21
+   \      0x238   0xA804             ADD      R0,SP,#+16
+   \      0x23A   0x.... 0x....      BL       uart_hal_write
+    234                }
+    235          #if 1
+    236                if((ud_dlms.data[10+17]==0xC1) || (ud_dlms.data[11+17]==0xC1)){
+   \                     ??get_dlms_data_19: (+1)
+   \      0x23E   0xF898 0x001B      LDRB     R0,[R8, #+27]
+   \      0x242   0x28C1             CMP      R0,#+193
+   \      0x244   0xD003             BEQ.N    ??get_dlms_data_20
+   \      0x246   0xF898 0x001C      LDRB     R0,[R8, #+28]
+   \      0x24A   0x28C1             CMP      R0,#+193
+   \      0x24C   0xD119             BNE.N    ??get_dlms_data_18
+    237                  // Shift data to make space for 0x4D and IP at the beginnin
+    238                  ud_dlms.data[0]=0x4D;
+   \                     ??get_dlms_data_20: (+1)
+   \      0x24E   0x204D             MOVS     R0,#+77
+   \      0x250   0xF888 0x0000      STRB     R0,[R8, #+0]
+    239                  for (int i = ud_dlms.data_len - 1; i >= 1; i--) {
+   \      0x254   0xF8B8 0x25DC      LDRH     R2,[R8, #+1500]
+   \      0x258   0x1E52             SUBS     R2,R2,#+1
+   \                     ??get_dlms_data_21: (+1)
+   \      0x25A   0x2A01             CMP      R2,#+1
+   \      0x25C   0xDB06             BLT.N    ??get_dlms_data_22
+    240                  ud_dlms.data[i + 1] = ud_dlms.data[i];  // Shift data right by 1 byte starting from index 1
+   \      0x25E   0xF818 0x0002      LDRB     R0,[R8, R2]
+   \      0x262   0xEB08 0x0102      ADD      R1,R8,R2
+   \      0x266   0x7048             STRB     R0,[R1, #+1]
+    241              }
+   \      0x268   0x1E52             SUBS     R2,R2,#+1
+   \      0x26A   0xE7F6             B.N      ??get_dlms_data_21
+    242          
+    243              // Step 3: Place 0x01 in the first byte (index 1)
+    244              ud_dlms.data[1] = 0x11;
+   \                     ??get_dlms_data_22: (+1)
+   \      0x26C   0x2011             MOVS     R0,#+17
+   \      0x26E   0xF888 0x0001      STRB     R0,[R8, #+1]
+    245              ud_dlms.data_len+=1;
+   \      0x272   0xF8B8 0x05DC      LDRH     R0,[R8, #+1500]
+   \      0x276   0x1C40             ADDS     R0,R0,#+1
+   \      0x278   0xF8A8 0x05DC      STRH     R0,[R8, #+1500]
+    246              initialisation_done=1;
+   \      0x27C   0x2001             MOVS     R0,#+1
+   \      0x27E   0xF8CA 0x0000      STR      R0,[R10, #+0]
+    247              
+    248                }
+    249          
+    250          }
+    251          #endif 
+    252                
+    253          #endif
+    254                *error_code = UART_DLMS_OK;
+   \                     ??get_dlms_data_18: (+1)
+   \      0x282   0x2000             MOVS     R0,#+0
+   \      0x284   0x7020             STRB     R0,[R4, #+0]
+   \      0x286   0xE6F1             B.N      ??get_dlms_data_3
+    255                
+    256                //return ud;
+    257              }
+    258            }
+    259            
+    260            *error_code = UART_DLMS_NO_DATA;
+   \                     ??get_dlms_data_2: (+1)
+   \      0x288   0x2001             MOVS     R0,#+1
+   \      0x28A   0x7020             STRB     R0,[R4, #+0]
+    261            //return NULL;
+    262          }
+   \                     ??get_dlms_data_5: (+1)
+   \      0x28C   0xB017             ADD      SP,SP,#+92
+   \      0x28E   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    263          
+    264          
+    265          
+    266          
+    267          //Meter data processing
+
+   \                                 In section .text, align 4, keep-with-next
+    268          static void process_meter_data_cb(void *ptr)
+    269          {
+   \                     process_meter_data_cb: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0xB08D             SUB      SP,SP,#+52
+   \        0x4   0x0004             MOVS     R4,R0
+    270            uart_dlms_data_e error_code = UART_DLMS_NO_DATA;
+   \        0x6   0x2001             MOVS     R0,#+1
+   \        0x8   0xF88D 0x0008      STRB     R0,[SP, #+8]
+    271            
+    272            if(join_state == 0x06)
+   \        0xC   0x....             LDR.N    R0,??DataTable6_10
+   \        0xE   0x7800             LDRB     R0,[R0, #+0]
+   \       0x10   0x2806             CMP      R0,#+6
+   \       0x12   0xD11F             BNE.N    ??process_meter_data_cb_0
+    273            {
+    274              if(!flag_set){
+   \       0x14   0x....             LDR.N    R5,??DataTable6_11
+   \       0x16   0x6828             LDR      R0,[R5, #+0]
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD10A             BNE.N    ??process_meter_data_cb_1
+    275                  char buf[39]={0x00, 0x01, 0x00, 0x10, 0x00, 0x01, 0x00, 0x1F, 0x60, 0x1D, 0xA1, 0x09, 0x06, 0x07, 0x60, 0x85, 0x74, 0x05, 0x08, 0x01, 0x01, 0xBE, 0x10, 0x04, 0x0E, 0x01, 0x00, 0x00, 0x00, 0x06, 0x5F, 0x1F, 0x04, 0x00, 0x62, 0x1E, 0x5D, 0xFF, 0xFF};
+   \       0x1C   0xA803             ADD      R0,SP,#+12
+   \       0x1E   0x....             LDR.N    R1,??DataTable6_12
+   \       0x20   0x2228             MOVS     R2,#+40
+   \       0x22   0x.... 0x....      BL       __aeabi_memcpy4
+    276                  uart_hal_write((uint8_t *)buf,39);
+   \       0x26   0x2127             MOVS     R1,#+39
+   \       0x28   0xA803             ADD      R0,SP,#+12
+   \       0x2A   0x.... 0x....      BL       uart_hal_write
+    277                  flag_set=1;
+   \       0x2E   0x2001             MOVS     R0,#+1
+   \       0x30   0x6028             STR      R0,[R5, #+0]
+    278            }
+    279              get_dlms_data(&error_code);
+                                   ^
+Warning[Pe167]: argument of type "uart_dlms_data_e *" is incompatible with
+          parameter of type "uint8_t *"
+   \                     ??process_meter_data_cb_1: (+1)
+   \       0x32   0xA802             ADD      R0,SP,#+8
+   \       0x34   0x.... 0x....      BL       get_dlms_data
+    280              if (ud_dlms.data_len > 8 )
+   \       0x38   0x....             LDR.N    R5,??DataTable6_5
+   \       0x3A   0xF8B5 0x05DC      LDRH     R0,[R5, #+1500]
+   \       0x3E   0x2809             CMP      R0,#+9
+   \       0x40   0xDB08             BLT.N    ??process_meter_data_cb_2
+    281              {
+    282                //send data to udp
+    283          #ifdef DEBUG_INFO_COUNT
+    284                send_count++;
+    285          #endif
+    286                
+    287                UART_Data_send_udp(ud_dlms.data, ud_dlms.data_len);   
+   \       0x42   0xF8B5 0x15DC      LDRH     R1,[R5, #+1500]
+   \       0x46   0x0028             MOVS     R0,R5
+   \       0x48   0x.... 0x....      BL       UART_Data_send_udp
+    288                ud_dlms.data_len = 0;
+   \       0x4C   0x2000             MOVS     R0,#+0
+   \       0x4E   0xF8A5 0x05DC      STRH     R0,[R5, #+1500]
+   \       0x52   0xE7FF             B.N      ??process_meter_data_cb_0
+    289              }   
+    290              else
+    291              {
+    292                if (error_code == UART_DLMS_MEMEORY_OVERFLOW)
+    293                {
+    294          #ifdef DEBUG_INFO_COUNT
+    295                  memory_overflow_count++;
+    296          #endif
+    297                  ;//MEMORY OVERFLOW
+    298                }
+    299              }
+    300            }
+    301            
+    302            
+    303            l3_ctimer_set (&meter_uart_timer, APP_CALLBACK_TIMER, process_meter_data_cb, NULL);
+   \                     ??process_meter_data_cb_2: (+1)
+   \                     ??process_meter_data_cb_0: (+1)
+   \       0x54   0x2000             MOVS     R0,#+0
+   \       0x56   0x9001             STR      R0,[SP, #+4]
+   \       0x58   0x....             LDR.N    R0,??DataTable6_13
+   \       0x5A   0x9000             STR      R0,[SP, #+0]
+   \       0x5C   0x2232             MOVS     R2,#+50
+   \       0x5E   0x2300             MOVS     R3,#+0
+   \       0x60   0x....             LDR.N    R0,??DataTable6_3
+   \       0x62   0x.... 0x....      BL       l3_ctimer_set
+    304          }
+   \       0x66   0xB00D             ADD      SP,SP,#+52
+   \       0x68   0xBD30             POP      {R4,R5,PC}
+    305          
+    306          //Meter data + info data processing
+
+   \                                 In section .text, align 4, keep-with-next
+    307          static void process_meter_and_info_data_cb(void *ptr)
+    308          {
+   \                     process_meter_and_info_data_cb: (+1)
+   \        0x0   0xB57F             PUSH     {R0-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    309            uart_dlms_data_e error_code = UART_DLMS_NO_DATA;
+   \        0x4   0x2001             MOVS     R0,#+1
+   \        0x6   0xF88D 0x0008      STRB     R0,[SP, #+8]
+    310            
+    311            if(join_state == 0x06)
+   \        0xA   0x....             LDR.N    R0,??DataTable6_10
+   \        0xC   0x7800             LDRB     R0,[R0, #+0]
+   \        0xE   0x2806             CMP      R0,#+6
+   \       0x10   0xD116             BNE.N    ??process_meter_and_info_data_cb_0
+    312            {
+    313              get_dlms_data(&error_code);
+                                   ^
+Warning[Pe167]: argument of type "uart_dlms_data_e *" is incompatible with
+          parameter of type "uint8_t *"
+   \       0x12   0xA802             ADD      R0,SP,#+8
+   \       0x14   0x.... 0x....      BL       get_dlms_data
+    314              if (ud_dlms.data_len > 8 )
+   \       0x18   0x....             LDR.N    R5,??DataTable6_5
+   \       0x1A   0xF8B5 0x05DC      LDRH     R0,[R5, #+1500]
+   \       0x1E   0x2809             CMP      R0,#+9
+   \       0x20   0xDB0E             BLT.N    ??process_meter_and_info_data_cb_1
+    315              {
+    316                //send data to udp
+    317          #ifdef DEBUG_INFO_COUNT
+    318                send_count++;
+    319          #endif
+    320                send_meter_plus_info_data(ud_dlms.data, ud_dlms.data_len, &m_ds_buff); 
+   \       0x22   0x....             LDR.N    R6,??DataTable6_2
+   \       0x24   0x0032             MOVS     R2,R6
+   \       0x26   0xF8B5 0x15DC      LDRH     R1,[R5, #+1500]
+   \       0x2A   0x0028             MOVS     R0,R5
+   \       0x2C   0x.... 0x....      BL       send_meter_plus_info_data
+    321                //uart_hal_write((uint8_t *)m_ds_buff.data_buffer, m_ds_buff.data_size);
+    322                UART_Data_send_udp((uint8_t *)m_ds_buff.data_buffer, m_ds_buff.data_size);
+   \       0x30   0x88F1             LDRH     R1,[R6, #+6]
+   \       0x32   0x6830             LDR      R0,[R6, #+0]
+   \       0x34   0x.... 0x....      BL       UART_Data_send_udp
+    323                ud_dlms.data_len = 0;
+   \       0x38   0x2000             MOVS     R0,#+0
+   \       0x3A   0xF8A5 0x05DC      STRH     R0,[R5, #+1500]
+   \       0x3E   0xE7FF             B.N      ??process_meter_and_info_data_cb_0
+    324              }   
+    325              else
+    326              {
+    327                if (error_code == UART_DLMS_MEMEORY_OVERFLOW)
+    328                {
+    329          #ifdef DEBUG_INFO_COUNT
+    330                  memory_overflow_count++;
+    331          #endif
+    332                  ;//MEMORY OVERFLOW
+    333                }
+    334              }
+    335            }
+    336            l3_ctimer_set (&meter_uart_timer, APP_CALLBACK_TIMER, process_meter_and_info_data_cb, NULL);
+   \                     ??process_meter_and_info_data_cb_1: (+1)
+   \                     ??process_meter_and_info_data_cb_0: (+1)
+   \       0x40   0x2000             MOVS     R0,#+0
+   \       0x42   0x9001             STR      R0,[SP, #+4]
+   \       0x44   0x....             LDR.N    R0,??DataTable6_14
+   \       0x46   0x9000             STR      R0,[SP, #+0]
+   \       0x48   0x2232             MOVS     R2,#+50
+   \       0x4A   0x2300             MOVS     R3,#+0
+   \       0x4C   0x....             LDR.N    R0,??DataTable6_3
+   \       0x4E   0x.... 0x....      BL       l3_ctimer_set
+    337          }
+   \       0x52   0xBD7F             POP      {R0-R6,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x....'....        DC32     m_dlms_cb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x....'....        DC32     m_ds_data
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x....'....        DC32     m_ds_buff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x....'....        DC32     meter_uart_timer
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x....'....        DC32     r_buff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \        0x0   0x....'....        DC32     ud_dlms
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \        0x0   0x....'....        DC32     global_addr_device
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_7:
+   \        0x0   0x....'....        DC32     initialisation_done
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_8:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_9:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_10:
+   \        0x0   0x....'....        DC32     join_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_11:
+   \        0x0   0x....'....        DC32     flag_set
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_12:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_13:
+   \        0x0   0x....'....        DC32     process_meter_data_cb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_14:
+   \        0x0   0x....'....        DC32     process_meter_and_info_data_cb
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x00 0x01          DC8 0, 1, 0, 1, 0, 16, 0, 43, 97, 41, 161, 9, 6, 7, 96, 133, 116, 5, 8
+   \              0x00 0x01    
+   \              0x00 0x10    
+   \              0x00 0x2B    
+   \              0x61 0x29    
+   \              0xA1 0x09    
+   \              0x06 0x07    
+   \              0x60 0x85    
+   \              0x74 0x05    
+   \              0x08
+   \       0x13   0x01 0x01          DC8 1, 1, 162, 3, 2, 1, 0, 163, 5, 161, 3, 2, 1, 0, 190, 16, 4, 14, 8
+   \              0xA2 0x03    
+   \              0x02 0x01    
+   \              0x00 0xA3    
+   \              0x05 0xA1    
+   \              0x03 0x02    
+   \              0x01 0x00    
+   \              0xBE 0x10    
+   \              0x04 0x0E    
+   \              0x08
+   \       0x26   0x00 0x06          DC8 0, 6, 95, 31, 4, 0, 0, 0, 16, 3, 64, 0, 7
+   \              0x5F 0x1F    
+   \              0x04 0x00    
+   \              0x00 0x00    
+   \              0x10 0x03    
+   \              0x40 0x00    
+   \              0x07
+   \       0x33                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x00 0x01          DC8 0, 1, 0, 16, 0, 1, 0, 13, 192, 1, 193, 0, 1, 0, 0, 96, 1, 0, 255, 2
+   \              0x00 0x10    
+   \              0x00 0x01    
+   \              0x00 0x0D    
+   \              0xC0 0x01    
+   \              0xC1 0x00    
+   \              0x01 0x00    
+   \              0x00 0x60    
+   \              0x01 0x00    
+   \              0xFF 0x02
+   \       0x14   0x00               DC8 0
+   \       0x15                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x00 0x01          DC8 0, 1, 0, 16, 0, 1, 0, 31, 96, 29, 161, 9, 6, 7, 96, 133, 116, 5, 8
+   \              0x00 0x10    
+   \              0x00 0x01    
+   \              0x00 0x1F    
+   \              0x60 0x1D    
+   \              0xA1 0x09    
+   \              0x06 0x07    
+   \              0x60 0x85    
+   \              0x74 0x05    
+   \              0x08
+   \       0x13   0x01 0x01          DC8 1, 1, 190, 16, 4, 14, 1, 0, 0, 0, 6, 95, 31, 4, 0, 98, 30, 93, 255
+   \              0xBE 0x10    
+   \              0x04 0x0E    
+   \              0x01 0x00    
+   \              0x00 0x00    
+   \              0x06 0x5F    
+   \              0x1F 0x04    
+   \              0x00 0x62    
+   \              0x1E 0x5D    
+   \              0xFF
+   \       0x26   0xFF               DC8 255
+   \       0x27                      DS8 1
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     128   get_dlms_data
+       128   -> __aeabi_memcpy4
+       128   -> increment_read_ptr
+       128   -> memcmp
+       128   -> uart_hal_write
+       0   increment_read_ptr
+      16   k_init_info_plus_meter_comm
+        16   -> UART_init
+        16   -> l3_ctimer_set
+        16   -> register_uart0_cb
+      16   k_init_meter_comm
+        16   -> UART_init
+        16   -> init_data_struct
+        16   -> l3_ctimer_set
+        16   -> register_uart0_cb
+      32   process_meter_and_info_data_cb
+        32   -> UART_Data_send_udp
+        32   -> get_dlms_data
+        32   -> l3_ctimer_set
+        32   -> send_meter_plus_info_data
+      64   process_meter_data_cb
+        64   -> UART_Data_send_udp
+        64   -> __aeabi_memcpy4
+        64   -> get_dlms_data
+        64   -> l3_ctimer_set
+        64   -> uart_hal_write
+       0   register_dlms_callback
+       4   serial_rx
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_10
+       4  ??DataTable6_11
+       4  ??DataTable6_12
+       4  ??DataTable6_13
+       4  ??DataTable6_14
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+      52  ?_0
+      24  ?_1
+      40  ?_2
+       4  flag_set
+     658  get_dlms_data
+      50  increment_read_ptr
+       4  initialisation_done
+      38  k_init_info_plus_meter_comm
+      54  k_init_meter_comm
+       4  m_dlms_cb
+   3'000  m_rx_data
+       2  m_rx_data_len
+      48  meter_uart_timer
+      84  process_meter_and_info_data_cb
+     106  process_meter_data_cb
+   3'008  r_buff
+       8  register_dlms_callback
+      44  serial_rx
+   1'504  ud_dlms
+
+ 
+ 7'574 bytes in section .bss
+   116 bytes in section .rodata
+ 1'102 bytes in section .text
+ 
+ 1'102 bytes of CODE  memory
+   116 bytes of CONST memory
+ 7'574 bytes of DATA  memory
+
+Errors: none
+Warnings: 2

@@ -1,0 +1,774 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         02/Dec/2024  12:57:56
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\app_init.c
+#    Command line      =
+#        -f
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\app_init.o.rsp
+#        (D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\app_init.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\
+#        --diag_suppress Pa050 -o
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\app_init.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\app_init.lst
+#    Object file       =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\app_init.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\app_init.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief app_init.c
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          // -----------------------------------------------------------------------------
+     32          //                                   Includes
+     33          // -----------------------------------------------------------------------------
+     34          #include "sl_rail_util_init.h"
+     35          #include "em_gpio.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void GPIO_PinOutClear(uint8_t, unsigned int)
+   \                     GPIO_PinOutClear: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0xB2D2             UXTB     R2,R2
+   \        0x6   0x2A00             CMP      R2,#+0
+   \        0x8   0xD102             BNE.N    ??GPIO_PinOutClear_0
+   \        0xA   0xF240 0x12FF      MOVW     R2,#+511
+   \        0xE   0xE03C             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_0: (+1)
+   \       0x10   0x0002             MOVS     R2,R0
+   \       0x12   0xB2D2             UXTB     R2,R2
+   \       0x14   0x2A01             CMP      R2,#+1
+   \       0x16   0xD101             BNE.N    ??GPIO_PinOutClear_2
+   \       0x18   0x2203             MOVS     R2,#+3
+   \       0x1A   0xE036             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_2: (+1)
+   \       0x1C   0x0002             MOVS     R2,R0
+   \       0x1E   0xB2D2             UXTB     R2,R2
+   \       0x20   0x2A02             CMP      R2,#+2
+   \       0x22   0xD101             BNE.N    ??GPIO_PinOutClear_3
+   \       0x24   0x22FF             MOVS     R2,#+255
+   \       0x26   0xE030             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_3: (+1)
+   \       0x28   0x0002             MOVS     R2,R0
+   \       0x2A   0xB2D2             UXTB     R2,R2
+   \       0x2C   0x2A03             CMP      R2,#+3
+   \       0x2E   0xD101             BNE.N    ??GPIO_PinOutClear_4
+   \       0x30   0x220F             MOVS     R2,#+15
+   \       0x32   0xE02A             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_4: (+1)
+   \       0x34   0x0002             MOVS     R2,R0
+   \       0x36   0xB2D2             UXTB     R2,R2
+   \       0x38   0x2A04             CMP      R2,#+4
+   \       0x3A   0xD101             BNE.N    ??GPIO_PinOutClear_5
+   \       0x3C   0x2200             MOVS     R2,#+0
+   \       0x3E   0xE024             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_5: (+1)
+   \       0x40   0x0002             MOVS     R2,R0
+   \       0x42   0xB2D2             UXTB     R2,R2
+   \       0x44   0x2A05             CMP      R2,#+5
+   \       0x46   0xD101             BNE.N    ??GPIO_PinOutClear_6
+   \       0x48   0x2200             MOVS     R2,#+0
+   \       0x4A   0xE01E             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_6: (+1)
+   \       0x4C   0x0002             MOVS     R2,R0
+   \       0x4E   0xB2D2             UXTB     R2,R2
+   \       0x50   0x2A06             CMP      R2,#+6
+   \       0x52   0xD101             BNE.N    ??GPIO_PinOutClear_7
+   \       0x54   0x2200             MOVS     R2,#+0
+   \       0x56   0xE018             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_7: (+1)
+   \       0x58   0x0002             MOVS     R2,R0
+   \       0x5A   0xB2D2             UXTB     R2,R2
+   \       0x5C   0x2A07             CMP      R2,#+7
+   \       0x5E   0xD101             BNE.N    ??GPIO_PinOutClear_8
+   \       0x60   0x2200             MOVS     R2,#+0
+   \       0x62   0xE012             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_8: (+1)
+   \       0x64   0x0002             MOVS     R2,R0
+   \       0x66   0xB2D2             UXTB     R2,R2
+   \       0x68   0x2A08             CMP      R2,#+8
+   \       0x6A   0xD101             BNE.N    ??GPIO_PinOutClear_9
+   \       0x6C   0x2200             MOVS     R2,#+0
+   \       0x6E   0xE00C             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_9: (+1)
+   \       0x70   0x0002             MOVS     R2,R0
+   \       0x72   0xB2D2             UXTB     R2,R2
+   \       0x74   0x2A09             CMP      R2,#+9
+   \       0x76   0xD101             BNE.N    ??GPIO_PinOutClear_10
+   \       0x78   0x2200             MOVS     R2,#+0
+   \       0x7A   0xE006             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_10: (+1)
+   \       0x7C   0x0002             MOVS     R2,R0
+   \       0x7E   0xB2D2             UXTB     R2,R2
+   \       0x80   0x2A0A             CMP      R2,#+10
+   \       0x82   0xD101             BNE.N    ??GPIO_PinOutClear_11
+   \       0x84   0x2200             MOVS     R2,#+0
+   \       0x86   0xE000             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_11: (+1)
+   \       0x88   0x2200             MOVS     R2,#+0
+   \                     ??GPIO_PinOutClear_1: (+1)
+   \       0x8A   0x40CA             LSRS     R2,R2,R1
+   \       0x8C   0xF012 0x0201      ANDS     R2,R2,#0x1
+   \       0x90   0x2301             MOVS     R3,#+1
+   \       0x92   0x408B             LSLS     R3,R3,R1
+   \       0x94   0x....             LDR.N    R5,??DataTable2
+   \       0x96   0x0004             MOVS     R4,R0
+   \       0x98   0xB2E4             UXTB     R4,R4
+   \       0x9A   0x2230             MOVS     R2,#+48
+   \       0x9C   0x4354             MULS     R4,R2,R4
+   \       0x9E   0xEB05 0x0204      ADD      R2,R5,R4
+   \       0xA2   0x6113             STR      R3,[R2, #+16]
+   \       0xA4   0xBC30             POP      {R4,R5}
+   \       0xA6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void GPIO_PinOutSet(uint8_t, unsigned int)
+   \                     GPIO_PinOutSet: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0xB2D2             UXTB     R2,R2
+   \        0x6   0x2A00             CMP      R2,#+0
+   \        0x8   0xD102             BNE.N    ??GPIO_PinOutSet_0
+   \        0xA   0xF240 0x12FF      MOVW     R2,#+511
+   \        0xE   0xE03C             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_0: (+1)
+   \       0x10   0x0002             MOVS     R2,R0
+   \       0x12   0xB2D2             UXTB     R2,R2
+   \       0x14   0x2A01             CMP      R2,#+1
+   \       0x16   0xD101             BNE.N    ??GPIO_PinOutSet_2
+   \       0x18   0x2203             MOVS     R2,#+3
+   \       0x1A   0xE036             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_2: (+1)
+   \       0x1C   0x0002             MOVS     R2,R0
+   \       0x1E   0xB2D2             UXTB     R2,R2
+   \       0x20   0x2A02             CMP      R2,#+2
+   \       0x22   0xD101             BNE.N    ??GPIO_PinOutSet_3
+   \       0x24   0x22FF             MOVS     R2,#+255
+   \       0x26   0xE030             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_3: (+1)
+   \       0x28   0x0002             MOVS     R2,R0
+   \       0x2A   0xB2D2             UXTB     R2,R2
+   \       0x2C   0x2A03             CMP      R2,#+3
+   \       0x2E   0xD101             BNE.N    ??GPIO_PinOutSet_4
+   \       0x30   0x220F             MOVS     R2,#+15
+   \       0x32   0xE02A             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_4: (+1)
+   \       0x34   0x0002             MOVS     R2,R0
+   \       0x36   0xB2D2             UXTB     R2,R2
+   \       0x38   0x2A04             CMP      R2,#+4
+   \       0x3A   0xD101             BNE.N    ??GPIO_PinOutSet_5
+   \       0x3C   0x2200             MOVS     R2,#+0
+   \       0x3E   0xE024             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_5: (+1)
+   \       0x40   0x0002             MOVS     R2,R0
+   \       0x42   0xB2D2             UXTB     R2,R2
+   \       0x44   0x2A05             CMP      R2,#+5
+   \       0x46   0xD101             BNE.N    ??GPIO_PinOutSet_6
+   \       0x48   0x2200             MOVS     R2,#+0
+   \       0x4A   0xE01E             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_6: (+1)
+   \       0x4C   0x0002             MOVS     R2,R0
+   \       0x4E   0xB2D2             UXTB     R2,R2
+   \       0x50   0x2A06             CMP      R2,#+6
+   \       0x52   0xD101             BNE.N    ??GPIO_PinOutSet_7
+   \       0x54   0x2200             MOVS     R2,#+0
+   \       0x56   0xE018             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_7: (+1)
+   \       0x58   0x0002             MOVS     R2,R0
+   \       0x5A   0xB2D2             UXTB     R2,R2
+   \       0x5C   0x2A07             CMP      R2,#+7
+   \       0x5E   0xD101             BNE.N    ??GPIO_PinOutSet_8
+   \       0x60   0x2200             MOVS     R2,#+0
+   \       0x62   0xE012             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_8: (+1)
+   \       0x64   0x0002             MOVS     R2,R0
+   \       0x66   0xB2D2             UXTB     R2,R2
+   \       0x68   0x2A08             CMP      R2,#+8
+   \       0x6A   0xD101             BNE.N    ??GPIO_PinOutSet_9
+   \       0x6C   0x2200             MOVS     R2,#+0
+   \       0x6E   0xE00C             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_9: (+1)
+   \       0x70   0x0002             MOVS     R2,R0
+   \       0x72   0xB2D2             UXTB     R2,R2
+   \       0x74   0x2A09             CMP      R2,#+9
+   \       0x76   0xD101             BNE.N    ??GPIO_PinOutSet_10
+   \       0x78   0x2200             MOVS     R2,#+0
+   \       0x7A   0xE006             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_10: (+1)
+   \       0x7C   0x0002             MOVS     R2,R0
+   \       0x7E   0xB2D2             UXTB     R2,R2
+   \       0x80   0x2A0A             CMP      R2,#+10
+   \       0x82   0xD101             BNE.N    ??GPIO_PinOutSet_11
+   \       0x84   0x2200             MOVS     R2,#+0
+   \       0x86   0xE000             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_11: (+1)
+   \       0x88   0x2200             MOVS     R2,#+0
+   \                     ??GPIO_PinOutSet_1: (+1)
+   \       0x8A   0x40CA             LSRS     R2,R2,R1
+   \       0x8C   0xF012 0x0201      ANDS     R2,R2,#0x1
+   \       0x90   0x2301             MOVS     R3,#+1
+   \       0x92   0x408B             LSLS     R3,R3,R1
+   \       0x94   0x....             LDR.N    R5,??DataTable2_1
+   \       0x96   0x0004             MOVS     R4,R0
+   \       0x98   0xB2E4             UXTB     R4,R4
+   \       0x9A   0x2230             MOVS     R2,#+48
+   \       0x9C   0x4354             MULS     R4,R2,R4
+   \       0x9E   0xEB05 0x0204      ADD      R2,R5,R4
+   \       0xA2   0x6113             STR      R3,[R2, #+16]
+   \       0xA4   0xBC30             POP      {R4,R5}
+   \       0xA6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void GPIO_PinOutToggle(uint8_t, unsigned int)
+   \                     GPIO_PinOutToggle: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0xB2D2             UXTB     R2,R2
+   \        0x6   0x2A00             CMP      R2,#+0
+   \        0x8   0xD102             BNE.N    ??GPIO_PinOutToggle_0
+   \        0xA   0xF240 0x12FF      MOVW     R2,#+511
+   \        0xE   0xE03C             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_0: (+1)
+   \       0x10   0x0002             MOVS     R2,R0
+   \       0x12   0xB2D2             UXTB     R2,R2
+   \       0x14   0x2A01             CMP      R2,#+1
+   \       0x16   0xD101             BNE.N    ??GPIO_PinOutToggle_2
+   \       0x18   0x2203             MOVS     R2,#+3
+   \       0x1A   0xE036             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_2: (+1)
+   \       0x1C   0x0002             MOVS     R2,R0
+   \       0x1E   0xB2D2             UXTB     R2,R2
+   \       0x20   0x2A02             CMP      R2,#+2
+   \       0x22   0xD101             BNE.N    ??GPIO_PinOutToggle_3
+   \       0x24   0x22FF             MOVS     R2,#+255
+   \       0x26   0xE030             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_3: (+1)
+   \       0x28   0x0002             MOVS     R2,R0
+   \       0x2A   0xB2D2             UXTB     R2,R2
+   \       0x2C   0x2A03             CMP      R2,#+3
+   \       0x2E   0xD101             BNE.N    ??GPIO_PinOutToggle_4
+   \       0x30   0x220F             MOVS     R2,#+15
+   \       0x32   0xE02A             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_4: (+1)
+   \       0x34   0x0002             MOVS     R2,R0
+   \       0x36   0xB2D2             UXTB     R2,R2
+   \       0x38   0x2A04             CMP      R2,#+4
+   \       0x3A   0xD101             BNE.N    ??GPIO_PinOutToggle_5
+   \       0x3C   0x2200             MOVS     R2,#+0
+   \       0x3E   0xE024             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_5: (+1)
+   \       0x40   0x0002             MOVS     R2,R0
+   \       0x42   0xB2D2             UXTB     R2,R2
+   \       0x44   0x2A05             CMP      R2,#+5
+   \       0x46   0xD101             BNE.N    ??GPIO_PinOutToggle_6
+   \       0x48   0x2200             MOVS     R2,#+0
+   \       0x4A   0xE01E             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_6: (+1)
+   \       0x4C   0x0002             MOVS     R2,R0
+   \       0x4E   0xB2D2             UXTB     R2,R2
+   \       0x50   0x2A06             CMP      R2,#+6
+   \       0x52   0xD101             BNE.N    ??GPIO_PinOutToggle_7
+   \       0x54   0x2200             MOVS     R2,#+0
+   \       0x56   0xE018             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_7: (+1)
+   \       0x58   0x0002             MOVS     R2,R0
+   \       0x5A   0xB2D2             UXTB     R2,R2
+   \       0x5C   0x2A07             CMP      R2,#+7
+   \       0x5E   0xD101             BNE.N    ??GPIO_PinOutToggle_8
+   \       0x60   0x2200             MOVS     R2,#+0
+   \       0x62   0xE012             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_8: (+1)
+   \       0x64   0x0002             MOVS     R2,R0
+   \       0x66   0xB2D2             UXTB     R2,R2
+   \       0x68   0x2A08             CMP      R2,#+8
+   \       0x6A   0xD101             BNE.N    ??GPIO_PinOutToggle_9
+   \       0x6C   0x2200             MOVS     R2,#+0
+   \       0x6E   0xE00C             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_9: (+1)
+   \       0x70   0x0002             MOVS     R2,R0
+   \       0x72   0xB2D2             UXTB     R2,R2
+   \       0x74   0x2A09             CMP      R2,#+9
+   \       0x76   0xD101             BNE.N    ??GPIO_PinOutToggle_10
+   \       0x78   0x2200             MOVS     R2,#+0
+   \       0x7A   0xE006             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_10: (+1)
+   \       0x7C   0x0002             MOVS     R2,R0
+   \       0x7E   0xB2D2             UXTB     R2,R2
+   \       0x80   0x2A0A             CMP      R2,#+10
+   \       0x82   0xD101             BNE.N    ??GPIO_PinOutToggle_11
+   \       0x84   0x2200             MOVS     R2,#+0
+   \       0x86   0xE000             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_11: (+1)
+   \       0x88   0x2200             MOVS     R2,#+0
+   \                     ??GPIO_PinOutToggle_1: (+1)
+   \       0x8A   0x40CA             LSRS     R2,R2,R1
+   \       0x8C   0xF012 0x0201      ANDS     R2,R2,#0x1
+   \       0x90   0x2301             MOVS     R3,#+1
+   \       0x92   0x408B             LSLS     R3,R3,R1
+   \       0x94   0x....             LDR.N    R5,??DataTable2_2
+   \       0x96   0x0004             MOVS     R4,R0
+   \       0x98   0xB2E4             UXTB     R4,R4
+   \       0x9A   0x2230             MOVS     R2,#+48
+   \       0x9C   0x4354             MULS     R4,R2,R4
+   \       0x9E   0xEB05 0x0204      ADD      R2,R5,R4
+   \       0xA2   0x6113             STR      R3,[R2, #+16]
+   \       0xA4   0xBC30             POP      {R4,R5}
+   \       0xA6   0x4770             BX       LR
+     36          
+     37          // -----------------------------------------------------------------------------
+     38          //                              Macros and Typedefs
+     39          // -----------------------------------------------------------------------------
+     40          
+     41          // -----------------------------------------------------------------------------
+     42          //                          Static Function Declarations
+     43          // -----------------------------------------------------------------------------
+     44          
+     45          // -----------------------------------------------------------------------------
+     46          //                                Global Variables
+     47          // -----------------------------------------------------------------------------
+     48          
+     49          // -----------------------------------------------------------------------------
+     50          //                                Static Variables
+     51          // -----------------------------------------------------------------------------
+     52          
+     53          // -----------------------------------------------------------------------------
+     54          //                          Public Function Definitions
+     55          // -----------------------------------------------------------------------------
+     56          /******************************************************************************
+     57           * The function is used for some basic initialization related to the app.
+     58           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     59          RAIL_Handle_t app_init(void)
+     60          {
+   \                     app_init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     61            // Get RAIL handle, used later by the application
+     62            RAIL_Handle_t rail_handle = sl_rail_util_get_handle(SL_RAIL_UTIL_HANDLE_INST0);
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x.... 0x....      BL       sl_rail_util_get_handle
+     63          
+     64            /////////////////////////////////////////////////////////////////////////////
+     65            // Put your application init code here!                                    //
+     66            // This is called once during start-up.                                    //
+     67            /////////////////////////////////////////////////////////////////////////////
+     68          
+     69            return rail_handle;
+   \        0x8   0xBD02             POP      {R1,PC}
+     70          }
+     71          
+     72          // -----------------------------------------------------------------------------
+     73          //                          LED Function Definitions
+     74          // -----------------------------------------------------------------------------
+     75          
+
+   \                                 In section .text, align 2, keep-with-next
+     76          void APP_LED_GPIO_init ()
+     77          {
+   \                     APP_LED_GPIO_init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     78            
+     79            // Configure the GPIO pins F4 and F5 for the LEDs as output pins  
+     80              
+     81              GPIO_PinModeSet(gpioPortC, 0, gpioModePushPull, 0);
+   \        0x2   0x2300             MOVS     R3,#+0
+   \        0x4   0x2204             MOVS     R2,#+4
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0x2002             MOVS     R0,#+2
+   \        0xA   0x.... 0x....      BL       GPIO_PinModeSet
+     82          
+     83          
+     84            
+     85          }
+   \        0xE   0xBD01             POP      {R0,PC}
+     86          
+
+   \                                 In section .text, align 2, keep-with-next
+     87          void APP_LED_ON ()
+     88          {
+   \                     APP_LED_ON: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     89            
+     90            GPIO_PinOutSet (gpioPortC, 0);
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x2002             MOVS     R0,#+2
+   \        0x6   0x.... 0x....      BL       GPIO_PinOutSet
+     91            
+     92            
+     93          }
+   \        0xA   0xBD01             POP      {R0,PC}
+     94          
+     95          
+
+   \                                 In section .text, align 2, keep-with-next
+     96          void APP_LED_OFF ()
+     97          {
+   \                     APP_LED_OFF: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     98            
+     99            GPIO_PinOutClear (gpioPortC, 0); //(LED_PORT, LED1);
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x2002             MOVS     R0,#+2
+   \        0x6   0x.... 0x....      BL       GPIO_PinOutClear
+    100            
+    101          }
+   \        0xA   0xBD01             POP      {R0,PC}
+    102          
+    103          
+
+   \                                 In section .text, align 2, keep-with-next
+    104          void APP_LED_TOGGLE ()
+    105          {
+   \                     APP_LED_TOGGLE: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    106            
+    107              GPIO_PinOutToggle(gpioPortC, 0);
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x2002             MOVS     R0,#+2
+   \        0x6   0x.... 0x....      BL       GPIO_PinOutToggle
+    108            
+    109          }
+   \        0xA   0xBD01             POP      {R0,PC}
+    110          
+    111          
+    112          /*****************************************************************************/
+    113          //For Led 2 Operations
+    114          
+
+   \                                 In section .text, align 2, keep-with-next
+    115          void APP_LED_2_GPIO_init ()
+    116          {
+   \                     APP_LED_2_GPIO_init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    117            
+    118            // Configure the GPIO pins F4 and F5 for the LEDs as output pins  
+    119              
+    120              GPIO_PinModeSet(gpioPortD, 2, gpioModePushPull, 0);
+   \        0x2   0x2300             MOVS     R3,#+0
+   \        0x4   0x2204             MOVS     R2,#+4
+   \        0x6   0x2102             MOVS     R1,#+2
+   \        0x8   0x2003             MOVS     R0,#+3
+   \        0xA   0x.... 0x....      BL       GPIO_PinModeSet
+    121          
+    122          
+    123            
+    124          }
+   \        0xE   0xBD01             POP      {R0,PC}
+    125          
+
+   \                                 In section .text, align 2, keep-with-next
+    126          void APP_LED_2_ON ()
+    127          {
+   \                     APP_LED_2_ON: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    128            
+    129            GPIO_PinOutSet (gpioPortD, 2);
+   \        0x2   0x2102             MOVS     R1,#+2
+   \        0x4   0x2003             MOVS     R0,#+3
+   \        0x6   0x.... 0x....      BL       GPIO_PinOutSet
+    130            
+    131            
+    132          }
+   \        0xA   0xBD01             POP      {R0,PC}
+    133          
+    134          
+
+   \                                 In section .text, align 2, keep-with-next
+    135          void APP_LED_2_OFF ()
+    136          {
+   \                     APP_LED_2_OFF: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    137            
+    138            GPIO_PinOutClear (gpioPortD, 2); //(LED_PORT, LED2);
+   \        0x2   0x2102             MOVS     R1,#+2
+   \        0x4   0x2003             MOVS     R0,#+3
+   \        0x6   0x.... 0x....      BL       GPIO_PinOutClear
+    139            
+    140          }
+   \        0xA   0xBD01             POP      {R0,PC}
+    141          
+    142          
+
+   \                                 In section .text, align 2, keep-with-next
+    143          void APP_LED_2_TOGGLE ()
+    144          {
+   \                     APP_LED_2_TOGGLE: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    145            
+    146              GPIO_PinOutToggle(gpioPortD, 2);
+   \        0x2   0x2102             MOVS     R1,#+2
+   \        0x4   0x2003             MOVS     R0,#+3
+   \        0x6   0x.... 0x....      BL       GPIO_PinOutToggle
+    147            
+    148          }
+   \        0xA   0xBD01             POP      {R0,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x5003'E030        DC32     0x5003e030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x5003'D030        DC32     0x5003d030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x5003'F030        DC32     0x5003f030
+    149          
+    150          
+    151          
+    152          
+    153          
+    154          
+    155          
+    156          
+    157          
+    158          
+    159          
+    160          
+    161          
+    162          
+    163          
+    164          
+    165          
+    166          
+    167          
+    168          
+    169          
+    170          
+    171          
+    172          
+    173          // -----------------------------------------------------------------------------
+    174          //                          LED Function Definitions
+    175          // -----------------------------------------------------------------------------
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   APP_LED_2_GPIO_init
+         8   -> GPIO_PinModeSet
+       8   APP_LED_2_OFF
+         8   -> GPIO_PinOutClear
+       8   APP_LED_2_ON
+         8   -> GPIO_PinOutSet
+       8   APP_LED_2_TOGGLE
+         8   -> GPIO_PinOutToggle
+       8   APP_LED_GPIO_init
+         8   -> GPIO_PinModeSet
+       8   APP_LED_OFF
+         8   -> GPIO_PinOutClear
+       8   APP_LED_ON
+         8   -> GPIO_PinOutSet
+       8   APP_LED_TOGGLE
+         8   -> GPIO_PinOutToggle
+       8   GPIO_PinOutClear
+       8   GPIO_PinOutSet
+       8   GPIO_PinOutToggle
+       8   app_init
+         8   -> sl_rail_util_get_handle
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+      16  APP_LED_2_GPIO_init
+      12  APP_LED_2_OFF
+      12  APP_LED_2_ON
+      12  APP_LED_2_TOGGLE
+      16  APP_LED_GPIO_init
+      12  APP_LED_OFF
+      12  APP_LED_ON
+      12  APP_LED_TOGGLE
+     168  GPIO_PinOutClear
+     168  GPIO_PinOutSet
+     168  GPIO_PinOutToggle
+      10  app_init
+
+ 
+ 630 bytes in section .text
+ 
+ 630 bytes of CODE memory
+
+Errors: none
+Warnings: none

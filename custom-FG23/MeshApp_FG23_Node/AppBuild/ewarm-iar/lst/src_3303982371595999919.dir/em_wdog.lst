@@ -1,0 +1,745 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         26/Nov/2024  12:16:05
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\SiliconLabs\platform\emlib\src\em_wdog.c
+#    Command line      =
+#        -f
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_wdog.o.rsp
+#        (C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\SiliconLabs\platform\emlib\src\em_wdog.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\src_3303982371595999919.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\.\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\rpl\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\cpu\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\FLASH\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_wdog.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\src_3303982371595999919.dir\em_wdog.lst
+#    Object file       =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_wdog.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\SiliconLabs\platform\emlib\src\em_wdog.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Watchdog (WDOG) peripheral API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "em_wdog.h"
+     32          #if defined(WDOG_COUNT) && (WDOG_COUNT > 0)
+     33          
+     34          #include "em_bus.h"
+     35          #include "em_core.h"
+     36          
+     37          /***************************************************************************//**
+     38           * @addtogroup wdog WDOG - Watchdog
+     39           * @brief Watchdog (WDOG) Peripheral API
+     40           * @details
+     41           *  This module contains functions to control the WDOG peripheral of Silicon
+     42           *  Labs 32-bit MCUs and SoCs. The WDOG resets the system in case of a fault
+     43           *  condition.
+     44           * @{
+     45           ******************************************************************************/
+     46          
+     47          /** In some scenarioes when the watchdog is disabled the synchronization
+     48           * register might be set and not be cleared until the watchdog is enabled
+     49           * again. This will happen when for instance some watchdog register is modified
+     50           * while the watchdog clock is disabled. In these scenarioes we need to make
+     51           * sure that the software does not wait forever. */
+     52          #define WDOG_SYNC_TIMEOUT  30000
+     53          
+     54          /*******************************************************************************
+     55           **************************   GLOBAL FUNCTIONS   *******************************
+     56           ******************************************************************************/
+     57          
+     58          /***************************************************************************//**
+     59           * @brief
+     60           *   Enable/disable the watchdog timer.
+     61           *
+     62           * @note
+     63           *   This function modifies the WDOG CTRL register which requires
+     64           *   synchronization into the low-frequency domain. If this register is modified
+     65           *   before a previous update to the same register has completed, this function
+     66           *   will stall until the previous synchronization has completed.
+     67           *
+     68           * @param[in] wdog
+     69           *   A pointer to the WDOG peripheral register block.
+     70           *
+     71           * @param[in] enable
+     72           *   True to enable Watchdog, false to disable. Watchdog cannot be disabled if
+     73           *   it's been locked.
+     74           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     75          void WDOGn_Enable(WDOG_TypeDef *wdog, bool enable)
+     76          {
+     77            // SYNCBUSY may stall when locked.
+     78          #if defined(_WDOG_STATUS_MASK)
+     79            if ((wdog->STATUS & _WDOG_STATUS_LOCK_MASK) == WDOG_STATUS_LOCK_LOCKED) {
+   \                     WDOGn_Enable: (+1)
+   \        0x0   0x6942             LDR      R2,[R0, #+20]
+   \        0x2   0x2A00             CMP      R2,#+0
+   \        0x4   0xD412             BMI.N    ??WDOGn_Enable_0
+     80              return;
+     81            }
+     82          #else
+     83            if (wdog->CTRL & WDOG_CTRL_LOCK) {
+     84              return;
+     85            }
+     86          #endif
+     87          
+     88          #if defined(_WDOG_EN_MASK)
+     89            if (!enable) {
+   \                     ??WDOGn_Enable_1: (+1)
+   \        0x6   0x000A             MOVS     R2,R1
+   \        0x8   0xB2D2             UXTB     R2,R2
+   \        0xA   0x2A00             CMP      R2,#+0
+   \        0xC   0xD10A             BNE.N    ??WDOGn_Enable_2
+     90              while (wdog->SYNCBUSY & WDOG_SYNCBUSY_CMD) {
+   \                     ??WDOGn_Enable_3: (+1)
+   \        0xE   0x6A42             LDR      R2,[R0, #+36]
+   \       0x10   0x07D2             LSLS     R2,R2,#+31
+   \       0x12   0xD4FC             BMI.N    ??WDOGn_Enable_3
+     91              }
+     92              wdog->EN_CLR = WDOG_EN_EN;
+   \       0x14   0x2301             MOVS     R3,#+1
+   \       0x16   0xF242 0x0204      MOVW     R2,#+8196
+   \       0x1A   0x5083             STR      R3,[R0, R2]
+     93          #if defined(_WDOG_EN_DISABLING_MASK)
+     94              while (wdog->EN & _WDOG_EN_DISABLING_MASK) {
+   \                     ??WDOGn_Enable_4: (+1)
+   \       0x1C   0x6842             LDR      R2,[R0, #+4]
+   \       0x1E   0x0792             LSLS     R2,R2,#+30
+   \       0x20   0xD4FC             BMI.N    ??WDOGn_Enable_4
+   \       0x22   0xE003             B.N      ??WDOGn_Enable_5
+     95              }
+     96          #endif
+     97            } else {
+     98              wdog->EN_SET = WDOG_EN_EN;
+   \                     ??WDOGn_Enable_2: (+1)
+   \       0x24   0x2301             MOVS     R3,#+1
+   \       0x26   0xF241 0x0204      MOVW     R2,#+4100
+   \       0x2A   0x5083             STR      R3,[R0, R2]
+     99            }
+    100          #else
+    101            // Wait for previous operations/modifications to complete
+    102            int i = 0;
+    103            while (((wdog->SYNCBUSY & WDOG_SYNCBUSY_CTRL) != 0U)
+    104                   && (i < WDOG_SYNC_TIMEOUT)) {
+    105              i++;
+    106            }
+    107          
+    108            bool wdogState = ((wdog->CTRL & _WDOG_CTRL_EN_MASK) != 0U);
+    109          
+    110            // Make sure to only write to the CTRL register if we are changing mode
+    111            if (wdogState != enable) {
+    112              BUS_RegBitWrite(&wdog->CTRL, _WDOG_CTRL_EN_SHIFT, enable);
+    113            }
+    114          #endif
+    115          }
+   \                     ??WDOGn_Enable_5: (+1)
+   \                     ??WDOGn_Enable_0: (+1)
+   \       0x2C   0x4770             BX       LR
+    116          
+    117          /***************************************************************************//**
+    118           * @brief
+    119           *   Feed WDOG.
+    120           *
+    121           * @details
+    122           *   When WDOG is activated, it must be fed (i.e., clearing the counter)
+    123           *   before it reaches the defined timeout period. Otherwise, WDOG
+    124           *   will generate a reset.
+    125           *
+    126           * @note
+    127           *   Note that WDOG is an asynchronous peripheral and when calling the
+    128           *   WDOGn_Feed() function the hardware starts the process of clearing the
+    129           *   counter. This process takes some time before it completes depending on the
+    130           *   selected oscillator (up to 4 peripheral clock cycles). When using the
+    131           *   ULFRCO for instance as the oscillator the watchdog runs on a 1 kHz clock
+    132           *   and a watchdog clear operation might take up to 4 ms.
+    133           *
+    134           *   If the device enters EM2 or EM3 while a command is in progress then that
+    135           *   command will be aborted. An application can use @ref WDOGn_SyncWait()
+    136           *   to wait for a command to complete.
+    137           *
+    138           * @param[in] wdog
+    139           *   A pointer to the WDOG peripheral register block.
+    140           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    141          void WDOGn_Feed(WDOG_TypeDef *wdog)
+    142          {
+   \                     WDOGn_Feed: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    143          #if (_SILICON_LABS_32B_SERIES < 2)
+    144          
+    145            // WDOG should not be fed while it is disabled.
+    146            if (!(wdog->CTRL & WDOG_CTRL_EN)) {
+    147              return;
+    148            }
+    149          
+    150            // If a previous clearing is synchronized to the LF domain, there
+    151            // is no point in waiting for it to complete before clearing over again.
+    152            // This avoids stalling the core in the typical use case where some idle loop
+    153            // keeps clearing WDOG.
+    154            if (wdog->SYNCBUSY & WDOG_SYNCBUSY_CMD) {
+    155              return;
+    156            }
+    157            // Before writing to the WDOG_CMD register, make sure that
+    158            // any previous write to the WDOG_CTRL is complete.
+    159            while ( (wdog->SYNCBUSY & WDOG_SYNCBUSY_CTRL) != 0U ) {
+    160            }
+    161          
+    162            wdog->CMD = WDOG_CMD_CLEAR;
+    163          
+    164          #else // Series 2 devices
+    165          
+    166            CORE_DECLARE_IRQ_STATE;
+    167          
+    168            // WDOG should not be fed while it is disabled.
+    169            if ((wdog->EN & WDOG_EN_EN) == 0U) {
+   \        0x4   0x6860             LDR      R0,[R4, #+4]
+   \        0x6   0x07C0             LSLS     R0,R0,#+31
+   \        0x8   0xD50A             BPL.N    ??WDOGn_Feed_0
+    170              return;
+    171            }
+    172          
+    173            // We need an atomic section around the check for sync and the clear command
+    174            // because sending a clear command while a previous command is being synchronized
+    175            // will cause a BusFault.
+    176            CORE_ENTER_ATOMIC();
+   \                     ??WDOGn_Feed_1: (+1)
+   \        0xA   0x.... 0x....      BL       CORE_EnterAtomic
+   \        0xE   0x0005             MOVS     R5,R0
+    177            if ((wdog->SYNCBUSY & WDOG_SYNCBUSY_CMD) == 0U) {
+   \       0x10   0x6A60             LDR      R0,[R4, #+36]
+   \       0x12   0x07C0             LSLS     R0,R0,#+31
+   \       0x14   0xD401             BMI.N    ??WDOGn_Feed_2
+    178              wdog->CMD = WDOG_CMD_CLEAR;
+   \       0x16   0x2001             MOVS     R0,#+1
+   \       0x18   0x60E0             STR      R0,[R4, #+12]
+    179            }
+    180            CORE_EXIT_ATOMIC();
+   \                     ??WDOGn_Feed_2: (+1)
+   \       0x1A   0x0028             MOVS     R0,R5
+   \       0x1C   0x.... 0x....      BL       CORE_ExitAtomic
+    181          
+    182          #endif
+    183          }
+   \                     ??WDOGn_Feed_0: (+1)
+   \       0x20   0xBD31             POP      {R0,R4,R5,PC}
+    184          
+    185          /***************************************************************************//**
+    186           * @brief
+    187           *   Initialize WDOG (assuming the WDOG configuration has not been
+    188           *   locked).
+    189           *
+    190           * @note
+    191           *   This function modifies the WDOG CTRL register which requires
+    192           *   synchronization into the low-frequency domain. If this register is modified
+    193           *   before a previous update to the same register has completed, this function
+    194           *   will stall until the previous synchronization has completed.
+    195           *
+    196           * @param[in] wdog
+    197           *   Pointer to the WDOG peripheral register block.
+    198           *
+    199           * @param[in] init
+    200           *   The structure holding the WDOG configuration. A default setting
+    201           *   #WDOG_INIT_DEFAULT is available for initialization.
+    202           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    203          void WDOGn_Init(WDOG_TypeDef *wdog, const WDOG_Init_TypeDef *init)
+    204          {
+   \                     WDOGn_Init: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x000C             MOVS     R4,R1
+    205          #if defined(_WDOG_CFG_MASK)
+    206            // Handle series-2 devices
+    207          
+    208            if (wdog->EN != 0U) {
+   \        0x8   0x6868             LDR      R0,[R5, #+4]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD009             BEQ.N    ??WDOGn_Init_0
+    209              while (wdog->SYNCBUSY != 0U) {
+   \                     ??WDOGn_Init_1: (+1)
+   \        0xE   0x6A68             LDR      R0,[R5, #+36]
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD1FC             BNE.N    ??WDOGn_Init_1
+    210                // Wait for any potential synchronization to finish
+    211              }
+    212              wdog->EN_CLR = WDOG_EN_EN;
+   \       0x14   0x2101             MOVS     R1,#+1
+   \       0x16   0xF242 0x0004      MOVW     R0,#+8196
+   \       0x1A   0x5029             STR      R1,[R5, R0]
+    213          #if defined(_WDOG_EN_DISABLING_MASK)
+    214              while (wdog->EN & _WDOG_EN_DISABLING_MASK) {
+   \                     ??WDOGn_Init_2: (+1)
+   \       0x1C   0x6868             LDR      R0,[R5, #+4]
+   \       0x1E   0x0780             LSLS     R0,R0,#+30
+   \       0x20   0xD4FC             BMI.N    ??WDOGn_Init_2
+    215                /* Wait for disabling to finish */
+    216              }
+    217          #endif
+    218            }
+    219          
+    220            wdog->CFG = (init->debugRun        ? WDOG_CFG_DEBUGRUN        : 0U)
+    221                        | (init->clrSrc        ? WDOG_CFG_CLRSRC          : 0U)
+    222          #if defined(_WDOG_CFG_EM1RUN_MASK)
+    223                        | (init->em1Run        ? WDOG_CFG_EM1RUN          : 0U)
+    224          #endif
+    225                        | (init->em2Run        ? WDOG_CFG_EM2RUN          : 0U)
+    226                        | (init->em3Run        ? WDOG_CFG_EM3RUN          : 0U)
+    227                        | (init->em4Block      ? WDOG_CFG_EM4BLOCK        : 0U)
+    228                        | (init->prs0MissRstEn ? WDOG_CFG_PRS0MISSRSTEN   : 0U)
+    229                        | (init->prs1MissRstEn ? WDOG_CFG_PRS1MISSRSTEN   : 0U)
+    230                        | (init->resetDisable  ? WDOG_CFG_WDOGRSTDIS : 0U)
+    231                        | ((uint32_t)(init->warnSel) << _WDOG_CFG_WARNSEL_SHIFT)
+    232                        | ((uint32_t)(init->winSel) << _WDOG_CFG_WINSEL_SHIFT)
+    233                        | ((uint32_t)(init->perSel) << _WDOG_CFG_PERSEL_SHIFT);
+   \                     ??WDOGn_Init_0: (+1)
+   \       0x22   0x7860             LDRB     R0,[R4, #+1]
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD001             BEQ.N    ??WDOGn_Init_3
+   \       0x28   0x2120             MOVS     R1,#+32
+   \       0x2A   0xE000             B.N      ??WDOGn_Init_4
+   \                     ??WDOGn_Init_3: (+1)
+   \       0x2C   0x2100             MOVS     R1,#+0
+   \                     ??WDOGn_Init_4: (+1)
+   \       0x2E   0x78A0             LDRB     R0,[R4, #+2]
+   \       0x30   0x2800             CMP      R0,#+0
+   \       0x32   0xD001             BEQ.N    ??WDOGn_Init_5
+   \       0x34   0x2201             MOVS     R2,#+1
+   \       0x36   0xE000             B.N      ??WDOGn_Init_6
+   \                     ??WDOGn_Init_5: (+1)
+   \       0x38   0x2200             MOVS     R2,#+0
+   \                     ??WDOGn_Init_6: (+1)
+   \       0x3A   0x78E0             LDRB     R0,[R4, #+3]
+   \       0x3C   0x2800             CMP      R0,#+0
+   \       0x3E   0xD001             BEQ.N    ??WDOGn_Init_7
+   \       0x40   0x2302             MOVS     R3,#+2
+   \       0x42   0xE000             B.N      ??WDOGn_Init_8
+   \                     ??WDOGn_Init_7: (+1)
+   \       0x44   0x2300             MOVS     R3,#+0
+   \                     ??WDOGn_Init_8: (+1)
+   \       0x46   0x7920             LDRB     R0,[R4, #+4]
+   \       0x48   0x2800             CMP      R0,#+0
+   \       0x4A   0xD001             BEQ.N    ??WDOGn_Init_9
+   \       0x4C   0x2604             MOVS     R6,#+4
+   \       0x4E   0xE000             B.N      ??WDOGn_Init_10
+   \                     ??WDOGn_Init_9: (+1)
+   \       0x50   0x2600             MOVS     R6,#+0
+   \                     ??WDOGn_Init_10: (+1)
+   \       0x52   0x7960             LDRB     R0,[R4, #+5]
+   \       0x54   0x2800             CMP      R0,#+0
+   \       0x56   0xD001             BEQ.N    ??WDOGn_Init_11
+   \       0x58   0x2708             MOVS     R7,#+8
+   \       0x5A   0xE000             B.N      ??WDOGn_Init_12
+   \                     ??WDOGn_Init_11: (+1)
+   \       0x5C   0x2700             MOVS     R7,#+0
+   \                     ??WDOGn_Init_12: (+1)
+   \       0x5E   0x79A0             LDRB     R0,[R4, #+6]
+   \       0x60   0x2800             CMP      R0,#+0
+   \       0x62   0xD002             BEQ.N    ??WDOGn_Init_13
+   \       0x64   0xF05F 0x0C10      MOVS     R12,#+16
+   \       0x68   0xE001             B.N      ??WDOGn_Init_14
+   \                     ??WDOGn_Init_13: (+1)
+   \       0x6A   0xF05F 0x0C00      MOVS     R12,#+0
+   \                     ??WDOGn_Init_14: (+1)
+   \       0x6E   0x79E0             LDRB     R0,[R4, #+7]
+   \       0x70   0x2800             CMP      R0,#+0
+   \       0x72   0xD002             BEQ.N    ??WDOGn_Init_15
+   \       0x74   0xF44F 0x7E00      MOV      LR,#+512
+   \       0x78   0xE001             B.N      ??WDOGn_Init_16
+   \                     ??WDOGn_Init_15: (+1)
+   \       0x7A   0xF05F 0x0E00      MOVS     LR,#+0
+   \                     ??WDOGn_Init_16: (+1)
+   \       0x7E   0x7A20             LDRB     R0,[R4, #+8]
+   \       0x80   0x2800             CMP      R0,#+0
+   \       0x82   0xD002             BEQ.N    ??WDOGn_Init_17
+   \       0x84   0xF44F 0x6880      MOV      R8,#+1024
+   \       0x88   0xE001             B.N      ??WDOGn_Init_18
+   \                     ??WDOGn_Init_17: (+1)
+   \       0x8A   0xF05F 0x0800      MOVS     R8,#+0
+   \                     ??WDOGn_Init_18: (+1)
+   \       0x8E   0x7B60             LDRB     R0,[R4, #+13]
+   \       0x90   0x2800             CMP      R0,#+0
+   \       0x92   0xD002             BEQ.N    ??WDOGn_Init_19
+   \       0x94   0xF44F 0x7080      MOV      R0,#+256
+   \       0x98   0xE000             B.N      ??WDOGn_Init_20
+   \                     ??WDOGn_Init_19: (+1)
+   \       0x9A   0x2000             MOVS     R0,#+0
+   \                     ??WDOGn_Init_20: (+1)
+   \       0x9C   0x4311             ORRS     R1,R2,R1
+   \       0x9E   0x4319             ORRS     R1,R3,R1
+   \       0xA0   0x4331             ORRS     R1,R6,R1
+   \       0xA2   0x4339             ORRS     R1,R7,R1
+   \       0xA4   0xEA5C 0x0101      ORRS     R1,R12,R1
+   \       0xA8   0xEA5E 0x0101      ORRS     R1,LR,R1
+   \       0xAC   0xEA58 0x0101      ORRS     R1,R8,R1
+   \       0xB0   0x4301             ORRS     R1,R0,R1
+   \       0xB2   0x7AE0             LDRB     R0,[R4, #+11]
+   \       0xB4   0xEA51 0x6100      ORRS     R1,R1,R0, LSL #+24
+   \       0xB8   0x7B20             LDRB     R0,[R4, #+12]
+   \       0xBA   0xEA51 0x7100      ORRS     R1,R1,R0, LSL #+28
+   \       0xBE   0x7AA0             LDRB     R0,[R4, #+10]
+   \       0xC0   0xEA51 0x4100      ORRS     R1,R1,R0, LSL #+16
+   \       0xC4   0x60A9             STR      R1,[R5, #+8]
+    234          
+    235            WDOGn_Enable(wdog, init->enable);
+   \       0xC6   0x7821             LDRB     R1,[R4, #+0]
+   \       0xC8   0x0028             MOVS     R0,R5
+   \       0xCA   0x.... 0x....      BL       WDOGn_Enable
+    236          
+    237            if (init->lock) {
+   \       0xCE   0x7A60             LDRB     R0,[R4, #+9]
+   \       0xD0   0x2800             CMP      R0,#+0
+   \       0xD2   0xD002             BEQ.N    ??WDOGn_Init_21
+    238              WDOGn_Lock(wdog);
+   \       0xD4   0x0028             MOVS     R0,R5
+   \       0xD6   0x.... 0x....      BL       WDOGn_Lock
+    239            }
+    240          #else
+    241            // Handle series-0 and series-1 devices
+    242            uint32_t setting;
+    243          
+    244            setting = (init->enable       ? WDOG_CTRL_EN         : 0U)
+    245                      | (init->debugRun   ? WDOG_CTRL_DEBUGRUN   : 0U)
+    246          #if defined(_WDOG_CTRL_CLRSRC_MASK)
+    247                      | (init->clrSrc     ? WDOG_CTRL_CLRSRC     : 0U)
+    248          #endif
+    249                      | (init->em2Run     ? WDOG_CTRL_EM2RUN     : 0U)
+    250                      | (init->em3Run     ? WDOG_CTRL_EM3RUN     : 0U)
+    251                      | (init->em4Block   ? WDOG_CTRL_EM4BLOCK   : 0U)
+    252                      | (init->swoscBlock ? WDOG_CTRL_SWOSCBLOCK : 0U)
+    253                      | (init->lock       ? WDOG_CTRL_LOCK       : 0U)
+    254                      | ((uint32_t)(init->clkSel) << _WDOG_CTRL_CLKSEL_SHIFT)
+    255                      | ((uint32_t)(init->perSel) << _WDOG_CTRL_PERSEL_SHIFT);
+    256          
+    257          #if defined(_WDOG_CTRL_WDOGRSTDIS_MASK)
+    258            setting |= (init->resetDisable ? WDOG_CTRL_WDOGRSTDIS : 0U);
+    259          #endif
+    260          #if defined(_WDOG_CTRL_WARNSEL_MASK)
+    261            setting |= ((uint32_t)(init->warnSel) << _WDOG_CTRL_WARNSEL_SHIFT);
+    262          #endif
+    263          #if defined(_WDOG_CTRL_WINSEL_MASK)
+    264            setting |= ((uint32_t)(init->winSel) << _WDOG_CTRL_WINSEL_SHIFT);
+    265          #endif
+    266          
+    267            // Wait for previous operations/modifications to complete
+    268            int i = 0;
+    269            while (((wdog->SYNCBUSY & WDOG_SYNCBUSY_CTRL) != 0U)
+    270                   && (i < WDOG_SYNC_TIMEOUT)) {
+    271              i++;
+    272            }
+    273            wdog->CTRL = setting;
+    274          #endif
+    275          }
+   \                     ??WDOGn_Init_21: (+1)
+   \       0xDA   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    276          
+    277          /***************************************************************************//**
+    278           * @brief
+    279           *   Lock the WDOG configuration.
+    280           *
+    281           * @details
+    282           *   This prevents errors from overwriting the WDOG configuration, possibly
+    283           *   disabling it. Only a reset can unlock the WDOG configuration once locked.
+    284           *
+    285           *   If the LFRCO or LFXO clocks are used to clock WDOG,
+    286           *   consider using the option of inhibiting those clocks to be disabled.
+    287           *   See the WDOG_Enable() initialization structure.
+    288           *
+    289           * @note
+    290           *   This function modifies the WDOG CTRL register which requires
+    291           *   synchronization into the low-frequency domain. If this register is modified
+    292           *   before a previous update to the same register has completed, this function
+    293           *   will stall until the previous synchronization has completed.
+    294           *
+    295           * @param[in] wdog
+    296           *   A pointer to WDOG peripheral register block.
+    297           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    298          void WDOGn_Lock(WDOG_TypeDef *wdog)
+    299          {
+    300          #if defined(_WDOG_LOCK_MASK)
+    301            wdog->LOCK = _WDOG_LOCK_LOCKKEY_LOCK;
+   \                     WDOGn_Lock: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6201             STR      R1,[R0, #+32]
+    302          #else
+    303            // Wait for any pending previous write operation to have been completed in
+    304            // the low-frequency domain.
+    305            while ( (wdog->SYNCBUSY & WDOG_SYNCBUSY_CTRL) != 0U ) {
+    306            }
+    307          
+    308            // Disable writing to the control register.
+    309            BUS_RegBitWrite(&wdog->CTRL, _WDOG_CTRL_LOCK_SHIFT, 1);
+    310          #endif
+    311          }
+   \        0x4   0x4770             BX       LR
+    312          
+    313          /***************************************************************************//**
+    314           * @brief
+    315           *   Wait for the WDOG to complete all synchronization of register changes
+    316           *   and commands.
+    317           *
+    318           * @param[in] wdog
+    319           *   A pointer to WDOG peripheral register block.
+    320           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    321          void WDOGn_SyncWait(WDOG_TypeDef *wdog)
+    322          {
+    323          #if defined(_SILICON_LABS_32B_SERIES_2)
+    324            while ((wdog->EN != 0U) && (wdog->SYNCBUSY != 0U)) {
+   \                     WDOGn_SyncWait: (+1)
+   \                     ??WDOGn_SyncWait_0: (+1)
+   \        0x0   0x6841             LDR      R1,[R0, #+4]
+   \        0x2   0x2900             CMP      R1,#+0
+   \        0x4   0xD002             BEQ.N    ??WDOGn_SyncWait_1
+   \        0x6   0x6A41             LDR      R1,[R0, #+36]
+   \        0x8   0x2900             CMP      R1,#+0
+   \        0xA   0xD1F9             BNE.N    ??WDOGn_SyncWait_0
+    325              // Wait for synchronization to finish
+    326            }
+    327          #else
+    328            while (wdog->SYNCBUSY != 0U) {
+    329              // Wait for synchronization to finish
+    330            }
+    331          #endif
+    332          }
+   \                     ??WDOGn_SyncWait_1: (+1)
+   \        0xC   0x4770             BX       LR
+    333          
+    334          /***************************************************************************//**
+    335           * @brief
+    336           *   Unlock the WDOG configuration.
+    337           *
+    338           * @details
+    339           *   Note that this function will have no effect on devices where a reset is
+    340           *   the only way to unlock the watchdog.
+    341           *
+    342           * @param[in] wdog
+    343           *   A pointer to WDOG peripheral register block.
+    344           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    345          void WDOGn_Unlock(WDOG_TypeDef *wdog)
+    346          {
+    347          #if defined(_WDOG_LOCK_MASK)
+    348            wdog->LOCK = _WDOG_LOCK_LOCKKEY_UNLOCK;
+   \                     WDOGn_Unlock: (+1)
+   \        0x0   0xF64A 0x31E8      MOVW     R1,#+44008
+   \        0x4   0x6201             STR      R1,[R0, #+32]
+    349          #else
+    350            (void) wdog;
+    351          #endif
+    352          }
+   \        0x6   0x4770             BX       LR
+    353          
+    354          /** @} (end addtogroup wdog) */
+    355          #endif /* defined(WDOG_COUNT) && (WDOG_COUNT > 0) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   WDOGn_Enable
+      16   WDOGn_Feed
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+      24   WDOGn_Init
+        24   -> WDOGn_Enable
+        24   -> WDOGn_Lock
+       0   WDOGn_Lock
+       0   WDOGn_SyncWait
+       0   WDOGn_Unlock
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      46  WDOGn_Enable
+      34  WDOGn_Feed
+     222  WDOGn_Init
+       6  WDOGn_Lock
+      14  WDOGn_SyncWait
+       8  WDOGn_Unlock
+
+ 
+ 330 bytes in section .text
+ 
+ 330 bytes of CODE memory
+
+Errors: none
+Warnings: none

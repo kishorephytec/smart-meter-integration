@@ -1,0 +1,1946 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         02/Dec/2024  12:57:45
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\ProAppSrc\Util\hif\hif_utility.c
+#    Command line                 =
+#        -f
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir\hif_utility.o.rsp
+#        (D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\ProAppSrc\Util\hif\hif_utility.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\Util_9809783495009140069.dir
+#        --diag_suppress Pa050 -o
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir\hif_utility.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\Util_9809783495009140069.dir\hif_utility.lst
+#    Object file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir\hif_utility.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\ProAppSrc\Util\hif\hif_utility.c
+      1          /** \file hif_utility.c
+      2           *******************************************************************************
+      3           ** \brief 
+      4           ** Implements the Host interface functionality
+      5           **
+      6           ** \cond STD_FILE_HEADER
+      7           **
+      8           ** COPYRIGHT(c) 2023-24 Procubed Innovations Pvt Ltd.
+      9           ** All rights reserved.
+     10           **
+     11           ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     12           ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     13           ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     14           ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     15           ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     16           ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     17           ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     18           **
+     19           *******************************************************************************
+     20           **  \endcond
+     21           */
+     22          
+     23          /*******************************************************************************
+     24          * File inclusion
+     25          *******************************************************************************/
+     26          #include "StackPHYConf.h"
+     27          #include "common.h"
+     28          #include "queue_latest.h"
+     29          #include "buff_mgmt.h"
+     30          #include "uart_hal.h"
+     31          #include "list_latest.h"
+     32          #include "hw_tmr.h"
+     33          #include "sw_timer.h"
+     34          #include "sm.h"
+     35          #include "hif_utility.h"
+     36          #include "event_manager.h"
+     37          #include "timer_service.h"
+     38          
+     39          
+     40          
+     41          /*******************************************************************************
+     42          * Private macro definitions
+     43          *******************************************************************************/
+     44          
+     45          // Raka [13-Nov-2018] ::  The Length field is only changed in NEW HIF Format
+     46          /* Raka  ::::: 12 Nov 2018...................
+     47                      For referance ............................
+     48          
+     49                    uint8_t synccompak[2] = { 0x41,0x42 };
+     50                    uint16_t Len = 0x0001;
+     51                    uint16_t NewLen = 0x00;
+     52                    *(uint16_t*)&synccompak[0] = Len; //0x01 ,0x00 = 0x0001
+     53                    NewLen = *(uint16_t*)&synccompak[0] ;
+     54          */
+     55          
+     56          
+     57          /**< index to the SOF field in the received buffer*/
+     58          #define SOF				        0xA5
+     59          
+     60          /**< index to the class id field in the received buffer*/
+     61          #define PROTOCOL_ID_INDEX			0x03
+     62          
+     63          /**< index to the group id field in the received buffer*/
+     64          #define LAYER_ID_INDEX				0x04   
+     65          
+     66          /**< index to the primitive id field in the received buffer*/
+     67          #define COMMAND_ID_INDEX			0x05   
+     68          
+     69          /**< index to the length field in the received buffer.It is of 2 bytes. */
+     70          #define LEN_FLD_INDEX				0x06
+     71          
+     72          #define CRC_FLD_INDEX				0x08
+     73          
+     74          /**< index to the upper layer memory field */
+     75          #define NHLE_HEAP				0xFFFF0000
+     76          
+     77          /**< index to the lower layer memory field*/
+     78          #define NLLE_HEAP				0xFFFFFF00
+     79          
+     80          /**< default hif header length*/
+     81          #define HIF_HDR_LEN				0x09
+     82          
+     83          /**< default reserved area*/
+     84          #define RESERVED_AREA				0x04
+     85          
+     86          
+     87          #define PALDCKSUM_COMPORT_LEN                   2
+     88          
+     89          
+     90          
+     91          /******************************************************************************
+     92          * Private Structures, Unions & enums Type Definitions
+     93          ******************************************************************************/
+     94          enum 
+     95          {                                              
+     96              RX_INIT,
+     97              RX_BUFFER_SET,
+     98              RX_SOF_CHECKING,
+     99              READING_HDR,
+    100              READING_PLD,
+    101              READING_HDR_WITHOUT_HIF_FORMAT,
+    102              READING_PLD_LENGTH_WITHOUT_HIF_FORMAT,
+    103              READING_PLD_WITHOUT_HIF_FORMAT
+    104              
+    105          };
+    106          
+    107          /******************************************************************************
+    108          * Private Variable Definitions
+    109          ******************************************************************************/
+    110          
+
+   \                                 In section .bss, align 4
+    111          static hif_t* p_hif;
+   \                     p_hif:
+   \        0x0                      DS8 4
+    112          //uint32_t stop_time;
+    113          //uint32_t start_time;
+    114          //uint32_t buffer_stop_time;
+    115          /*
+    116          ** ============================================================================
+    117          ** Private Function Definitions
+    118          ** ============================================================================*/ 
+    119          
+    120          // call back to be registerd with the UART HAL module which gets invoked when the HALs 
+    121          //callback is invoked by the driver
+    122          //uint8_t hif2enetCommonTestInterface( uint8_t* pBuff,uint16_t len);
+    123          
+
+   \                                 In section .bss, align 4
+    124          uint32_t uart_debug_rx_count = 0;/*Umesh 12/12/2108*/
+   \                     uart_debug_rx_count:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    125          uint32_t pkt_drop_count_sw_tmr = 0;/*Umesh 12/12/2108*/
+   \                     pkt_drop_count_sw_tmr:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    126          uint32_t uart_drop_else_bytes = 0;/*Umesh 12/12/2108*/
+   \                     uart_drop_else_bytes:
+   \        0x0                      DS8 4
+    127          
+    128          uint8_t get_node_type( void );
+
+   \                                 In section .bss, align 1
+    129          static uint8_t hif_receive_in_process = 0;
+   \                     hif_receive_in_process:
+   \        0x0                      DS8 1
+    130          
+    131          /*
+    132          ** ============================================================================
+    133          ** Public Variable Definitions
+    134          ** ============================================================================
+    135          */
+    136          #if APP_LBR_ROUTER
+
+   \                                 In section .bss, align 4
+    137          sw_tmr_t uart_debug;//@Umesh 05_12_2018
+   \                     uart_debug:
+   \        0x0                      DS8 24
+    138          #endif
+    139          
+    140          /*
+    141          ** ============================================================================
+    142          ** External Variable and Function Declarations
+    143          ** ============================================================================
+    144          */
+    145          
+    146          extern void signal_event_to_mac_task(uint8_t event);
+    147          
+    148          #ifdef MAC_CFG_SECURITY_ENABLED	
+    149          	extern void cleanup_security_queues(uchar SetDefaultPIBValue);
+    150          #endif
+    151          
+    152          
+    153          extern void * app_bm_alloc( uint16_t length );    
+    154          extern void app_bm_free( uint8_t *pMem   );
+    155          //extern void App_exit_continuous_mode(void);
+    156          extern const uint16_t max_buffer_size;
+    157          extern void hif_process_tx (void *data);
+    158          /*
+    159          ** ============================================================================
+    160          ** Private Function Prototypes
+    161          ** ============================================================================
+    162          */
+    163          static uint8_t Generate_Checksum(hif_buff_t* pBuff);
+    164          static uint8_t Generate_Checksum_payload(uint8_t* pBuff , uint16_t payld_len);
+    165          static bool set_receive_buffer( hif_t* p_hif_data, bool new_buff );
+    166          static void hif_call_back (void *AppHandle, uint32_t  Event,void * p_hif_data );
+    167          
+    168          /*
+    169          ** ============================================================================
+    170          ** Public Function Definitions
+    171          ** ============================================================================
+    172          */
+    173          
+    174          /******************************************************************************/
+    175          /******************************************************************************/
+    176          
+
+   \                                 In section .text, align 2, keep-with-next
+    177          bool hif_module_init 
+    178          	( 
+    179          		hif_t* p_hif_data, 
+    180          		app_call_back_t app_call_back,
+    181          		drv_calls_t* driver_if
+    182          	)
+    183          {
+   \                     hif_module_init: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    184          	
+    185          	p_hif = p_hif_data;
+   \        0x8   0x.... 0x....      LDR.W    R0,??DataTable5
+   \        0xC   0x6004             STR      R4,[R0, #+0]
+    186          	
+    187          	queue_initialise ( &p_hif_data->service_q );
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0x.... 0x....      BL       queue_initialise
+    188          	queue_initialise ( &p_hif_data->send_q );
+   \       0x14   0xF114 0x000C      ADDS     R0,R4,#+12
+   \       0x18   0x.... 0x....      BL       queue_initialise
+    189          	queue_initialise ( &p_hif_data->recv_q );
+   \       0x1C   0xF114 0x0018      ADDS     R0,R4,#+24
+   \       0x20   0x.... 0x....      BL       queue_initialise
+    190          
+    191          	p_hif_data->driver.send = driver_if->send;
+   \       0x24   0x6870             LDR      R0,[R6, #+4]
+   \       0x26   0x62E0             STR      R0,[R4, #+44]
+    192          	p_hif_data->driver.recv = driver_if->recv;
+   \       0x28   0x68B0             LDR      R0,[R6, #+8]
+   \       0x2A   0x6320             STR      R0,[R4, #+48]
+    193          	p_hif_data->driver.init = driver_if->init;
+   \       0x2C   0x68F0             LDR      R0,[R6, #+12]
+   \       0x2E   0x6360             STR      R0,[R4, #+52]
+    194          	p_hif_data->driver.deinit = driver_if->deinit;
+   \       0x30   0x6930             LDR      R0,[R6, #+16]
+   \       0x32   0x63A0             STR      R0,[R4, #+56]
+    195          	p_hif_data->app_call_back = app_call_back; 
+   \       0x34   0x6265             STR      R5,[R4, #+36]
+    196          	
+    197          	/*register hif call back along with initializing the driver*/
+    198          	p_hif_data->driver.init();
+   \       0x36   0x6B60             LDR      R0,[R4, #+52]
+   \       0x38   0x4780             BLX      R0
+    199          
+    200          	p_hif_data->rx_state = RX_INIT;
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \       0x3C   0xF884 0x0040      STRB     R0,[R4, #+64]
+    201          
+    202                  set_receive_buffer( p_hif_data, true );
+   \       0x40   0x2101             MOVS     R1,#+1
+   \       0x42   0x0020             MOVS     R0,R4
+   \       0x44   0x.... 0x....      BL       set_receive_buffer
+    203          
+    204          	uart_hal_register_back( hif_call_back,(void*)p_hif_data );
+   \       0x48   0x0021             MOVS     R1,R4
+   \       0x4A   0x.... 0x....      ADR.W    R0,hif_call_back
+   \       0x4E   0x.... 0x....      BL       uart_hal_register_back
+    205          
+    206              return TRUE;
+   \       0x52   0x2001             MOVS     R0,#+1
+   \       0x54   0xBD70             POP      {R4-R6,PC}
+    207          }
+    208          
+    209          /******************************************************************************/
+    210           
+
+   \                                 In section .text, align 2, keep-with-next
+    211          bool hif_register_parser 
+    212          	( 
+    213          		hif_t* p_hif_data, 
+    214                  hif_service_t *p_hif_service, 
+    215                  uint8_t group_id, 
+    216                  hif_reveice_cb_t hif_recv_cb 
+    217          	)
+    218          {
+   \                     hif_register_parser: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+   \        0x8   0x001E             MOVS     R6,R3
+    219          	p_hif_service->group_id = group_id;
+   \        0xA   0x7125             STRB     R5,[R4, #+4]
+    220          	p_hif_service->hif_recv_cb = hif_recv_cb;
+   \        0xC   0x60E6             STR      R6,[R4, #+12]
+    221          	queue_item_put( &( p_hif_data->service_q ),( queue_item_t* )p_hif_service );
+   \        0xE   0x0021             MOVS     R1,R4
+   \       0x10   0x0038             MOVS     R0,R7
+   \       0x12   0x.... 0x....      BL       queue_item_put
+    222          	
+    223          	return true;
+   \       0x16   0x2001             MOVS     R0,#+1
+   \       0x18   0xBDF2             POP      {R1,R4-R7,PC}
+    224          }
+    225          
+    226           /*****************************************************************************/
+    227           
+    228           #if 0 // For Kimbal
+    229          // RAka ::: Embedded code -->>> to ->>>> External Interface
+    230          uint8_t hif_send_msg_up(uint8_t* p_Msg, uint16_t msg_len, uint8_t layer_id, uint8_t protocol_id )
+    231          {
+    232              /*1) Allocatte a new UART Buffer of type hif_buff_t* 
+    233              2) Copy the packet from p_Msg, msg_len number of bytes into the newly 
+    234              allocated buffs from the place holder "data[0]" after putting class_id and
+    235              sub_class_id in  0th and 1st index of data array 
+    236              3) put the newly allocated buffer in the UART TX Q
+    237              4) send an TX_event to the UART thread */
+    238              hif_buff_t* pBuffer = NULL;
+    239          
+    240          ////[kimbal]    
+    241              
+    242              uint8_t* p_data = (uint8_t*) app_bm_alloc( msg_len);
+    243          ////[kimbal]
+    244              //uint8_t* p_data = (uint8_t*) app_bm_alloc( msg_len + HIF_HDR_LEN + RESERVED_AREA );
+    245              
+    246          ////[kimbal]
+    247              if(  NULL != p_data )
+    248              {      
+    249                pBuffer = (hif_buff_t*)(p_data-sizeof(queue_item_t *));
+    250                memcpy( &(pBuffer->data[0]), ((uint8_t*)&msg_len), 2); 
+    251                memcpy( &(pBuffer->data[2]), p_Msg, msg_len);
+    252                msg_len +=2;
+    253                
+    254                  /*put the allocated buffer in the send_q*/
+    255                  queue_item_put(&(p_hif->send_q),(queue_item_t*)pBuffer);
+    256          
+    257                  /*send an event to the HIF thread */
+    258          
+    259          #if ((RADIO_VALIDATION || SNIFFER) || (APP_HIF_PROCESS_FEATURE_ENABLED == 0))
+    260                  event_set(HIF_TX_EVENT);
+    261          #else 
+    262                  hif_process_tx (NULL);
+    263          #endif
+    264                  return HIF_SUCCESS;
+    265              }    
+    266          ////[kimbal]    
+    267          
+    268          //    if(  NULL != p_data )
+    269          //    {
+    270          //          // Raka added for meter communication .....
+    271          //          // hif group ID : 0xAA is used for RAW UART Communication with Meter...
+    272          //          if( protocol_id == 0xAA)
+    273          //          {
+    274          //            
+    275          //                pBuffer = (hif_buff_t*)(p_data-sizeof(queue_item_t *));
+    276          //                memcpy( &(pBuffer->data[0]), ((uint8_t*)&msg_len), 2);     //Change by shubham 
+    277          //		memcpy( &(pBuffer->data[2]), p_Msg, msg_len);                         
+    278          //		
+    279          //          }
+    280          //          else
+    281          //          {
+    282          //          // Raka  ....
+    283          //            
+    284          //          pBuffer = (hif_buff_t*)(p_data-sizeof(queue_item_t *));
+    285          //          /* start of frame== 0xA5,0xA5,0xA5*/
+    286          //          pBuffer->data[0] = SOF;
+    287          //          pBuffer->data[1] = SOF;
+    288          //          pBuffer->data[2] = SOF;
+    289          //          /*class id for zigbee or Wi-fi*/
+    290          //          pBuffer->data[PROTOCOL_ID_INDEX] = protocol_id;
+    291          //          /*sub_class id eg.mac or phy   */
+    292          //          pBuffer->data[LAYER_ID_INDEX] = layer_id;
+    293          //          /* command id i.e, present at the first byte of the buffer p_Msg*/
+    294          //          pBuffer->data[COMMAND_ID_INDEX] = *p_Msg++;
+    295          //          /* length of payload,(the payload begins one byte after the lenght field)*/          
+    296          //          // substracted 1 for COM port , Application should send the data with COM port .. Raka 
+    297          //          msg_len -= 1; 
+    298          //                  
+    299          //          /* Raka [13-Nov-2018] :: Changed to the below 
+    300          //          pBuffer->data[LEN_FLD_INDEX] = (uint8_t)msg_len; 
+    301          //          pBuffer->data[LEN_FLD_INDEX+1] = (uint8_t)((msg_len & 0x0000FF00)>>0x08);          */
+    302          //          
+    303          //          *(uint16_t*)&pBuffer->data[LEN_FLD_INDEX] = msg_len;            
+    304          //          /* calculate the checksum value using the function	
+    305          //          store the result at the sixth byte of the pBuffer*/
+    306          //          pBuffer->data[CRC_FLD_INDEX] =  Generate_Checksum(pBuffer);
+    307          //          /* copy the source buffer(p_Msg+1) into dest buffer(pBuffer)                
+    308          //          p_Msg+1 is done because the payload starts after the Command ID*/          
+    309          //          memcpy( &(pBuffer->data[HIF_HDR_LEN]),p_Msg, msg_len);
+    310          //          pBuffer->data[HIF_HDR_LEN+msg_len] =  Generate_Checksum_payload(&(pBuffer->data[HIF_HDR_LEN]) , msg_len);
+    311          //          // Add the com port to the UART tx Buff...
+    312          //          
+    313          //          // +1 for increment of the index by  payload checksum filed....
+    314          //          
+    315          //          pBuffer->data[HIF_HDR_LEN+msg_len +1] = *(p_Msg + msg_len);
+    316          //       // Raka added for meter communication .....
+    317          //		
+    318          //          }
+    319          //      // Raka Changes ends here ....
+    320          //          
+    321          //        /*put the allocated buffer in the send_q*/
+    322          //        queue_item_put(&(p_hif->send_q),(queue_item_t*)pBuffer);
+    323          //
+    324          //        /*send an event to the HIF thread */
+    325          //
+    326          //#if ((RADIO_VALIDATION || SNIFFER) || (APP_HIF_PROCESS_FEATURE_ENABLED == 0))
+    327          //        event_set(HIF_TX_EVENT);
+    328          //#else 
+    329          //        hif_process_tx (NULL);
+    330          //#endif
+    331          //        return HIF_SUCCESS;
+    332          //    }
+    333              return HIF_BUFF_FAILED;	
+    334          }
+    335          
+    336          
+    337          #else  // for Procubed Tool
+    338          
+    339          // RAka ::: Embedded code -->>> to ->>>> External Interface
+
+   \                                 In section .text, align 2, keep-with-next
+    340          uint8_t hif_send_msg_up(uint8_t* p_Msg, uint16_t msg_len, uint8_t layer_id, uint8_t protocol_id )
+    341          {
+   \                     hif_send_msg_up: (+1)
+   \        0x0   0xE92D 0x4FF7      PUSH     {R0-R2,R4-R11,LR}
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x001E             MOVS     R6,R3
+    342              /*1) Allocatte a new UART Buffer of type hif_buff_t* 
+    343              2) Copy the packet from p_Msg, msg_len number of bytes into the newly 
+    344              allocated buffs from the place holder "data[0]" after putting class_id and
+    345              sub_class_id in  0th and 1st index of data array 
+    346              3) put the newly allocated buffer in the UART TX Q
+    347              4) send an TX_event to the UART thread */
+    348              hif_buff_t* pBuffer = NULL;
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0x9000             STR      R0,[SP, #+0]
+    349          
+    350              uint8_t* p_data = (uint8_t*) app_bm_alloc( msg_len + HIF_HDR_LEN + RESERVED_AREA );
+   \        0xC   0xF8BD 0x0004      LDRH     R0,[SP, #+4]
+   \       0x10   0x300D             ADDS     R0,R0,#+13
+   \       0x12   0xB280             UXTH     R0,R0
+   \       0x14   0x.... 0x....      BL       app_bm_alloc
+   \       0x18   0x0004             MOVS     R4,R0
+    351          
+    352              if(  NULL != p_data )
+   \       0x1A   0x2C00             CMP      R4,#+0
+   \       0x1C   0xD05B             BEQ.N    ??hif_send_msg_up_0
+    353              {
+    354                    // Raka added for meter communication .....
+    355                    // hif group ID : 0xAA is used for RAW UART Communication with Meter...
+    356                    if( protocol_id == 0xAA)
+   \       0x1E   0x0030             MOVS     R0,R6
+   \       0x20   0xB2C0             UXTB     R0,R0
+   \       0x22   0x28AA             CMP      R0,#+170
+   \       0x24   0xD116             BNE.N    ??hif_send_msg_up_1
+    357                    {
+    358                      
+    359                          pBuffer = (hif_buff_t*)(p_data-sizeof(queue_item_t *));
+   \       0x26   0x1F27             SUBS     R7,R4,#+4
+    360                          memcpy( &(pBuffer->data[0]), ((uint8_t*)&msg_len), 2);     //Change by shubham 
+   \       0x28   0xF05F 0x0A02      MOVS     R10,#+2
+   \       0x2C   0xF10D 0x0804      ADD      R8,SP,#+4
+   \       0x30   0xF117 0x0904      ADDS     R9,R7,#+4
+   \       0x34   0x4652             MOV      R2,R10
+   \       0x36   0x4641             MOV      R1,R8
+   \       0x38   0x4648             MOV      R0,R9
+   \       0x3A   0x.... 0x....      BL       __aeabi_memcpy
+    361          		memcpy( &(pBuffer->data[2]), p_Msg, msg_len);                         
+   \       0x3E   0xF8BD 0x9004      LDRH     R9,[SP, #+4]
+   \       0x42   0x9500             STR      R5,[SP, #+0]
+   \       0x44   0xF117 0x0B06      ADDS     R11,R7,#+6
+   \       0x48   0x464A             MOV      R2,R9
+   \       0x4A   0x9900             LDR      R1,[SP, #+0]
+   \       0x4C   0x4658             MOV      R0,R11
+   \       0x4E   0x.... 0x....      BL       __aeabi_memcpy
+    362          		
+    363                    }
+   \       0x52   0xE034             B.N      ??hif_send_msg_up_2
+    364                    else
+    365                    {
+    366                    // Raka  ....
+    367                      
+    368                    pBuffer = (hif_buff_t*)(p_data-sizeof(queue_item_t *));
+   \                     ??hif_send_msg_up_1: (+1)
+   \       0x54   0x1F27             SUBS     R7,R4,#+4
+    369                    /* start of frame== 0xA5,0xA5,0xA5*/
+    370                    pBuffer->data[0] = SOF;
+   \       0x56   0x20A5             MOVS     R0,#+165
+   \       0x58   0x7138             STRB     R0,[R7, #+4]
+    371                    pBuffer->data[1] = SOF;
+   \       0x5A   0x20A5             MOVS     R0,#+165
+   \       0x5C   0x7178             STRB     R0,[R7, #+5]
+    372                    pBuffer->data[2] = SOF;
+   \       0x5E   0x20A5             MOVS     R0,#+165
+   \       0x60   0x71B8             STRB     R0,[R7, #+6]
+    373                    /*class id for zigbee or Wi-fi*/
+    374                    pBuffer->data[PROTOCOL_ID_INDEX] = protocol_id;
+   \       0x62   0x71FE             STRB     R6,[R7, #+7]
+    375                    /*sub_class id eg.mac or phy   */
+    376                    pBuffer->data[LAYER_ID_INDEX] = layer_id;
+   \       0x64   0xF89D 0x0008      LDRB     R0,[SP, #+8]
+   \       0x68   0x7238             STRB     R0,[R7, #+8]
+    377                    /* command id i.e, present at the first byte of the buffer p_Msg*/
+    378                    pBuffer->data[COMMAND_ID_INDEX] = *p_Msg++;
+   \       0x6A   0x7828             LDRB     R0,[R5, #+0]
+   \       0x6C   0x7278             STRB     R0,[R7, #+9]
+   \       0x6E   0x1C6D             ADDS     R5,R5,#+1
+    379                    /* length of payload,(the payload begins one byte after the lenght field)*/          
+    380                    // substracted 1 for COM port , Application should send the data with COM port .. Raka 
+    381                    msg_len -= 1; 
+   \       0x70   0xF8BD 0x0004      LDRH     R0,[SP, #+4]
+   \       0x74   0x1E40             SUBS     R0,R0,#+1
+   \       0x76   0xF8AD 0x0004      STRH     R0,[SP, #+4]
+    382                            
+    383                    /* Raka [13-Nov-2018] :: Changed to the below 
+    384                    pBuffer->data[LEN_FLD_INDEX] = (uint8_t)msg_len; 
+    385                    pBuffer->data[LEN_FLD_INDEX+1] = (uint8_t)((msg_len & 0x0000FF00)>>0x08);          */
+    386                    
+    387                    *(uint16_t*)&pBuffer->data[LEN_FLD_INDEX] = msg_len;            
+   \       0x7A   0xF8BD 0x0004      LDRH     R0,[SP, #+4]
+   \       0x7E   0x8178             STRH     R0,[R7, #+10]
+    388                    /* calculate the checksum value using the function	
+    389                    store the result at the sixth byte of the pBuffer*/
+    390                    pBuffer->data[CRC_FLD_INDEX] =  Generate_Checksum(pBuffer);
+   \       0x80   0x0038             MOVS     R0,R7
+   \       0x82   0x.... 0x....      BL       Generate_Checksum
+   \       0x86   0x7338             STRB     R0,[R7, #+12]
+    391                    /* copy the source buffer(p_Msg+1) into dest buffer(pBuffer)                
+    392                    p_Msg+1 is done because the payload starts after the Command ID*/          
+    393                    memcpy( &(pBuffer->data[HIF_HDR_LEN]),p_Msg, msg_len);
+   \       0x88   0xF8BD 0x8004      LDRH     R8,[SP, #+4]
+   \       0x8C   0x46A9             MOV      R9,R5
+   \       0x8E   0xF117 0x0A0D      ADDS     R10,R7,#+13
+   \       0x92   0x4642             MOV      R2,R8
+   \       0x94   0x4649             MOV      R1,R9
+   \       0x96   0x4650             MOV      R0,R10
+   \       0x98   0x.... 0x....      BL       __aeabi_memcpy
+    394                    pBuffer->data[HIF_HDR_LEN+msg_len] =  Generate_Checksum_payload(&(pBuffer->data[HIF_HDR_LEN]) , msg_len);
+   \       0x9C   0xF8BD 0x1004      LDRH     R1,[SP, #+4]
+   \       0xA0   0xF117 0x000D      ADDS     R0,R7,#+13
+   \       0xA4   0x.... 0x....      BL       Generate_Checksum_payload
+   \       0xA8   0xF8BD 0x1004      LDRH     R1,[SP, #+4]
+   \       0xAC   0x4439             ADD      R1,R7,R1
+   \       0xAE   0x7348             STRB     R0,[R1, #+13]
+    395                    // Add the com port to the UART tx Buff...
+    396                    
+    397                    // +1 for increment of the index by  payload checksum filed....
+    398                    
+    399                    pBuffer->data[HIF_HDR_LEN+msg_len +1] = *(p_Msg + msg_len);
+   \       0xB0   0xF8BD 0x0004      LDRH     R0,[SP, #+4]
+   \       0xB4   0x5C28             LDRB     R0,[R5, R0]
+   \       0xB6   0xF8BD 0x1004      LDRH     R1,[SP, #+4]
+   \       0xBA   0x4439             ADD      R1,R7,R1
+   \       0xBC   0x7388             STRB     R0,[R1, #+14]
+    400                 // Raka added for meter communication .....
+    401          		
+    402                    }
+    403                // Raka Changes ends here ....
+    404                    
+    405                  /*put the allocated buffer in the send_q*/
+    406                  queue_item_put(&(p_hif->send_q),(queue_item_t*)pBuffer);
+   \                     ??hif_send_msg_up_2: (+1)
+   \       0xBE   0x0039             MOVS     R1,R7
+   \       0xC0   0x.... 0x....      LDR.W    R0,??DataTable5
+   \       0xC4   0x6800             LDR      R0,[R0, #+0]
+   \       0xC6   0x300C             ADDS     R0,R0,#+12
+   \       0xC8   0x.... 0x....      BL       queue_item_put
+    407          
+    408                  /*send an event to the HIF thread */
+    409          
+    410          #if ((RADIO_VALIDATION || SNIFFER) || (APP_HIF_PROCESS_FEATURE_ENABLED == 0))
+    411                  event_set(HIF_TX_EVENT);
+   \       0xCC   0x2004             MOVS     R0,#+4
+   \       0xCE   0x.... 0x....      BL       event_set
+    412          #else 
+    413                  hif_process_tx (NULL);
+    414          #endif
+    415                  return HIF_SUCCESS;
+   \       0xD2   0x2000             MOVS     R0,#+0
+   \       0xD4   0xE000             B.N      ??hif_send_msg_up_3
+    416              }
+    417              return HIF_BUFF_FAILED;	
+   \                     ??hif_send_msg_up_0: (+1)
+   \       0xD6   0x2003             MOVS     R0,#+3
+   \                     ??hif_send_msg_up_3: (+1)
+   \       0xD8   0xE8BD 0x8FFE      POP      {R1-R11,PC}
+    418          }
+    419          
+    420          
+    421          
+    422          
+    423          #endif
+    424          /******************************************************************************/
+    425          /******************************************************************************/
+    426          // called from thread when RX event is recieved/ Packet has everything from SOF
+
+   \                                 In section .text, align 2, keep-with-next
+    427          bool hif_proc_packet_from_host( hif_t* p_hif_data )
+    428          {
+   \                     hif_proc_packet_from_host: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x0006             MOVS     R6,R0
+    429          	hif_service_t* p_curr_ser = NULL;
+   \        0x6   0x2400             MOVS     R4,#+0
+    430          	hif_buff_t* p_hif_buff = NULL;
+   \        0x8   0x2700             MOVS     R7,#+0
+    431          	queue_t* p_service_q = &( p_hif_data->service_q );
+   \        0xA   0x46B0             MOV      R8,R6
+    432          	
+    433          	uint8_t grp_id, status;
+    434          	uint8_t* p_data = NULL;
+   \        0xC   0xF05F 0x0900      MOVS     R9,#+0
+    435                
+    436          	/*read the buffer from the rx queue*/
+    437          	p_hif_buff = ( hif_buff_t* )queue_item_get( &( p_hif_data->recv_q ) );
+   \       0x10   0xF116 0x0018      ADDS     R0,R6,#+24
+   \       0x14   0x.... 0x....      BL       queue_item_get
+   \       0x18   0x0005             MOVS     R5,R0
+    438                  
+    439          	p_data = p_hif_buff->data;
+   \       0x1A   0xF115 0x0A04      ADDS     R10,R5,#+4
+    440          	
+    441          	if ( NULL != p_hif_buff )
+   \       0x1E   0x2D00             CMP      R5,#+0
+   \       0x20   0xD063             BEQ.N    ??hif_proc_packet_from_host_0
+    442          	{
+    443                    // Meter Data Validation ...
+    444                    if (p_data[0] == 0x7E && (p_data[1] == 0xA0 ||p_data[1] == 0xA8)) // as per dlms- next packet continue
+   \       0x22   0xF89A 0x0000      LDRB     R0,[R10, #+0]
+   \       0x26   0x287E             CMP      R0,#+126
+   \       0x28   0xD133             BNE.N    ??hif_proc_packet_from_host_1
+   \       0x2A   0xF89A 0x0001      LDRB     R0,[R10, #+1]
+   \       0x2E   0x28A0             CMP      R0,#+160
+   \       0x30   0xD003             BEQ.N    ??hif_proc_packet_from_host_2
+   \       0x32   0xF89A 0x0001      LDRB     R0,[R10, #+1]
+   \       0x36   0x28A8             CMP      R0,#+168
+   \       0x38   0xD12B             BNE.N    ??hif_proc_packet_from_host_1
+    445                    {
+    446          		/*go thru the service q to get the appropriate handler 
+    447          		and invoke the same*/
+    448          		
+    449                          grp_id = 0xAA;
+   \                     ??hif_proc_packet_from_host_2: (+1)
+   \       0x3A   0x20AA             MOVS     R0,#+170
+   \       0x3C   0x4683             MOV      R11,R0
+    450          
+    451          		p_curr_ser = ( hif_service_t* )queue_item_scan_next( p_service_q,NULL );
+   \       0x3E   0x2100             MOVS     R1,#+0
+   \       0x40   0x4640             MOV      R0,R8
+   \       0x42   0x.... 0x....      BL       queue_item_scan_next
+   \       0x46   0x0004             MOVS     R4,R0
+    452          		while ( NULL != p_curr_ser )
+   \                     ??hif_proc_packet_from_host_3: (+1)
+   \       0x48   0x2C00             CMP      R4,#+0
+   \       0x4A   0xD04E             BEQ.N    ??hif_proc_packet_from_host_0
+    453          		{
+    454          			if ( grp_id ==  p_curr_ser->group_id )
+   \       0x4C   0x4659             MOV      R1,R11
+   \       0x4E   0x7920             LDRB     R0,[R4, #+4]
+   \       0x50   0xB2C9             UXTB     R1,R1
+   \       0x52   0x4281             CMP      R1,R0
+   \       0x54   0xD117             BNE.N    ??hif_proc_packet_from_host_4
+    455          			{
+    456          			   uint8_t len =  (0xFF & (uint8_t)p_data[2]) ;
+   \       0x56   0xF89A 0x9002      LDRB     R9,[R10, #+2]
+    457          			   //call the hif2mac or hif2phy function based on grp_id
+    458                                      status = p_curr_ser->hif_recv_cb(&p_data[0],len+2); // Header 2 byte in dlms protocol - shubham
+   \       0x5A   0x4649             MOV      R1,R9
+   \       0x5C   0xB2C9             UXTB     R1,R1
+   \       0x5E   0x1C89             ADDS     R1,R1,#+2
+   \       0x60   0xB289             UXTH     R1,R1
+   \       0x62   0x4650             MOV      R0,R10
+   \       0x64   0x68E2             LDR      R2,[R4, #+12]
+   \       0x66   0x4790             BLX      R2
+   \       0x68   0x0007             MOVS     R7,R0
+    459                                      
+    460                                          if ( HIF_SEND_CONF == status )
+   \       0x6A   0x0038             MOVS     R0,R7
+   \       0x6C   0xB2C0             UXTB     R0,R0
+   \       0x6E   0x2801             CMP      R0,#+1
+   \       0x70   0xD104             BNE.N    ??hif_proc_packet_from_host_5
+    461          				{
+    462          					// the same buffer is used to fill conf primitive and 
+    463          					//put in the send_q using hif_send_msg_up()
+    464          					p_hif_data->app_call_back( RX_PACKET_EVENT );
+   \       0x72   0x2003             MOVS     R0,#+3
+   \       0x74   0x6A71             LDR      R1,[R6, #+36]
+   \       0x76   0x4788             BLX      R1
+    465          					return true;
+   \       0x78   0x2001             MOVS     R0,#+1
+   \       0x7A   0xE037             B.N      ??hif_proc_packet_from_host_6
+    466          				}
+    467          				else
+    468          				{
+    469          					app_bm_free((((uint8_t*)p_hif_buff) + sizeof(queue_item_t *)) );
+   \                     ??hif_proc_packet_from_host_5: (+1)
+   \       0x7C   0x1D28             ADDS     R0,R5,#+4
+   \       0x7E   0x.... 0x....      BL       app_bm_free
+    470          					return true;
+   \       0x82   0x2001             MOVS     R0,#+1
+   \       0x84   0xE032             B.N      ??hif_proc_packet_from_host_6
+    471          				}
+    472          			}
+    473          
+    474          			p_curr_ser = ( hif_service_t* )queue_item_scan_next( p_service_q,( queue_item_t* )p_curr_ser);
+   \                     ??hif_proc_packet_from_host_4: (+1)
+   \       0x86   0x0021             MOVS     R1,R4
+   \       0x88   0x4640             MOV      R0,R8
+   \       0x8A   0x.... 0x....      BL       queue_item_scan_next
+   \       0x8E   0x0004             MOVS     R4,R0
+   \       0x90   0xE7DA             B.N      ??hif_proc_packet_from_host_3
+    475                          }
+    476                    }  
+    477          		/*go thru the service q to get the appropriate handler 
+    478          		and invoke the same*/
+    479                        else
+    480                        { 
+    481          		/*go thru the service q to get the appropriate handler 
+    482          		and invoke the same*/
+    483          		grp_id = p_data[ LAYER_ID_INDEX ];
+   \                     ??hif_proc_packet_from_host_1: (+1)
+   \       0x92   0xF89A 0x0004      LDRB     R0,[R10, #+4]
+   \       0x96   0x4683             MOV      R11,R0
+    484          
+    485          		p_curr_ser = ( hif_service_t* )queue_item_scan_next(p_service_q,NULL);
+   \       0x98   0x2100             MOVS     R1,#+0
+   \       0x9A   0x4640             MOV      R0,R8
+   \       0x9C   0x.... 0x....      BL       queue_item_scan_next
+   \       0xA0   0x0004             MOVS     R4,R0
+    486          		while ( NULL != p_curr_ser )
+   \                     ??hif_proc_packet_from_host_7: (+1)
+   \       0xA2   0x2C00             CMP      R4,#+0
+   \       0xA4   0xD021             BEQ.N    ??hif_proc_packet_from_host_0
+    487          		{
+    488          			if ( grp_id ==  p_curr_ser->group_id )
+   \       0xA6   0x4659             MOV      R1,R11
+   \       0xA8   0x7920             LDRB     R0,[R4, #+4]
+   \       0xAA   0xB2C9             UXTB     R1,R1
+   \       0xAC   0x4281             CMP      R1,R0
+   \       0xAE   0xD116             BNE.N    ??hif_proc_packet_from_host_8
+    489          			{
+    490                                    
+    491                                    
+    492                                            /* Raka [13-Nov-2018] :: Changed to the below 
+    493          
+    494          				uint16_t len =  ((0x00FF & (uint16_t)p_data[LEN_FLD_INDEX]) << 8) |   (0x00FF & (uint16_t)p_data[LEN_FLD_INDEX+1]);
+    495          				*/
+    496                                          
+    497                                          uint16_t len =  *(uint16_t*)&p_data[LEN_FLD_INDEX];
+   \       0xB0   0xF8BA 0x9006      LDRH     R9,[R10, #+6]
+    498                                      
+    499                                          //call the hif2mac or hif2phy function based on grp_id
+    500                                          
+    501          				status = p_curr_ser->hif_recv_cb(&p_data[COMMAND_ID_INDEX],len);
+   \       0xB4   0x4649             MOV      R1,R9
+   \       0xB6   0xB289             UXTH     R1,R1
+   \       0xB8   0xF11A 0x0005      ADDS     R0,R10,#+5
+   \       0xBC   0x68E2             LDR      R2,[R4, #+12]
+   \       0xBE   0x4790             BLX      R2
+   \       0xC0   0x0007             MOVS     R7,R0
+    502                                          
+    503                                        
+    504          				if ( HIF_SEND_CONF == status )
+   \       0xC2   0x0038             MOVS     R0,R7
+   \       0xC4   0xB2C0             UXTB     R0,R0
+   \       0xC6   0x2801             CMP      R0,#+1
+   \       0xC8   0xD104             BNE.N    ??hif_proc_packet_from_host_9
+    505          				{
+    506          					// the same buffer is used to fill conf primitive and 
+    507          					//put in the send_q using hif_send_msg_up()
+    508                                                  
+    509          					p_hif_data->app_call_back( RX_PACKET_EVENT );
+   \       0xCA   0x2003             MOVS     R0,#+3
+   \       0xCC   0x6A71             LDR      R1,[R6, #+36]
+   \       0xCE   0x4788             BLX      R1
+    510          					return true;
+   \       0xD0   0x2001             MOVS     R0,#+1
+   \       0xD2   0xE00B             B.N      ??hif_proc_packet_from_host_6
+    511          				}
+    512          				else
+    513          				{
+    514          					app_bm_free((((uint8_t*)p_hif_buff) + sizeof(queue_item_t *)));
+   \                     ??hif_proc_packet_from_host_9: (+1)
+   \       0xD4   0x1D28             ADDS     R0,R5,#+4
+   \       0xD6   0x.... 0x....      BL       app_bm_free
+    515          					return true;
+   \       0xDA   0x2001             MOVS     R0,#+1
+   \       0xDC   0xE006             B.N      ??hif_proc_packet_from_host_6
+    516          				}
+    517          			}
+    518                                  
+    519          			p_curr_ser = ( hif_service_t* )queue_item_scan_next(p_service_q,( queue_item_t* )p_curr_ser);
+   \                     ??hif_proc_packet_from_host_8: (+1)
+   \       0xDE   0x0021             MOVS     R1,R4
+   \       0xE0   0x4640             MOV      R0,R8
+   \       0xE2   0x.... 0x....      BL       queue_item_scan_next
+   \       0xE6   0x0004             MOVS     R4,R0
+   \       0xE8   0xE7DB             B.N      ??hif_proc_packet_from_host_7
+    520                                  
+    521          		}//while
+    522                      }//if
+    523                  }
+    524          	return false;
+   \                     ??hif_proc_packet_from_host_0: (+1)
+   \       0xEA   0x2000             MOVS     R0,#+0
+   \                     ??hif_proc_packet_from_host_6: (+1)
+   \       0xEC   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}
+    525          }
+    526          
+    527          /******************************************************************************/
+    528          // called from thread when TX event is recieved. The packet is already having 
+    529          //all the contents as per the protocol so just send it
+    530          
+    531          #if 0  // for Kimbal Application
+    532          bool hif_send_packet_to_host( hif_t* p_hif_data ) 
+    533          {
+    534          	hif_buff_t* p_hif_buff = NULL;
+    535          	
+    536          	uint16_t len = 0;
+    537          	
+    538          	p_hif_buff = ( hif_buff_t* )queue_item_get( &(p_hif_data->send_q) );
+    539          
+    540          //////[kimbal]
+    541          	if( NULL != p_hif_buff )
+    542          	{
+    543          //            if((p_hif_buff->data[2] == '$')&&(p_hif_buff->data[3] == '$'))
+    544                      {
+    545                        
+    546                         /* Raka [13-Nov-2018] :: Changed to the below 
+    547                        if(p_hif_buff->data[LAYER_ID_INDEX] == GROUP_ID_BOARD_TO_BOARD_IF)
+    548                        {
+    549                          len =  ((0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX]) << 8) |   
+    550                                  (0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX + 1]);
+    551                          
+    552                        }
+    553                        else
+    554                        {
+    555                          len =  ((0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX+1]) << 8) |   
+    556                                  (0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX]);
+    557                        }
+    558                        */
+    559                        
+    560                          len = *(uint16_t*)&p_hif_buff->data[0];
+    561                          
+    562          		if( (p_hif_data->driver.send( &p_hif_buff->data[2], (len)) ) < 0 )
+    563          		{
+    564          			/*could not submit the buffer UART TX, so requeue the message back 
+    565          			into the sendQ*/
+    566          			queue_front_put(&(p_hif_data->send_q),(queue_item_t*)p_hif_buff );
+    567          			
+    568          #if (((RADIO_VALIDATION == 1 ) || ( SNIFFER == 1) ) || (APP_HIF_PROCESS_FEATURE_ENABLED == 0))
+    569                  event_set(HIF_TX_EVENT);
+    570          #else 
+    571                  hif_process_tx (NULL);
+    572          #endif
+    573          			
+    574          			return false;
+    575          		}
+    576          
+    577          		p_hif_data->p_curr_tx_buff = p_hif_buff;
+    578          		return true;
+    579                    
+    580                      }
+    581          
+    582          	}    
+    583          //////[kimbal]
+    584          
+    585          
+    586          //	if( NULL != p_hif_buff )
+    587          //	{
+    588          //            if((p_hif_buff->data[0] == 0xA5)&&(p_hif_buff->data[1] == 0xA5) && (p_hif_buff->data[2] == 0xA5))
+    589          //            {
+    590          //              
+    591          //               /* Raka [13-Nov-2018] :: Changed to the below 
+    592          //              if(p_hif_buff->data[LAYER_ID_INDEX] == GROUP_ID_BOARD_TO_BOARD_IF)
+    593          //              {
+    594          //                len =  ((0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX]) << 8) |   
+    595          //                        (0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX + 1]);
+    596          //                
+    597          //              }
+    598          //              else
+    599          //              {
+    600          //                len =  ((0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX+1]) << 8) |   
+    601          //                        (0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX]);
+    602          //              }
+    603          //              */
+    604          //              
+    605          //              len = *(uint16_t*)&p_hif_buff->data[LEN_FLD_INDEX];
+    606          //                
+    607          //		if( (p_hif_data->driver.send( p_hif_buff->data, (len + HIF_HDR_LEN + PALDCKSUM_COMPORT_LEN )) ) < 0 )
+    608          //		{
+    609          //			/*could not submit the buffer UART TX, so requeue the message back 
+    610          //			into the sendQ*/
+    611          //			queue_front_put(&(p_hif_data->send_q),(queue_item_t*)p_hif_buff );
+    612          //			
+    613          //#if (((RADIO_VALIDATION == 1 ) || ( SNIFFER == 1) ) || (APP_HIF_PROCESS_FEATURE_ENABLED == 0))
+    614          //        event_set(HIF_TX_EVENT);
+    615          //#else 
+    616          //        hif_process_tx (NULL);
+    617          //#endif
+    618          //			
+    619          //			return false;
+    620          //		}
+    621          //
+    622          //		p_hif_data->p_curr_tx_buff = p_hif_buff;
+    623          //		return true;
+    624          //          
+    625          //            }
+    626          //
+    627          //	}
+    628          	return false;
+    629          }
+    630          
+    631          #else  // For Procubed Tool
+    632          
+    633          
+
+   \                                 In section .text, align 2, keep-with-next
+    634          bool hif_send_packet_to_host( hif_t* p_hif_data ) 
+    635          {
+   \                     hif_send_packet_to_host: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+    636          	hif_buff_t* p_hif_buff = NULL;
+   \        0x4   0x2700             MOVS     R7,#+0
+    637          	
+    638          	uint16_t len = 0;
+   \        0x6   0x2600             MOVS     R6,#+0
+    639          	
+    640          	p_hif_buff = ( hif_buff_t* )queue_item_get( &(p_hif_data->send_q) );
+   \        0x8   0xF115 0x000C      ADDS     R0,R5,#+12
+   \        0xC   0x.... 0x....      BL       queue_item_get
+   \       0x10   0x0004             MOVS     R4,R0
+    641          
+    642          
+    643          	if( NULL != p_hif_buff )
+   \       0x12   0x2C00             CMP      R4,#+0
+   \       0x14   0xD01E             BEQ.N    ??hif_send_packet_to_host_0
+    644          	{
+    645                      if((p_hif_buff->data[0] == 0xA5)&&(p_hif_buff->data[1] == 0xA5) && (p_hif_buff->data[2] == 0xA5))
+   \       0x16   0x7920             LDRB     R0,[R4, #+4]
+   \       0x18   0x28A5             CMP      R0,#+165
+   \       0x1A   0xD11B             BNE.N    ??hif_send_packet_to_host_0
+   \       0x1C   0x7960             LDRB     R0,[R4, #+5]
+   \       0x1E   0x28A5             CMP      R0,#+165
+   \       0x20   0xD118             BNE.N    ??hif_send_packet_to_host_0
+   \       0x22   0x79A0             LDRB     R0,[R4, #+6]
+   \       0x24   0x28A5             CMP      R0,#+165
+   \       0x26   0xD115             BNE.N    ??hif_send_packet_to_host_0
+    646                      {
+    647                        
+    648                         /* Raka [13-Nov-2018] :: Changed to the below 
+    649                        if(p_hif_buff->data[LAYER_ID_INDEX] == GROUP_ID_BOARD_TO_BOARD_IF)
+    650                        {
+    651                          len =  ((0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX]) << 8) |   
+    652                                  (0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX + 1]);
+    653                          
+    654                        }
+    655                        else
+    656                        {
+    657                          len =  ((0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX+1]) << 8) |   
+    658                                  (0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX]);
+    659                        }
+    660                        */
+    661                        
+    662                        len = *(uint16_t*)&p_hif_buff->data[LEN_FLD_INDEX];
+   \       0x28   0x8967             LDRH     R7,[R4, #+10]
+    663                          
+    664          		if( (p_hif_data->driver.send( p_hif_buff->data, (len + HIF_HDR_LEN + PALDCKSUM_COMPORT_LEN )) ) < 0 )
+   \       0x2A   0xF117 0x010B      ADDS     R1,R7,#+11
+   \       0x2E   0xB289             UXTH     R1,R1
+   \       0x30   0x1D20             ADDS     R0,R4,#+4
+   \       0x32   0x6AEA             LDR      R2,[R5, #+44]
+   \       0x34   0x4790             BLX      R2
+   \       0x36   0x2800             CMP      R0,#+0
+   \       0x38   0xD509             BPL.N    ??hif_send_packet_to_host_1
+    665          		{
+    666          			/*could not submit the buffer UART TX, so requeue the message back 
+    667          			into the sendQ*/
+    668          			queue_front_put(&(p_hif_data->send_q),(queue_item_t*)p_hif_buff );
+   \       0x3A   0x0021             MOVS     R1,R4
+   \       0x3C   0xF115 0x000C      ADDS     R0,R5,#+12
+   \       0x40   0x.... 0x....      BL       queue_front_put
+    669          			
+    670          #if (((RADIO_VALIDATION == 1 ) || ( SNIFFER == 1) ) || (APP_HIF_PROCESS_FEATURE_ENABLED == 0))
+    671                  event_set(HIF_TX_EVENT);
+   \       0x44   0x2004             MOVS     R0,#+4
+   \       0x46   0x.... 0x....      BL       event_set
+    672          #else 
+    673                  hif_process_tx (NULL);
+    674          #endif
+    675          			
+    676          			return false;
+   \       0x4A   0x2000             MOVS     R0,#+0
+   \       0x4C   0xE003             B.N      ??hif_send_packet_to_host_2
+    677          		}
+    678          
+    679          		p_hif_data->p_curr_tx_buff = p_hif_buff;
+   \                     ??hif_send_packet_to_host_1: (+1)
+   \       0x4E   0x64AC             STR      R4,[R5, #+72]
+    680          		return true;
+   \       0x50   0x2001             MOVS     R0,#+1
+   \       0x52   0xE000             B.N      ??hif_send_packet_to_host_2
+    681                    
+    682                      }
+    683          
+    684          	}
+    685          	return false;
+   \                     ??hif_send_packet_to_host_0: (+1)
+   \       0x54   0x2000             MOVS     R0,#+0
+   \                     ??hif_send_packet_to_host_2: (+1)
+   \       0x56   0xBDF2             POP      {R1,R4-R7,PC}
+    686          }
+    687          
+    688          
+    689          #endif
+    690          /******************************************************************************/
+    691          
+
+   \                                 In section .text, align 2, keep-with-next
+    692          uint8_t is_hif_receive_in_process (void)
+    693          {
+   \                     is_hif_receive_in_process: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    694            if (get_node_type() == 0x00)
+   \        0x2   0x.... 0x....      BL       get_node_type
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD102             BNE.N    ??is_hif_receive_in_process_0
+    695              return hif_receive_in_process;
+   \        0xA   0x....             LDR.N    R0,??DataTable5_1
+   \        0xC   0x7800             LDRB     R0,[R0, #+0]
+   \        0xE   0xE000             B.N      ??is_hif_receive_in_process_1
+    696            else
+    697              return 0;
+   \                     ??is_hif_receive_in_process_0: (+1)
+   \       0x10   0x2000             MOVS     R0,#+0
+   \                     ??is_hif_receive_in_process_1: (+1)
+   \       0x12   0xBD02             POP      {R1,PC}
+    698          }
+    699          
+    700          /******************************************************************************/
+    701          
+
+   \                                 In section .text, align 4, keep-with-next
+    702          static void hif_call_back (
+    703                                      void *AppHandle,
+    704                                      uint32_t  Event,
+    705                                      void *pArg
+    706                                    )
+    707          {
+   \                     hif_call_back: (+1)
+   \        0x0   0xE92D 0x4FF7      PUSH     {R0-R2,R4-R11,LR}
+   \        0x4   0xB082             SUB      SP,SP,#+8
+    708            hif_t* p_hif_data = ( hif_t* )pArg;
+   \        0x6   0xF8DD 0xA010      LDR      R10,[SP, #+16]
+    709            uint8_t crc = 0;
+   \        0xA   0x2500             MOVS     R5,#+0
+    710            static uint16_t payload_len = 0;
+    711            uint8_t *buffer_ptr = NULL;
+   \        0xC   0x2400             MOVS     R4,#+0
+    712            
+    713            //invoke the app call back which hif will have access as the app would 
+    714            //have registered during init
+    715            if( TX_COMPLETE_EVENT == Event )
+   \        0xE   0x9803             LDR      R0,[SP, #+12]
+   \       0x10   0x2802             CMP      R0,#+2
+   \       0x12   0xD10C             BNE.N    ??hif_call_back_0
+    716            {
+    717              app_bm_free(((uint8_t*)p_hif_data->p_curr_tx_buff)+sizeof(queue_item_t *));
+   \       0x14   0xF8DA 0x0048      LDR      R0,[R10, #+72]
+   \       0x18   0x1D00             ADDS     R0,R0,#+4
+   \       0x1A   0x.... 0x....      BL       app_bm_free
+    718              p_hif_data->p_curr_tx_buff = NULL;
+   \       0x1E   0x2000             MOVS     R0,#+0
+   \       0x20   0xF8CA 0x0048      STR      R0,[R10, #+72]
+    719              p_hif_data->app_call_back( TX_PACKET_SENT_EVENT);
+   \       0x24   0x2002             MOVS     R0,#+2
+   \       0x26   0xF8DA 0x1024      LDR      R1,[R10, #+36]
+   \       0x2A   0x4788             BLX      R1
+   \       0x2C   0xE0E8             B.N      ??hif_call_back_1
+    720            }
+    721            else if ( RX_COMPLETE_EVENT == Event )
+   \                     ??hif_call_back_0: (+1)
+   \       0x2E   0x9803             LDR      R0,[SP, #+12]
+   \       0x30   0x2803             CMP      R0,#+3
+   \       0x32   0xF040 0x80E5      BNE.W    ??hif_call_back_1
+    722            {
+    723              uint8_t* p_data = p_hif_data->p_curr_rx_buff->data;
+   \       0x36   0xF8DA 0x0044      LDR      R0,[R10, #+68]
+   \       0x3A   0x1D07             ADDS     R7,R0,#+4
+    724              uint16_t len = 0x00;
+   \       0x3C   0x2600             MOVS     R6,#+0
+    725              
+    726              switch ( p_hif_data->rx_state )
+   \       0x3E   0xF89A 0x0040      LDRB     R0,[R10, #+64]
+   \       0x42   0x2801             CMP      R0,#+1
+   \       0x44   0xD007             BEQ.N    ??hif_call_back_2
+   \       0x46   0xF0C0 0x80DB      BCC.W    ??hif_call_back_3
+   \       0x4A   0x2803             CMP      R0,#+3
+   \       0x4C   0xD045             BEQ.N    ??hif_call_back_4
+   \       0x4E   0xD325             BCC.N    ??hif_call_back_5
+   \       0x50   0x2804             CMP      R0,#+4
+   \       0x52   0xD07A             BEQ.N    ??hif_call_back_6
+   \       0x54   0xE0D4             B.N      ??hif_call_back_3
+    727              {
+    728              case RX_BUFFER_SET:
+    729                if( p_data[ 0 ] == SOF )
+   \                     ??hif_call_back_2: (+1)
+   \       0x56   0x7838             LDRB     R0,[R7, #+0]
+   \       0x58   0x28A5             CMP      R0,#+165
+   \       0x5A   0xD112             BNE.N    ??hif_call_back_7
+    730                {
+    731                  hif_receive_in_process = 1;
+   \       0x5C   0x2001             MOVS     R0,#+1
+   \       0x5E   0x....             LDR.N    R1,??DataTable5_1
+   \       0x60   0x7008             STRB     R0,[R1, #+0]
+    732                  p_data += 0x01;
+   \       0x62   0x1C7F             ADDS     R7,R7,#+1
+    733                  len = 0x02;
+   \       0x64   0x2002             MOVS     R0,#+2
+   \       0x66   0x0006             MOVS     R6,R0
+    734                  p_hif_data->driver.recv(p_data ,len);
+   \       0x68   0x0031             MOVS     R1,R6
+   \       0x6A   0xB289             UXTH     R1,R1
+   \       0x6C   0x0038             MOVS     R0,R7
+   \       0x6E   0xF8DA 0x2030      LDR      R2,[R10, #+48]
+   \       0x72   0x4790             BLX      R2
+    735                  p_hif_data->rx_state = RX_SOF_CHECKING;
+   \       0x74   0x2002             MOVS     R0,#+2
+   \       0x76   0xF88A 0x0040      STRB     R0,[R10, #+64]
+    736          #if APP_LBR_ROUTER        
+    737                  tmr_start_relative( &(uart_debug));//@Umesh 05_12_2018
+   \       0x7A   0x....             LDR.N    R0,??DataTable5_2
+   \       0x7C   0x.... 0x....      BL       tmr_start_relative
+   \       0x80   0xE00B             B.N      ??hif_call_back_8
+    738          #endif        
+    739                  //start_time = timer_current_time_get();
+    740                }
+    741                else
+    742                {
+    743                  uart_drop_else_bytes++;/*Umesh 12/12/2108*/
+   \                     ??hif_call_back_7: (+1)
+   \       0x82   0x....             LDR.N    R1,??DataTable5_3
+   \       0x84   0x6808             LDR      R0,[R1, #+0]
+   \       0x86   0x1C40             ADDS     R0,R0,#+1
+   \       0x88   0x6008             STR      R0,[R1, #+0]
+    744          //        hif_receive_in_process = 0;
+    745                  p_hif_data->rx_state = RX_INIT;				
+   \       0x8A   0x2000             MOVS     R0,#+0
+   \       0x8C   0xF88A 0x0040      STRB     R0,[R10, #+64]
+    746                  set_receive_buffer( p_hif, false );
+   \       0x90   0x2100             MOVS     R1,#+0
+   \       0x92   0x....             LDR.N    R0,??DataTable5
+   \       0x94   0x6800             LDR      R0,[R0, #+0]
+   \       0x96   0x.... 0x....      BL       set_receive_buffer
+    747                }
+    748                break;
+   \                     ??hif_call_back_8: (+1)
+   \       0x9A   0xE0B1             B.N      ??hif_call_back_1
+    749              case RX_SOF_CHECKING:
+    750                if( (p_data[ 0 ] == SOF )&&
+    751                   (p_data[ 1] == SOF ))
+   \                     ??hif_call_back_5: (+1)
+   \       0x9C   0x7838             LDRB     R0,[R7, #+0]
+   \       0x9E   0x28A5             CMP      R0,#+165
+   \       0xA0   0xD10F             BNE.N    ??hif_call_back_9
+   \       0xA2   0x7878             LDRB     R0,[R7, #+1]
+   \       0xA4   0x28A5             CMP      R0,#+165
+   \       0xA6   0xD10C             BNE.N    ??hif_call_back_9
+    752                {
+    753          //        hif_receive_in_process = 1;
+    754                  p_data += 0x02;
+   \       0xA8   0x1CBF             ADDS     R7,R7,#+2
+    755                  len = 0x06;
+   \       0xAA   0x2006             MOVS     R0,#+6
+   \       0xAC   0x0006             MOVS     R6,R0
+    756                  // +1 Because we have read one byte out of 3 byte of the SOF series of 0xA5,0xA5,0xA5
+    757                  p_hif_data->driver.recv((p_data + 1) ,len);
+   \       0xAE   0x0031             MOVS     R1,R6
+   \       0xB0   0xB289             UXTH     R1,R1
+   \       0xB2   0x1C78             ADDS     R0,R7,#+1
+   \       0xB4   0xF8DA 0x2030      LDR      R2,[R10, #+48]
+   \       0xB8   0x4790             BLX      R2
+    758                  p_hif_data->rx_state = READING_HDR;
+   \       0xBA   0x2003             MOVS     R0,#+3
+   \       0xBC   0xF88A 0x0040      STRB     R0,[R10, #+64]
+   \       0xC0   0xE00A             B.N      ??hif_call_back_10
+    759                }
+    760                else
+    761                {
+    762          //        hif_receive_in_process = 0;
+    763                  p_hif_data->rx_state = RX_INIT;				
+   \                     ??hif_call_back_9: (+1)
+   \       0xC2   0x2000             MOVS     R0,#+0
+   \       0xC4   0xF88A 0x0040      STRB     R0,[R10, #+64]
+    764                  set_receive_buffer( p_hif, false );
+   \       0xC8   0x2100             MOVS     R1,#+0
+   \       0xCA   0x....             LDR.N    R0,??DataTable5
+   \       0xCC   0x6800             LDR      R0,[R0, #+0]
+   \       0xCE   0x.... 0x....      BL       set_receive_buffer
+    765          #if APP_LBR_ROUTER        
+    766                  tmr_stop(&uart_debug);//@Umesh 05_12_2018
+   \       0xD2   0x....             LDR.N    R0,??DataTable5_2
+   \       0xD4   0x.... 0x....      BL       tmr_stop
+    767          #endif        
+    768                }
+    769                break;
+   \                     ??hif_call_back_10: (+1)
+   \       0xD8   0xE092             B.N      ??hif_call_back_1
+    770                
+    771              case READING_HDR:
+    772                crc = Generate_Checksum( p_hif_data->p_curr_rx_buff );      
+   \                     ??hif_call_back_4: (+1)
+   \       0xDA   0xF8DA 0x0044      LDR      R0,[R10, #+68]
+   \       0xDE   0x.... 0x....      BL       Generate_Checksum
+   \       0xE2   0x0005             MOVS     R5,R0
+    773                if (crc == p_data[CRC_FLD_INDEX])
+   \       0xE4   0x0029             MOVS     R1,R5
+   \       0xE6   0x7A38             LDRB     R0,[R7, #+8]
+   \       0xE8   0xB2C9             UXTB     R1,R1
+   \       0xEA   0x4281             CMP      R1,R0
+   \       0xEC   0xD121             BNE.N    ??hif_call_back_11
+    774                {
+    775                  
+    776                   /* Raka [13-Nov-2018] :: Changed to the below 
+    777                  len =  ((0x00FF & (uint16_t)p_data[LEN_FLD_INDEX]) << 8) | 
+    778                    (0x00FF & (uint16_t)p_data[LEN_FLD_INDEX+1]);
+    779                  payload_len = len ; 
+    780                  */
+    781                  
+    782                  payload_len = len  = *(uint16_t*)&p_data[LEN_FLD_INDEX];
+   \       0xEE   0x88F8             LDRH     R0,[R7, #+6]
+   \       0xF0   0x0006             MOVS     R6,R0
+   \       0xF2   0x....             LDR.N    R0,??DataTable5_4
+   \       0xF4   0x8006             STRH     R6,[R0, #+0]
+    783                    
+    784                  /*check if the length filed has a value greater 
+    785                  than the remaining buffer 
+    786                  size which is MAX_BUFF_SIZE - 4 */
+    787                  
+    788                  /*reading the remaing packet which is payload part*/
+    789                  if ( len < ( max_buffer_size - 4 ) )
+   \       0xF6   0x0030             MOVS     R0,R6
+   \       0xF8   0xB280             UXTH     R0,R0
+   \       0xFA   0x....             LDR.N    R1,??DataTable5_5
+   \       0xFC   0x8809             LDRH     R1,[R1, #+0]
+   \       0xFE   0x1F09             SUBS     R1,R1,#+4
+   \      0x100   0x4288             CMP      R0,R1
+   \      0x102   0xDA0A             BGE.N    ??hif_call_back_12
+    790                  {
+    791          //          hif_receive_in_process = 1;
+    792                    p_hif_data->driver.recv(( p_data + HIF_HDR_LEN ) ,( len +PALDCKSUM_COMPORT_LEN));//Payload Checksum + USB Port [ COM Port]  =2 
+   \      0x104   0x1CB1             ADDS     R1,R6,#+2
+   \      0x106   0xB289             UXTH     R1,R1
+   \      0x108   0xF117 0x0009      ADDS     R0,R7,#+9
+   \      0x10C   0xF8DA 0x2030      LDR      R2,[R10, #+48]
+   \      0x110   0x4790             BLX      R2
+    793                    p_hif_data->rx_state = READING_PLD;                                          
+   \      0x112   0x2004             MOVS     R0,#+4
+   \      0x114   0xF88A 0x0040      STRB     R0,[R10, #+64]
+   \      0x118   0xE016             B.N      ??hif_call_back_13
+    794                  }
+    795                  else
+    796                  {
+    797          //          hif_receive_in_process = 0;
+    798                    p_hif_data->rx_state = RX_INIT;
+   \                     ??hif_call_back_12: (+1)
+   \      0x11A   0x2000             MOVS     R0,#+0
+   \      0x11C   0xF88A 0x0040      STRB     R0,[R10, #+64]
+    799                    set_receive_buffer( p_hif, false );
+   \      0x120   0x2100             MOVS     R1,#+0
+   \      0x122   0x....             LDR.N    R0,??DataTable5
+   \      0x124   0x6800             LDR      R0,[R0, #+0]
+   \      0x126   0x.... 0x....      BL       set_receive_buffer
+    800          #if APP_LBR_ROUTER          
+    801                    tmr_stop(&uart_debug);//@Umesh 05_12_2018
+   \      0x12A   0x....             LDR.N    R0,??DataTable5_2
+   \      0x12C   0x.... 0x....      BL       tmr_stop
+   \      0x130   0xE00A             B.N      ??hif_call_back_13
+    802          #endif          
+    803                  }
+    804                }
+    805                else
+    806                {
+    807          //        hif_receive_in_process = 0;
+    808                  p_hif_data->rx_state = RX_INIT;
+   \                     ??hif_call_back_11: (+1)
+   \      0x132   0x2000             MOVS     R0,#+0
+   \      0x134   0xF88A 0x0040      STRB     R0,[R10, #+64]
+    809                  set_receive_buffer( p_hif, false );
+   \      0x138   0x2100             MOVS     R1,#+0
+   \      0x13A   0x....             LDR.N    R0,??DataTable5
+   \      0x13C   0x6800             LDR      R0,[R0, #+0]
+   \      0x13E   0x.... 0x....      BL       set_receive_buffer
+    810          #if APP_LBR_ROUTER        
+    811                  tmr_stop(&uart_debug);//@Umesh 05_12_2018
+   \      0x142   0x....             LDR.N    R0,??DataTable5_2
+   \      0x144   0x.... 0x....      BL       tmr_stop
+    812          #endif        
+    813                }
+    814                break;
+   \                     ??hif_call_back_13: (+1)
+   \      0x148   0xE05A             B.N      ??hif_call_back_1
+    815                
+    816              case READING_PLD:
+    817                {
+    818                  hif_buff_t* ptr = NULL;
+   \                     ??hif_call_back_6: (+1)
+   \      0x14A   0xF05F 0x0800      MOVS     R8,#+0
+    819                  uint8_t* data_ptr = NULL;
+   \      0x14E   0xF05F 0x0900      MOVS     R9,#+0
+    820                  
+    821                  buffer_ptr = (uint8_t*)app_bm_alloc (payload_len + HIF_HDR_LEN + PALDCKSUM_COMPORT_LEN + 5 ); //5 bytes Extra to safeguard
+   \      0x152   0x.... 0x....      LDR.W    R11,??DataTable5_4
+   \      0x156   0xF8BB 0x0000      LDRH     R0,[R11, #+0]
+   \      0x15A   0x3010             ADDS     R0,R0,#+16
+   \      0x15C   0xB280             UXTH     R0,R0
+   \      0x15E   0x.... 0x....      BL       app_bm_alloc
+   \      0x162   0x0004             MOVS     R4,R0
+    822                  crc = 0;
+   \      0x164   0x2000             MOVS     R0,#+0
+   \      0x166   0x0005             MOVS     R5,R0
+    823                  if(buffer_ptr!=NULL)
+   \      0x168   0x2C00             CMP      R4,#+0
+   \      0x16A   0xD03A             BEQ.N    ??hif_call_back_14
+    824                  {
+    825                    ptr = (hif_buff_t*)(buffer_ptr - sizeof(queue_item_t *));
+   \      0x16C   0x1F20             SUBS     R0,R4,#+4
+   \      0x16E   0x4680             MOV      R8,R0
+    826                    data_ptr = (p_hif_data->p_curr_rx_buff->data + HIF_HDR_LEN); // 9 should replace as MACRO
+   \      0x170   0xF8DA 0x0044      LDR      R0,[R10, #+68]
+   \      0x174   0x300D             ADDS     R0,R0,#+13
+   \      0x176   0x4681             MOV      R9,R0
+    827                    
+    828                    crc = Generate_Checksum_payload(data_ptr,payload_len );
+   \      0x178   0xF8BB 0x1000      LDRH     R1,[R11, #+0]
+   \      0x17C   0x4648             MOV      R0,R9
+   \      0x17E   0x.... 0x....      BL       Generate_Checksum_payload
+   \      0x182   0x0005             MOVS     R5,R0
+    829                    if (crc == p_data[ payload_len + HIF_HDR_LEN])
+   \      0x184   0x0028             MOVS     R0,R5
+   \      0x186   0xF8BB 0x1000      LDRH     R1,[R11, #+0]
+   \      0x18A   0x4439             ADD      R1,R7,R1
+   \      0x18C   0x7A49             LDRB     R1,[R1, #+9]
+   \      0x18E   0xB2C0             UXTB     R0,R0
+   \      0x190   0x4288             CMP      R0,R1
+   \      0x192   0xD11B             BNE.N    ??hif_call_back_15
+    830                    {
+    831                      memcpy(ptr->data,p_hif_data->p_curr_rx_buff->data, (payload_len+HIF_HDR_LEN+PALDCKSUM_COMPORT_LEN));// check  ::(payload_len+9+2)
+   \      0x194   0xF8BB 0x0000      LDRH     R0,[R11, #+0]
+   \      0x198   0x300B             ADDS     R0,R0,#+11
+   \      0x19A   0x9001             STR      R0,[SP, #+4]
+   \      0x19C   0xF8DA 0x0044      LDR      R0,[R10, #+68]
+   \      0x1A0   0x1D00             ADDS     R0,R0,#+4
+   \      0x1A2   0x9000             STR      R0,[SP, #+0]
+   \      0x1A4   0xF118 0x0B04      ADDS     R11,R8,#+4
+   \      0x1A8   0x9A01             LDR      R2,[SP, #+4]
+   \      0x1AA   0x9900             LDR      R1,[SP, #+0]
+   \      0x1AC   0x4658             MOV      R0,R11
+   \      0x1AE   0x.... 0x....      BL       __aeabi_memcpy
+    832                      queue_item_put(&( p_hif_data->recv_q ), (queue_item_t* )( ptr ) );
+   \      0x1B2   0x4641             MOV      R1,R8
+   \      0x1B4   0xF11A 0x0018      ADDS     R0,R10,#+24
+   \      0x1B8   0x.... 0x....      BL       queue_item_put
+    833                      p_hif_data->app_call_back( RX_PACKET_EVENT );
+   \      0x1BC   0x2003             MOVS     R0,#+3
+   \      0x1BE   0xF8DA 0x1024      LDR      R1,[R10, #+36]
+   \      0x1C2   0x4788             BLX      R1
+    834                      hif_receive_in_process = 0;
+   \      0x1C4   0x2000             MOVS     R0,#+0
+   \      0x1C6   0x....             LDR.N    R1,??DataTable5_1
+   \      0x1C8   0x7008             STRB     R0,[R1, #+0]
+   \      0x1CA   0xE00A             B.N      ??hif_call_back_14
+    835                    }
+    836                    else
+    837                    {
+    838                      hif_receive_in_process = 0;
+   \                     ??hif_call_back_15: (+1)
+   \      0x1CC   0x2100             MOVS     R1,#+0
+   \      0x1CE   0x....             LDR.N    R0,??DataTable5_1
+   \      0x1D0   0x7001             STRB     R1,[R0, #+0]
+    839                      p_hif_data->rx_state = RX_INIT;
+   \      0x1D2   0x2000             MOVS     R0,#+0
+   \      0x1D4   0xF88A 0x0040      STRB     R0,[R10, #+64]
+    840                      set_receive_buffer( p_hif, false );	
+   \      0x1D8   0x2100             MOVS     R1,#+0
+   \      0x1DA   0x....             LDR.N    R0,??DataTable5
+   \      0x1DC   0x6800             LDR      R0,[R0, #+0]
+   \      0x1DE   0x.... 0x....      BL       set_receive_buffer
+    841                    }
+    842                  }
+    843                  hif_receive_in_process = 0;
+   \                     ??hif_call_back_14: (+1)
+   \      0x1E2   0x2100             MOVS     R1,#+0
+   \      0x1E4   0x....             LDR.N    R0,??DataTable5_1
+   \      0x1E6   0x7001             STRB     R1,[R0, #+0]
+    844                  p_hif_data->rx_state = RX_INIT;				
+   \      0x1E8   0x2000             MOVS     R0,#+0
+   \      0x1EA   0xF88A 0x0040      STRB     R0,[R10, #+64]
+    845                  set_receive_buffer( p_hif, false ); 
+   \      0x1EE   0x2100             MOVS     R1,#+0
+   \      0x1F0   0x....             LDR.N    R0,??DataTable5
+   \      0x1F2   0x6800             LDR      R0,[R0, #+0]
+   \      0x1F4   0x.... 0x....      BL       set_receive_buffer
+    846                  //stop_time = timer_current_time_get();
+    847          #if APP_LBR_ROUTER        
+    848                  tmr_stop(&uart_debug);//@Umesh 05_12_2018
+   \      0x1F8   0x....             LDR.N    R0,??DataTable5_2
+   \      0x1FA   0x.... 0x....      BL       tmr_stop
+    849          #endif        
+    850                  
+    851                }
+    852                break;
+   \      0x1FE   0xE7FF             B.N      ??hif_call_back_1
+    853                
+    854              default:
+    855                break;
+    856              }
+    857            }
+    858          }
+   \                     ??hif_call_back_3: (+1)
+   \                     ??hif_call_back_1: (+1)
+   \      0x200   0xB005             ADD      SP,SP,#+20
+   \      0x202   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+
+   \                                 In section .bss, align 2
+   \                     `hif_call_back::payload_len`:
+   \        0x0                      DS8 2
+    859          
+    860          /******************************************************************************/
+    861          /*@umesh for hif cleanup after timeup*/
+
+   \                                 In section .text, align 2, keep-with-next
+    862          void clear_buffer_and_state(void *uart_data)
+    863          {
+   \                     clear_buffer_and_state: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    864              pkt_drop_count_sw_tmr++;
+   \        0x4   0x....             LDR.N    R1,??DataTable5_6
+   \        0x6   0x6808             LDR      R0,[R1, #+0]
+   \        0x8   0x1C40             ADDS     R0,R0,#+1
+   \        0xA   0x6008             STR      R0,[R1, #+0]
+    865          //    hif_t* p_hif_data = ( hif_t* )uart_data;
+    866          //    p_hif_data->rx_state = RX_INIT;				
+    867              set_receive_buffer( p_hif, false ); 
+   \        0xC   0x2100             MOVS     R1,#+0
+   \        0xE   0x....             LDR.N    R0,??DataTable5
+   \       0x10   0x6800             LDR      R0,[R0, #+0]
+   \       0x12   0x.... 0x....      BL       set_receive_buffer
+    868              //buffer_stop_time = timer_current_time_get();
+    869              hif_receive_in_process = 0;
+   \       0x16   0x2100             MOVS     R1,#+0
+   \       0x18   0x....             LDR.N    R0,??DataTable5_1
+   \       0x1A   0x7001             STRB     R1,[R0, #+0]
+    870          }
+   \       0x1C   0xBD10             POP      {R4,PC}
+    871          
+    872          /******************************************************************************/
+    873          
+
+   \                                 In section .text, align 2, keep-with-next
+    874          static uint8_t Generate_Checksum( hif_buff_t* pBuff )
+    875          {
+    876          	return ~((  pBuff->data[PROTOCOL_ID_INDEX]  + 
+    877          		    pBuff->data[LAYER_ID_INDEX]     +
+    878                              pBuff->data[COMMAND_ID_INDEX]   +
+    879                              pBuff->data[LEN_FLD_INDEX]      + 
+    880                              pBuff->data[LEN_FLD_INDEX+1] ));
+   \                     Generate_Checksum: (+1)
+   \        0x0   0x79C2             LDRB     R2,[R0, #+7]
+   \        0x2   0x7A01             LDRB     R1,[R0, #+8]
+   \        0x4   0x188A             ADDS     R2,R1,R2
+   \        0x6   0x7A41             LDRB     R1,[R0, #+9]
+   \        0x8   0x1852             ADDS     R2,R2,R1
+   \        0xA   0x7A81             LDRB     R1,[R0, #+10]
+   \        0xC   0x1851             ADDS     R1,R2,R1
+   \        0xE   0x7AC0             LDRB     R0,[R0, #+11]
+   \       0x10   0x1808             ADDS     R0,R1,R0
+   \       0x12   0x43C0             MVNS     R0,R0
+   \       0x14   0xB2C0             UXTB     R0,R0
+   \       0x16   0x4770             BX       LR
+    881          }
+    882          
+    883          /******************************************************************************/
+    884          
+
+   \                                 In section .text, align 2, keep-with-next
+    885          static uint8_t Generate_Checksum_payload( uint8_t* pBuff ,uint16_t payld_len )
+    886          {
+   \                     Generate_Checksum_payload: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0003             MOVS     R3,R0
+    887            uint8_t calc_chksum  = 0 ;
+   \        0x4   0x2000             MOVS     R0,#+0
+    888            uint16_t iCnt  =0;
+   \        0x6   0x2200             MOVS     R2,#+0
+    889            
+    890            
+    891            for (iCnt = 0; iCnt<payld_len;iCnt++)
+   \        0x8   0x2400             MOVS     R4,#+0
+   \                     ??Generate_Checksum_payload_0: (+1)
+   \        0xA   0x0025             MOVS     R5,R4
+   \        0xC   0x000A             MOVS     R2,R1
+   \        0xE   0xB2AD             UXTH     R5,R5
+   \       0x10   0xB292             UXTH     R2,R2
+   \       0x12   0x4295             CMP      R5,R2
+   \       0x14   0xD204             BCS.N    ??Generate_Checksum_payload_1
+    892            {
+    893                calc_chksum += *pBuff++;
+   \       0x16   0x781A             LDRB     R2,[R3, #+0]
+   \       0x18   0x1810             ADDS     R0,R2,R0
+   \       0x1A   0x1C5B             ADDS     R3,R3,#+1
+    894            }
+   \       0x1C   0x1C64             ADDS     R4,R4,#+1
+   \       0x1E   0xE7F4             B.N      ??Generate_Checksum_payload_0
+    895              
+    896          	return ~(calc_chksum);
+   \                     ??Generate_Checksum_payload_1: (+1)
+   \       0x20   0xB2C0             UXTB     R0,R0
+   \       0x22   0x43C0             MVNS     R0,R0
+   \       0x24   0xB2C0             UXTB     R0,R0
+   \       0x26   0xBC30             POP      {R4,R5}
+   \       0x28   0x4770             BX       LR
+    897          }
+    898          
+    899          /******************************************************************************/
+    900          
+
+   \                                 In section .text, align 2, keep-with-next
+    901          static bool set_receive_buffer( hif_t* p_hif_data, bool new_buff )
+    902          {
+   \                     set_receive_buffer: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x0006             MOVS     R6,R0
+   \        0x6   0x000F             MOVS     R7,R1
+    903          	//allocate a buffer and set it for recieve using driver function.
+    904          	uint8_t* p_data;
+    905          #if APP_LBR_ROUTER        
+    906          	uart_debug_rx_count = 0; /*Umesh 12/12/2018*/
+   \        0x8   0x2100             MOVS     R1,#+0
+   \        0xA   0x....             LDR.N    R0,??DataTable5_7
+   \        0xC   0x6001             STR      R1,[R0, #+0]
+    907          #endif	
+    908          	if ( new_buff )
+   \        0xE   0x0038             MOVS     R0,R7
+   \       0x10   0xB2C0             UXTB     R0,R0
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD02A             BEQ.N    ??set_receive_buffer_0
+    909          	{
+    910          		p_data = (uint8_t*)app_bm_alloc( max_buffer_size );
+   \       0x16   0x.... 0x....      LDR.W    R8,??DataTable5_5
+   \       0x1A   0xF8B8 0x0000      LDRH     R0,[R8, #+0]
+   \       0x1E   0x.... 0x....      BL       app_bm_alloc
+   \       0x22   0x0005             MOVS     R5,R0
+    911          		
+    912          		if ( NULL != p_data )
+   \       0x24   0x2D00             CMP      R5,#+0
+   \       0x26   0xD00B             BEQ.N    ??set_receive_buffer_1
+    913          		{
+    914          			p_hif_data->p_curr_rx_buff = (hif_buff_t*)(p_data - sizeof(queue_item_t *));
+   \       0x28   0x1F28             SUBS     R0,R5,#+4
+   \       0x2A   0x6470             STR      R0,[R6, #+68]
+    915          			p_hif_data->rx_state = RX_BUFFER_SET;
+   \       0x2C   0x2001             MOVS     R0,#+1
+   \       0x2E   0xF886 0x0040      STRB     R0,[R6, #+64]
+    916          			uart_hal_read(p_hif_data->p_curr_rx_buff->data,0x01);
+   \       0x32   0x2101             MOVS     R1,#+1
+   \       0x34   0x6C70             LDR      R0,[R6, #+68]
+   \       0x36   0x1D00             ADDS     R0,R0,#+4
+   \       0x38   0x.... 0x....      BL       uart_hal_read
+    917          			return true;
+   \       0x3C   0x2001             MOVS     R0,#+1
+   \       0x3E   0xE02A             B.N      ??set_receive_buffer_2
+    918          		}
+    919          		else
+    920          		{
+    921          #ifdef MAC_CFG_SECURITY_ENABLED				
+    922          			cleanup_security_queues(1); // Raka :: why the hell we are clearing the security pib's
+   \                     ??set_receive_buffer_1: (+1)
+   \       0x40   0x2001             MOVS     R0,#+1
+   \       0x42   0x.... 0x....      BL       cleanup_security_queues
+    923          #endif			
+    924          			p_data = (uint8_t*)app_bm_alloc( max_buffer_size );
+   \       0x46   0xF8B8 0x0000      LDRH     R0,[R8, #+0]
+   \       0x4A   0x.... 0x....      BL       app_bm_alloc
+   \       0x4E   0x0004             MOVS     R4,R0
+    925          			if ( NULL != p_data )
+   \       0x50   0x2C00             CMP      R4,#+0
+   \       0x52   0xD01F             BEQ.N    ??set_receive_buffer_3
+    926          			{
+    927          				p_hif_data->p_curr_rx_buff = (hif_buff_t*)(p_data - sizeof(queue_item_t *));
+   \       0x54   0x1F20             SUBS     R0,R4,#+4
+   \       0x56   0x6470             STR      R0,[R6, #+68]
+    928          				p_hif_data->rx_state = RX_BUFFER_SET;
+   \       0x58   0x2001             MOVS     R0,#+1
+   \       0x5A   0xF886 0x0040      STRB     R0,[R6, #+64]
+    929          				uart_hal_read(p_hif_data->p_curr_rx_buff->data,0x01);
+   \       0x5E   0x2101             MOVS     R1,#+1
+   \       0x60   0x6C70             LDR      R0,[R6, #+68]
+   \       0x62   0x1D00             ADDS     R0,R0,#+4
+   \       0x64   0x.... 0x....      BL       uart_hal_read
+    930          				return true;
+   \       0x68   0x2001             MOVS     R0,#+1
+   \       0x6A   0xE014             B.N      ??set_receive_buffer_2
+    931          			}
+    932          		}
+    933          		
+    934          	}
+    935          	else
+    936          	{
+    937          		p_hif_data->rx_state = RX_BUFFER_SET;
+   \                     ??set_receive_buffer_0: (+1)
+   \       0x6C   0x2001             MOVS     R0,#+1
+   \       0x6E   0xF886 0x0040      STRB     R0,[R6, #+64]
+    938                          memset((uint8_t *)p_hif_data->p_curr_rx_buff->data, 0xFF, max_buffer_size);
+   \       0x72   0x....             LDR.N    R0,??DataTable5_5
+   \       0x74   0x8805             LDRH     R5,[R0, #+0]
+   \       0x76   0xF04F 0x08FF      MOV      R8,#+255
+   \       0x7A   0x6C70             LDR      R0,[R6, #+68]
+   \       0x7C   0xF110 0x0904      ADDS     R9,R0,#+4
+   \       0x80   0x4642             MOV      R2,R8
+   \       0x82   0x0029             MOVS     R1,R5
+   \       0x84   0x4648             MOV      R0,R9
+   \       0x86   0x.... 0x....      BL       __aeabi_memset
+    939          		uart_hal_read(p_hif_data->p_curr_rx_buff->data,0x01);
+   \       0x8A   0x2101             MOVS     R1,#+1
+   \       0x8C   0x6C70             LDR      R0,[R6, #+68]
+   \       0x8E   0x1D00             ADDS     R0,R0,#+4
+   \       0x90   0x.... 0x....      BL       uart_hal_read
+    940          	}
+    941          	
+    942          	return false;
+   \                     ??set_receive_buffer_3: (+1)
+   \       0x94   0x2000             MOVS     R0,#+0
+   \                     ??set_receive_buffer_2: (+1)
+   \       0x96   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+    943          }
+    944          
+    945          /******************************************************************************/
+    946          /******************************************************************************/
+    947          
+
+   \                                 In section .text, align 2, keep-with-next
+    948          void Indicate_Debug_Event( uint8_t event )
+    949          {
+    950          	//char event_msg[20] = {0xED,};
+    951          	//event_msg[1] = event;
+    952          	//const char msg[] = {"0x%x,0x%x \r\n\n "};
+    953          	//sprintf((char*)&(event_msg[1]),msg,0xED,event);
+    954          	//uart_hal_write((u8*)event_msg,sizeof(msg));
+    955          	//hif_send_msg_up((uint8_t*)event_msg, 1, 2);
+    956          	
+    957          }
+   \                     Indicate_Debug_Event: (+1)
+   \        0x0   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \        0x0   0x....'....        DC32     p_hif
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \        0x0   0x....'....        DC32     hif_receive_in_process
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \        0x0   0x....'....        DC32     uart_debug
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \        0x0   0x....'....        DC32     uart_drop_else_bytes
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \        0x0   0x....'....        DC32     `hif_call_back::payload_len`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_5:
+   \        0x0   0x....'....        DC32     max_buffer_size
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_6:
+   \        0x0   0x....'....        DC32     pkt_drop_count_sw_tmr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_7:
+   \        0x0   0x....'....        DC32     uart_debug_rx_count
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   Generate_Checksum
+       8   Generate_Checksum_payload
+       0   Indicate_Debug_Event
+       8   clear_buffer_and_state
+         8   -> set_receive_buffer
+      56   hif_call_back
+        56   -- Indirect call
+        56   -> Generate_Checksum
+        56   -> Generate_Checksum_payload
+        56   -> __aeabi_memcpy
+        56   -> app_bm_alloc
+        56   -> app_bm_free
+        56   -> queue_item_put
+        56   -> set_receive_buffer
+        56   -> tmr_start_relative
+        56   -> tmr_stop
+      16   hif_module_init
+        16   -- Indirect call
+        16   -> queue_initialise
+        16   -> set_receive_buffer
+        16   -> uart_hal_register_back
+      40   hif_proc_packet_from_host
+        40   -- Indirect call
+        40   -> app_bm_free
+        40   -> queue_item_get
+        40   -> queue_item_scan_next
+      24   hif_register_parser
+        24   -> queue_item_put
+      48   hif_send_msg_up
+        48   -> Generate_Checksum
+        48   -> Generate_Checksum_payload
+        48   -> __aeabi_memcpy
+        48   -> app_bm_alloc
+        48   -> event_set
+        48   -> queue_item_put
+      24   hif_send_packet_to_host
+        24   -- Indirect call
+        24   -> event_set
+        24   -> queue_front_put
+        24   -> queue_item_get
+       8   is_hif_receive_in_process
+         8   -> get_node_type
+      32   set_receive_buffer
+        32   -> __aeabi_memset
+        32   -> app_bm_alloc
+        32   -> cleanup_security_queues
+        32   -> uart_hal_read
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       4  ??DataTable5_7
+      24  Generate_Checksum
+      42  Generate_Checksum_payload
+       2  Indicate_Debug_Event
+      30  clear_buffer_and_state
+     518  hif_call_back
+      86  hif_module_init
+     240  hif_proc_packet_from_host
+       1  hif_receive_in_process
+      26  hif_register_parser
+     220  hif_send_msg_up
+      88  hif_send_packet_to_host
+      20  is_hif_receive_in_process
+       4  p_hif
+       2  payload_len
+       4  pkt_drop_count_sw_tmr
+     154  set_receive_buffer
+      24  uart_debug
+       4  uart_debug_rx_count
+       4  uart_drop_else_bytes
+
+ 
+    43 bytes in section .bss
+ 1'482 bytes in section .text
+ 
+ 1'482 bytes of CODE memory
+    43 bytes of DATA memory
+
+Errors: none
+Warnings: none

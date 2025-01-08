@@ -1,0 +1,3303 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         24/Dec/2024  14:55:16
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\ProAppSrc\FANApp\AppSrc\fan_factorycmd.c
+#    Command line                 =
+#        -f
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\Src_14949699383848397354.dir\fan_factorycmd.o.rsp
+#        (C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\ProAppSrc\FANApp\AppSrc\fan_factorycmd.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\Src_14949699383848397354.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\Src_14949699383848397354.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\.\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\rpl\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\cpu\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\FLASH\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\Src_14949699383848397354.dir\fan_factorycmd.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\Src_14949699383848397354.dir\fan_factorycmd.lst
+#    Object file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\Src_14949699383848397354.dir\fan_factorycmd.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\ProAppSrc\FANApp\AppSrc\fan_factorycmd.c
+      1          /** \file fan_factorycmd.c
+      2           *******************************************************************************
+      3           ** \brief 
+      4           ** Implements the RADIO PHY testing commnads
+      5           **
+      6           ** \cond STD_FILE_HEADER
+      7           **
+      8           ** COPYRIGHT
+      9           ** COPYRIGHT(c) 2023-24 Procubed Innovations Pvt Ltd. 
+     10           ** All rights reserved.
+     11           **
+     12           ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     13           ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     14           ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     15           ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     16           ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     17           ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     18           ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     19           **
+     20           *******************************************************************************
+     21           **  \endcond
+     22           */
+     23          
+     24          /*******************************************************************************
+     25          * File inclusion
+     26          *******************************************************************************/
+     27          
+     28          
+     29          #include "StackAppConf.h"
+     30          #include <stdlib.h>
+     31          #include "common.h"
+     32          #include "em_device.h"
+     33          #include "em_gpio.h"
+     34          #include "em_usart.h"
+     35          #include "list_latest.h"
+     36          #include "queue_latest.h"
+     37          #include "buff_mgmt.h"
+     38          #include "uart_hal.h"
+     39          #include "hif_utility.h"
+     40          #include "hif_service.h"
+     41          #include "hw_tmr.h"
+     42          #include "sw_timer.h"
+     43          #include "timer_service.h"
+     44          #include "phy.h"
+     45          #include "trx_access.h"
+     46          #include "mac.h"
+     47          #include "mac_app_build_config.h"
+     48          #include "mac_interface_layer.h"
+     49          #include "mac_pib.h"
+     50          #include "sm.h"
+
+   \                                 In section .rodata, align 4
+   \   static __absolute sm_event_t const sm_entry_event
+   \                     sm_entry_event:
+   \        0x0   0x00               DC8 0
+   \        0x1                      DS8 3
+   \        0x4   0x00               DC8 0
+   \        0x5                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \   static __absolute sm_event_t const sm_exit_event
+   \                     sm_exit_event:
+   \        0x0   0x01               DC8 1
+   \        0x1                      DS8 3
+   \        0x4   0x00               DC8 0
+   \        0x5                      DS8 3
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp sm_result_t error_increment(sm_t *)
+   \                     error_increment: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0x.... 0x....      LDR.W    R2,??DataTable22
+   \        0x6   0x8810             LDRH     R0,[R2, #+0]
+   \        0x8   0x1C40             ADDS     R0,R0,#+1
+   \        0xA   0x8010             STRH     R0,[R2, #+0]
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void sm_transit(sm_t *, sm_state_t const)
+   \                     sm_transit: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x2C00             CMP      R4,#+0
+   \        0x8   0xD008             BEQ.N    ??sm_transit_0
+   \        0xA   0x6820             LDR      R0,[R4, #+0]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD005             BEQ.N    ??sm_transit_0
+   \       0x10   0x.... 0x....      LDR.W    R1,??DataTable22_1
+   \       0x14   0x0020             MOVS     R0,R4
+   \       0x16   0x6822             LDR      R2,[R4, #+0]
+   \       0x18   0x4790             BLX      R2
+   \       0x1A   0xE002             B.N      ??sm_transit_1
+   \                     ??sm_transit_0: (+1)
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \       0x1E   0x.... 0x....      BL       error_increment
+   \                     ??sm_transit_1: (+1)
+   \       0x22   0x0028             MOVS     R0,R5
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD104             BNE.N    ??sm_transit_2
+   \       0x28   0x.... 0x....      LDR.W    R1,??DataTable22
+   \       0x2C   0x8808             LDRH     R0,[R1, #+0]
+   \       0x2E   0x1C40             ADDS     R0,R0,#+1
+   \       0x30   0x8008             STRH     R0,[R1, #+0]
+   \                     ??sm_transit_2: (+1)
+   \       0x32   0x6025             STR      R5,[R4, #+0]
+   \       0x34   0x2C00             CMP      R4,#+0
+   \       0x36   0xD008             BEQ.N    ??sm_transit_3
+   \       0x38   0x6820             LDR      R0,[R4, #+0]
+   \       0x3A   0x2800             CMP      R0,#+0
+   \       0x3C   0xD005             BEQ.N    ??sm_transit_3
+   \       0x3E   0x.... 0x....      LDR.W    R1,??DataTable24
+   \       0x42   0x0020             MOVS     R0,R4
+   \       0x44   0x6822             LDR      R2,[R4, #+0]
+   \       0x46   0x4790             BLX      R2
+   \       0x48   0xE002             B.N      ??sm_transit_4
+   \                     ??sm_transit_3: (+1)
+   \       0x4A   0x2000             MOVS     R0,#+0
+   \       0x4C   0x.... 0x....      BL       error_increment
+   \                     ??sm_transit_4: (+1)
+   \       0x50   0xBD31             POP      {R0,R4,R5,PC}
+     51          #include "ie_element_info.h"
+     52          #include "network-manager.h"
+     53          #include "fan_factorycmd.h"
+     54          #include "fan_api.h"
+     55          
+     56          
+     57          
+     58          /*
+     59          ** ============================================================================
+     60          ** Public Function Definitions
+     61          ** ============================================================================
+     62          */
+     63          #define MAX_TOOL_UART_DATA_BUFF 512
+     64          
+     65          
+     66          uint8_t TRX_RAIL_setPower(uint8_t powerDbm);
+     67          uint8_t get_cuurunt_active_operation_mode();
+     68          sm_result_t node_factory_mode_state(fan_nwk_manager_sm_t *s, const sm_event_t *e);
+     69          static sm_result_t fsm_sending_packets(fan_nwk_manager_sm_t *s, const sm_event_t *e);
+     70          static sm_result_t fsm_receive_mode(fan_nwk_manager_sm_t *s, const sm_event_t *e);
+     71          static sm_result_t tsm_sending_unmod_stream( fan_nwk_manager_sm_t *s, const sm_event_t *e );
+     72          static sm_result_t tsm_sending_mod_stream( fan_nwk_manager_sm_t *s, const sm_event_t *e );
+     73          void send_next_pkt(void *s,void* tmr);
+     74          static void perform_bcast_data_tx( void* s );
+     75          void update_total_sending_dur_for_hr( void *s, void* tmr );
+     76          void tsm_alarm(void *s, void* tmr );
+     77          void set_datapkt_type();
+     78          void init_factory_mode();
+     79          extern uint32_t get_sun_page_value(void);
+     80          extern uint16_t get_sun_channel(void);
+     81          extern uint8_t phyModeMapArr[8];
+     82          
+     83          /*
+     84          ** =============================================================================
+     85          ** External Variable Declarations
+     86          ** =============================================================================
+     87          */
+     88          extern void TRX_RAIL_do_EnergyDetection_Scanning ();
+     89          extern uint8_t send_hif_conf_cb( uint8_t cmd_id,uint8_t status );
+     90          extern mac_pib_t mac_pib;
+     91          extern fan_nwk_manager_sm_t fan_nwk_manager_app;
+     92          //extern uint8_t TRX_Config_CRC_for_RX_pkt();
+     93          extern void * app_bm_alloc( uint16_t length );
+     94          extern void app_bm_free( uint8_t *pMem );
+
+   \                                 In section .bss, align 4
+     95          uint32_t total_sending_in_hr[6];
+   \                     total_sending_in_hr:
+   \        0x0                      DS8 24
+
+   \                                 In section .bss, align 4
+     96          uint32_t total_packets_sent[6];
+   \                     total_packets_sent:
+   \        0x0                      DS8 24
+
+   \                                 In section .bss, align 1
+     97          uint8_t total_sending_in_hr_index = 0;
+   \                     total_sending_in_hr_index:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 2
+     98          uint16_t total_packets_sent_in_an_hr = 0;
+   \                     total_packets_sent_in_an_hr:
+   \        0x0                      DS8 2
+     99          extern uint8_t response_laye_ID;
+
+   \                                 In section .bss, align 1
+    100          uint8_t mac_limit_reached_count = 0;
+   \                     mac_limit_reached_count:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+    101          uint8_t max_sending_dur_reached = 0;
+   \                     max_sending_dur_reached:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+    102          uint32_t txx_complete_event = 0;
+   \                     txx_complete_event:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    103          p3time_t telec_start_time = 0;
+   \                     telec_start_time:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    104          p3time_t telec_exp_time = 0;
+   \                     telec_exp_time:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    105          uint32_t time_stamp[2]={0};
+   \                     time_stamp:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 4
+    106          rx_mac_frame_info_t rx_mac_data_ind;
+   \                     rx_mac_data_ind:
+   \        0x0                      DS8 16
+    107          
+    108          int8_t set_RAIL_phyMode(uint8_t modeID);
+    109          void App_factory_mode_Data_ind_cb( uint16_t msduLength,uint8_t* pMsdu, int8_t mpduLinkQuality,uint16_t fcs_length);
+    110          
+    111          /*==================================================================================*/
+    112          /*==================================================================================*/
+    113          
+    114          
+    115          /*----------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+    116          void App_factory_mode_Data_ind_cb( uint16_t msduLength,uint8_t* pMsdu, int8_t mpduLinkQuality,uint16_t fcs_length)
+    117          {
+   \                     App_factory_mode_Data_ind_cb: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+   \        0x8   0x001E             MOVS     R6,R3
+    118            sm_event_t e = { (sm_trigger_t) TSM_TRIGGER_RX_COMPLETE, { 0 } };
+   \        0xA   0x.... 0x....      LDR.W    R2,??DataTable23
+   \        0xE   0xE9D2 0x0100      LDRD     R0,R1,[R2, #+0]
+   \       0x12   0xE9CD 0x0100      STRD     R0,R1,[SP, #+0]
+    119          //  char RSSIval = 0;     
+    120            
+    121          //  RSSIval = convert_LQI_To_RSSI( mpduLinkQuality );
+    122            rx_mac_data_ind.rssival  = mpduLinkQuality;
+   \       0x16   0x.... 0x....      LDR.W    R0,??DataTable24_1
+   \       0x1A   0x0029             MOVS     R1,R5
+   \       0x1C   0xB249             SXTB     R1,R1
+   \       0x1E   0x6081             STR      R1,[R0, #+8]
+    123            rx_mac_data_ind.FCS_Length = fcs_length;
+   \       0x20   0x8186             STRH     R6,[R0, #+12]
+    124            rx_mac_data_ind.msduLength = msduLength;
+   \       0x22   0x8007             STRH     R7,[R0, #+0]
+    125            rx_mac_data_ind.pMsdu = pMsdu;
+   \       0x24   0x6044             STR      R4,[R0, #+4]
+    126            e.param.vector = &rx_mac_data_ind;
+   \       0x26   0x9001             STR      R0,[SP, #+4]
+    127            fan_nwk_manager_app.factory_mod_st.rx_packet_num += 0x01;
+   \       0x28   0x.... 0x....      LDR.W    R2,??DataTable24_2
+   \       0x2C   0xF8D2 0x0260      LDR      R0,[R2, #+608]
+   \       0x30   0x1C40             ADDS     R0,R0,#+1
+   \       0x32   0xF8C2 0x0260      STR      R0,[R2, #+608]
+    128            //:: Suneet Added to despacth the event  recived pkt ic completed 
+    129            SM_DISPATCH((sm_t *) &fan_nwk_manager_app,&e);
+   \       0x36   0x6810             LDR      R0,[R2, #+0]
+   \       0x38   0x2800             CMP      R0,#+0
+   \       0x3A   0xD004             BEQ.N    ??App_factory_mode_Data_ind_cb_0
+   \       0x3C   0x4669             MOV      R1,SP
+   \       0x3E   0x0010             MOVS     R0,R2
+   \       0x40   0x6812             LDR      R2,[R2, #+0]
+   \       0x42   0x4790             BLX      R2
+   \       0x44   0xE002             B.N      ??App_factory_mode_Data_ind_cb_1
+   \                     ??App_factory_mode_Data_ind_cb_0: (+1)
+   \       0x46   0x2000             MOVS     R0,#+0
+   \       0x48   0x.... 0x....      BL       error_increment
+    130          }
+   \                     ??App_factory_mode_Data_ind_cb_1: (+1)
+   \       0x4C   0xBDF7             POP      {R0-R2,R4-R7,PC}
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x0D               DC8 13
+   \        0x1                      DS8 3
+   \        0x4   0x00               DC8 0
+   \        0x5                      DS8 3
+    131          
+    132          /*----------------------------------------------------------------------------*/
+    133          
+
+   \                                 In section .text, align 2, keep-with-next
+    134          void init_factory_mode()
+    135          {
+   \                     init_factory_mode: (+1)
+   \        0x0   0xB51F             PUSH     {R0-R4,LR}
+    136            uint32_t current_page = get_sun_page_value();;
+   \        0x2   0x.... 0x....      BL       get_sun_page_value
+   \        0x6   0x9002             STR      R0,[SP, #+8]
+    137            uint32_t channel = get_sun_channel();
+   \        0x8   0x.... 0x....      BL       get_sun_channel
+   \        0xC   0x9001             STR      R0,[SP, #+4]
+    138            uint32_t rssi_threshold = fan_nwk_manager_app.factory_mod_st.rssi_threshold;
+   \        0xE   0x.... 0x....      LDR.W    R4,??DataTable24_2
+   \       0x12   0xF994 0x0264      LDRSB    R0,[R4, #+612]
+   \       0x16   0x9000             STR      R0,[SP, #+0]
+    139            PLME_set_request(phyCurrentSUNPageEntry,4,&current_page);
+   \       0x18   0xAA02             ADD      R2,SP,#+8
+   \       0x1A   0x2104             MOVS     R1,#+4
+   \       0x1C   0x2022             MOVS     R0,#+34
+   \       0x1E   0x.... 0x....      BL       PLME_set_request
+    140            PLME_set_request(phyCurrentChannel,2,&channel);
+   \       0x22   0xAA01             ADD      R2,SP,#+4
+   \       0x24   0x2102             MOVS     R1,#+2
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x.... 0x....      BL       PLME_set_request
+    141            PLME_set_request(phyRSSIThreshold, 1, &rssi_threshold);
+   \       0x2C   0x466A             MOV      R2,SP
+   \       0x2E   0x2101             MOVS     R1,#+1
+   \       0x30   0x2032             MOVS     R0,#+50
+   \       0x32   0x.... 0x....      BL       PLME_set_request
+    142              
+    143            
+    144            fan_nwk_manager_app.factory_mod_st.gmsduu = app_bm_alloc( MAX_TOOL_UART_DATA_BUFF); //Alocate memory 
+   \       0x36   0xF44F 0x7000      MOV      R0,#+512
+   \       0x3A   0x.... 0x....      BL       app_bm_alloc
+   \       0x3E   0xF8C4 0x0258      STR      R0,[R4, #+600]
+    145            fan_nwk_manager_sm_t *s = &fan_nwk_manager_app;
+    146            tmr_stop( &(s->factory_mod_st.ipdelay) );
+   \       0x42   0xF514 0x70FA      ADDS     R0,R4,#+500
+   \       0x46   0x.... 0x....      BL       tmr_stop
+    147            tmr_create_one_shot_timer
+    148              (
+    149               &(s->factory_mod_st.ipdelay),
+    150               2000,
+    151               (sw_tmr_cb_t)&tsm_alarm,
+    152               s
+    153                 );
+   \       0x4A   0x0023             MOVS     R3,R4
+   \       0x4C   0x.... 0x....      ADR.W    R2,tsm_alarm
+   \       0x50   0xF44F 0x61FA      MOV      R1,#+2000
+   \       0x54   0xF514 0x70FA      ADDS     R0,R4,#+500
+   \       0x58   0x.... 0x....      BL       tmr_create_one_shot_timer
+    154            tmr_stop( &(s->factory_mod_st.send_dur_tmr) );
+   \       0x5C   0xF514 0x70EE      ADDS     R0,R4,#+476
+   \       0x60   0x.... 0x....      BL       tmr_stop
+    155            tmr_create_one_shot_timer
+    156              (
+    157               &(s->factory_mod_st.send_dur_tmr),
+    158               3600000000L,
+    159               (sw_tmr_cb_t)&update_total_sending_dur_for_hr,
+    160               s
+    161                 );
+   \       0x64   0x0023             MOVS     R3,R4
+   \       0x66   0x.... 0x....      ADR.W    R2,update_total_sending_dur_for_hr
+   \       0x6A   0x.... 0x....      LDR.W    R1,??DataTable24_3
+   \       0x6E   0xF514 0x70EE      ADDS     R0,R4,#+476
+   \       0x72   0x.... 0x....      BL       tmr_create_one_shot_timer
+    162            /*Suneet :: set 1 sec time to send next pkt 24-10-2016*/
+    163            tmr_create_one_shot_timer
+    164              (
+    165               &(s->factory_mod_st.delay_next_pkt),
+    166               50000,//1000000,//1sec Delay
+    167               (sw_tmr_cb_t)&send_next_pkt,
+    168               s
+    169                 );
+   \       0x76   0x0023             MOVS     R3,R4
+   \       0x78   0x.... 0x....      ADR.W    R2,send_next_pkt
+   \       0x7C   0xF24C 0x3150      MOVW     R1,#+50000
+   \       0x80   0xF514 0x7003      ADDS     R0,R4,#+524
+   \       0x84   0x.... 0x....      BL       tmr_create_one_shot_timer
+    170          }
+   \       0x88   0xBD1F             POP      {R0-R4,PC}
+    171          
+    172          /*==================================================================================*/
+    173          
+
+   \                                 In section .text, align 2, keep-with-next
+    174          static sm_result_t fsm_sending_packets(fan_nwk_manager_sm_t *s, const sm_event_t *e)
+    175          {
+   \                     fsm_sending_packets: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x4680             MOV      R8,R0
+   \        0x6   0x000C             MOVS     R4,R1
+    176            uint8_t i;
+    177            uint16_t sent_pld_len = 0;
+   \        0x8   0x2600             MOVS     R6,#+0
+    178            uint8_t host_pkt[7] = { TX_PACKET_CONF,0x00};
+                           ^
+Warning[Pe550]: variable "host_pkt" was set but never used
+   \        0xA   0x466B             MOV      R3,SP
+   \        0xC   0x.... 0x....      LDR.W    R0,??DataTable24_4
+   \       0x10   0xE9D0 0x2100      LDRD     R2,R1,[R0, #+0]
+   \       0x14   0xE9C3 0x2100      STRD     R2,R1,[R3, #+0]
+    179            //	int u=0xFFFF;
+    180            uint16_t max_rand_pkt_size = 1;
+   \       0x18   0x2701             MOVS     R7,#+1
+    181            switch ((fan_nwk_manager_sm_trigger_t) e->trigger)
+   \       0x1A   0x7820             LDRB     R0,[R4, #+0]
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD005             BEQ.N    ??fsm_sending_packets_0
+   \       0x20   0x280A             CMP      R0,#+10
+   \       0x22   0xD027             BEQ.N    ??fsm_sending_packets_1
+   \       0x24   0x280B             CMP      R0,#+11
+   \       0x26   0xF000 0x80CB      BEQ.W    ??fsm_sending_packets_2
+   \       0x2A   0xE0D7             B.N      ??fsm_sending_packets_3
+    182            {
+    183            case TRIGGER_ENTRY:
+    184              s->state_ind = NODE_SENDIND_PACKET;
+   \                     ??fsm_sending_packets_0: (+1)
+   \       0x2C   0x2010             MOVS     R0,#+16
+   \       0x2E   0xF888 0x0008      STRB     R0,[R8, #+8]
+    185              //    
+    186              //    /*choose to perform either broadcast or unicast based on
+    187              //    the destination address setting*/
+    188              s->factory_mod_st.fn_alarm = &perform_bcast_data_tx;
+   \       0x32   0x.... 0x....      ADR.W    R0,perform_bcast_data_tx
+   \       0x36   0xF8C8 0x0224      STR      R0,[R8, #+548]
+    189              for(i=0;i<8;i++)
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \       0x3C   0x0005             MOVS     R5,R0
+   \                     ??fsm_sending_packets_4: (+1)
+   \       0x3E   0x0028             MOVS     R0,R5
+   \       0x40   0xB2C0             UXTB     R0,R0
+   \       0x42   0x2808             CMP      R0,#+8
+   \       0x44   0xDA08             BGE.N    ??fsm_sending_packets_5
+    190              {
+    191                if( s->factory_mod_st.trx_pkt_param.pkt_mode_param.dest_addr.address.ieee_address[i] != 0xFF )
+   \       0x46   0xF8D8 0x11BC      LDR      R1,[R8, #+444]
+   \       0x4A   0x0028             MOVS     R0,R5
+   \       0x4C   0xB2C0             UXTB     R0,R0
+   \       0x4E   0x5C08             LDRB     R0,[R1, R0]
+   \       0x50   0x28FF             CMP      R0,#+255
+   \       0x52   0xD101             BNE.N    ??fsm_sending_packets_5
+    192                {
+    193                  //s->factory_mod_st.fn_alarm = &perform_64_bit_data_tx;
+    194                  break;
+    195                }
+    196              }
+   \                     ??fsm_sending_packets_6: (+1)
+   \       0x54   0x1C6D             ADDS     R5,R5,#+1
+   \       0x56   0xE7F2             B.N      ??fsm_sending_packets_4
+    197              
+    198              telec_start_time =  timer_current_time_get();
+   \                     ??fsm_sending_packets_5: (+1)
+   \       0x58   0x.... 0x....      BL       timer_current_time_get
+   \       0x5C   0x.... 0x....      LDR.W    R1,??DataTable24_5
+   \       0x60   0x6008             STR      R0,[R1, #+0]
+    199              s->factory_mod_st.fn_alarm(s);
+   \       0x62   0x4640             MOV      R0,R8
+   \       0x64   0xF8D8 0x1224      LDR      R1,[R8, #+548]
+   \       0x68   0x4788             BLX      R1
+    200              tmr_start_relative( &(s->factory_mod_st.send_dur_tmr));
+   \       0x6A   0xF518 0x70EE      ADDS     R0,R8,#+476
+   \       0x6E   0x.... 0x....      BL       tmr_start_relative
+    201              break;
+   \       0x72   0xE0B3             B.N      ??fsm_sending_packets_7
+    202            case TSM_TRIGGER_TX_COMPLETE:
+    203              //txx_complete_event++;
+    204              telec_exp_time =  timer_current_time_get();
+   \                     ??fsm_sending_packets_1: (+1)
+   \       0x74   0x.... 0x....      BL       timer_current_time_get
+   \       0x78   0x.... 0x....      LDR.W    R1,??DataTable24_6
+   \       0x7C   0x6008             STR      R0,[R1, #+0]
+    205              s->result = (factory_sm_result_t) e->param.scalar;
+   \       0x7E   0x7920             LDRB     R0,[R4, #+4]
+   \       0x80   0xF888 0x013C      STRB     R0,[R8, #+316]
+    206              
+    207              if( e->param.scalar == MAC_LIMIT_REACHED )
+   \       0x84   0x7920             LDRB     R0,[R4, #+4]
+   \       0x86   0x28FA             CMP      R0,#+250
+   \       0x88   0xD122             BNE.N    ??fsm_sending_packets_8
+    208              {				                               
+    209                if( !max_sending_dur_reached )
+   \       0x8A   0x.... 0x....      LDR.W    R1,??DataTable24_7
+   \       0x8E   0x7808             LDRB     R0,[R1, #+0]
+   \       0x90   0x2800             CMP      R0,#+0
+   \       0x92   0xD114             BNE.N    ??fsm_sending_packets_9
+    210                {
+    211                  mac_limit_reached_count++;
+   \       0x94   0x.... 0x....      LDR.W    R0,??DataTable24_8
+   \       0x98   0x7802             LDRB     R2,[R0, #+0]
+   \       0x9A   0x1C52             ADDS     R2,R2,#+1
+   \       0x9C   0x7002             STRB     R2,[R0, #+0]
+    212                  max_sending_dur_reached = 1;
+   \       0x9E   0x2201             MOVS     R2,#+1
+   \       0xA0   0x700A             STRB     R2,[R1, #+0]
+    213                  //telec_exp_time =  timer_current_time_get();
+    214                  host_pkt[1] = e->param.scalar;
+   \       0xA2   0x4669             MOV      R1,SP
+   \       0xA4   0x7922             LDRB     R2,[R4, #+4]
+   \       0xA6   0x704A             STRB     R2,[R1, #+1]
+    215                  host_pkt[3] = (uint8_t)(mac_limit_reached_count);
+   \       0xA8   0x7800             LDRB     R0,[R0, #+0]
+   \       0xAA   0x70C8             STRB     R0,[R1, #+3]
+    216                  host_pkt[2] = (uint8_t)((mac_limit_reached_count)>>8);
+   \       0xAC   0x2000             MOVS     R0,#+0
+   \       0xAE   0x7088             STRB     R0,[R1, #+2]
+    217                  host_pkt[4] = (uint8_t)((((fan_nwk_manager_sm_t*)s)->factory_mod_st.tx_packet_counter)>>8);
+   \       0xB0   0xF8D8 0x025C      LDR      R0,[R8, #+604]
+   \       0xB4   0x0A00             LSRS     R0,R0,#+8
+   \       0xB6   0x7108             STRB     R0,[R1, #+4]
+    218                  host_pkt[5] = (uint8_t)(((fan_nwk_manager_sm_t*)s)->factory_mod_st.tx_packet_counter);                                    
+   \       0xB8   0xF8D8 0x025C      LDR      R0,[R8, #+604]
+   \       0xBC   0x7148             STRB     R0,[R1, #+5]
+    219                  //hif_send_msg_up( host_pkt,5,response_laye_ID,PROTOCOL_ID_FOR_APP);
+    220                }
+    221                if( s->factory_mod_st.trx_pkt_param.pkt_mode_param.random_packet_len )
+   \                     ??fsm_sending_packets_9: (+1)
+   \       0xBE   0xF898 0x01CD      LDRB     R0,[R8, #+461]
+   \       0xC2   0x2800             CMP      R0,#+0
+   \       0xC4   0xD004             BEQ.N    ??fsm_sending_packets_8
+    222                {
+    223                  sm_transit((sm_t *)s, (sm_state_t)&node_factory_mode_state);
+   \       0xC6   0x.... 0x....      ADR.W    R1,node_factory_mode_state
+   \       0xCA   0x4640             MOV      R0,R8
+   \       0xCC   0x.... 0x....      BL       sm_transit
+    224                }
+    225                
+    226              }
+    227              
+    228              if( (e->param.scalar != MAC_SUCCESS) && ((e->param.scalar != MAC_NO_ACK)))
+   \                     ??fsm_sending_packets_8: (+1)
+   \       0xD0   0x7920             LDRB     R0,[R4, #+4]
+   \       0xD2   0x2800             CMP      R0,#+0
+   \       0xD4   0xD007             BEQ.N    ??fsm_sending_packets_10
+   \       0xD6   0x7920             LDRB     R0,[R4, #+4]
+   \       0xD8   0x28E9             CMP      R0,#+233
+   \       0xDA   0xD004             BEQ.N    ??fsm_sending_packets_10
+    229              {
+    230                ((fan_nwk_manager_sm_t*)s)->factory_mod_st.tx_packet_counter--;
+   \       0xDC   0xF8D8 0x025C      LDR      R0,[R8, #+604]
+   \       0xE0   0x1E40             SUBS     R0,R0,#+1
+   \       0xE2   0xF8C8 0x025C      STR      R0,[R8, #+604]
+    231              }
+    232              
+    233              if( e->param.scalar != MAC_LIMIT_REACHED )
+   \                     ??fsm_sending_packets_10: (+1)
+   \       0xE6   0x7920             LDRB     R0,[R4, #+4]
+   \       0xE8   0x28FA             CMP      R0,#+250
+   \       0xEA   0xD02F             BEQ.N    ??fsm_sending_packets_11
+    234              {
+    235                
+    236                max_sending_dur_reached = 0;
+   \       0xEC   0x2100             MOVS     R1,#+0
+   \       0xEE   0x.... 0x....      LDR.W    R0,??DataTable24_7
+   \       0xF2   0x7001             STRB     R1,[R0, #+0]
+    237                /* Do not send confirmation if the status is MAC_LIMIT_REACHED as this event keeps happening once encounters the T108 restriction and the prints will be very fast*/
+    238                host_pkt[1] = e->param.scalar; 
+   \       0xF4   0x4669             MOV      R1,SP
+   \       0xF6   0x7920             LDRB     R0,[R4, #+4]
+   \       0xF8   0x7048             STRB     R0,[R1, #+1]
+    239                /*Suneet :: if destination address is not zero */
+    240                if(((fan_nwk_manager_sm_t*)s)->factory_mod_st.trx_pkt_param.pkt_mode_param.dest_addr.address_mode == ADDR_MODE_EXTENDED)
+   \       0xFA   0xF898 0x01B8      LDRB     R0,[R8, #+440]
+   \       0xFE   0x2803             CMP      R0,#+3
+   \      0x100   0xD10B             BNE.N    ??fsm_sending_packets_12
+    241                  sent_pld_len = (((fan_nwk_manager_sm_t*)s)->factory_mod_st.trx_pkt_param.pkt_mode_param.pkt_len) + 21 + ((((fan_nwk_manager_sm_t*)s)->factory_mod_st.trx_pkt_param.pkt_mode_param.fcslength)?4:2);
+   \      0x102   0xF898 0x01A7      LDRB     R0,[R8, #+423]
+   \      0x106   0x2800             CMP      R0,#+0
+   \      0x108   0xD001             BEQ.N    ??fsm_sending_packets_13
+   \      0x10A   0x2604             MOVS     R6,#+4
+   \      0x10C   0xE000             B.N      ??fsm_sending_packets_14
+   \                     ??fsm_sending_packets_13: (+1)
+   \      0x10E   0x2602             MOVS     R6,#+2
+   \                     ??fsm_sending_packets_14: (+1)
+   \      0x110   0xF8B8 0x01A4      LDRH     R0,[R8, #+420]
+   \      0x114   0x1836             ADDS     R6,R6,R0
+   \      0x116   0x3615             ADDS     R6,R6,#+21
+   \      0x118   0xE009             B.N      ??fsm_sending_packets_15
+    242                else
+    243                  sent_pld_len = (((fan_nwk_manager_sm_t*)s)->factory_mod_st.trx_pkt_param.pkt_mode_param.pkt_len) + ((((fan_nwk_manager_sm_t*)s)->factory_mod_st.trx_pkt_param.pkt_mode_param.fcslength)?4:2);
+   \                     ??fsm_sending_packets_12: (+1)
+   \      0x11A   0xF898 0x01A7      LDRB     R0,[R8, #+423]
+   \      0x11E   0x2800             CMP      R0,#+0
+   \      0x120   0xD001             BEQ.N    ??fsm_sending_packets_16
+   \      0x122   0x2604             MOVS     R6,#+4
+   \      0x124   0xE000             B.N      ??fsm_sending_packets_17
+   \                     ??fsm_sending_packets_16: (+1)
+   \      0x126   0x2602             MOVS     R6,#+2
+   \                     ??fsm_sending_packets_17: (+1)
+   \      0x128   0xF8B8 0x01A4      LDRH     R0,[R8, #+420]
+   \      0x12C   0x1836             ADDS     R6,R6,R0
+    244                
+    245                host_pkt[2] = (uint8_t)(sent_pld_len>>8);
+   \                     ??fsm_sending_packets_15: (+1)
+   \      0x12E   0x0030             MOVS     R0,R6
+   \      0x130   0xB280             UXTH     R0,R0
+   \      0x132   0x0A00             LSRS     R0,R0,#+8
+   \      0x134   0x7088             STRB     R0,[R1, #+2]
+    246                host_pkt[3] = (uint8_t)(sent_pld_len);
+   \      0x136   0x70CE             STRB     R6,[R1, #+3]
+    247                host_pkt[4] = (uint8_t)((((fan_nwk_manager_sm_t*)s)->factory_mod_st.tx_packet_counter)>>8);
+   \      0x138   0xF8D8 0x025C      LDR      R0,[R8, #+604]
+   \      0x13C   0x0A00             LSRS     R0,R0,#+8
+   \      0x13E   0x7108             STRB     R0,[R1, #+4]
+    248                host_pkt[5] = (uint8_t)(((fan_nwk_manager_sm_t*)s)->factory_mod_st.tx_packet_counter);
+   \      0x140   0xF8D8 0x025C      LDR      R0,[R8, #+604]
+   \      0x144   0x7148             STRB     R0,[R1, #+5]
+    249                host_pkt[6] = DUMMY_COMPORT; //Dummy Com port VAlue 
+   \      0x146   0x2055             MOVS     R0,#+85
+   \      0x148   0xF88D 0x0006      STRB     R0,[SP, #+6]
+    250                //hif_send_msg_up( host_pkt,6,response_laye_ID,PROTOCOL_ID_FOR_APP);
+    251              }
+    252              
+    253              if ( ( s->factory_mod_st.trx_pkt_param.pkt_mode_param.pkt_cnt > s->factory_mod_st.tx_packet_counter ) && ( e->param.scalar != MAC_NO_ACK ) )//inserted ANAND:
+   \                     ??fsm_sending_packets_11: (+1)
+   \      0x14C   0xF8D8 0x125C      LDR      R1,[R8, #+604]
+   \      0x150   0xF8D8 0x01A0      LDR      R0,[R8, #+416]
+   \      0x154   0x4281             CMP      R1,R0
+   \      0x156   0xD22D             BCS.N    ??fsm_sending_packets_18
+   \      0x158   0x7920             LDRB     R0,[R4, #+4]
+   \      0x15A   0x28E9             CMP      R0,#+233
+   \      0x15C   0xD02A             BEQ.N    ??fsm_sending_packets_18
+    254              {
+    255                telec_start_time =  timer_current_time_get();
+   \      0x15E   0x.... 0x....      BL       timer_current_time_get
+   \      0x162   0x.... 0x....      LDR.W    R1,??DataTable24_5
+   \      0x166   0x6008             STR      R0,[R1, #+0]
+    256                
+    257                if(s->factory_mod_st.trx_pkt_param.pkt_mode_param.random_packet_len)
+   \      0x168   0xF898 0x01CD      LDRB     R0,[R8, #+461]
+   \      0x16C   0x2800             CMP      R0,#+0
+   \      0x16E   0xD017             BEQ.N    ??fsm_sending_packets_19
+    258                { 
+    259                  max_rand_pkt_size = (s->factory_mod_st.trx_pkt_param.pkt_mode_param.fcslength)?2029:2031;
+   \      0x170   0xF898 0x01A7      LDRB     R0,[R8, #+423]
+   \      0x174   0x2800             CMP      R0,#+0
+   \      0x176   0xD002             BEQ.N    ??fsm_sending_packets_20
+   \      0x178   0xF240 0x77ED      MOVW     R7,#+2029
+   \      0x17C   0xE001             B.N      ??fsm_sending_packets_21
+   \                     ??fsm_sending_packets_20: (+1)
+   \      0x17E   0xF240 0x77EF      MOVW     R7,#+2031
+    260                  while(!(sent_pld_len = (rand() % max_rand_pkt_size)));                                                                      
+   \                     ??fsm_sending_packets_21: (+1)
+   \      0x182   0x.... 0x....      BL       rand
+   \      0x186   0x003A             MOVS     R2,R7
+   \      0x188   0xB292             UXTH     R2,R2
+   \      0x18A   0xFB90 0xF1F2      SDIV     R1,R0,R2
+   \      0x18E   0xFB02 0x0011      MLS      R0,R2,R1,R0
+   \      0x192   0x0006             MOVS     R6,R0
+   \      0x194   0x0030             MOVS     R0,R6
+   \      0x196   0xB280             UXTH     R0,R0
+   \      0x198   0x2800             CMP      R0,#+0
+   \      0x19A   0xD0F2             BEQ.N    ??fsm_sending_packets_21
+    261                  s->factory_mod_st.trx_pkt_param.pkt_mode_param.pkt_len = sent_pld_len;
+   \      0x19C   0xF8A8 0x61A4      STRH     R6,[R8, #+420]
+    262                }                                                                        
+    263                //tsm_alarm(s,NULL);//ANAND send the next packet:
+    264                time_stamp[0]= timer_current_time_get();
+   \                     ??fsm_sending_packets_19: (+1)
+   \      0x1A0   0x.... 0x....      BL       timer_current_time_get
+   \      0x1A4   0x.... 0x....      LDR.W    R1,??DataTable24_9
+   \      0x1A8   0x6008             STR      R0,[R1, #+0]
+    265                tmr_start_relative( &(s->factory_mod_st.delay_next_pkt)); 
+   \      0x1AA   0xF518 0x7003      ADDS     R0,R8,#+524
+   \      0x1AE   0x.... 0x....      BL       tmr_start_relative
+   \      0x1B2   0xE004             B.N      ??fsm_sending_packets_22
+    266              }
+    267              else
+    268              {
+    269          #ifdef UTELTEST
+    270                utu_timestamp(UTUL_PKT_TEST_DONE, s->tx_packet_counter );
+    271          #endif
+    272                /*all the packets have been txed, so switch to idle state*/
+    273                sm_transit((sm_t *)s, (sm_state_t)&node_factory_mode_state);
+   \                     ??fsm_sending_packets_18: (+1)
+   \      0x1B4   0x.... 0x....      ADR.W    R1,node_factory_mode_state
+   \      0x1B8   0x4640             MOV      R0,R8
+   \      0x1BA   0x.... 0x....      BL       sm_transit
+    274              }
+    275              break;
+   \                     ??fsm_sending_packets_22: (+1)
+   \      0x1BE   0xE00D             B.N      ??fsm_sending_packets_7
+    276            case TSM_TRIGGER_STOP_TX:
+    277              tmr_stop( &(s->factory_mod_st.ipdelay) );
+   \                     ??fsm_sending_packets_2: (+1)
+   \      0x1C0   0xF518 0x70FA      ADDS     R0,R8,#+500
+   \      0x1C4   0x.... 0x....      BL       tmr_stop
+    278              tmr_stop( &(((fan_nwk_manager_sm_t*)s)->factory_mod_st.delay_next_pkt));    
+   \      0x1C8   0xF518 0x7003      ADDS     R0,R8,#+524
+   \      0x1CC   0x.... 0x....      BL       tmr_stop
+    279              sm_transit((sm_t *)s, (sm_state_t)&node_factory_mode_state);
+   \      0x1D0   0x.... 0x....      ADR.W    R1,node_factory_mode_state
+   \      0x1D4   0x4640             MOV      R0,R8
+   \      0x1D6   0x.... 0x....      BL       sm_transit
+    280              break;
+   \      0x1DA   0xE7FF             B.N      ??fsm_sending_packets_7
+    281            default:
+    282              break;
+    283            }
+    284            return NULL;
+   \                     ??fsm_sending_packets_3: (+1)
+   \                     ??fsm_sending_packets_7: (+1)
+   \      0x1DC   0x2000             MOVS     R0,#+0
+   \      0x1DE   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}
+    285          }
+    286          
+    287          /*==================================================================================*/
+    288          /*==================================================================================*/
+    289          /*==================================================================================*/
+    290          
+
+   \                                 In section .text, align 4, keep-with-next
+    291          sm_result_t node_factory_mode_state(fan_nwk_manager_sm_t *s, const sm_event_t *e)
+    292          {
+   \                     node_factory_mode_state: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    293            uint32_t val = 0;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x9000             STR      R0,[SP, #+0]
+    294            //uhf_tmr_create();
+    295            
+    296            //set_datapkt_type();
+    297            switch ((fan_nwk_manager_sm_trigger_t) e->trigger)
+   \        0xA   0x7828             LDRB     R0,[R5, #+0]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD008             BEQ.N    ??node_factory_mode_state_0
+   \       0x10   0x2802             CMP      R0,#+2
+   \       0x12   0xD010             BEQ.N    ??node_factory_mode_state_1
+   \       0x14   0x2809             CMP      R0,#+9
+   \       0x16   0xD00F             BEQ.N    ??node_factory_mode_state_2
+   \       0x18   0x280C             CMP      R0,#+12
+   \       0x1A   0xD017             BEQ.N    ??node_factory_mode_state_3
+   \       0x1C   0x280F             CMP      R0,#+15
+   \       0x1E   0xD02E             BEQ.N    ??node_factory_mode_state_4
+   \       0x20   0xE03D             B.N      ??node_factory_mode_state_5
+    298            {
+    299            case TRIGGER_ENTRY:
+    300              s->state_ind = NODE_FACTORY_MODE_STATE;
+   \                     ??node_factory_mode_state_0: (+1)
+   \       0x22   0x200F             MOVS     R0,#+15
+   \       0x24   0x7220             STRB     R0,[R4, #+8]
+    301              val = 1;
+   \       0x26   0x2001             MOVS     R0,#+1
+   \       0x28   0x9000             STR      R0,[SP, #+0]
+    302              PLME_set_request(phyFSKScramblePSDU,1,&val);
+   \       0x2A   0x466A             MOV      R2,SP
+   \       0x2C   0x2101             MOVS     R1,#+1
+   \       0x2E   0x202E             MOVS     R0,#+46
+   \       0x30   0x.... 0x....      BL       PLME_set_request
+    303              break;
+   \       0x34   0xE033             B.N      ??node_factory_mode_state_6
+    304              
+    305            case TRIGGER_START_NODE:  
+    306              break;      
+   \                     ??node_factory_mode_state_1: (+1)
+   \       0x36   0xE032             B.N      ??node_factory_mode_state_6
+    307              
+    308            case TSM_TRIGGER_PACKETS:
+    309              if ( !( s->factory_mod_st.tx_packet_counter ) )
+   \                     ??node_factory_mode_state_2: (+1)
+   \       0x38   0xF8D4 0x025C      LDR      R0,[R4, #+604]
+   \       0x3C   0x2800             CMP      R0,#+0
+   \       0x3E   0xD104             BNE.N    ??node_factory_mode_state_7
+    310              {
+    311                /*check if the packet counter is set to zero, this indicates that the event
+    312                has been triggered as a result of user issuing the start transmission
+    313                command */
+    314                
+    315                sm_transit((sm_t *)s, (sm_state_t)&fsm_sending_packets); 
+   \       0x40   0x.... 0x....      LDR.W    R1,??DataTable24_10
+   \       0x44   0x0020             MOVS     R0,R4
+   \       0x46   0x.... 0x....      BL       sm_transit
+    316              }
+    317              break;
+   \                     ??node_factory_mode_state_7: (+1)
+   \       0x4A   0xE028             B.N      ??node_factory_mode_state_6
+    318              
+    319            case TSM_TRIGGER_START_RECEIVE:
+    320              s->factory_mod_st.trx_pkt_param.display_rx_data = (e->param.scalar & 0x01);                                      
+   \                     ??node_factory_mode_state_3: (+1)
+   \       0x4C   0x7928             LDRB     R0,[R5, #+4]
+   \       0x4E   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \       0x52   0xF884 0x019B      STRB     R0,[R4, #+411]
+    321              s->one_byte_value = ((e->param.scalar & 0x02)?0x01:0x00);
+   \       0x56   0x7928             LDRB     R0,[R5, #+4]
+   \       0x58   0xB2C0             UXTB     R0,R0
+   \       0x5A   0x0840             LSRS     R0,R0,#+1
+   \       0x5C   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \       0x60   0xF884 0x013D      STRB     R0,[R4, #+317]
+    322              
+    323              MLME_SET_Request
+    324                (
+    325                 macPromiscuousMode,
+    326                 0,
+    327                 1,
+    328                 &(s->one_byte_value)
+    329                   );        
+   \       0x64   0xF204 0x133D      ADDW     R3,R4,#+317
+   \       0x68   0x2201             MOVS     R2,#+1
+   \       0x6A   0x2100             MOVS     R1,#+0
+   \       0x6C   0x2051             MOVS     R0,#+81
+   \       0x6E   0x.... 0x....      BL       MLME_SET_Request
+    330              
+    331              /*triggered outside the telec sm from inter packet delay timer expiry*/
+    332              sm_transit((sm_t *)s, (sm_state_t)&fsm_receive_mode);
+   \       0x72   0x.... 0x....      ADR.W    R1,fsm_receive_mode
+   \       0x76   0x0020             MOVS     R0,R4
+   \       0x78   0x.... 0x....      BL       sm_transit
+    333              break;
+   \       0x7C   0xE00F             B.N      ??node_factory_mode_state_6
+    334              
+    335            case TSM_TRIGGER_STREAM:
+    336              if( s->factory_mod_st.trx_pkt_param.strm_mode_param == MOD_TYPE_UNMODULATED_CARRIER )
+   \                     ??node_factory_mode_state_4: (+1)
+   \       0x7E   0xF894 0x01D0      LDRB     R0,[R4, #+464]
+   \       0x82   0x2800             CMP      R0,#+0
+   \       0x84   0xD105             BNE.N    ??node_factory_mode_state_8
+    337              {
+    338                sm_transit((sm_t *)s, (sm_state_t)&tsm_sending_unmod_stream);
+   \       0x86   0x.... 0x....      ADR.W    R1,tsm_sending_unmod_stream
+   \       0x8A   0x0020             MOVS     R0,R4
+   \       0x8C   0x.... 0x....      BL       sm_transit
+   \       0x90   0xE004             B.N      ??node_factory_mode_state_9
+    339              }
+    340              else
+    341              {
+    342                sm_transit((sm_t *)s, (sm_state_t)&tsm_sending_mod_stream);
+   \                     ??node_factory_mode_state_8: (+1)
+   \       0x92   0x.... 0x....      ADR.W    R1,tsm_sending_mod_stream
+   \       0x96   0x0020             MOVS     R0,R4
+   \       0x98   0x.... 0x....      BL       sm_transit
+    343              }
+    344              break;
+   \                     ??node_factory_mode_state_9: (+1)
+   \       0x9C   0xE7FF             B.N      ??node_factory_mode_state_6
+    345            default:
+    346              break;          
+    347            }
+    348            return NULL;
+   \                     ??node_factory_mode_state_5: (+1)
+   \                     ??node_factory_mode_state_6: (+1)
+   \       0x9E   0x2000             MOVS     R0,#+0
+   \       0xA0   0xBD32             POP      {R1,R4,R5,PC}
+    349          }
+    350          
+    351          /*==================================================================================*/
+    352          /*==================================================================================*/
+    353          /*==================================================================================*/
+    354          
+
+   \                                 In section .text, align 2, keep-with-next
+    355          void process_set_pkt_tx( uint8_t *buf, uint16_t length )
+    356          {
+   \                     process_set_pkt_tx: (+1)
+   \        0x0   0xE92D 0x4FF3      PUSH     {R0,R1,R4-R11,LR}
+   \        0x4   0xB083             SUB      SP,SP,#+12
+    357          	uint8_t status = CMD_SUCCESS;
+   \        0x6   0xF05F 0x0900      MOVS     R9,#+0
+    358          	packet_mode_t* p_pkt_mode_param = &(fan_nwk_manager_app.factory_mod_st.trx_pkt_param.pkt_mode_param);
+   \        0xA   0x.... 0x....      LDR.W    R10,??DataTable24_2
+   \        0xE   0xF51A 0x74D0      ADDS     R4,R10,#+416
+    359                  uint32_t val = 0;
+   \       0x12   0x2100             MOVS     R1,#+0
+   \       0x14   0x9101             STR      R1,[SP, #+4]
+    360                  
+    361                  uint32_t app_pkt_count = get_ulong_BE(buf);
+   \       0x16   0x78C2             LDRB     R2,[R0, #+3]
+   \       0x18   0x7881             LDRB     R1,[R0, #+2]
+   \       0x1A   0x0209             LSLS     R1,R1,#+8
+   \       0x1C   0x188D             ADDS     R5,R1,R2
+   \       0x1E   0x7841             LDRB     R1,[R0, #+1]
+   \       0x20   0xEB15 0x4501      ADDS     R5,R5,R1, LSL #+16
+   \       0x24   0x7801             LDRB     R1,[R0, #+0]
+   \       0x26   0xEB15 0x6501      ADDS     R5,R5,R1, LSL #+24
+    362                  buf += 4 ;
+   \       0x2A   0x1D00             ADDS     R0,R0,#+4
+    363                  uint16_t app_pld_len = get_ushort_BE(buf);
+   \       0x2C   0x7842             LDRB     R2,[R0, #+1]
+   \       0x2E   0x7801             LDRB     R1,[R0, #+0]
+   \       0x30   0x0209             LSLS     R1,R1,#+8
+   \       0x32   0x188E             ADDS     R6,R1,R2
+    364                  buf+=2;
+   \       0x34   0x1C87             ADDS     R7,R0,#+2
+    365                  memcpy(fan_nwk_manager_app.factory_mod_st.gmsduu,buf,app_pld_len);
+   \       0x36   0x46B3             MOV      R11,R6
+   \       0x38   0xFA1F 0xFB8B      UXTH     R11,R11
+   \       0x3C   0x9702             STR      R7,[SP, #+8]
+   \       0x3E   0xF8DA 0x8258      LDR      R8,[R10, #+600]
+   \       0x42   0x465A             MOV      R2,R11
+   \       0x44   0x9902             LDR      R1,[SP, #+8]
+   \       0x46   0x4640             MOV      R0,R8
+   \       0x48   0x.... 0x....      BL       __aeabi_memcpy
+    366                  buf += app_pld_len ;
+   \       0x4C   0x0030             MOVS     R0,R6
+   \       0x4E   0xB280             UXTH     R0,R0
+   \       0x50   0x4438             ADD      R0,R7,R0
+    367                 
+    368                  uint8_t fcs_len = *buf++;
+   \       0x52   0x7801             LDRB     R1,[R0, #+0]
+   \       0x54   0xF88D 0x1000      STRB     R1,[SP, #+0]
+   \       0x58   0x1C47             ADDS     R7,R0,#+1
+    369          //        uint8_t is_bcast = true;        
+    370                  
+    371                  uint16_t max_rand_pkt_size = 1;
+   \       0x5A   0xF05F 0x0801      MOVS     R8,#+1
+    372                  
+    373          //        for(val=0;val<8;val++)
+    374          //        {
+    375          //          if( buf[1+val] != 0xFF )
+    376          //          {
+    377          //            is_bcast = false;
+    378          //            break;
+    379          //          }
+    380          //        }
+    381                     
+    382          	//if( (app_pld_len + ((fcs_len)?4:2)+ 13+ ((is_bcast)?SHORT_ADDRESS_LENGTH:IEEE_ADDRESS_LENGTH)) > aMaxPHYPacketSize )
+    383                  
+    384                  if( app_pld_len  > aMaxPHYPacketSize )
+   \       0x5E   0x0030             MOVS     R0,R6
+   \       0x60   0xB280             UXTH     R0,R0
+   \       0x62   0xF240 0x2101      MOVW     R1,#+513
+   \       0x66   0x4288             CMP      R0,R1
+   \       0x68   0xDB05             BLT.N    ??process_set_pkt_tx_0
+    385          	{
+    386          		status = 1;//OUT_OF_RANGE;
+   \       0x6A   0x2001             MOVS     R0,#+1
+   \       0x6C   0x4681             MOV      R9,R0
+    387                          //so that even if this status is ognored and tester tries to 
+    388                          //initiate the transmission assuming that he had done pkt 
+    389                          //configurations correctly, then this will stop the node from 
+    390                          //transmistting the packets with the previous correct 
+    391                          //configurations
+    392                          fan_nwk_manager_app.factory_mod_st.trx_pkt_param.tx_mode = 0;
+   \       0x6E   0x2000             MOVS     R0,#+0
+   \       0x70   0xF88A 0x0198      STRB     R0,[R10, #+408]
+   \       0x74   0xE036             B.N      ??process_set_pkt_tx_1
+    393          	}
+    394          	else
+    395          	{
+    396          		fan_nwk_manager_app.factory_mod_st.trx_pkt_param.tx_mode = CONTINUOUS_PACKET_TX_MODE;
+   \                     ??process_set_pkt_tx_0: (+1)
+   \       0x76   0x2001             MOVS     R0,#+1
+   \       0x78   0xF88A 0x0198      STRB     R0,[R10, #+408]
+    397          		p_pkt_mode_param->pkt_cnt = app_pkt_count;//get_ulong_BE(buf);
+   \       0x7C   0x6025             STR      R5,[R4, #+0]
+    398          		p_pkt_mode_param->pkt_len = app_pld_len;
+   \       0x7E   0x80A6             STRH     R6,[R4, #+4]
+    399                          p_pkt_mode_param->fcslength  = fcs_len;
+   \       0x80   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \       0x84   0x71E0             STRB     R0,[R4, #+7]
+    400          		p_pkt_mode_param->dw_enabled = *buf++;//*(buf+7);
+   \       0x86   0x7838             LDRB     R0,[R7, #+0]
+   \       0x88   0x71A0             STRB     R0,[R4, #+6]
+   \       0x8A   0x1C7F             ADDS     R7,R7,#+1
+    401          		val = p_pkt_mode_param->dw_enabled;                
+   \       0x8C   0x79A0             LDRB     R0,[R4, #+6]
+   \       0x8E   0x9001             STR      R0,[SP, #+4]
+    402                          
+    403                          mem_rev_cpy
+    404                          ( 
+    405                              p_pkt_mode_param->dest_addr.address.ieee_address,
+    406                              buf, 
+    407                              IEEE_ADDRESS_LENGTH 
+    408                          );
+   \       0x90   0x2208             MOVS     R2,#+8
+   \       0x92   0x0039             MOVS     R1,R7
+   \       0x94   0x69E0             LDR      R0,[R4, #+28]
+   \       0x96   0x.... 0x....      BL       mem_rev_cpy
+    409                          buf+=8;
+   \       0x9A   0xF117 0x0108      ADDS     R1,R7,#+8
+    410                          p_pkt_mode_param->random_packet_len = *buf++;
+   \       0x9E   0x7808             LDRB     R0,[R1, #+0]
+   \       0xA0   0xF884 0x002D      STRB     R0,[R4, #+45]
+   \       0xA4   0x1C4F             ADDS     R7,R1,#+1
+    411                          if(p_pkt_mode_param->random_packet_len)
+   \       0xA6   0xF894 0x002D      LDRB     R0,[R4, #+45]
+   \       0xAA   0x2800             CMP      R0,#+0
+   \       0xAC   0xD015             BEQ.N    ??process_set_pkt_tx_2
+    412                          { 
+    413                            max_rand_pkt_size = (p_pkt_mode_param->fcslength)?2029:2031;
+   \       0xAE   0x79E0             LDRB     R0,[R4, #+7]
+   \       0xB0   0x2800             CMP      R0,#+0
+   \       0xB2   0xD002             BEQ.N    ??process_set_pkt_tx_3
+   \       0xB4   0xF240 0x78ED      MOVW     R8,#+2029
+   \       0xB8   0xE001             B.N      ??process_set_pkt_tx_4
+   \                     ??process_set_pkt_tx_3: (+1)
+   \       0xBA   0xF240 0x78EF      MOVW     R8,#+2031
+    414                            while(!(app_pld_len = (rand() % max_rand_pkt_size))); 
+   \                     ??process_set_pkt_tx_4: (+1)
+   \       0xBE   0x.... 0x....      BL       rand
+   \       0xC2   0x4642             MOV      R2,R8
+   \       0xC4   0xB292             UXTH     R2,R2
+   \       0xC6   0xFB90 0xF1F2      SDIV     R1,R0,R2
+   \       0xCA   0xFB02 0x0011      MLS      R0,R2,R1,R0
+   \       0xCE   0x0006             MOVS     R6,R0
+   \       0xD0   0x0030             MOVS     R0,R6
+   \       0xD2   0xB280             UXTH     R0,R0
+   \       0xD4   0x2800             CMP      R0,#+0
+   \       0xD6   0xD0F2             BEQ.N    ??process_set_pkt_tx_4
+    415                            p_pkt_mode_param->pkt_len = app_pld_len;
+   \       0xD8   0x80A6             STRH     R6,[R4, #+4]
+    416                          }                
+    417          		PLME_set_request(phyFSKScramblePSDU,1,&val);
+   \                     ??process_set_pkt_tx_2: (+1)
+   \       0xDA   0xAA01             ADD      R2,SP,#+4
+   \       0xDC   0x2101             MOVS     R1,#+1
+   \       0xDE   0x202E             MOVS     R0,#+46
+   \       0xE0   0x.... 0x....      BL       PLME_set_request
+    418          	}
+    419          	
+    420          	//host_pkt[1] = status;
+    421          	//hif_send_msg_up( host_pkt,1,0x03 );
+    422          	send_hif_conf_cb(SET_TX_PKT_CONFIG_CONF,status);	
+   \                     ??process_set_pkt_tx_1: (+1)
+   \       0xE4   0x4649             MOV      R1,R9
+   \       0xE6   0xB2C9             UXTB     R1,R1
+   \       0xE8   0x20C5             MOVS     R0,#+197
+   \       0xEA   0x.... 0x....      BL       send_hif_conf_cb
+    423          }
+   \       0xEE   0xB005             ADD      SP,SP,#+20
+   \       0xF0   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    424          
+    425          /*==================================================================================*/
+    426          /*==================================================================================*/
+    427          /*==================================================================================*/
+    428          
+    429          /*start trigger for packet transmission*/
+
+   \                                 In section .text, align 2, keep-with-next
+    430          void process_start_tx( uint8_t *buf, uint16_t length )
+    431          {
+   \                     process_start_tx: (+1)
+   \        0x0   0xE92D 0x43FE      PUSH     {R1-R9,LR}
+   \        0x4   0x4680             MOV      R8,R0
+   \        0x6   0x000C             MOVS     R4,R1
+    432            
+    433          
+    434                  trx_params_t* p_pkt_mode_param = &(fan_nwk_manager_app.factory_mod_st.trx_pkt_param);
+   \        0x8   0x.... 0x....      LDR.W    R9,??DataTable24_2
+   \        0xC   0xF519 0x75C4      ADDS     R5,R9,#+392
+    435                   
+    436          	sm_event_t event;
+    437                  uint8_t status = CMD_SUCCESS;
+   \       0x10   0x2600             MOVS     R6,#+0
+    438          	//uint8_t host_pkt[2] = { TELEC_START_PACKET_TX_CONF, CMD_SUCCESS };
+    439          	uint8_t tx_mode = p_pkt_mode_param->tx_mode;
+   \       0x12   0x7C2F             LDRB     R7,[R5, #+16]
+    440          
+    441          	
+    442          	if ( (( tx_mode != CONTINUOUS_PACKET_TX_MODE ) && 
+    443          	( tx_mode != CONTINUOUS_STREAM_TX_MODE  )) ||
+    444          	( fan_nwk_manager_app.state_ind > NODE_FACTORY_MODE_STATE) )
+   \       0x14   0x0038             MOVS     R0,R7
+   \       0x16   0xB2C0             UXTB     R0,R0
+   \       0x18   0x2801             CMP      R0,#+1
+   \       0x1A   0xD003             BEQ.N    ??process_start_tx_0
+   \       0x1C   0x0038             MOVS     R0,R7
+   \       0x1E   0xB2C0             UXTB     R0,R0
+   \       0x20   0x2802             CMP      R0,#+2
+   \       0x22   0xD103             BNE.N    ??process_start_tx_1
+   \                     ??process_start_tx_0: (+1)
+   \       0x24   0xF899 0x0008      LDRB     R0,[R9, #+8]
+   \       0x28   0x2810             CMP      R0,#+16
+   \       0x2A   0xDB01             BLT.N    ??process_start_tx_2
+    445          	{
+    446          		//host_pkt[1] = CMD_INVALID;
+    447                            status = CMD_INVALID;
+   \                     ??process_start_tx_1: (+1)
+   \       0x2C   0x2020             MOVS     R0,#+32
+   \       0x2E   0x0006             MOVS     R6,R0
+    448          		
+    449                  }
+    450          
+    451          	
+    452          	if ( fan_nwk_manager_app.state_ind > NODE_FACTORY_MODE_STATE )
+   \                     ??process_start_tx_2: (+1)
+   \       0x30   0xF899 0x0008      LDRB     R0,[R9, #+8]
+   \       0x34   0x2810             CMP      R0,#+16
+   \       0x36   0xDB02             BLT.N    ??process_start_tx_3
+    453          	{
+    454          		//host_pkt[1] = NODE_BUSY;
+    455                          status = NODE_BUSY;
+   \       0x38   0x2003             MOVS     R0,#+3
+   \       0x3A   0x0006             MOVS     R6,R0
+   \       0x3C   0xE005             B.N      ??process_start_tx_4
+    456          	}
+    457          	else if(  tx_mode != CONTINUOUS_PACKET_TX_MODE  )
+   \                     ??process_start_tx_3: (+1)
+   \       0x3E   0x0038             MOVS     R0,R7
+   \       0x40   0xB2C0             UXTB     R0,R0
+   \       0x42   0x2801             CMP      R0,#+1
+   \       0x44   0xD001             BEQ.N    ??process_start_tx_4
+    458          	{
+    459          		//host_pkt[1] = PKT_TX_CONFIG_NOT_SET;
+    460                          status = PKT_TX_CONFIG_NOT_SET;
+   \       0x46   0x2008             MOVS     R0,#+8
+   \       0x48   0x0006             MOVS     R6,R0
+    461          	}
+    462          
+    463          	/*send the confirmation to the host*/
+    464          	//hif_send_msg_up( host_pkt,1,0x03 );
+    465                  send_hif_conf_cb(START_PACKET_TX_REQ_CONF,status);
+   \                     ??process_start_tx_4: (+1)
+   \       0x4A   0x0031             MOVS     R1,R6
+   \       0x4C   0xB2C9             UXTB     R1,R1
+   \       0x4E   0x20C7             MOVS     R0,#+199
+   \       0x50   0x.... 0x....      BL       send_hif_conf_cb
+    466          
+    467          	if( status == CMD_SUCCESS )
+   \       0x54   0x0030             MOVS     R0,R6
+   \       0x56   0xB2C0             UXTB     R0,R0
+   \       0x58   0x2800             CMP      R0,#+0
+   \       0x5A   0xD112             BNE.N    ??process_start_tx_5
+    468          	{
+    469          		/* packet tx mode */
+    470          		fan_nwk_manager_app.factory_mod_st.tx_packet_counter = 0;
+   \       0x5C   0x2000             MOVS     R0,#+0
+   \       0x5E   0xF8C9 0x025C      STR      R0,[R9, #+604]
+    471          		//telecsm.rf_app_data_req_exec_time = sw_current_time_get( gpTmr_mod_ins );
+    472                         // telecsm.rf_app_data_req_exec_time = (sw_current_time_get( gpTmr_mod_ins ) - telecsm.rf_app_data_req_exec_time );
+    473          		
+    474          		/*trigger transmission of continuos packets encoded using PN9*/
+    475          		event.trigger = (sm_trigger_t) TSM_TRIGGER_PACKETS;
+   \       0x62   0x2009             MOVS     R0,#+9
+   \       0x64   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    476          		
+    477          		SM_DISPATCH( (sm_t *) &fan_nwk_manager_app, &event );
+   \       0x68   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x6C   0x2800             CMP      R0,#+0
+   \       0x6E   0xD005             BEQ.N    ??process_start_tx_6
+   \       0x70   0x4669             MOV      R1,SP
+   \       0x72   0x4648             MOV      R0,R9
+   \       0x74   0xF8D9 0x2000      LDR      R2,[R9, #+0]
+   \       0x78   0x4790             BLX      R2
+   \       0x7A   0xE002             B.N      ??process_start_tx_5
+   \                     ??process_start_tx_6: (+1)
+   \       0x7C   0x2000             MOVS     R0,#+0
+   \       0x7E   0x.... 0x....      BL       error_increment
+    478          	}	
+    479          }
+   \                     ??process_start_tx_5: (+1)
+   \       0x82   0xE8BD 0x83F7      POP      {R0-R2,R4-R9,PC}
+    480          
+    481          /*==================================================================================*/
+    482          /*==================================================================================*/
+    483          /*==================================================================================*/
+    484          
+
+   \                                 In section .text, align 4, keep-with-next
+    485          static sm_result_t fsm_receive_mode(fan_nwk_manager_sm_t *s, const sm_event_t *e)
+    486          {
+   \                     fsm_receive_mode: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+    487          	uint16_t packet_size;
+    488          	
+    489          	uint8_t* p_host_pkt =  s->factory_mod_st.gmsduu;
+   \        0x8   0xF8D4 0x6258      LDR      R6,[R4, #+600]
+    490                  
+    491          	switch ((fan_nwk_manager_sm_trigger_t) e->trigger)
+   \        0xC   0x7828             LDRB     R0,[R5, #+0]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD006             BEQ.N    ??fsm_receive_mode_0
+   \       0x12   0x2804             CMP      R0,#+4
+   \       0x14   0xD07C             BEQ.N    ??fsm_receive_mode_1
+   \       0x16   0x280D             CMP      R0,#+13
+   \       0x18   0xD00B             BEQ.N    ??fsm_receive_mode_2
+   \       0x1A   0x280E             CMP      R0,#+14
+   \       0x1C   0xD060             BEQ.N    ??fsm_receive_mode_3
+   \       0x1E   0xE095             B.N      ??fsm_receive_mode_4
+    492          	{
+    493          	case TRIGGER_ENTRY:
+    494          		s->state_ind = NODE_RECEIVEING_PACKET;
+   \                     ??fsm_receive_mode_0: (+1)
+   \       0x20   0x2011             MOVS     R0,#+17
+   \       0x22   0x7220             STRB     R0,[R4, #+8]
+    495                          PLME_Set_TRX_State(PHY_RX_ON);
+   \       0x24   0x2006             MOVS     R0,#+6
+   \       0x26   0x.... 0x....      BL       PLME_Set_TRX_State
+    496          //                TRX_Set_RX_Buffer();
+    497          		s->factory_mod_st.rx_packet_num = 0;
+   \       0x2A   0x2000             MOVS     R0,#+0
+   \       0x2C   0xF8C4 0x0260      STR      R0,[R4, #+608]
+    498          		break;
+   \       0x30   0xE08C             B.N      ??fsm_receive_mode_5
+    499                  /* Note:  */
+    500               case TSM_TRIGGER_RX_COMPLETE:
+    501                 {
+    502                          uint8_t phost[2];
+    503                          uint8_t *fcs_length = &phost[0];
+   \                     ??fsm_receive_mode_2: (+1)
+   \       0x32   0xF10D 0x0702      ADD      R7,SP,#+2
+    504                          memcpy( fcs_length,&(((rx_mac_frame_info_t*)(e->param.vector))->FCS_Length),2);
+   \       0x36   0xF05F 0x0802      MOVS     R8,#+2
+   \       0x3A   0x6868             LDR      R0,[R5, #+4]
+   \       0x3C   0x300C             ADDS     R0,R0,#+12
+   \       0x3E   0x9001             STR      R0,[SP, #+4]
+   \       0x40   0x46B9             MOV      R9,R7
+   \       0x42   0x4642             MOV      R2,R8
+   \       0x44   0x9901             LDR      R1,[SP, #+4]
+   \       0x46   0x4648             MOV      R0,R9
+   \       0x48   0x.... 0x....      BL       __aeabi_memcpy
+    505                          uint16_t uart_tx_size = 0;
+   \       0x4C   0x2000             MOVS     R0,#+0
+   \       0x4E   0xF8AD 0x0008      STRH     R0,[SP, #+8]
+    506          		packet_size = ((rx_mac_frame_info_t*)(e->param.vector))->msduLength;
+   \       0x52   0x6868             LDR      R0,[R5, #+4]
+   \       0x54   0x8800             LDRH     R0,[R0, #+0]
+   \       0x56   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    507                          memset (p_host_pkt, 0x00, 2033);
+   \       0x5A   0xF240 0x79F1      MOVW     R9,#+2033
+   \       0x5E   0xF05F 0x0A00      MOVS     R10,#+0
+   \       0x62   0x46B3             MOV      R11,R6
+   \       0x64   0x4652             MOV      R2,R10
+   \       0x66   0x4649             MOV      R1,R9
+   \       0x68   0x4658             MOV      R0,R11
+   \       0x6A   0x.... 0x....      BL       __aeabi_memset
+    508                          
+    509          //                if( fan_nwk_manager_app.factory_mod_st.trx_pkt_param.promiscous_mode )
+    510          //                {
+    511          //                    packet_size += (get_ushort(fcs_length) & 0x7FFF);                  
+    512          //                }
+    513          
+    514          		p_host_pkt[0] = RX_FRAME_IND_DISPLAY_OFF;
+   \       0x6E   0x20D0             MOVS     R0,#+208
+   \       0x70   0x7030             STRB     R0,[R6, #+0]
+    515          		p_host_pkt[1] = CMD_SUCCESS;		
+   \       0x72   0x2000             MOVS     R0,#+0
+   \       0x74   0x7070             STRB     R0,[R6, #+1]
+    516          		p_host_pkt[2] = (uint8_t)((((fan_nwk_manager_sm_t*)s)->factory_mod_st.rx_packet_num)>>8);
+   \       0x76   0xF8D4 0x0260      LDR      R0,[R4, #+608]
+   \       0x7A   0x0A00             LSRS     R0,R0,#+8
+   \       0x7C   0x70B0             STRB     R0,[R6, #+2]
+    517          		p_host_pkt[3] = (uint8_t)(((fan_nwk_manager_sm_t*)s)->factory_mod_st.rx_packet_num);
+   \       0x7E   0xF8D4 0x0260      LDR      R0,[R4, #+608]
+   \       0x82   0x70F0             STRB     R0,[R6, #+3]
+    518          		
+    519                          p_host_pkt[4] = (int8_t)(((rx_mac_frame_info_t*)(e->param.vector))->rssival);
+   \       0x84   0x6868             LDR      R0,[R5, #+4]
+   \       0x86   0x6880             LDR      R0,[R0, #+8]
+   \       0x88   0x7130             STRB     R0,[R6, #+4]
+    520                         
+    521                          //mem_rev_cpy(&p_host_pkt[4],(uint8_t*)&(((rx_mac_frame_info_t*)(e->param.vector))->rssival),4);
+    522                           
+    523                          p_host_pkt[5] = (uint8_t)(packet_size>>8);
+   \       0x8A   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \       0x8E   0xB280             UXTH     R0,R0
+   \       0x90   0x0A00             LSRS     R0,R0,#+8
+   \       0x92   0x7170             STRB     R0,[R6, #+5]
+    524          		p_host_pkt[6] = (uint8_t)packet_size;                                         
+   \       0x94   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \       0x98   0x71B0             STRB     R0,[R6, #+6]
+    525                         
+    526                          uart_tx_size = 7;
+   \       0x9A   0xF05F 0x0B07      MOVS     R11,#+7
+    527                          
+    528                    
+    529                    if( fan_nwk_manager_app.factory_mod_st.trx_pkt_param.display_rx_data )
+   \       0x9E   0x.... 0x....      LDR.W    R0,??DataTable24_2
+   \       0xA2   0xF890 0x019B      LDRB     R0,[R0, #+411]
+   \       0xA6   0x2800             CMP      R0,#+0
+   \       0xA8   0xD013             BEQ.N    ??fsm_receive_mode_6
+    530                    {
+    531                         p_host_pkt[0] = RX_FRAME_IND;
+   \       0xAA   0x20CF             MOVS     R0,#+207
+   \       0xAC   0x7030             STRB     R0,[R6, #+0]
+    532                         memcpy(&(p_host_pkt[uart_tx_size]),((rx_mac_frame_info_t*)(e->param.vector))->pMsdu,packet_size);
+   \       0xAE   0xF8BD 0x9000      LDRH     R9,[SP, #+0]
+   \       0xB2   0x6868             LDR      R0,[R5, #+4]
+   \       0xB4   0xF8D0 0x8004      LDR      R8,[R0, #+4]
+   \       0xB8   0x4658             MOV      R0,R11
+   \       0xBA   0xB280             UXTH     R0,R0
+   \       0xBC   0xEB06 0x0A00      ADD      R10,R6,R0
+   \       0xC0   0x464A             MOV      R2,R9
+   \       0xC2   0x4641             MOV      R1,R8
+   \       0xC4   0x4650             MOV      R0,R10
+   \       0xC6   0x.... 0x....      BL       __aeabi_memcpy
+    533                         uart_tx_size +=packet_size;
+   \       0xCA   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \       0xCE   0xEB10 0x0B0B      ADDS     R11,R0,R11
+    534                    }
+    535                          
+    536                        // p_host_pkt[packet_size+9+1] = 0x55;//Dummy com port 
+    537                         //hif_send_msg_up( p_host_pkt,(packet_size+10),0x03 );//+1 For Com port
+    538                   // }
+    539          //          else
+    540          //          {
+    541          ////                mem_rev_cpy(&p_host_pkt[6],(uint8_t*)&(((rx_mac_frame_info_t*)(e->param.vector))->rssival),4);
+    542          //                p_host_pkt[10] = 0x55;//Dummy com port 
+    543          //                hif_send_msg_up( p_host_pkt,(8+1+1),0x03 );//+1 For Com port 
+    544          //          }
+    545                    
+    546                   
+    547                    p_host_pkt[uart_tx_size++] = DUMMY_COMPORT;//Dummy com port 
+   \                     ??fsm_receive_mode_6: (+1)
+   \       0xD2   0x2155             MOVS     R1,#+85
+   \       0xD4   0x4658             MOV      R0,R11
+   \       0xD6   0xB280             UXTH     R0,R0
+   \       0xD8   0x5431             STRB     R1,[R6, R0]
+   \       0xDA   0xF11B 0x0B01      ADDS     R11,R11,#+1
+    548                    //hif_send_msg_up( p_host_pkt,(uart_tx_size-1),response_laye_ID,PROTOCOL_ID_FOR_APP);//-1 For p_host_pkt[0] = TELEC_RX_FRAME_IND;     
+    549                 }     
+    550                    break;
+   \       0xDE   0xE035             B.N      ??fsm_receive_mode_5
+    551                    
+    552               case TSM_TRIGGER_STOP_RX:
+    553               	/* Bring the RF in PHY on mode */
+    554               
+    555                 
+    556                 s->one_byte_value = 0;
+   \                     ??fsm_receive_mode_3: (+1)
+   \       0xE0   0x2000             MOVS     R0,#+0
+   \       0xE2   0xF884 0x013D      STRB     R0,[R4, #+317]
+    557                   
+    558          	 MLME_SET_Request
+    559          	 (
+    560          		macPromiscuousMode,
+    561          		0,
+    562          		1,
+    563          		&(s->one_byte_value)
+    564          	 );
+   \       0xE6   0xF204 0x133D      ADDW     R3,R4,#+317
+   \       0xEA   0x2201             MOVS     R2,#+1
+   \       0xEC   0x2100             MOVS     R1,#+0
+   \       0xEE   0x2051             MOVS     R0,#+81
+   \       0xF0   0x.... 0x....      BL       MLME_SET_Request
+    565                   
+    566                  
+    567                  PLME_Set_TRX_State(PHY_DEV_ON);
+   \       0xF4   0x200C             MOVS     R0,#+12
+   \       0xF6   0x.... 0x....      BL       PLME_Set_TRX_State
+    568                  send_hif_conf_cb(STOP_PACKET_RX_REQ_CONF,0);
+   \       0xFA   0x2100             MOVS     R1,#+0
+   \       0xFC   0x20CE             MOVS     R0,#+206
+   \       0xFE   0x.... 0x....      BL       send_hif_conf_cb
+    569                  
+    570               	sm_transit((sm_t *)&fan_nwk_manager_app, (sm_state_t)&node_factory_mode_state );
+   \      0x102   0x.... 0x....      LDR.W    R1,??DataTable24_11
+   \      0x106   0x.... 0x....      LDR.W    R0,??DataTable24_2
+   \      0x10A   0x.... 0x....      BL       sm_transit
+    571               	break;
+   \      0x10E   0xE01D             B.N      ??fsm_receive_mode_5
+    572                  
+    573               case TRIGGER_SET_CONF:
+    574              
+    575          	if( s->result == (factory_sm_result_t)MAC_SUCCESS )
+   \                     ??fsm_receive_mode_1: (+1)
+   \      0x110   0xF894 0x013C      LDRB     R0,[R4, #+316]
+   \      0x114   0x2800             CMP      R0,#+0
+   \      0x116   0xD119             BNE.N    ??fsm_receive_mode_4
+    576          	{
+    577                         
+    578          
+    579                        if ( e->param.scalar == phyRSSIThreshold )
+   \      0x118   0x7928             LDRB     R0,[R5, #+4]
+   \      0x11A   0x2832             CMP      R0,#+50
+   \      0x11C   0xD104             BNE.N    ??fsm_receive_mode_7
+    580                        {                                      
+    581                              s->factory_mod_st.rssi_threshold = s->one_byte_value;                                      
+   \      0x11E   0xF994 0x013D      LDRSB    R0,[R4, #+317]
+   \      0x122   0xF884 0x0264      STRB     R0,[R4, #+612]
+   \      0x126   0xE011             B.N      ??fsm_receive_mode_4
+    582                        }
+    583                        else if( e->param.scalar == macLBTSamplingDuration )
+   \                     ??fsm_receive_mode_7: (+1)
+   \      0x128   0x7928             LDRB     R0,[R5, #+4]
+   \      0x12A   0x2864             CMP      R0,#+100
+   \      0x12C   0xD104             BNE.N    ??fsm_receive_mode_8
+    584                        {
+    585                            s->factory_mod_st.trx_pkt_param.pkt_mode_param.is_cca_on = s->one_byte_value; 
+   \      0x12E   0xF894 0x013D      LDRB     R0,[R4, #+317]
+   \      0x132   0xF884 0x01B4      STRB     R0,[R4, #+436]
+   \      0x136   0xE009             B.N      ??fsm_receive_mode_4
+    586                             
+    587                        }
+    588                        else if ( e->param.scalar == phyCurrentSUNPageEntry )
+   \                     ??fsm_receive_mode_8: (+1)
+   \      0x138   0x7928             LDRB     R0,[R5, #+4]
+   \      0x13A   0x2822             CMP      R0,#+34
+   \      0x13C   0xD006             BEQ.N    ??fsm_receive_mode_4
+    589                        {                                     
+    590                              //s->current_phy_mode = s->one_byte_value;                                                                           
+    591                        } 
+    592                        else if( e->param.scalar == macPromiscuousMode  )
+   \      0x13E   0x7928             LDRB     R0,[R5, #+4]
+   \      0x140   0x2851             CMP      R0,#+81
+   \      0x142   0xD103             BNE.N    ??fsm_receive_mode_4
+    593                        {
+    594                          s->factory_mod_st.trx_pkt_param.promiscous_mode = s->one_byte_value;
+   \      0x144   0xF894 0x013D      LDRB     R0,[R4, #+317]
+   \      0x148   0xF884 0x019C      STRB     R0,[R4, #+412]
+    595                        }
+    596          	}
+    597          	
+    598          
+    599               default:
+    600               	break;
+    601          	}
+    602          
+    603          	return NULL;
+   \                     ??fsm_receive_mode_4: (+1)
+   \                     ??fsm_receive_mode_5: (+1)
+   \      0x14C   0x2000             MOVS     R0,#+0
+   \      0x14E   0xE8BD 0x8FFE      POP      {R1-R11,PC}
+    604          }
+    605          
+    606          /*==================================================================================*/
+    607          /*==================================================================================*/
+    608          /*==================================================================================*/
+    609          
+
+   \                                 In section .text, align 4, keep-with-next
+    610          static sm_result_t tsm_sending_unmod_stream( fan_nwk_manager_sm_t *s, const sm_event_t *e )
+    611          {
+   \                     tsm_sending_unmod_stream: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    612          	switch ((fan_nwk_manager_sm_trigger_t) e->trigger)
+   \        0x6   0x7828             LDRB     R0,[R5, #+0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD004             BEQ.N    ??tsm_sending_unmod_stream_0
+   \        0xC   0x280B             CMP      R0,#+11
+   \        0xE   0xD00B             BEQ.N    ??tsm_sending_unmod_stream_1
+   \       0x10   0x280D             CMP      R0,#+13
+   \       0x12   0xD017             BEQ.N    ??tsm_sending_unmod_stream_2
+   \       0x14   0xE017             B.N      ??tsm_sending_unmod_stream_3
+    613          	{
+    614          	case TRIGGER_ENTRY:
+    615          		s->state_ind = NODE_CONTINIOUS_UNMOD_STREAM_STATE;
+   \                     ??tsm_sending_unmod_stream_0: (+1)
+   \       0x16   0x2012             MOVS     R0,#+18
+   \       0x18   0x7220             STRB     R0,[R4, #+8]
+    616          
+    617          		/*mod scheme has been set as "carrier only". Switch on the transmitter now
+    618          		for the carrier transmission */
+    619          		//TRX_TX_On();
+    620          		TRX_Xmit_StreamModeOn( (RAIL_StreamMode_t ) fan_nwk_manager_app.factory_mod_st.trx_pkt_param.mod_source  );
+   \       0x1A   0x.... 0x....      LDR.W    R0,??DataTable24_2
+   \       0x1E   0xF890 0x019A      LDRB     R0,[R0, #+410]
+   \       0x22   0x.... 0x....      BL       TRX_Xmit_StreamModeOn
+    621          
+    622          		break;
+   \       0x26   0xE00E             B.N      ??tsm_sending_unmod_stream_4
+    623          
+    624          	case TSM_TRIGGER_STOP_TX:
+    625          		/*bring the TRX in phy on state*/
+    626          		TRX_On();
+   \                     ??tsm_sending_unmod_stream_1: (+1)
+   \       0x28   0x.... 0x....      BL       TRX_On
+    627                          
+    628                          TRX_Stop_Tx_Steram();
+   \       0x2C   0x.... 0x....      BL       TRX_Stop_Tx_Steram
+    629                          
+    630                           fan_nwk_manager_app.factory_mod_st.trx_pkt_param.tx_mode = 0;
+   \       0x30   0x.... 0x....      LDR.W    R0,??DataTable24_2
+   \       0x34   0x2100             MOVS     R1,#+0
+   \       0x36   0xF880 0x1198      STRB     R1,[R0, #+408]
+    631                           
+    632          		/*TODO: send the hif confirmation from here indicating that the tx has been
+    633          		stopped successfully */
+    634          		sm_transit((sm_t *)&fan_nwk_manager_app, (sm_state_t)&node_factory_mode_state );
+   \       0x3A   0x.... 0x....      LDR.W    R1,??DataTable24_11
+   \       0x3E   0x.... 0x....      BL       sm_transit
+    635          		break;
+   \       0x42   0xE000             B.N      ??tsm_sending_unmod_stream_4
+    636          
+    637          	case TSM_TRIGGER_RX_COMPLETE:
+    638               	break;
+   \                     ??tsm_sending_unmod_stream_2: (+1)
+   \       0x44   0xE7FF             B.N      ??tsm_sending_unmod_stream_4
+    639          
+    640          	default:
+    641          		break;
+    642          	}
+    643          
+    644          	return NULL;
+   \                     ??tsm_sending_unmod_stream_3: (+1)
+   \                     ??tsm_sending_unmod_stream_4: (+1)
+   \       0x46   0x2000             MOVS     R0,#+0
+   \       0x48   0xBD32             POP      {R1,R4,R5,PC}
+    645          
+    646          }
+    647          
+    648          /*==================================================================================*/
+    649          /*==================================================================================*/
+    650          /*==================================================================================*/
+    651          
+
+   \                                 In section .text, align 4, keep-with-next
+    652          static sm_result_t tsm_sending_mod_stream( fan_nwk_manager_sm_t *s, const sm_event_t *e )
+    653          {
+   \                     tsm_sending_mod_stream: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    654          	switch ((fan_nwk_manager_sm_trigger_t) e->trigger)
+   \        0x6   0x7828             LDRB     R0,[R5, #+0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD006             BEQ.N    ??tsm_sending_mod_stream_0
+   \        0xC   0x280A             CMP      R0,#+10
+   \        0xE   0xD00D             BEQ.N    ??tsm_sending_mod_stream_1
+   \       0x10   0x280B             CMP      R0,#+11
+   \       0x12   0xD00C             BEQ.N    ??tsm_sending_mod_stream_2
+   \       0x14   0x280D             CMP      R0,#+13
+   \       0x16   0xD018             BEQ.N    ??tsm_sending_mod_stream_3
+   \       0x18   0xE018             B.N      ??tsm_sending_mod_stream_4
+    655          	{
+    656          	case TRIGGER_ENTRY:
+    657          		s->state_ind = NODE_CONTINIOUS_MOD_STREAM_STATE;//fall through deliberately
+   \                     ??tsm_sending_mod_stream_0: (+1)
+   \       0x1A   0x2013             MOVS     R0,#+19
+   \       0x1C   0x7220             STRB     R0,[R4, #+8]
+    658                
+    659          		/*switch the tranmitter once before the continuous tx is triggered */
+    660          		//TRX_TX_On();
+    661          		//TRX_Xmit_On();
+    662                          TRX_Xmit_StreamModeOn( (RAIL_StreamMode_t ) fan_nwk_manager_app.factory_mod_st.trx_pkt_param.mod_source  );
+   \       0x1E   0x.... 0x....      LDR.W    R0,??DataTable24_2
+   \       0x22   0xF890 0x019A      LDRB     R0,[R0, #+410]
+   \       0x26   0x.... 0x....      BL       TRX_Xmit_StreamModeOn
+    663                          
+    664          		break;
+   \       0x2A   0xE00F             B.N      ??tsm_sending_mod_stream_5
+    665          
+    666          	case TSM_TRIGGER_TX_COMPLETE:
+    667          		/* No action taken as it is a continuous modualated transmisison */
+    668          		break;
+   \                     ??tsm_sending_mod_stream_1: (+1)
+   \       0x2C   0xE00E             B.N      ??tsm_sending_mod_stream_5
+    669          
+    670          	case TSM_TRIGGER_STOP_TX:
+    671          
+    672          		TRX_On();
+   \                     ??tsm_sending_mod_stream_2: (+1)
+   \       0x2E   0x.... 0x....      BL       TRX_On
+    673                          
+    674                          TRX_Stop_Tx_Steram();
+   \       0x32   0x.... 0x....      BL       TRX_Stop_Tx_Steram
+    675                          
+    676                           fan_nwk_manager_app.factory_mod_st.trx_pkt_param.tx_mode = 0;
+   \       0x36   0x.... 0x....      LDR.W    R0,??DataTable24_2
+   \       0x3A   0x2100             MOVS     R1,#+0
+   \       0x3C   0xF880 0x1198      STRB     R1,[R0, #+408]
+    677                           
+    678          		sm_transit((sm_t *)&fan_nwk_manager_app, (sm_state_t)&node_factory_mode_state );
+   \       0x40   0x.... 0x....      LDR.W    R1,??DataTable24_11
+   \       0x44   0x.... 0x....      BL       sm_transit
+    679          
+    680          		break;
+   \       0x48   0xE000             B.N      ??tsm_sending_mod_stream_5
+    681          
+    682          	case TSM_TRIGGER_RX_COMPLETE:
+    683               	break;
+   \                     ??tsm_sending_mod_stream_3: (+1)
+   \       0x4A   0xE7FF             B.N      ??tsm_sending_mod_stream_5
+    684          
+    685          	default:
+    686          		break;
+    687          	}
+    688          
+    689          	return NULL;
+   \                     ??tsm_sending_mod_stream_4: (+1)
+   \                     ??tsm_sending_mod_stream_5: (+1)
+   \       0x4C   0x2000             MOVS     R0,#+0
+   \       0x4E   0xBD32             POP      {R1,R4,R5,PC}
+    690          
+    691          }
+    692          
+    693          /*==================================================================================*/
+    694          /*==================================================================================*/
+    695          /*==================================================================================*/
+    696          
+
+   \                                 In section .text, align 2, keep-with-next
+    697          void process_stop_tx( uint8_t *buf, uint16_t length )
+    698          {
+   \                     process_stop_tx: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    699                  uint8_t status = 0x00;
+   \        0x6   0x2500             MOVS     R5,#+0
+    700          	//uint8_t host_pkt[2] = { TELEC_STOP_PACKET_TX_CONF, CMD_SUCCESS };
+    701          	sm_event_t event;
+    702          	if( fan_nwk_manager_app.state_ind > NODE_FACTORY_MODE_STATE )
+   \        0x8   0x.... 0x....      LDR.W    R2,??DataTable24_2
+   \        0xC   0x7A10             LDRB     R0,[R2, #+8]
+   \        0xE   0x2810             CMP      R0,#+16
+   \       0x10   0xDB0E             BLT.N    ??process_stop_tx_0
+    703          	{
+    704                    event.trigger = (sm_trigger_t) TSM_TRIGGER_STOP_TX;	
+   \       0x12   0x200B             MOVS     R0,#+11
+   \       0x14   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    705                    SM_DISPATCH( (sm_t *) &fan_nwk_manager_app, &event );
+   \       0x18   0x6810             LDR      R0,[R2, #+0]
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD004             BEQ.N    ??process_stop_tx_1
+   \       0x1E   0x4669             MOV      R1,SP
+   \       0x20   0x0010             MOVS     R0,R2
+   \       0x22   0x6812             LDR      R2,[R2, #+0]
+   \       0x24   0x4790             BLX      R2
+   \       0x26   0xE005             B.N      ??process_stop_tx_2
+   \                     ??process_stop_tx_1: (+1)
+   \       0x28   0x2000             MOVS     R0,#+0
+   \       0x2A   0x.... 0x....      BL       error_increment
+   \       0x2E   0xE001             B.N      ??process_stop_tx_2
+    706          	}
+    707          	else
+    708          	{
+    709          		// host_pkt[2]	= PKT_TX_NOT_IN_PROGRESS;
+    710                            status = 0x01;
+   \                     ??process_stop_tx_0: (+1)
+   \       0x30   0x2001             MOVS     R0,#+1
+   \       0x32   0x0005             MOVS     R5,R0
+    711          	}
+    712          	
+    713          	/*first send the confirmation to the host*/
+    714          	//hif_send_msg_up( host_pkt,1,0x03 );
+    715                    send_hif_conf_cb(STOP_PACKET_TX_REQ_CONF,status);	
+   \                     ??process_stop_tx_2: (+1)
+   \       0x34   0x0029             MOVS     R1,R5
+   \       0x36   0xB2C9             UXTB     R1,R1
+   \       0x38   0x20CA             MOVS     R0,#+202
+   \       0x3A   0x.... 0x....      BL       send_hif_conf_cb
+    716          }
+   \       0x3E   0xBD73             POP      {R0,R1,R4-R6,PC}
+    717          
+    718          
+    719          /*==================================================================================*/
+    720          /*==================================================================================*/
+    721          /*==================================================================================*/
+    722          
+    723          /*start trigger for packet reception*/
+
+   \                                 In section .text, align 2, keep-with-next
+    724          void process_start_rx( uint8_t *buf, uint16_t length )
+    725          {
+   \                     process_start_rx: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    726                  uint8_t status = CMD_SUCCESS;
+   \        0x6   0x2500             MOVS     R5,#+0
+    727          	sm_event_t event;
+    728                  uint8_t data_promiscous_mode = 0; //bit 0 to display data=1 and bit 1 promiscous mode =1
+   \        0x8   0x2600             MOVS     R6,#+0
+    729          	/* valid combinations
+    730          	display data=1 and promiscous mode =1
+    731                  display data=0 and promiscous mode =1
+    732                  */
+    733          	if( *buf )
+   \        0xA   0x7838             LDRB     R0,[R7, #+0]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD001             BEQ.N    ??process_start_rx_0
+    734                  {
+    735                    data_promiscous_mode = 0x01;
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0x0006             MOVS     R6,R0
+    736                  }
+    737                  
+    738                  if( *(buf+1) )
+   \                     ??process_start_rx_0: (+1)
+   \       0x14   0x7878             LDRB     R0,[R7, #+1]
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD001             BEQ.N    ??process_start_rx_1
+    739                  {
+    740                    data_promiscous_mode |= 0x02;
+   \       0x1A   0xF056 0x0602      ORRS     R6,R6,#0x2
+    741                  }
+    742                  
+    743               
+    744          	if(  ( fan_nwk_manager_app.state_ind == NODE_FACTORY_MODE_STATE ) )
+   \                     ??process_start_rx_1: (+1)
+   \       0x1E   0x.... 0x....      LDR.W    R2,??DataTable24_2
+   \       0x22   0x7A10             LDRB     R0,[R2, #+8]
+   \       0x24   0x280F             CMP      R0,#+15
+   \       0x26   0xD110             BNE.N    ??process_start_rx_2
+    745          	{
+    746               		/*send the start rx event only if the telec is in idle state*/
+    747          		event.trigger = (sm_trigger_t) TSM_TRIGGER_START_RECEIVE;
+   \       0x28   0x200C             MOVS     R0,#+12
+   \       0x2A   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    748                          event.param.scalar = data_promiscous_mode;
+   \       0x2E   0xF88D 0x6004      STRB     R6,[SP, #+4]
+    749              		SM_DISPATCH( (sm_t *) &fan_nwk_manager_app, &event );             
+   \       0x32   0x6810             LDR      R0,[R2, #+0]
+   \       0x34   0x2800             CMP      R0,#+0
+   \       0x36   0xD004             BEQ.N    ??process_start_rx_3
+   \       0x38   0x4669             MOV      R1,SP
+   \       0x3A   0x0010             MOVS     R0,R2
+   \       0x3C   0x6812             LDR      R2,[R2, #+0]
+   \       0x3E   0x4790             BLX      R2
+   \       0x40   0xE005             B.N      ??process_start_rx_4
+   \                     ??process_start_rx_3: (+1)
+   \       0x42   0x2000             MOVS     R0,#+0
+   \       0x44   0x.... 0x....      BL       error_increment
+   \       0x48   0xE001             B.N      ??process_start_rx_4
+    750          	}
+    751          	else
+    752          	{
+    753          		/* either the device role is not set as rx or the telec is already is in a 
+    754          		mode other than IDLE(for eg, in Tx mode) */
+    755          		//host_pkt[1] = CMD_INVALID;
+    756                          status = 0x01;//CMD_INVALID;
+   \                     ??process_start_rx_2: (+1)
+   \       0x4A   0x2001             MOVS     R0,#+1
+   \       0x4C   0x0005             MOVS     R5,R0
+    757          		
+    758          	}
+    759          	/*first send the confirmation to the host*/
+    760                 // hif_send_msg_up( host_pkt,1,0x03 );
+    761                  send_hif_conf_cb(START_PACKET_RX_CONF,status);
+   \                     ??process_start_rx_4: (+1)
+   \       0x4E   0x0029             MOVS     R1,R5
+   \       0x50   0xB2C9             UXTB     R1,R1
+   \       0x52   0x20CC             MOVS     R0,#+204
+   \       0x54   0x.... 0x....      BL       send_hif_conf_cb
+    762                  /*Suneet :: 26:10 chack fcs lenth it's is short or long Here 0x00 is shortfcs lenth */
+    763          //        if(fan_nwk_manager_app.factory_mod_st.trx_pkt_param.pkt_mode_param.fcslength == 0x00)
+    764          //        {
+    765          //           TRX_Config_CRC_for_RX_pkt(); 
+    766          //        }	
+    767          }
+   \       0x58   0xBDF7             POP      {R0-R2,R4-R7,PC}
+    768          
+    769          
+    770          /*==================================================================================*/
+    771          /*==================================================================================*/
+    772          /*==================================================================================*/
+    773          
+
+   \                                 In section .text, align 2, keep-with-next
+    774          void process_set_stream_tx()
+    775          {
+    776            fan_nwk_manager_app.factory_mod_st.trx_pkt_param.tx_mode = CONTINUOUS_STREAM_TX_MODE;
+   \                     process_set_stream_tx: (+1)
+   \        0x0   0x.... 0x....      LDR.W    R0,??DataTable24_2
+   \        0x4   0x2102             MOVS     R1,#+2
+   \        0x6   0xF880 0x1198      STRB     R1,[R0, #+408]
+    777            fan_nwk_manager_app.factory_mod_st.trx_pkt_param.strm_mode_param = 0;  //FSK2
+   \        0xA   0x2100             MOVS     R1,#+0
+   \        0xC   0xF880 0x11D0      STRB     R1,[R0, #+464]
+    778            fan_nwk_manager_app.factory_mod_st.trx_pkt_param.mod_type  = 0;//FSK2;
+   \       0x10   0x2100             MOVS     R1,#+0
+   \       0x12   0xF880 0x1199      STRB     R1,[R0, #+409]
+    779            //fan_nwk_manager_app.factory_mod_st.trx_pkt_param.mod_source = MOD_SRC_PN9;
+    780          }
+   \       0x16   0x4770             BX       LR
+    781          
+    782          /*==================================================================================*/
+    783          /*==================================================================================*/
+    784          /*==================================================================================*/
+    785          
+
+   \                                 In section .text, align 2, keep-with-next
+    786          void  process_start_continuous_tx( uint8_t *buf, uint16_t length )
+    787          {
+   \                     process_start_continuous_tx: (+1)
+   \        0x0   0xE92D 0x43FE      PUSH     {R1-R9,LR}
+   \        0x4   0x0007             MOVS     R7,R0
+   \        0x6   0x000C             MOVS     R4,R1
+    788          	sm_event_t event;
+    789                  uint8_t status = 0x00;
+   \        0x8   0x2500             MOVS     R5,#+0
+    790          	uint8_t host_pkt[2] = { START_START_CONTINUOUS_TX_REQ_CONF, CMD_SUCCESS };
+   \        0xA   0x.... 0x....      LDR.W    R0,??DataTable24_12
+   \        0xE   0x8800             LDRH     R0,[R0, #+0]
+   \       0x10   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    791                  process_set_stream_tx();
+   \       0x14   0x.... 0x....      BL       process_set_stream_tx
+    792          	uint8_t tx_mode = fan_nwk_manager_app.factory_mod_st.trx_pkt_param.tx_mode;
+   \       0x18   0x.... 0x....      LDR.W    R8,??DataTable24_2
+   \       0x1C   0xF898 0x6198      LDRB     R6,[R8, #+408]
+    793          	
+    794          	if(( fan_nwk_manager_app.state_ind > NODE_FACTORY_MODE_STATE ) || ( tx_mode != CONTINUOUS_STREAM_TX_MODE ))
+   \       0x20   0xF898 0x0008      LDRB     R0,[R8, #+8]
+   \       0x24   0x2810             CMP      R0,#+16
+   \       0x26   0xDA03             BGE.N    ??process_start_continuous_tx_0
+   \       0x28   0x0030             MOVS     R0,R6
+   \       0x2A   0xB2C0             UXTB     R0,R0
+   \       0x2C   0x2802             CMP      R0,#+2
+   \       0x2E   0xD001             BEQ.N    ??process_start_continuous_tx_1
+    795          	{
+    796          		//host_pkt[1] = NODE_BUSY ;
+    797                          status = 0x01;
+   \                     ??process_start_continuous_tx_0: (+1)
+   \       0x30   0x2001             MOVS     R0,#+1
+   \       0x32   0x0005             MOVS     R5,R0
+    798          	}
+    799          //	else if( tx_mode != CONTINUOUS_STREAM_TX_MODE )
+    800          //	{
+    801          //		//host_pkt[1] = MOD_TYPE_NOT_CONFIGURED;
+    802          //                status = 0x01;
+    803          //	}
+    804          	
+    805                  host_pkt[1] = status;
+   \                     ??process_start_continuous_tx_1: (+1)
+   \       0x34   0x46E9             MOV      R9,SP
+   \       0x36   0xF889 0x5001      STRB     R5,[R9, #+1]
+    806                  
+    807          	/*send the confirmation to the host*/
+    808          	send_hif_conf_cb(START_START_CONTINUOUS_TX_REQ_CONF,status);
+   \       0x3A   0x0029             MOVS     R1,R5
+   \       0x3C   0xB2C9             UXTB     R1,R1
+   \       0x3E   0x20D2             MOVS     R0,#+210
+   \       0x40   0x.... 0x....      BL       send_hif_conf_cb
+    809          			
+    810          	if( host_pkt[1] == CMD_SUCCESS )
+   \       0x44   0xF899 0x0001      LDRB     R0,[R9, #+1]
+   \       0x48   0x2800             CMP      R0,#+0
+   \       0x4A   0xD112             BNE.N    ??process_start_continuous_tx_2
+    811          	{
+    812                    
+    813                    fan_nwk_manager_app.factory_mod_st.trx_pkt_param.mod_source = *buf ;
+   \       0x4C   0x7838             LDRB     R0,[R7, #+0]
+   \       0x4E   0xF888 0x019A      STRB     R0,[R8, #+410]
+    814          		//TRX_On();
+    815          //		TRX_Mod_Scheme( (uint8_t)( fan_nwk_manager_app.factory_mod_st.trx_pkt_param.mod_type ) );
+    816          //		TRX_Set_Mod_Source((mod_src_t )fan_nwk_manager_app.factory_mod_st.trx_pkt_param.mod_source);
+    817          		//TRX_Set_PA_Level( fan_nwk_manager_app.node_basic_cfg.pa_level );
+    818                          
+    819          		/*trigger transmission of continuous packets encoded using PN9*/
+    820          		event.trigger = (sm_trigger_t) TSM_TRIGGER_STREAM;	
+   \       0x52   0x200F             MOVS     R0,#+15
+   \       0x54   0xF88D 0x0004      STRB     R0,[SP, #+4]
+    821          
+    822          		SM_DISPATCH( (sm_t *) &fan_nwk_manager_app, &event );
+   \       0x58   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0x5C   0x2800             CMP      R0,#+0
+   \       0x5E   0xD005             BEQ.N    ??process_start_continuous_tx_3
+   \       0x60   0xA901             ADD      R1,SP,#+4
+   \       0x62   0x4640             MOV      R0,R8
+   \       0x64   0xF8D8 0x2000      LDR      R2,[R8, #+0]
+   \       0x68   0x4790             BLX      R2
+   \       0x6A   0xE002             B.N      ??process_start_continuous_tx_2
+   \                     ??process_start_continuous_tx_3: (+1)
+   \       0x6C   0x2000             MOVS     R0,#+0
+   \       0x6E   0x.... 0x....      BL       error_increment
+    823          	}
+    824          }
+   \                     ??process_start_continuous_tx_2: (+1)
+   \       0x72   0xE8BD 0x83F7      POP      {R0-R2,R4-R9,PC}
+    825          
+    826          /*==================================================================================*/
+    827          /*==================================================================================*/
+    828          /*==================================================================================*/
+    829          
+
+   \                                 In section .text, align 2, keep-with-next
+    830          void  process_stop_continuous_tx( uint8_t *buf, uint16_t length )
+    831          {
+   \                     process_stop_continuous_tx: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    832                  uint8_t status = CMD_SUCCESS;
+   \        0x6   0x2500             MOVS     R5,#+0
+    833          	sm_event_t event;
+    834          	if( fan_nwk_manager_app.state_ind > NODE_FACTORY_MODE_STATE )
+   \        0x8   0x.... 0x....      LDR.W    R2,??DataTable24_2
+   \        0xC   0x7A10             LDRB     R0,[R2, #+8]
+   \        0xE   0x2810             CMP      R0,#+16
+   \       0x10   0xDB0E             BLT.N    ??process_stop_continuous_tx_0
+    835          	{
+    836          		event.trigger = (sm_trigger_t) TSM_TRIGGER_STOP_TX;		
+   \       0x12   0x200B             MOVS     R0,#+11
+   \       0x14   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    837                         SM_DISPATCH( (sm_t *) &fan_nwk_manager_app, &event );
+   \       0x18   0x6810             LDR      R0,[R2, #+0]
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD004             BEQ.N    ??process_stop_continuous_tx_1
+   \       0x1E   0x4669             MOV      R1,SP
+   \       0x20   0x0010             MOVS     R0,R2
+   \       0x22   0x6812             LDR      R2,[R2, #+0]
+   \       0x24   0x4790             BLX      R2
+   \       0x26   0xE005             B.N      ??process_stop_continuous_tx_2
+   \                     ??process_stop_continuous_tx_1: (+1)
+   \       0x28   0x2000             MOVS     R0,#+0
+   \       0x2A   0x.... 0x....      BL       error_increment
+   \       0x2E   0xE001             B.N      ??process_stop_continuous_tx_2
+    838          	}
+    839          	else
+    840          	{
+    841          		//host_pkt[1]	= CONTINUOUS_TX_NOT_IN_PROGRESS;
+    842                          status = 0x01;
+   \                     ??process_stop_continuous_tx_0: (+1)
+   \       0x30   0x2001             MOVS     R0,#+1
+   \       0x32   0x0005             MOVS     R5,R0
+    843          	}
+    844          	
+    845          	/*first send the confirmation to the host*/
+    846          	//hif_send_msg_up( host_pkt,1,0x03 );
+    847                  send_hif_conf_cb(STOP_CONTINUOUS_TX_CONF,status);
+   \                     ??process_stop_continuous_tx_2: (+1)
+   \       0x34   0x0029             MOVS     R1,R5
+   \       0x36   0xB2C9             UXTB     R1,R1
+   \       0x38   0x20D4             MOVS     R0,#+212
+   \       0x3A   0x.... 0x....      BL       send_hif_conf_cb
+    848          }
+   \       0x3E   0xBD73             POP      {R0,R1,R4-R6,PC}
+    849          
+    850          /*==================================================================================*/
+    851          /*==================================================================================*/
+    852          /*==================================================================================*/
+    853          
+    854          /*stop trigger for packet reception*/
+
+   \                                 In section .text, align 2, keep-with-next
+    855          void process_stop_rx( uint8_t *buf, uint16_t length )
+    856          {
+   \                     process_stop_rx: (+1)
+   \        0x0   0xB53E             PUSH     {R1-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    857          	sm_event_t event = { (sm_trigger_t) TSM_TRIGGER_STOP_RX, { 0 } };
+   \        0x6   0x.... 0x....      LDR.W    R2,??DataTable24_13
+   \        0xA   0xE9D2 0x0100      LDRD     R0,R1,[R2, #+0]
+   \        0xE   0xE9CD 0x0100      STRD     R0,R1,[SP, #+0]
+    858          	SM_DISPATCH( (sm_t *) &fan_nwk_manager_app, &event );
+   \       0x12   0x.... 0x....      LDR.W    R2,??DataTable24_2
+   \       0x16   0x6810             LDR      R0,[R2, #+0]
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD004             BEQ.N    ??process_stop_rx_0
+   \       0x1C   0x4669             MOV      R1,SP
+   \       0x1E   0x0010             MOVS     R0,R2
+   \       0x20   0x6812             LDR      R2,[R2, #+0]
+   \       0x22   0x4790             BLX      R2
+   \       0x24   0xE002             B.N      ??process_stop_rx_1
+   \                     ??process_stop_rx_0: (+1)
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x.... 0x....      BL       error_increment
+    859          }
+   \                     ??process_stop_rx_1: (+1)
+   \       0x2C   0xBD37             POP      {R0-R2,R4,R5,PC}
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x0E               DC8 14
+   \        0x1                      DS8 3
+   \        0x4   0x00               DC8 0
+   \        0x5                      DS8 3
+    860          
+    861          /*==================================================================================*/
+    862          /*==================================================================================*/
+    863          /*==================================================================================*/
+    864                          
+
+   \                                 In section .text, align 2, keep-with-next
+    865          void process_start_continuous_rx( uint8_t *buf, uint16_t length )
+    866          {
+   \                     process_start_continuous_rx: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    867                  uint8_t status  = CMD_SUCCESS;
+   \        0x6   0x2500             MOVS     R5,#+0
+    868          	sm_event_t event;
+    869          	
+    870          		
+    871          	if(  ( fan_nwk_manager_app.state_ind == NODE_FACTORY_MODE_STATE ) )
+   \        0x8   0x.... 0x....      LDR.W    R2,??DataTable24_2
+   \        0xC   0x7A10             LDRB     R0,[R2, #+8]
+   \        0xE   0x280F             CMP      R0,#+15
+   \       0x10   0xD10E             BNE.N    ??process_start_continuous_rx_0
+    872          	{
+    873               		/*send the start rx event only if the telec is in idle state*/
+    874          		event.trigger = (sm_trigger_t) TSM_TRIGGER_START_RECEIVE;	
+   \       0x12   0x200C             MOVS     R0,#+12
+   \       0x14   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    875              		SM_DISPATCH( (sm_t *) &fan_nwk_manager_app, &event );
+   \       0x18   0x6810             LDR      R0,[R2, #+0]
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD004             BEQ.N    ??process_start_continuous_rx_1
+   \       0x1E   0x4669             MOV      R1,SP
+   \       0x20   0x0010             MOVS     R0,R2
+   \       0x22   0x6812             LDR      R2,[R2, #+0]
+   \       0x24   0x4790             BLX      R2
+   \       0x26   0xE005             B.N      ??process_start_continuous_rx_2
+   \                     ??process_start_continuous_rx_1: (+1)
+   \       0x28   0x2000             MOVS     R0,#+0
+   \       0x2A   0x.... 0x....      BL       error_increment
+   \       0x2E   0xE001             B.N      ??process_start_continuous_rx_2
+    876          	}
+    877          	else
+    878          	{
+    879                            status = 0x01;//NODE_BUSY;
+   \                     ??process_start_continuous_rx_0: (+1)
+   \       0x30   0x2001             MOVS     R0,#+1
+   \       0x32   0x0005             MOVS     R5,R0
+    880          	}
+    881          	
+    882          	/*first send the confirmation to the host*/
+    883                  send_hif_conf_cb(START_CONTINUOUS_RX_CONF,status);	
+   \                     ??process_start_continuous_rx_2: (+1)
+   \       0x34   0x0029             MOVS     R1,R5
+   \       0x36   0xB2C9             UXTB     R1,R1
+   \       0x38   0x20D6             MOVS     R0,#+214
+   \       0x3A   0x.... 0x....      BL       send_hif_conf_cb
+    884          }
+   \       0x3E   0xBD73             POP      {R0,R1,R4-R6,PC}
+    885          
+    886          /*==================================================================================*/
+    887          /*==================================================================================*/
+    888          /*==================================================================================*/
+    889          
+
+   \                                 In section .text, align 2, keep-with-next
+    890          void process_stop_continuous_rx( uint8_t *buf, uint16_t length )
+    891          {
+   \                     process_stop_continuous_rx: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    892                  uint8_t status = CMD_SUCCESS; 
+   \        0x6   0x2500             MOVS     R5,#+0
+    893          	sm_event_t event = { (sm_trigger_t) TSM_TRIGGER_STOP_RX, { 0 } };
+   \        0x8   0x.... 0x....      LDR.W    R2,??DataTable24_14
+   \        0xC   0xE9D2 0x0100      LDRD     R0,R1,[R2, #+0]
+   \       0x10   0xE9CD 0x0100      STRD     R0,R1,[SP, #+0]
+    894          	if( ( fan_nwk_manager_app.state_ind == NODE_RECEIVEING_PACKET ) )
+   \       0x14   0x.... 0x....      LDR.W    R2,??DataTable24_2
+   \       0x18   0x7A10             LDRB     R0,[R2, #+8]
+   \       0x1A   0x2811             CMP      R0,#+17
+   \       0x1C   0xD10B             BNE.N    ??process_stop_continuous_rx_0
+    895          	{
+    896          		SM_DISPATCH( (sm_t *) &fan_nwk_manager_app, &event );
+   \       0x1E   0x6810             LDR      R0,[R2, #+0]
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD004             BEQ.N    ??process_stop_continuous_rx_1
+   \       0x24   0x4669             MOV      R1,SP
+   \       0x26   0x0010             MOVS     R0,R2
+   \       0x28   0x6812             LDR      R2,[R2, #+0]
+   \       0x2A   0x4790             BLX      R2
+   \       0x2C   0xE005             B.N      ??process_stop_continuous_rx_2
+   \                     ??process_stop_continuous_rx_1: (+1)
+   \       0x2E   0x2000             MOVS     R0,#+0
+   \       0x30   0x.... 0x....      BL       error_increment
+   \       0x34   0xE001             B.N      ??process_stop_continuous_rx_2
+    897          	}
+    898          	else
+    899          	{
+    900                             status = 0x01;//CONTINUOUS_RX_NOT_IN_PROGRESS;
+   \                     ??process_stop_continuous_rx_0: (+1)
+   \       0x36   0x2001             MOVS     R0,#+1
+   \       0x38   0x0005             MOVS     R5,R0
+    901          	}
+    902                   send_hif_conf_cb(STOP_CONTINUOUS_RX_CONF,status);    
+   \                     ??process_stop_continuous_rx_2: (+1)
+   \       0x3A   0x0029             MOVS     R1,R5
+   \       0x3C   0xB2C9             UXTB     R1,R1
+   \       0x3E   0x20D8             MOVS     R0,#+216
+   \       0x40   0x.... 0x....      BL       send_hif_conf_cb
+    903          }
+   \       0x44   0xBD73             POP      {R0,R1,R4-R6,PC}
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x0E               DC8 14
+   \        0x1                      DS8 3
+   \        0x4   0x00               DC8 0
+   \        0x5                      DS8 3
+    904          
+    905          /*==================================================================================*/
+    906          /*==================================================================================*/
+    907          /*==================================================================================*/
+    908          
+
+   \                                 In section .text, align 4, keep-with-next
+    909          void send_next_pkt(void *s,void* tmr)  // added with delay on timer expiry of 45 msec - shubham
+    910          {
+   \                     send_next_pkt: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    911             tmr_stop( &(((fan_nwk_manager_sm_t*)s)->factory_mod_st.delay_next_pkt));      
+   \        0x6   0xF514 0x7003      ADDS     R0,R4,#+524
+   \        0xA   0x.... 0x....      BL       tmr_stop
+    912             (*((fan_nwk_manager_sm_t *)s)->factory_mod_st.fn_alarm)(s);
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0xF8D4 0x1224      LDR      R1,[R4, #+548]
+   \       0x14   0x4788             BLX      R1
+    913          } 
+   \       0x16   0xBD31             POP      {R0,R4,R5,PC}
+    914          
+    915          /*==================================================================================*/
+    916          /*==================================================================================*/
+    917          /*==================================================================================*/
+    918          
+
+   \                                 In section .text, align 4, keep-with-next
+    919          void update_total_sending_dur_for_hr( void *s, void* tmr )
+    920          {
+   \                     update_total_sending_dur_for_hr: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    921          
+    922          	  total_sending_in_hr[total_sending_in_hr_index] = mac_pib.LBTPrevHrTotalSendingDurUS;
+   \        0x6   0x....             LDR.N    R0,??DataTable24_15
+   \        0x8   0x....             LDR.N    R1,??DataTable24_16
+   \        0xA   0x6C4B             LDR      R3,[R1, #+68]
+   \        0xC   0x....             LDR.N    R2,??DataTable24_17
+   \        0xE   0x7801             LDRB     R1,[R0, #+0]
+   \       0x10   0xF842 0x3021      STR      R3,[R2, R1, LSL #+2]
+    923          
+    924          	  //total_packets_sent[total_sending_in_hr_index] = (telecsm.tx_packet_counter)-((total_sending_in_hr_index)?total_packets_sent[total_sending_in_hr_index-1]:0);
+    925                     total_packets_sent[total_sending_in_hr_index] = total_packets_sent_in_an_hr;
+   \       0x14   0x....             LDR.N    R1,??DataTable24_18
+   \       0x16   0x880E             LDRH     R6,[R1, #+0]
+   \       0x18   0x....             LDR.N    R3,??DataTable24_19
+   \       0x1A   0x7802             LDRB     R2,[R0, #+0]
+   \       0x1C   0xF843 0x6022      STR      R6,[R3, R2, LSL #+2]
+    926                     total_packets_sent_in_an_hr = 0;
+   \       0x20   0x2200             MOVS     R2,#+0
+   \       0x22   0x800A             STRH     R2,[R1, #+0]
+    927          	  if( ++total_sending_in_hr_index == 6 )
+   \       0x24   0x7801             LDRB     R1,[R0, #+0]
+   \       0x26   0x1C49             ADDS     R1,R1,#+1
+   \       0x28   0x7001             STRB     R1,[R0, #+0]
+   \       0x2A   0x7801             LDRB     R1,[R0, #+0]
+   \       0x2C   0x2906             CMP      R1,#+6
+   \       0x2E   0xD101             BNE.N    ??update_total_sending_dur_for_hr_0
+    928          	  {
+    929          		  total_sending_in_hr_index = 0;
+   \       0x30   0x2100             MOVS     R1,#+0
+   \       0x32   0x7001             STRB     R1,[R0, #+0]
+    930          	  }
+    931                    
+    932                    tmr_stop( &(((fan_nwk_manager_sm_t*)s)->factory_mod_st.send_dur_tmr));
+   \                     ??update_total_sending_dur_for_hr_0: (+1)
+   \       0x34   0xF514 0x70EE      ADDS     R0,R4,#+476
+   \       0x38   0x.... 0x....      BL       tmr_stop
+    933                    tmr_start_relative(&(((fan_nwk_manager_sm_t*)s)->factory_mod_st.send_dur_tmr));
+   \       0x3C   0xF514 0x70EE      ADDS     R0,R4,#+476
+   \       0x40   0x.... 0x....      BL       tmr_start_relative
+    934          }
+   \       0x44   0xBD70             POP      {R4-R6,PC}
+    935          
+    936          /*==================================================================================*/
+    937          /*==================================================================================*/
+    938          /*==================================================================================*/
+    939          
+
+   \                                 In section .text, align 4, keep-with-next
+    940          void tsm_alarm(void *s, void* tmr )
+    941          {
+   \                     tsm_alarm: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    942              (*((fan_nwk_manager_sm_t *)s)->factory_mod_st.fn_alarm)(s);
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0xF8D4 0x1224      LDR      R1,[R4, #+548]
+   \        0xC   0x4788             BLX      R1
+    943          }
+   \        0xE   0xBD31             POP      {R0,R4,R5,PC}
+    944          
+    945          /*==================================================================================*/
+    946          /*==================================================================================*/
+    947          /*==================================================================================*/
+    948          
+
+   \                                 In section .text, align 2, keep-with-next
+    949          void process_get_rx_details( uint8_t* buf, uint16_t length )
+    950          {
+   \                     process_get_rx_details: (+1)
+   \        0x0   0xB578             PUSH     {R3-R6,LR}
+   \        0x2   0xB085             SUB      SP,SP,#+20
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+    951                trx_details_t rx_details;
+    952                uint8_t host_pkt[9] = { SEND_RX_COUNT_DETAILS,CMD_SUCCESS };
+   \        0x8   0xAE02             ADD      R6,SP,#+8
+   \        0xA   0x....             LDR.N    R0,??DataTable24_20
+   \        0xC   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x10   0xE886 0x000E      STM      R6,{R1-R3}
+    953                uint8_t* p_host_pkt = &host_pkt[0];
+   \       0x14   0xAE02             ADD      R6,SP,#+8
+    954                get_trx_details(&rx_details,1);
+   \       0x16   0x2101             MOVS     R1,#+1
+   \       0x18   0x4668             MOV      R0,SP
+   \       0x1A   0x.... 0x....      BL       get_trx_details
+    955                p_host_pkt[3] = (uint8_t)rx_details.pkt_rx_irq;
+   \       0x1E   0xF8BD 0x0002      LDRH     R0,[SP, #+2]
+   \       0x22   0x70F0             STRB     R0,[R6, #+3]
+    956                p_host_pkt[2] = (uint8_t)(rx_details.pkt_rx_irq>>8);
+   \       0x24   0xF8BD 0x0002      LDRH     R0,[SP, #+2]
+   \       0x28   0xB280             UXTH     R0,R0
+   \       0x2A   0x0A00             LSRS     R0,R0,#+8
+   \       0x2C   0x70B0             STRB     R0,[R6, #+2]
+    957                p_host_pkt[5] = (uint8_t) rx_details.crc16_failures ;
+   \       0x2E   0xF8BD 0x0006      LDRH     R0,[SP, #+6]
+   \       0x32   0x7170             STRB     R0,[R6, #+5]
+    958                p_host_pkt[4] = (uint8_t)(rx_details.crc16_failures>>8);
+   \       0x34   0xF8BD 0x0006      LDRH     R0,[SP, #+6]
+   \       0x38   0xB280             UXTH     R0,R0
+   \       0x3A   0x0A00             LSRS     R0,R0,#+8
+   \       0x3C   0x7130             STRB     R0,[R6, #+4]
+    959                p_host_pkt[7] = (uint8_t) rx_details.crc32_failures ;
+   \       0x3E   0xF8BD 0x0004      LDRH     R0,[SP, #+4]
+   \       0x42   0x71F0             STRB     R0,[R6, #+7]
+    960                p_host_pkt[6] = (uint8_t)(rx_details.crc32_failures>>8) ;
+   \       0x44   0xF8BD 0x0004      LDRH     R0,[SP, #+4]
+   \       0x48   0xB280             UXTH     R0,R0
+   \       0x4A   0x0A00             LSRS     R0,R0,#+8
+   \       0x4C   0x71B0             STRB     R0,[R6, #+6]
+    961                p_host_pkt[8] =DUMMY_COMPORT ;//Dummy Comport
+   \       0x4E   0x2055             MOVS     R0,#+85
+   \       0x50   0x7230             STRB     R0,[R6, #+8]
+    962               // hif_send_msg_up( host_pkt,9,response_laye_ID,PROTOCOL_ID_FOR_APP);
+    963          }
+   \       0x52   0xB006             ADD      SP,SP,#+24
+   \       0x54   0xBD70             POP      {R4-R6,PC}
+    964          
+    965          /*==================================================================================*/
+    966          /*==================================================================================*/
+    967          
+    968          
+
+   \                                 In section .text, align 2, keep-with-next
+    969          void process_factory_mode_ch_scanning_req( uint8_t* buf, uint16_t length )
+    970          {
+   \                     process_factory_mode_ch_scanning_req: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    971            
+    972             TRX_RAIL_do_EnergyDetection_Scanning ();
+   \        0x6   0x.... 0x....      BL       TRX_RAIL_do_EnergyDetection_Scanning
+    973            send_hif_conf_cb (CMD_FACTROY_MODE_CHANNEL_SCAN_CONF, 0);
+   \        0xA   0x2100             MOVS     R1,#+0
+   \        0xC   0x20E0             MOVS     R0,#+224
+   \        0xE   0x.... 0x....      BL       send_hif_conf_cb
+    974          }
+   \       0x12   0xBD31             POP      {R0,R4,R5,PC}
+    975          /*==================================================================================*/
+    976          
+
+   \                                 In section .text, align 2, keep-with-next
+    977          void process_test_phy_enc( uint8_t* buf, uint16_t length )
+    978          {
+   \                     process_test_phy_enc: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB08E             SUB      SP,SP,#+56
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+    979            uint8_t pd_data_req_content[45]; 
+    980            uint32_t TxChan = 0;
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0x9001             STR      R0,[SP, #+4]
+    981            uint16_t piblen = 0, i;
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    982            phy_tx_t* p_pd_data = (phy_tx_t*)pd_data_req_content;
+   \       0x12   0xAE02             ADD      R6,SP,#+8
+    983            PLME_get_request( phyCurrentChannel, &piblen, &TxChan );
+   \       0x14   0xAA01             ADD      R2,SP,#+4
+   \       0x16   0x4669             MOV      R1,SP
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0x.... 0x....      BL       PLME_get_request
+    984            
+    985            p_pd_data->TxChannel = (uint16_t)TxChan;		
+   \       0x1E   0x9801             LDR      R0,[SP, #+4]
+   \       0x20   0x80B0             STRH     R0,[R6, #+4]
+    986            p_pd_data->PPDUCoding = 0;				
+   \       0x22   0x2000             MOVS     R0,#+0
+   \       0x24   0x71B0             STRB     R0,[R6, #+6]
+    987            p_pd_data->FCSLength = buf[0];				
+   \       0x26   0x7820             LDRB     R0,[R4, #+0]
+   \       0x28   0x71F0             STRB     R0,[R6, #+7]
+    988            p_pd_data->ModeSwitch = 0;				
+   \       0x2A   0x2000             MOVS     R0,#+0
+   \       0x2C   0x7230             STRB     R0,[R6, #+8]
+    989            p_pd_data->NewModeSUNPage = 0x0;			
+   \       0x2E   0x2000             MOVS     R0,#+0
+   \       0x30   0x7270             STRB     R0,[R6, #+9]
+    990            p_pd_data->ModeSwitchParameterEntry = 0x0;
+   \       0x32   0x2000             MOVS     R0,#+0
+   \       0x34   0x72B0             STRB     R0,[R6, #+10]
+    991            p_pd_data->psduLength = (p_pd_data->FCSLength)?16:18;	
+   \       0x36   0x79F0             LDRB     R0,[R6, #+7]
+   \       0x38   0x2800             CMP      R0,#+0
+   \       0x3A   0xD001             BEQ.N    ??process_test_phy_enc_0
+   \       0x3C   0x2010             MOVS     R0,#+16
+   \       0x3E   0xE000             B.N      ??process_test_phy_enc_1
+   \                     ??process_test_phy_enc_0: (+1)
+   \       0x40   0x2012             MOVS     R0,#+18
+   \                     ??process_test_phy_enc_1: (+1)
+   \       0x42   0x81B0             STRH     R0,[R6, #+12]
+    992            
+    993            for(i=0; i<p_pd_data->psduLength; i++)
+   \       0x44   0x2700             MOVS     R7,#+0
+   \                     ??process_test_phy_enc_2: (+1)
+   \       0x46   0x0039             MOVS     R1,R7
+   \       0x48   0x89B0             LDRH     R0,[R6, #+12]
+   \       0x4A   0xB289             UXTH     R1,R1
+   \       0x4C   0x4281             CMP      R1,R0
+   \       0x4E   0xD205             BCS.N    ??process_test_phy_enc_3
+    994            {
+    995              p_pd_data->psdu[i] = i;
+   \       0x50   0x0038             MOVS     R0,R7
+   \       0x52   0xB280             UXTH     R0,R0
+   \       0x54   0x4430             ADD      R0,R6,R0
+   \       0x56   0x7387             STRB     R7,[R0, #+14]
+    996            }
+   \       0x58   0x1C7F             ADDS     R7,R7,#+1
+   \       0x5A   0xE7F4             B.N      ??process_test_phy_enc_2
+    997            
+    998            PLME_Set_TRX_State( PHY_DEV_ON );
+   \                     ??process_test_phy_enc_3: (+1)
+   \       0x5C   0x200C             MOVS     R0,#+12
+   \       0x5E   0x.... 0x....      BL       PLME_Set_TRX_State
+    999            
+   1000            PLME_Set_TRX_State( PHY_TX_ON );
+   \       0x62   0x2009             MOVS     R0,#+9
+   \       0x64   0x.... 0x....      BL       PLME_Set_TRX_State
+   1001            
+   1002            PD_Data_Request( NULL, p_pd_data );
+   \       0x68   0x0031             MOVS     R1,R6
+   \       0x6A   0x2000             MOVS     R0,#+0
+   \       0x6C   0x.... 0x....      BL       PD_Data_Request
+   1003          }
+   \       0x70   0xB00F             ADD      SP,SP,#+60
+   \       0x72   0xBDF0             POP      {R4-R7,PC}
+   1004          
+   1005          /*==================================================================================*/
+   1006          /*==================================================================================*/
+   1007          /*==================================================================================*/
+   1008          
+   1009          int32_t get_rssi_max_threshold (void);
+   1010          int32_t get_rssi_min_threshold (void);
+   1011          
+
+   \                                 In section .text, align 2, keep-with-next
+   1012          void process_set_rssi_threshold (uint8_t* buf, uint16_t length)
+   1013          {
+   \                     process_set_rssi_threshold: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   1014            int8_t rssi_threshold = *buf;
+   \        0x6   0xF994 0x6000      LDRSB    R6,[R4, #+0]
+   1015            
+   1016            if((rssi_threshold >= get_rssi_min_threshold()) && (rssi_threshold <= get_rssi_max_threshold()) && (length == 1))
+   \        0xA   0x.... 0x....      BL       get_rssi_min_threshold
+   \        0xE   0x0031             MOVS     R1,R6
+   \       0x10   0xB249             SXTB     R1,R1
+   \       0x12   0x4281             CMP      R1,R0
+   \       0x14   0xDB11             BLT.N    ??process_set_rssi_threshold_0
+   \       0x16   0x.... 0x....      BL       get_rssi_max_threshold
+   \       0x1A   0x0031             MOVS     R1,R6
+   \       0x1C   0xB249             SXTB     R1,R1
+   \       0x1E   0x4288             CMP      R0,R1
+   \       0x20   0xDB0B             BLT.N    ??process_set_rssi_threshold_0
+   \       0x22   0x0028             MOVS     R0,R5
+   \       0x24   0xB280             UXTH     R0,R0
+   \       0x26   0x2801             CMP      R0,#+1
+   \       0x28   0xD107             BNE.N    ??process_set_rssi_threshold_0
+   1017            {
+   1018              fan_nwk_manager_app.factory_mod_st.rssi_threshold = rssi_threshold;
+   \       0x2A   0x....             LDR.N    R0,??DataTable24_2
+   \       0x2C   0xF880 0x6264      STRB     R6,[R0, #+612]
+   1019              send_hif_conf_cb (SET_RSSI_THRESHOLD_CONF, 0);
+   \       0x30   0x2100             MOVS     R1,#+0
+   \       0x32   0x20DE             MOVS     R0,#+222
+   \       0x34   0x.... 0x....      BL       send_hif_conf_cb
+   \       0x38   0xE003             B.N      ??process_set_rssi_threshold_1
+   1020            }
+   1021            else
+   1022            {
+   1023              send_hif_conf_cb (SET_RSSI_THRESHOLD_CONF, 1);
+   \                     ??process_set_rssi_threshold_0: (+1)
+   \       0x3A   0x2101             MOVS     R1,#+1
+   \       0x3C   0x20DE             MOVS     R0,#+222
+   \       0x3E   0x.... 0x....      BL       send_hif_conf_cb
+   1024            }
+   1025          }
+   \                     ??process_set_rssi_threshold_1: (+1)
+   \       0x42   0xBD70             POP      {R4-R6,PC}
+   1026          
+   1027          /*==================================================================================*/
+   1028          /*==================================================================================*/
+   1029          /*==================================================================================*/
+   1030          
+   1031          //void process_set_adjust_freq (uint8_t* buf, uint16_t length)
+   1032          //{
+   1033          //  uint8_t cap_bank = *buf;
+   1034          //  
+   1035          //  if ((cap_bank > 0x01) && (cap_bank <= 0x7F))
+   1036          //  {
+   1037          //    fan_nwk_manager_app.factory_mod_st.xtal_adjust = cap_bank;
+   1038          //    set_cap_bank_val (cap_bank);
+   1039          //    send_hif_conf_cb (SET_ADJUST_FREQ_CONF, 0);
+   1040          //  }
+   1041          //  else
+   1042          //    send_hif_conf_cb (SET_ADJUST_FREQ_CONF, 1);
+   1043          //}
+   1044          
+   1045          /*==================================================================================*/
+   1046          /*==================================================================================*/
+   1047          /*==================================================================================*/
+   1048          
+   1049          //void process_set_serial_baudrate (uint8_t* buf, uint16_t length)
+   1050          //{
+   1051          //  uint32_t baudrate;
+   1052          //  
+   1053          //  if (*buf == 0)
+   1054          //    baudrate = 115200;
+   1055          //  if (*buf == 1)
+   1056          //    baudrate = 230400;
+   1057          //  if (*buf == 2)
+   1058          //    baudrate = 460800;
+   1059          //  
+   1060          //  if (fan_nwk_manager_app.node_basic_cfg.fan_device_type == 0)
+   1061          //  {
+   1062          //    send_hif_conf_cb (SET_SERIAL_BAUDRATE_CONF, 2);     /*CMD not supported*/
+   1063          //    return;
+   1064          //  }
+   1065          //  
+   1066          //  if ((baudrate != 115200) && (baudrate != 230400) && (baudrate != 460800))
+   1067          //  {
+   1068          //    send_hif_conf_cb (SET_SERIAL_BAUDRATE_CONF, 1);     /*Invalid Baudrate*/
+   1069          //    return;
+   1070          //  }
+   1071          //  
+   1072          //  fan_nwk_manager_app.factory_mod_st.serial_baudrate = baudrate;
+   1073          //  
+   1074          //  nvm_store_node_basic_info();
+   1075          //  UART_init ();
+   1076          //}
+   1077          
+   1078          /*==================================================================================*/
+   1079          /*==================================================================================*/
+   1080          /*==================================================================================*/
+   1081          
+
+   \                                 In section .text, align 2, keep-with-next
+   1082          void process_get_config_info_req (void)
+   1083          {
+   \                     process_get_config_info_req: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0xB08A             SUB      SP,SP,#+40
+   1084            uint8_t hif_buf[36];
+   1085            uint8_t indx = 0;
+   \        0x6   0x2500             MOVS     R5,#+0
+   1086            uint32_t symbol_rate = 0;
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0x9000             STR      R0,[SP, #+0]
+   1087            uint8_t modulation_index = 0;
+   \        0xC   0x2700             MOVS     R7,#+0
+   1088            
+   1089            hif_buf[indx++] = GET_CONFIG_INFO_RESP;
+   \        0xE   0xAC01             ADD      R4,SP,#+4
+   \       0x10   0x21E4             MOVS     R1,#+228
+   \       0x12   0x0028             MOVS     R0,R5
+   \       0x14   0xB2C0             UXTB     R0,R0
+   \       0x16   0x5421             STRB     R1,[R4, R0]
+   \       0x18   0x1C6D             ADDS     R5,R5,#+1
+   1090            hif_buf[indx++] = fan_nwk_manager_app.node_basic_cfg.operational_mode;
+   \       0x1A   0x....             LDR.N    R6,??DataTable24_2
+   \       0x1C   0x7B30             LDRB     R0,[R6, #+12]
+   \       0x1E   0x0029             MOVS     R1,R5
+   \       0x20   0xB2C9             UXTB     R1,R1
+   \       0x22   0x5460             STRB     R0,[R4, R1]
+   \       0x24   0x1C6D             ADDS     R5,R5,#+1
+   1091            mem_rev_cpy (&hif_buf[indx], (uint8_t *)&fan_nwk_manager_app.factory_mod_st.serial_baudrate, 4);
+   \       0x26   0x2204             MOVS     R2,#+4
+   \       0x28   0xF516 0x711A      ADDS     R1,R6,#+616
+   \       0x2C   0xA801             ADD      R0,SP,#+4
+   \       0x2E   0x002B             MOVS     R3,R5
+   \       0x30   0xB2DB             UXTB     R3,R3
+   \       0x32   0x4418             ADD      R0,R0,R3
+   \       0x34   0x.... 0x....      BL       mem_rev_cpy
+   1092            indx += 4;
+   \       0x38   0x1D2D             ADDS     R5,R5,#+4
+   1093            memcpy (&hif_buf[indx], fan_nwk_manager_app.node_basic_cfg.self_ieee_addr, 8);
+   \       0x3A   0xF05F 0x0808      MOVS     R8,#+8
+   \       0x3E   0xF116 0x0914      ADDS     R9,R6,#+20
+   \       0x42   0xA801             ADD      R0,SP,#+4
+   \       0x44   0x0029             MOVS     R1,R5
+   \       0x46   0xB2C9             UXTB     R1,R1
+   \       0x48   0xEB00 0x0A01      ADD      R10,R0,R1
+   \       0x4C   0x4642             MOV      R2,R8
+   \       0x4E   0x4649             MOV      R1,R9
+   \       0x50   0x4650             MOV      R0,R10
+   \       0x52   0x.... 0x....      BL       __aeabi_memcpy
+   1094            indx += 8;
+   \       0x56   0x3508             ADDS     R5,R5,#+8
+   1095            hif_buf[indx++] = fan_nwk_manager_app.factory_mod_st.rssi_threshold;
+   \       0x58   0xF896 0x0264      LDRB     R0,[R6, #+612]
+   \       0x5C   0x0029             MOVS     R1,R5
+   \       0x5E   0xB2C9             UXTB     R1,R1
+   \       0x60   0x5460             STRB     R0,[R4, R1]
+   \       0x62   0x1C6D             ADDS     R5,R5,#+1
+   1096            hif_buf[indx++] = fan_nwk_manager_app.factory_mod_st.xtal_adjust;
+   \       0x64   0xF896 0x0265      LDRB     R0,[R6, #+613]
+   \       0x68   0x0029             MOVS     R1,R5
+   \       0x6A   0xB2C9             UXTB     R1,R1
+   \       0x6C   0x5460             STRB     R0,[R4, R1]
+   \       0x6E   0x1C6D             ADDS     R5,R5,#+1
+   1097            hif_buf[indx++] = 0;  /* Always 2FSK */
+   \       0x70   0x2100             MOVS     R1,#+0
+   \       0x72   0x0028             MOVS     R0,R5
+   \       0x74   0xB2C0             UXTB     R0,R0
+   \       0x76   0x5421             STRB     R1,[R4, R0]
+   \       0x78   0x1C6D             ADDS     R5,R5,#+1
+   1098            
+   1099            if (fan_nwk_manager_app.node_basic_cfg.sybbol_rate == 20)
+   \       0x7A   0xF896 0x002D      LDRB     R0,[R6, #+45]
+   \       0x7E   0x2814             CMP      R0,#+20
+   \       0x80   0xD102             BNE.N    ??process_get_config_info_req_0
+   1100              symbol_rate = 50000;
+   \       0x82   0xF24C 0x3050      MOVW     R0,#+50000
+   \       0x86   0x9000             STR      R0,[SP, #+0]
+   1101            if (fan_nwk_manager_app.node_basic_cfg.sybbol_rate == 10)
+   \                     ??process_get_config_info_req_0: (+1)
+   \       0x88   0xF896 0x002D      LDRB     R0,[R6, #+45]
+   \       0x8C   0x280A             CMP      R0,#+10
+   \       0x8E   0xD101             BNE.N    ??process_get_config_info_req_1
+   1102              symbol_rate = 100000;
+   \       0x90   0x....             LDR.N    R0,??DataTable24_21
+   \       0x92   0x9000             STR      R0,[SP, #+0]
+   1103            if (fan_nwk_manager_app.node_basic_cfg.sybbol_rate == 7)
+   \                     ??process_get_config_info_req_1: (+1)
+   \       0x94   0xF896 0x002D      LDRB     R0,[R6, #+45]
+   \       0x98   0x2807             CMP      R0,#+7
+   \       0x9A   0xD101             BNE.N    ??process_get_config_info_req_2
+   1104              symbol_rate = 150000;
+   \       0x9C   0x....             LDR.N    R0,??DataTable24_22
+   \       0x9E   0x9000             STR      R0,[SP, #+0]
+   1105            if (fan_nwk_manager_app.node_basic_cfg.sybbol_rate == 5)
+   \                     ??process_get_config_info_req_2: (+1)
+   \       0xA0   0xF896 0x002D      LDRB     R0,[R6, #+45]
+   \       0xA4   0x2805             CMP      R0,#+5
+   \       0xA6   0xD101             BNE.N    ??process_get_config_info_req_3
+   1106              symbol_rate = 200000;
+   \       0xA8   0x....             LDR.N    R0,??DataTable24_23
+   \       0xAA   0x9000             STR      R0,[SP, #+0]
+   1107            if (fan_nwk_manager_app.node_basic_cfg.sybbol_rate == 3)
+   \                     ??process_get_config_info_req_3: (+1)
+   \       0xAC   0xF896 0x002D      LDRB     R0,[R6, #+45]
+   \       0xB0   0x2803             CMP      R0,#+3
+   \       0xB2   0xD101             BNE.N    ??process_get_config_info_req_4
+   1108              symbol_rate = 300000;
+   \       0xB4   0x....             LDR.N    R0,??DataTable24_24
+   \       0xB6   0x9000             STR      R0,[SP, #+0]
+   1109            mem_rev_cpy (&hif_buf[indx], (uint8_t *)&symbol_rate, sizeof(symbol_rate));
+   \                     ??process_get_config_info_req_4: (+1)
+   \       0xB8   0x2204             MOVS     R2,#+4
+   \       0xBA   0x4669             MOV      R1,SP
+   \       0xBC   0xAB01             ADD      R3,SP,#+4
+   \       0xBE   0x0028             MOVS     R0,R5
+   \       0xC0   0xB2C0             UXTB     R0,R0
+   \       0xC2   0x4418             ADD      R0,R3,R0
+   \       0xC4   0x.... 0x....      BL       mem_rev_cpy
+   1110            indx += sizeof(symbol_rate);
+   \       0xC8   0x1D2D             ADDS     R5,R5,#+4
+   1111            
+   1112            if (fan_nwk_manager_app.node_basic_cfg.modulation_index == (float)0.5)
+   \       0xCA   0xED96 0x0A0C      VLDR     S0,[R6, #+48]
+   \       0xCE   0xEEF6 0x0A00      VMOV.F32 S1,#0.5
+   \       0xD2   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \       0xD6   0xEEF1 0xFA10      FMSTAT
+   \       0xDA   0xD101             BNE.N    ??process_get_config_info_req_5
+   1113                modulation_index = 0;
+   \       0xDC   0x2000             MOVS     R0,#+0
+   \       0xDE   0x0007             MOVS     R7,R0
+   1114            if (fan_nwk_manager_app.node_basic_cfg.modulation_index == (float)1.0)
+   \                     ??process_get_config_info_req_5: (+1)
+   \       0xE0   0xEDD6 0x0A0C      VLDR     S1,[R6, #+48]
+   \       0xE4   0xEEB7 0x0A00      VMOV.F32 S0,#1.0
+   \       0xE8   0xEEF4 0x0A40      VCMP.F32 S1,S0
+   \       0xEC   0xEEF1 0xFA10      FMSTAT
+   \       0xF0   0xD101             BNE.N    ??process_get_config_info_req_6
+   1115                modulation_index = 1;
+   \       0xF2   0x2001             MOVS     R0,#+1
+   \       0xF4   0x0007             MOVS     R7,R0
+   1116            hif_buf[indx++] = modulation_index;
+   \                     ??process_get_config_info_req_6: (+1)
+   \       0xF6   0x0028             MOVS     R0,R5
+   \       0xF8   0xB2C0             UXTB     R0,R0
+   \       0xFA   0x5427             STRB     R7,[R4, R0]
+   \       0xFC   0x1C6D             ADDS     R5,R5,#+1
+   1117            
+   1118            hif_buf[indx++] = fan_nwk_manager_app.node_basic_cfg.pa_level;
+   \       0xFE   0x7BF0             LDRB     R0,[R6, #+15]
+   \      0x100   0x0029             MOVS     R1,R5
+   \      0x102   0xB2C9             UXTB     R1,R1
+   \      0x104   0x5460             STRB     R0,[R4, R1]
+   \      0x106   0x1C6D             ADDS     R5,R5,#+1
+   1119            hif_buf[indx++] = fan_nwk_manager_app.node_basic_cfg.us_ie.un_channel_plan.ch_reg_op.reg_domain;
+   \      0x108   0xF896 0x1064      LDRB     R1,[R6, #+100]
+   \      0x10C   0x0028             MOVS     R0,R5
+   \      0x10E   0xB2C0             UXTB     R0,R0
+   \      0x110   0x5421             STRB     R1,[R4, R0]
+   \      0x112   0x1C6D             ADDS     R5,R5,#+1
+   1120            hif_buf[indx++] = fan_nwk_manager_app.node_basic_cfg.us_ie.un_channel_plan.ch_reg_op.op_class;
+   \      0x114   0xF896 0x1065      LDRB     R1,[R6, #+101]
+   \      0x118   0x0028             MOVS     R0,R5
+   \      0x11A   0xB2C0             UXTB     R0,R0
+   \      0x11C   0x5421             STRB     R1,[R4, R0]
+   \      0x11E   0x1C6D             ADDS     R5,R5,#+1
+   1121            mem_rev_cpy (&hif_buf[indx], (uint8_t *)&fan_nwk_manager_app.node_basic_cfg.selected_channel, 2);
+   \      0x120   0x2202             MOVS     R2,#+2
+   \      0x122   0xF116 0x0110      ADDS     R1,R6,#+16
+   \      0x126   0xAB01             ADD      R3,SP,#+4
+   \      0x128   0x0028             MOVS     R0,R5
+   \      0x12A   0xB2C0             UXTB     R0,R0
+   \      0x12C   0x4418             ADD      R0,R3,R0
+   \      0x12E   0x.... 0x....      BL       mem_rev_cpy
+   1122            indx += 2;
+   \      0x132   0x1CAD             ADDS     R5,R5,#+2
+   1123            
+   1124            //hif_send_msg_up (hif_buf, indx, response_laye_ID,PROTOCOL_ID_FOR_APP);
+   1125          }
+   \      0x134   0xB00A             ADD      SP,SP,#+40
+   \      0x136   0xE8BD 0x87F0      POP      {R4-R10,PC}
+   1126           
+   1127          /*==================================================================================*/                 
+   1128          /*==================================================================================*/
+   1129          /*==================================================================================*/
+   1130          
+   1131          
+
+   \                                 In section .text, align 4, keep-with-next
+   1132          static void perform_bcast_data_tx( void* s )
+   1133          {
+   \                     perform_bcast_data_tx: (+1)
+   \        0x0   0xE92D 0x47F8      PUSH     {R3-R10,LR}
+   \        0x4   0xF5AD 0x6D00      SUB      SP,SP,#+2048
+   \        0x8   0xB08F             SUB      SP,SP,#+60
+   \        0xA   0x0004             MOVS     R4,R0
+   1134            uint8_t pd_data_req_content[2100];
+   1135            phy_tx_t *phy_pkt = (phy_tx_t*)pd_data_req_content;
+   \        0xC   0xAD02             ADD      R5,SP,#+8
+   1136            uint32_t TxChannel = 0;
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0x9001             STR      R0,[SP, #+4]
+   1137            uint16_t len = 0;
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+   1138            PLME_get_request( phyCurrentChannel, &len, &TxChannel );
+   \       0x18   0xAA01             ADD      R2,SP,#+4
+   \       0x1A   0x4669             MOV      R1,SP
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \       0x1E   0x.... 0x....      BL       PLME_get_request
+   1139            uint8_t *bp = NULL;
+   \       0x22   0x2600             MOVS     R6,#+0
+   1140            total_packets_sent_in_an_hr++;
+   \       0x24   0x....             LDR.N    R1,??DataTable24_18
+   \       0x26   0x8808             LDRH     R0,[R1, #+0]
+   \       0x28   0x1C40             ADDS     R0,R0,#+1
+   \       0x2A   0x8008             STRH     R0,[R1, #+0]
+   1141            ((fan_nwk_manager_sm_t*)s)->factory_mod_st.tx_packet_counter++;
+   \       0x2C   0xF8D4 0x025C      LDR      R0,[R4, #+604]
+   \       0x30   0x1C40             ADDS     R0,R0,#+1
+   \       0x32   0xF8C4 0x025C      STR      R0,[R4, #+604]
+   1142           
+   1143            phy_pkt->link = NULL; 
+   \       0x36   0x2000             MOVS     R0,#+0
+   \       0x38   0x6028             STR      R0,[R5, #+0]
+   1144            phy_pkt->TxChannel = TxChannel;
+   \       0x3A   0x9801             LDR      R0,[SP, #+4]
+   \       0x3C   0x80A8             STRH     R0,[R5, #+4]
+   1145            phy_pkt->PPDUCoding = 0;
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \       0x40   0x71A8             STRB     R0,[R5, #+6]
+   1146            phy_pkt->FCSLength  = fan_nwk_manager_app.factory_mod_st.trx_pkt_param.pkt_mode_param.fcslength;
+   \       0x42   0x....             LDR.N    R0,??DataTable24_2
+   \       0x44   0xF890 0x11A7      LDRB     R1,[R0, #+423]
+   \       0x48   0x71E9             STRB     R1,[R5, #+7]
+   1147            phy_pkt->ModeSwitch = 0;
+   \       0x4A   0x2100             MOVS     R1,#+0
+   \       0x4C   0x7229             STRB     R1,[R5, #+8]
+   1148            phy_pkt->NewModeSUNPage = 0;
+   \       0x4E   0x2100             MOVS     R1,#+0
+   \       0x50   0x7269             STRB     R1,[R5, #+9]
+   1149            phy_pkt->ModeSwitchParameterEntry = 0;
+   \       0x52   0x2100             MOVS     R1,#+0
+   \       0x54   0x72A9             STRB     R1,[R5, #+10]
+   1150            phy_pkt->psduLength =fan_nwk_manager_app.factory_mod_st.trx_pkt_param.pkt_mode_param.pkt_len;
+   \       0x56   0xF8B0 0x11A4      LDRH     R1,[R0, #+420]
+   \       0x5A   0x81A9             STRH     R1,[R5, #+12]
+   1151            bp = phy_pkt->psdu;
+   \       0x5C   0xF115 0x070E      ADDS     R7,R5,#+14
+   1152            memcpy( bp, fan_nwk_manager_app.factory_mod_st.gmsduu, phy_pkt->psduLength );
+   \       0x60   0xF8B5 0x800C      LDRH     R8,[R5, #+12]
+   \       0x64   0xF8D0 0xA258      LDR      R10,[R0, #+600]
+   \       0x68   0x46B9             MOV      R9,R7
+   \       0x6A   0x4642             MOV      R2,R8
+   \       0x6C   0x4651             MOV      R1,R10
+   \       0x6E   0x4648             MOV      R0,R9
+   \       0x70   0x.... 0x....      BL       __aeabi_memcpy
+   1153            PLME_Set_TRX_State( PHY_TX_ON );
+   \       0x74   0x2009             MOVS     R0,#+9
+   \       0x76   0x.... 0x....      BL       PLME_Set_TRX_State
+   1154            PD_Data_Request( NULL,phy_pkt );  
+   \       0x7A   0x0029             MOVS     R1,R5
+   \       0x7C   0x2000             MOVS     R0,#+0
+   \       0x7E   0x.... 0x....      BL       PD_Data_Request
+   1155          }
+   \       0x82   0xF50D 0x6D04      ADD      SP,SP,#+2112
+   \       0x86   0xE8BD 0x87F0      POP      {R4-R10,PC}
+   1156          
+   1157          /*==================================================================================*/
+   1158          /*==================================================================================*/
+   1159          /*==================================================================================*/
+   1160          
+
+   \                                 In section .text, align 2, keep-with-next
+   1161          uint8_t get_cuurunt_active_operation_mode()
+   1162          {
+   1163            return fan_nwk_manager_app.node_basic_cfg.operational_mode;
+   \                     get_cuurunt_active_operation_mode: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable24_2
+   \        0x2   0x7B00             LDRB     R0,[R0, #+12]
+   \        0x4   0x4770             BX       LR
+   1164          }
+   1165          
+   1166          /*==================================================================================*/
+   1167          
+   1168          //void process_set_phy(uint8_t *buf, uint16_t length)
+   1169          //{
+   1170          //  int8_t status = 0xFF;
+   1171          //  uint8_t PhyModeID = (*buf);
+   1172          //  status = set_RAIL_phyMode( PhyModeID );
+   1173          //  
+   1174          //  if (status != 0x00 )
+   1175          //    status = 1;
+   1176          //  else
+   1177          //  {
+   1178          //      fan_nwk_manager_app.node_basic_cfg.phy_mode = phyModeMapArr[PhyModeID]; 
+   1179          //      uint32_t current_page = get_sun_page_value();;
+   1180          //      PLME_set_request(phyCurrentSUNPageEntry,4,&current_page);
+   1181          //  }
+   1182          //  
+   1183          //  send_hif_conf_cb(CONF_SET_PHY,status);        
+   1184          //}
+   1185          
+   1186          /*==================================================================================*/
+   1187          
+
+   \                                 In section .text, align 2, keep-with-next
+   1188          void App_factory_mode_channel_set()
+   1189          {
+   \                     App_factory_mode_channel_set: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   1190            uint32_t channel = get_sun_channel();
+   \        0x2   0x.... 0x....      BL       get_sun_channel
+   \        0x6   0x9000             STR      R0,[SP, #+0]
+   1191            PLME_set_request(phyCurrentChannel,2,&channel);
+   \        0x8   0x466A             MOV      R2,SP
+   \        0xA   0x2102             MOVS     R1,#+2
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0x.... 0x....      BL       PLME_set_request
+   1192          }
+   \       0x12   0xBD01             POP      {R0,PC}
+   1193          
+   1194          /*==================================================================================*/
+   1195          
+
+   \                                 In section .text, align 2, keep-with-next
+   1196          void process_set_facort_mode_PA_level_api(uint8_t *buf, uint16_t length)
+   1197          {
+   \                     process_set_facort_mode_PA_level_api: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x000C             MOVS     R4,R1
+   1198            
+   1199             uint8_t status = 0xFF;
+   \        0x6   0x25FF             MOVS     R5,#+255
+   1200            uint8_t PALevelVal = *buf++;
+   \        0x8   0x7806             LDRB     R6,[R0, #+0]
+   \        0xA   0xF110 0x0801      ADDS     R8,R0,#+1
+   1201            
+   1202            status = TRX_RAIL_setPower(PALevelVal);
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0xB2C0             UXTB     R0,R0
+   \       0x12   0x.... 0x....      BL       TRX_RAIL_setPower
+   \       0x16   0x0007             MOVS     R7,R0
+   1203            
+   1204            send_hif_conf_cb(SET_FACTORY_MODE_PA_LEVEL_API_CONF,status);  
+   \       0x18   0x0039             MOVS     R1,R7
+   \       0x1A   0xB2C9             UXTB     R1,R1
+   \       0x1C   0x2035             MOVS     R0,#+53
+   \       0x1E   0x.... 0x....      BL       send_hif_conf_cb
+   1205          }
+   \       0x22   0xE8BD 0x81F0      POP      {R4-R8,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22:
+   \        0x0   0x....'....        DC32     a_big_problem
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_1:
+   \        0x0   0x....'....        DC32     sm_exit_event
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable23:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24:
+   \        0x0   0x....'....        DC32     sm_entry_event
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_1:
+   \        0x0   0x....'....        DC32     rx_mac_data_ind
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_2:
+   \        0x0   0x....'....        DC32     fan_nwk_manager_app
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_3:
+   \        0x0   0xD693'A400        DC32     0xd693a400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_4:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_5:
+   \        0x0   0x....'....        DC32     telec_start_time
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_6:
+   \        0x0   0x....'....        DC32     telec_exp_time
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_7:
+   \        0x0   0x....'....        DC32     max_sending_dur_reached
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_8:
+   \        0x0   0x....'....        DC32     mac_limit_reached_count
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_9:
+   \        0x0   0x....'....        DC32     time_stamp
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_10:
+   \        0x0   0x....'....        DC32     fsm_sending_packets
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_11:
+   \        0x0   0x....'....        DC32     node_factory_mode_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_12:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_13:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_14:
+   \        0x0   0x....'....        DC32     ?_5
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_15:
+   \        0x0   0x....'....        DC32     total_sending_in_hr_index
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_16:
+   \        0x0   0x....'....        DC32     mac_pib
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_17:
+   \        0x0   0x....'....        DC32     total_sending_in_hr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_18:
+   \        0x0   0x....'....        DC32     total_packets_sent_in_an_hr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_19:
+   \        0x0   0x....'....        DC32     total_packets_sent
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_20:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_21:
+   \        0x0   0x0001'86A0        DC32     0x186a0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_22:
+   \        0x0   0x0002'49F0        DC32     0x249f0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_23:
+   \        0x0   0x0003'0D40        DC32     0x30d40
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_24:
+   \        0x0   0x0004'93E0        DC32     0x493e0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0xC8 0x00          DC8 200, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00
+   \        0x7                      DS8 1
+
+   \                                 In section .rodata, align 2
+   \                     ?_1:
+   \        0x0   0xD2 0x00          DC8 210, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0xDA 0x00          DC8 218, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00
+   \        0x9                      DS8 3
+   1206          
+   1207          /*==================================================================================*/
+   1208          /*==================================================================================*/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   App_factory_mode_Data_ind_cb
+        32   -- Indirect call
+        32   -> error_increment
+       8   App_factory_mode_channel_set
+         8   -> PLME_set_request
+         8   -> get_sun_channel
+       0   error_increment
+      48   fsm_receive_mode
+        48   -> MLME_SET_Request
+        48   -> PLME_Set_TRX_State
+        48   -> __aeabi_memcpy
+        48   -> __aeabi_memset
+        48   -> send_hif_conf_cb
+        48   -> sm_transit
+      32   fsm_sending_packets
+        32   -- Indirect call
+        32   -> rand
+        32   -> sm_transit
+        32   -> timer_current_time_get
+        32   -> tmr_start_relative
+        32   -> tmr_stop
+       0   get_cuurunt_active_operation_mode
+      24   init_factory_mode
+        24   -> PLME_set_request
+        24   -> app_bm_alloc
+        24   -> get_sun_channel
+        24   -> get_sun_page_value
+        24   -> tmr_create_one_shot_timer
+        24   -> tmr_stop
+      16   node_factory_mode_state
+        16   -> MLME_SET_Request
+        16   -> PLME_set_request
+        16   -> sm_transit
+    2144   perform_bcast_data_tx
+      2144   -> PD_Data_Request
+      2144   -> PLME_Set_TRX_State
+      2144   -> PLME_get_request
+      2144   -> __aeabi_memcpy
+      16   process_factory_mode_ch_scanning_req
+        16   -> TRX_RAIL_do_EnergyDetection_Scanning
+        16   -> send_hif_conf_cb
+      72   process_get_config_info_req
+        72   -> __aeabi_memcpy
+        72   -> mem_rev_cpy
+      40   process_get_rx_details
+        40   -> get_trx_details
+      24   process_set_facort_mode_PA_level_api
+        24   -> TRX_RAIL_setPower
+        24   -> send_hif_conf_cb
+      56   process_set_pkt_tx
+        56   -> PLME_set_request
+        56   -> __aeabi_memcpy
+        56   -> mem_rev_cpy
+        56   -> rand
+        56   -> send_hif_conf_cb
+      16   process_set_rssi_threshold
+        16   -> get_rssi_max_threshold
+        16   -> get_rssi_min_threshold
+        16   -> send_hif_conf_cb
+       0   process_set_stream_tx
+      24   process_start_continuous_rx
+        24   -- Indirect call
+        24   -> error_increment
+        24   -> send_hif_conf_cb
+      40   process_start_continuous_tx
+        40   -- Indirect call
+        40   -> error_increment
+        40   -> process_set_stream_tx
+        40   -> send_hif_conf_cb
+      32   process_start_rx
+        32   -- Indirect call
+        32   -> error_increment
+        32   -> send_hif_conf_cb
+      40   process_start_tx
+        40   -- Indirect call
+        40   -> error_increment
+        40   -> send_hif_conf_cb
+      24   process_stop_continuous_rx
+        24   -- Indirect call
+        24   -> error_increment
+        24   -> send_hif_conf_cb
+      24   process_stop_continuous_tx
+        24   -- Indirect call
+        24   -> error_increment
+        24   -> send_hif_conf_cb
+      24   process_stop_rx
+        24   -- Indirect call
+        24   -> error_increment
+      24   process_stop_tx
+        24   -- Indirect call
+        24   -> error_increment
+        24   -> send_hif_conf_cb
+      80   process_test_phy_enc
+        80   -> PD_Data_Request
+        80   -> PLME_Set_TRX_State
+        80   -> PLME_get_request
+      16   send_next_pkt
+        16   -- Indirect call
+        16   -> tmr_stop
+      16   sm_transit
+        16   -- Indirect call
+        16   -> error_increment
+      16   tsm_alarm
+        16   -- Indirect call
+      16   tsm_sending_mod_stream
+        16   -> TRX_On
+        16   -> TRX_Stop_Tx_Steram
+        16   -> TRX_Xmit_StreamModeOn
+        16   -> sm_transit
+      16   tsm_sending_unmod_stream
+        16   -> TRX_On
+        16   -> TRX_Stop_Tx_Steram
+        16   -> TRX_Xmit_StreamModeOn
+        16   -> sm_transit
+      16   update_total_sending_dur_for_hr
+        16   -> tmr_start_relative
+        16   -> tmr_stop
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable22
+       4  ??DataTable22_1
+       4  ??DataTable23
+       4  ??DataTable24
+       4  ??DataTable24_1
+       4  ??DataTable24_10
+       4  ??DataTable24_11
+       4  ??DataTable24_12
+       4  ??DataTable24_13
+       4  ??DataTable24_14
+       4  ??DataTable24_15
+       4  ??DataTable24_16
+       4  ??DataTable24_17
+       4  ??DataTable24_18
+       4  ??DataTable24_19
+       4  ??DataTable24_2
+       4  ??DataTable24_20
+       4  ??DataTable24_21
+       4  ??DataTable24_22
+       4  ??DataTable24_23
+       4  ??DataTable24_24
+       4  ??DataTable24_3
+       4  ??DataTable24_4
+       4  ??DataTable24_5
+       4  ??DataTable24_6
+       4  ??DataTable24_7
+       4  ??DataTable24_8
+       4  ??DataTable24_9
+       8  ?_0
+       2  ?_1
+      12  ?_2
+       8  ?_3
+       8  ?_4
+       8  ?_5
+      78  App_factory_mode_Data_ind_cb
+      20  App_factory_mode_channel_set
+      16  error_increment
+     338  fsm_receive_mode
+     482  fsm_sending_packets
+       6  get_cuurunt_active_operation_mode
+     138  init_factory_mode
+       1  mac_limit_reached_count
+       1  max_sending_dur_reached
+     162  node_factory_mode_state
+     138  perform_bcast_data_tx
+      20  process_factory_mode_ch_scanning_req
+     314  process_get_config_info_req
+      86  process_get_rx_details
+      38  process_set_facort_mode_PA_level_api
+     244  process_set_pkt_tx
+      68  process_set_rssi_threshold
+      24  process_set_stream_tx
+      64  process_start_continuous_rx
+     118  process_start_continuous_tx
+      90  process_start_rx
+     134  process_start_tx
+      70  process_stop_continuous_rx
+      64  process_stop_continuous_tx
+      46  process_stop_rx
+      64  process_stop_tx
+     116  process_test_phy_enc
+      16  rx_mac_data_ind
+      24  send_next_pkt
+       8  sm_entry_event
+       8  sm_exit_event
+      82  sm_transit
+       4  telec_exp_time
+       4  telec_start_time
+       8  time_stamp
+      24  total_packets_sent
+       2  total_packets_sent_in_an_hr
+      24  total_sending_in_hr
+       1  total_sending_in_hr_index
+      16  tsm_alarm
+      80  tsm_sending_mod_stream
+      74  tsm_sending_unmod_stream
+       4  txx_complete_event
+      70  update_total_sending_dur_for_hr
+
+ 
+    89 bytes in section .bss
+    62 bytes in section .rodata
+ 3'396 bytes in section .text
+ 
+ 3'396 bytes of CODE  memory
+    62 bytes of CONST memory
+    89 bytes of DATA  memory
+
+Errors: none
+Warnings: 1

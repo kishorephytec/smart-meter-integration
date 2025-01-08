@@ -1,0 +1,1864 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         02/Dec/2024  12:57:49
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\emlib\src\em_core.c
+#    Command line      =
+#        -f
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_core.o.rsp
+#        (D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\emlib\src\em_core.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\src_3303982371595999919.dir
+#        --diag_suppress Pa050 -o
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_core.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\src_3303982371595999919.dir\em_core.lst
+#    Object file       =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_core.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\emlib\src\em_core.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Core interrupt handling API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          #include "em_core.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t __NVIC_GetPriority(IRQn_Type)
+   \                     __NVIC_GetPriority: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0xB249             SXTB     R1,R1
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xD404             BMI.N    ??__NVIC_GetPriority_0
+   \        0x8   0x....             LDR.N    R1,??DataTable10
+   \        0xA   0xB240             SXTB     R0,R0
+   \        0xC   0x5C08             LDRB     R0,[R1, R0]
+   \        0xE   0x0900             LSRS     R0,R0,#+4
+   \       0x10   0xE007             B.N      ??__NVIC_GetPriority_1
+   \                     ??__NVIC_GetPriority_0: (+1)
+   \       0x12   0x....             LDR.N    R1,??DataTable10_1
+   \       0x14   0xB240             SXTB     R0,R0
+   \       0x16   0xF010 0x000F      ANDS     R0,R0,#0xF
+   \       0x1A   0x4408             ADD      R0,R1,R0
+   \       0x1C   0xF810 0x0C04      LDRB     R0,[R0, #-4]
+   \       0x20   0x0900             LSRS     R0,R0,#+4
+   \                     ??__NVIC_GetPriority_1: (+1)
+   \       0x22   0x4770             BX       LR
+     31          #include "sl_assert.h"
+     32          
+     33          /* *INDENT-OFF* */
+     34          // *****************************************************************************
+     35          ///  @addtogroup core CORE - Core Interrupt
+     36          ///
+     37          ///@n @section core_intro Introduction
+     38          ///
+     39          ///  CORE interrupt API provides a simple and safe means
+     40          ///  to disable and enable interrupts to protect sections of code.
+     41          ///
+     42          ///  This is often referred to as "critical sections". This module provides
+     43          ///  support for three types of critical sections, each with different interrupt
+     44          ///  blocking capabilities.
+     45          ///
+     46          ///  @li <b>CRITICAL</b> section: Inside a critical section, all interrupts are
+     47          ///      disabled (except for fault handlers). The PRIMASK register is always used for
+     48          ///      interrupt disable/enable.
+     49          ///  @li <b>ATOMIC</b> section: This type of section is configurable and the default
+     50          ///      method is to use PRIMASK. With BASEPRI configuration, interrupts with priority
+     51          ///      equal to or lower than a given configurable level are disabled. The interrupt
+     52          ///      disable priority level is defined at compile time. The BASEPRI register is not
+     53          ///      available for all architectures.
+     54          ///  @li <b>NVIC mask</b> section: Disable NVIC (external interrupts) on an
+     55          ///      individual manner.
+     56          ///
+     57          ///  em_core also has an API for manipulating RAM-based interrupt vector tables.
+     58          ///
+     59          ///@n @section core_conf Compile-time Configuration
+     60          ///
+     61          ///  The following #defines are used to configure em_core:
+     62          ///  @code{.c}
+     63          ///  // The interrupt priority level used inside ATOMIC sections.
+     64          ///  #define CORE_ATOMIC_BASE_PRIORITY_LEVEL    3
+     65          ///
+     66          ///  // A method used for interrupt disable/enable within ATOMIC sections.
+     67          ///  #define CORE_ATOMIC_METHOD                 CORE_ATOMIC_METHOD_PRIMASK
+     68          ///  @endcode
+     69          ///
+     70          ///  If the default values do not support your needs, they can be overridden
+     71          ///  by supplying -D compiler flags on the compiler command line or by collecting
+     72          ///  all macro redefinitions in a file named @em emlib_config.h and then supplying
+     73          ///  -DEMLIB_USER_CONFIG on a compiler command line.
+     74          ///
+     75          ///  @note The default emlib configuration for ATOMIC section interrupt disable
+     76          ///        method is using PRIMASK, i.e., ATOMIC sections are implemented as
+     77          ///        CRITICAL sections.
+     78          ///
+     79          ///  @note Due to architectural limitations Cortex-M0+ devices do not support
+     80          ///        ATOMIC type critical sections using the BASEPRI register. On M0+
+     81          ///        devices ATOMIC section helper macros are available but they are
+     82          ///        implemented as CRITICAL sections using PRIMASK register.
+     83          ///
+     84          ///@n @section core_macro_api Macro API
+     85          ///
+     86          ///  The primary em_core API is the macro API. Macro API will map to correct
+     87          ///  CORE functions according to the selected @ref CORE_ATOMIC_METHOD and similar
+     88          ///  configurations (the full CORE API is of course also available).
+     89          ///  The most useful macros are as follows:
+     90          ///
+     91          ///  @ref CORE_DECLARE_IRQ_STATE @n @ref CORE_ENTER_ATOMIC() @n
+     92          ///  @ref CORE_EXIT_ATOMIC()@n
+     93          ///  Used together to implement an ATOMIC section.
+     94          ///  @code{.c}
+     95          ///  {
+     96          ///    CORE_DECLARE_IRQ_STATE;           // Storage for saving IRQ state prior to
+     97          ///                                      // atomic section entry.
+     98          ///
+     99          ///    CORE_ENTER_ATOMIC();              // Enter atomic section.
+    100          ///
+    101          ///    ...
+    102          ///    ... your code goes here ...
+    103          ///    ...
+    104          ///
+    105          ///    CORE_EXIT_ATOMIC();               // Exit atomic section, IRQ state is restored.
+    106          ///  }
+    107          ///  @endcode
+    108          ///
+    109          ///  @n @ref CORE_ATOMIC_SECTION(yourcode)@n
+    110          ///  A concatenation of all three macros above.
+    111          ///  @code{.c}
+    112          ///  {
+    113          ///    CORE_ATOMIC_SECTION(
+    114          ///      ...
+    115          ///      ... your code goes here ...
+    116          ///      ...
+    117          ///    )
+    118          ///  }
+    119          ///  @endcode
+    120          ///
+    121          ///  @n @ref CORE_DECLARE_IRQ_STATE @n @ref CORE_ENTER_CRITICAL() @n
+    122          ///  @ref CORE_EXIT_CRITICAL() @n @ref CORE_CRITICAL_SECTION(yourcode)@n
+    123          ///  These macros implement CRITICAL sections in a similar fashion as described
+    124          ///  above for ATOMIC sections.
+    125          ///
+    126          ///  @n @ref CORE_DECLARE_NVIC_STATE @n @ref CORE_ENTER_NVIC() @n
+    127          ///  @ref CORE_EXIT_NVIC() @n @ref CORE_NVIC_SECTION(yourcode)@n
+    128          ///  These macros implement NVIC mask sections in a similar fashion as described
+    129          ///  above for ATOMIC sections. See @ref core_examples for an example.
+    130          ///
+    131          ///  Refer to @em Macros or <em>Macro Definition Documentation</em> below for a
+    132          ///  full list of macros.
+    133          ///
+    134          ///@n @section core_reimplementation API reimplementation
+    135          ///
+    136          ///  Most of the functions in the API are implemented as weak functions. This means
+    137          ///  that it is easy to reimplement when special needs arise. Shown below is a
+    138          ///  reimplementation of CRITICAL sections suitable if FreeRTOS OS is used:
+    139          ///  @code{.c}
+    140          ///  CORE_irqState_t CORE_EnterCritical(void)
+    141          ///  {
+    142          ///    vPortEnterCritical();
+    143          ///    return 0;
+    144          ///  }
+    145          ///
+    146          ///  void CORE_ExitCritical(CORE_irqState_t irqState)
+    147          ///  {
+    148          ///    (void)irqState;
+    149          ///    vPortExitCritical();
+    150          ///  }
+    151          ///  @endcode
+    152          ///  Also note that CORE_Enter/ExitCritical() are not implemented as inline
+    153          ///  functions. As a result, reimplementations will be possible even when original
+    154          ///  implementations are inside a linked library.
+    155          ///
+    156          ///  Some RTOSes must be notified on interrupt handler entry and exit. Macros
+    157          ///  @ref CORE_INTERRUPT_ENTRY() and @ref CORE_INTERRUPT_EXIT() are suitable
+    158          ///  placeholders for inserting such code. Insert these macros in all your
+    159          ///  interrupt handlers and then override the default macro implementations.
+    160          ///  This is an example if uC/OS is used:
+    161          ///  @code{.c}
+    162          ///  // In emlib_config.h:
+    163          ///
+    164          ///  #define CORE_INTERRUPT_ENTRY()   OSIntEnter()
+    165          ///  #define CORE_INTERRUPT_EXIT()    OSIntExit()
+    166          ///  @endcode
+    167          ///
+    168          ///@n @section core_vector_tables Interrupt vector tables
+    169          ///
+    170          ///  When using RAM based interrupt vector tables it is the user's responsibility
+    171          ///  to allocate the table space correctly. The tables must be aligned as specified
+    172          ///  in the CPU reference manual.
+    173          ///
+    174          ///  @ref CORE_InitNvicVectorTable()@n
+    175          ///  Initialize a RAM based vector table by copying table entries from a source
+    176          ///  vector table to a target table. VTOR is set to the address of the target
+    177          ///  vector table.
+    178          ///
+    179          ///  @n @ref CORE_GetNvicRamTableHandler() @n @ref CORE_SetNvicRamTableHandler()@n
+    180          ///  Use these functions to get or set the interrupt handler for a specific IRQn.
+    181          ///  They both use the interrupt vector table defined by the current
+    182          ///  VTOR register value.
+    183          ///
+    184          ///@n @section core_max_timing Maximum Interrupt Disabled Time
+    185          ///
+    186          ///  The maximum time spent (in cycles) in critical and atomic sections can be
+    187          ///  measured for performance and interrupt latency analysis.
+    188          ///  To enable the timings, use the SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING
+    189          ///  configuration option. When enabled, the functions
+    190          ///  @n @ref CORE_get_max_time_critical_section()
+    191          ///  @n @ref CORE_get_max_time_atomic_section() @n
+    192          ///  can be used to get the max timings since startup.
+    193          ///
+    194          ///@n @section core_examples Examples
+    195          ///
+    196          ///  Implement an NVIC critical section:
+    197          ///  @code{.c}
+    198          ///  {
+    199          ///    CORE_DECLARE_NVIC_ZEROMASK(mask); // A zero initialized NVIC disable mask
+    200          ///
+    201          ///    // Set mask bits for IRQs to block in the NVIC critical section.
+    202          ///    // In many cases, you can create the disable mask once upon application
+    203          ///    // startup and use the mask globally throughout the application lifetime.
+    204          ///    CORE_NvicMaskSetIRQ(LEUART0_IRQn, &mask);
+    205          ///    CORE_NvicMaskSetIRQ(VCMP_IRQn,    &mask);
+    206          ///
+    207          ///    // Enter NVIC critical section with the disable mask
+    208          ///    CORE_NVIC_SECTION(&mask,
+    209          ///      ...
+    210          ///      ... your code goes here ...
+    211          ///      ...
+    212          ///    )
+    213          ///  }
+    214          ///  @endcode
+    215          ///
+    216          ///@n @section core_porting Porting from em_int
+    217          ///
+    218          ///  Existing code using INT_Enable() and INT_Disable() must be ported to the
+    219          ///  em_core API. While em_int used, a global counter to store the interrupt state,
+    220          ///  em_core uses a local variable. Any usage of INT_Disable(), therefore, needs to
+    221          ///  be replaced with a declaration of the interrupt state variable before entering
+    222          ///  the critical section.
+    223          ///
+    224          ///  Since the state variable is in local scope, the critical section exit
+    225          ///  needs to occur within the scope of the variable. If multiple nested critical
+    226          ///  sections are used, each needs to have its own state variable in its own scope.
+    227          ///
+    228          ///  In many cases, completely disabling all interrupts using CRITICAL sections
+    229          ///  might be more heavy-handed than needed. When porting, consider whether other
+    230          ///  types of sections, such as ATOMIC or NVIC mask, can be used to only disable
+    231          ///  a subset of the interrupts.
+    232          ///
+    233          ///  Replacing em_int calls with em_core function calls:
+    234          ///  @code{.c}
+    235          ///  void func(void)
+    236          ///  {
+    237          ///    // INT_Disable();
+    238          ///    CORE_DECLARE_IRQ_STATE;
+    239          ///    CORE_ENTER_ATOMIC();
+    240          ///      .
+    241          ///      .
+    242          ///      .
+    243          ///    // INT_Enable();
+    244          ///    CORE_EXIT_ATOMIC();
+    245          ///  }
+    246          ///  @endcode
+    247          /// @{
+    248          // *****************************************************************************
+    249          /* *INDENT-ON* */
+    250          
+    251          /*******************************************************************************
+    252           *******************************   DEFINES   ***********************************
+    253           ******************************************************************************/
+    254          
+    255          #if !defined(CORE_INTERRUPT_ENTRY)
+    256          // Some RTOSes must be notified on interrupt entry (and exit).
+    257          // Use this macro at the start of all your interrupt handlers.
+    258          // Reimplement the macro in emlib_config.h to suit the needs of your RTOS.
+    259          /** Placeholder for optional interrupt handler entry code. This might be needed
+    260           *  when working with an RTOS. */
+    261          #define CORE_INTERRUPT_ENTRY()
+    262          #endif
+    263          
+    264          #if !defined(CORE_INTERRUPT_EXIT)
+    265          /** Placeholder for optional interrupt handler exit code. This might be needed
+    266           *  when working with an RTOS. */
+    267          #define CORE_INTERRUPT_EXIT()
+    268          #endif
+    269          
+    270          // Compile time sanity check.
+    271          #if (CORE_ATOMIC_METHOD != CORE_ATOMIC_METHOD_PRIMASK) \
+    272            && (CORE_ATOMIC_METHOD != CORE_ATOMIC_METHOD_BASEPRI)
+    273          #error "em_core: Undefined ATOMIC IRQ handling strategy."
+    274          #endif
+    275          
+    276          /*******************************************************************************
+    277           **************************   STRUCTS   ****************************************
+    278           ******************************************************************************/
+    279          /** A Cycle Counter Instance. */
+    280          typedef struct {
+    281            uint32_t start;    /*!< Cycle counter at start of recording. */
+    282            uint32_t cycles;   /*!< Cycles elapsed in last recording. */
+    283            uint32_t max;      /*!< Max recorded cycles since last reset or init. */
+    284          } dwt_cycle_counter_handle_t;
+    285          
+    286          /*******************************************************************************
+    287           ***************************   LOCAL VARIABLES   *******************************
+    288           ******************************************************************************/
+    289          
+    290          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+    291          
+    292          #if (SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1)
+    293          // cycle counter to record atomic sections
+    294          dwt_cycle_counter_handle_t atomic_cycle_counter   = { 0 };
+    295          // cycle counter to record critical sections
+    296          dwt_cycle_counter_handle_t critical_cycle_counter = { 0 };
+    297          #endif
+    298          
+    299          /** @endcond */
+    300          
+    301          /*******************************************************************************
+    302           ***************************   LOCAL FUNCTIONS   *******************************
+    303           ******************************************************************************/
+    304          
+    305          #if (SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1)
+    306          static void cycle_counter_start(dwt_cycle_counter_handle_t *handle);
+    307          static void cycle_counter_stop(dwt_cycle_counter_handle_t *handle);
+    308          #endif
+    309          
+    310          /*******************************************************************************
+    311           **************************   GLOBAL FUNCTIONS   *******************************
+    312           ******************************************************************************/
+    313          
+    314          /***************************************************************************//**
+    315           * @brief
+    316           *   Disable interrupts.
+    317           *
+    318           *   Disable all interrupts by setting PRIMASK.
+    319           *   (Fault exception handlers will still be enabled).
+    320           ******************************************************************************/
+
+   \                                 In section .text, align 2
+    321          SL_WEAK void CORE_CriticalDisableIrq(void)
+    322          {
+    323            __disable_irq();
+   \                     CORE_CriticalDisableIrq: (+1)
+   \        0x0   0xB672             CPSID    I
+    324          }
+   \        0x2   0x4770             BX       LR
+    325          
+    326          /***************************************************************************//**
+    327           * @brief
+    328           *   Enable interrupts.
+    329           *
+    330           *   Enable interrupts by clearing PRIMASK.
+    331           ******************************************************************************/
+
+   \                                 In section .text, align 2
+    332          SL_WEAK void CORE_CriticalEnableIrq(void)
+    333          {
+    334            __enable_irq();
+   \                     CORE_CriticalEnableIrq: (+1)
+   \        0x0   0xB662             CPSIE    I
+    335          }
+   \        0x2   0x4770             BX       LR
+    336          
+    337          /***************************************************************************//**
+    338           * @brief
+    339           *   Enter a CRITICAL section.
+    340           *
+    341           *   When a CRITICAL section is entered, all interrupts (except fault handlers)
+    342           *   are disabled.
+    343           *
+    344           * @return
+    345           *   The value of PRIMASK register prior to the CRITICAL section entry.
+    346           ******************************************************************************/
+
+   \                                 In section .text, align 2
+    347          SL_WEAK CORE_irqState_t CORE_EnterCritical(void)
+    348          {
+    349            CORE_irqState_t irqState = __get_PRIMASK();
+   \                     CORE_EnterCritical: (+1)
+   \        0x0   0xF3EF 0x8010      MRS      R0,PRIMASK
+    350            __disable_irq();
+   \        0x4   0xB672             CPSID    I
+    351            if (irqState == 0U) {
+    352          #if (SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1)
+    353              cycle_counter_start(&critical_cycle_counter);
+    354          #endif
+    355            }
+    356            return irqState;
+   \        0x6   0x4770             BX       LR
+    357          }
+    358          
+    359          /***************************************************************************//**
+    360           * @brief
+    361           *   Exit a CRITICAL section.
+    362           *
+    363           * @param[in] irqState
+    364           *   The interrupt priority blocking level to restore to PRIMASK when exiting
+    365           *   the CRITICAL section. This value is usually the one returned by a prior
+    366           *   call to @ref CORE_EnterCritical().
+    367           ******************************************************************************/
+
+   \                                 In section .text, align 2
+    368          SL_WEAK void CORE_ExitCritical(CORE_irqState_t irqState)
+    369          {
+    370            if (irqState == 0U) {
+   \                     CORE_ExitCritical: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xD100             BNE.N    ??CORE_ExitCritical_0
+    371          #if (SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1)
+    372              cycle_counter_stop(&critical_cycle_counter);
+    373          #endif
+    374              __enable_irq();
+   \        0x4   0xB662             CPSIE    I
+    375            }
+    376          }
+   \                     ??CORE_ExitCritical_0: (+1)
+   \        0x6   0x4770             BX       LR
+    377          
+    378          /***************************************************************************//**
+    379           * @brief
+    380           *   Brief interrupt enable/disable sequence to allow handling of
+    381           *   pending interrupts.
+    382           *
+    383           * @note
+    384           *   Usually used within a CRITICAL section.
+    385           ******************************************************************************/
+
+   \                                 In section .text, align 2
+    386          SL_WEAK void CORE_YieldCritical(void)
+    387          {
+    388            if ((__get_PRIMASK() & 1U) != 0U) {
+   \                     CORE_YieldCritical: (+1)
+   \        0x0   0xF3EF 0x8010      MRS      R0,PRIMASK
+   \        0x4   0x07C0             LSLS     R0,R0,#+31
+   \        0x6   0xD503             BPL.N    ??CORE_YieldCritical_0
+    389              __enable_irq();
+   \        0x8   0xB662             CPSIE    I
+    390              __ISB();
+   \        0xA   0xF3BF 0x8F6F      ISB      SY
+    391              __disable_irq();
+   \        0xE   0xB672             CPSID    I
+    392            }
+    393          }
+   \                     ??CORE_YieldCritical_0: (+1)
+   \       0x10   0x4770             BX       LR
+    394          
+    395          /***************************************************************************//**
+    396           * @brief
+    397           *   Disable interrupts.
+    398           *
+    399           *   Disable interrupts with a priority lower or equal to
+    400           *   @ref CORE_ATOMIC_BASE_PRIORITY_LEVEL. Sets core BASEPRI register
+    401           *   to CORE_ATOMIC_BASE_PRIORITY_LEVEL.
+    402           *
+    403           * @note
+    404           *   If @ref CORE_ATOMIC_METHOD is @ref CORE_ATOMIC_METHOD_PRIMASK, this
+    405           *   function is identical to @ref CORE_CriticalDisableIrq().
+    406           ******************************************************************************/
+
+   \                                 In section .text, align 2
+    407          SL_WEAK void CORE_AtomicDisableIrq(void)
+    408          {
+    409          #if (CORE_ATOMIC_METHOD == CORE_ATOMIC_METHOD_BASEPRI)
+    410            __set_BASEPRI(CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8UL - __NVIC_PRIO_BITS));
+   \                     CORE_AtomicDisableIrq: (+1)
+   \        0x0   0x2030             MOVS     R0,#+48
+   \        0x2   0xF380 0x8811      MSR      BASEPRI,R0
+    411          #else
+    412            __disable_irq();
+    413          #endif // (CORE_ATOMIC_METHOD == CORE_ATOMIC_METHOD_BASEPRI)
+    414          }
+   \        0x6   0x4770             BX       LR
+    415          
+    416          /***************************************************************************//**
+    417           * @brief
+    418           *   Enable interrupts.
+    419           *
+    420           *   Enable interrupts by setting core BASEPRI register to 0.
+    421           *
+    422           * @note
+    423           *   If @ref CORE_ATOMIC_METHOD is @ref CORE_ATOMIC_METHOD_BASEPRI and PRIMASK
+    424           *   is set (CPU is inside a CRITICAL section), interrupts will still be
+    425           *   disabled after calling this function.
+    426           *
+    427           * @note
+    428           *   If @ref CORE_ATOMIC_METHOD is @ref CORE_ATOMIC_METHOD_PRIMASK, this
+    429           *   function is identical to @ref CORE_CriticalEnableIrq().
+    430           ******************************************************************************/
+
+   \                                 In section .text, align 2
+    431          SL_WEAK void CORE_AtomicEnableIrq(void)
+    432          {
+    433          #if (CORE_ATOMIC_METHOD == CORE_ATOMIC_METHOD_BASEPRI)
+    434            __set_BASEPRI(0);
+   \                     CORE_AtomicEnableIrq: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0xF380 0x8811      MSR      BASEPRI,R0
+    435          #else
+    436            __enable_irq();
+    437          #endif // (CORE_ATOMIC_METHOD == CORE_ATOMIC_METHOD_BASEPRI)
+    438          }
+   \        0x6   0x4770             BX       LR
+    439          
+    440          /***************************************************************************//**
+    441           * @brief
+    442           *   Enter an ATOMIC section.
+    443           *
+    444           *   When an ATOMIC section is entered, interrupts with priority lower or equal
+    445           *   to @ref CORE_ATOMIC_BASE_PRIORITY_LEVEL are disabled.
+    446           *
+    447           * @note
+    448           *   If @ref CORE_ATOMIC_METHOD is @ref CORE_ATOMIC_METHOD_PRIMASK, this
+    449           *   function is identical to @ref CORE_EnterCritical().
+    450           *
+    451           * @return
+    452           *   The value of BASEPRI register prior to ATOMIC section entry.
+    453           ******************************************************************************/
+
+   \                                 In section .text, align 2
+    454          SL_WEAK CORE_irqState_t CORE_EnterAtomic(void)
+    455          {
+    456          #if (CORE_ATOMIC_METHOD == CORE_ATOMIC_METHOD_BASEPRI)
+    457            CORE_irqState_t irqState = __get_BASEPRI();
+   \                     CORE_EnterAtomic: (+1)
+   \        0x0   0xF3EF 0x8011      MRS      R0,BASEPRI
+    458            __set_BASEPRI(CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8U - __NVIC_PRIO_BITS));
+   \        0x4   0x2130             MOVS     R1,#+48
+   \        0x6   0xF381 0x8811      MSR      BASEPRI,R1
+    459            if ((irqState & (CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8U - __NVIC_PRIO_BITS)))
+    460                != (CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8U - __NVIC_PRIO_BITS))) {
+    461          #if (SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1)
+    462              cycle_counter_start(&atomic_cycle_counter);
+    463          #endif
+    464            }
+    465            return irqState;
+   \        0xA   0x4770             BX       LR
+    466          #else
+    467            CORE_irqState_t irqState = __get_PRIMASK();
+    468            __disable_irq();
+    469            if (irqState == 0U) {
+    470          #if (SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1)
+    471              cycle_counter_start(&atomic_cycle_counter);
+    472          #endif
+    473            }
+    474            return irqState;
+    475          #endif // (CORE_ATOMIC_METHOD == CORE_ATOMIC_METHOD_BASEPRI)
+    476          }
+    477          
+    478          /***************************************************************************//**
+    479           * @brief
+    480           *   Exit an ATOMIC section.
+    481           *
+    482           * @param[in] irqState
+    483           *   The interrupt priority blocking level to restore to BASEPRI when exiting
+    484           *   the ATOMIC section. This value is usually the one returned by a prior
+    485           *   call to @ref CORE_EnterAtomic().
+    486           *
+    487           * @note
+    488           *   If @ref CORE_ATOMIC_METHOD is set to @ref CORE_ATOMIC_METHOD_PRIMASK, this
+    489           *   function is identical to @ref CORE_ExitCritical().
+    490           ******************************************************************************/
+
+   \                                 In section .text, align 2
+    491          SL_WEAK void CORE_ExitAtomic(CORE_irqState_t irqState)
+    492          {
+    493          #if (CORE_ATOMIC_METHOD == CORE_ATOMIC_METHOD_BASEPRI)
+    494            if ((irqState & (CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8U - __NVIC_PRIO_BITS)))
+    495                != (CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8U - __NVIC_PRIO_BITS))) {
+    496          #if (SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1)
+    497              cycle_counter_stop(&atomic_cycle_counter);
+    498          #endif
+    499            }
+    500            __set_BASEPRI(irqState);
+   \                     CORE_ExitAtomic: (+1)
+   \        0x0   0xF380 0x8811      MSR      BASEPRI,R0
+    501          #else
+    502            if (irqState == 0U) {
+    503          #if (SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1)
+    504              cycle_counter_stop(&atomic_cycle_counter);
+    505          #endif
+    506              __enable_irq();
+    507            }
+    508          #endif // (CORE_ATOMIC_METHOD == CORE_ATOMIC_METHOD_BASEPRI)
+    509          }
+   \        0x4   0x4770             BX       LR
+    510          
+    511          /***************************************************************************//**
+    512           * @brief
+    513           *   Brief interrupt enable/disable sequence to allow handling of
+    514           *   pending interrupts.
+    515           *
+    516           * @note
+    517           *   Usully used within an ATOMIC section.
+    518           *
+    519           * @note
+    520           *   If @ref CORE_ATOMIC_METHOD is @ref CORE_ATOMIC_METHOD_PRIMASK, this
+    521           *   function is identical to @ref CORE_YieldCritical().
+    522           ******************************************************************************/
+
+   \                                 In section .text, align 2
+    523          SL_WEAK void CORE_YieldAtomic(void)
+    524          {
+    525          #if (CORE_ATOMIC_METHOD == CORE_ATOMIC_METHOD_BASEPRI)
+    526            CORE_irqState_t basepri = __get_BASEPRI();
+   \                     CORE_YieldAtomic: (+1)
+   \        0x0   0xF3EF 0x8111      MRS      R1,BASEPRI
+    527            if (basepri >= (CORE_ATOMIC_BASE_PRIORITY_LEVEL << (8U - __NVIC_PRIO_BITS))) {
+   \        0x4   0x2930             CMP      R1,#+48
+   \        0x6   0xD306             BCC.N    ??CORE_YieldAtomic_0
+    528              __set_BASEPRI(0);
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0xF380 0x8811      MSR      BASEPRI,R0
+    529              __ISB();
+   \        0xE   0xF3BF 0x8F6F      ISB      SY
+    530              __set_BASEPRI(basepri);
+   \       0x12   0xF381 0x8811      MSR      BASEPRI,R1
+    531            }
+    532          #else
+    533            if ((__get_PRIMASK() & 1U) != 0U) {
+    534              __enable_irq();
+    535              __ISB();
+    536              __disable_irq();
+    537            }
+    538          #endif // (CORE_ATOMIC_METHOD == CORE_ATOMIC_METHOD_BASEPRI)
+    539          }
+   \                     ??CORE_YieldAtomic_0: (+1)
+   \       0x16   0x4770             BX       LR
+    540          
+    541          /***************************************************************************//**
+    542           * @brief
+    543           *   Enter a NVIC mask section.
+    544           *
+    545           *   When a NVIC mask section is entered, specified NVIC interrupts
+    546           *   are disabled.
+    547           *
+    548           * @param[out] nvicState
+    549           *   Return NVIC interrupts enable mask prior to section entry.
+    550           *
+    551           * @param[in] disable
+    552           *   A mask specifying which NVIC interrupts to disable within the section.
+    553           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    554          void CORE_EnterNvicMask(CORE_nvicMask_t *nvicState,
+    555                                  const CORE_nvicMask_t *disable)
+    556          {
+   \                     CORE_EnterNvicMask: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    557            CORE_CRITICAL_SECTION(
+    558              *nvicState = *(CORE_nvicMask_t*)((uint32_t)&NVIC->ICER[0]);
+    559              *(CORE_nvicMask_t*)((uint32_t)&NVIC->ICER[0]) = *disable;
+    560              )
+   \        0x6   0x.... 0x....      BL       CORE_EnterCritical
+   \        0xA   0x0006             MOVS     R6,R0
+   \        0xC   0x....             LDR.N    R2,??DataTable10_2
+   \        0xE   0xE892 0x000B      LDM      R2,{R0,R1,R3}
+   \       0x12   0xE884 0x000B      STM      R4,{R0,R1,R3}
+   \       0x16   0xE895 0x000B      LDM      R5,{R0,R1,R3}
+   \       0x1A   0xE882 0x000B      STM      R2,{R0,R1,R3}
+   \       0x1E   0x0030             MOVS     R0,R6
+   \       0x20   0x.... 0x....      BL       CORE_ExitCritical
+    561          }
+   \       0x24   0xBD70             POP      {R4-R6,PC}
+    562          
+    563          /***************************************************************************//**
+    564           * @brief
+    565           *   Disable NVIC interrupts.
+    566           *
+    567           * @param[in] disable
+    568           *   A mask specifying which NVIC interrupts to disable.
+    569           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    570          void CORE_NvicDisableMask(const CORE_nvicMask_t *disable)
+    571          {
+   \                     CORE_NvicDisableMask: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    572            CORE_CRITICAL_SECTION(
+    573              *(CORE_nvicMask_t*)((uint32_t)&NVIC->ICER[0]) = *disable;
+    574              )
+   \        0x4   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x8   0x0005             MOVS     R5,R0
+   \        0xA   0x....             LDR.N    R3,??DataTable10_2
+   \        0xC   0xE894 0x0007      LDM      R4,{R0-R2}
+   \       0x10   0xE883 0x0007      STM      R3,{R0-R2}
+   \       0x14   0x0028             MOVS     R0,R5
+   \       0x16   0x.... 0x....      BL       CORE_ExitCritical
+    575          }
+   \       0x1A   0xBD31             POP      {R0,R4,R5,PC}
+    576          
+    577          /***************************************************************************//**
+    578           * @brief
+    579           *   Set current NVIC interrupt enable mask.
+    580           *
+    581           * @param[out] enable
+    582           *   A mask specifying which NVIC interrupts are currently enabled.
+    583           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    584          void CORE_NvicEnableMask(const CORE_nvicMask_t *enable)
+    585          {
+   \                     CORE_NvicEnableMask: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    586            CORE_CRITICAL_SECTION(
+    587              *(CORE_nvicMask_t*)((uint32_t)&NVIC->ISER[0]) = *enable;
+    588              )
+   \        0x4   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x8   0x0005             MOVS     R5,R0
+   \        0xA   0x....             LDR.N    R3,??DataTable10_3
+   \        0xC   0xE894 0x0007      LDM      R4,{R0-R2}
+   \       0x10   0xE883 0x0007      STM      R3,{R0-R2}
+   \       0x14   0x0028             MOVS     R0,R5
+   \       0x16   0x.... 0x....      BL       CORE_ExitCritical
+    589          }
+   \       0x1A   0xBD31             POP      {R0,R4,R5,PC}
+    590          
+    591          /***************************************************************************//**
+    592           * @brief
+    593           *   Brief NVIC interrupt enable/disable sequence to allow handling of
+    594           *   pending interrupts.
+    595           *
+    596           * @param[in] enable
+    597           *   A mask specifying which NVIC interrupts to briefly enable.
+    598           *
+    599           * @note
+    600           *   Usually used within an NVIC mask section.
+    601           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    602          void CORE_YieldNvicMask(const CORE_nvicMask_t *enable)
+    603          {
+   \                     CORE_YieldNvicMask: (+1)
+   \        0x0   0xB57F             PUSH     {R0-R6,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+    604            CORE_nvicMask_t nvicMask;
+    605          
+    606            // Get current NVIC enable mask.
+    607            CORE_CRITICAL_SECTION(
+    608              nvicMask = *(CORE_nvicMask_t*)((uint32_t)&NVIC->ISER[0]);
+    609              )
+   \        0x4   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x8   0x0006             MOVS     R6,R0
+   \        0xA   0x....             LDR.N    R4,??DataTable10_3
+   \        0xC   0x466B             MOV      R3,SP
+   \        0xE   0xE894 0x0007      LDM      R4,{R0-R2}
+   \       0x12   0xE883 0x0007      STM      R3,{R0-R2}
+   \       0x16   0x0030             MOVS     R0,R6
+   \       0x18   0x.... 0x....      BL       CORE_ExitCritical
+    610          
+    611            // Make a mask with bits set for those interrupts that are currently
+    612            // disabled but are set in the enable mask.
+    613          #if (CORE_NVIC_REG_WORDS == 1)
+    614            nvicMask.a[0] &= enable->a[0];
+    615            nvicMask.a[0] = ~nvicMask.a[0] & enable->a[0];
+    616          
+    617            if (nvicMask.a[0] != 0) {
+    618          #elif (CORE_NVIC_REG_WORDS == 2)
+    619            nvicMask.a[0] &= enable->a[0];
+    620            nvicMask.a[1] &= enable->a[1];
+    621            nvicMask.a[0] = ~nvicMask.a[0] & enable->a[0];
+    622            nvicMask.a[1] = ~nvicMask.a[1] & enable->a[1];
+    623          
+    624            if ((nvicMask.a[0] != 0U) || (nvicMask.a[1] != 0U)) {
+    625          #elif (CORE_NVIC_REG_WORDS == 3)
+    626            nvicMask.a[0] &= enable->a[0];
+   \       0x1C   0x9900             LDR      R1,[SP, #+0]
+   \       0x1E   0x6828             LDR      R0,[R5, #+0]
+   \       0x20   0x4001             ANDS     R1,R0,R1
+   \       0x22   0x9100             STR      R1,[SP, #+0]
+    627            nvicMask.a[1] &= enable->a[1];
+   \       0x24   0x9901             LDR      R1,[SP, #+4]
+   \       0x26   0x6868             LDR      R0,[R5, #+4]
+   \       0x28   0x4001             ANDS     R1,R0,R1
+   \       0x2A   0x9101             STR      R1,[SP, #+4]
+    628            nvicMask.a[2] &= enable->a[2];
+   \       0x2C   0x9902             LDR      R1,[SP, #+8]
+   \       0x2E   0x68A8             LDR      R0,[R5, #+8]
+   \       0x30   0x4001             ANDS     R1,R0,R1
+   \       0x32   0x9102             STR      R1,[SP, #+8]
+    629            nvicMask.a[0] = ~nvicMask.a[0] & enable->a[0];
+   \       0x34   0x9900             LDR      R1,[SP, #+0]
+   \       0x36   0x6828             LDR      R0,[R5, #+0]
+   \       0x38   0xEA30 0x0101      BICS     R1,R0,R1
+   \       0x3C   0x9100             STR      R1,[SP, #+0]
+    630            nvicMask.a[1] = ~nvicMask.a[1] & enable->a[1];
+   \       0x3E   0x9901             LDR      R1,[SP, #+4]
+   \       0x40   0x6868             LDR      R0,[R5, #+4]
+   \       0x42   0xEA30 0x0101      BICS     R1,R0,R1
+   \       0x46   0x9101             STR      R1,[SP, #+4]
+    631            nvicMask.a[2] = ~nvicMask.a[2] & enable->a[2];
+   \       0x48   0x9902             LDR      R1,[SP, #+8]
+   \       0x4A   0x68A8             LDR      R0,[R5, #+8]
+   \       0x4C   0xEA30 0x0101      BICS     R1,R0,R1
+   \       0x50   0x9102             STR      R1,[SP, #+8]
+    632          
+    633            if ((nvicMask.a[0] != 0U) || (nvicMask.a[1] != 0U) || (nvicMask.a[2] != 0U)) {
+   \       0x52   0x9800             LDR      R0,[SP, #+0]
+   \       0x54   0x2800             CMP      R0,#+0
+   \       0x56   0xD105             BNE.N    ??CORE_YieldNvicMask_0
+   \       0x58   0x9801             LDR      R0,[SP, #+4]
+   \       0x5A   0x2800             CMP      R0,#+0
+   \       0x5C   0xD102             BNE.N    ??CORE_YieldNvicMask_0
+   \       0x5E   0x9802             LDR      R0,[SP, #+8]
+   \       0x60   0x2800             CMP      R0,#+0
+   \       0x62   0xD00A             BEQ.N    ??CORE_YieldNvicMask_1
+    634          #endif
+    635          
+    636              // Enable previously disabled interrupts.
+    637              *(CORE_nvicMask_t*)((uint32_t)&NVIC->ISER[0]) = nvicMask;
+   \                     ??CORE_YieldNvicMask_0: (+1)
+   \       0x64   0x4668             MOV      R0,SP
+   \       0x66   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x6A   0xE884 0x000E      STM      R4,{R1-R3}
+    638          
+    639              // Disable those interrupts again.
+    640              *(CORE_nvicMask_t*)((uint32_t)&NVIC->ICER[0]) = nvicMask;
+   \       0x6E   0x....             LDR.N    R3,??DataTable10_2
+   \       0x70   0x4668             MOV      R0,SP
+   \       0x72   0xE890 0x0016      LDM      R0,{R1,R2,R4}
+   \       0x76   0xE883 0x0016      STM      R3,{R1,R2,R4}
+    641            }
+    642          }
+   \                     ??CORE_YieldNvicMask_1: (+1)
+   \       0x7A   0xBD7F             POP      {R0-R6,PC}
+    643          
+    644          /***************************************************************************//**
+    645           * @brief
+    646           *   Utility function to set an IRQn bit in a NVIC enable/disable mask.
+    647           *
+    648           * @param[in] irqN
+    649           *   The IRQn_Type enumerator for the interrupt.
+    650           *
+    651           * @param[in,out] mask
+    652           *   The mask to set the interrupt bit in.
+    653           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    654          void CORE_NvicMaskSetIRQ(IRQn_Type irqN, CORE_nvicMask_t *mask)
+    655          {
+   \                     CORE_NvicMaskSetIRQ: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+    656            EFM_ASSERT(((int)irqN >= 0) && ((int)irqN < EXT_IRQ_COUNT));
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0xB252             SXTB     R2,R2
+   \        0x6   0x2A00             CMP      R2,#+0
+   \        0x8   0xD405             BMI.N    ??CORE_NvicMaskSetIRQ_0
+   \        0xA   0x0002             MOVS     R2,R0
+   \        0xC   0xB252             SXTB     R2,R2
+   \        0xE   0x2A4C             CMP      R2,#+76
+   \       0x10   0xDA01             BGE.N    ??CORE_NvicMaskSetIRQ_0
+   \       0x12   0x2201             MOVS     R2,#+1
+   \       0x14   0xE000             B.N      ??CORE_NvicMaskSetIRQ_1
+   \                     ??CORE_NvicMaskSetIRQ_0: (+1)
+   \       0x16   0x2200             MOVS     R2,#+0
+   \                     ??CORE_NvicMaskSetIRQ_1: (+1)
+   \       0x18   0xB2D2             UXTB     R2,R2
+    657            mask->a[(unsigned)irqN >> 5] |= 1UL << ((unsigned)irqN & 0x1FUL);
+   \       0x1A   0x0002             MOVS     R2,R0
+   \       0x1C   0xB252             SXTB     R2,R2
+   \       0x1E   0x0952             LSRS     R2,R2,#+5
+   \       0x20   0xF851 0x3022      LDR      R3,[R1, R2, LSL #+2]
+   \       0x24   0x2401             MOVS     R4,#+1
+   \       0x26   0xF010 0x021F      ANDS     R2,R0,#0x1F
+   \       0x2A   0x4094             LSLS     R4,R4,R2
+   \       0x2C   0x4323             ORRS     R3,R4,R3
+   \       0x2E   0x0002             MOVS     R2,R0
+   \       0x30   0xB252             SXTB     R2,R2
+   \       0x32   0x0952             LSRS     R2,R2,#+5
+   \       0x34   0xF841 0x3022      STR      R3,[R1, R2, LSL #+2]
+    658          }
+   \       0x38   0xBC10             POP      {R4}
+   \       0x3A   0x4770             BX       LR
+    659          
+    660          /***************************************************************************//**
+    661           * @brief
+    662           *   Utility function to clear an IRQn bit in a NVIC enable/disable mask.
+    663           *
+    664           * @param[in] irqN
+    665           *   The IRQn_Type enumerator for the interrupt.
+    666           *
+    667           * @param[in,out] mask
+    668           *   The mask to clear the interrupt bit in.
+    669           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    670          void CORE_NvicMaskClearIRQ(IRQn_Type irqN, CORE_nvicMask_t *mask)
+    671          {
+   \                     CORE_NvicMaskClearIRQ: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+    672            EFM_ASSERT(((int)irqN >= 0) && ((int)irqN < EXT_IRQ_COUNT));
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0xB252             SXTB     R2,R2
+   \        0x6   0x2A00             CMP      R2,#+0
+   \        0x8   0xD405             BMI.N    ??CORE_NvicMaskClearIRQ_0
+   \        0xA   0x0002             MOVS     R2,R0
+   \        0xC   0xB252             SXTB     R2,R2
+   \        0xE   0x2A4C             CMP      R2,#+76
+   \       0x10   0xDA01             BGE.N    ??CORE_NvicMaskClearIRQ_0
+   \       0x12   0x2201             MOVS     R2,#+1
+   \       0x14   0xE000             B.N      ??CORE_NvicMaskClearIRQ_1
+   \                     ??CORE_NvicMaskClearIRQ_0: (+1)
+   \       0x16   0x2200             MOVS     R2,#+0
+   \                     ??CORE_NvicMaskClearIRQ_1: (+1)
+   \       0x18   0xB2D2             UXTB     R2,R2
+    673            mask->a[(unsigned)irqN >> 5] &= ~(1UL << ((unsigned)irqN & 0x1FUL));
+   \       0x1A   0x0002             MOVS     R2,R0
+   \       0x1C   0xB252             SXTB     R2,R2
+   \       0x1E   0x0952             LSRS     R2,R2,#+5
+   \       0x20   0xF851 0x3022      LDR      R3,[R1, R2, LSL #+2]
+   \       0x24   0x2401             MOVS     R4,#+1
+   \       0x26   0xF010 0x021F      ANDS     R2,R0,#0x1F
+   \       0x2A   0x4094             LSLS     R4,R4,R2
+   \       0x2C   0x43A3             BICS     R3,R3,R4
+   \       0x2E   0x0002             MOVS     R2,R0
+   \       0x30   0xB252             SXTB     R2,R2
+   \       0x32   0x0952             LSRS     R2,R2,#+5
+   \       0x34   0xF841 0x3022      STR      R3,[R1, R2, LSL #+2]
+    674          }
+   \       0x38   0xBC10             POP      {R4}
+   \       0x3A   0x4770             BX       LR
+    675          
+    676          /***************************************************************************//**
+    677           * @brief
+    678           *   Check whether the current CPU operation mode is handler mode.
+    679           *
+    680           * @return
+    681           *   True if the CPU is in handler mode (currently executing an interrupt handler).
+    682           *   @n False if the CPU is in thread mode.
+    683           ******************************************************************************/
+
+   \                                 In section .text, align 4
+    684          SL_WEAK bool CORE_InIrqContext(void)
+    685          {
+    686            return (SCB->ICSR & SCB_ICSR_VECTACTIVE_Msk) != 0U;
+   \                     CORE_InIrqContext: (+1)
+   \        0x0   0x4804             LDR.N    R0,??CORE_InIrqContext_0
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x05C0             LSLS     R0,R0,#+23
+   \        0x6   0xD001             BEQ.N    ??CORE_InIrqContext_1
+   \        0x8   0x2001             MOVS     R0,#+1
+   \        0xA   0xE000             B.N      ??CORE_InIrqContext_2
+   \                     ??CORE_InIrqContext_1: (+1)
+   \        0xC   0x2000             MOVS     R0,#+0
+   \                     ??CORE_InIrqContext_2: (+1)
+   \        0xE   0xB2C0             UXTB     R0,R0
+   \       0x10   0x4770             BX       LR
+   \       0x12   0xBF00             Nop
+   \                     ??CORE_InIrqContext_0:
+   \       0x14   0xE000'ED04        DC32     0xe000ed04
+    687          }
+    688          
+    689          /***************************************************************************//**
+    690           * @brief
+    691           *   Check if a specific interrupt is disabled or blocked.
+    692           *
+    693           * @param[in] irqN
+    694           *   The IRQn_Type enumerator for the interrupt to check.
+    695           *
+    696           * @return
+    697           *   True if the interrupt is disabled or blocked.
+    698           ******************************************************************************/
+
+   \                                 In section .text, align 4
+    699          SL_WEAK bool CORE_IrqIsBlocked(IRQn_Type irqN)
+    700          {
+   \                     CORE_IrqIsBlocked: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+    701            uint32_t irqPri, activeIrq;
+    702          
+    703          #if (__CORTEX_M >= 3)
+    704            uint32_t basepri;
+    705          
+    706            EFM_ASSERT((irqN >= MemoryManagement_IRQn)
+    707                       && (irqN < (IRQn_Type)EXT_IRQ_COUNT));
+   \        0x4   0x0030             MOVS     R0,R6
+   \        0x6   0xB240             SXTB     R0,R0
+   \        0x8   0xF110 0x0F0C      CMN      R0,#+12
+   \        0xC   0xDB05             BLT.N    ??CORE_IrqIsBlocked_1
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0xB240             SXTB     R0,R0
+   \       0x12   0x284C             CMP      R0,#+76
+   \       0x14   0xDA01             BGE.N    ??CORE_IrqIsBlocked_1
+   \       0x16   0x2001             MOVS     R0,#+1
+   \       0x18   0xE000             B.N      ??CORE_IrqIsBlocked_2
+   \                     ??CORE_IrqIsBlocked_1: (+1)
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \                     ??CORE_IrqIsBlocked_2: (+1)
+   \       0x1C   0xB2C0             UXTB     R0,R0
+    708          #else
+    709            EFM_ASSERT((irqN >= SVCall_IRQn) && ((IRQn_Type)irqN < EXT_IRQ_COUNT));
+    710          #endif
+    711          
+    712            if ((__get_PRIMASK() & 1U) != 0U) {
+   \       0x1E   0xF3EF 0x8010      MRS      R0,PRIMASK
+   \       0x22   0x07C0             LSLS     R0,R0,#+31
+   \       0x24   0xD501             BPL.N    ??CORE_IrqIsBlocked_3
+    713              return true;                            // All IRQs are disabled.
+   \       0x26   0x2001             MOVS     R0,#+1
+   \       0x28   0xE025             B.N      ??CORE_IrqIsBlocked_4
+    714            }
+    715          
+    716            if (CORE_NvicIRQDisabled(irqN)) {
+   \                     ??CORE_IrqIsBlocked_3: (+1)
+   \       0x2A   0x0030             MOVS     R0,R6
+   \       0x2C   0xB240             SXTB     R0,R0
+   \       0x2E   0x.... 0x....      BL       CORE_NvicIRQDisabled
+   \       0x32   0x2800             CMP      R0,#+0
+   \       0x34   0xD001             BEQ.N    ??CORE_IrqIsBlocked_5
+    717              return true;                            // The IRQ in question is disabled.
+   \       0x36   0x2001             MOVS     R0,#+1
+   \       0x38   0xE01D             B.N      ??CORE_IrqIsBlocked_4
+    718            }
+    719          
+    720            irqPri  = NVIC_GetPriority(irqN);
+   \                     ??CORE_IrqIsBlocked_5: (+1)
+   \       0x3A   0x0030             MOVS     R0,R6
+   \       0x3C   0xB240             SXTB     R0,R0
+   \       0x3E   0x.... 0x....      BL       __NVIC_GetPriority
+   \       0x42   0x0007             MOVS     R7,R0
+    721          #if (__CORTEX_M >= 3)
+    722            basepri = __get_BASEPRI();
+   \       0x44   0xF3EF 0x8411      MRS      R4,BASEPRI
+    723            if ((basepri != 0U)
+    724                && (irqPri >= (basepri >> (8U - __NVIC_PRIO_BITS)))) {
+   \       0x48   0x2C00             CMP      R4,#+0
+   \       0x4A   0xD004             BEQ.N    ??CORE_IrqIsBlocked_6
+   \       0x4C   0xEBB7 0x1F14      CMP      R7,R4, LSR #+4
+   \       0x50   0xD301             BCC.N    ??CORE_IrqIsBlocked_6
+    725              return true;                            // The IRQ in question has too low
+   \       0x52   0x2001             MOVS     R0,#+1
+   \       0x54   0xE00F             B.N      ??CORE_IrqIsBlocked_4
+    726            }                                         // priority vs. BASEPRI.
+    727          #endif
+    728          
+    729            // Check if already in an interrupt handler. If so, an interrupt with a
+    730            // higher priority (lower priority value) can preempt.
+    731            activeIrq = (SCB->ICSR & SCB_ICSR_VECTACTIVE_Msk) >> SCB_ICSR_VECTACTIVE_Pos;
+   \                     ??CORE_IrqIsBlocked_6: (+1)
+   \       0x56   0x4808             LDR.N    R0,??CORE_IrqIsBlocked_0
+   \       0x58   0x6805             LDR      R5,[R0, #+0]
+   \       0x5A   0x05ED             LSLS     R5,R5,#+23
+   \       0x5C   0x0DED             LSRS     R5,R5,#+23
+    732            if (activeIrq != 0U) {
+   \       0x5E   0x2D00             CMP      R5,#+0
+   \       0x60   0xD008             BEQ.N    ??CORE_IrqIsBlocked_7
+    733              if (irqPri >= NVIC_GetPriority((IRQn_Type)(activeIrq - 16U))) {
+   \       0x62   0xF1B5 0x0010      SUBS     R0,R5,#+16
+   \       0x66   0xB240             SXTB     R0,R0
+   \       0x68   0x.... 0x....      BL       __NVIC_GetPriority
+   \       0x6C   0x4287             CMP      R7,R0
+   \       0x6E   0xD301             BCC.N    ??CORE_IrqIsBlocked_7
+    734                return true;                          // The IRQ in question has too low
+   \       0x70   0x2001             MOVS     R0,#+1
+   \       0x72   0xE000             B.N      ??CORE_IrqIsBlocked_4
+    735              }                                       // priority vs. current active IRQ
+    736            }
+    737          
+    738            return false;
+   \                     ??CORE_IrqIsBlocked_7: (+1)
+   \       0x74   0x2000             MOVS     R0,#+0
+   \                     ??CORE_IrqIsBlocked_4: (+1)
+   \       0x76   0xBDF2             POP      {R1,R4-R7,PC}
+   \                     ??CORE_IrqIsBlocked_0:
+   \       0x78   0xE000'ED04        DC32     0xe000ed04
+    739          }
+    740          
+    741          /***************************************************************************//**
+    742           * @brief
+    743           *   Check if interrupts are disabled.
+    744           *
+    745           * @return
+    746           *   True if interrupts are disabled.
+    747           ******************************************************************************/
+
+   \                                 In section .text, align 2
+    748          SL_WEAK bool CORE_IrqIsDisabled(void)
+    749          {
+    750          #if (CORE_ATOMIC_METHOD == CORE_ATOMIC_METHOD_PRIMASK)
+    751            return (__get_PRIMASK() & 1U) == 1U;
+    752          
+    753          #elif (CORE_ATOMIC_METHOD == CORE_ATOMIC_METHOD_BASEPRI)
+    754            return ((__get_PRIMASK() & 1U) == 1U)
+    755                   || (__get_BASEPRI() >= (CORE_ATOMIC_BASE_PRIORITY_LEVEL
+    756                                           << (8U - __NVIC_PRIO_BITS)));
+   \                     CORE_IrqIsDisabled: (+1)
+   \        0x0   0xF3EF 0x8010      MRS      R0,PRIMASK
+   \        0x4   0x07C0             LSLS     R0,R0,#+31
+   \        0x6   0xD403             BMI.N    ??CORE_IrqIsDisabled_0
+   \        0x8   0xF3EF 0x8011      MRS      R0,BASEPRI
+   \        0xC   0x2830             CMP      R0,#+48
+   \        0xE   0xD301             BCC.N    ??CORE_IrqIsDisabled_1
+   \                     ??CORE_IrqIsDisabled_0: (+1)
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0xE000             B.N      ??CORE_IrqIsDisabled_2
+   \                     ??CORE_IrqIsDisabled_1: (+1)
+   \       0x14   0x2000             MOVS     R0,#+0
+   \                     ??CORE_IrqIsDisabled_2: (+1)
+   \       0x16   0xB2C0             UXTB     R0,R0
+   \       0x18   0x4770             BX       LR
+    757          #endif
+    758          }
+    759          
+    760          /***************************************************************************//**
+    761           * @brief
+    762           *   Get the current NVIC enable mask state.
+    763           *
+    764           * @param[out] mask
+    765           *   The current NVIC enable mask.
+    766           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    767          void CORE_GetNvicEnabledMask(CORE_nvicMask_t *mask)
+    768          {
+   \                     CORE_GetNvicEnabledMask: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    769            CORE_CRITICAL_SECTION(
+    770              *mask = *(CORE_nvicMask_t*)((uint32_t)&NVIC->ISER[0]);
+    771              )
+   \        0x4   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x8   0x0005             MOVS     R5,R0
+   \        0xA   0x....             LDR.N    R3,??DataTable10_3
+   \        0xC   0xE893 0x0007      LDM      R3,{R0-R2}
+   \       0x10   0xE884 0x0007      STM      R4,{R0-R2}
+   \       0x14   0x0028             MOVS     R0,R5
+   \       0x16   0x.... 0x....      BL       CORE_ExitCritical
+    772          }
+   \       0x1A   0xBD31             POP      {R0,R4,R5,PC}
+    773          
+    774          /***************************************************************************//**
+    775           * @brief
+    776           *   Get NVIC disable state for a given mask.
+    777           *
+    778           * @param[in] mask
+    779           *   An NVIC mask to check.
+    780           *
+    781           * @return
+    782           *   True if all NVIC interrupt mask bits are clear.
+    783           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    784          bool CORE_GetNvicMaskDisableState(const CORE_nvicMask_t *mask)
+    785          {
+   \                     CORE_GetNvicMaskDisableState: (+1)
+   \        0x0   0xB57F             PUSH     {R0-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    786            CORE_nvicMask_t nvicMask;
+    787          
+    788            CORE_CRITICAL_SECTION(
+    789              nvicMask = *(CORE_nvicMask_t*)((uint32_t)&NVIC->ISER[0]);
+    790              )
+   \        0x4   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x8   0x0005             MOVS     R5,R0
+   \        0xA   0x466E             MOV      R6,SP
+   \        0xC   0x....             LDR.N    R0,??DataTable10_3
+   \        0xE   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x12   0xE886 0x000E      STM      R6,{R1-R3}
+   \       0x16   0x0028             MOVS     R0,R5
+   \       0x18   0x.... 0x....      BL       CORE_ExitCritical
+    791          
+    792          #if (CORE_NVIC_REG_WORDS == 1)
+    793            return (mask->a[0] & nvicMask.a[0]) == 0U;
+    794          
+    795          #elif (CORE_NVIC_REG_WORDS == 2)
+    796            return ((mask->a[0] & nvicMask.a[0]) == 0U)
+    797                   && ((mask->a[1] & nvicMask.a[1]) == 0U);
+    798          
+    799          #elif (CORE_NVIC_REG_WORDS == 3)
+    800            return ((mask->a[0] & nvicMask.a[0]) == 0U)
+    801                   && ((mask->a[1] & nvicMask.a[1]) == 0U)
+    802                   && ((mask->a[2] & nvicMask.a[2]) == 0U);
+   \       0x1C   0x6821             LDR      R1,[R4, #+0]
+   \       0x1E   0x9800             LDR      R0,[SP, #+0]
+   \       0x20   0x4201             TST      R1,R0
+   \       0x22   0xD109             BNE.N    ??CORE_GetNvicMaskDisableState_0
+   \       0x24   0x6861             LDR      R1,[R4, #+4]
+   \       0x26   0x9801             LDR      R0,[SP, #+4]
+   \       0x28   0x4201             TST      R1,R0
+   \       0x2A   0xD105             BNE.N    ??CORE_GetNvicMaskDisableState_0
+   \       0x2C   0x68A1             LDR      R1,[R4, #+8]
+   \       0x2E   0x9802             LDR      R0,[SP, #+8]
+   \       0x30   0x4201             TST      R1,R0
+   \       0x32   0xD101             BNE.N    ??CORE_GetNvicMaskDisableState_0
+   \       0x34   0x2001             MOVS     R0,#+1
+   \       0x36   0xE000             B.N      ??CORE_GetNvicMaskDisableState_1
+   \                     ??CORE_GetNvicMaskDisableState_0: (+1)
+   \       0x38   0x2000             MOVS     R0,#+0
+   \                     ??CORE_GetNvicMaskDisableState_1: (+1)
+   \       0x3A   0xB2C0             UXTB     R0,R0
+   \       0x3C   0xB004             ADD      SP,SP,#+16
+   \       0x3E   0xBD70             POP      {R4-R6,PC}
+    803          #endif
+    804          }
+    805          
+    806          /***************************************************************************//**
+    807           * @brief
+    808           *   Check if an NVIC interrupt is disabled.
+    809           *
+    810           * @param[in] irqN
+    811           *   The IRQn_Type enumerator for the interrupt to check.
+    812           *
+    813           * @return
+    814           *   True if the interrupt is disabled.
+    815           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    816          bool CORE_NvicIRQDisabled(IRQn_Type irqN)
+    817          {
+   \                     CORE_NvicIRQDisabled: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    818            CORE_nvicMask_t *mask;
+    819          
+    820            EFM_ASSERT(((int)irqN >= 0) && ((int)irqN < EXT_IRQ_COUNT));
+   \        0x2   0x0008             MOVS     R0,R1
+   \        0x4   0xB240             SXTB     R0,R0
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD405             BMI.N    ??CORE_NvicIRQDisabled_0
+   \        0xA   0x0008             MOVS     R0,R1
+   \        0xC   0xB240             SXTB     R0,R0
+   \        0xE   0x284C             CMP      R0,#+76
+   \       0x10   0xDA01             BGE.N    ??CORE_NvicIRQDisabled_0
+   \       0x12   0x2001             MOVS     R0,#+1
+   \       0x14   0xE000             B.N      ??CORE_NvicIRQDisabled_1
+   \                     ??CORE_NvicIRQDisabled_0: (+1)
+   \       0x16   0x2000             MOVS     R0,#+0
+   \                     ??CORE_NvicIRQDisabled_1: (+1)
+   \       0x18   0xB2C0             UXTB     R0,R0
+    821            mask = (CORE_nvicMask_t*)((uint32_t)&NVIC->ISER[0]);
+   \       0x1A   0x....             LDR.N    R2,??DataTable10_3
+    822            return (mask->a[(unsigned)irqN >> 5U] & (1UL << ((unsigned)irqN & 0x1FUL)))
+    823                   == 0UL;
+   \       0x1C   0x0008             MOVS     R0,R1
+   \       0x1E   0xB240             SXTB     R0,R0
+   \       0x20   0x0940             LSRS     R0,R0,#+5
+   \       0x22   0xF852 0x0020      LDR      R0,[R2, R0, LSL #+2]
+   \       0x26   0xF011 0x011F      ANDS     R1,R1,#0x1F
+   \       0x2A   0x40C8             LSRS     R0,R0,R1
+   \       0x2C   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \       0x30   0xF090 0x0001      EORS     R0,R0,#0x1
+   \       0x34   0xB2C0             UXTB     R0,R0
+   \       0x36   0x4770             BX       LR
+    824          }
+    825          
+    826          /***************************************************************************//**
+    827           * @brief
+    828           *   Utility function to get the handler for a specific interrupt.
+    829           *
+    830           * @param[in] irqN
+    831           *   The IRQn_Type enumerator for the interrupt.
+    832           *
+    833           * @return
+    834           *   The handler address.
+    835           *
+    836           * @note
+    837           *   Uses the interrupt vector table defined by the current VTOR register value.
+    838           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    839          void *CORE_GetNvicRamTableHandler(IRQn_Type irqN)
+    840          {
+    841            EFM_ASSERT(((int)irqN >= -16) && ((int)irqN < EXT_IRQ_COUNT));
+   \                     CORE_GetNvicRamTableHandler: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0xB249             SXTB     R1,R1
+   \        0x4   0xF111 0x0F10      CMN      R1,#+16
+   \        0x8   0xDB05             BLT.N    ??CORE_GetNvicRamTableHandler_0
+   \        0xA   0x0001             MOVS     R1,R0
+   \        0xC   0xB249             SXTB     R1,R1
+   \        0xE   0x294C             CMP      R1,#+76
+   \       0x10   0xDA01             BGE.N    ??CORE_GetNvicRamTableHandler_0
+   \       0x12   0x2101             MOVS     R1,#+1
+   \       0x14   0xE000             B.N      ??CORE_GetNvicRamTableHandler_1
+   \                     ??CORE_GetNvicRamTableHandler_0: (+1)
+   \       0x16   0x2100             MOVS     R1,#+0
+   \                     ??CORE_GetNvicRamTableHandler_1: (+1)
+   \       0x18   0xB2C9             UXTB     R1,R1
+    842            return (void*)((uint32_t*)(((uint32_t*)SCB->VTOR)[(int)irqN + 16]));
+   \       0x1A   0x....             LDR.N    R1,??DataTable10_4
+   \       0x1C   0x6809             LDR      R1,[R1, #+0]
+   \       0x1E   0xB240             SXTB     R0,R0
+   \       0x20   0xEB01 0x0080      ADD      R0,R1,R0, LSL #+2
+   \       0x24   0x6C00             LDR      R0,[R0, #+64]
+   \       0x26   0x4770             BX       LR
+    843          }
+    844          
+    845          /***************************************************************************//**
+    846           * @brief
+    847           *   Utility function to set the handler for a specific interrupt.
+    848           *
+    849           * @param[in] irqN
+    850           *   The IRQn_Type enumerator for the interrupt.
+    851           *
+    852           * @param[in] handler
+    853           *   The handler address.
+    854           *
+    855           * @note
+    856           *   Uses the interrupt vector table defined by the current VTOR register value.
+    857           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    858          void CORE_SetNvicRamTableHandler(IRQn_Type irqN, void *handler)
+    859          {
+    860            EFM_ASSERT(((int)irqN >= -16) && ((int)irqN < EXT_IRQ_COUNT));
+   \                     CORE_SetNvicRamTableHandler: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+   \        0x2   0xB252             SXTB     R2,R2
+   \        0x4   0xF112 0x0F10      CMN      R2,#+16
+   \        0x8   0xDB05             BLT.N    ??CORE_SetNvicRamTableHandler_0
+   \        0xA   0x0002             MOVS     R2,R0
+   \        0xC   0xB252             SXTB     R2,R2
+   \        0xE   0x2A4C             CMP      R2,#+76
+   \       0x10   0xDA01             BGE.N    ??CORE_SetNvicRamTableHandler_0
+   \       0x12   0x2201             MOVS     R2,#+1
+   \       0x14   0xE000             B.N      ??CORE_SetNvicRamTableHandler_1
+   \                     ??CORE_SetNvicRamTableHandler_0: (+1)
+   \       0x16   0x2200             MOVS     R2,#+0
+   \                     ??CORE_SetNvicRamTableHandler_1: (+1)
+   \       0x18   0xB2D2             UXTB     R2,R2
+    861            ((uint32_t*)SCB->VTOR)[(int)irqN + 16] = (uint32_t)((uint32_t*)handler);
+   \       0x1A   0x....             LDR.N    R2,??DataTable10_4
+   \       0x1C   0x6813             LDR      R3,[R2, #+0]
+   \       0x1E   0x0002             MOVS     R2,R0
+   \       0x20   0xB252             SXTB     R2,R2
+   \       0x22   0xEB03 0x0282      ADD      R2,R3,R2, LSL #+2
+   \       0x26   0x6411             STR      R1,[R2, #+64]
+    862          }
+   \       0x28   0x4770             BX       LR
+    863          
+    864          /***************************************************************************//**
+    865           * @brief
+    866           *   Initialize an interrupt vector table by copying table entries from a
+    867           *   source to a target table.
+    868           *
+    869           * @note This function will set a new VTOR register value.
+    870           *
+    871           * @param[in] sourceTable
+    872           *   The address of the source vector table.
+    873           *
+    874           * @param[in] sourceSize
+    875           *   A number of entries in the source vector table.
+    876           *
+    877           * @param[in] targetTable
+    878           *   The address of the target (new) vector table.
+    879           *
+    880           * @param[in] targetSize
+    881           *   A number of entries in the target vector table.
+    882           *
+    883           * @param[in] defaultHandler
+    884           *   An address of the interrupt handler used for target entries for which where there
+    885           *   is no corresponding source entry (i.e., the target table is larger than the source
+    886           *   table).
+    887           *
+    888           * @param[in] overwriteActive
+    889           *   When true, a target table entry is always overwritten with the
+    890           *   corresponding source entry. If false, a target table entry is only
+    891           *   overwritten if it is zero. This makes it possible for an application
+    892           *   to partly initialize a target table before passing it to this function.
+    893           *
+    894           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    895          void CORE_InitNvicVectorTable(uint32_t *sourceTable,
+    896                                        uint32_t sourceSize,
+    897                                        uint32_t *targetTable,
+    898                                        uint32_t targetSize,
+    899                                        void *defaultHandler,
+    900                                        bool overwriteActive)
+    901          {
+   \                     CORE_InitNvicVectorTable: (+1)
+   \        0x0   0xB4F0             PUSH     {R4-R7}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x9E04             LDR      R6,[SP, #+16]
+   \        0x6   0x9D05             LDR      R5,[SP, #+20]
+    902            uint32_t i;
+    903          
+    904            // ASSERT on non SRAM-based target table.
+    905            EFM_ASSERT(((uint32_t)targetTable >= SRAM_BASE)
+    906                       && ((uint32_t)targetTable < (SRAM_BASE + SRAM_SIZE)));
+   \        0x8   0xF1B2 0x5F00      CMP      R2,#+536870912
+   \        0xC   0xD304             BCC.N    ??CORE_InitNvicVectorTable_0
+   \        0xE   0x....             LDR.N    R0,??DataTable10_5
+   \       0x10   0x4282             CMP      R2,R0
+   \       0x12   0xD201             BCS.N    ??CORE_InitNvicVectorTable_0
+   \       0x14   0x2001             MOVS     R0,#+1
+   \       0x16   0xE000             B.N      ??CORE_InitNvicVectorTable_1
+   \                     ??CORE_InitNvicVectorTable_0: (+1)
+   \       0x18   0x2000             MOVS     R0,#+0
+   \                     ??CORE_InitNvicVectorTable_1: (+1)
+   \       0x1A   0xB2C0             UXTB     R0,R0
+    907          
+    908            // ASSERT if misaligned with respect to the VTOR register implementation.
+    909          #if defined(SCB_VTOR_TBLBASE_Msk)
+    910            EFM_ASSERT(((uint32_t)targetTable & ~(SCB_VTOR_TBLOFF_Msk
+    911                                                  | SCB_VTOR_TBLBASE_Msk)) == 0U);
+    912          #else
+    913            EFM_ASSERT(((uint32_t)targetTable & ~SCB_VTOR_TBLOFF_Msk) == 0U);
+   \       0x1C   0xF012 0x007F      ANDS     R0,R2,#0x7F
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD101             BNE.N    ??CORE_InitNvicVectorTable_2
+   \       0x24   0x2001             MOVS     R0,#+1
+   \       0x26   0xE000             B.N      ??CORE_InitNvicVectorTable_3
+   \                     ??CORE_InitNvicVectorTable_2: (+1)
+   \       0x28   0x2000             MOVS     R0,#+0
+   \                     ??CORE_InitNvicVectorTable_3: (+1)
+   \       0x2A   0xB2C0             UXTB     R0,R0
+    914          #endif
+    915          
+    916            // ASSERT if misaligned with respect to the vector table size.
+    917            // The vector table address must be aligned at its size rounded up to nearest 2^n.
+    918            EFM_ASSERT(((uint32_t)targetTable
+    919                        & ((1UL << (32UL - __CLZ((targetSize * 4UL) - 1UL))) - 1UL))
+    920                       == 0UL);
+   \       0x2C   0x2001             MOVS     R0,#+1
+   \       0x2E   0x009F             LSLS     R7,R3,#+2
+   \       0x30   0x1E7F             SUBS     R7,R7,#+1
+   \       0x32   0xFAB7 0xF787      CLZ      R7,R7
+   \       0x36   0xF1D7 0x0720      RSBS     R7,R7,#+32
+   \       0x3A   0x40B8             LSLS     R0,R0,R7
+   \       0x3C   0x1E40             SUBS     R0,R0,#+1
+   \       0x3E   0x4202             TST      R2,R0
+   \       0x40   0xD101             BNE.N    ??CORE_InitNvicVectorTable_4
+   \       0x42   0x2001             MOVS     R0,#+1
+   \       0x44   0xE000             B.N      ??CORE_InitNvicVectorTable_5
+   \                     ??CORE_InitNvicVectorTable_4: (+1)
+   \       0x46   0x2000             MOVS     R0,#+0
+   \                     ??CORE_InitNvicVectorTable_5: (+1)
+   \       0x48   0xB2C0             UXTB     R0,R0
+    921          
+    922            for (i = 0; i < targetSize; i++) {
+   \       0x4A   0x2700             MOVS     R7,#+0
+   \                     ??CORE_InitNvicVectorTable_6: (+1)
+   \       0x4C   0x429F             CMP      R7,R3
+   \       0x4E   0xD220             BCS.N    ??CORE_InitNvicVectorTable_7
+    923              if (overwriteActive) {                      // Overwrite target entries.
+   \       0x50   0x0028             MOVS     R0,R5
+   \       0x52   0xB2C0             UXTB     R0,R0
+   \       0x54   0x2800             CMP      R0,#+0
+   \       0x56   0xD009             BEQ.N    ??CORE_InitNvicVectorTable_8
+    924                if (i < sourceSize) {                     //   targetSize <= sourceSize
+   \       0x58   0x428F             CMP      R7,R1
+   \       0x5A   0xD204             BCS.N    ??CORE_InitNvicVectorTable_9
+    925                  targetTable[i] = sourceTable[i];
+   \       0x5C   0xF854 0x0027      LDR      R0,[R4, R7, LSL #+2]
+   \       0x60   0xF842 0x0027      STR      R0,[R2, R7, LSL #+2]
+   \       0x64   0xE013             B.N      ??CORE_InitNvicVectorTable_10
+    926                } else {                                  //   targetSize > sourceSize
+    927                  targetTable[i] = (uint32_t)((uint32_t*)defaultHandler);
+   \                     ??CORE_InitNvicVectorTable_9: (+1)
+   \       0x66   0xF842 0x6027      STR      R6,[R2, R7, LSL #+2]
+   \       0x6A   0xE010             B.N      ??CORE_InitNvicVectorTable_10
+    928                }
+    929              } else {                            // Overwrite target entries which are 0.
+    930                if (i < sourceSize) {                     // targetSize <= sourceSize
+   \                     ??CORE_InitNvicVectorTable_8: (+1)
+   \       0x6C   0x428F             CMP      R7,R1
+   \       0x6E   0xD208             BCS.N    ??CORE_InitNvicVectorTable_11
+    931                  if (targetTable[i] == 0U) {
+   \       0x70   0xF852 0x0027      LDR      R0,[R2, R7, LSL #+2]
+   \       0x74   0x2800             CMP      R0,#+0
+   \       0x76   0xD10A             BNE.N    ??CORE_InitNvicVectorTable_10
+    932                    targetTable[i] = sourceTable[i];
+   \       0x78   0xF854 0x0027      LDR      R0,[R4, R7, LSL #+2]
+   \       0x7C   0xF842 0x0027      STR      R0,[R2, R7, LSL #+2]
+   \       0x80   0xE005             B.N      ??CORE_InitNvicVectorTable_10
+    933                  }
+    934                } else {                                  // targetSize > sourceSize
+    935                  if (targetTable[i] == 0U) {
+   \                     ??CORE_InitNvicVectorTable_11: (+1)
+   \       0x82   0xF852 0x0027      LDR      R0,[R2, R7, LSL #+2]
+   \       0x86   0x2800             CMP      R0,#+0
+   \       0x88   0xD101             BNE.N    ??CORE_InitNvicVectorTable_10
+    936                    targetTable[i] = (uint32_t)((uint32_t*)defaultHandler);
+   \       0x8A   0xF842 0x6027      STR      R6,[R2, R7, LSL #+2]
+    937                  }
+    938                }
+    939              }
+    940            }
+   \                     ??CORE_InitNvicVectorTable_10: (+1)
+   \       0x8E   0x1C7F             ADDS     R7,R7,#+1
+   \       0x90   0xE7DC             B.N      ??CORE_InitNvicVectorTable_6
+    941            SCB->VTOR = (uint32_t)targetTable;
+   \                     ??CORE_InitNvicVectorTable_7: (+1)
+   \       0x92   0x....             LDR.N    R0,??DataTable10_4
+   \       0x94   0x6002             STR      R2,[R0, #+0]
+    942          }
+   \       0x96   0xBCF0             POP      {R4-R7}
+   \       0x98   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \        0x0   0xE000'E400        DC32     0xe000e400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \        0x0   0xE000'ED18        DC32     0xe000ed18
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \        0x0   0xE000'E180        DC32     0xe000e180
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_3:
+   \        0x0   0xE000'E100        DC32     0xe000e100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_4:
+   \        0x0   0xE000'ED08        DC32     0xe000ed08
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_5:
+   \        0x0   0x2001'0000        DC32     0x20010000
+    943          
+    944          #if (SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1) || defined(DOXYGEN)
+    945          /***************************************************************************//**
+    946           * @brief
+    947           *   Start a recording.
+    948           *
+    949           * @param[in] handle
+    950           *   Pointer to initialized counter handle.
+    951           *
+    952           * @note SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING must be enabled.
+    953           ******************************************************************************/
+    954          static void cycle_counter_start(dwt_cycle_counter_handle_t *handle)
+    955          {
+    956            handle->start = DWT->CYCCNT;
+    957          }
+    958          
+    959          /***************************************************************************//**
+    960           * @brief
+    961           *   Stop a recording.
+    962           *
+    963           * @param[in] handle
+    964           *   Pointer to initialized counter handle.
+    965           *
+    966           * @note SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING must be enabled.
+    967           ******************************************************************************/
+    968          static void cycle_counter_stop(dwt_cycle_counter_handle_t *handle)
+    969          {
+    970            handle->cycles = DWT->CYCCNT - handle->start;
+    971          
+    972            if (handle->cycles > handle->max) {
+    973              handle->max = handle->cycles;
+    974            }
+    975          }
+    976          
+    977          /***************************************************************************//**
+    978           * @brief
+    979           *   Returns the max time spent in critical section.
+    980           *
+    981           * @return
+    982           *   The max time spent in critical section.
+    983           *
+    984           * @note SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING must be enabled.
+    985           ******************************************************************************/
+    986          uint32_t CORE_get_max_time_critical_section(void)
+    987          {
+    988            return critical_cycle_counter.max;
+    989          }
+    990          
+    991          /***************************************************************************//**
+    992           * @brief
+    993           *   Returns the max time spent in atomic section.
+    994           *
+    995           * @return
+    996           *   The max time spent in atomic section.
+    997           *
+    998           * @note SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING must be enabled.
+    999           ******************************************************************************/
+   1000          uint32_t CORE_get_max_time_atomic_section(void)
+   1001          {
+   1002            return atomic_cycle_counter.max;
+   1003          }
+   1004          
+   1005          /***************************************************************************//**
+   1006           * @brief
+   1007           *   Clears the max time spent in atomic section.
+   1008           *
+   1009           * @note SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING must be enabled.
+   1010           ******************************************************************************/
+   1011          void CORE_clear_max_time_critical_section(void)
+   1012          {
+   1013            critical_cycle_counter.max = 0;
+   1014          }
+   1015          
+   1016          /***************************************************************************//**
+   1017           * @brief
+   1018           *   Clears the max time spent in atomic section.
+   1019           *
+   1020           * @note SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING must be enabled.
+   1021           ******************************************************************************/
+   1022          void CORE_clear_max_time_atomic_section(void)
+   1023          {
+   1024            atomic_cycle_counter.max = 0;
+   1025          }
+   1026          #endif //(SL_EMLIB_CORE_ENABLE_INTERRUPT_DISABLED_TIMING == 1)
+   1027          
+   1028          /** @} (end addtogroup core) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   CORE_AtomicDisableIrq
+       0   CORE_AtomicEnableIrq
+       0   CORE_CriticalDisableIrq
+       0   CORE_CriticalEnableIrq
+       0   CORE_EnterAtomic
+       0   CORE_EnterCritical
+      16   CORE_EnterNvicMask
+        16   -> CORE_EnterCritical
+        16   -> CORE_ExitCritical
+       0   CORE_ExitAtomic
+       0   CORE_ExitCritical
+      16   CORE_GetNvicEnabledMask
+        16   -> CORE_EnterCritical
+        16   -> CORE_ExitCritical
+      32   CORE_GetNvicMaskDisableState
+        32   -> CORE_EnterCritical
+        32   -> CORE_ExitCritical
+       0   CORE_GetNvicRamTableHandler
+       0   CORE_InIrqContext
+      16   CORE_InitNvicVectorTable
+      24   CORE_IrqIsBlocked
+        24   -> CORE_NvicIRQDisabled
+        24   -> __NVIC_GetPriority
+       0   CORE_IrqIsDisabled
+      16   CORE_NvicDisableMask
+        16   -> CORE_EnterCritical
+        16   -> CORE_ExitCritical
+      16   CORE_NvicEnableMask
+        16   -> CORE_EnterCritical
+        16   -> CORE_ExitCritical
+       0   CORE_NvicIRQDisabled
+       4   CORE_NvicMaskClearIRQ
+       4   CORE_NvicMaskSetIRQ
+       0   CORE_SetNvicRamTableHandler
+       0   CORE_YieldAtomic
+       0   CORE_YieldCritical
+      32   CORE_YieldNvicMask
+        32   -> CORE_EnterCritical
+        32   -> CORE_ExitCritical
+       0   __NVIC_GetPriority
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+       8  CORE_AtomicDisableIrq
+       8  CORE_AtomicEnableIrq
+       4  CORE_CriticalDisableIrq
+       4  CORE_CriticalEnableIrq
+      12  CORE_EnterAtomic
+       8  CORE_EnterCritical
+      38  CORE_EnterNvicMask
+       6  CORE_ExitAtomic
+       8  CORE_ExitCritical
+      28  CORE_GetNvicEnabledMask
+      64  CORE_GetNvicMaskDisableState
+      40  CORE_GetNvicRamTableHandler
+      24  CORE_InIrqContext
+     154  CORE_InitNvicVectorTable
+     124  CORE_IrqIsBlocked
+      26  CORE_IrqIsDisabled
+      28  CORE_NvicDisableMask
+      28  CORE_NvicEnableMask
+      56  CORE_NvicIRQDisabled
+      60  CORE_NvicMaskClearIRQ
+      60  CORE_NvicMaskSetIRQ
+      42  CORE_SetNvicRamTableHandler
+      24  CORE_YieldAtomic
+      18  CORE_YieldCritical
+     124  CORE_YieldNvicMask
+      36  __NVIC_GetPriority
+
+ 
+ 1'056 bytes in section .text
+ 
+ 782 bytes of CODE memory (+ 274 bytes shared)
+
+Errors: none
+Warnings: none

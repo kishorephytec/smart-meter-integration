@@ -1,0 +1,563 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         26/Nov/2024  12:15:54
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\sl_iostream_init_eusart_instances.c
+#    Command line                 =
+#        -f
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\sl_iostream_init_eusart_instances.o.rsp
+#        (C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\sl_iostream_init_eusart_instances.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\
+#        --diag_suppress Pa050 -o
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\.\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\rpl\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\cpu\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\FLASH\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\sl_iostream_init_eusart_instances.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\sl_iostream_init_eusart_instances.lst
+#    Object file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\sl_iostream_init_eusart_instances.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\sl_iostream_init_eusart_instances.c
+      1          #include "em_device.h"
+      2          #include "sl_iostream.h"
+      3          #include "sl_iostream_uart.h"
+      4          #include "sl_iostream_eusart.h"
+      5          
+      6          // Include instance config 
+      7           #include "sl_iostream_eusart_vcom_config.h"
+      8          
+      9          // MACROs for generating name and IRQ handler function  
+     10          #define SL_IOSTREAM_EUSART_CONCAT_PASTER(first, second, third)        first ##  second ## third
+     11          #if defined(EUART_COUNT) && (EUART_COUNT > 0)
+     12          #define SL_IOSTREAM_EUSART_TX_IRQ_NUMBER(periph_nbr)     SL_IOSTREAM_EUSART_CONCAT_PASTER(EUART, periph_nbr, _TX_IRQn)   
+     13          #define SL_IOSTREAM_EUSART_RX_IRQ_NUMBER(periph_nbr)     SL_IOSTREAM_EUSART_CONCAT_PASTER(EUART, periph_nbr, _RX_IRQn)   
+     14          #define SL_IOSTREAM_EUSART_TX_IRQ_HANDLER(periph_nbr)    SL_IOSTREAM_EUSART_CONCAT_PASTER(EUART, periph_nbr, _TX_IRQHandler)   
+     15          #define SL_IOSTREAM_EUSART_RX_IRQ_HANDLER(periph_nbr)    SL_IOSTREAM_EUSART_CONCAT_PASTER(EUART, periph_nbr, _RX_IRQHandler)   
+     16          #else
+     17          #define SL_IOSTREAM_EUSART_TX_IRQ_NUMBER(periph_nbr)     SL_IOSTREAM_EUSART_CONCAT_PASTER(EUSART, periph_nbr, _TX_IRQn)   
+     18          #define SL_IOSTREAM_EUSART_RX_IRQ_NUMBER(periph_nbr)     SL_IOSTREAM_EUSART_CONCAT_PASTER(EUSART, periph_nbr, _RX_IRQn)   
+     19          #define SL_IOSTREAM_EUSART_TX_IRQ_HANDLER(periph_nbr)    SL_IOSTREAM_EUSART_CONCAT_PASTER(EUSART, periph_nbr, _TX_IRQHandler)   
+     20          #define SL_IOSTREAM_EUSART_RX_IRQ_HANDLER(periph_nbr)    SL_IOSTREAM_EUSART_CONCAT_PASTER(EUSART, periph_nbr, _RX_IRQHandler)   
+     21          #endif
+     22          #define SL_IOSTREAM_EUSART_RX_DMA_SIGNAL(periph_nbr)     SL_IOSTREAM_EUSART_CONCAT_PASTER(dmadrvPeripheralSignal_EUSART, periph_nbr, _RXDATAV)
+     23          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUART0RXFL)
+     24          #define SL_IOSTREAM_EUART_RX_DMA_SIGNAL                  SL_IOSTREAM_EUSART_CONCAT_PASTER(dmadrvPeripheralSignal_EUART, 0, _RXDATAV)
+     25          #endif
+     26          
+     27          #if defined(EUART_COUNT) && (EUART_COUNT > 0)
+     28          #define SL_IOSTREAM_EUSART_CLOCK_REF(periph_nbr)         SL_IOSTREAM_EUSART_CONCAT_PASTER(cmuClock_, EUART, periph_nbr)  
+     29          #else
+     30          #define SL_IOSTREAM_EUSART_CLOCK_REF(periph_nbr)         SL_IOSTREAM_EUSART_CONCAT_PASTER(cmuClock_, EUSART, periph_nbr)  
+     31          #endif
+     32          
+     33          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+     34          // EM Events
+     35          #define SLEEP_EM_EVENT_MASK      (SL_POWER_MANAGER_EVENT_TRANSITION_LEAVING_EM0)
+     36          static void events_handler(sl_power_manager_em_t from,
+     37                                     sl_power_manager_em_t to);
+     38          static sl_power_manager_em_transition_event_info_t events_info =
+     39          {
+     40            .event_mask = SLEEP_EM_EVENT_MASK,
+     41            .on_event = events_handler,
+     42          };
+     43          static sl_power_manager_em_transition_event_handle_t events_handle;
+     44          #endif // SL_CATALOG_POWER_MANAGER_PRESENT
+     45          
+     46          
+     47          sl_status_t sl_iostream_eusart_init_vcom(void);
+     48          
+     49          
+     50          // Instance(s) handle and context variable 
+
+   \                                 In section .bss, align 4
+     51          static sl_iostream_uart_t sl_iostream_vcom;
+   \                     sl_iostream_vcom:
+   \        0x0                      DS8 24
+
+   \                                 In section .data, align 4
+     52          sl_iostream_t *sl_iostream_vcom_handle = &sl_iostream_vcom.stream;
+   \                     sl_iostream_vcom_handle:
+   \        0x0   0x....'....        DC32 sl_iostream_vcom
+
+   \                                 In section .data, align 4
+     53          sl_iostream_uart_t *sl_iostream_uart_vcom_handle = &sl_iostream_vcom;
+   \                     sl_iostream_uart_vcom_handle:
+   \        0x0   0x....'....        DC32 sl_iostream_vcom
+
+   \                                 In section .bss, align 4
+     54          static sl_iostream_eusart_context_t  context_vcom;
+   \                     context_vcom:
+   \        0x0                      DS8 100
+
+   \                                 In section .bss, align 4
+     55          static uint8_t  rx_buffer_vcom[SL_IOSTREAM_EUSART_VCOM_RX_BUFFER_SIZE];
+   \                     rx_buffer_vcom:
+   \        0x0                      DS8 32
+
+   \                                 In section .data, align 4
+     56          sl_iostream_instance_info_t sl_iostream_instance_vcom_info = {
+   \                     sl_iostream_instance_vcom_info:
+   \        0x0   0x....'....        DC32 sl_iostream_vcom, ?_0
+   \              0x....'....
+   \        0x8   0x02 0x00          DC8 2, 0
+   \        0xA                      DS8 2
+   \        0xC   0x....'....        DC32 sl_iostream_eusart_init_vcom
+     57            .handle = &sl_iostream_vcom.stream,
+     58            .name = "vcom",
+     59            .type = SL_IOSTREAM_TYPE_UART,
+     60            .periph_id = SL_IOSTREAM_EUSART_VCOM_PERIPHERAL_NO,
+     61            .init = sl_iostream_eusart_init_vcom,
+     62          };
+     63          
+     64          
+     65          
+
+   \                                 In section .text, align 2, keep-with-next
+     66          sl_status_t sl_iostream_eusart_init_vcom(void)
+     67          {
+   \                     sl_iostream_eusart_init_vcom: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0xB09B             SUB      SP,SP,#+108
+     68            sl_status_t status;
+     69          #if (SL_IOSTREAM_EUSART_VCOM_ENABLE_HIGH_FREQUENCY == 0)
+     70            EUSART_UartInit_TypeDef init_vcom = EUSART_UART_INIT_DEFAULT_LF;
+     71          #else
+     72            EUSART_UartInit_TypeDef init_vcom = EUSART_UART_INIT_DEFAULT_HF;
+   \        0x4   0xA807             ADD      R0,SP,#+28
+   \        0x6   0x....             LDR.N    R1,??DataTable2
+   \        0x8   0x2220             MOVS     R2,#+32
+   \        0xA   0x.... 0x....      BL       __aeabi_memcpy4
+     73          #endif
+     74            init_vcom.baudrate = SL_IOSTREAM_EUSART_VCOM_BAUDRATE;
+   \        0xE   0xF45F 0x30E1      MOVS     R0,#+115200
+   \       0x12   0x9009             STR      R0,[SP, #+36]
+     75            init_vcom.parity = SL_IOSTREAM_EUSART_VCOM_PARITY;
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0xF8AD 0x002A      STRH     R0,[SP, #+42]
+     76            init_vcom.stopbits = SL_IOSTREAM_EUSART_VCOM_STOP_BITS;
+   \       0x1A   0xF44F 0x5080      MOV      R0,#+4096
+   \       0x1E   0xF8AD 0x002C      STRH     R0,[SP, #+44]
+     77          
+     78            sl_iostream_eusart_config_t config_vcom = { 
+     79              .eusart = SL_IOSTREAM_EUSART_VCOM_PERIPHERAL,
+     80              .enable_high_frequency = SL_IOSTREAM_EUSART_VCOM_ENABLE_HIGH_FREQUENCY,
+     81              .clock = SL_IOSTREAM_EUSART_CLOCK_REF(SL_IOSTREAM_EUSART_VCOM_PERIPHERAL_NO),
+     82          #if defined(EUSART_COUNT) && (EUSART_COUNT > 1)
+     83              .port_index = SL_IOSTREAM_EUSART_VCOM_PERIPHERAL_NO,
+     84          #endif
+     85              .tx_port = SL_IOSTREAM_EUSART_VCOM_TX_PORT,
+     86              .tx_pin = SL_IOSTREAM_EUSART_VCOM_TX_PIN,
+     87              .rx_port = SL_IOSTREAM_EUSART_VCOM_RX_PORT,
+     88              .rx_pin = SL_IOSTREAM_EUSART_VCOM_RX_PIN,
+     89          #if defined(SL_IOSTREAM_EUSART_VCOM_CTS_PORT)
+     90              .cts_port = SL_IOSTREAM_EUSART_VCOM_CTS_PORT,
+     91              .cts_pin = SL_IOSTREAM_EUSART_VCOM_CTS_PIN,
+     92          #endif
+     93          #if defined(SL_IOSTREAM_EUSART_VCOM_RTS_PORT)
+     94              .rts_port = SL_IOSTREAM_EUSART_VCOM_RTS_PORT,
+     95              .rts_pin = SL_IOSTREAM_EUSART_VCOM_RTS_PIN,
+     96          #endif
+     97            };
+   \       0x22   0xA80F             ADD      R0,SP,#+60
+   \       0x24   0x....             LDR.N    R1,??DataTable2_1
+   \       0x26   0x2230             MOVS     R2,#+48
+   \       0x28   0x.... 0x....      BL       __aeabi_memcpy4
+     98            config_vcom.flow_control = SL_IOSTREAM_EUSART_VCOM_FLOW_CONTROL_TYPE != uartFlowControlSoftware ? SL_IOSTREAM_EUSART_VCOM_FLOW_CONTROL_TYPE : eusartHwFlowControlNone;
+   \       0x2C   0x2000             MOVS     R0,#+0
+   \       0x2E   0xF88D 0x0040      STRB     R0,[SP, #+64]
+     99          #if defined(LDMAXBAR_CH_REQSEL_SIGSEL_EUART0RXFL) && (SL_IOSTREAM_EUSART_VCOM_PERIPHERAL_NO == 0)
+    100            sl_iostream_dma_config_t dma_config_vcom = {.src = (uint8_t *)&SL_IOSTREAM_EUSART_VCOM_PERIPHERAL->RXDATA,
+    101                                                                  .peripheral_signal = SL_IOSTREAM_EUART_RX_DMA_SIGNAL};
+    102          #else
+    103            sl_iostream_dma_config_t dma_config_vcom = {.src = (uint8_t *)&SL_IOSTREAM_EUSART_VCOM_PERIPHERAL->RXDATA,
+    104                                                                  .peripheral_signal = SL_IOSTREAM_EUSART_RX_DMA_SIGNAL(SL_IOSTREAM_EUSART_VCOM_PERIPHERAL_NO)};
+   \       0x32   0x....             LDR.N    R0,??DataTable2_2
+   \       0x34   0xE9D0 0x4500      LDRD     R4,R5,[R0, #+0]
+    105          #endif 
+    106            sl_iostream_uart_config_t uart_config_vcom = {
+    107              .dma_cfg = dma_config_vcom,
+    108              .rx_buffer = rx_buffer_vcom,
+    109              .rx_buffer_length = SL_IOSTREAM_EUSART_VCOM_RX_BUFFER_SIZE,
+    110              .tx_irq_number = SL_IOSTREAM_EUSART_TX_IRQ_NUMBER(SL_IOSTREAM_EUSART_VCOM_PERIPHERAL_NO),
+    111              .rx_irq_number = SL_IOSTREAM_EUSART_RX_IRQ_NUMBER(SL_IOSTREAM_EUSART_VCOM_PERIPHERAL_NO),
+    112              .lf_to_crlf = SL_IOSTREAM_EUSART_VCOM_CONVERT_BY_DEFAULT_LF_TO_CRLF,
+    113              .rx_when_sleeping = SL_IOSTREAM_EUSART_VCOM_RESTRICT_ENERGY_MODE_TO_ALLOW_RECEPTION,
+    114            };
+   \       0x38   0xA801             ADD      R0,SP,#+4
+   \       0x3A   0x....             LDR.N    R1,??DataTable2_3
+   \       0x3C   0x2218             MOVS     R2,#+24
+   \       0x3E   0x.... 0x....      BL       __aeabi_memcpy4
+   \       0x42   0xE9CD 0x4501      STRD     R4,R5,[SP, #+4]
+    115            uart_config_vcom.sw_flow_control = SL_IOSTREAM_EUSART_VCOM_FLOW_CONTROL_TYPE == uartFlowControlSoftware;
+   \       0x46   0x2000             MOVS     R0,#+0
+   \       0x48   0xF88D 0x001A      STRB     R0,[SP, #+26]
+    116            // Instantiate eusart instance 
+    117            status = sl_iostream_eusart_init(&sl_iostream_vcom,
+    118                                            &uart_config_vcom,
+    119                                            &init_vcom,
+    120                                            &config_vcom,
+    121                                            &context_vcom);
+   \       0x4C   0x....             LDR.N    R0,??DataTable2_4
+   \       0x4E   0x9000             STR      R0,[SP, #+0]
+   \       0x50   0xAB0F             ADD      R3,SP,#+60
+   \       0x52   0xAA07             ADD      R2,SP,#+28
+   \       0x54   0xA901             ADD      R1,SP,#+4
+   \       0x56   0x....             LDR.N    R0,??DataTable2_5
+   \       0x58   0x.... 0x....      BL       sl_iostream_eusart_init
+    122            EFM_ASSERT(status == SL_STATUS_OK);
+   \       0x5C   0x2800             CMP      R0,#+0
+   \       0x5E   0xD101             BNE.N    ??sl_iostream_eusart_init_vcom_0
+   \       0x60   0x2101             MOVS     R1,#+1
+   \       0x62   0xE000             B.N      ??sl_iostream_eusart_init_vcom_1
+   \                     ??sl_iostream_eusart_init_vcom_0: (+1)
+   \       0x64   0x2100             MOVS     R1,#+0
+   \                     ??sl_iostream_eusart_init_vcom_1: (+1)
+   \       0x66   0xB2C9             UXTB     R1,R1
+    123          
+    124            
+    125          
+    126            return status;
+   \       0x68   0xB01B             ADD      SP,SP,#+108
+   \       0x6A   0xBD30             POP      {R4,R5,PC}
+    127          }
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x05               DC8 5
+   \        0x1                      DS8 3
+   \        0x4   0x0000'0000        DC32 0, 115'200
+   \              0x0001'C200
+   \        0xC   0x00 0x02          DC8 0, 2
+   \        0xE   0x0000 0x1000      DC16 0, 4'096
+   \       0x12                      DS8 2
+   \       0x14   0x0000'0000        DC32 0
+   \       0x18   0x00               DC8 0
+   \       0x19                      DS8 3
+   \       0x1C   0x0000'0000        DC32 0x0
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x5B01'0000        DC32 0x5b01'0000
+   \        0x4   0x00 0x01          DC8 0, 1
+   \        0x6                      DS8 2
+   \        0x8   0x0000'0056        DC32 86, 0
+   \              0x0000'0000
+   \       0x10   0x00               DC8 0
+   \       0x11                      DS8 3
+   \       0x14   0x0000'0004        DC32 4
+   \       0x18   0x00               DC8 0
+   \       0x19                      DS8 3
+   \       0x1C   0x0000'0003        DC32 3
+   \       0x20                      DS8 16
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x0010'0000        DC32 1'048'576, 0x5b01'003c
+   \              0x5B01'003C
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0                      DS8 8
+   \        0x8   0x0B 0x0C          DC8 11, 12
+   \        0xA                      DS8 2
+   \        0xC   0x....'....        DC32 rx_buffer_vcom, 32
+   \              0x0000'0020
+   \       0x14   0x01 0x00          DC8 1, 0
+   \       0x16                      DS8 2
+    128          
+    129          
+    130          
+
+   \                                 In section .text, align 2, keep-with-next
+    131          void sl_iostream_eusart_init_instances(void)
+    132          {
+   \                     sl_iostream_eusart_init_instances: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    133            #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+    134            // Enable power manager notifications
+    135            sl_power_manager_subscribe_em_transition_event(&events_handle, &events_info);
+    136            #endif
+    137            // Instantiate eusart instance(s) 
+    138            
+    139            sl_iostream_eusart_init_vcom();
+   \        0x2   0x.... 0x....      BL       sl_iostream_eusart_init_vcom
+    140            
+    141          }
+   \        0x6   0xBD01             POP      {R0,PC}
+    142          
+    143          
+
+   \                                 In section .text, align 2, keep-with-next
+    144          void SL_IOSTREAM_EUSART_TX_IRQ_HANDLER(SL_IOSTREAM_EUSART_VCOM_PERIPHERAL_NO)(void)
+    145          {
+   \                     EUSART0_TX_IRQHandler: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    146            sl_iostream_eusart_irq_handler(&sl_iostream_vcom);
+   \        0x2   0x....             LDR.N    R0,??DataTable2_5
+   \        0x4   0x.... 0x....      BL       sl_iostream_eusart_irq_handler
+    147          }
+   \        0x8   0xBD01             POP      {R0,PC}
+    148          
+
+   \                                 In section .text, align 2, keep-with-next
+    149          void SL_IOSTREAM_EUSART_RX_IRQ_HANDLER(SL_IOSTREAM_EUSART_VCOM_PERIPHERAL_NO)(void)
+    150          {
+   \                     EUSART0_RX_IRQHandler: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    151            sl_iostream_eusart_irq_handler(&sl_iostream_vcom);
+   \        0x2   0x....             LDR.N    R0,??DataTable2_5
+   \        0x4   0x.... 0x....      BL       sl_iostream_eusart_irq_handler
+    152          }
+   \        0x8   0xBD01             POP      {R0,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
+   \        0x0   0x....'....        DC32     context_vcom
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_5:
+   \        0x0   0x....'....        DC32     sl_iostream_vcom
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x76 0x63          DC8 "vcom"
+   \              0x6F 0x6D    
+   \              0x00
+   \        0x5                      DS8 3
+    153          
+    154          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+    155          #if !defined(SL_CATALOG_KERNEL_PRESENT)
+    156           
+    157          sl_power_manager_on_isr_exit_t sl_iostream_eusart_vcom_sleep_on_isr_exit(void)
+    158          {
+    159            return sl_iostream_uart_sleep_on_isr_exit(&sl_iostream_vcom);
+    160          }
+    161          
+    162          #endif // SL_CATALOG_KERNEL_PRESENT
+    163          static void events_handler(sl_power_manager_em_t from,
+    164                                     sl_power_manager_em_t to)
+    165          {
+    166            (void) from;
+    167            if (to < SL_POWER_MANAGER_EM3){
+    168              // Only prepare for wakeup from EM2 or less, since EUSART doesn't run in EM3
+    169              
+    170              if (sl_iostream_uart_vcom_handle->stream.context != NULL) {
+    171                sl_iostream_uart_prepare_for_sleep(sl_iostream_uart_vcom_handle);
+    172              }
+    173              
+    174            }
+    175          }
+    176          #endif // SL_CATALOG_POWER_MANAGER_PRESENT
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   EUSART0_RX_IRQHandler
+         8   -> sl_iostream_eusart_irq_handler
+       8   EUSART0_TX_IRQHandler
+         8   -> sl_iostream_eusart_irq_handler
+       8   sl_iostream_eusart_init_instances
+         8   -> sl_iostream_eusart_init_vcom
+     120   sl_iostream_eusart_init_vcom
+       120   -> __aeabi_memcpy4
+       120   -> sl_iostream_eusart_init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       8  ?_0
+      32  ?_1
+      48  ?_2
+       8  ?_3
+      24  ?_4
+      10  EUSART0_RX_IRQHandler
+      10  EUSART0_TX_IRQHandler
+     100  context_vcom
+      32  rx_buffer_vcom
+       8  sl_iostream_eusart_init_instances
+     108  sl_iostream_eusart_init_vcom
+      16  sl_iostream_instance_vcom_info
+       4  sl_iostream_uart_vcom_handle
+      24  sl_iostream_vcom
+       4  sl_iostream_vcom_handle
+
+ 
+ 156 bytes in section .bss
+  24 bytes in section .data
+ 120 bytes in section .rodata
+ 160 bytes in section .text
+ 
+ 160 bytes of CODE  memory
+ 120 bytes of CONST memory
+ 180 bytes of DATA  memory
+
+Errors: none
+Warnings: none

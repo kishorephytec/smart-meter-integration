@@ -1,0 +1,896 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         02/Dec/2024  12:57:55
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\mpu\src\sl_mpu.c
+#    Command line                 =
+#        -f
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_11659692754380993443.dir\sl_mpu.o.rsp
+#        (D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\mpu\src\sl_mpu.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\src_11659692754380993443.dir
+#        --diag_suppress Pa050 -o
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_11659692754380993443.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_11659692754380993443.dir\sl_mpu.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\src_11659692754380993443.dir\sl_mpu.lst
+#    Object file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_11659692754380993443.dir\sl_mpu.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\mpu\src\sl_mpu.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief MPU API implementation.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          #include "em_device.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void __NVIC_SystemReset(void)
+   \                     __NVIC_SystemReset: (+1)
+   \        0x0   0xF3BF 0x8F4F      DSB      SY
+   \        0x4   0x....             LDR.N    R2,??DataTable6
+   \        0x6   0x6811             LDR      R1,[R2, #+0]
+   \        0x8   0xF411 0x61E0      ANDS     R1,R1,#0x700
+   \        0xC   0x....             LDR.N    R0,??DataTable6_1
+   \        0xE   0x4301             ORRS     R1,R0,R1
+   \       0x10   0x6011             STR      R1,[R2, #+0]
+   \       0x12   0xF3BF 0x8F4F      DSB      SY
+   \                     ??__NVIC_SystemReset_0: (+1)
+   \       0x16   0xBF00             Nop
+   \       0x18   0xE7FD             B.N      ??__NVIC_SystemReset_0
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void ARM_MPU_Enable(uint32_t)
+   \                     ARM_MPU_Enable: (+1)
+   \        0x0   0xF3BF 0x8F5F      DMB      SY
+   \        0x4   0xF050 0x0201      ORRS     R2,R0,#0x1
+   \        0x8   0x....             LDR.N    R1,??DataTable6_2
+   \        0xA   0x600A             STR      R2,[R1, #+0]
+   \        0xC   0x....             LDR.N    R2,??DataTable6_3
+   \        0xE   0x6811             LDR      R1,[R2, #+0]
+   \       0x10   0xF451 0x3180      ORRS     R1,R1,#0x10000
+   \       0x14   0x6011             STR      R1,[R2, #+0]
+   \       0x16   0xF3BF 0x8F4F      DSB      SY
+   \       0x1A   0xF3BF 0x8F6F      ISB      SY
+   \       0x1E   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void ARM_MPU_Disable(void)
+   \                     ARM_MPU_Disable: (+1)
+   \        0x0   0xF3BF 0x8F5F      DMB      SY
+   \        0x4   0x....             LDR.N    R1,??DataTable6_3
+   \        0x6   0x6808             LDR      R0,[R1, #+0]
+   \        0x8   0xF430 0x3080      BICS     R0,R0,#0x10000
+   \        0xC   0x6008             STR      R0,[R1, #+0]
+   \        0xE   0x....             LDR.N    R1,??DataTable6_2
+   \       0x10   0x6808             LDR      R0,[R1, #+0]
+   \       0x12   0x0840             LSRS     R0,R0,#+1
+   \       0x14   0x0040             LSLS     R0,R0,#+1
+   \       0x16   0x6008             STR      R0,[R1, #+0]
+   \       0x18   0xF3BF 0x8F4F      DSB      SY
+   \       0x1C   0xF3BF 0x8F6F      ISB      SY
+   \       0x20   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void ARM_MPU_SetMemAttrEx(MPU_Type *, uint8_t, uint8_t)
+   \                     ARM_MPU_SetMemAttrEx: (+1)
+   \        0x0   0xB4F0             PUSH     {R4-R7}
+   \        0x2   0x000B             MOVS     R3,R1
+   \        0x4   0xB2DB             UXTB     R3,R3
+   \        0x6   0x089B             LSRS     R3,R3,#+2
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0xB2E4             UXTB     R4,R4
+   \        0xC   0xF014 0x0403      ANDS     R4,R4,#0x3
+   \       0x10   0x00E4             LSLS     R4,R4,#+3
+   \       0x12   0x25FF             MOVS     R5,#+255
+   \       0x14   0x40A5             LSLS     R5,R5,R4
+   \       0x16   0x001E             MOVS     R6,R3
+   \       0x18   0xB2F6             UXTB     R6,R6
+   \       0x1A   0x2E02             CMP      R6,#+2
+   \       0x1C   0xD20F             BCS.N    ??ARM_MPU_SetMemAttrEx_0
+   \                     ??ARM_MPU_SetMemAttrEx_1: (+1)
+   \       0x1E   0x001E             MOVS     R6,R3
+   \       0x20   0xB2F6             UXTB     R6,R6
+   \       0x22   0xEB00 0x0686      ADD      R6,R0,R6, LSL #+2
+   \       0x26   0x6B36             LDR      R6,[R6, #+48]
+   \       0x28   0x43AE             BICS     R6,R6,R5
+   \       0x2A   0x0017             MOVS     R7,R2
+   \       0x2C   0xB2FF             UXTB     R7,R7
+   \       0x2E   0x40A7             LSLS     R7,R7,R4
+   \       0x30   0x402F             ANDS     R7,R5,R7
+   \       0x32   0x433E             ORRS     R6,R7,R6
+   \       0x34   0x001F             MOVS     R7,R3
+   \       0x36   0xB2FF             UXTB     R7,R7
+   \       0x38   0xEB00 0x0787      ADD      R7,R0,R7, LSL #+2
+   \       0x3C   0x633E             STR      R6,[R7, #+48]
+   \                     ??ARM_MPU_SetMemAttrEx_0: (+1)
+   \       0x3E   0xBCF0             POP      {R4-R7}
+   \       0x40   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void ARM_MPU_SetMemAttr(uint8_t, uint8_t)
+   \                     ARM_MPU_SetMemAttr: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0022             MOVS     R2,R4
+   \        0x8   0xB2D2             UXTB     R2,R2
+   \        0xA   0x0029             MOVS     R1,R5
+   \        0xC   0xB2C9             UXTB     R1,R1
+   \        0xE   0x....             LDR.N    R0,??DataTable6_4
+   \       0x10   0x.... 0x....      BL       ARM_MPU_SetMemAttrEx
+   \       0x14   0xBD31             POP      {R0,R4,R5,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void ARM_MPU_SetRegionEx(MPU_Type *, uint32_t, uint32_t, uint32_t)
+   \                     ARM_MPU_SetRegionEx: (+1)
+   \        0x0   0x6081             STR      R1,[R0, #+8]
+   \        0x2   0x60C2             STR      R2,[R0, #+12]
+   \        0x4   0x6103             STR      R3,[R0, #+16]
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void ARM_MPU_SetRegion(uint32_t, uint32_t, uint32_t)
+   \                     ARM_MPU_SetRegion: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+   \        0x8   0x002B             MOVS     R3,R5
+   \        0xA   0x0022             MOVS     R2,R4
+   \        0xC   0x0031             MOVS     R1,R6
+   \        0xE   0x....             LDR.N    R0,??DataTable6_4
+   \       0x10   0x.... 0x....      BL       ARM_MPU_SetRegionEx
+   \       0x14   0xBD70             POP      {R4-R6,PC}
+     31          
+     32          #if defined (__MPU_PRESENT) && (__MPU_PRESENT == 1U)
+     33          
+     34          #include "sl_common.h"
+     35          #include "em_core.h"
+     36          #include "sl_mpu.h"
+     37          #include <stdlib.h>
+     38          #include <math.h>
+     39          
+     40          #define MPU_RBAR_VALUE    ARM_MPU_RBAR(0u, ARM_MPU_SH_NON, 0, 1, 1)
+     41          
+     42          // ARM memory map SRAM location and size.
+     43          #define MPU_ARM_SRAM_MEM_BASE          0x20000000
+     44          #define MPU_ARM_SRAM_MEM_SIZE          0x20000000
+     45          
+     46          // Number of sub-regions per MPU region.
+     47          #define MPU_SUBREGION_NBR             8u
+     48          
+     49          // Minimum size of a MPU region to use sub-regions disable feature.
+     50          #define MPU_SUBREGION_USE_MIN_SIZE    256u
+     51          
+     52          // Pre-defined MPU regions.
+     53          #define MPU_RAM_BACKGROUND_XN_REGION_NBR  0u
+     54          #define MPU_RAM_FUNCTION_REGION_NBR       1u
+     55          
+     56          #if defined(__ICCARM__)
+     57          // iccarm
+     58          #pragma section = ".textrw"
+     59          #define RAMFUNC_SECTION_BEGIN       ((uint32_t)(uint32_t *)__section_begin(".textrw"))
+     60          #define RAMFUNC_SECTION_END         ((uint32_t)(uint32_t *)__section_end(".textrw"))
+     61          #define RAMFUNC_SECTION_SIZE        __section_size(".textrw")
+     62          
+     63          #elif defined(__GNUC__)
+     64          // armgcc
+     65          extern uint32_t __ram_func_section_start;
+     66          extern uint32_t __ram_func_section_end;
+     67          #define RAMFUNC_SECTION_BEGIN       (uint32_t) &__ram_func_section_start
+     68          #define RAMFUNC_SECTION_END         (uint32_t) &__ram_func_section_end
+     69          #define RAMFUNC_SECTION_SIZE        (RAMFUNC_SECTION_END - RAMFUNC_SECTION_BEGIN)
+     70          
+     71          #elif defined(__CC_ARM)
+     72          // armcc
+     73          // The section name in the armcc scatter file must be "ram_code".
+     74          extern uint32_t ram_code$$Base;
+     75          extern uint32_t ram_code$$Limit;
+     76          #define RAMFUNC_SECTION_BEGIN       (uint32_t) &ram_code$$Base
+     77          #define RAMFUNC_SECTION_END         (uint32_t) &ram_code$$Limit
+     78          #define RAMFUNC_SECTION_SIZE        (RAMFUNC_SECTION_END - RAMFUNC_SECTION_BEGIN)
+     79          
+     80          #endif
+     81          
+     82          #ifndef ARM_MPU_ARMV8_H
+     83          static uint32_t mpu_round_up_next_pwr2(uint32_t nbr);
+     84          static uint8_t mpu_region_size_encode(uint32_t region_size);
+     85          static void mpu_compute_region_data(uint32_t section_begin,
+     86                                              uint32_t section_end,
+     87                                              uint32_t section_size,
+     88                                              uint32_t *mpu_region_begin,
+     89                                              uint32_t *mpu_region_end,
+     90                                              uint32_t *mpu_region_size);
+     91          
+     92          #endif
+     93          
+
+   \                                 In section .bss, align 4
+     94          static uint32_t region_nbr = 0;
+   \                     region_nbr:
+   \        0x0                      DS8 4
+     95          
+     96          /**************************************************************************//**
+     97           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     98          void sl_mpu_disable_execute_from_ram(void)
+     99          {
+   \                     sl_mpu_disable_execute_from_ram: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+    100            uint32_t mpu_region_begin = 0u;
+   \        0x4   0xF05F 0x0800      MOVS     R8,#+0
+    101            uint32_t mpu_region_end = 0u;
+   \        0x8   0x2700             MOVS     R7,#+0
+    102          
+    103            ARM_MPU_Disable();
+   \        0xA   0x.... 0x....      BL       ARM_MPU_Disable
+    104          
+    105          #ifdef ARM_MPU_ARMV8_H
+    106            uint32_t rbar;
+    107          
+    108            // Region end address LSB are always considered 1F.
+    109            mpu_region_begin = MPU_ARM_SRAM_MEM_BASE;
+   \        0xE   0xF05F 0x5600      MOVS     R6,#+536870912
+    110            mpu_region_end = (RAMFUNC_SECTION_SIZE > 0) ? (RAMFUNC_SECTION_BEGIN & MPU_RBAR_BASE_Msk) - 32u
+    111                             : (MPU_ARM_SRAM_MEM_BASE + MPU_ARM_SRAM_MEM_SIZE);
+   \       0x12   0x....             LDR.N    R4,??DataTable6_5
+   \       0x14   0x2C00             CMP      R4,#+0
+   \       0x16   0xD004             BEQ.N    ??sl_mpu_disable_execute_from_ram_0
+   \       0x18   0x....             LDR.N    R7,??DataTable6_6
+   \       0x1A   0x097F             LSRS     R7,R7,#+5
+   \       0x1C   0x017F             LSLS     R7,R7,#+5
+   \       0x1E   0x3F20             SUBS     R7,R7,#+32
+   \       0x20   0xE001             B.N      ??sl_mpu_disable_execute_from_ram_1
+   \                     ??sl_mpu_disable_execute_from_ram_0: (+1)
+   \       0x22   0xF05F 0x4780      MOVS     R7,#+1073741824
+    112          
+    113            ARM_MPU_SetMemAttr(0, ARM_MPU_ATTR(ARM_MPU_ATTR_MEMORY_(1, 0, 1, 0), 0));
+   \                     ??sl_mpu_disable_execute_from_ram_1: (+1)
+   \       0x26   0x21A0             MOVS     R1,#+160
+   \       0x28   0x2000             MOVS     R0,#+0
+   \       0x2A   0x.... 0x....      BL       ARM_MPU_SetMemAttr
+    114          
+    115            if (mpu_region_begin <= mpu_region_end) {
+   \       0x2E   0x42B7             CMP      R7,R6
+   \       0x30   0xD314             BCC.N    ??sl_mpu_disable_execute_from_ram_2
+    116              // A bug exists in some versions of ARM_MPU_RBAR(). Set base addr manually.
+    117              rbar = MPU_RBAR_VALUE | (mpu_region_begin & MPU_RBAR_BASE_Msk);
+   \       0x32   0x0970             LSRS     R0,R6,#+5
+   \       0x34   0x0140             LSLS     R0,R0,#+5
+   \       0x36   0xF050 0x0003      ORRS     R0,R0,#0x3
+   \       0x3A   0x0005             MOVS     R5,R0
+    118              ARM_MPU_SetRegion(region_nbr, rbar, ARM_MPU_RLAR(mpu_region_end, 0u));
+   \       0x3C   0x.... 0x....      LDR.W    R8,??DataTable6_7
+   \       0x40   0x2001             MOVS     R0,#+1
+   \       0x42   0x003A             MOVS     R2,R7
+   \       0x44   0xF360 0x0204      BFI      R2,R0,#+0,#+5
+   \       0x48   0x0029             MOVS     R1,R5
+   \       0x4A   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0x4E   0x.... 0x....      BL       ARM_MPU_SetRegion
+    119              region_nbr++;
+   \       0x52   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0x56   0x1C40             ADDS     R0,R0,#+1
+   \       0x58   0xF8C8 0x0000      STR      R0,[R8, #+0]
+    120            }
+    121          
+    122            if (RAMFUNC_SECTION_SIZE > 0u) {
+   \                     ??sl_mpu_disable_execute_from_ram_2: (+1)
+   \       0x5C   0x2C00             CMP      R4,#+0
+   \       0x5E   0xD016             BEQ.N    ??sl_mpu_disable_execute_from_ram_3
+    123              // Region end address LSB are always considered 1F.
+    124              mpu_region_begin = (RAMFUNC_SECTION_END + 31u) & MPU_RLAR_LIMIT_Msk;
+   \       0x60   0x....             LDR.N    R0,??DataTable6_8
+   \       0x62   0x0940             LSRS     R0,R0,#+5
+   \       0x64   0x0140             LSLS     R0,R0,#+5
+   \       0x66   0x0006             MOVS     R6,R0
+    125              mpu_region_end = MPU_ARM_SRAM_MEM_BASE + MPU_ARM_SRAM_MEM_SIZE - 32u;
+   \       0x68   0x....             LDR.N    R0,??DataTable6_9
+   \       0x6A   0x0007             MOVS     R7,R0
+    126          
+    127              // A bug exists in some versions of ARM_MPU_RBAR(). Set base addr manually.
+    128              rbar = MPU_RBAR_VALUE | (mpu_region_begin & MPU_RBAR_BASE_Msk);
+   \       0x6C   0x0970             LSRS     R0,R6,#+5
+   \       0x6E   0x0140             LSLS     R0,R0,#+5
+   \       0x70   0xF050 0x0003      ORRS     R0,R0,#0x3
+   \       0x74   0x0005             MOVS     R5,R0
+    129              ARM_MPU_SetRegion(region_nbr, rbar, ARM_MPU_RLAR(mpu_region_end, 0u));
+   \       0x76   0x....             LDR.N    R4,??DataTable6_7
+   \       0x78   0x2001             MOVS     R0,#+1
+   \       0x7A   0x003A             MOVS     R2,R7
+   \       0x7C   0xF360 0x0204      BFI      R2,R0,#+0,#+5
+   \       0x80   0x0029             MOVS     R1,R5
+   \       0x82   0x6820             LDR      R0,[R4, #+0]
+   \       0x84   0x.... 0x....      BL       ARM_MPU_SetRegion
+    130              region_nbr++;
+   \       0x88   0x6820             LDR      R0,[R4, #+0]
+   \       0x8A   0x1C40             ADDS     R0,R0,#+1
+   \       0x8C   0x6020             STR      R0,[R4, #+0]
+    131            }
+    132          #else
+    133            uint8_t region_size_encoded;
+    134            uint32_t mpu_region_size;
+    135          
+    136            (void) mpu_region_begin;
+    137            (void) mpu_region_end;
+    138          
+    139            // Set background RAM region as execute never
+    140            region_size_encoded = mpu_region_size_encode(MPU_ARM_SRAM_MEM_SIZE);
+    141            ARM_MPU_SetRegionEx(region_nbr,
+    142                                MPU_ARM_SRAM_MEM_BASE,
+    143                                ((region_size_encoded << MPU_RASR_SIZE_Pos) & MPU_RASR_SIZE_Msk)
+    144                                | (ARM_MPU_AP_FULL << MPU_RASR_AP_Pos)
+    145                                | MPU_RASR_B_Msk
+    146                                | MPU_RASR_XN_Msk
+    147                                | MPU_RASR_ENABLE_Msk);
+    148            region_nbr++;
+    149          
+    150            // Set RAM functions region as executable
+    151            if (RAMFUNC_SECTION_SIZE > 0u) {
+    152              uint32_t sr_size;
+    153              uint8_t  srd_msk;
+    154          
+    155              mpu_compute_region_data(RAMFUNC_SECTION_BEGIN,
+    156                                      RAMFUNC_SECTION_END,
+    157                                      RAMFUNC_SECTION_SIZE,
+    158                                      &mpu_region_begin,
+    159                                      &mpu_region_end,
+    160                                      &mpu_region_size);
+    161          
+    162              // Compute sub-region Disable (SRD) mask
+    163              sr_size = mpu_region_size / MPU_SUBREGION_NBR;
+    164              // Check if sr_size is zero to satisfy MISRA
+    165              sr_size = (sr_size != 0) ? sr_size : MPU_SUBREGION_USE_MIN_SIZE / MPU_SUBREGION_NBR;
+    166              srd_msk = (1u << ((mpu_region_end - RAMFUNC_SECTION_END) / sr_size)) - 1u;
+    167              srd_msk = srd_msk << (((RAMFUNC_SECTION_END - mpu_region_begin - 1u) / sr_size) + 1u);
+    168              srd_msk |= (1u << ((RAMFUNC_SECTION_BEGIN - mpu_region_begin) / sr_size)) - 1u;
+    169          
+    170              region_size_encoded = mpu_region_size_encode(mpu_region_size);
+    171              ARM_MPU_SetRegionEx(region_nbr,
+    172                                  mpu_region_begin,
+    173                                  ((region_size_encoded << MPU_RASR_SIZE_Pos) & MPU_RASR_SIZE_Msk)
+    174                                  | (ARM_MPU_AP_FULL << MPU_RASR_AP_Pos)
+    175                                  | MPU_RASR_B_Msk
+    176                                  | MPU_RASR_ENABLE_Msk
+    177                                  | (srd_msk << MPU_RASR_SRD_Pos));
+    178              region_nbr++;
+    179            }
+    180          #endif
+    181          
+    182            // Enable MPU with default background region
+    183            ARM_MPU_Enable(MPU_CTRL_PRIVDEFENA_Msk);
+   \                     ??sl_mpu_disable_execute_from_ram_3: (+1)
+   \       0x8E   0x2004             MOVS     R0,#+4
+   \       0x90   0x.... 0x....      BL       ARM_MPU_Enable
+    184          
+    185            __DSB();
+   \       0x94   0xF3BF 0x8F4F      DSB      SY
+    186            __ISB();
+   \       0x98   0xF3BF 0x8F6F      ISB      SY
+    187          }
+   \       0x9C   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    188          
+    189          /**************************************************************************//**
+    190           * Enables simplified MPU driver. Configures memory address as non-executable.
+    191           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    192          sl_status_t sl_mpu_disable_execute(uint32_t address_begin,
+    193                                             uint32_t address_end,
+    194                                             uint32_t size)
+    195          {
+   \                     sl_mpu_disable_execute: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x0017             MOVS     R7,R2
+    196            uint32_t mpu_region_begin = 0u;
+   \        0xA   0xF05F 0x0800      MOVS     R8,#+0
+    197            uint32_t mpu_region_end = 0u;
+   \        0xE   0xF05F 0x0900      MOVS     R9,#+0
+    198          
+    199            ARM_MPU_Disable();
+   \       0x12   0x.... 0x....      BL       ARM_MPU_Disable
+    200          
+    201          #ifdef ARM_MPU_ARMV8_H
+    202            uint32_t rbar;
+    203          
+    204            // Size of memory region must be 32 bytes or more.
+    205            if (size >= 32u) {
+   \       0x16   0x2F20             CMP      R7,#+32
+   \       0x18   0xD32D             BCC.N    ??sl_mpu_disable_execute_0
+    206              // Device memory type non Gathering, non Re-ordering, Early Write Acknowledgement
+    207              ARM_MPU_SetMemAttr(1, ARM_MPU_ATTR_DEVICE_nGnRE);
+   \       0x1A   0x2101             MOVS     R1,#+1
+   \       0x1C   0x2001             MOVS     R0,#+1
+   \       0x1E   0x.... 0x....      BL       ARM_MPU_SetMemAttr
+    208          
+    209              // Round inside the memory region, if address is not align on 32 bytes.
+    210              mpu_region_begin = ((address_begin % 32u) == 0u) ? address_begin
+    211                                 : (address_begin + (32u - (address_begin % 32u)));
+   \       0x22   0xF015 0x0F1F      TST      R5,#0x1F
+   \       0x26   0xD101             BNE.N    ??sl_mpu_disable_execute_1
+   \       0x28   0x46A8             MOV      R8,R5
+   \       0x2A   0xE005             B.N      ??sl_mpu_disable_execute_2
+   \                     ??sl_mpu_disable_execute_1: (+1)
+   \       0x2C   0xF115 0x0820      ADDS     R8,R5,#+32
+   \       0x30   0xF015 0x001F      ANDS     R0,R5,#0x1F
+   \       0x34   0xEBB8 0x0800      SUBS     R8,R8,R0
+    212          
+    213              // Round inside the memory region, if address is not align on 32 bytes.
+    214              mpu_region_end = ((address_end % 32u) == 0u) ? address_end
+    215                               : (address_end  - (address_end % 32u));
+   \                     ??sl_mpu_disable_execute_2: (+1)
+   \       0x38   0xF016 0x0F1F      TST      R6,#0x1F
+   \       0x3C   0xD101             BNE.N    ??sl_mpu_disable_execute_3
+   \       0x3E   0x46B1             MOV      R9,R6
+   \       0x40   0xE003             B.N      ??sl_mpu_disable_execute_4
+   \                     ??sl_mpu_disable_execute_3: (+1)
+   \       0x42   0xF016 0x091F      ANDS     R9,R6,#0x1F
+   \       0x46   0xEBB6 0x0909      SUBS     R9,R6,R9
+    216          
+    217              // A bug exists in some versions of ARM_MPU_RBAR(). Set base addr manually.
+    218              rbar = ARM_MPU_RBAR(0u, 0u, 0u, 1u, 1u) | (mpu_region_begin & MPU_RBAR_BASE_Msk);
+   \                     ??sl_mpu_disable_execute_4: (+1)
+   \       0x4A   0xEA5F 0x1058      LSRS     R0,R8,#+5
+   \       0x4E   0x0140             LSLS     R0,R0,#+5
+   \       0x50   0xF050 0x0003      ORRS     R0,R0,#0x3
+   \       0x54   0x0004             MOVS     R4,R0
+    219              ARM_MPU_SetRegion(region_nbr, rbar, ARM_MPU_RLAR(mpu_region_end, 1u));
+   \       0x56   0x.... 0x....      LDR.W    R10,??DataTable6_7
+   \       0x5A   0x2003             MOVS     R0,#+3
+   \       0x5C   0x464A             MOV      R2,R9
+   \       0x5E   0xF360 0x0204      BFI      R2,R0,#+0,#+5
+   \       0x62   0x0021             MOVS     R1,R4
+   \       0x64   0xF8DA 0x0000      LDR      R0,[R10, #+0]
+   \       0x68   0x.... 0x....      BL       ARM_MPU_SetRegion
+    220              region_nbr++;
+   \       0x6C   0xF8DA 0x0000      LDR      R0,[R10, #+0]
+   \       0x70   0x1C40             ADDS     R0,R0,#+1
+   \       0x72   0xF8CA 0x0000      STR      R0,[R10, #+0]
+    221            }
+    222          #else
+    223            uint8_t  region_size_encoded;
+    224            uint32_t mpu_region_size;
+    225            uint32_t sr_size;
+    226            uint8_t  srd_msk;
+    227          
+    228            (void) mpu_region_begin;
+    229            (void) mpu_region_end;
+    230          
+    231            mpu_compute_region_data(address_begin,
+    232                                    address_end,
+    233                                    size,
+    234                                    &mpu_region_begin,
+    235                                    &mpu_region_end,
+    236                                    &mpu_region_size);
+    237          
+    238            // Compute sub-region Disable (SRD) mask
+    239            sr_size = mpu_region_size / MPU_SUBREGION_NBR;
+    240            // Check if sr_size is zero to satisfy MISRA
+    241            sr_size = (sr_size != 0) ? sr_size : MPU_SUBREGION_USE_MIN_SIZE / MPU_SUBREGION_NBR;
+    242            srd_msk = (1u << (((mpu_region_end - address_end) + (sr_size - 1)) / sr_size)) - 1u;
+    243            srd_msk = srd_msk << ((address_end - mpu_region_begin - 1u) / sr_size);
+    244            srd_msk |= (1u << (((address_begin - mpu_region_begin) + (sr_size - 1)) / sr_size)) - 1u;
+    245          
+    246            if (srd_msk == 0xFF) {
+    247              return SL_STATUS_INVALID_RANGE;
+    248            }
+    249          
+    250            // Set region as execute never.
+    251            region_size_encoded = mpu_region_size_encode(mpu_region_size);
+    252            ARM_MPU_SetRegionEx(region_nbr,
+    253                                mpu_region_begin,
+    254                                ((region_size_encoded << MPU_RASR_SIZE_Pos) & MPU_RASR_SIZE_Msk)
+    255                                | (ARM_MPU_AP_FULL << MPU_RASR_AP_Pos)
+    256                                | MPU_RASR_B_Msk
+    257                                | MPU_RASR_XN_Msk
+    258                                | MPU_RASR_ENABLE_Msk
+    259                                | (srd_msk << MPU_RASR_SRD_Pos));
+    260            region_nbr++;
+    261          #endif
+    262          
+    263            // Enable MPU with default background region
+    264            ARM_MPU_Enable(MPU_CTRL_PRIVDEFENA_Msk);
+   \                     ??sl_mpu_disable_execute_0: (+1)
+   \       0x76   0x2004             MOVS     R0,#+4
+   \       0x78   0x.... 0x....      BL       ARM_MPU_Enable
+    265          
+    266            __DSB();
+   \       0x7C   0xF3BF 0x8F4F      DSB      SY
+    267            __ISB();
+   \       0x80   0xF3BF 0x8F6F      ISB      SY
+    268          
+    269            return SL_STATUS_OK;
+   \       0x84   0x2000             MOVS     R0,#+0
+   \       0x86   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    270          }
+    271          
+    272          #ifndef ARM_MPU_ARMV8_H
+    273          /**************************************************************************//**
+    274           * Rounds up given number to next power of 2.
+    275           *
+    276           * @param nbr Number to round-up to next power of 2.
+    277           *****************************************************************************/
+    278          static uint32_t mpu_round_up_next_pwr2(uint32_t nbr)
+    279          {
+    280            nbr--;
+    281            nbr |= nbr >> 1;
+    282            nbr |= nbr >> 2;
+    283            nbr |= nbr >> 4;
+    284            nbr |= nbr >> 8;
+    285            nbr |= nbr >> 16;
+    286            nbr++;
+    287          
+    288            return nbr;
+    289          }
+    290          #endif
+    291          
+    292          #ifndef ARM_MPU_ARMV8_H
+    293          /**************************************************************************//**
+    294           * Encode region size in RASR register REGION size field format.
+    295           *
+    296           * @param region_size Size of region.
+    297           *****************************************************************************/
+    298          static uint8_t mpu_region_size_encode(uint32_t region_size)
+    299          {
+    300            return (uint8_t)(30u - __CLZ(region_size));
+    301          }
+    302          #endif
+    303          
+    304          #ifndef ARM_MPU_ARMV8_H
+    305          /**************************************************************************//**
+    306           * Compute region size.
+    307           *
+    308           * @param section_begin    Section begin address.
+    309           *
+    310           * @param section_end      Section end address.
+    311           *
+    312           * @param section_size     Size of section.
+    313           *
+    314           * @param mpu_region_begin Pointer to a region begin variable.
+    315           *
+    316           * @param mpu_region_end   Pointer to a region end variable.
+    317           *
+    318           * @param mpu_region_size  Pointer to a region size variable.
+    319           *****************************************************************************/
+    320          static void mpu_compute_region_data(uint32_t section_begin,
+    321                                              uint32_t section_end,
+    322                                              uint32_t section_size,
+    323                                              uint32_t *mpu_region_begin,
+    324                                              uint32_t *mpu_region_end,
+    325                                              uint32_t *mpu_region_size)
+    326          {
+    327            uint32_t region_begin;
+    328            uint32_t region_end;
+    329            uint32_t region_size;
+    330          
+    331            // Compute MPU region size and begin address
+    332            region_size = mpu_round_up_next_pwr2(section_size);
+    333            region_size = (region_size < MPU_SUBREGION_USE_MIN_SIZE) ? MPU_SUBREGION_USE_MIN_SIZE : region_size;
+    334          
+    335            region_begin = section_begin & ~(region_size - 1u);
+    336            region_end = region_begin + region_size;
+    337          
+    338            while (region_end < section_end) {
+    339              region_size *= 2u;
+    340              region_begin = section_begin & ~(region_size - 1u);
+    341              region_end = region_begin + region_size;
+    342            }
+    343          
+    344            *mpu_region_begin = region_begin;
+    345            *mpu_region_end = region_end;
+    346            *mpu_region_size = region_size;
+    347          }
+    348          #endif
+    349          
+    350          #if __CORTEX_M != (0u)
+    351          /**************************************************************************//**
+    352           * MemManage default exception handler. Reset target.
+    353           *****************************************************************************/
+
+   \                                 In section .text, align 2
+    354          __WEAK void mpu_fault_handler(void)
+    355          {
+   \                     mpu_fault_handler: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    356            __NVIC_SystemReset();
+   \        0x2   0x.... 0x....      BL       __NVIC_SystemReset
+    357          }
+   \        0x6   0xBD01             POP      {R0,PC}
+    358          
+    359          /**************************************************************************//**
+    360           * MemManage exception handler.
+    361           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    362          void MemManage_Handler(void)
+    363          {
+   \                     MemManage_Handler: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    364            mpu_fault_handler();
+   \        0x2   0x.... 0x....      BL       mpu_fault_handler
+    365          }
+   \        0x6   0xBD01             POP      {R0,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0xE000'ED0C        DC32     0xe000ed0c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x05FA'0004        DC32     0x5fa0004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0xE000'ED94        DC32     0xe000ed94
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0xE000'ED24        DC32     0xe000ed24
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0xE000'ED90        DC32     0xe000ed90
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \        0x0   0x....'....        DC32     SIZEOF(`.textrw`)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \        0x0   0x....'....        DC32     SFB(`.textrw`)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_7:
+   \        0x0   0x....'....        DC32     region_nbr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_8:
+   \        0x0   0x....'....        DC32     SFE(`.textrw`)+31
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_9:
+   \        0x0   0x3FFF'FFE0        DC32     0x3fffffe0
+    366          #endif
+    367          
+    368          #endif /* defined (__MPU_PRESENT) && (__MPU_PRESENT == 1U) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   ARM_MPU_Disable
+       0   ARM_MPU_Enable
+      16   ARM_MPU_SetMemAttr
+        16   -> ARM_MPU_SetMemAttrEx
+      16   ARM_MPU_SetMemAttrEx
+      16   ARM_MPU_SetRegion
+        16   -> ARM_MPU_SetRegionEx
+       0   ARM_MPU_SetRegionEx
+       8   MemManage_Handler
+         8   -> mpu_fault_handler
+       0   __NVIC_SystemReset
+       8   mpu_fault_handler
+         8   -> __NVIC_SystemReset
+      32   sl_mpu_disable_execute
+        32   -> ARM_MPU_Disable
+        32   -> ARM_MPU_Enable
+        32   -> ARM_MPU_SetMemAttr
+        32   -> ARM_MPU_SetRegion
+      24   sl_mpu_disable_execute_from_ram
+        24   -> ARM_MPU_Disable
+        24   -> ARM_MPU_Enable
+        24   -> ARM_MPU_SetMemAttr
+        24   -> ARM_MPU_SetRegion
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+      34  ARM_MPU_Disable
+      32  ARM_MPU_Enable
+      22  ARM_MPU_SetMemAttr
+      66  ARM_MPU_SetMemAttrEx
+      22  ARM_MPU_SetRegion
+       8  ARM_MPU_SetRegionEx
+       8  MemManage_Handler
+      26  __NVIC_SystemReset
+       8  mpu_fault_handler
+       4  region_nbr
+     138  sl_mpu_disable_execute
+     160  sl_mpu_disable_execute_from_ram
+
+ 
+   4 bytes in section .bss
+ 564 bytes in section .text
+ 
+ 556 bytes of CODE memory (+ 8 bytes shared)
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: none

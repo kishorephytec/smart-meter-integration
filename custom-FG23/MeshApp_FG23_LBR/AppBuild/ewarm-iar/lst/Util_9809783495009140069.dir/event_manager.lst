@@ -1,0 +1,727 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         02/Dec/2024  12:57:44
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\ProAppSrc\Util\event_manager\event_manager.c
+#    Command line                 =
+#        -f
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir\event_manager.o.rsp
+#        (D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\ProAppSrc\Util\event_manager\event_manager.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\Util_9809783495009140069.dir
+#        --diag_suppress Pa050 -o
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir\event_manager.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\Util_9809783495009140069.dir\event_manager.lst
+#    Object file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir\event_manager.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\ProAppSrc\Util\event_manager\event_manager.c
+      1          /** \file event_manager.c
+      2           *******************************************************************************
+      3           ** \brief Implements the Event Manager Functionality
+      4           **
+      5           ** \cond STD_FILE_HEADER
+      6           **
+      7           ** COPYRIGHT(c) 2023-24 Procubed Innovations Pvt Ltd.
+      8           ** All rights reserved.
+      9           **
+     10           ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     11           ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     12           ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     13           ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     14           ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     15           ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     16           ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     17           **
+     18           *******************************************************************************
+     19           **  \endcond
+     20           */
+     21          
+     22          /*
+     23          ********************************************************************************
+     24          * File inclusion
+     25          ********************************************************************************
+     26          */
+     27          
+     28          #include "StackPHYConf.h"
+     29          #include "common.h"
+     30          #include "event_manager.h"
+     31          
+     32          
+     33          /*
+     34          ** =============================================================================
+     35          ** Private Macro definitions
+     36          ** =============================================================================
+     37          */
+     38          	
+     39          #if ( MAX_EVENT_PRIO < 65 )
+     40          #define GRP1_SIZE 1
+     41          #define GRP_LEVEL 1
+     42          
+     43          #elif ( MAX_EVENT_PRIO > 64 ) && ( MAX_EVENT_PRIO < 513 ) 
+     44          // Raka  .. This is not used in current code base
+     45          #define GRP1_SIZE ( MAX_EVENT_PRIO >> 6 )
+     46          #define GRP2_SIZE 1
+     47          #define GRP_LEVEL 2
+     48          ///////////Raka .. ends .....
+     49          
+     50          #elif ( MAX_EVENT_PRIO > 512 ) && ( MAX_EVENT_PRIO < 4097 ) 
+     51          // Raka  .. This is not used in current code base
+     52          #define GRP1_SIZE ( MAX_EVENT_PRIO >> 6 )
+     53          #define GRP2_SIZE ( MAX_EVENT_PRIO >> 6 ) >> 3
+     54          #define GRP3_SIZE 1
+     55          #define GRP_LEVEL 3
+     56          ///////////Raka .. ends .....
+     57          #endif
+     58          
+     59          /* Size of ready table */
+     60          #if ( GRP_LEVEL == 1 )
+     61          #define MIN_INDEX  ( MAX_EVENT_PRIO >> 3 )
+     62          
+     63          #if MAX_EVENT_PRIO > ( MIN_INDEX << 3 )
+     64          #define RDY_TBL_SIZE   (( MAX_EVENT_PRIO >> 3 ) + 1 + 1 )
+     65          #else
+     66          // Raka  .. This is not used in current code base
+     67          #define RDY_TBL_SIZE   (( MAX_EVENT_PRIO >> 3 ) + 1 )
+     68          #endif
+     69          
+     70          #elif ( GRP_LEVEL == 2 )
+     71          // Raka  .. This is not used in current code base
+     72          #define  RDY_TBL_SIZE   ((MAX_EVENT_PRIO) >> 3 + GRP1_SIZE + 1 )
+     73          #elif ( GRP_LEVEL == 3 )
+     74          // Raka  .. This is not used in current code base
+     75          #define RDY_TBL_SIZE   ((MAX_EVENT_PRIO) >> 3 + GRP1_SIZE + \
+     76              GRP2_SIZE + 1 )
+     77          #elif
+     78          #error NOT SUPPORTED
+     79          #endif
+     80          
+     81          
+     82          /*
+     83          ** =============================================================================
+     84          ** Private Structures, Unions & enums Type Definitions
+     85          ** =============================================================================
+     86          **/
+     87          
+     88          /* None */
+     89          
+     90          /*
+     91          ** =============================================================================
+     92          ** Private Variable Definitions
+     93          ** =============================================================================
+     94          */
+     95          
+     96          /**< N-bit bit mask for supporting N threads with indicating which of the 
+     97          threads are in ready state and ready to be executed by the scheduler*/
+
+   \                                 In section .bss, align 4
+     98          static uint8_t event_queue[RDY_TBL_SIZE] = {0}; 
+   \                     event_queue:
+   \        0x0                      DS8 4
+     99          
+    100          /**< Look up table to get the Lowest Bit Set in a byte */
+
+   \                                 In section .rodata, align 4
+    101          static uint8_t const  lbs_lookup_tbl[] = {
+   \                     lbs_lookup_tbl:
+   \        0x0   0x00 0x00          DC8 0, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0, 4, 0, 1, 0, 2, 0, 1
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x03 0x00    
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x04 0x00    
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01
+   \       0x17   0x00 0x03          DC8 0, 3, 0, 1, 0, 2, 0, 1, 0, 5, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0
+   \              0x00 0x01    
+   \              0x00 0x02    
+   \              0x00 0x01    
+   \              0x00 0x05    
+   \              0x00 0x01    
+   \              0x00 0x02    
+   \              0x00 0x01    
+   \              0x00 0x03    
+   \              0x00 0x01    
+   \              0x00 0x02    
+   \              0x00
+   \       0x2E   0x01 0x00          DC8 1, 0, 4, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0, 6, 0, 1, 0, 2
+   \              0x04 0x00    
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x03 0x00    
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x06 0x00    
+   \              0x01 0x00    
+   \              0x02
+   \       0x45   0x00 0x01          DC8 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0, 4, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0
+   \              0x00 0x03    
+   \              0x00 0x01    
+   \              0x00 0x02    
+   \              0x00 0x01    
+   \              0x00 0x04    
+   \              0x00 0x01    
+   \              0x00 0x02    
+   \              0x00 0x01    
+   \              0x00 0x03    
+   \              0x00 0x01    
+   \              0x00
+   \       0x5C   0x02 0x00          DC8 2, 0, 1, 0, 5, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0, 4, 0, 1
+   \              0x01 0x00    
+   \              0x05 0x00    
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x03 0x00    
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x04 0x00    
+   \              0x01
+   \       0x73   0x00 0x02          DC8 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0, 7, 0, 1, 0, 2, 0, 1, 0, 3, 0
+   \              0x00 0x01    
+   \              0x00 0x03    
+   \              0x00 0x01    
+   \              0x00 0x02    
+   \              0x00 0x01    
+   \              0x00 0x07    
+   \              0x00 0x01    
+   \              0x00 0x02    
+   \              0x00 0x01    
+   \              0x00 0x03    
+   \              0x00
+   \       0x8A   0x01 0x00          DC8 1, 0, 2, 0, 1, 0, 4, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0, 5
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x04 0x00    
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x03 0x00    
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x05
+   \       0xA1   0x00 0x01          DC8 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0, 4, 0, 1, 0, 2, 0, 1, 0
+   \              0x00 0x02    
+   \              0x00 0x01    
+   \              0x00 0x03    
+   \              0x00 0x01    
+   \              0x00 0x02    
+   \              0x00 0x01    
+   \              0x00 0x04    
+   \              0x00 0x01    
+   \              0x00 0x02    
+   \              0x00 0x01    
+   \              0x00
+   \       0xB8   0x03 0x00          DC8 3, 0, 1, 0, 2, 0, 1, 0, 6, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x06 0x00    
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x03 0x00    
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01
+   \       0xCF   0x00 0x04          DC8 0, 4, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0, 5, 0, 1, 0, 2, 0
+   \              0x00 0x01    
+   \              0x00 0x02    
+   \              0x00 0x01    
+   \              0x00 0x03    
+   \              0x00 0x01    
+   \              0x00 0x02    
+   \              0x00 0x01    
+   \              0x00 0x05    
+   \              0x00 0x01    
+   \              0x00 0x02    
+   \              0x00
+   \       0xE6   0x01 0x00          DC8 1, 0, 3, 0, 1, 0, 2, 0, 1, 0, 4, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2
+   \              0x03 0x00    
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x04 0x00    
+   \              0x01 0x00    
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x03 0x00    
+   \              0x01 0x00    
+   \              0x02
+   \       0xFD   0x00 0x01          DC8 0, 1, 0
+   \              0x00
+    102              0, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0x00 to 0x0F */
+    103              4, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0x10 to 0x1F */
+    104              5, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0x20 to 0x2F */
+    105              4, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0x30 to 0x3F */
+    106              6, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0x40 to 0x4F */
+    107              4, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0x50 to 0x5F */
+    108              5, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0x60 to 0x6F */
+    109              4, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0x70 to 0x7F */
+    110              7, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0x80 to 0x8F */
+    111              4, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0x90 to 0x9F */
+    112              5, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0xA0 to 0xAF */
+    113              4, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0xB0 to 0xBF */
+    114              6, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0xC0 to 0xCF */
+    115              4, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0xD0 to 0xDF */
+    116              5, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0,       /* 0xE0 to 0xEF */
+    117              4, 0, 1, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 1, 0        /* 0xF0 to 0xFF */
+    118          };
+    119          
+    120          /*
+    121          ** =============================================================================
+    122          ** Private Function Prototypes
+    123          ** =============================================================================
+    124          */
+    125          
+    126          /* None */
+    127          
+    128          /*
+    129          ** =============================================================================
+    130          ** Private Function Definitions
+    131          ** =============================================================================
+    132          */
+    133          
+    134          /* None */
+    135          
+    136          /*
+    137          ** =============================================================================
+    138          ** External Variable Declarations
+    139          ** =============================================================================
+    140          */
+    141          extern void signal_event_to_mac_task(uint8_t event);
+    142          /* None */
+    143          
+    144          /*
+    145          ** =============================================================================
+    146          ** External Function Prototypes
+    147          ** =============================================================================
+    148          */
+    149          
+    150          /* None */
+    151          
+    152          /*
+    153          ** =============================================================================
+    154          ** Public Variables Definitions
+    155          ** =============================================================================
+    156          **/
+    157          
+    158          /* None */
+    159          
+    160          /*
+    161          ** =============================================================================
+    162          ** Public Function Prototypes
+    163          ** =============================================================================
+    164          */
+    165          
+    166          /* None */
+    167          
+    168          /*
+    169          ** =============================================================================
+    170          ** Public Function Definitions
+    171          ** =============================================================================
+    172          */
+    173          
+
+   \                                 In section .text, align 2, keep-with-next
+    174          uint32_t highest_prio_event_get( void )
+    175          {
+   \                     highest_prio_event_get: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+    176              uint32_t prio = 0, level1 = 0;
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x2200             MOVS     R2,#+0
+    177              
+    178              if( 0 == event_queue[0] ) return MAX_BASE_VALUE;
+   \        0x6   0x....             LDR.N    R3,??DataTable2
+   \        0x8   0x7818             LDRB     R0,[R3, #+0]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD102             BNE.N    ??highest_prio_event_get_0
+   \        0xE   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \       0x12   0xE007             B.N      ??highest_prio_event_get_1
+    179          #if ( GRP_LEVEL == 1 )
+    180              level1 = lbs_lookup_tbl[event_queue[0]];
+   \                     ??highest_prio_event_get_0: (+1)
+   \       0x14   0x....             LDR.N    R0,??DataTable2_1
+   \       0x16   0x781C             LDRB     R4,[R3, #+0]
+   \       0x18   0x5D04             LDRB     R4,[R0, R4]
+    181              prio = ( level1 << 3 ) + lbs_lookup_tbl[event_queue[level1 + 1 ]];
+   \       0x1A   0x00E5             LSLS     R5,R4,#+3
+   \       0x1C   0x4423             ADD      R3,R3,R4
+   \       0x1E   0x785B             LDRB     R3,[R3, #+1]
+   \       0x20   0x5CC0             LDRB     R0,[R0, R3]
+   \       0x22   0x1828             ADDS     R0,R5,R0
+    182          #elif ( GRP_LEVEL == 2 )
+    183              
+    184               // Raka  .. This is not used in current code base
+    185              uint32_t level2 = lbs_lookup_tbl[event_queue[0]];
+    186              level1 = lbs_lookup_tbl[event_queue[level2 + 1 ]];
+    187              prio = ( level2 << 3 ) << 3 + level1 << 3 +
+    188                  lbs_lookup_tbl[event_queue[GRP1_SIZE+1+level1]];
+    189          #elif ( STS_GRP_LEVEL == 3 )
+    190              
+    191               // Raka  .. This is not used in current code base
+    192              uint32_t level3 = lbs_lookup_tbl[event_queue[0]];
+    193              uint32_t level2 = lbs_lookup_tbl[event_queue[ 1 + level3 ]];
+    194              level1 = lbs_lookup_tbl[event_queue[GRP2_SIZE + 1 + level2 ]];
+    195              prio = (( level3 << 3 ) << 3 ) << 3 + ( level2 << 3 ) << 3 + ( level1 << 3 )
+    196                  lbs_lookup_tbl[event_queue[GRP2_SIZE + GRP1_SIZE + 1 + level1]];
+    197          #endif
+    198              
+    199          
+    200              return prio;
+   \                     ??highest_prio_event_get_1: (+1)
+   \       0x24   0xBC30             POP      {R4,R5}
+   \       0x26   0x4770             BX       LR
+    201          }
+    202          
+    203          /*----------------------------------------------------------------------------*/
+    204          
+
+   \                                 In section .text, align 2, keep-with-next
+    205          void event_set( uint32_t prio )
+    206          {
+   \                     event_set: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    207              uint32_t level1  = 0, reminder = prio;
+   \        0x4   0x2500             MOVS     R5,#+0
+   \        0x6   0x0027             MOVS     R7,R4
+    208              
+    209          //    irq_state_t flags = __get_interrupt_state();//Umesh
+    210          
+    211          //    flags = irq_disable();
+    212                  
+    213                 
+    214          #if ( GRP_LEVEL == 1 )
+    215              level1 = prio >> 3;
+   \        0x8   0x0026             MOVS     R6,R4
+   \        0xA   0x08F6             LSRS     R6,R6,#+3
+    216              reminder -= ( level1 << 3 );
+   \        0xC   0xEBB7 0x07C6      SUBS     R7,R7,R6, LSL #+3
+    217              event_queue[ 0 ] |= ( 1 << level1 );
+   \       0x10   0x2101             MOVS     R1,#+1
+   \       0x12   0x....             LDR.N    R2,??DataTable2
+   \       0x14   0x7813             LDRB     R3,[R2, #+0]
+   \       0x16   0xFA11 0xF006      LSLS     R0,R1,R6
+   \       0x1A   0x4303             ORRS     R3,R0,R3
+   \       0x1C   0x7013             STRB     R3,[R2, #+0]
+    218              event_queue[ level1 + 1 ] |= ( 1 << reminder );
+   \       0x1E   0xEB02 0x0006      ADD      R0,R2,R6
+   \       0x22   0x7840             LDRB     R0,[R0, #+1]
+   \       0x24   0x40B9             LSLS     R1,R1,R7
+   \       0x26   0x4301             ORRS     R1,R1,R0
+   \       0x28   0xEB02 0x0006      ADD      R0,R2,R6
+   \       0x2C   0x7041             STRB     R1,[R0, #+1]
+    219          #elif ( GRP_LEVEL == 2 )
+    220             // Raka  .. This is not used in current code base
+    221              uint32_t level2 = prio >> 3;
+    222              reminder -= ( level2 << 3 );
+    223              level1 = reminder >> 3;
+    224              reminder -= ( level1 << 3 );
+    225              event_queue[ 0 ] |= level2;
+    226              event_queue[level2 + 1 ] |= level1;
+    227              event_queue[GRP1_SIZE + 1 + level1] |= reminder;
+    228          #elif ( GRP_LEVEL == 3 )
+    229              // Raka  .. This is not used in current code base
+    230              uint32_t level3 = prio >> 3;
+    231              uint32_t level2;
+    232              reminder -= ( level3 << 3 );
+    233              level2 = reminder >> 3;
+    234              reminder -= ( level2 << 3 );
+    235              level1 = reminder >> 3;
+    236              reminder -= ( level1 << 3 );
+    237              event_queue[ 0 ] |= level3;
+    238              event_queue[ 1 + level3 ] |= level2;
+    239              event_queue[GRP2_SIZE + 1 + level2 ] |= level1;
+    240              event_queue[GRP2_SIZE + GRP1_SIZE + 1 + level1] |= reminder;
+    241          #endif
+    242          
+    243          //    irq_enable( flags );
+    244          
+    245              signal_event_to_mac_task((uint8_t)prio);
+   \       0x2E   0x0020             MOVS     R0,R4
+   \       0x30   0xB2C0             UXTB     R0,R0
+   \       0x32   0x.... 0x....      BL       signal_event_to_mac_task
+    246                  
+    247            
+    248          }
+   \       0x36   0xBDF1             POP      {R0,R4-R7,PC}
+    249          
+    250          /*----------------------------------------------------------------------------*/
+    251          
+
+   \                                 In section .text, align 2, keep-with-next
+    252          void event_clear( uint32_t prio )
+    253          {
+   \                     event_clear: (+1)
+   \        0x0   0xB4F0             PUSH     {R4-R7}
+    254              uint32_t level1 = 0, reminder = prio;
+   \        0x2   0x2200             MOVS     R2,#+0
+   \        0x4   0x0006             MOVS     R6,R0
+    255              
+    256          //    irq_state_t flags = __get_interrupt_state();//Umesh;;
+    257          
+    258          //    flags = irq_disable();
+    259                  
+    260              
+    261          #if ( GRP_LEVEL == 1 )
+    262              level1 = prio >> 3;
+   \        0x6   0x0003             MOVS     R3,R0
+   \        0x8   0x08DB             LSRS     R3,R3,#+3
+    263              reminder -= ( level1 << 3 );
+   \        0xA   0xEBB6 0x06C3      SUBS     R6,R6,R3, LSL #+3
+    264              
+    265              event_queue[ level1 + 1 ] &= ~( 1 << reminder );
+   \        0xE   0x2501             MOVS     R5,#+1
+   \       0x10   0x....             LDR.N    R4,??DataTable2
+   \       0x12   0xEB04 0x0103      ADD      R1,R4,R3
+   \       0x16   0x784F             LDRB     R7,[R1, #+1]
+   \       0x18   0xFA15 0xF106      LSLS     R1,R5,R6
+   \       0x1C   0x438F             BICS     R7,R7,R1
+   \       0x1E   0xEB04 0x0103      ADD      R1,R4,R3
+   \       0x22   0x704F             STRB     R7,[R1, #+1]
+    266              if( 0 == event_queue[ level1 + 1 ] )
+   \       0x24   0xEB04 0x0103      ADD      R1,R4,R3
+   \       0x28   0x7849             LDRB     R1,[R1, #+1]
+   \       0x2A   0x2900             CMP      R1,#+0
+   \       0x2C   0xD104             BNE.N    ??event_clear_0
+    267                  event_queue[ 0 ] &= ~( 1 << level1 );
+   \       0x2E   0x7821             LDRB     R1,[R4, #+0]
+   \       0x30   0x409D             LSLS     R5,R5,R3
+   \       0x32   0xEA31 0x0505      BICS     R5,R1,R5
+   \       0x36   0x7025             STRB     R5,[R4, #+0]
+    268          #elif ( GRP_LEVEL == 2 )
+    269              
+    270               // Raka  .. This is not used in current code base
+    271              uint32_t level2 = prio >> 3;
+    272              reminder -= ( level2 << 3 );
+    273              level1 = reminder >> 3;
+    274              reminder -= ( level1 << 3 );
+    275              event_queue[ 0 ] &= ~level2;
+    276              event_queue[level2 + 1 ] &= ~level1;
+    277              event_queue[GRP1_SIZE + 1 + level1] &= ~reminder;
+    278          #elif ( GRP_LEVEL == 3 )
+    279              
+    280               // Raka  .. This is not used in current code base
+    281              uint32_t level3 = prio >> 3;
+    282              uint32_t level2;
+    283              reminder -= ( level3 << 3 ); 
+    284              level2 = reminder >> 3;
+    285              reminder -= ( level2 << 3 ); 
+    286              level1 = level2 >> 3;
+    287              reminder -= ( reminder << 3 ); 
+    288              event_queue[ 0 ] &= ~level3;
+    289              event_queue[ 1 + level3 ] &= ~level2;
+    290              event_queue[GRP2_SIZE + 1 + level2 ] &= ~level1;
+    291              event_queue[GRP2_SIZE + GRP1_SIZE + 1 + level1] &= ~reminder;
+    292          #endif
+    293               
+    294          //    irq_enable( flags );
+    295          }
+   \                     ??event_clear_0: (+1)
+   \       0x38   0xBCF0             POP      {R4-R7}
+   \       0x3A   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     event_queue
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     lbs_lookup_tbl
+    296          /*----------------------------------------------------------------------------*/
+    297          
+    298          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   event_clear
+      24   event_set
+        24   -> signal_event_to_mac_task
+       8   highest_prio_event_get
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+      60  event_clear
+       4  event_queue
+      56  event_set
+      40  highest_prio_event_get
+     256  lbs_lookup_tbl
+
+ 
+   4 bytes in section .bss
+ 256 bytes in section .rodata
+ 164 bytes in section .text
+ 
+ 164 bytes of CODE  memory
+ 256 bytes of CONST memory
+   4 bytes of DATA  memory
+
+Errors: none
+Warnings: none

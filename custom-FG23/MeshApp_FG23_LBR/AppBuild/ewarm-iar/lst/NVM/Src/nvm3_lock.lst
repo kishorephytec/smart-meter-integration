@@ -1,0 +1,403 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         30/Apr/2024  13:12:23
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\NVM\nvm3\src\nvm3_lock.c
+#    Command line                 =
+#        -f
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\NVM\Src\nvm3_lock.lst.rsp
+#        (D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\NVM\nvm3\src\nvm3_lock.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\NVM\Src
+#        --diag_suppress Pa050 -o
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\NVM\Src
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\NVM\Src\nvm3_lock.o.d
+#    Locale                       =  C
+#    List file                    =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\NVM\Src\nvm3_lock.lst
+#    Object file                  =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\NVM\Src\nvm3_lock.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\NVM\nvm3\src\nvm3_lock.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief NVM3 data access lock API implementation
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "nvm3_lock.h"
+     32          #include "nvm3.h"
+     33          
+     34          #ifdef NVM3_HOST_BUILD
+     35          #include "nvm3_config.h"
+     36          #include "nvm3_trace.h"
+     37          #include "nvm3_hal.h"
+     38          #else
+     39          #include "em_core.h"
+     40          #endif
+     41          
+     42          #if defined(SL_COMPONENT_CATALOG_PRESENT)
+     43          #include "sl_component_catalog.h"
+     44          #endif
+     45          
+     46          #if defined(SL_CATALOG_MPU_PRESENT)
+     47          #include "sl_mpu.h"
+     48          #endif
+     49          
+     50          //****************************************************************************
+     51          
+     52          #ifdef NVM3_HOST_BUILD
+     53          #define SL_WEAK
+     54          #endif
+     55          
+     56          #ifdef NVM3_HOST_BUILD
+     57          static int lockCount = 0;
+     58          #else
+     59          /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
+
+   \                                 In section .bss, align 4
+     60          CORE_DECLARE_IRQ_STATE;
+   \                     irqState:
+   \        0x0                      DS8 4
+     61          /// @endcond
+     62          #endif
+     63          
+     64          /***************************************************************************//**
+     65           * @addtogroup nvm3
+     66           * @{
+     67           ******************************************************************************/
+     68          
+     69          /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
+
+   \                                 In section .bss, align 4
+     70          nvm3_Obj_t nvm3_internalObjectHandleA;
+   \                     nvm3_internalObjectHandleA:
+   \        0x0                      DS8 44
+
+   \                                 In section .bss, align 4
+     71          nvm3_Obj_t nvm3_internalObjectHandleB;
+   \                     nvm3_internalObjectHandleB:
+   \        0x0                      DS8 44
+
+   \                                 In section .bss, align 4
+     72          nvm3_Obj_t nvm3_internalObjectHandleC;
+   \                     nvm3_internalObjectHandleC:
+   \        0x0                      DS8 44
+
+   \                                 In section .bss, align 4
+     73          nvm3_Obj_t nvm3_internalObjectHandleD;
+   \                     nvm3_internalObjectHandleD:
+   \        0x0                      DS8 44
+
+   \                                 In section .rodata, align 1
+     74          const uint8_t nvm3_maxFragmentCount = NVM3_FRAGMENT_COUNT;
+   \                     nvm3_maxFragmentCount:
+   \        0x0   0x02               DC8 2
+
+   \                                 In section .rodata, align 4
+     75          const size_t  nvm3_objHandleSize = sizeof(nvm3_Obj_t);
+   \                     nvm3_objHandleSize:
+   \        0x0   0x0000'002C        DC32 44
+     76          
+     77          /// @endcond
+     78          
+     79          /***************************************************************************//**
+     80           * @addtogroup nvm3lock
+     81           * @{
+     82           ******************************************************************************/
+     83          
+     84          /***************************************************************************//**
+     85           * @details
+     86           * The default lock-begin implementation.
+     87           ******************************************************************************/
+
+   \                                 In section .text, align 4
+     88          SL_WEAK void nvm3_lockBegin(void)
+     89          {
+   \                     nvm3_lockBegin: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     90          #ifdef NVM3_HOST_BUILD
+     91            lockCount++;
+     92          #else
+     93          /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
+     94            CORE_ENTER_CRITICAL();
+   \        0x2   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x6   0x4901             LDR.N    R1,??nvm3_lockBegin_0
+   \        0x8   0x6008             STR      R0,[R1, #+0]
+     95          /// @endcond
+     96          #endif
+     97          }
+   \        0xA   0xBD01             POP      {R0,PC}
+   \                     ??nvm3_lockBegin_0:
+   \        0xC   0x....'....        DC32     irqState
+     98          
+     99          /***************************************************************************//**
+    100           * @details
+    101           * The default lock-end implementation.
+    102           ******************************************************************************/
+
+   \                                 In section .text, align 4
+    103          SL_WEAK void nvm3_lockEnd(void)
+    104          {
+   \                     nvm3_lockEnd: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    105          #ifdef NVM3_HOST_BUILD
+    106            if (lockCount == 0) {
+    107              nvm3_tracePrint(NVM3_TRACE_LEVEL_ERROR, "NVM3 ERROR - lockEnd: invalid lock count.\n");
+    108            }
+    109            lockCount--;
+    110          #else
+    111            CORE_EXIT_CRITICAL();
+   \        0x2   0x4802             LDR.N    R0,??nvm3_lockEnd_0
+   \        0x4   0x6800             LDR      R0,[R0, #+0]
+   \        0x6   0x.... 0x....      BL       CORE_ExitCritical
+    112          #endif
+    113          }
+   \        0xA   0xBD01             POP      {R0,PC}
+   \                     ??nvm3_lockEnd_0:
+   \        0xC   0x....'....        DC32     irqState
+    114          
+    115          /***************************************************************************//**
+    116           * @details
+    117           *  Disable execution from data area.
+    118           *
+    119           * @param[in]  address Start of memory range
+    120           *
+    121           * @param[in]  size Size of memory range.
+    122           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    123          void nvm3_lockDisableExecute(void *address, size_t size)
+    124          {
+   \                     nvm3_lockDisableExecute: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    125          #if defined(__MPU_PRESENT) && (__MPU_PRESENT == 1U) \
+    126            && defined(SL_CATALOG_MPU_PRESENT)                \
+    127            && !defined(SL_TRUSTZONE_SECURE)
+    128            // The memory range used by nvm3 may not be compatible with the mpu.
+    129            // Just ignore errors.
+    130            sl_mpu_disable_execute((uint32_t)address, (uint32_t)address + size - 1, size);
+   \        0x6   0x002A             MOVS     R2,R5
+   \        0x8   0x1929             ADDS     R1,R5,R4
+   \        0xA   0x1E49             SUBS     R1,R1,#+1
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0x.... 0x....      BL       sl_mpu_disable_execute
+    131          #else
+    132            (void)address;
+    133            (void)size;
+    134          #endif
+    135          }
+   \       0x12   0xBD31             POP      {R0,R4,R5,PC}
+    136          
+    137          /** @} (end addtogroup nvm3lock) */
+    138          /** @} (end addtogroup nvm3) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   nvm3_lockBegin
+         8   -> CORE_EnterCritical
+      16   nvm3_lockDisableExecute
+        16   -> sl_mpu_disable_execute
+       8   nvm3_lockEnd
+         8   -> CORE_ExitCritical
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  irqState
+      44  nvm3_internalObjectHandleA
+      44  nvm3_internalObjectHandleB
+      44  nvm3_internalObjectHandleC
+      44  nvm3_internalObjectHandleD
+      16  nvm3_lockBegin
+      20  nvm3_lockDisableExecute
+      16  nvm3_lockEnd
+       1  nvm3_maxFragmentCount
+       4  nvm3_objHandleSize
+
+ 
+ 180 bytes in section .bss
+   5 bytes in section .rodata
+  52 bytes in section .text
+ 
+  20 bytes of CODE  memory (+ 32 bytes shared)
+   5 bytes of CONST memory
+ 180 bytes of DATA  memory
+
+Errors: none
+Warnings: none

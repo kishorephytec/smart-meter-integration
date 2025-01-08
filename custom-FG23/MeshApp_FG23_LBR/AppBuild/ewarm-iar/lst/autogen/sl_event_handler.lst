@@ -1,0 +1,470 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         30/Apr/2024  13:12:22
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\autogen\sl_event_handler.c
+#    Command line      =
+#        -f
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\autogen\sl_event_handler.lst.rsp
+#        (D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\autogen\sl_event_handler.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\autogen
+#        --diag_suppress Pa050 -o
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\autogen
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\autogen\sl_event_handler.o.d
+#    Locale            =  C
+#    List file         =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\autogen\sl_event_handler.lst
+#    Object file       =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\autogen\sl_event_handler.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\autogen\sl_event_handler.c
+      1          #include "sl_event_handler.h"
+      2          
+      3          #include "em_chip.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void CHIP_Init(void)
+   \                     CHIP_Init: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+   \        0x2   0x....             LDR.N    R0,??DataTable1
+   \        0x4   0x6801             LDR      R1,[R0, #+0]
+   \        0x6   0x0C09             LSRS     R1,R1,#+16
+   \        0x8   0xF011 0x0101      ANDS     R1,R1,#0x1
+   \        0xC   0xF091 0x0101      EORS     R1,R1,#0x1
+   \       0x10   0xF45F 0x3080      MOVS     R0,#+65536
+   \       0x14   0x....             LDR.N    R2,??DataTable1_1
+   \       0x16   0x6010             STR      R0,[R2, #+0]
+   \       0x18   0x....             LDR.N    R0,??DataTable1
+   \       0x1A   0x6802             LDR      R2,[R0, #+0]
+   \       0x1C   0x0FD2             LSRS     R2,R2,#+31
+   \       0x1E   0xF092 0x0201      EORS     R2,R2,#0x1
+   \       0x22   0xF05F 0x4000      MOVS     R0,#+2147483648
+   \       0x26   0x....             LDR.N    R3,??DataTable1_1
+   \       0x28   0x6018             STR      R0,[R3, #+0]
+   \       0x2A   0x....             LDR.N    R0,??DataTable1_2
+   \       0x2C   0x6803             LDR      R3,[R0, #+0]
+   \       0x2E   0xF013 0x0301      ANDS     R3,R3,#0x1
+   \       0x32   0xF64A 0x30CD      MOVW     R0,#+43981
+   \       0x36   0x....             LDR.N    R4,??DataTable1_3
+   \       0x38   0x6020             STR      R0,[R4, #+0]
+   \                     ??CHIP_Init_0: (+1)
+   \       0x3A   0x....             LDR.N    R0,??DataTable1_4
+   \       0x3C   0x6800             LDR      R0,[R0, #+0]
+   \       0x3E   0x07C0             LSLS     R0,R0,#+31
+   \       0x40   0xD4FB             BMI.N    ??CHIP_Init_0
+   \       0x42   0x2001             MOVS     R0,#+1
+   \       0x44   0x....             LDR.N    R4,??DataTable1_5
+   \       0x46   0x6020             STR      R0,[R4, #+0]
+   \                     ??CHIP_Init_1: (+1)
+   \       0x48   0x....             LDR.N    R0,??DataTable1_6
+   \       0x4A   0x6800             LDR      R0,[R0, #+0]
+   \       0x4C   0x07C0             LSLS     R0,R0,#+31
+   \       0x4E   0xD5FB             BPL.N    ??CHIP_Init_1
+   \       0x50   0x0018             MOVS     R0,R3
+   \       0x52   0xB2C0             UXTB     R0,R0
+   \       0x54   0x2800             CMP      R0,#+0
+   \       0x56   0xD002             BEQ.N    ??CHIP_Init_2
+   \       0x58   0x....             LDR.N    R0,??DataTable1_7
+   \       0x5A   0x....             LDR.N    R4,??DataTable1_3
+   \       0x5C   0x6020             STR      R0,[R4, #+0]
+   \                     ??CHIP_Init_2: (+1)
+   \       0x5E   0x0010             MOVS     R0,R2
+   \       0x60   0xB2C0             UXTB     R0,R0
+   \       0x62   0x2800             CMP      R0,#+0
+   \       0x64   0xD003             BEQ.N    ??CHIP_Init_3
+   \       0x66   0xF05F 0x4000      MOVS     R0,#+2147483648
+   \       0x6A   0x....             LDR.N    R4,??DataTable1_8
+   \       0x6C   0x6020             STR      R0,[R4, #+0]
+   \                     ??CHIP_Init_3: (+1)
+   \       0x6E   0x0008             MOVS     R0,R1
+   \       0x70   0xB2C0             UXTB     R0,R0
+   \       0x72   0x2800             CMP      R0,#+0
+   \       0x74   0xD003             BEQ.N    ??CHIP_Init_4
+   \       0x76   0xF45F 0x3080      MOVS     R0,#+65536
+   \       0x7A   0x....             LDR.N    R4,??DataTable1_8
+   \       0x7C   0x6020             STR      R0,[R4, #+0]
+   \                     ??CHIP_Init_4: (+1)
+   \       0x7E   0xBC10             POP      {R4}
+   \       0x80   0x4770             BX       LR
+      4          #include "sl_device_init_nvic.h"
+      5          #include "sl_device_init_dcdc.h"
+      6          #include "sl_device_init_hfxo.h"
+      7          #include "sl_device_init_clocks.h"
+      8          #include "sl_device_init_emu.h"
+      9          #include "pa_conversions_efr32.h"
+     10          #include "sl_rail_util_pti.h"
+     11          #include "sl_rail_util_rssi.h"
+     12          #include "sl_rail_util_init.h"
+     13          #include "sl_mpu.h"
+     14          
+     15          /***********************************************************/
+     16          /***********************************************************/
+     17          
+     18          int8_t App_RAIL_rf_device_register(void);
+     19          extern int process_run(void);
+
+   \                                 In section .bss, align 4
+     20          static int r;
+                            ^
+Warning[Pe550]: variable "r" was set but never used
+   \                     r:
+   \        0x0                      DS8 4
+     21          
+     22          /***********************************************************/
+     23          /***********************************************************/
+     24          
+
+   \                                 In section .text, align 2, keep-with-next
+     25          void sl_platform_init(void)
+     26          {
+   \                     sl_platform_init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     27            CHIP_Init();
+   \        0x2   0x.... 0x....      BL       CHIP_Init
+     28            sl_device_init_nvic();
+   \        0x6   0x.... 0x....      BL       sl_device_init_nvic
+     29            sl_device_init_dcdc();
+   \        0xA   0x.... 0x....      BL       sl_device_init_dcdc
+     30            sl_device_init_hfxo();
+   \        0xE   0x.... 0x....      BL       sl_device_init_hfxo
+     31            sl_device_init_clocks();
+   \       0x12   0x.... 0x....      BL       sl_device_init_clocks
+     32            sl_device_init_emu();
+   \       0x16   0x.... 0x....      BL       sl_device_init_emu
+     33          }
+   \       0x1A   0xBD01             POP      {R0,PC}
+     34          
+
+   \                                 In section .text, align 2, keep-with-next
+     35          void sl_driver_init(void)
+     36          {
+     37          }
+   \                     sl_driver_init: (+1)
+   \        0x0   0x4770             BX       LR
+     38          
+
+   \                                 In section .text, align 2, keep-with-next
+     39          void sl_service_init(void)
+     40          {
+   \                     sl_service_init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     41            sl_mpu_disable_execute_from_ram();
+   \        0x2   0x.... 0x....      BL       sl_mpu_disable_execute_from_ram
+     42          }
+   \        0x6   0xBD01             POP      {R0,PC}
+     43          
+
+   \                                 In section .text, align 2, keep-with-next
+     44          void sl_stack_init(void)
+     45          {
+   \                     sl_stack_init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     46            sl_rail_util_pa_init();
+   \        0x2   0x.... 0x....      BL       sl_rail_util_pa_init
+     47            sl_rail_util_pti_init();
+   \        0x6   0x.... 0x....      BL       sl_rail_util_pti_init
+     48            sl_rail_util_rssi_init();
+   \        0xA   0x.... 0x....      BL       sl_rail_util_rssi_init
+     49            App_RAIL_rf_device_register();
+   \        0xE   0x.... 0x....      BL       App_RAIL_rf_device_register
+     50          }
+   \       0x12   0xBD01             POP      {R0,PC}
+     51          
+
+   \                                 In section .text, align 2, keep-with-next
+     52          void sl_internal_app_init(void)
+     53          {
+     54            
+     55          }
+   \                     sl_internal_app_init: (+1)
+   \        0x0   0x4770             BX       LR
+     56          
+
+   \                                 In section .text, align 2, keep-with-next
+     57          void sl_platform_process_action(void)
+     58          {
+     59          }
+   \                     sl_platform_process_action: (+1)
+   \        0x0   0x4770             BX       LR
+     60          
+
+   \                                 In section .text, align 2, keep-with-next
+     61          void sl_service_process_action(void)
+     62          {
+     63          }
+   \                     sl_service_process_action: (+1)
+   \        0x0   0x4770             BX       LR
+     64          
+
+   \                                 In section .text, align 2, keep-with-next
+     65          void sl_stack_process_action(void)
+     66          {
+   \                     sl_stack_process_action: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     67            
+     68                r = process_run();
+   \        0x2   0x.... 0x....      BL       process_run
+   \        0x6   0x....             LDR.N    R1,??DataTable1_9
+   \        0x8   0x6008             STR      R0,[R1, #+0]
+     69            
+     70          }
+   \        0xA   0xBD01             POP      {R0,PC}
+     71          
+
+   \                                 In section .text, align 2, keep-with-next
+     72          void sl_internal_app_process_action(void)
+     73          {
+     74            
+     75          }
+   \                     sl_internal_app_process_action: (+1)
+   \        0x0   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x5000'8064        DC32     0x50008064
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x5000'9064        DC32     0x50009064
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x5009'4044        DC32     0x50094044
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_3:
+   \        0x0   0x5009'4040        DC32     0x50094040
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_4:
+   \        0x0   0x5009'4034        DC32     0x50094034
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_5:
+   \        0x0   0x5009'6004        DC32     0x50096004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_6:
+   \        0x0   0x5009'4030        DC32     0x50094030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_7:
+   \        0x0   0xFFFF'5432        DC32     0xffff5432
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_8:
+   \        0x0   0x5000'A064        DC32     0x5000a064
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_9:
+   \        0x0   0x....'....        DC32     r
+     76          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       4   CHIP_Init
+       0   sl_driver_init
+       0   sl_internal_app_init
+       0   sl_internal_app_process_action
+       8   sl_platform_init
+         8   -> CHIP_Init
+         8   -> sl_device_init_clocks
+         8   -> sl_device_init_dcdc
+         8   -> sl_device_init_emu
+         8   -> sl_device_init_hfxo
+         8   -> sl_device_init_nvic
+       0   sl_platform_process_action
+       8   sl_service_init
+         8   -> sl_mpu_disable_execute_from_ram
+       0   sl_service_process_action
+       8   sl_stack_init
+         8   -> App_RAIL_rf_device_register
+         8   -> sl_rail_util_pa_init
+         8   -> sl_rail_util_pti_init
+         8   -> sl_rail_util_rssi_init
+       8   sl_stack_process_action
+         8   -> process_run
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+       4  ??DataTable1_5
+       4  ??DataTable1_6
+       4  ??DataTable1_7
+       4  ??DataTable1_8
+       4  ??DataTable1_9
+     130  CHIP_Init
+       4  r
+       2  sl_driver_init
+       2  sl_internal_app_init
+       2  sl_internal_app_process_action
+      28  sl_platform_init
+       2  sl_platform_process_action
+       8  sl_service_init
+       2  sl_service_process_action
+      20  sl_stack_init
+      12  sl_stack_process_action
+
+ 
+   4 bytes in section .bss
+ 248 bytes in section .text
+ 
+ 248 bytes of CODE memory
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: 1

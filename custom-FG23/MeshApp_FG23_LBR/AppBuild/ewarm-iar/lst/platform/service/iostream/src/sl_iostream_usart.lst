@@ -1,0 +1,992 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         19/Apr/2024  10:29:07
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\iostream\src\sl_iostream_usart.c
+#    Command line      =
+#        -f
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\iostream\src\sl_iostream_usart.o.rsp
+#        (C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\iostream\src\sl_iostream_usart.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\service\iostream\src
+#        --diag_suppress Pa050 -o
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\iostream\src
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\iostream\src\sl_iostream_usart.o.d
+#    Locale            =  C
+#    List file         =
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\service\iostream\src\sl_iostream_usart.lst
+#    Object file       =
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\iostream\src\sl_iostream_usart.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\iostream\src\sl_iostream_usart.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief IO Stream USART Component.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #if defined(SL_COMPONENT_CATALOG_PRESENT)
+     32          #include "sl_component_catalog.h"
+     33          #endif
+     34          
+     35          #include "sl_status.h"
+     36          #include "sl_iostream.h"
+     37          #include "sl_iostream_uart.h"
+     38          #include "sli_iostream_uart.h"
+     39          #include "sl_iostream_usart.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void USART_IntDisable(USART_TypeDef *, uint32_t)
+   \                     USART_IntDisable: (+1)
+   \        0x0   0x6CC2             LDR      R2,[R0, #+76]
+   \        0x2   0x438A             BICS     R2,R2,R1
+   \        0x4   0x64C2             STR      R2,[R0, #+76]
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void USART_IntEnable(USART_TypeDef *, uint32_t)
+   \                     USART_IntEnable: (+1)
+   \        0x0   0x6CC2             LDR      R2,[R0, #+76]
+   \        0x2   0x430A             ORRS     R2,R1,R2
+   \        0x4   0x64C2             STR      R2,[R0, #+76]
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t USART_StatusGet(USART_TypeDef *)
+   \                     USART_StatusGet: (+1)
+   \        0x0   0x6980             LDR      R0,[R0, #+24]
+   \        0x2   0x4770             BX       LR
+     40          #include "sl_atomic.h"
+     41          
+     42          #if (defined(SL_CATALOG_POWER_MANAGER_PRESENT))
+     43          #include "sl_power_manager.h"
+     44          #endif
+     45          
+     46          #include <string.h>
+     47          #include <stdbool.h>
+     48          #include <stddef.h>
+     49          #include <stdint.h>
+     50          
+     51          #include "em_device.h"
+     52          #include "em_core.h"
+     53          #include "em_usart.h"
+     54          #include "em_gpio.h"
+     55          
+     56          /*******************************************************************************
+     57           *********************   LOCAL FUNCTION PROTOTYPES   ***************************
+     58           ******************************************************************************/
+     59          
+     60          static sl_status_t usart_tx(void *context,
+     61                                      char c);
+     62          
+     63          static void usart_set_next_byte_detect(void *context, bool enable);
+     64          
+     65          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT) && !defined(SL_IOSTREAM_UART_FLUSH_TX_BUFFER)
+     66          static void usart_tx_completed(void *context, bool enable);
+     67          #endif
+     68          
+     69          static sl_status_t usart_deinit(void *context);
+     70          
+     71          /*******************************************************************************
+     72           **************************   GLOBAL FUNCTIONS   *******************************
+     73           ******************************************************************************/
+     74          
+     75          /***************************************************************************//**
+     76           * USART Stream init
+     77           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     78          sl_status_t sl_iostream_usart_init(sl_iostream_uart_t *iostream_uart,
+     79                                             sl_iostream_uart_config_t *uart_config,
+     80                                             USART_InitAsync_TypeDef *init,
+     81                                             sl_iostream_usart_config_t *config,
+     82                                             sl_iostream_usart_context_t *usart_context)
+     83          {
+   \                     sl_iostream_usart_init: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB085             SUB      SP,SP,#+20
+   \        0x6   0x0005             MOVS     R5,R0
+   \        0x8   0x000E             MOVS     R6,R1
+   \        0xA   0x0017             MOVS     R7,R2
+   \        0xC   0x4698             MOV      R8,R3
+   \        0xE   0xF8DD 0x9038      LDR      R9,[SP, #+56]
+     84            sl_status_t status;
+     85          #if (_SILICON_LABS_32B_SERIES > 0)
+     86            bool cts = false;
+   \       0x12   0xF05F 0x0A00      MOVS     R10,#+0
+     87            bool rts = false;
+   \       0x16   0xF05F 0x0B00      MOVS     R11,#+0
+     88          #endif
+     89          
+     90            status = sli_iostream_uart_context_init(iostream_uart,
+     91                                                    &usart_context->context,
+     92                                                    uart_config,
+     93                                                    usart_tx,
+     94          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT) && !defined(SL_IOSTREAM_UART_FLUSH_TX_BUFFER)
+     95                                                    usart_tx_completed,
+     96          #else
+     97                                                    NULL,
+     98          #endif
+     99                                                    usart_set_next_byte_detect,
+    100                                                    usart_deinit,
+    101                                                    1,
+    102                                                    1);
+   \       0x1A   0x2001             MOVS     R0,#+1
+   \       0x1C   0x9004             STR      R0,[SP, #+16]
+   \       0x1E   0x2001             MOVS     R0,#+1
+   \       0x20   0x9003             STR      R0,[SP, #+12]
+   \       0x22   0x.... 0x....      ADR.W    R0,usart_deinit
+   \       0x26   0x9002             STR      R0,[SP, #+8]
+   \       0x28   0x.... 0x....      ADR.W    R0,usart_set_next_byte_detect
+   \       0x2C   0x9001             STR      R0,[SP, #+4]
+   \       0x2E   0x2000             MOVS     R0,#+0
+   \       0x30   0x9000             STR      R0,[SP, #+0]
+   \       0x32   0x.... 0x....      ADR.W    R3,usart_tx
+   \       0x36   0x0032             MOVS     R2,R6
+   \       0x38   0x4649             MOV      R1,R9
+   \       0x3A   0x0028             MOVS     R0,R5
+   \       0x3C   0x.... 0x....      BL       sli_iostream_uart_context_init
+   \       0x40   0x0004             MOVS     R4,R0
+    103            if (status != SL_STATUS_OK) {
+   \       0x42   0x2C00             CMP      R4,#+0
+   \       0x44   0xD001             BEQ.N    ??sl_iostream_usart_init_0
+    104              return status;
+   \       0x46   0x0020             MOVS     R0,R4
+   \       0x48   0xE0CF             B.N      ??sl_iostream_usart_init_1
+    105            }
+    106          
+    107            usart_context->usart = config->usart;
+   \                     ??sl_iostream_usart_init_0: (+1)
+   \       0x4A   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0x4E   0xF8C9 0x0038      STR      R0,[R9, #+56]
+    108          
+    109            //Save useful config info to usart context
+    110            usart_context->clock = config->clock;
+   \       0x52   0xF8D8 0x0004      LDR      R0,[R8, #+4]
+   \       0x56   0xF8C9 0x003C      STR      R0,[R9, #+60]
+    111            usart_context->tx_pin = config->tx_pin;
+   \       0x5A   0xF898 0x0009      LDRB     R0,[R8, #+9]
+   \       0x5E   0xF889 0x0041      STRB     R0,[R9, #+65]
+    112            usart_context->tx_port = config->tx_port;
+   \       0x62   0xF898 0x0008      LDRB     R0,[R8, #+8]
+   \       0x66   0xF889 0x0040      STRB     R0,[R9, #+64]
+    113            usart_context->rx_pin = config->rx_pin;
+   \       0x6A   0xF898 0x000B      LDRB     R0,[R8, #+11]
+   \       0x6E   0xF889 0x0043      STRB     R0,[R9, #+67]
+    114            usart_context->rx_port = config->rx_port;
+   \       0x72   0xF898 0x000A      LDRB     R0,[R8, #+10]
+   \       0x76   0xF889 0x0042      STRB     R0,[R9, #+66]
+    115          #if (_SILICON_LABS_32B_SERIES > 0)
+    116            usart_context->cts_pin = config->cts_pin;
+   \       0x7A   0xF898 0x000D      LDRB     R0,[R8, #+13]
+   \       0x7E   0xF889 0x0045      STRB     R0,[R9, #+69]
+    117            usart_context->cts_port = config->cts_port;
+   \       0x82   0xF898 0x000C      LDRB     R0,[R8, #+12]
+   \       0x86   0xF889 0x0044      STRB     R0,[R9, #+68]
+    118            usart_context->rts_pin = config->rts_pin;
+   \       0x8A   0xF898 0x000F      LDRB     R0,[R8, #+15]
+   \       0x8E   0xF889 0x0047      STRB     R0,[R9, #+71]
+    119            usart_context->rts_port = config->rts_port;
+   \       0x92   0xF898 0x000E      LDRB     R0,[R8, #+14]
+   \       0x96   0xF889 0x0046      STRB     R0,[R9, #+70]
+    120          #endif
+    121          
+    122            // Enable peripheral clocks
+    123          #if defined(_CMU_HFPERCLKEN0_MASK)
+    124            CMU_ClockEnable(cmuClock_HFPER, true);
+    125          #endif
+    126            // Configure GPIO pins
+    127            CMU_ClockEnable(cmuClock_GPIO, true);
+   \       0x9A   0x2101             MOVS     R1,#+1
+   \       0x9C   0x203A             MOVS     R0,#+58
+   \       0x9E   0x.... 0x....      BL       CMU_ClockEnable
+    128          
+    129            // Configure TX and RX GPIOs
+    130            GPIO_PinModeSet(config->tx_port, config->tx_pin, gpioModePushPull, 1);
+   \       0xA2   0x2301             MOVS     R3,#+1
+   \       0xA4   0x2204             MOVS     R2,#+4
+   \       0xA6   0xF898 0x1009      LDRB     R1,[R8, #+9]
+   \       0xAA   0xF898 0x0008      LDRB     R0,[R8, #+8]
+   \       0xAE   0x.... 0x....      BL       GPIO_PinModeSet
+    131            GPIO_PinModeSet(config->rx_port, config->rx_pin, gpioModeInputPull, 1);
+   \       0xB2   0x2301             MOVS     R3,#+1
+   \       0xB4   0x2202             MOVS     R2,#+2
+   \       0xB6   0xF898 0x100B      LDRB     R1,[R8, #+11]
+   \       0xBA   0xF898 0x000A      LDRB     R0,[R8, #+10]
+   \       0xBE   0x.... 0x....      BL       GPIO_PinModeSet
+    132          
+    133            CMU_ClockEnable(config->clock, true);
+   \       0xC2   0x2101             MOVS     R1,#+1
+   \       0xC4   0xF8D8 0x0004      LDR      R0,[R8, #+4]
+   \       0xC8   0x.... 0x....      BL       CMU_ClockEnable
+    134          
+    135            // Configure USART for basic async operation
+    136            init->enable = usartDisable;
+   \       0xCC   0x2000             MOVS     R0,#+0
+   \       0xCE   0x7038             STRB     R0,[R7, #+0]
+    137            USART_InitAsync(config->usart, init);
+   \       0xD0   0x0039             MOVS     R1,R7
+   \       0xD2   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0xD6   0x.... 0x....      BL       USART_InitAsync
+    138          
+    139          #if defined(GPIO_USART_ROUTEEN_TXPEN)
+    140            // Enable pins at correct USART/USART location
+    141            GPIO->USARTROUTE[config->usart_index].ROUTEEN = GPIO_USART_ROUTEEN_TXPEN | GPIO_USART_ROUTEEN_RXPEN;
+   \       0xDA   0x2014             MOVS     R0,#+20
+   \       0xDC   0x....             LDR.N    R1,??DataTable2
+   \       0xDE   0xF898 0x2011      LDRB     R2,[R8, #+17]
+   \       0xE2   0x0152             LSLS     R2,R2,#+5
+   \       0xE4   0x5088             STR      R0,[R1, R2]
+    142            GPIO->USARTROUTE[config->usart_index].TXROUTE = (config->tx_port << _GPIO_USART_TXROUTE_PORT_SHIFT)
+    143                                                            | (config->tx_pin << _GPIO_USART_TXROUTE_PIN_SHIFT);
+   \       0xE6   0x....             LDR.N    R0,??DataTable2
+   \       0xE8   0xF898 0x1011      LDRB     R1,[R8, #+17]
+   \       0xEC   0x0149             LSLS     R1,R1,#+5
+   \       0xEE   0x4408             ADD      R0,R0,R1
+   \       0xF0   0xF898 0x1008      LDRB     R1,[R8, #+8]
+   \       0xF4   0xF898 0x2009      LDRB     R2,[R8, #+9]
+   \       0xF8   0xEA51 0x4102      ORRS     R1,R1,R2, LSL #+16
+   \       0xFC   0x6181             STR      R1,[R0, #+24]
+    144            GPIO->USARTROUTE[config->usart_index].RXROUTE = (config->rx_port << _GPIO_USART_RXROUTE_PORT_SHIFT)
+    145                                                            | (config->rx_pin << _GPIO_USART_RXROUTE_PIN_SHIFT);
+   \       0xFE   0x....             LDR.N    R0,??DataTable2
+   \      0x100   0xF898 0x1011      LDRB     R1,[R8, #+17]
+   \      0x104   0x0149             LSLS     R1,R1,#+5
+   \      0x106   0x4408             ADD      R0,R0,R1
+   \      0x108   0xF898 0x100A      LDRB     R1,[R8, #+10]
+   \      0x10C   0xF898 0x200B      LDRB     R2,[R8, #+11]
+   \      0x110   0xEA51 0x4102      ORRS     R1,R1,R2, LSL #+16
+   \      0x114   0x6101             STR      R1,[R0, #+16]
+    146          
+    147          #elif defined(USART_ROUTEPEN_RXPEN)
+    148            // Enable pins at correct USART/USART location
+    149            config->usart->ROUTEPEN |= USART_ROUTEPEN_RXPEN | USART_ROUTEPEN_TXPEN;
+    150            config->usart->ROUTELOC0 = (config->usart->ROUTELOC0 & ~(_USART_ROUTELOC0_TXLOC_MASK | _USART_ROUTELOC0_RXLOC_MASK))
+    151                                       | (config->usart_tx_location << _USART_ROUTELOC0_TXLOC_SHIFT)
+    152                                       | (config->usart_rx_location << _USART_ROUTELOC0_RXLOC_SHIFT);
+    153            config->usart->ROUTEPEN = USART_ROUTEPEN_RXPEN | USART_ROUTEPEN_TXPEN;
+    154          #else
+    155            config->usart->ROUTE = USART_ROUTE_RXPEN | USART_ROUTE_TXPEN | (config->usart_location << _USART_ROUTE_LOCATION_SHIFT);
+    156          #endif
+    157          
+    158            // Configure GPIOs for hwflowcontrol
+    159           #if (_SILICON_LABS_32B_SERIES > 0)
+    160            usart_context->flags = 0;
+   \      0x116   0x2000             MOVS     R0,#+0
+   \      0x118   0xF889 0x0048      STRB     R0,[R9, #+72]
+    161            switch (init->hwFlowControl) {
+   \      0x11C   0x7E78             LDRB     R0,[R7, #+25]
+   \      0x11E   0x2800             CMP      R0,#+0
+   \      0x120   0xD005             BEQ.N    ??sl_iostream_usart_init_2
+   \      0x122   0x2802             CMP      R0,#+2
+   \      0x124   0xD00A             BEQ.N    ??sl_iostream_usart_init_3
+   \      0x126   0xD303             BCC.N    ??sl_iostream_usart_init_4
+   \      0x128   0x2803             CMP      R0,#+3
+   \      0x12A   0xD00D             BEQ.N    ??sl_iostream_usart_init_5
+   \      0x12C   0xE014             B.N      ??sl_iostream_usart_init_6
+    162              case usartHwFlowControlNone:
+    163                break;
+   \                     ??sl_iostream_usart_init_2: (+1)
+   \      0x12E   0xE015             B.N      ??sl_iostream_usart_init_7
+    164              case usartHwFlowControlCts:
+    165                cts = true;
+   \                     ??sl_iostream_usart_init_4: (+1)
+   \      0x130   0x2001             MOVS     R0,#+1
+   \      0x132   0x4682             MOV      R10,R0
+    166                usart_context->flags = SLI_IOSTREAM_UART_FLAG_CTS;
+   \      0x134   0x2001             MOVS     R0,#+1
+   \      0x136   0xF889 0x0048      STRB     R0,[R9, #+72]
+    167                break;
+   \      0x13A   0xE00F             B.N      ??sl_iostream_usart_init_7
+    168              case usartHwFlowControlRts:
+    169                rts = true;
+   \                     ??sl_iostream_usart_init_3: (+1)
+   \      0x13C   0x2001             MOVS     R0,#+1
+   \      0x13E   0x4683             MOV      R11,R0
+    170                usart_context->flags = SLI_IOSTREAM_UART_FLAG_RTS;
+   \      0x140   0x2002             MOVS     R0,#+2
+   \      0x142   0xF889 0x0048      STRB     R0,[R9, #+72]
+    171                break;
+   \      0x146   0xE009             B.N      ??sl_iostream_usart_init_7
+    172              case usartHwFlowControlCtsAndRts:
+    173                cts = true;
+   \                     ??sl_iostream_usart_init_5: (+1)
+   \      0x148   0x2001             MOVS     R0,#+1
+   \      0x14A   0x4682             MOV      R10,R0
+    174                rts = true;
+   \      0x14C   0x2001             MOVS     R0,#+1
+   \      0x14E   0x4683             MOV      R11,R0
+    175                usart_context->flags = SLI_IOSTREAM_UART_FLAG_CTS | SLI_IOSTREAM_UART_FLAG_RTS;
+   \      0x150   0x2003             MOVS     R0,#+3
+   \      0x152   0xF889 0x0048      STRB     R0,[R9, #+72]
+    176                break;
+   \      0x156   0xE001             B.N      ??sl_iostream_usart_init_7
+    177              default:
+    178                return SL_STATUS_INVALID_CONFIGURATION;
+   \                     ??sl_iostream_usart_init_6: (+1)
+   \      0x158   0x2023             MOVS     R0,#+35
+   \      0x15A   0xE046             B.N      ??sl_iostream_usart_init_1
+    179            }
+    180          
+    181            if (cts == true) {
+   \                     ??sl_iostream_usart_init_7: (+1)
+   \      0x15C   0x4650             MOV      R0,R10
+   \      0x15E   0xB2C0             UXTB     R0,R0
+   \      0x160   0x2800             CMP      R0,#+0
+   \      0x162   0xD019             BEQ.N    ??sl_iostream_usart_init_8
+    182              GPIO_PinModeSet(config->cts_port, config->cts_pin, gpioModeInputPull, 0);
+   \      0x164   0x2300             MOVS     R3,#+0
+   \      0x166   0x2202             MOVS     R2,#+2
+   \      0x168   0xF898 0x100D      LDRB     R1,[R8, #+13]
+   \      0x16C   0xF898 0x000C      LDRB     R0,[R8, #+12]
+   \      0x170   0x.... 0x....      BL       GPIO_PinModeSet
+    183          
+    184           #if defined(_USART_ROUTEPEN_RTSPEN_MASK) && defined(_USART_ROUTEPEN_CTSPEN_MASK)
+    185              config->usart->ROUTELOC1 = (config->usart_cts_location << _USART_ROUTELOC1_CTSLOC_SHIFT);
+    186              config->usart->CTRLX    |= USART_CTRLX_CTSEN;
+    187              config->usart->ROUTEPEN |= USART_ROUTEPEN_CTSPEN;
+    188           #elif defined(_GPIO_USART_ROUTEEN_MASK)
+    189              GPIO->USARTROUTE_SET[config->usart_index].CTSROUTE = (config->cts_port << _GPIO_USART_CTSROUTE_PORT_SHIFT)
+    190                                                                   | (config->cts_pin << _GPIO_USART_CTSROUTE_PIN_SHIFT);
+   \      0x174   0x....             LDR.N    R0,??DataTable2_1
+   \      0x176   0xF898 0x1011      LDRB     R1,[R8, #+17]
+   \      0x17A   0x0149             LSLS     R1,R1,#+5
+   \      0x17C   0x4408             ADD      R0,R0,R1
+   \      0x17E   0xF898 0x100C      LDRB     R1,[R8, #+12]
+   \      0x182   0xF898 0x200D      LDRB     R2,[R8, #+13]
+   \      0x186   0xEA51 0x4102      ORRS     R1,R1,R2, LSL #+16
+   \      0x18A   0x6081             STR      R1,[R0, #+8]
+    191              config->usart->CTRLX_SET = USART_CTRLX_CTSEN;
+   \      0x18C   0x2004             MOVS     R0,#+4
+   \      0x18E   0xF8D8 0x1000      LDR      R1,[R8, #+0]
+   \      0x192   0xF241 0x025C      MOVW     R2,#+4188
+   \      0x196   0x5088             STR      R0,[R1, R2]
+    192           #endif
+    193            }
+    194            if (rts == true) {
+   \                     ??sl_iostream_usart_init_8: (+1)
+   \      0x198   0x4658             MOV      R0,R11
+   \      0x19A   0xB2C0             UXTB     R0,R0
+   \      0x19C   0x2800             CMP      R0,#+0
+   \      0x19E   0xD019             BEQ.N    ??sl_iostream_usart_init_9
+    195              GPIO_PinModeSet(config->rts_port, config->rts_pin, gpioModePushPull, 0);
+   \      0x1A0   0x2300             MOVS     R3,#+0
+   \      0x1A2   0x2204             MOVS     R2,#+4
+   \      0x1A4   0xF898 0x100F      LDRB     R1,[R8, #+15]
+   \      0x1A8   0xF898 0x000E      LDRB     R0,[R8, #+14]
+   \      0x1AC   0x.... 0x....      BL       GPIO_PinModeSet
+    196           #if defined(_USART_ROUTEPEN_RTSPEN_MASK) && defined(_USART_ROUTEPEN_CTSPEN_MASK)
+    197              config->usart->ROUTELOC1 |= (config->usart_rts_location << _USART_ROUTELOC1_RTSLOC_SHIFT);
+    198              config->usart->ROUTEPEN |= USART_ROUTEPEN_RTSPEN;
+    199          
+    200           #elif defined(_GPIO_USART_ROUTEEN_MASK)
+    201              GPIO->USARTROUTE_SET[config->usart_index].ROUTEEN = GPIO_USART_ROUTEEN_RTSPEN;
+   \      0x1B0   0x2002             MOVS     R0,#+2
+   \      0x1B2   0x....             LDR.N    R1,??DataTable2_1
+   \      0x1B4   0xF898 0x2011      LDRB     R2,[R8, #+17]
+   \      0x1B8   0x0152             LSLS     R2,R2,#+5
+   \      0x1BA   0x5088             STR      R0,[R1, R2]
+    202              GPIO->USARTROUTE_SET[config->usart_index].RTSROUTE = (config->rts_port << _GPIO_USART_RTSROUTE_PORT_SHIFT)
+    203                                                                   | (config->rts_pin << _GPIO_USART_RTSROUTE_PIN_SHIFT);
+   \      0x1BC   0x....             LDR.N    R0,??DataTable2_1
+   \      0x1BE   0xF898 0x1011      LDRB     R1,[R8, #+17]
+   \      0x1C2   0x0149             LSLS     R1,R1,#+5
+   \      0x1C4   0x4408             ADD      R0,R0,R1
+   \      0x1C6   0xF898 0x100E      LDRB     R1,[R8, #+14]
+   \      0x1CA   0xF898 0x200F      LDRB     R2,[R8, #+15]
+   \      0x1CE   0xEA51 0x4102      ORRS     R1,R1,R2, LSL #+16
+   \      0x1D2   0x60C1             STR      R1,[R0, #+12]
+    204           #endif
+    205            }
+    206           #endif  // Configure GPIOs for hwflowcontrol
+    207          
+    208           #if defined(SL_CATALOG_POWER_MANAGER_PRESENT) && defined(_SILICON_LABS_32B_SERIES_2)
+    209            usart_context->tx_port = config->tx_port;
+    210            usart_context->tx_pin = config->tx_pin;
+    211           #endif
+    212          
+    213            // Enable RX interrupts
+    214            USART_IntEnable(config->usart, USART_IF_RXDATAV);
+   \                     ??sl_iostream_usart_init_9: (+1)
+   \      0x1D4   0x2104             MOVS     R1,#+4
+   \      0x1D6   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \      0x1DA   0x.... 0x....      BL       USART_IntEnable
+    215          
+    216            // Finally enable USART
+    217            USART_Enable(config->usart, usartEnable);
+   \      0x1DE   0x2105             MOVS     R1,#+5
+   \      0x1E0   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \      0x1E4   0x.... 0x....      BL       USART_Enable
+    218          
+    219            return SL_STATUS_OK;
+   \      0x1E8   0x2000             MOVS     R0,#+0
+   \                     ??sl_iostream_usart_init_1: (+1)
+   \      0x1EA   0xB005             ADD      SP,SP,#+20
+   \      0x1EC   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    220          }
+    221          
+    222          /**************************************************************************//**
+    223           * @brief USART IRQ Handler.
+    224           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    225          void sl_iostream_usart_irq_handler(sl_iostream_uart_t *iostream_uart)
+    226          {
+   \                     sl_iostream_usart_irq_handler: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    227            sl_iostream_usart_context_t *usart_context = (sl_iostream_usart_context_t *) iostream_uart->stream.context;
+   \        0x4   0x6825             LDR      R5,[R4, #+0]
+    228          
+    229            #if defined(SL_CATALOG_POWER_MANAGER_PRESENT) && !defined(SL_IOSTREAM_UART_FLUSH_TX_BUFFER)
+    230            // Handle Transmit Complete Events
+    231            if (usart_context->usart->IF & USART_IF_TXC) {
+    232              USART_IntClear(usart_context->usart, USART_IF_TXC);
+    233              // Check if the Status register has the TXC flag as well since the flag will clean itself
+    234              // if other transmissions are queued contrary to the IF flag
+    235              if ((USART_StatusGet(usart_context->usart) & _USART_STATUS_TXC_MASK) != 0) {
+    236                sli_uart_txc(&usart_context->context);
+    237              }
+    238              // mandatory return to avoid going into rx_data_available == false when TXC,
+    239              // since we can't read RXDATAV flag because DMA consumes it immediately when armed.
+    240              return;
+    241            }
+    242          #endif
+    243          
+    244            // When this point is reached, new data was received
+    245            #if !defined(SL_CATALOG_KERNEL_PRESENT) && defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+    246            // Always wakeup the core up from IRQ
+    247            usart_context->context.sleep = SL_POWER_MANAGER_WAKEUP;
+    248            #endif
+    249          
+    250            // Detected new byte, signal the core
+    251            if (usart_context->context.rx_data_available == false) {
+   \        0x6   0x7E28             LDRB     R0,[R5, #+24]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD106             BNE.N    ??sl_iostream_usart_irq_handler_0
+    252              // Disable the IRQ until the RX Buffer is emptied, or becomes full
+    253              USART_IntDisable(usart_context->usart, USART_IF_RXDATAV);
+   \        0xC   0x2104             MOVS     R1,#+4
+   \        0xE   0x6BA8             LDR      R0,[R5, #+56]
+   \       0x10   0x.... 0x....      BL       USART_IntDisable
+    254              sl_atomic_store(usart_context->context.rx_data_available, true);
+   \       0x14   0x2001             MOVS     R0,#+1
+   \       0x16   0x7628             STRB     R0,[R5, #+24]
+    255              #if defined(SL_CATALOG_KERNEL_PRESENT)
+    256              // Unlock the read thread
+    257              if (usart_context->context.block) {
+    258                if (osSemaphoreGetCount(usart_context->context.read_signal) == 0) {
+    259                  osStatus_t status = osSemaphoreRelease(usart_context->context.read_signal);
+    260                  EFM_ASSERT(status == osOK);
+    261                }
+    262              }
+    263              #endif // SL_CATALOG_KERNEL_PRESENT
+    264              return;
+   \       0x18   0xE038             B.N      ??sl_iostream_usart_irq_handler_1
+    265            }
+    266          
+    267            // Rx Buffer full, check if last byte is control character
+    268            if (usart_context->context.rx_buffer_full == true) {
+   \                     ??sl_iostream_usart_irq_handler_0: (+1)
+   \       0x1A   0x7E68             LDRB     R0,[R5, #+25]
+   \       0x1C   0x2801             CMP      R0,#+1
+   \       0x1E   0xD131             BNE.N    ??sl_iostream_usart_irq_handler_2
+    269              // Check if most recent byte is flow control (we will lose this data)
+    270              if (usart_context->context.sw_flow_control == true) {
+   \       0x20   0xF895 0x002D      LDRB     R0,[R5, #+45]
+   \       0x24   0x2801             CMP      R0,#+1
+   \       0x26   0xD12D             BNE.N    ??sl_iostream_usart_irq_handler_2
+    271                // Send XOFF to indicate RX buffer is full
+    272                sl_atomic_store(usart_context->context.remote_xon, false);
+   \       0x28   0x2000             MOVS     R0,#+0
+   \       0x2A   0xF885 0x0035      STRB     R0,[R5, #+53]
+    273                USART_Tx(usart_context->usart, UARTXOFF);
+   \       0x2E   0x2113             MOVS     R1,#+19
+   \       0x30   0x6BA8             LDR      R0,[R5, #+56]
+   \       0x32   0x.... 0x....      BL       USART_Tx
+    274          
+    275                // Make sure RXDATAV stays enabled to avoid deadlock if both sides are full
+    276                USART_IntEnable(usart_context->usart, USART_IF_RXDATAV);
+   \       0x36   0x2104             MOVS     R1,#+4
+   \       0x38   0x6BA8             LDR      R0,[R5, #+56]
+   \       0x3A   0x.... 0x....      BL       USART_IntEnable
+    277          
+    278                // Check if received byte is control char
+    279                char dropped_byte;
+    280                dropped_byte = (char)usart_context->usart->RXDATA;
+   \       0x3E   0x6BA8             LDR      R0,[R5, #+56]
+   \       0x40   0x6A41             LDR      R1,[R0, #+36]
+    281          
+    282                if (dropped_byte == UARTXON) {
+   \       0x42   0x0008             MOVS     R0,R1
+   \       0x44   0xB2C0             UXTB     R0,R0
+   \       0x46   0x2811             CMP      R0,#+17
+   \       0x48   0xD103             BNE.N    ??sl_iostream_usart_irq_handler_3
+    283                  sl_atomic_store(usart_context->context.xon, true);
+   \       0x4A   0x2001             MOVS     R0,#+1
+   \       0x4C   0xF885 0x0034      STRB     R0,[R5, #+52]
+   \       0x50   0xE006             B.N      ??sl_iostream_usart_irq_handler_4
+    284                } else if (dropped_byte == UARTXOFF) {
+   \                     ??sl_iostream_usart_irq_handler_3: (+1)
+   \       0x52   0x0008             MOVS     R0,R1
+   \       0x54   0xB2C0             UXTB     R0,R0
+   \       0x56   0x2813             CMP      R0,#+19
+   \       0x58   0xD102             BNE.N    ??sl_iostream_usart_irq_handler_4
+    285                  sl_atomic_store(usart_context->context.xon, false);
+   \       0x5A   0x2000             MOVS     R0,#+0
+   \       0x5C   0xF885 0x0034      STRB     R0,[R5, #+52]
+    286                }
+    287          
+    288                // Found most recent control character, set the scan pointer to the end of the received data
+    289                if (dropped_byte == UARTXON || dropped_byte == UARTXOFF) {
+   \                     ??sl_iostream_usart_irq_handler_4: (+1)
+   \       0x60   0x0008             MOVS     R0,R1
+   \       0x62   0xB2C0             UXTB     R0,R0
+   \       0x64   0x2811             CMP      R0,#+17
+   \       0x66   0xD003             BEQ.N    ??sl_iostream_usart_irq_handler_5
+   \       0x68   0x0008             MOVS     R0,R1
+   \       0x6A   0xB2C0             UXTB     R0,R0
+   \       0x6C   0x2813             CMP      R0,#+19
+   \       0x6E   0xD108             BNE.N    ??sl_iostream_usart_irq_handler_6
+    290                  #if defined(LDMA_PRESENT)
+    291                  usart_context->context.ctrl_char_scan_ptr = (uint8_t*)LDMA->CH[usart_context->context.dma.channel].DST - 1;
+   \                     ??sl_iostream_usart_irq_handler_5: (+1)
+   \       0x70   0x....             LDR.N    R2,??DataTable2_2
+   \       0x72   0x7A2B             LDRB     R3,[R5, #+8]
+   \       0x74   0x2030             MOVS     R0,#+48
+   \       0x76   0x4343             MULS     R3,R0,R3
+   \       0x78   0xEB02 0x0003      ADD      R0,R2,R3
+   \       0x7C   0x6940             LDR      R0,[R0, #+20]
+   \       0x7E   0x1E40             SUBS     R0,R0,#+1
+   \       0x80   0x6328             STR      R0,[R5, #+48]
+    292                  #elif defined(DMA_PRESENT)
+    293                  DMA_DESCRIPTOR_TypeDef* desc = ((DMA_DESCRIPTOR_TypeDef *)(DMA->CTRLBASE)) + usart_context->context.dma.channel;
+    294                  usart_context->context.ctrl_char_scan_ptr = (uint8_t*)desc->DSTEND - 1;
+    295                  #else
+    296                  #error Missing (L)DMA peripheral
+    297                  #endif
+    298                }
+    299                // The byte is now lost...
+    300                return;
+   \                     ??sl_iostream_usart_irq_handler_6: (+1)
+   \       0x82   0xE003             B.N      ??sl_iostream_usart_irq_handler_1
+    301              }
+    302            }
+    303          
+    304            // Can reach here if data was available and next byte detect was enabled (e.g. for sleep).
+    305            // Disable RXDATAV IRQ to avoid looping in IRQ forever.
+    306            USART_IntDisable(usart_context->usart, USART_IF_RXDATAV);
+   \                     ??sl_iostream_usart_irq_handler_2: (+1)
+   \       0x84   0x2104             MOVS     R1,#+4
+   \       0x86   0x6BA8             LDR      R0,[R5, #+56]
+   \       0x88   0x.... 0x....      BL       USART_IntDisable
+    307          }
+   \                     ??sl_iostream_usart_irq_handler_1: (+1)
+   \       0x8C   0xBD31             POP      {R0,R4,R5,PC}
+    308          
+    309          /*******************************************************************************
+    310           **************************   LOCAL FUNCTIONS   ********************************
+    311           ******************************************************************************/
+    312          
+    313          /***************************************************************************//**
+    314           * Internal stream write implementation
+    315           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    316          static sl_status_t usart_tx(void *context,
+    317                                      char c)
+    318          {
+   \                     usart_tx: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    319            sl_iostream_usart_context_t *usart_context = (sl_iostream_usart_context_t *)context;
+   \        0x6   0x0026             MOVS     R6,R4
+    320          
+    321            USART_Tx(usart_context->usart, (uint8_t)c);
+   \        0x8   0x0029             MOVS     R1,R5
+   \        0xA   0xB2C9             UXTB     R1,R1
+   \        0xC   0x6BB0             LDR      R0,[R6, #+56]
+   \        0xE   0x.... 0x....      BL       USART_Tx
+    322          
+    323          #if defined(SL_IOSTREAM_UART_FLUSH_TX_BUFFER)
+    324            /* Wait until transmit buffer is empty */
+    325            while (!(USART_StatusGet(usart_context->usart) & USART_STATUS_TXBL)) ;
+    326          #endif
+    327          
+    328            return SL_STATUS_OK;
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0xBD70             POP      {R4-R6,PC}
+    329          }
+    330          
+    331          /***************************************************************************//**
+    332           * Enable USART Rx Data Valid (RXDATAV) Interrupt
+    333           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    334          static void usart_set_next_byte_detect(void *context, bool enable)
+    335          {
+   \                     usart_set_next_byte_detect: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    336            sl_iostream_usart_context_t *usart_context = (sl_iostream_usart_context_t *)context;
+   \        0x6   0x0026             MOVS     R6,R4
+    337          
+    338            if (enable) {
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0xB2C0             UXTB     R0,R0
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD004             BEQ.N    ??usart_set_next_byte_detect_0
+    339              USART_IntEnable(usart_context->usart, USART_IF_RXDATAV);
+   \       0x10   0x2104             MOVS     R1,#+4
+   \       0x12   0x6BB0             LDR      R0,[R6, #+56]
+   \       0x14   0x.... 0x....      BL       USART_IntEnable
+   \       0x18   0xE003             B.N      ??usart_set_next_byte_detect_1
+    340            } else {
+    341              USART_IntDisable(usart_context->usart, USART_IF_RXDATAV);
+   \                     ??usart_set_next_byte_detect_0: (+1)
+   \       0x1A   0x2104             MOVS     R1,#+4
+   \       0x1C   0x6BB0             LDR      R0,[R6, #+56]
+   \       0x1E   0x.... 0x....      BL       USART_IntDisable
+    342            }
+    343          }
+   \                     ??usart_set_next_byte_detect_1: (+1)
+   \       0x22   0xBD70             POP      {R4-R6,PC}
+    344          
+    345          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT) && !defined(SL_IOSTREAM_UART_FLUSH_TX_BUFFER)
+    346          /***************************************************************************//**
+    347           * Enable/Disable USART Tx Complete (TXC) Interrupt
+    348           ******************************************************************************/
+    349          static void usart_tx_completed(void *context, bool enable)
+    350          {
+    351            sl_iostream_usart_context_t *usart_context = (sl_iostream_usart_context_t *)context;
+    352            if (enable) {
+    353              USART_IntEnable(usart_context->usart, USART_IF_TXC);
+    354            } else {
+    355              USART_IntDisable(usart_context->usart, USART_IF_TXC);
+    356              USART_IntClear(usart_context->usart, USART_IF_TXC);
+    357            }
+    358          }
+    359          #endif
+    360          
+    361          /***************************************************************************//**
+    362           * USART Stream De-init.
+    363           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    364          static sl_status_t usart_deinit(void *context)
+    365          {
+   \                     usart_deinit: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    366            sl_iostream_usart_context_t *usart_context = (sl_iostream_usart_context_t *)context;
+   \        0x4   0x0025             MOVS     R5,R4
+    367          
+    368            // Wait until transfer is completed
+    369            while (!(USART_StatusGet(usart_context->usart) & USART_STATUS_TXBL)) {
+   \                     ??usart_deinit_0: (+1)
+   \        0x6   0x6BA8             LDR      R0,[R5, #+56]
+   \        0x8   0x.... 0x....      BL       USART_StatusGet
+   \        0xC   0x0640             LSLS     R0,R0,#+25
+   \        0xE   0xD5FA             BPL.N    ??usart_deinit_0
+    370            }
+    371          
+    372            // De-Configure TX and RX GPIOs
+    373            GPIO_PinModeSet(usart_context->tx_port, usart_context->tx_pin, gpioModeDisabled, 0);
+   \       0x10   0x2300             MOVS     R3,#+0
+   \       0x12   0x2200             MOVS     R2,#+0
+   \       0x14   0xF895 0x1041      LDRB     R1,[R5, #+65]
+   \       0x18   0xF895 0x0040      LDRB     R0,[R5, #+64]
+   \       0x1C   0x.... 0x....      BL       GPIO_PinModeSet
+    374            GPIO_PinModeSet(usart_context->rx_port, usart_context->rx_pin, gpioModeDisabled, 0);
+   \       0x20   0x2300             MOVS     R3,#+0
+   \       0x22   0x2200             MOVS     R2,#+0
+   \       0x24   0xF895 0x1043      LDRB     R1,[R5, #+67]
+   \       0x28   0xF895 0x0042      LDRB     R0,[R5, #+66]
+   \       0x2C   0x.... 0x....      BL       GPIO_PinModeSet
+    375          
+    376          #if (_SILICON_LABS_32B_SERIES > 0)
+    377            // De-Configure Flow Control GPIOs
+    378            if (usart_context->flags & SLI_IOSTREAM_UART_FLAG_CTS) {
+   \       0x30   0xF895 0x0048      LDRB     R0,[R5, #+72]
+   \       0x34   0x07C0             LSLS     R0,R0,#+31
+   \       0x36   0xD507             BPL.N    ??usart_deinit_1
+    379              GPIO_PinModeSet(usart_context->cts_port, usart_context->cts_pin, gpioModeDisabled, 0);
+   \       0x38   0x2300             MOVS     R3,#+0
+   \       0x3A   0x2200             MOVS     R2,#+0
+   \       0x3C   0xF895 0x1045      LDRB     R1,[R5, #+69]
+   \       0x40   0xF895 0x0044      LDRB     R0,[R5, #+68]
+   \       0x44   0x.... 0x....      BL       GPIO_PinModeSet
+    380            }
+    381            if (usart_context->flags & SLI_IOSTREAM_UART_FLAG_RTS) {
+   \                     ??usart_deinit_1: (+1)
+   \       0x48   0xF895 0x0048      LDRB     R0,[R5, #+72]
+   \       0x4C   0x0780             LSLS     R0,R0,#+30
+   \       0x4E   0xD507             BPL.N    ??usart_deinit_2
+    382              GPIO_PinModeSet(usart_context->rts_port, usart_context->rts_pin, gpioModeDisabled, 0);
+   \       0x50   0x2300             MOVS     R3,#+0
+   \       0x52   0x2200             MOVS     R2,#+0
+   \       0x54   0xF895 0x1047      LDRB     R1,[R5, #+71]
+   \       0x58   0xF895 0x0046      LDRB     R0,[R5, #+70]
+   \       0x5C   0x.... 0x....      BL       GPIO_PinModeSet
+    383            }
+    384          #endif
+    385          
+    386            // Disable USART IRQ
+    387            #if defined(SL_CATALOG_POWER_MANAGER_PRESENT) && !defined(SL_IOSTREAM_UART_FLUSH_TX_BUFFER)
+    388            USART_IntDisable(usart_context->usart, USART_IF_TXC);
+    389            #endif
+    390            USART_IntDisable(usart_context->usart, USART_IF_RXDATAV);
+   \                     ??usart_deinit_2: (+1)
+   \       0x60   0x2104             MOVS     R1,#+4
+   \       0x62   0x6BA8             LDR      R0,[R5, #+56]
+   \       0x64   0x.... 0x....      BL       USART_IntDisable
+    391          
+    392            // Disable USART peripheral
+    393            USART_Enable(usart_context->usart, usartDisable);
+   \       0x68   0x2100             MOVS     R1,#+0
+   \       0x6A   0x6BA8             LDR      R0,[R5, #+56]
+   \       0x6C   0x.... 0x....      BL       USART_Enable
+    394          
+    395            // Disable USART Clock
+    396            CMU_ClockEnable(usart_context->clock, false);
+   \       0x70   0x2100             MOVS     R1,#+0
+   \       0x72   0x6BE8             LDR      R0,[R5, #+60]
+   \       0x74   0x.... 0x....      BL       CMU_ClockEnable
+    397          
+    398            return SL_STATUS_OK;
+   \       0x78   0x2000             MOVS     R0,#+0
+   \       0x7A   0xBD32             POP      {R1,R4,R5,PC}
+    399          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x5003'C798        DC32     0x5003c798
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x5003'D798        DC32     0x5003d798
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x5004'0058        DC32     0x50040058
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   USART_IntDisable
+       0   USART_IntEnable
+       0   USART_StatusGet
+      56   sl_iostream_usart_init
+        56   -> CMU_ClockEnable
+        56   -> GPIO_PinModeSet
+        56   -> USART_Enable
+        56   -> USART_InitAsync
+        56   -> USART_IntEnable
+        56   -> sli_iostream_uart_context_init
+      16   sl_iostream_usart_irq_handler
+        16   -> USART_IntDisable
+        16   -> USART_IntEnable
+        16   -> USART_Tx
+      16   usart_deinit
+        16   -> CMU_ClockEnable
+        16   -> GPIO_PinModeSet
+        16   -> USART_Enable
+        16   -> USART_IntDisable
+        16   -> USART_StatusGet
+      16   usart_set_next_byte_detect
+        16   -> USART_IntDisable
+        16   -> USART_IntEnable
+      16   usart_tx
+        16   -> USART_Tx
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       8  USART_IntDisable
+       8  USART_IntEnable
+       4  USART_StatusGet
+     496  sl_iostream_usart_init
+     142  sl_iostream_usart_irq_handler
+     124  usart_deinit
+      36  usart_set_next_byte_detect
+      22  usart_tx
+
+ 
+ 852 bytes in section .text
+ 
+ 852 bytes of CODE memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,1093 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         19/Apr/2024  15:07:48
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\p3_debug.c
+#    Command line                 =
+#        -f
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\p3_debug.o.rsp
+#        (D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\p3_debug.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\
+#        --diag_suppress Pa050 -o
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\p3_debug.o.d
+#    Locale                       =  C
+#    List file                    =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\p3_debug.lst
+#    Object file                  =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\p3_debug.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\p3_debug.c
+      1          /** \file p3_debug.c
+      2           *******************************************************************************
+      3           ** \brief Provides variables for debugging
+      4           **
+      5           ** \cond STD_FILE_HEADER
+      6           **
+      7           ** COPYRIGHT(c) 2010-11 Procubed Technology Solutions Pvt Ltd. 
+      8           ** All rights reserved.
+      9           **
+     10           ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     11           ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     12           ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     13           ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     14           ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     15           ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     16           ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     17           **
+     18           *******************************************************************************
+     19           **  \endcond
+     20           */
+     21          
+     22          /*
+     23          ********************************************************************************
+     24          * File inclusion
+     25          ********************************************************************************
+     26          */
+     27          
+     28          ///#include "CONFIG_PROJECT_EFM32GG295F_APP.h"
+     29          #define DEBUG_IS_ENABLED
+     30          
+     31          #ifdef DEBUG_IS_ENABLED
+     32             
+     33          #include <stdio.h>
+     34          #include <stdarg.h>
+     35          #include <stdlib.h>
+     36          #include <string.h> 
+     37          #include "common.h"
+     38          #include "em_cmu.h"
+
+   \                                 In section .text, align 4, keep-with-next
+   \   static __vfp void __NVIC_EnableIRQ(IRQn_Type)
+   \                     __NVIC_EnableIRQ: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0xB249             SXTB     R1,R1
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xD409             BMI.N    ??__NVIC_EnableIRQ_0
+   \        0x8   0x2201             MOVS     R2,#+1
+   \        0xA   0xF010 0x011F      ANDS     R1,R0,#0x1F
+   \        0xE   0x408A             LSLS     R2,R2,R1
+   \       0x10   0x....             LDR.N    R1,??DataTable4
+   \       0x12   0x0003             MOVS     R3,R0
+   \       0x14   0xB25B             SXTB     R3,R3
+   \       0x16   0x095B             LSRS     R3,R3,#+5
+   \       0x18   0xF841 0x2023      STR      R2,[R1, R3, LSL #+2]
+   \                     ??__NVIC_EnableIRQ_0: (+1)
+   \       0x1C   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void __NVIC_ClearPendingIRQ(IRQn_Type)
+   \                     __NVIC_ClearPendingIRQ: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0xB249             SXTB     R1,R1
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xD409             BMI.N    ??__NVIC_ClearPendingIRQ_0
+   \        0x8   0x2201             MOVS     R2,#+1
+   \        0xA   0xF010 0x011F      ANDS     R1,R0,#0x1F
+   \        0xE   0x408A             LSLS     R2,R2,R1
+   \       0x10   0x....             LDR.N    R1,??DataTable4_1
+   \       0x12   0x0003             MOVS     R3,R0
+   \       0x14   0xB25B             SXTB     R3,R3
+   \       0x16   0x095B             LSRS     R3,R3,#+5
+   \       0x18   0xF841 0x2023      STR      R2,[R1, R3, LSL #+2]
+   \                     ??__NVIC_ClearPendingIRQ_0: (+1)
+   \       0x1C   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void GPIO_PinOutClear(uint8_t, unsigned int)
+   \                     GPIO_PinOutClear: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0xB2D2             UXTB     R2,R2
+   \        0x6   0x2A00             CMP      R2,#+0
+   \        0x8   0xD102             BNE.N    ??GPIO_PinOutClear_0
+   \        0xA   0xF240 0x12FF      MOVW     R2,#+511
+   \        0xE   0xE03C             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_0: (+1)
+   \       0x10   0x0002             MOVS     R2,R0
+   \       0x12   0xB2D2             UXTB     R2,R2
+   \       0x14   0x2A01             CMP      R2,#+1
+   \       0x16   0xD101             BNE.N    ??GPIO_PinOutClear_2
+   \       0x18   0x2203             MOVS     R2,#+3
+   \       0x1A   0xE036             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_2: (+1)
+   \       0x1C   0x0002             MOVS     R2,R0
+   \       0x1E   0xB2D2             UXTB     R2,R2
+   \       0x20   0x2A02             CMP      R2,#+2
+   \       0x22   0xD101             BNE.N    ??GPIO_PinOutClear_3
+   \       0x24   0x22FF             MOVS     R2,#+255
+   \       0x26   0xE030             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_3: (+1)
+   \       0x28   0x0002             MOVS     R2,R0
+   \       0x2A   0xB2D2             UXTB     R2,R2
+   \       0x2C   0x2A03             CMP      R2,#+3
+   \       0x2E   0xD101             BNE.N    ??GPIO_PinOutClear_4
+   \       0x30   0x220F             MOVS     R2,#+15
+   \       0x32   0xE02A             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_4: (+1)
+   \       0x34   0x0002             MOVS     R2,R0
+   \       0x36   0xB2D2             UXTB     R2,R2
+   \       0x38   0x2A04             CMP      R2,#+4
+   \       0x3A   0xD101             BNE.N    ??GPIO_PinOutClear_5
+   \       0x3C   0x2200             MOVS     R2,#+0
+   \       0x3E   0xE024             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_5: (+1)
+   \       0x40   0x0002             MOVS     R2,R0
+   \       0x42   0xB2D2             UXTB     R2,R2
+   \       0x44   0x2A05             CMP      R2,#+5
+   \       0x46   0xD101             BNE.N    ??GPIO_PinOutClear_6
+   \       0x48   0x2200             MOVS     R2,#+0
+   \       0x4A   0xE01E             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_6: (+1)
+   \       0x4C   0x0002             MOVS     R2,R0
+   \       0x4E   0xB2D2             UXTB     R2,R2
+   \       0x50   0x2A06             CMP      R2,#+6
+   \       0x52   0xD101             BNE.N    ??GPIO_PinOutClear_7
+   \       0x54   0x2200             MOVS     R2,#+0
+   \       0x56   0xE018             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_7: (+1)
+   \       0x58   0x0002             MOVS     R2,R0
+   \       0x5A   0xB2D2             UXTB     R2,R2
+   \       0x5C   0x2A07             CMP      R2,#+7
+   \       0x5E   0xD101             BNE.N    ??GPIO_PinOutClear_8
+   \       0x60   0x2200             MOVS     R2,#+0
+   \       0x62   0xE012             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_8: (+1)
+   \       0x64   0x0002             MOVS     R2,R0
+   \       0x66   0xB2D2             UXTB     R2,R2
+   \       0x68   0x2A08             CMP      R2,#+8
+   \       0x6A   0xD101             BNE.N    ??GPIO_PinOutClear_9
+   \       0x6C   0x2200             MOVS     R2,#+0
+   \       0x6E   0xE00C             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_9: (+1)
+   \       0x70   0x0002             MOVS     R2,R0
+   \       0x72   0xB2D2             UXTB     R2,R2
+   \       0x74   0x2A09             CMP      R2,#+9
+   \       0x76   0xD101             BNE.N    ??GPIO_PinOutClear_10
+   \       0x78   0x2200             MOVS     R2,#+0
+   \       0x7A   0xE006             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_10: (+1)
+   \       0x7C   0x0002             MOVS     R2,R0
+   \       0x7E   0xB2D2             UXTB     R2,R2
+   \       0x80   0x2A0A             CMP      R2,#+10
+   \       0x82   0xD101             BNE.N    ??GPIO_PinOutClear_11
+   \       0x84   0x2200             MOVS     R2,#+0
+   \       0x86   0xE000             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_11: (+1)
+   \       0x88   0x2200             MOVS     R2,#+0
+   \                     ??GPIO_PinOutClear_1: (+1)
+   \       0x8A   0x40CA             LSRS     R2,R2,R1
+   \       0x8C   0xF012 0x0201      ANDS     R2,R2,#0x1
+   \       0x90   0x2301             MOVS     R3,#+1
+   \       0x92   0x408B             LSLS     R3,R3,R1
+   \       0x94   0x....             LDR.N    R4,??DataTable4_2
+   \       0x96   0x0005             MOVS     R5,R0
+   \       0x98   0xB2ED             UXTB     R5,R5
+   \       0x9A   0x2230             MOVS     R2,#+48
+   \       0x9C   0x4355             MULS     R5,R2,R5
+   \       0x9E   0xEB04 0x0205      ADD      R2,R4,R5
+   \       0xA2   0x6113             STR      R3,[R2, #+16]
+   \       0xA4   0xBC30             POP      {R4,R5}
+   \       0xA6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void GPIO_PinOutSet(uint8_t, unsigned int)
+   \                     GPIO_PinOutSet: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0xB2D2             UXTB     R2,R2
+   \        0x6   0x2A00             CMP      R2,#+0
+   \        0x8   0xD102             BNE.N    ??GPIO_PinOutSet_0
+   \        0xA   0xF240 0x12FF      MOVW     R2,#+511
+   \        0xE   0xE03C             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_0: (+1)
+   \       0x10   0x0002             MOVS     R2,R0
+   \       0x12   0xB2D2             UXTB     R2,R2
+   \       0x14   0x2A01             CMP      R2,#+1
+   \       0x16   0xD101             BNE.N    ??GPIO_PinOutSet_2
+   \       0x18   0x2203             MOVS     R2,#+3
+   \       0x1A   0xE036             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_2: (+1)
+   \       0x1C   0x0002             MOVS     R2,R0
+   \       0x1E   0xB2D2             UXTB     R2,R2
+   \       0x20   0x2A02             CMP      R2,#+2
+   \       0x22   0xD101             BNE.N    ??GPIO_PinOutSet_3
+   \       0x24   0x22FF             MOVS     R2,#+255
+   \       0x26   0xE030             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_3: (+1)
+   \       0x28   0x0002             MOVS     R2,R0
+   \       0x2A   0xB2D2             UXTB     R2,R2
+   \       0x2C   0x2A03             CMP      R2,#+3
+   \       0x2E   0xD101             BNE.N    ??GPIO_PinOutSet_4
+   \       0x30   0x220F             MOVS     R2,#+15
+   \       0x32   0xE02A             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_4: (+1)
+   \       0x34   0x0002             MOVS     R2,R0
+   \       0x36   0xB2D2             UXTB     R2,R2
+   \       0x38   0x2A04             CMP      R2,#+4
+   \       0x3A   0xD101             BNE.N    ??GPIO_PinOutSet_5
+   \       0x3C   0x2200             MOVS     R2,#+0
+   \       0x3E   0xE024             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_5: (+1)
+   \       0x40   0x0002             MOVS     R2,R0
+   \       0x42   0xB2D2             UXTB     R2,R2
+   \       0x44   0x2A05             CMP      R2,#+5
+   \       0x46   0xD101             BNE.N    ??GPIO_PinOutSet_6
+   \       0x48   0x2200             MOVS     R2,#+0
+   \       0x4A   0xE01E             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_6: (+1)
+   \       0x4C   0x0002             MOVS     R2,R0
+   \       0x4E   0xB2D2             UXTB     R2,R2
+   \       0x50   0x2A06             CMP      R2,#+6
+   \       0x52   0xD101             BNE.N    ??GPIO_PinOutSet_7
+   \       0x54   0x2200             MOVS     R2,#+0
+   \       0x56   0xE018             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_7: (+1)
+   \       0x58   0x0002             MOVS     R2,R0
+   \       0x5A   0xB2D2             UXTB     R2,R2
+   \       0x5C   0x2A07             CMP      R2,#+7
+   \       0x5E   0xD101             BNE.N    ??GPIO_PinOutSet_8
+   \       0x60   0x2200             MOVS     R2,#+0
+   \       0x62   0xE012             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_8: (+1)
+   \       0x64   0x0002             MOVS     R2,R0
+   \       0x66   0xB2D2             UXTB     R2,R2
+   \       0x68   0x2A08             CMP      R2,#+8
+   \       0x6A   0xD101             BNE.N    ??GPIO_PinOutSet_9
+   \       0x6C   0x2200             MOVS     R2,#+0
+   \       0x6E   0xE00C             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_9: (+1)
+   \       0x70   0x0002             MOVS     R2,R0
+   \       0x72   0xB2D2             UXTB     R2,R2
+   \       0x74   0x2A09             CMP      R2,#+9
+   \       0x76   0xD101             BNE.N    ??GPIO_PinOutSet_10
+   \       0x78   0x2200             MOVS     R2,#+0
+   \       0x7A   0xE006             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_10: (+1)
+   \       0x7C   0x0002             MOVS     R2,R0
+   \       0x7E   0xB2D2             UXTB     R2,R2
+   \       0x80   0x2A0A             CMP      R2,#+10
+   \       0x82   0xD101             BNE.N    ??GPIO_PinOutSet_11
+   \       0x84   0x2200             MOVS     R2,#+0
+   \       0x86   0xE000             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_11: (+1)
+   \       0x88   0x2200             MOVS     R2,#+0
+   \                     ??GPIO_PinOutSet_1: (+1)
+   \       0x8A   0x40CA             LSRS     R2,R2,R1
+   \       0x8C   0xF012 0x0201      ANDS     R2,R2,#0x1
+   \       0x90   0x2301             MOVS     R3,#+1
+   \       0x92   0x408B             LSLS     R3,R3,R1
+   \       0x94   0x....             LDR.N    R4,??DataTable4_3
+   \       0x96   0x0005             MOVS     R5,R0
+   \       0x98   0xB2ED             UXTB     R5,R5
+   \       0x9A   0x2230             MOVS     R2,#+48
+   \       0x9C   0x4355             MULS     R5,R2,R5
+   \       0x9E   0xEB04 0x0205      ADD      R2,R4,R5
+   \       0xA2   0x6113             STR      R3,[R2, #+16]
+   \       0xA4   0xBC30             POP      {R4,R5}
+   \       0xA6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void GPIO_PinOutToggle(uint8_t, unsigned int)
+   \                     GPIO_PinOutToggle: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0xB2D2             UXTB     R2,R2
+   \        0x6   0x2A00             CMP      R2,#+0
+   \        0x8   0xD102             BNE.N    ??GPIO_PinOutToggle_0
+   \        0xA   0xF240 0x12FF      MOVW     R2,#+511
+   \        0xE   0xE03C             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_0: (+1)
+   \       0x10   0x0002             MOVS     R2,R0
+   \       0x12   0xB2D2             UXTB     R2,R2
+   \       0x14   0x2A01             CMP      R2,#+1
+   \       0x16   0xD101             BNE.N    ??GPIO_PinOutToggle_2
+   \       0x18   0x2203             MOVS     R2,#+3
+   \       0x1A   0xE036             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_2: (+1)
+   \       0x1C   0x0002             MOVS     R2,R0
+   \       0x1E   0xB2D2             UXTB     R2,R2
+   \       0x20   0x2A02             CMP      R2,#+2
+   \       0x22   0xD101             BNE.N    ??GPIO_PinOutToggle_3
+   \       0x24   0x22FF             MOVS     R2,#+255
+   \       0x26   0xE030             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_3: (+1)
+   \       0x28   0x0002             MOVS     R2,R0
+   \       0x2A   0xB2D2             UXTB     R2,R2
+   \       0x2C   0x2A03             CMP      R2,#+3
+   \       0x2E   0xD101             BNE.N    ??GPIO_PinOutToggle_4
+   \       0x30   0x220F             MOVS     R2,#+15
+   \       0x32   0xE02A             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_4: (+1)
+   \       0x34   0x0002             MOVS     R2,R0
+   \       0x36   0xB2D2             UXTB     R2,R2
+   \       0x38   0x2A04             CMP      R2,#+4
+   \       0x3A   0xD101             BNE.N    ??GPIO_PinOutToggle_5
+   \       0x3C   0x2200             MOVS     R2,#+0
+   \       0x3E   0xE024             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_5: (+1)
+   \       0x40   0x0002             MOVS     R2,R0
+   \       0x42   0xB2D2             UXTB     R2,R2
+   \       0x44   0x2A05             CMP      R2,#+5
+   \       0x46   0xD101             BNE.N    ??GPIO_PinOutToggle_6
+   \       0x48   0x2200             MOVS     R2,#+0
+   \       0x4A   0xE01E             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_6: (+1)
+   \       0x4C   0x0002             MOVS     R2,R0
+   \       0x4E   0xB2D2             UXTB     R2,R2
+   \       0x50   0x2A06             CMP      R2,#+6
+   \       0x52   0xD101             BNE.N    ??GPIO_PinOutToggle_7
+   \       0x54   0x2200             MOVS     R2,#+0
+   \       0x56   0xE018             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_7: (+1)
+   \       0x58   0x0002             MOVS     R2,R0
+   \       0x5A   0xB2D2             UXTB     R2,R2
+   \       0x5C   0x2A07             CMP      R2,#+7
+   \       0x5E   0xD101             BNE.N    ??GPIO_PinOutToggle_8
+   \       0x60   0x2200             MOVS     R2,#+0
+   \       0x62   0xE012             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_8: (+1)
+   \       0x64   0x0002             MOVS     R2,R0
+   \       0x66   0xB2D2             UXTB     R2,R2
+   \       0x68   0x2A08             CMP      R2,#+8
+   \       0x6A   0xD101             BNE.N    ??GPIO_PinOutToggle_9
+   \       0x6C   0x2200             MOVS     R2,#+0
+   \       0x6E   0xE00C             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_9: (+1)
+   \       0x70   0x0002             MOVS     R2,R0
+   \       0x72   0xB2D2             UXTB     R2,R2
+   \       0x74   0x2A09             CMP      R2,#+9
+   \       0x76   0xD101             BNE.N    ??GPIO_PinOutToggle_10
+   \       0x78   0x2200             MOVS     R2,#+0
+   \       0x7A   0xE006             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_10: (+1)
+   \       0x7C   0x0002             MOVS     R2,R0
+   \       0x7E   0xB2D2             UXTB     R2,R2
+   \       0x80   0x2A0A             CMP      R2,#+10
+   \       0x82   0xD101             BNE.N    ??GPIO_PinOutToggle_11
+   \       0x84   0x2200             MOVS     R2,#+0
+   \       0x86   0xE000             B.N      ??GPIO_PinOutToggle_1
+   \                     ??GPIO_PinOutToggle_11: (+1)
+   \       0x88   0x2200             MOVS     R2,#+0
+   \                     ??GPIO_PinOutToggle_1: (+1)
+   \       0x8A   0x40CA             LSRS     R2,R2,R1
+   \       0x8C   0xF012 0x0201      ANDS     R2,R2,#0x1
+   \       0x90   0x2301             MOVS     R3,#+1
+   \       0x92   0x408B             LSLS     R3,R3,R1
+   \       0x94   0x....             LDR.N    R4,??DataTable4_4
+   \       0x96   0x0005             MOVS     R5,R0
+   \       0x98   0xB2ED             UXTB     R5,R5
+   \       0x9A   0x2230             MOVS     R2,#+48
+   \       0x9C   0x4355             MULS     R5,R2,R5
+   \       0x9E   0xEB04 0x0205      ADD      R2,R4,R5
+   \       0xA2   0x6113             STR      R3,[R2, #+16]
+   \       0xA4   0xBC30             POP      {R4,R5}
+   \       0xA6   0x4770             BX       LR
+     39          #include "em_gpio.h"
+     40          
+     41          /*
+     42          ** =============================================================================
+     43          ** Private Macro definitions
+     44          ** =============================================================================
+     45          */
+     46          
+     47          #define LED_SETUP_1W_865                0
+     48          #define LED_SETUP_20mW_865              1
+     49          
+     50          #if LED_SETUP_1W_865
+     51            #define LED_PORT              gpioPortD
+     52            #define LED0                  4/*green*/
+     53            #define LED1                  5/*red*/
+     54          #endif
+     55          
+     56          #if LED_SETUP_20mW_865
+     57            #define LED_PORT              gpioPortA
+     58            #define LED0                  11/*red*/
+     59            #define LED1                  9/*green*/
+     60          #endif
+     61          
+     62          /*
+     63          ** =============================================================================
+     64          ** Private Structures, Unions & enums Type Definitions
+     65          ** =============================================================================
+     66          **/
+     67          
+     68          /* None */
+     69          
+     70          /*
+     71          ** =============================================================================
+     72          ** Private Variable Definitions
+     73          ** =============================================================================
+     74          */
+     75          
+     76          /*Umesh : 30-01-2018*/
+     77          //static uint16_t debug_structure_size=0;
+     78          //static uint8_t error_counter=0, working_counter=0;
+     79          /*this is not used*/
+     80          
+     81          /*
+     82          ** =============================================================================
+     83          ** Private Function Prototypes
+     84          ** =============================================================================
+     85          */
+     86          
+     87          /* None */
+     88          
+     89          /*
+     90          ** =============================================================================
+     91          ** Private Function Definitions
+     92          ** =============================================================================
+     93          */
+     94          
+     95          /* None */
+     96          
+     97          /*
+     98          ** =============================================================================
+     99          ** External Variable Declarations
+    100          ** =============================================================================
+    101          */
+    102          
+    103          /* None */
+    104          
+    105          /*
+    106          ** =============================================================================
+    107          ** External Function Prototypes
+    108          ** =============================================================================
+    109          */
+    110          
+    111          extern void trigger_both_udp_ping_request(void);
+    112          
+    113          /*
+    114          ** =============================================================================
+    115          ** Public Variables Definitions
+    116          ** =============================================================================
+    117          **/
+    118          
+    119          //uint8_t pa_send_counter=0;//
+    120          //uint8_t pc_send_counter=0;
+    121          //uint8_t pas_rcv_counter=0;
+    122          //uint8_t pcs_rcv_counter=0;
+    123          //
+    124          //uint8_t pa_recv_counter=0;//
+    125          //uint8_t extract_pa_recv_counter=0;//
+    126          //uint8_t pd_pa_recv_counter=0;//
+    127          //uint8_t pc_recv_counter=0;
+    128          //
+    129          //uint8_t pa_send_sm_counter=0;//
+    130          //uint8_t pc_send_sm_counter=0;
+    131          //
+    132          //uint8_t pa_send_smt_counter=0;//
+    133          //uint8_t pc_send_smt_counter=0;
+    134          
+    135          //uint8_t link_local_flag=0;//SANTOSH, FOR TESTING
+    136          
+    137          /*
+    138          ** =============================================================================
+    139          ** Public Function Prototypes
+    140          ** =============================================================================
+    141          */
+    142          
+    143          
+    144          void red_led_off(void);
+    145          void green_led_on(void);
+    146          void green_led_off(void);
+    147          void gpio_interrupt_setup(void);
+    148          void gpio_led_setup(void);
+    149          void configure_external_inttrupt_for_udp(void);
+    150          
+    151          /*
+    152          ** =============================================================================
+    153          ** Public Function Definitions
+    154          ** =============================================================================
+    155          */
+    156          
+
+   \                                 In section .text, align 2, keep-with-next
+    157          void red_led_on(void)
+    158          {
+   \                     red_led_on: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    159          #if LED_SETUP_1W_865   
+    160            GPIO_PinOutSet(LED_PORT, LED1);
+    161          #endif
+    162          
+    163          #if LED_SETUP_20mW_865
+    164            GPIO_PinOutClear(LED_PORT, LED0);/*red-on*/
+   \        0x2   0x210B             MOVS     R1,#+11
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x.... 0x....      BL       GPIO_PinOutClear
+    165          #endif  
+    166            return;
+   \        0xA   0xBD01             POP      {R0,PC}
+    167          }
+    168          /*----------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+    169          void red_led_off(void)
+    170          {
+   \                     red_led_off: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    171          #if LED_SETUP_1W_865   
+    172            GPIO_PinOutClear(LED_PORT, LED1);
+    173          #endif
+    174          
+    175          #if LED_SETUP_20mW_865
+    176            GPIO_PinOutSet(LED_PORT, LED0);/*red-off*/
+   \        0x2   0x210B             MOVS     R1,#+11
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x.... 0x....      BL       GPIO_PinOutSet
+    177          #endif   
+    178            return;
+   \        0xA   0xBD01             POP      {R0,PC}
+    179          }
+    180          /*----------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+    181          void green_led_on(void)
+    182          {
+   \                     green_led_on: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    183          #if LED_SETUP_1W_865  
+    184              GPIO_PinOutSet(LED_PORT, LED0);/*green-on*/
+    185          #endif
+    186          
+    187          #if LED_SETUP_20mW_865
+    188              GPIO_PinOutClear(LED_PORT, LED1);/*green-on*/
+   \        0x2   0x2109             MOVS     R1,#+9
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x.... 0x....      BL       GPIO_PinOutClear
+    189          #endif    
+    190            return;
+   \        0xA   0xBD01             POP      {R0,PC}
+    191          }
+    192          /*----------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+    193          void green_led_off(void)
+    194          {
+   \                     green_led_off: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    195          #if LED_SETUP_1W_865   
+    196            GPIO_PinOutClear(LED_PORT, LED0);
+    197          #endif
+    198          
+    199          #if LED_SETUP_20mW_865
+    200            GPIO_PinOutSet(LED_PORT, LED1);/*green-off*/
+   \        0x2   0x2109             MOVS     R1,#+9
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x.... 0x....      BL       GPIO_PinOutSet
+    201          #endif   
+    202            return;
+   \        0xA   0xBD01             POP      {R0,PC}
+    203          }
+    204          /*----------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+    205          void gpio_interrupt_setup(void)
+    206          {
+   \                     gpio_interrupt_setup: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    207            CMU_ClockEnable(cmuClock_GPIO, true);
+   \        0x2   0x2101             MOVS     R1,#+1
+   \        0x4   0x203A             MOVS     R0,#+58
+   \        0x6   0x.... 0x....      BL       CMU_ClockEnable
+    208            GPIO_PinModeSet(gpioPortA, 0, gpioModeInput, 1);
+   \        0xA   0x2301             MOVS     R3,#+1
+   \        0xC   0x2201             MOVS     R2,#+1
+   \        0xE   0x2100             MOVS     R1,#+0
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0x.... 0x....      BL       GPIO_PinModeSet
+    209            GPIO_IntConfig(gpioPortA, 0, false, true, true);
+                   ^
+Warning[Pe223]: function "GPIO_IntConfig" declared implicitly
+   \       0x16   0x2001             MOVS     R0,#+1
+   \       0x18   0x9000             STR      R0,[SP, #+0]
+   \       0x1A   0x2301             MOVS     R3,#+1
+   \       0x1C   0x2200             MOVS     R2,#+0
+   \       0x1E   0x2100             MOVS     R1,#+0
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0x.... 0x....      BL       GPIO_IntConfig
+    210            NVIC_ClearPendingIRQ(GPIO_EVEN_IRQn);
+   \       0x26   0x201B             MOVS     R0,#+27
+   \       0x28   0x.... 0x....      BL       __NVIC_ClearPendingIRQ
+    211            NVIC_EnableIRQ(GPIO_EVEN_IRQn);
+   \       0x2C   0x201B             MOVS     R0,#+27
+   \       0x2E   0x.... 0x....      BL       __NVIC_EnableIRQ
+    212          } 
+   \       0x32   0xBD01             POP      {R0,PC}
+    213          /*----------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+    214          void gpio_led_setup(void)
+    215          {
+   \                     gpio_led_setup: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    216          #if LED_SETUP_1W_865
+    217            GPIO_PinModeSet(LED_PORT, LED0, gpioModePushPull, 0);// Configure LED0 pin as digital output (push-pull)
+    218            GPIO_PinModeSet(LED_PORT, LED1, gpioModePushPull, 0);// Configure LED1 pin as digital output (push-pull) with drive-strength to lowest setting
+    219          #endif
+    220          
+    221          #if LED_SETUP_20mW_865
+    222            GPIO_PinModeSet(LED_PORT, LED0, gpioModePushPull, 1);// Configure LED0 pin as digital output (push-pull)
+   \        0x2   0x2301             MOVS     R3,#+1
+   \        0x4   0x2204             MOVS     R2,#+4
+   \        0x6   0x210B             MOVS     R1,#+11
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0x.... 0x....      BL       GPIO_PinModeSet
+    223            GPIO_PinModeSet(LED_PORT, LED1, gpioModePushPull, 1);// Configure LED1 pin as digital output (push-pull) with drive-strength to lowest setting
+   \        0xE   0x2301             MOVS     R3,#+1
+   \       0x10   0x2204             MOVS     R2,#+4
+   \       0x12   0x2109             MOVS     R1,#+9
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0x.... 0x....      BL       GPIO_PinModeSet
+    224          #endif  
+    225            //GPIO_DriveModeSet(LED_PORT, gpioDriveModeLowest);// Set DRIVEMODE to lowest setting (0.5 mA) for all LEDs configured with alternate drive strength
+    226          
+    227            return;
+   \       0x1A   0xBD01             POP      {R0,PC}
+    228          }
+    229          /*----------------------------------------------------------------------------*/
+    230          
+
+   \                                 In section .text, align 2, keep-with-next
+    231          void init_gpio_toggle (void)
+    232          {
+   \                     init_gpio_toggle: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    233            CMU_ClockEnable(cmuClock_GPIO, true);
+   \        0x2   0x2101             MOVS     R1,#+1
+   \        0x4   0x203A             MOVS     R0,#+58
+   \        0x6   0x.... 0x....      BL       CMU_ClockEnable
+    234            GPIO_PinModeSet(gpioPortD, 7, gpioModePushPull, 1);
+   \        0xA   0x2301             MOVS     R3,#+1
+   \        0xC   0x2204             MOVS     R2,#+4
+   \        0xE   0x2107             MOVS     R1,#+7
+   \       0x10   0x2003             MOVS     R0,#+3
+   \       0x12   0x.... 0x....      BL       GPIO_PinModeSet
+    235           // GPIO_DriveModeSet(gpioPortD, gpioDriveModeLowest);
+    236            gpio_led_setup();
+   \       0x16   0x.... 0x....      BL       gpio_led_setup
+    237          }
+   \       0x1A   0xBD01             POP      {R0,PC}
+    238          
+
+   \                                 In section .text, align 2, keep-with-next
+    239          void toggle_gpio (void)
+    240          {
+   \                     toggle_gpio: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    241            GPIO_PinOutToggle (gpioPortD, 7);
+   \        0x2   0x2107             MOVS     R1,#+7
+   \        0x4   0x2003             MOVS     R0,#+3
+   \        0x6   0x.... 0x....      BL       GPIO_PinOutToggle
+    242          }
+   \        0xA   0xBD01             POP      {R0,PC}
+    243          
+    244          /* Debdeep :: for debug purpose only */
+
+   \                                 In section .text, align 2, keep-with-next
+    245          void high_gpio ()
+    246          {
+   \                     high_gpio: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    247            GPIO_PinOutSet (gpioPortD, 7);
+   \        0x2   0x2107             MOVS     R1,#+7
+   \        0x4   0x2003             MOVS     R0,#+3
+   \        0x6   0x.... 0x....      BL       GPIO_PinOutSet
+    248          }
+   \        0xA   0xBD01             POP      {R0,PC}
+    249          
+
+   \                                 In section .text, align 2, keep-with-next
+    250          void low_gpio ()
+    251          {
+   \                     low_gpio: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    252            GPIO_PinOutClear (gpioPortD, 7);
+   \        0x2   0x2107             MOVS     R1,#+7
+   \        0x4   0x2003             MOVS     R0,#+3
+   \        0x6   0x.... 0x....      BL       GPIO_PinOutClear
+    253          }
+   \        0xA   0xBD01             POP      {R0,PC}
+    254          
+    255          
+    256          #endif
+    257          
+
+   \                                 In section .text, align 2, keep-with-next
+    258          void detection_callback(void)
+    259          {
+   \                     detection_callback: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    260          #ifdef DEBUG_IS_ENABLED    
+    261            red_led_on();
+   \        0x2   0x.... 0x....      BL       red_led_on
+    262            trigger_both_udp_ping_request();
+   \        0x6   0x.... 0x....      BL       trigger_both_udp_ping_request
+    263          #endif  
+    264            return;
+   \        0xA   0xBD01             POP      {R0,PC}
+    265          }
+    266          /*----------------------------------------------------------------------------*/
+    267          
+
+   \                                 In section .text, align 2, keep-with-next
+    268          void configure_external_inttrupt_for_udp(void)
+    269          { 
+   \                     configure_external_inttrupt_for_udp: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    270          #ifdef DEBUG_IS_ENABLED   
+    271              gpio_interrupt_setup();        
+   \        0x2   0x.... 0x....      BL       gpio_interrupt_setup
+    272              gpio_led_setup(); 
+   \        0x6   0x.... 0x....      BL       gpio_led_setup
+    273          #endif    
+    274          }
+   \        0xA   0xBD01             POP      {R0,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0xE000'E100        DC32     0xe000e100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0xE000'E280        DC32     0xe000e280
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x5003'E030        DC32     0x5003e030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \        0x0   0x5003'D030        DC32     0x5003d030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \        0x0   0x5003'F030        DC32     0x5003f030
+    275          
+    276          #if (PRINT_DEBUG_LEVEL != NONE_DEBUG)
+    277          /*----------------------------------------------------------------------------*/
+    278          /*** This is a Serial Wire Output based console.***
+    279          To use it you must do two things:
+    280          1. Set up the Serial Wire Output in your application.
+    281             You can use the function below for this.
+    282             NOTE: This funtion is different than the one used
+    283             in the profiler!
+    284          2. To print a single character use the CMSIS function
+    285             ITM_SendChar(char c).*/
+    286          
+    287          
+    288          /*Suneet :: For using printf use this config
+    289            Select swo config in iar which is SWO in green color
+    290            ON: SWO Trace Window Forced PC Sampling 
+    291            Rate(Sample/sec) 1159
+    292              CPU Clock 19
+    293              wanted  1000 
+    294          */
+    295          void setupSWOForPrint(void)
+    296          { 
+    297            uint32_t freq;
+    298            uint32_t div;
+    299            /* Enable GPIO clock. */
+    300            CMU->HFPERCLKEN0 |= CMU_HFPERCLKEN0_GPIO;
+    301          
+    302            /* Enable Serial wire output pin */
+    303            GPIO->ROUTE |= GPIO_ROUTE_SWOPEN;
+    304          
+    305          #if defined(_EFM32_GIANT_FAMILY) || defined(_EFM32_LEOPARD_FAMILY) || defined(_EFM32_WONDER_FAMILY)
+    306            /* Set location 0 */
+    307            GPIO->ROUTE = (GPIO->ROUTE & ~(_GPIO_ROUTE_SWLOCATION_MASK)) | GPIO_ROUTE_SWLOCATION_LOC0;
+    308          
+    309            /* Enable output on pin - GPIO Port F, Pin 2 */
+    310            GPIO->P[5].MODEL &= ~(_GPIO_P_MODEL_MODE2_MASK);
+    311            GPIO->P[5].MODEL |= GPIO_P_MODEL_MODE2_PUSHPULL;
+    312          #else
+    313            /* Set location 1 */
+    314            GPIO->ROUTE = (GPIO->ROUTE & ~(_GPIO_ROUTE_SWLOCATION_MASK)) |GPIO_ROUTE_SWLOCATION_LOC1;
+    315            /* Enable output on pin */
+    316            GPIO->P[2].MODEH &= ~(_GPIO_P_MODEH_MODE15_MASK);
+    317            GPIO->P[2].MODEH |= GPIO_P_MODEH_MODE15_PUSHPULL;
+    318          #endif
+    319          
+    320            /* Enable debug clock AUXHFRCO */
+    321            CMU->OSCENCMD = CMU_OSCENCMD_AUXHFRCOEN;
+    322          
+    323          
+    324          /* Wait until clock is ready */
+    325          while (!(CMU->STATUS & CMU_STATUS_AUXHFRCORDY));
+    326          
+    327          /* Enable trace in core debug */
+    328          CoreDebug->DHCSR |= CoreDebug_DHCSR_C_DEBUGEN_Msk;
+    329          CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
+    330          
+    331           
+    332          
+    333          /* Enable PC and IRQ sampling output */
+    334          DWT->CTRL = 0x400113FF;
+    335          
+    336          /* Set TPIU prescaler for the current debug clock frequency. Target frequency
+    337          is 1 kHz so we choose a divider that gives us the closest match.
+    338          Actual divider is TPI->ACPR + 1. */
+    339          freq = CMU_ClockFreqGet(cmuClock_DBG);
+    340          div = freq / 1000000;
+    341          TPI->ACPR = div - 1;
+    342          /* Set protocol to NRZ */
+    343          TPI->SPPR = 2;
+    344          /* Disable continuous formatting */
+    345          TPI->FFCR = 0x100;
+    346          /* Unlock ITM and output data */
+    347          ITM->LAR = 0xC5ACCE55;
+    348          ITM->TCR = 0x10009;
+    349          /* ITM Channel 0 is used for UART output */
+    350          ITM->TER |= (1UL << 0);
+    351          //  /* Enable trace in core debug */
+    352          //  CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
+    353          //  ITM->LAR  = 0xC5ACCE55;
+    354          //  ITM->TER  = 0x0;
+    355          //  ITM->TCR  = 0x0;
+    356          //  TPI->SPPR = 2;
+    357          //  TPI->ACPR = 0xf;
+    358          //  ITM->TPR  = 0x0;
+    359          //  DWT->CTRL = 0x400003FE;
+    360          //  ITM->TCR  = 0x0001000D;
+    361          //  TPI->FFCR = 0x00000100;
+    362          //  ITM->TER  = 0x1;
+    363          }
+    364          
+    365          
+    366          void stack_print_debug(const char *format, ...)
+    367          {
+    368              va_list vargs;
+    369              va_start(vargs, format);
+    370              vprintf(format, vargs);
+    371              va_end(vargs);
+    372          }
+    373          
+    374          void print_mac_address (uint8_t *addr)
+    375          {
+    376            stack_print_debug(" %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x\n",addr[0], addr[1], addr[2], addr[3], addr[4], addr[5], addr[6], addr[7]);
+    377          }
+    378          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   GPIO_PinOutClear
+       8   GPIO_PinOutSet
+       8   GPIO_PinOutToggle
+       0   __NVIC_ClearPendingIRQ
+       0   __NVIC_EnableIRQ
+       8   configure_external_inttrupt_for_udp
+         8   -> gpio_interrupt_setup
+         8   -> gpio_led_setup
+       8   detection_callback
+         8   -> red_led_on
+         8   -> trigger_both_udp_ping_request
+       8   gpio_interrupt_setup
+         8   -> CMU_ClockEnable
+         8   -> GPIO_IntConfig
+         8   -> GPIO_PinModeSet
+         8   -> __NVIC_ClearPendingIRQ
+         8   -> __NVIC_EnableIRQ
+       8   gpio_led_setup
+         8   -> GPIO_PinModeSet
+       8   green_led_off
+         8   -> GPIO_PinOutSet
+       8   green_led_on
+         8   -> GPIO_PinOutClear
+       8   high_gpio
+         8   -> GPIO_PinOutSet
+       8   init_gpio_toggle
+         8   -> CMU_ClockEnable
+         8   -> GPIO_PinModeSet
+         8   -> gpio_led_setup
+       8   low_gpio
+         8   -> GPIO_PinOutClear
+       8   red_led_off
+         8   -> GPIO_PinOutSet
+       8   red_led_on
+         8   -> GPIO_PinOutClear
+       8   toggle_gpio
+         8   -> GPIO_PinOutToggle
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+     168  GPIO_PinOutClear
+     168  GPIO_PinOutSet
+     168  GPIO_PinOutToggle
+      30  __NVIC_ClearPendingIRQ
+      30  __NVIC_EnableIRQ
+      12  configure_external_inttrupt_for_udp
+      12  detection_callback
+      52  gpio_interrupt_setup
+      28  gpio_led_setup
+      12  green_led_off
+      12  green_led_on
+      12  high_gpio
+      28  init_gpio_toggle
+      12  low_gpio
+      12  red_led_off
+      12  red_led_on
+      12  toggle_gpio
+
+ 
+ 800 bytes in section .text
+ 
+ 800 bytes of CODE memory
+
+Errors: none
+Warnings: 1

@@ -1,0 +1,1422 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         26/Nov/2024  12:16:05
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\SiliconLabs\platform\emlib\src\em_timer.c
+#    Command line      =
+#        -f
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_timer.o.rsp
+#        (C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\SiliconLabs\platform\emlib\src\em_timer.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\src_3303982371595999919.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\.\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\rpl\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\cpu\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\FLASH\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_timer.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\src_3303982371595999919.dir\em_timer.lst
+#    Object file       =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_timer.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\SiliconLabs\platform\emlib\src\em_timer.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Timer/counter (TIMER) Peripheral API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "em_timer.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp bool TIMER_Valid(TIMER_TypeDef const *)
+   \                     TIMER_Valid: (+1)
+   \        0x0   0x.... 0x....      LDR.W    R1,??DataTable3
+   \        0x4   0x4288             CMP      R0,R1
+   \        0x6   0xD00F             BEQ.N    ??TIMER_Valid_0
+   \        0x8   0x.... 0x....      LDR.W    R1,??DataTable3_1
+   \        0xC   0x4288             CMP      R0,R1
+   \        0xE   0xD00B             BEQ.N    ??TIMER_Valid_0
+   \       0x10   0x.... 0x....      LDR.W    R1,??DataTable3_2
+   \       0x14   0x4288             CMP      R0,R1
+   \       0x16   0xD007             BEQ.N    ??TIMER_Valid_0
+   \       0x18   0x.... 0x....      LDR.W    R1,??DataTable3_3
+   \       0x1C   0x4288             CMP      R0,R1
+   \       0x1E   0xD003             BEQ.N    ??TIMER_Valid_0
+   \       0x20   0x.... 0x....      LDR.W    R1,??DataTable3_4
+   \       0x24   0x4288             CMP      R0,R1
+   \       0x26   0xD101             BNE.N    ??TIMER_Valid_1
+   \                     ??TIMER_Valid_0: (+1)
+   \       0x28   0x2001             MOVS     R0,#+1
+   \       0x2A   0xE000             B.N      ??TIMER_Valid_2
+   \                     ??TIMER_Valid_1: (+1)
+   \       0x2C   0x2000             MOVS     R0,#+0
+   \                     ??TIMER_Valid_2: (+1)
+   \       0x2E   0xB2C0             UXTB     R0,R0
+   \       0x30   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp bool TIMER_SupportsDTI(TIMER_TypeDef const *)
+   \                     TIMER_SupportsDTI: (+1)
+   \        0x0   0x.... 0x....      LDR.W    R1,??DataTable3
+   \        0x4   0x4288             CMP      R0,R1
+   \        0x6   0xD00F             BEQ.N    ??TIMER_SupportsDTI_0
+   \        0x8   0x.... 0x....      LDR.W    R1,??DataTable3_1
+   \        0xC   0x4288             CMP      R0,R1
+   \        0xE   0xD00B             BEQ.N    ??TIMER_SupportsDTI_0
+   \       0x10   0x.... 0x....      LDR.W    R1,??DataTable3_2
+   \       0x14   0x4288             CMP      R0,R1
+   \       0x16   0xD007             BEQ.N    ??TIMER_SupportsDTI_0
+   \       0x18   0x.... 0x....      LDR.W    R1,??DataTable3_3
+   \       0x1C   0x4288             CMP      R0,R1
+   \       0x1E   0xD003             BEQ.N    ??TIMER_SupportsDTI_0
+   \       0x20   0x.... 0x....      LDR.W    R1,??DataTable3_4
+   \       0x24   0x4288             CMP      R0,R1
+   \       0x26   0xD101             BNE.N    ??TIMER_SupportsDTI_1
+   \                     ??TIMER_SupportsDTI_0: (+1)
+   \       0x28   0x2001             MOVS     R0,#+1
+   \       0x2A   0xE000             B.N      ??TIMER_SupportsDTI_2
+   \                     ??TIMER_SupportsDTI_1: (+1)
+   \       0x2C   0x2000             MOVS     R0,#+0
+   \                     ??TIMER_SupportsDTI_2: (+1)
+   \       0x2E   0xB2C0             UXTB     R0,R0
+   \       0x30   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void TIMER_EnableDTI(TIMER_TypeDef *, bool)
+   \                     TIMER_EnableDTI: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x6B26             LDR      R6,[R4, #+48]
+   \        0x8   0xF016 0x0601      ANDS     R6,R6,#0x1
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0x.... 0x....      BL       TIMER_SyncWait
+   \       0x12   0x2101             MOVS     R1,#+1
+   \       0x14   0xF242 0x0030      MOVW     R0,#+8240
+   \       0x18   0x5021             STR      R1,[R4, R0]
+   \                     ??TIMER_EnableDTI_0: (+1)
+   \       0x1A   0x6B20             LDR      R0,[R4, #+48]
+   \       0x1C   0x0780             LSLS     R0,R0,#+30
+   \       0x1E   0xD4FC             BMI.N    ??TIMER_EnableDTI_0
+   \       0x20   0x0028             MOVS     R0,R5
+   \       0x22   0xB2C0             UXTB     R0,R0
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD004             BEQ.N    ??TIMER_EnableDTI_1
+   \       0x28   0x2101             MOVS     R1,#+1
+   \       0x2A   0xF514 0x5087      ADDS     R0,R4,#+4320
+   \       0x2E   0x6001             STR      R1,[R0, #+0]
+   \       0x30   0xE003             B.N      ??TIMER_EnableDTI_2
+   \                     ??TIMER_EnableDTI_1: (+1)
+   \       0x32   0x2101             MOVS     R1,#+1
+   \       0x34   0xF242 0x00E0      MOVW     R0,#+8416
+   \       0x38   0x5021             STR      R1,[R4, R0]
+   \                     ??TIMER_EnableDTI_2: (+1)
+   \       0x3A   0xF241 0x0030      MOVW     R0,#+4144
+   \       0x3E   0x5026             STR      R6,[R4, R0]
+   \       0x40   0xBD70             POP      {R4-R6,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t TIMER_GetDTIFault(TIMER_TypeDef *)
+   \                     TIMER_GetDTIFault: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       TIMER_SupportsDTI
+   \        0xA   0xF8D4 0x00F4      LDR      R0,[R4, #+244]
+   \        0xE   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void TIMER_ClearDTIFault(TIMER_TypeDef *, uint32_t)
+   \                     TIMER_ClearDTIFault: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0x.... 0x....      BL       TIMER_SupportsDTI
+   \        0xC   0x6B20             LDR      R0,[R4, #+48]
+   \        0xE   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \       0x12   0xF8C4 0x50F8      STR      R5,[R4, #+248]
+   \       0x16   0xBD31             POP      {R0,R4,R5,PC}
+     32          #if defined(TIMER_COUNT) && (TIMER_COUNT > 0)
+     33          
+     34          #include "sl_assert.h"
+     35          
+     36          /***************************************************************************//**
+     37           * @addtogroup timer TIMER - Timer/Counter
+     38           * @brief Timer/Counter (TIMER) Peripheral API
+     39           * @details
+     40           *   The timer module consists of three main parts:
+     41           *   @li General timer configuration and enable control.
+     42           *   @li Compare/capture control.
+     43           *   @li Dead time insertion control (may not be available for all timers).
+     44           * @{
+     45           ******************************************************************************/
+     46          
+     47          /*******************************************************************************
+     48           **************************   LOCAL FUNCTIONS   ********************************
+     49           ******************************************************************************/
+     50          
+     51          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     52          #if defined(_PRS_CONSUMER_TIMER0_CC0_MASK)
+     53          
+     54          /** Map TIMER reference to index of device. */
+     55          #if defined(TIMER9)
+     56          #define TIMER_DEVICE_ID(timer) ( \
+     57              (timer) == TIMER0     ? 0    \
+     58              : (timer) == TIMER1   ? 1    \
+     59              : (timer) == TIMER2   ? 2    \
+     60              : (timer) == TIMER3   ? 3    \
+     61              : (timer) == TIMER4   ? 4    \
+     62              : (timer) == TIMER5   ? 5    \
+     63              : (timer) == TIMER6   ? 6    \
+     64              : (timer) == TIMER7   ? 7    \
+     65              : (timer) == TIMER8   ? 8    \
+     66              : (timer) == TIMER9   ? 9    \
+     67              : -1)
+     68          #elif defined(TIMER7)
+     69          #define TIMER_DEVICE_ID(timer) ( \
+     70              (timer) == TIMER0     ? 0    \
+     71              : (timer) == TIMER1   ? 1    \
+     72              : (timer) == TIMER2   ? 2    \
+     73              : (timer) == TIMER3   ? 3    \
+     74              : (timer) == TIMER4   ? 4    \
+     75              : (timer) == TIMER5   ? 5    \
+     76              : (timer) == TIMER6   ? 6    \
+     77              : (timer) == TIMER7   ? 7    \
+     78              : -1)
+     79          #elif defined(TIMER4)
+     80          #define TIMER_DEVICE_ID(timer) ( \
+     81              (timer) == TIMER0   ? 0      \
+     82              : (timer) == TIMER1 ? 1      \
+     83              : (timer) == TIMER2 ? 2      \
+     84              : (timer) == TIMER3 ? 3      \
+     85              : (timer) == TIMER4 ? 4      \
+     86              : -1)
+     87          #else
+     88          #define TIMER_DEVICE_ID(timer) ( \
+     89              (timer) == TIMER0   ? 0      \
+     90              : (timer) == TIMER1 ? 1      \
+     91              : (timer) == TIMER2 ? 2      \
+     92              : (timer) == TIMER3 ? 3      \
+     93              : -1)
+     94          #endif
+     95          
+     96          #define TIMER_INPUT_CHANNEL_DTI     3UL
+     97          #define TIMER_INPUT_CHANNEL_DTIFS1  4UL
+     98          #define TIMER_INPUT_CHANNEL_DTIFS2  5UL
+     99          
+    100          /**
+    101           * TIMER PRS registers are moved into the PRS register space on series 2 devices.
+    102           * The PRS Consumer registers for a timer consist of 6 registers.
+    103           *
+    104           * [0] - CC0 PRS Consumer
+    105           * [1] - CC1 PRS Consumer
+    106           * [2] - CC2 PRS Consumer
+    107           * [3] - DTI PRS Consumer
+    108           * [4] - DTIFS1 PRS Consumer
+    109           * [5] - DTIFS2 PRS Consumer
+    110           */
+    111          typedef struct {
+    112            __IOM uint32_t CONSUMER_CH[6];         /**< TIMER PRS consumers. */
+    113          } PRS_TIMERn_Consumer_TypeDef;
+    114          
+    115          typedef struct {
+    116            PRS_TIMERn_Consumer_TypeDef TIMER_CONSUMER[TIMER_COUNT];
+    117          } PRS_TIMERn_TypeDef;
+    118          
+    119          /**
+    120           * @brief Configure a timer capture/compare channel to use a PRS channel as input.
+    121           *
+    122           * @param[in] timer
+    123           *
+    124           * @param[in] cc
+    125           *   Timer input channel. Valid input is 0-5.
+    126           *   0 - CC0
+    127           *   1 - CC1
+    128           *   2 - CC2
+    129           *   3 - DTI
+    130           *   4 - DTIFS1
+    131           *   5 - DTIFS2
+    132           *
+    133           * @param[in] prsCh
+    134           *   PRS channel number.
+    135           *
+    136           * @param[in] async
+    137           *   true for asynchronous PRS channel, false for synchronous PRS channel.
+    138           */
+
+   \                                 In section .text, align 2, keep-with-next
+    139          static void timerPrsConfig(TIMER_TypeDef * timer, unsigned int cc, unsigned int prsCh, bool async)
+    140          {
+   \                     timerPrsConfig: (+1)
+   \        0x0   0xB4F0             PUSH     {R4-R7}
+    141            int i = TIMER_DEVICE_ID(timer);
+   \        0x2   0x.... 0x....      LDR.W    R4,??DataTable3
+   \        0x6   0x42A0             CMP      R0,R4
+   \        0x8   0xD101             BNE.N    ??timerPrsConfig_0
+   \        0xA   0x2500             MOVS     R5,#+0
+   \        0xC   0xE019             B.N      ??timerPrsConfig_1
+   \                     ??timerPrsConfig_0: (+1)
+   \        0xE   0x.... 0x....      LDR.W    R4,??DataTable3_1
+   \       0x12   0x42A0             CMP      R0,R4
+   \       0x14   0xD101             BNE.N    ??timerPrsConfig_2
+   \       0x16   0x2501             MOVS     R5,#+1
+   \       0x18   0xE013             B.N      ??timerPrsConfig_1
+   \                     ??timerPrsConfig_2: (+1)
+   \       0x1A   0x.... 0x....      LDR.W    R4,??DataTable3_2
+   \       0x1E   0x42A0             CMP      R0,R4
+   \       0x20   0xD101             BNE.N    ??timerPrsConfig_3
+   \       0x22   0x2502             MOVS     R5,#+2
+   \       0x24   0xE00D             B.N      ??timerPrsConfig_1
+   \                     ??timerPrsConfig_3: (+1)
+   \       0x26   0x.... 0x....      LDR.W    R4,??DataTable3_3
+   \       0x2A   0x42A0             CMP      R0,R4
+   \       0x2C   0xD101             BNE.N    ??timerPrsConfig_4
+   \       0x2E   0x2503             MOVS     R5,#+3
+   \       0x30   0xE007             B.N      ??timerPrsConfig_1
+   \                     ??timerPrsConfig_4: (+1)
+   \       0x32   0x.... 0x....      LDR.W    R4,??DataTable3_4
+   \       0x36   0x42A0             CMP      R0,R4
+   \       0x38   0xD101             BNE.N    ??timerPrsConfig_5
+   \       0x3A   0x2504             MOVS     R5,#+4
+   \       0x3C   0xE001             B.N      ??timerPrsConfig_1
+   \                     ??timerPrsConfig_5: (+1)
+   \       0x3E   0xF05F 0x35FF      MOVS     R5,#+4294967295
+    142            volatile PRS_TIMERn_TypeDef * base = (PRS_TIMERn_TypeDef *) &PRS->CONSUMER_TIMER0_CC0;
+   \                     ??timerPrsConfig_1: (+1)
+   \       0x42   0x.... 0x....      LDR.W    R6,??DataTable3_5
+    143            EFM_ASSERT(i >= 0);
+   \       0x46   0x2D00             CMP      R5,#+0
+   \       0x48   0xD401             BMI.N    ??timerPrsConfig_6
+   \       0x4A   0x2401             MOVS     R4,#+1
+   \       0x4C   0xE000             B.N      ??timerPrsConfig_7
+   \                     ??timerPrsConfig_6: (+1)
+   \       0x4E   0x2400             MOVS     R4,#+0
+   \                     ??timerPrsConfig_7: (+1)
+   \       0x50   0xB2E4             UXTB     R4,R4
+    144          
+    145            if (i >= 0) {
+   \       0x52   0x2D00             CMP      R5,#+0
+   \       0x54   0xD412             BMI.N    ??timerPrsConfig_8
+    146              if (async) {
+   \       0x56   0x001C             MOVS     R4,R3
+   \       0x58   0xB2E4             UXTB     R4,R4
+   \       0x5A   0x2C00             CMP      R4,#+0
+   \       0x5C   0xD006             BEQ.N    ??timerPrsConfig_9
+    147                base->TIMER_CONSUMER[i].CONSUMER_CH[cc] = prsCh << _PRS_CONSUMER_TIMER0_CC0_PRSSEL_SHIFT;
+   \       0x5E   0x2418             MOVS     R4,#+24
+   \       0x60   0xFB04 0xF405      MUL      R4,R4,R5
+   \       0x64   0x4434             ADD      R4,R6,R4
+   \       0x66   0xF844 0x2021      STR      R2,[R4, R1, LSL #+2]
+   \       0x6A   0xE007             B.N      ??timerPrsConfig_8
+    148              } else {
+    149                base->TIMER_CONSUMER[i].CONSUMER_CH[cc] = prsCh << _PRS_CONSUMER_TIMER0_CC0_SPRSSEL_SHIFT;
+   \                     ??timerPrsConfig_9: (+1)
+   \       0x6C   0x2418             MOVS     R4,#+24
+   \       0x6E   0xFB04 0xF405      MUL      R4,R4,R5
+   \       0x72   0xEB06 0x0704      ADD      R7,R6,R4
+   \       0x76   0x0214             LSLS     R4,R2,#+8
+   \       0x78   0xF847 0x4021      STR      R4,[R7, R1, LSL #+2]
+    150              }
+    151            }
+    152          }
+   \                     ??timerPrsConfig_8: (+1)
+   \       0x7C   0xBCF0             POP      {R4-R7}
+   \       0x7E   0x4770             BX       LR
+    153          #endif
+    154          
+    155          /** @endcond */
+    156          
+    157          /*******************************************************************************
+    158           **************************   GLOBAL FUNCTIONS   *******************************
+    159           ******************************************************************************/
+    160          
+    161          /***************************************************************************//**
+    162           * @brief
+    163           *   Initialize TIMER.
+    164           *
+    165           * @details
+    166           *   Notice that the counter top must be configured separately with, for instance
+    167           *   TIMER_TopSet(). In addition, compare/capture and dead-time insertion
+    168           *   initialization must be initialized separately if used, which should probably
+    169           *   be done prior to using this function if configuring the TIMER to
+    170           *   start when initialization is completed.
+    171           *
+    172           * @param[in] timer
+    173           *   A pointer to the TIMER peripheral register block.
+    174           *
+    175           * @param[in] init
+    176           *   A pointer to the TIMER initialization structure.
+    177           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    178          void TIMER_Init(TIMER_TypeDef *timer, const TIMER_Init_TypeDef *init)
+    179          {
+   \                     TIMER_Init: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0x0006             MOVS     R6,R0
+   \        0x6   0x000C             MOVS     R4,R1
+    180            EFM_ASSERT(TIMER_REF_VALID(timer));
+   \        0x8   0x0030             MOVS     R0,R6
+   \        0xA   0x.... 0x....      BL       TIMER_Valid
+    181            uint32_t ctrlRegVal = 0;
+   \        0xE   0x2500             MOVS     R5,#+0
+    182          
+    183          #if defined (_TIMER_CFG_PRESC_SHIFT)
+    184            TIMER_SyncWait(timer);
+   \       0x10   0x0030             MOVS     R0,R6
+   \       0x12   0x.... 0x....      BL       TIMER_SyncWait
+    185            timer->EN_CLR = TIMER_EN_EN;
+   \       0x16   0x2101             MOVS     R1,#+1
+   \       0x18   0xF242 0x0030      MOVW     R0,#+8240
+   \       0x1C   0x5031             STR      R1,[R6, R0]
+    186          #if defined(_TIMER_EN_DISABLING_MASK)
+    187            while (timer->EN & _TIMER_EN_DISABLING_MASK) {
+   \                     ??TIMER_Init_0: (+1)
+   \       0x1E   0x6B30             LDR      R0,[R6, #+48]
+   \       0x20   0x0780             LSLS     R0,R0,#+30
+   \       0x22   0xD4FC             BMI.N    ??TIMER_Init_0
+    188            }
+    189          #endif
+    190            timer->CFG = ((uint32_t)init->prescale << _TIMER_CFG_PRESC_SHIFT)
+    191                         | ((uint32_t)init->clkSel << _TIMER_CFG_CLKSEL_SHIFT)
+    192                         | ((uint32_t)init->mode   << _TIMER_CFG_MODE_SHIFT)
+    193                         | (init->debugRun         ?   TIMER_CFG_DEBUGRUN  : 0)
+    194                         | (init->dmaClrAct        ?   TIMER_CFG_DMACLRACT : 0)
+    195                         | (init->quadModeX4       ?   TIMER_CFG_QDM_X4    : 0)
+    196                         | (init->oneShot          ?   TIMER_CFG_OSMEN     : 0)
+    197                         | (init->sync             ?   TIMER_CFG_SYNC      : 0)
+    198                         | (init->disSyncOut       ?   TIMER_CFG_DISSYNCOUT : 0)
+    199                         | (init->ati              ?   TIMER_CFG_ATI       : 0)
+    200                         | (init->rssCoist         ?   TIMER_CFG_RSSCOIST  : 0);
+   \       0x24   0x7860             LDRB     R0,[R4, #+1]
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD001             BEQ.N    ??TIMER_Init_1
+   \       0x2A   0x2140             MOVS     R1,#+64
+   \       0x2C   0xE000             B.N      ??TIMER_Init_2
+   \                     ??TIMER_Init_1: (+1)
+   \       0x2E   0x2100             MOVS     R1,#+0
+   \                     ??TIMER_Init_2: (+1)
+   \       0x30   0x7AE0             LDRB     R0,[R4, #+11]
+   \       0x32   0x2800             CMP      R0,#+0
+   \       0x34   0xD001             BEQ.N    ??TIMER_Init_3
+   \       0x36   0x2280             MOVS     R2,#+128
+   \       0x38   0xE000             B.N      ??TIMER_Init_4
+   \                     ??TIMER_Init_3: (+1)
+   \       0x3A   0x2200             MOVS     R2,#+0
+   \                     ??TIMER_Init_4: (+1)
+   \       0x3C   0x7B20             LDRB     R0,[R4, #+12]
+   \       0x3E   0x2800             CMP      R0,#+0
+   \       0x40   0xD001             BEQ.N    ??TIMER_Init_5
+   \       0x42   0x2320             MOVS     R3,#+32
+   \       0x44   0xE000             B.N      ??TIMER_Init_6
+   \                     ??TIMER_Init_5: (+1)
+   \       0x46   0x2300             MOVS     R3,#+0
+   \                     ??TIMER_Init_6: (+1)
+   \       0x48   0x7B60             LDRB     R0,[R4, #+13]
+   \       0x4A   0x2800             CMP      R0,#+0
+   \       0x4C   0xD001             BEQ.N    ??TIMER_Init_7
+   \       0x4E   0x2710             MOVS     R7,#+16
+   \       0x50   0xE000             B.N      ??TIMER_Init_8
+   \                     ??TIMER_Init_7: (+1)
+   \       0x52   0x2700             MOVS     R7,#+0
+   \                     ??TIMER_Init_8: (+1)
+   \       0x54   0x7BA0             LDRB     R0,[R4, #+14]
+   \       0x56   0x2800             CMP      R0,#+0
+   \       0x58   0xD002             BEQ.N    ??TIMER_Init_9
+   \       0x5A   0xF05F 0x0C08      MOVS     R12,#+8
+   \       0x5E   0xE001             B.N      ??TIMER_Init_10
+   \                     ??TIMER_Init_9: (+1)
+   \       0x60   0xF05F 0x0C00      MOVS     R12,#+0
+   \                     ??TIMER_Init_10: (+1)
+   \       0x64   0x7BE0             LDRB     R0,[R4, #+15]
+   \       0x66   0x2800             CMP      R0,#+0
+   \       0x68   0xD002             BEQ.N    ??TIMER_Init_11
+   \       0x6A   0xF44F 0x6E00      MOV      LR,#+2048
+   \       0x6E   0xE001             B.N      ??TIMER_Init_12
+   \                     ??TIMER_Init_11: (+1)
+   \       0x70   0xF05F 0x0E00      MOVS     LR,#+0
+   \                     ??TIMER_Init_12: (+1)
+   \       0x74   0x79A0             LDRB     R0,[R4, #+6]
+   \       0x76   0x2800             CMP      R0,#+0
+   \       0x78   0xD002             BEQ.N    ??TIMER_Init_13
+   \       0x7A   0xF45F 0x3880      MOVS     R8,#+65536
+   \       0x7E   0xE001             B.N      ??TIMER_Init_14
+   \                     ??TIMER_Init_13: (+1)
+   \       0x80   0xF05F 0x0800      MOVS     R8,#+0
+   \                     ??TIMER_Init_14: (+1)
+   \       0x84   0x79E0             LDRB     R0,[R4, #+7]
+   \       0x86   0x2800             CMP      R0,#+0
+   \       0x88   0xD002             BEQ.N    ??TIMER_Init_15
+   \       0x8A   0xF45F 0x3900      MOVS     R9,#+131072
+   \       0x8E   0xE001             B.N      ??TIMER_Init_16
+   \                     ??TIMER_Init_15: (+1)
+   \       0x90   0xF05F 0x0900      MOVS     R9,#+0
+   \                     ??TIMER_Init_16: (+1)
+   \       0x94   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \       0x98   0xF894 0xA004      LDRB     R10,[R4, #+4]
+   \       0x9C   0xEA5F 0x2A0A      LSLS     R10,R10,#+8
+   \       0xA0   0xEA5A 0x4A80      ORRS     R10,R10,R0, LSL #+18
+   \       0xA4   0x7AA0             LDRB     R0,[R4, #+10]
+   \       0xA6   0xEA50 0x0A0A      ORRS     R10,R0,R10
+   \       0xAA   0xEA51 0x010A      ORRS     R1,R1,R10
+   \       0xAE   0x4311             ORRS     R1,R2,R1
+   \       0xB0   0x4319             ORRS     R1,R3,R1
+   \       0xB2   0x4339             ORRS     R1,R7,R1
+   \       0xB4   0xEA5C 0x0101      ORRS     R1,R12,R1
+   \       0xB8   0xEA5E 0x0101      ORRS     R1,LR,R1
+   \       0xBC   0xEA58 0x0101      ORRS     R1,R8,R1
+   \       0xC0   0xEA59 0x0101      ORRS     R1,R9,R1
+   \       0xC4   0x6071             STR      R1,[R6, #+4]
+    201            timer->EN_SET = TIMER_EN_EN;
+   \       0xC6   0x2001             MOVS     R0,#+1
+   \       0xC8   0xF241 0x0130      MOVW     R1,#+4144
+   \       0xCC   0x5070             STR      R0,[R6, R1]
+    202          #endif
+    203          
+    204            /* Stop the timer if specified to be disabled (doesn't hurt if already stopped). */
+    205            if (!(init->enable)) {
+   \       0xCE   0x7820             LDRB     R0,[R4, #+0]
+   \       0xD0   0x2800             CMP      R0,#+0
+   \       0xD2   0xD101             BNE.N    ??TIMER_Init_17
+    206              timer->CMD = TIMER_CMD_STOP;
+   \       0xD4   0x2002             MOVS     R0,#+2
+   \       0xD6   0x60F0             STR      R0,[R6, #+12]
+    207            }
+    208          
+    209            /* Reset the counter. */
+    210            timer->CNT = _TIMER_CNT_RESETVALUE;
+   \                     ??TIMER_Init_17: (+1)
+   \       0xD8   0x2000             MOVS     R0,#+0
+   \       0xDA   0x6270             STR      R0,[R6, #+36]
+    211          
+    212          #if defined(_SILICON_LABS_32B_SERIES_0) || defined(_SILICON_LABS_32B_SERIES_1)
+    213            ctrlRegVal = ((uint32_t)init->prescale     << _TIMER_CTRL_PRESC_SHIFT)
+    214                         | ((uint32_t)init->clkSel     << _TIMER_CTRL_CLKSEL_SHIFT)
+    215                         | ((uint32_t)init->fallAction << _TIMER_CTRL_FALLA_SHIFT)
+    216                         | ((uint32_t)init->riseAction << _TIMER_CTRL_RISEA_SHIFT)
+    217                         | ((uint32_t)init->mode       << _TIMER_CTRL_MODE_SHIFT)
+    218                         | (init->debugRun             ?   TIMER_CTRL_DEBUGRUN  : 0)
+    219                         | (init->dmaClrAct            ?   TIMER_CTRL_DMACLRACT : 0)
+    220                         | (init->quadModeX4           ?   TIMER_CTRL_QDM_X4    : 0)
+    221                         | (init->oneShot              ?   TIMER_CTRL_OSMEN     : 0)
+    222          #if defined(TIMER_CTRL_DISSYNCOUT)
+    223                         | (init->disSyncOut           ?   TIMER_CTRL_DISSYNCOUT : 0)
+    224          #endif
+    225                         | (init->sync                 ?   TIMER_CTRL_SYNC      : 0);
+    226          
+    227          #if defined(TIMER_CTRL_X2CNT) && defined(TIMER_CTRL_ATI) && defined(TIMER_CTRL_RSSCOIST)
+    228            ctrlRegVal |= (init->count2x              ?   TIMER_CTRL_X2CNT     : 0)
+    229                          | (init->ati                ?   TIMER_CTRL_ATI       : 0)
+    230                          | (init->rssCoist           ?   TIMER_CTRL_RSSCOIST  : 0);
+    231          #endif
+    232          
+    233          #else
+    234            ctrlRegVal = ((uint32_t)init->fallAction   << _TIMER_CTRL_FALLA_SHIFT)
+    235                         | ((uint32_t)init->riseAction << _TIMER_CTRL_RISEA_SHIFT)
+    236                         | (init->count2x              ?   TIMER_CTRL_X2CNT     : 0);
+   \       0xDC   0x7960             LDRB     R0,[R4, #+5]
+   \       0xDE   0x2800             CMP      R0,#+0
+   \       0xE0   0xD001             BEQ.N    ??TIMER_Init_18
+   \       0xE2   0x2110             MOVS     R1,#+16
+   \       0xE4   0xE000             B.N      ??TIMER_Init_19
+   \                     ??TIMER_Init_18: (+1)
+   \       0xE6   0x2100             MOVS     R1,#+0
+   \                     ??TIMER_Init_19: (+1)
+   \       0xE8   0x7A20             LDRB     R0,[R4, #+8]
+   \       0xEA   0x7A62             LDRB     R2,[R4, #+9]
+   \       0xEC   0xEA52 0x0280      ORRS     R2,R2,R0, LSL #+2
+   \       0xF0   0x4311             ORRS     R1,R1,R2
+    237          #endif
+    238          
+    239            timer->CTRL = ctrlRegVal;
+   \       0xF2   0x60B1             STR      R1,[R6, #+8]
+    240          
+    241            /* Start the timer if specified to be enabled (doesn't hurt if already started). */
+    242            if (init->enable) {
+   \       0xF4   0x7820             LDRB     R0,[R4, #+0]
+   \       0xF6   0x2800             CMP      R0,#+0
+   \       0xF8   0xD001             BEQ.N    ??TIMER_Init_20
+    243              timer->CMD = TIMER_CMD_START;
+   \       0xFA   0x2001             MOVS     R0,#+1
+   \       0xFC   0x60F0             STR      R0,[R6, #+12]
+    244            }
+    245          }
+   \                     ??TIMER_Init_20: (+1)
+   \       0xFE   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    246          
+    247          /***************************************************************************//**
+    248           * @brief
+    249           *   Initialize the TIMER compare/capture channel.
+    250           *
+    251           * @details
+    252           *   Notice that if operating the channel in compare mode, the CCV and CCVB register
+    253           *   must be set separately, as required.
+    254           *
+    255           * @param[in] timer
+    256           *   A pointer to the TIMER peripheral register block.
+    257           *
+    258           * @param[in] ch
+    259           *   A compare/capture channel to initialize for.
+    260           *
+    261           * @param[in] init
+    262           *   A pointer to the TIMER initialization structure.
+    263           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    264          void TIMER_InitCC(TIMER_TypeDef *timer,
+    265                            unsigned int ch,
+    266                            const TIMER_InitCC_TypeDef *init)
+    267          {
+   \                     TIMER_InitCC: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+    268            EFM_ASSERT(TIMER_REF_VALID(timer));
+   \        0x8   0x0030             MOVS     R0,R6
+   \        0xA   0x.... 0x....      BL       TIMER_Valid
+    269            EFM_ASSERT(TIMER_REF_CH_VALIDATE(timer, ch));
+   \        0xE   0x2C03             CMP      R4,#+3
+   \       0x10   0xD201             BCS.N    ??TIMER_InitCC_0
+   \       0x12   0x2001             MOVS     R0,#+1
+   \       0x14   0xE000             B.N      ??TIMER_InitCC_1
+   \                     ??TIMER_InitCC_0: (+1)
+   \       0x16   0x2000             MOVS     R0,#+0
+   \                     ??TIMER_InitCC_1: (+1)
+   \       0x18   0xB2C0             UXTB     R0,R0
+    270          
+    271          #if defined (_TIMER_CC_CFG_MASK)
+    272            TIMER_SyncWait(timer);
+   \       0x1A   0x0030             MOVS     R0,R6
+   \       0x1C   0x.... 0x....      BL       TIMER_SyncWait
+    273            timer->EN_CLR = TIMER_EN_EN;
+   \       0x20   0x2101             MOVS     R1,#+1
+   \       0x22   0xF242 0x0030      MOVW     R0,#+8240
+   \       0x26   0x5031             STR      R1,[R6, R0]
+    274          #if defined(_TIMER_EN_DISABLING_MASK)
+    275            while (timer->EN & _TIMER_EN_DISABLING_MASK) {
+   \                     ??TIMER_InitCC_2: (+1)
+   \       0x28   0x6B30             LDR      R0,[R6, #+48]
+   \       0x2A   0x0780             LSLS     R0,R0,#+30
+   \       0x2C   0xD4FC             BMI.N    ??TIMER_InitCC_2
+    276            }
+    277          #endif
+    278            timer->CC[ch].CFG =
+    279              ((uint32_t)init->mode        << _TIMER_CC_CFG_MODE_SHIFT)
+    280              | (init->filter              ?   TIMER_CC_CFG_FILT_ENABLE : 0)
+    281              | (init->coist               ?   TIMER_CC_CFG_COIST       : 0)
+    282              | ((uint32_t)init->prsOutput << _TIMER_CC_CFG_PRSCONF_SHIFT);
+   \       0x2E   0x79E8             LDRB     R0,[R5, #+7]
+   \       0x30   0x2800             CMP      R0,#+0
+   \       0x32   0xD002             BEQ.N    ??TIMER_InitCC_3
+   \       0x34   0xF45F 0x1180      MOVS     R1,#+1048576
+   \       0x38   0xE000             B.N      ??TIMER_InitCC_4
+   \                     ??TIMER_InitCC_3: (+1)
+   \       0x3A   0x2100             MOVS     R1,#+0
+   \                     ??TIMER_InitCC_4: (+1)
+   \       0x3C   0x7A68             LDRB     R0,[R5, #+9]
+   \       0x3E   0x2800             CMP      R0,#+0
+   \       0x40   0xD001             BEQ.N    ??TIMER_InitCC_5
+   \       0x42   0x2210             MOVS     R2,#+16
+   \       0x44   0xE000             B.N      ??TIMER_InitCC_6
+   \                     ??TIMER_InitCC_5: (+1)
+   \       0x46   0x2200             MOVS     R2,#+0
+   \                     ??TIMER_InitCC_6: (+1)
+   \       0x48   0x79A8             LDRB     R0,[R5, #+6]
+   \       0x4A   0x4301             ORRS     R1,R1,R0
+   \       0x4C   0x4311             ORRS     R1,R2,R1
+   \       0x4E   0x7AE8             LDRB     R0,[R5, #+11]
+   \       0x50   0xEA51 0x41C0      ORRS     R1,R1,R0, LSL #+19
+   \       0x54   0x0160             LSLS     R0,R4,#+5
+   \       0x56   0x4430             ADD      R0,R6,R0
+   \       0x58   0x6601             STR      R1,[R0, #+96]
+    283          
+    284            if (init->prsInput) {
+   \       0x5A   0x7A28             LDRB     R0,[R5, #+8]
+   \       0x5C   0x2800             CMP      R0,#+0
+   \       0x5E   0xD016             BEQ.N    ??TIMER_InitCC_7
+    285              timer->CC[ch].CFG |= (uint32_t)init->prsInputType << _TIMER_CC_CFG_INSEL_SHIFT;
+   \       0x60   0x0160             LSLS     R0,R4,#+5
+   \       0x62   0x4430             ADD      R0,R6,R0
+   \       0x64   0x6E00             LDR      R0,[R0, #+96]
+   \       0x66   0x7B29             LDRB     R1,[R5, #+12]
+   \       0x68   0xEA50 0x4041      ORRS     R0,R0,R1, LSL #+17
+   \       0x6C   0x0161             LSLS     R1,R4,#+5
+   \       0x6E   0x4431             ADD      R1,R6,R1
+   \       0x70   0x6608             STR      R0,[R1, #+96]
+    286              bool async = (init->prsInputType != timerPrsInputSync);
+   \       0x72   0x7B28             LDRB     R0,[R5, #+12]
+   \       0x74   0x2801             CMP      R0,#+1
+   \       0x76   0xD001             BEQ.N    ??TIMER_InitCC_8
+   \       0x78   0x2701             MOVS     R7,#+1
+   \       0x7A   0xE000             B.N      ??TIMER_InitCC_9
+   \                     ??TIMER_InitCC_8: (+1)
+   \       0x7C   0x2700             MOVS     R7,#+0
+    287              timerPrsConfig(timer, ch, init->prsSel, async);
+   \                     ??TIMER_InitCC_9: (+1)
+   \       0x7E   0x003B             MOVS     R3,R7
+   \       0x80   0xB2DB             UXTB     R3,R3
+   \       0x82   0x78AA             LDRB     R2,[R5, #+2]
+   \       0x84   0x0021             MOVS     R1,R4
+   \       0x86   0x0030             MOVS     R0,R6
+   \       0x88   0x.... 0x....      BL       timerPrsConfig
+   \       0x8C   0xE005             B.N      ??TIMER_InitCC_10
+    288            } else {
+    289              timer->CC[ch].CFG |= TIMER_CC_CFG_INSEL_PIN;
+   \                     ??TIMER_InitCC_7: (+1)
+   \       0x8E   0x0160             LSLS     R0,R4,#+5
+   \       0x90   0x4430             ADD      R0,R6,R0
+   \       0x92   0x6E00             LDR      R0,[R0, #+96]
+   \       0x94   0x0161             LSLS     R1,R4,#+5
+   \       0x96   0x4431             ADD      R1,R6,R1
+   \       0x98   0x6608             STR      R0,[R1, #+96]
+    290            }
+    291            timer->EN_SET = TIMER_EN_EN;
+   \                     ??TIMER_InitCC_10: (+1)
+   \       0x9A   0x2101             MOVS     R1,#+1
+   \       0x9C   0xF241 0x0030      MOVW     R0,#+4144
+   \       0xA0   0x5031             STR      R1,[R6, R0]
+    292          
+    293            timer->CC[ch].CTRL =
+    294              ((uint32_t)init->eventCtrl << _TIMER_CC_CTRL_ICEVCTRL_SHIFT)
+    295              | ((uint32_t)init->edge    << _TIMER_CC_CTRL_ICEDGE_SHIFT)
+    296              | ((uint32_t)init->cufoa   << _TIMER_CC_CTRL_CUFOA_SHIFT)
+    297              | ((uint32_t)init->cofoa   << _TIMER_CC_CTRL_COFOA_SHIFT)
+    298              | ((uint32_t)init->cmoa    << _TIMER_CC_CTRL_CMOA_SHIFT)
+    299              | (init->outInvert         ?   TIMER_CC_CTRL_OUTINV : 0);
+   \       0xA2   0x7AA8             LDRB     R0,[R5, #+10]
+   \       0xA4   0x2800             CMP      R0,#+0
+   \       0xA6   0xD001             BEQ.N    ??TIMER_InitCC_11
+   \       0xA8   0x2004             MOVS     R0,#+4
+   \       0xAA   0xE000             B.N      ??TIMER_InitCC_12
+   \                     ??TIMER_InitCC_11: (+1)
+   \       0xAC   0x2000             MOVS     R0,#+0
+   \                     ??TIMER_InitCC_12: (+1)
+   \       0xAE   0x782A             LDRB     R2,[R5, #+0]
+   \       0xB0   0x7869             LDRB     R1,[R5, #+1]
+   \       0xB2   0x0609             LSLS     R1,R1,#+24
+   \       0xB4   0xEA51 0x6182      ORRS     R1,R1,R2, LSL #+26
+   \       0xB8   0x78EA             LDRB     R2,[R5, #+3]
+   \       0xBA   0xEA51 0x3102      ORRS     R1,R1,R2, LSL #+12
+   \       0xBE   0x792A             LDRB     R2,[R5, #+4]
+   \       0xC0   0xEA51 0x2182      ORRS     R1,R1,R2, LSL #+10
+   \       0xC4   0x796A             LDRB     R2,[R5, #+5]
+   \       0xC6   0xEA51 0x2102      ORRS     R1,R1,R2, LSL #+8
+   \       0xCA   0x4308             ORRS     R0,R0,R1
+   \       0xCC   0x0161             LSLS     R1,R4,#+5
+   \       0xCE   0x4431             ADD      R1,R6,R1
+   \       0xD0   0x6648             STR      R0,[R1, #+100]
+    300          #else
+    301            timer->CC[ch].CTRL =
+    302              ((uint32_t)init->eventCtrl   << _TIMER_CC_CTRL_ICEVCTRL_SHIFT)
+    303              | ((uint32_t)init->edge      << _TIMER_CC_CTRL_ICEDGE_SHIFT)
+    304              | ((uint32_t)init->prsSel    << _TIMER_CC_CTRL_PRSSEL_SHIFT)
+    305              | ((uint32_t)init->cufoa     << _TIMER_CC_CTRL_CUFOA_SHIFT)
+    306              | ((uint32_t)init->cofoa     << _TIMER_CC_CTRL_COFOA_SHIFT)
+    307              | ((uint32_t)init->cmoa      << _TIMER_CC_CTRL_CMOA_SHIFT)
+    308              | ((uint32_t)init->mode      << _TIMER_CC_CTRL_MODE_SHIFT)
+    309              | (init->filter              ?   TIMER_CC_CTRL_FILT_ENABLE : 0)
+    310              | (init->prsInput            ?   TIMER_CC_CTRL_INSEL_PRS   : 0)
+    311              | (init->coist               ?   TIMER_CC_CTRL_COIST       : 0)
+    312              | (init->outInvert           ?   TIMER_CC_CTRL_OUTINV      : 0)
+    313          #if defined(_TIMER_CC_CTRL_PRSCONF_MASK)
+    314              | ((uint32_t)init->prsOutput << _TIMER_CC_CTRL_PRSCONF_SHIFT)
+    315          #endif
+    316            ;
+    317          #endif
+    318          }
+   \       0xD2   0xBDF1             POP      {R0,R4-R7,PC}
+    319          
+    320          #if defined(_TIMER_DTCTRL_MASK)
+    321          /***************************************************************************//**
+    322           * @brief
+    323           *   Initialize the TIMER DTI unit.
+    324           *
+    325           * @param[in] timer
+    326           *   A pointer to the TIMER peripheral register block.
+    327           *
+    328           * @param[in] init
+    329           *   A pointer to the TIMER DTI initialization structure.
+    330           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    331          void TIMER_InitDTI(TIMER_TypeDef *timer, const TIMER_InitDTI_TypeDef *init)
+    332          {
+   \                     TIMER_InitDTI: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    333            EFM_ASSERT(TIMER_SupportsDTI(timer));
+   \        0x6   0x0028             MOVS     R0,R5
+   \        0x8   0x.... 0x....      BL       TIMER_SupportsDTI
+    334          
+    335            /* Make sure the DTI unit is disabled while initializing. */
+    336            TIMER_EnableDTI(timer, false);
+   \        0xC   0x2100             MOVS     R1,#+0
+   \        0xE   0x0028             MOVS     R0,R5
+   \       0x10   0x.... 0x....      BL       TIMER_EnableDTI
+    337          
+    338          #if defined (_TIMER_DTCFG_MASK)
+    339            TIMER_SyncWait(timer);
+   \       0x14   0x0028             MOVS     R0,R5
+   \       0x16   0x.... 0x....      BL       TIMER_SyncWait
+    340            timer->EN_CLR = TIMER_EN_EN;
+   \       0x1A   0x2101             MOVS     R1,#+1
+   \       0x1C   0xF242 0x0030      MOVW     R0,#+8240
+   \       0x20   0x5029             STR      R1,[R5, R0]
+    341          #if defined(_TIMER_EN_DISABLING_MASK)
+    342            while (timer->EN & _TIMER_EN_DISABLING_MASK) {
+   \                     ??TIMER_InitDTI_0: (+1)
+   \       0x22   0x6B28             LDR      R0,[R5, #+48]
+   \       0x24   0x0780             LSLS     R0,R0,#+30
+   \       0x26   0xD4FC             BMI.N    ??TIMER_InitDTI_0
+    343            }
+    344          #endif
+    345            timer->DTCFG = (init->autoRestart       ?   TIMER_DTCFG_DTDAS   : 0)
+    346                           | (init->enablePrsSource ?   TIMER_DTCFG_DTPRSEN : 0);
+   \       0x28   0x78E0             LDRB     R0,[R4, #+3]
+   \       0x2A   0x2800             CMP      R0,#+0
+   \       0x2C   0xD001             BEQ.N    ??TIMER_InitDTI_1
+   \       0x2E   0x2102             MOVS     R1,#+2
+   \       0x30   0xE000             B.N      ??TIMER_InitDTI_2
+   \                     ??TIMER_InitDTI_1: (+1)
+   \       0x32   0x2100             MOVS     R1,#+0
+   \                     ??TIMER_InitDTI_2: (+1)
+   \       0x34   0x7920             LDRB     R0,[R4, #+4]
+   \       0x36   0x2800             CMP      R0,#+0
+   \       0x38   0xD002             BEQ.N    ??TIMER_InitDTI_3
+   \       0x3A   0xF44F 0x6000      MOV      R0,#+2048
+   \       0x3E   0xE000             B.N      ??TIMER_InitDTI_4
+   \                     ??TIMER_InitDTI_3: (+1)
+   \       0x40   0x2000             MOVS     R0,#+0
+   \                     ??TIMER_InitDTI_4: (+1)
+   \       0x42   0x4301             ORRS     R1,R0,R1
+   \       0x44   0xF8C5 0x10E0      STR      R1,[R5, #+224]
+    347            if (init->enablePrsSource) {
+   \       0x48   0x7920             LDRB     R0,[R4, #+4]
+   \       0x4A   0x2800             CMP      R0,#+0
+   \       0x4C   0xD005             BEQ.N    ??TIMER_InitDTI_5
+    348              timerPrsConfig(timer, TIMER_INPUT_CHANNEL_DTI, init->prsSel, true);
+   \       0x4E   0x2301             MOVS     R3,#+1
+   \       0x50   0x7962             LDRB     R2,[R4, #+5]
+   \       0x52   0x2103             MOVS     R1,#+3
+   \       0x54   0x0028             MOVS     R0,R5
+   \       0x56   0x.... 0x....      BL       timerPrsConfig
+    349            }
+    350          
+    351            timer->DTTIMECFG =
+    352              ((uint32_t)init->prescale   << _TIMER_DTTIMECFG_DTPRESC_SHIFT)
+    353              | ((uint32_t)init->riseTime << _TIMER_DTTIMECFG_DTRISET_SHIFT)
+    354              | ((uint32_t)init->fallTime << _TIMER_DTTIMECFG_DTFALLT_SHIFT);
+   \                     ??TIMER_InitDTI_5: (+1)
+   \       0x5A   0xF9B4 0x0006      LDRSH    R0,[R4, #+6]
+   \       0x5E   0x68A1             LDR      R1,[R4, #+8]
+   \       0x60   0xEA50 0x2081      ORRS     R0,R0,R1, LSL #+10
+   \       0x64   0x68E1             LDR      R1,[R4, #+12]
+   \       0x66   0xEA50 0x4001      ORRS     R0,R0,R1, LSL #+16
+   \       0x6A   0xF8C5 0x00E4      STR      R0,[R5, #+228]
+    355          
+    356            timer->DTFCFG =
+    357              (init->enableFaultSourceCoreLockup ?   TIMER_DTFCFG_DTLOCKUPFEN : 0)
+    358              | (init->enableFaultSourceDebugger ?   TIMER_DTFCFG_DTDBGFEN    : 0)
+    359              | (init->enableFaultSourcePrsSel0  ?   TIMER_DTFCFG_DTPRS0FEN   : 0)
+    360              | (init->enableFaultSourcePrsSel1  ?   TIMER_DTFCFG_DTPRS1FEN   : 0)
+    361              | ((uint32_t)(init->faultAction)   << _TIMER_DTFCFG_DTFA_SHIFT);
+   \       0x6E   0x7D20             LDRB     R0,[R4, #+20]
+   \       0x70   0x2800             CMP      R0,#+0
+   \       0x72   0xD002             BEQ.N    ??TIMER_InitDTI_6
+   \       0x74   0xF05F 0x6100      MOVS     R1,#+134217728
+   \       0x78   0xE000             B.N      ??TIMER_InitDTI_7
+   \                     ??TIMER_InitDTI_6: (+1)
+   \       0x7A   0x2100             MOVS     R1,#+0
+   \                     ??TIMER_InitDTI_7: (+1)
+   \       0x7C   0x7D60             LDRB     R0,[R4, #+21]
+   \       0x7E   0x2800             CMP      R0,#+0
+   \       0x80   0xD002             BEQ.N    ??TIMER_InitDTI_8
+   \       0x82   0xF05F 0x6280      MOVS     R2,#+67108864
+   \       0x86   0xE000             B.N      ??TIMER_InitDTI_9
+   \                     ??TIMER_InitDTI_8: (+1)
+   \       0x88   0x2200             MOVS     R2,#+0
+   \                     ??TIMER_InitDTI_9: (+1)
+   \       0x8A   0x7DA0             LDRB     R0,[R4, #+22]
+   \       0x8C   0x2800             CMP      R0,#+0
+   \       0x8E   0xD002             BEQ.N    ??TIMER_InitDTI_10
+   \       0x90   0xF05F 0x7380      MOVS     R3,#+16777216
+   \       0x94   0xE000             B.N      ??TIMER_InitDTI_11
+   \                     ??TIMER_InitDTI_10: (+1)
+   \       0x96   0x2300             MOVS     R3,#+0
+   \                     ??TIMER_InitDTI_11: (+1)
+   \       0x98   0x7E20             LDRB     R0,[R4, #+24]
+   \       0x9A   0x2800             CMP      R0,#+0
+   \       0x9C   0xD002             BEQ.N    ??TIMER_InitDTI_12
+   \       0x9E   0xF05F 0x7000      MOVS     R0,#+33554432
+   \       0xA2   0xE000             B.N      ??TIMER_InitDTI_13
+   \                     ??TIMER_InitDTI_12: (+1)
+   \       0xA4   0x2000             MOVS     R0,#+0
+   \                     ??TIMER_InitDTI_13: (+1)
+   \       0xA6   0x4311             ORRS     R1,R2,R1
+   \       0xA8   0x4319             ORRS     R1,R3,R1
+   \       0xAA   0x4301             ORRS     R1,R0,R1
+   \       0xAC   0x7EA0             LDRB     R0,[R4, #+26]
+   \       0xAE   0xEA51 0x4100      ORRS     R1,R1,R0, LSL #+16
+   \       0xB2   0xF8C5 0x10E8      STR      R1,[R5, #+232]
+    362          
+    363            if (init->enableFaultSourcePrsSel0) {
+   \       0xB6   0x7DA0             LDRB     R0,[R4, #+22]
+   \       0xB8   0x2800             CMP      R0,#+0
+   \       0xBA   0xD005             BEQ.N    ??TIMER_InitDTI_14
+    364              timerPrsConfig(timer, TIMER_INPUT_CHANNEL_DTIFS1, init->faultSourcePrsSel0, true);
+   \       0xBC   0x2301             MOVS     R3,#+1
+   \       0xBE   0x7DE2             LDRB     R2,[R4, #+23]
+   \       0xC0   0x2104             MOVS     R1,#+4
+   \       0xC2   0x0028             MOVS     R0,R5
+   \       0xC4   0x.... 0x....      BL       timerPrsConfig
+    365            }
+    366            if (init->enableFaultSourcePrsSel1) {
+   \                     ??TIMER_InitDTI_14: (+1)
+   \       0xC8   0x7E20             LDRB     R0,[R4, #+24]
+   \       0xCA   0x2800             CMP      R0,#+0
+   \       0xCC   0xD005             BEQ.N    ??TIMER_InitDTI_15
+    367              timerPrsConfig(timer, TIMER_INPUT_CHANNEL_DTIFS2, init->faultSourcePrsSel1, true);
+   \       0xCE   0x2301             MOVS     R3,#+1
+   \       0xD0   0x7E62             LDRB     R2,[R4, #+25]
+   \       0xD2   0x2105             MOVS     R1,#+5
+   \       0xD4   0x0028             MOVS     R0,R5
+   \       0xD6   0x.... 0x....      BL       timerPrsConfig
+    368            }
+    369          
+    370            timer->EN_SET = TIMER_EN_EN;
+   \                     ??TIMER_InitDTI_15: (+1)
+   \       0xDA   0x2001             MOVS     R0,#+1
+   \       0xDC   0xF241 0x0130      MOVW     R1,#+4144
+   \       0xE0   0x5068             STR      R0,[R5, R1]
+    371          #endif
+    372          
+    373          #if defined(TIMER_DTCTRL_DTDAS)
+    374            /* Set up the DTCTRL register.
+    375               The enable bit will be set at the end of the function if specified. */
+    376            timer->DTCTRL =
+    377              (init->autoRestart              ?   TIMER_DTCTRL_DTDAS   : 0)
+    378              | (init->activeLowOut           ?   TIMER_DTCTRL_DTIPOL  : 0)
+    379              | (init->invertComplementaryOut ?   TIMER_DTCTRL_DTCINV  : 0)
+    380              | (init->enablePrsSource        ?   TIMER_DTCTRL_DTPRSEN : 0)
+    381              | ((uint32_t)(init->prsSel)     << _TIMER_DTCTRL_DTPRSSEL_SHIFT);
+    382          #endif
+    383          
+    384          #if defined (TIMER_DTCFG_DTDAS)
+    385            timer->DTCTRL = (init->activeLowOut             ? TIMER_DTCTRL_DTIPOL  : 0)
+    386                            | (init->invertComplementaryOut ? TIMER_DTCTRL_DTCINV  : 0);
+   \       0xE2   0x7860             LDRB     R0,[R4, #+1]
+   \       0xE4   0x2800             CMP      R0,#+0
+   \       0xE6   0xD001             BEQ.N    ??TIMER_InitDTI_16
+   \       0xE8   0x2102             MOVS     R1,#+2
+   \       0xEA   0xE000             B.N      ??TIMER_InitDTI_17
+   \                     ??TIMER_InitDTI_16: (+1)
+   \       0xEC   0x2100             MOVS     R1,#+0
+   \                     ??TIMER_InitDTI_17: (+1)
+   \       0xEE   0x78A0             LDRB     R0,[R4, #+2]
+   \       0xF0   0x2800             CMP      R0,#+0
+   \       0xF2   0xD001             BEQ.N    ??TIMER_InitDTI_18
+   \       0xF4   0x2001             MOVS     R0,#+1
+   \       0xF6   0xE000             B.N      ??TIMER_InitDTI_19
+   \                     ??TIMER_InitDTI_18: (+1)
+   \       0xF8   0x2000             MOVS     R0,#+0
+   \                     ??TIMER_InitDTI_19: (+1)
+   \       0xFA   0x4301             ORRS     R1,R0,R1
+   \       0xFC   0xF8C5 0x10EC      STR      R1,[R5, #+236]
+    387          #endif
+    388          
+    389          #if defined (_TIMER_DTTIME_DTPRESC_SHIFT)
+    390            /* Set up the DTTIME register. */
+    391            timer->DTTIME = ((uint32_t)init->prescale   << _TIMER_DTTIME_DTPRESC_SHIFT)
+    392                            | ((uint32_t)init->riseTime << _TIMER_DTTIME_DTRISET_SHIFT)
+    393                            | ((uint32_t)init->fallTime << _TIMER_DTTIME_DTFALLT_SHIFT);
+    394          #endif
+    395          
+    396          #if defined (TIMER_DTFC_DTLOCKUPFEN)
+    397            /* Set up the DTFC register. */
+    398            timer->DTFC =
+    399              (init->enableFaultSourceCoreLockup    ?   TIMER_DTFC_DTLOCKUPFEN : 0)
+    400              | (init->enableFaultSourceDebugger    ?   TIMER_DTFC_DTDBGFEN    : 0)
+    401              | (init->enableFaultSourcePrsSel0     ?   TIMER_DTFC_DTPRS0FEN   : 0)
+    402              | (init->enableFaultSourcePrsSel1     ?   TIMER_DTFC_DTPRS1FEN   : 0)
+    403              | ((uint32_t)init->faultAction        << _TIMER_DTFC_DTFA_SHIFT)
+    404              | ((uint32_t)init->faultSourcePrsSel0 << _TIMER_DTFC_DTPRS0FSEL_SHIFT)
+    405              | ((uint32_t)init->faultSourcePrsSel1 << _TIMER_DTFC_DTPRS1FSEL_SHIFT);
+    406          #endif
+    407          
+    408            /* Set up the DTOGEN register. */
+    409            timer->DTOGEN = init->outputsEnableMask;
+   \      0x100   0x6920             LDR      R0,[R4, #+16]
+   \      0x102   0xF8C5 0x00F0      STR      R0,[R5, #+240]
+    410          
+    411            /* Clear any previous DTI faults.  */
+    412            TIMER_ClearDTIFault(timer, TIMER_GetDTIFault(timer));
+   \      0x106   0x0028             MOVS     R0,R5
+   \      0x108   0x.... 0x....      BL       TIMER_GetDTIFault
+   \      0x10C   0x0001             MOVS     R1,R0
+   \      0x10E   0x0028             MOVS     R0,R5
+   \      0x110   0x.... 0x....      BL       TIMER_ClearDTIFault
+    413          
+    414            /* Enable/disable before returning. */
+    415            TIMER_EnableDTI(timer, init->enable);
+   \      0x114   0x7821             LDRB     R1,[R4, #+0]
+   \      0x116   0x0028             MOVS     R0,R5
+   \      0x118   0x.... 0x....      BL       TIMER_EnableDTI
+    416          }
+   \      0x11C   0xBD31             POP      {R0,R4,R5,PC}
+    417          #endif
+    418          
+    419          /***************************************************************************//**
+    420           * @brief
+    421           *   Reset the TIMER to the same state that it was in after a hardware reset.
+    422           *
+    423           * @note
+    424           *   The ROUTE register is NOT reset by this function to allow for
+    425           *   a centralized setup of this feature.
+    426           *
+    427           * @param[in] timer
+    428           *   A pointer to the TIMER peripheral register block.
+    429           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    430          void TIMER_Reset(TIMER_TypeDef *timer)
+    431          {
+   \                     TIMER_Reset: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    432            int i;
+    433          
+    434            EFM_ASSERT(TIMER_REF_VALID(timer));
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       TIMER_Valid
+    435          
+    436          #if defined(TIMER_EN_EN)
+    437            timer->EN_SET = TIMER_EN_EN;
+   \        0xA   0x2101             MOVS     R1,#+1
+   \        0xC   0xF241 0x0030      MOVW     R0,#+4144
+   \       0x10   0x5021             STR      R1,[R4, R0]
+    438          #endif
+    439          
+    440            /* Make sure disabled first, before resetting other registers. */
+    441            timer->CMD = TIMER_CMD_STOP;
+   \       0x12   0x2002             MOVS     R0,#+2
+   \       0x14   0x60E0             STR      R0,[R4, #+12]
+    442          
+    443            timer->CTRL = _TIMER_CTRL_RESETVALUE;
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0x60A0             STR      R0,[R4, #+8]
+    444            timer->IEN  = _TIMER_IEN_RESETVALUE;
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \       0x1C   0x61A0             STR      R0,[R4, #+24]
+    445          #if defined (TIMER_HAS_SET_CLEAR)
+    446            timer->IF_CLR = _TIMER_IF_MASK;
+   \       0x1E   0x....             LDR.N    R1,??DataTable3_6
+   \       0x20   0xF242 0x0014      MOVW     R0,#+8212
+   \       0x24   0x5021             STR      R1,[R4, R0]
+    447          #else
+    448            timer->IFC  = _TIMER_IFC_MASK;
+    449          #endif
+    450            timer->TOPB = _TIMER_TOPB_RESETVALUE;
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x6220             STR      R0,[R4, #+32]
+    451            /* Write TOP after TOPB to invalidate TOPB (clear TIMER_STATUS_TOPBV). */
+    452            timer->TOP  = _TIMER_TOP_RESETVALUE;
+   \       0x2A   0xF64F 0x70FF      MOVW     R0,#+65535
+   \       0x2E   0x61E0             STR      R0,[R4, #+28]
+    453            timer->CNT  = _TIMER_CNT_RESETVALUE;
+   \       0x30   0x2000             MOVS     R0,#+0
+   \       0x32   0x6260             STR      R0,[R4, #+36]
+    454            /* Do not reset the route register, setting should be done independently. */
+    455            /* Note: The ROUTE register may be locked by the DTLOCK register. */
+    456          
+    457            for (i = 0; TIMER_REF_CH_VALIDATE(timer, i); i++) {
+   \       0x34   0x2500             MOVS     R5,#+0
+   \                     ??TIMER_Reset_0: (+1)
+   \       0x36   0x2D03             CMP      R5,#+3
+   \       0x38   0xDA0D             BGE.N    ??TIMER_Reset_1
+    458              timer->CC[i].CTRL = _TIMER_CC_CTRL_RESETVALUE;
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \       0x3C   0x0169             LSLS     R1,R5,#+5
+   \       0x3E   0x4421             ADD      R1,R4,R1
+   \       0x40   0x6648             STR      R0,[R1, #+100]
+    459          #if defined (_TIMER_CC_CCV_RESETVALUE) && defined (_TIMER_CC_CCVB_RESETVALUE)
+    460              timer->CC[i].CCV  = _TIMER_CC_CCV_RESETVALUE;
+    461              timer->CC[i].CCVB = _TIMER_CC_CCVB_RESETVALUE;
+    462          #endif
+    463          #if defined (_TIMER_CC_OC_RESETVALUE) && defined (_TIMER_CC_OCB_RESETVALUE) \
+    464              && defined (_TIMER_CC_ICF_RESETVALUE) && defined (_TIMER_CC_ICOF_RESETVALUE)
+    465              timer->CC[i].OC     = _TIMER_CC_OC_RESETVALUE;
+   \       0x42   0x2000             MOVS     R0,#+0
+   \       0x44   0x0169             LSLS     R1,R5,#+5
+   \       0x46   0x4421             ADD      R1,R4,R1
+   \       0x48   0x6688             STR      R0,[R1, #+104]
+    466              timer->CC[i].OCB    = _TIMER_CC_OCB_RESETVALUE;
+   \       0x4A   0x2000             MOVS     R0,#+0
+   \       0x4C   0x0169             LSLS     R1,R5,#+5
+   \       0x4E   0x4421             ADD      R1,R4,R1
+   \       0x50   0x6708             STR      R0,[R1, #+112]
+    467          #endif
+    468            }
+   \       0x52   0x1C6D             ADDS     R5,R5,#+1
+   \       0x54   0xE7EF             B.N      ??TIMER_Reset_0
+    469          
+    470            /* Reset dead time insertion module, which has no effect on timers without DTI. */
+    471          #if defined(_TIMER_DTCFG_MASK)
+    472            timer->DTLOCK   = TIMER_DTLOCK_DTILOCKKEY_UNLOCK;
+   \                     ??TIMER_Reset_1: (+1)
+   \       0x56   0xF64C 0x6080      MOVW     R0,#+52864
+   \       0x5A   0xF8C4 0x00FC      STR      R0,[R4, #+252]
+    473            timer->DTCTRL   = _TIMER_DTCTRL_RESETVALUE;
+   \       0x5E   0x2000             MOVS     R0,#+0
+   \       0x60   0xF8C4 0x00EC      STR      R0,[R4, #+236]
+    474            timer->DTOGEN   = _TIMER_DTOGEN_RESETVALUE;
+   \       0x64   0x2000             MOVS     R0,#+0
+   \       0x66   0xF8C4 0x00F0      STR      R0,[R4, #+240]
+    475            timer->DTFAULTC = _TIMER_DTFAULTC_MASK;
+   \       0x6A   0x201F             MOVS     R0,#+31
+   \       0x6C   0xF8C4 0x00F8      STR      R0,[R4, #+248]
+    476          #elif defined(TIMER_DTLOCK_LOCKKEY_UNLOCK)
+    477            /* Unlock DTI registers first if locked. */
+    478            timer->DTLOCK   = TIMER_DTLOCK_LOCKKEY_UNLOCK;
+    479            timer->DTCTRL   = _TIMER_DTCTRL_RESETVALUE;
+    480            timer->DTTIME   = _TIMER_DTTIME_RESETVALUE;
+    481            timer->DTFC     = _TIMER_DTFC_RESETVALUE;
+    482            timer->DTOGEN   = _TIMER_DTOGEN_RESETVALUE;
+    483            timer->DTFAULTC = _TIMER_DTFAULTC_MASK;
+    484          #endif
+    485          
+    486          #if defined(_TIMER_CFG_MASK)
+    487            TIMER_SyncWait(timer);
+   \       0x70   0x0020             MOVS     R0,R4
+   \       0x72   0x.... 0x....      BL       TIMER_SyncWait
+    488            /* CFG registers must be reset after the timer is disabled */
+    489            timer->EN_CLR = TIMER_EN_EN;
+   \       0x76   0x2101             MOVS     R1,#+1
+   \       0x78   0xF242 0x0030      MOVW     R0,#+8240
+   \       0x7C   0x5021             STR      R1,[R4, R0]
+    490          #if defined(_TIMER_EN_DISABLING_MASK)
+    491            while (timer->EN & _TIMER_EN_DISABLING_MASK) {
+   \                     ??TIMER_Reset_2: (+1)
+   \       0x7E   0x6B20             LDR      R0,[R4, #+48]
+   \       0x80   0x0780             LSLS     R0,R0,#+30
+   \       0x82   0xD4FC             BMI.N    ??TIMER_Reset_2
+    492            }
+    493          #endif
+    494            timer->CFG = _TIMER_CFG_RESETVALUE;
+   \       0x84   0x2000             MOVS     R0,#+0
+   \       0x86   0x6060             STR      R0,[R4, #+4]
+    495            for (i = 0; TIMER_REF_CH_VALIDATE(timer, i); i++) {
+   \       0x88   0x2000             MOVS     R0,#+0
+   \                     ??TIMER_Reset_3: (+1)
+   \       0x8A   0x2803             CMP      R0,#+3
+   \       0x8C   0xDA05             BGE.N    ??TIMER_Reset_4
+    496              timer->CC[i].CFG = _TIMER_CC_CFG_RESETVALUE;
+   \       0x8E   0x2100             MOVS     R1,#+0
+   \       0x90   0x0142             LSLS     R2,R0,#+5
+   \       0x92   0x4422             ADD      R2,R4,R2
+   \       0x94   0x6611             STR      R1,[R2, #+96]
+    497            }
+   \       0x96   0x1C40             ADDS     R0,R0,#+1
+   \       0x98   0xE7F7             B.N      ??TIMER_Reset_3
+    498            timer->DTCFG = _TIMER_DTCFG_RESETVALUE;
+   \                     ??TIMER_Reset_4: (+1)
+   \       0x9A   0x2100             MOVS     R1,#+0
+   \       0x9C   0xF8C4 0x10E0      STR      R1,[R4, #+224]
+    499            timer->DTFCFG = _TIMER_DTFCFG_RESETVALUE;
+   \       0xA0   0x2100             MOVS     R1,#+0
+   \       0xA2   0xF8C4 0x10E8      STR      R1,[R4, #+232]
+    500            timer->DTTIMECFG = _TIMER_DTTIMECFG_RESETVALUE;
+   \       0xA6   0x2100             MOVS     R1,#+0
+   \       0xA8   0xF8C4 0x10E4      STR      R1,[R4, #+228]
+    501          #endif
+    502          }
+   \       0xAC   0xBD31             POP      {R0,R4,R5,PC}
+    503          
+    504          #if defined(TIMER_STATUS_SYNCBUSY)
+    505          /**
+    506           * @brief Wait for pending synchronization to finish
+    507           *
+    508           * @param[in] timer
+    509           */
+
+   \                                 In section .text, align 2, keep-with-next
+    510          void TIMER_SyncWait(TIMER_TypeDef * timer)
+    511          {
+    512            while (((timer->EN & TIMER_EN_EN) != 0U)
+    513                   && ((timer->STATUS & TIMER_STATUS_SYNCBUSY) != 0U)) {
+   \                     TIMER_SyncWait: (+1)
+   \                     ??TIMER_SyncWait_0: (+1)
+   \        0x0   0x6B01             LDR      R1,[R0, #+48]
+   \        0x2   0x07C9             LSLS     R1,R1,#+31
+   \        0x4   0xD502             BPL.N    ??TIMER_SyncWait_1
+   \        0x6   0x6901             LDR      R1,[R0, #+16]
+   \        0x8   0x0649             LSLS     R1,R1,#+25
+   \        0xA   0xD4F9             BMI.N    ??TIMER_SyncWait_0
+    514              /* Wait for synchronization to complete */
+    515            }
+    516          }
+   \                     ??TIMER_SyncWait_1: (+1)
+   \        0xC   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x5004'8000        DC32     0x50048000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x5004'C000        DC32     0x5004c000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x5005'0000        DC32     0x50050000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \        0x0   0x5005'4000        DC32     0x50054000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_4:
+   \        0x0   0x5005'8000        DC32     0x50058000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_5:
+   \        0x0   0x5003'8154        DC32     0x50038154
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_6:
+   \        0x0   0x0777'0077        DC32     0x7770077
+    517          #endif
+    518          
+    519          /** @} (end addtogroup timer) */
+    520          #endif /* defined(TIMER_COUNT) && (TIMER_COUNT > 0) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   TIMER_ClearDTIFault
+        16   -> TIMER_SupportsDTI
+      16   TIMER_EnableDTI
+        16   -> TIMER_SyncWait
+       8   TIMER_GetDTIFault
+         8   -> TIMER_SupportsDTI
+      32   TIMER_Init
+        32   -> TIMER_SyncWait
+        32   -> TIMER_Valid
+      24   TIMER_InitCC
+        24   -> TIMER_SyncWait
+        24   -> TIMER_Valid
+        24   -> timerPrsConfig
+      16   TIMER_InitDTI
+        16   -> TIMER_ClearDTIFault
+        16   -> TIMER_EnableDTI
+        16   -> TIMER_GetDTIFault
+        16   -> TIMER_SupportsDTI
+        16   -> TIMER_SyncWait
+        16   -> timerPrsConfig
+      16   TIMER_Reset
+        16   -> TIMER_SyncWait
+        16   -> TIMER_Valid
+       0   TIMER_SupportsDTI
+       0   TIMER_SyncWait
+       0   TIMER_Valid
+      16   timerPrsConfig
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+       4  ??DataTable3_5
+       4  ??DataTable3_6
+      24  TIMER_ClearDTIFault
+      66  TIMER_EnableDTI
+      16  TIMER_GetDTIFault
+     258  TIMER_Init
+     212  TIMER_InitCC
+     286  TIMER_InitDTI
+     174  TIMER_Reset
+      50  TIMER_SupportsDTI
+      14  TIMER_SyncWait
+      50  TIMER_Valid
+     128  timerPrsConfig
+
+ 
+ 1'306 bytes in section .text
+ 
+ 1'306 bytes of CODE memory
+
+Errors: none
+Warnings: none

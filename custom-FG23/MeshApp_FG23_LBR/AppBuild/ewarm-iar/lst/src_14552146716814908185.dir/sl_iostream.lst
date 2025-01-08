@@ -1,0 +1,698 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         02/Dec/2024  12:57:54
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                 =  thumb
+#    Endian                   =  little
+#    Source file              =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\iostream\src\sl_iostream.c
+#    Command line             =
+#        -f
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_14552146716814908185.dir\sl_iostream.o.rsp
+#        (D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\iostream\src\sl_iostream.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\src_14552146716814908185.dir
+#        --diag_suppress Pa050 -o
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_14552146716814908185.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_14552146716814908185.dir\sl_iostream.o.iar_deps
+#    Locale                   =  C
+#    List file                =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\src_14552146716814908185.dir\sl_iostream.lst
+#    Object file              =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_14552146716814908185.dir\sl_iostream.o
+#    Runtime model:              
+#      __CPP_Runtime          =  1
+#      __SystemLibrary        =  DLib
+#      __dlib_file_descriptor =  0
+#      __dlib_version         =  6
+#      __iar_require _Printf  =  unknown
+#
+###############################################################################
+
+D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\iostream\src\sl_iostream.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief IO Stream.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_iostream.h"
+     32          #include "sl_status.h"
+     33          #include "em_core.h"
+     34          
+     35          #if defined(SL_CATALOG_KERNEL_PRESENT)
+     36          #include "cmsis_os2.h"
+     37          #include "sli_cmsis_os2_ext_task_register.h"
+     38          #endif
+     39          
+     40          #if defined(SL_CATALOG_PRINTF_PRESENT)
+     41          #include "printf.h"
+     42          #else
+     43          #include <stdio.h>
+     44          #endif
+     45          
+     46          /*******************************************************************************
+     47           *******************************   DEFINES   ***********************************
+     48           ******************************************************************************/
+     49          
+     50          #if defined(SL_CATALOG_KERNEL_PRESENT)
+     51          #define TASK_REGISTER_ID_INVALID   0xFF
+     52          #endif
+     53          
+     54          /*******************************************************************************
+     55           ***************************  LOCAL VARIABLES   ********************************
+     56           ******************************************************************************/
+     57          
+     58          #if defined(SL_CATALOG_KERNEL_PRESENT)
+     59          static sli_task_register_id_t sli_task_register_id = TASK_REGISTER_ID_INVALID;
+     60          static sl_iostream_t  *sli_iostream_system_default = NULL;
+     61          #endif
+
+   \                                 In section .bss, align 4
+     62          static sl_iostream_t  *sli_iostream_default = NULL;
+   \                     sli_iostream_default:
+   \        0x0                      DS8 4
+     63          
+
+   \                                 In section .bss, align 4
+     64          sl_iostream_t sl_iostream_null = {
+   \                     sl_iostream_null:
+   \        0x0                      DS8 12
+     65            .write   = NULL,
+     66            .read    = NULL,
+     67            .context = NULL
+     68          };
+     69          
+     70          /*******************************************************************************
+     71           *********************   LOCAL FUNCTION PROTOTYPES   ***************************
+     72           ******************************************************************************/
+     73          
+     74          #if defined(SL_CATALOG_PRINTF_PRESENT)
+     75          static void stream_putchar(char character,
+     76                                     void *arg);
+     77          #endif
+     78          
+     79          /*******************************************************************************
+     80           **************************   GLOBAL FUNCTIONS   *******************************
+     81           ******************************************************************************/
+     82          
+     83          /***************************************************************************//**
+     84           * Registers default IO stream to be used
+     85           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     86          sl_status_t sl_iostream_set_default(sl_iostream_t  *stream)
+     87          {
+   \                     sl_iostream_set_default: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     88          #if defined(SL_CATALOG_KERNEL_PRESENT)
+     89            sli_task_register_id_t reg_id;
+     90            sl_status_t status;
+     91          #endif
+     92            CORE_DECLARE_IRQ_STATE;
+     93          
+     94            CORE_ENTER_CRITICAL();
+   \        0x4   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x8   0x0005             MOVS     R5,R0
+     95          #if defined(SL_CATALOG_KERNEL_PRESENT)
+     96            if (osThreadGetId() != NULL) {
+     97              reg_id = sli_task_register_id;
+     98              if (reg_id == TASK_REGISTER_ID_INVALID) {
+     99                status = sli_osTaskRegisterNew(&reg_id);
+    100                EFM_ASSERT(status == SL_STATUS_OK);
+    101                sli_task_register_id = reg_id;
+    102              }
+    103            }
+    104          #endif
+    105            sli_iostream_default = stream;
+   \        0xA   0x....             LDR.N    R0,??DataTable1
+   \        0xC   0x6004             STR      R4,[R0, #+0]
+    106            CORE_EXIT_CRITICAL();
+   \        0xE   0x0028             MOVS     R0,R5
+   \       0x10   0x.... 0x....      BL       CORE_ExitCritical
+    107          
+    108          #if defined(SL_CATALOG_KERNEL_PRESENT)
+    109            if (osThreadGetId() != NULL) {
+    110              status = sli_osTaskRegisterSetValue(NULL, reg_id, (uint32_t)stream);
+    111              EFM_ASSERT(status == SL_STATUS_OK);
+    112            }
+    113          #endif
+    114          
+    115            return SL_STATUS_OK;
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0xBD32             POP      {R1,R4,R5,PC}
+    116          }
+    117          
+    118          /***************************************************************************//**
+    119           * Get default IO stream configured
+    120           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    121          sl_iostream_t *sl_iostream_get_default(void)
+    122          {
+   \                     sl_iostream_get_default: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    123          #if defined(SL_CATALOG_KERNEL_PRESENT)
+    124            sl_status_t status;
+    125            sli_task_register_id_t reg_id;
+    126          #endif
+    127            sl_iostream_t *stream = NULL;
+   \        0x2   0x2400             MOVS     R4,#+0
+    128            CORE_DECLARE_IRQ_STATE;
+    129          
+    130            CORE_ENTER_CRITICAL();
+   \        0x4   0x.... 0x....      BL       CORE_EnterCritical
+   \        0x8   0x0005             MOVS     R5,R0
+    131          #if defined(SL_CATALOG_KERNEL_PRESENT)
+    132            reg_id = sli_task_register_id;
+    133          #endif
+    134            stream = sli_iostream_default;
+   \        0xA   0x....             LDR.N    R0,??DataTable1
+   \        0xC   0x6806             LDR      R6,[R0, #+0]
+    135            CORE_EXIT_CRITICAL();
+   \        0xE   0x0028             MOVS     R0,R5
+   \       0x10   0x.... 0x....      BL       CORE_ExitCritical
+    136          
+    137          #if defined(SL_CATALOG_KERNEL_PRESENT)
+    138            if (osThreadGetId() != NULL) {
+    139              if (reg_id != TASK_REGISTER_ID_INVALID) {
+    140                uint32_t reg;
+    141          
+    142                status = sli_osTaskRegisterGetValue(NULL, sli_task_register_id, &reg);
+    143                EFM_ASSERT(status == SL_STATUS_OK);
+    144          
+    145                stream = (sl_iostream_t *)reg;
+    146              }
+    147            }
+    148            if (stream == NULL) {
+    149              CORE_ENTER_CRITICAL();
+    150              stream = sli_iostream_system_default;
+    151              CORE_EXIT_CRITICAL();
+    152            }
+    153          #endif
+    154          
+    155            return stream;
+   \       0x14   0x0030             MOVS     R0,R6
+   \       0x16   0xBD70             POP      {R4-R6,PC}
+    156          }
+    157          
+    158          /***************************************************************************//**
+    159           * Set systemwide default IO stream
+    160           ******************************************************************************/
+    161          #if defined(SL_CATALOG_KERNEL_PRESENT)
+    162          sl_status_t sl_iostream_set_system_default(sl_iostream_t *stream)
+    163          {
+    164            sl_status_t status = SL_STATUS_OK;
+    165            CORE_DECLARE_IRQ_STATE;
+    166          
+    167            CORE_ENTER_CRITICAL();
+    168            sli_iostream_system_default = stream;
+    169            CORE_EXIT_CRITICAL();
+    170            return status;
+    171          }
+    172          #endif
+    173          
+    174          /***************************************************************************//**
+    175           * Stream write implementation
+    176           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    177          sl_status_t  sl_iostream_write(sl_iostream_t *stream,
+    178                                         const void *buffer,
+    179                                         size_t buffer_length)
+    180          {
+   \                     sl_iostream_write: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    181            if (stream == SL_IOSTREAM_STDOUT) {
+   \        0x8   0x2C00             CMP      R4,#+0
+   \        0xA   0xD102             BNE.N    ??sl_iostream_write_0
+    182              stream = sl_iostream_get_default();
+   \        0xC   0x.... 0x....      BL       sl_iostream_get_default
+   \       0x10   0x0004             MOVS     R4,R0
+    183            }
+    184          
+    185            if ((stream != NULL) && (stream->write != NULL)) {
+   \                     ??sl_iostream_write_0: (+1)
+   \       0x12   0x2C00             CMP      R4,#+0
+   \       0x14   0xD008             BEQ.N    ??sl_iostream_write_1
+   \       0x16   0x6860             LDR      R0,[R4, #+4]
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD005             BEQ.N    ??sl_iostream_write_1
+    186              return stream->write(stream->context, buffer, buffer_length);
+   \       0x1C   0x0032             MOVS     R2,R6
+   \       0x1E   0x0029             MOVS     R1,R5
+   \       0x20   0x6820             LDR      R0,[R4, #+0]
+   \       0x22   0x6863             LDR      R3,[R4, #+4]
+   \       0x24   0x4798             BLX      R3
+   \       0x26   0xE000             B.N      ??sl_iostream_write_2
+    187            } else {
+    188              return SL_STATUS_INVALID_CONFIGURATION;
+   \                     ??sl_iostream_write_1: (+1)
+   \       0x28   0x2023             MOVS     R0,#+35
+   \                     ??sl_iostream_write_2: (+1)
+   \       0x2A   0xBD70             POP      {R4-R6,PC}
+    189            }
+    190          }
+    191          
+    192          /***************************************************************************//**
+    193           * Stream read implementation
+    194           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    195          sl_status_t sl_iostream_read(sl_iostream_t *stream,
+    196                                       void *buffer,
+    197                                       size_t buffer_length,
+    198                                       size_t *bytes_read)
+    199          {
+   \                     sl_iostream_read: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x0017             MOVS     R7,R2
+   \        0xA   0x001D             MOVS     R5,R3
+    200            size_t   size;
+    201            size_t  *read_size = &size;
+   \        0xC   0x46E8             MOV      R8,SP
+    202          
+    203            if (stream == SL_IOSTREAM_STDIN) {
+   \        0xE   0x2C00             CMP      R4,#+0
+   \       0x10   0xD102             BNE.N    ??sl_iostream_read_0
+    204              stream = sl_iostream_get_default();
+   \       0x12   0x.... 0x....      BL       sl_iostream_get_default
+   \       0x16   0x0004             MOVS     R4,R0
+    205            }
+    206          
+    207            if (bytes_read != NULL) {
+   \                     ??sl_iostream_read_0: (+1)
+   \       0x18   0x2D00             CMP      R5,#+0
+   \       0x1A   0xD000             BEQ.N    ??sl_iostream_read_1
+    208              read_size = bytes_read;
+   \       0x1C   0x46A8             MOV      R8,R5
+    209            }
+    210          
+    211            if ((stream != NULL) && (stream->read != NULL)) {
+   \                     ??sl_iostream_read_1: (+1)
+   \       0x1E   0x2C00             CMP      R4,#+0
+   \       0x20   0xD00A             BEQ.N    ??sl_iostream_read_2
+   \       0x22   0x68A0             LDR      R0,[R4, #+8]
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD007             BEQ.N    ??sl_iostream_read_2
+    212              return stream->read(stream->context, buffer, buffer_length, read_size);
+   \       0x28   0x4643             MOV      R3,R8
+   \       0x2A   0x003A             MOVS     R2,R7
+   \       0x2C   0x0031             MOVS     R1,R6
+   \       0x2E   0x6820             LDR      R0,[R4, #+0]
+   \       0x30   0xF8D4 0xC008      LDR      R12,[R4, #+8]
+   \       0x34   0x47E0             BLX      R12
+   \       0x36   0xE000             B.N      ??sl_iostream_read_3
+    213            } else {
+    214              return SL_STATUS_INVALID_CONFIGURATION;
+   \                     ??sl_iostream_read_2: (+1)
+   \       0x38   0x2023             MOVS     R0,#+35
+   \                     ??sl_iostream_read_3: (+1)
+   \       0x3A   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}
+    215            }
+    216          }
+    217          
+    218          /***************************************************************************//**
+    219           * Stream putchar implementation
+    220           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    221          sl_status_t sl_iostream_putchar(sl_iostream_t *stream,
+    222                                          char c)
+    223          {
+   \                     sl_iostream_putchar: (+1)
+   \        0x0   0xB513             PUSH     {R0,R1,R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    224            return sl_iostream_write(stream, &c, 1);
+   \        0x4   0x2201             MOVS     R2,#+1
+   \        0x6   0xA901             ADD      R1,SP,#+4
+   \        0x8   0x0020             MOVS     R0,R4
+   \        0xA   0x.... 0x....      BL       sl_iostream_write
+   \        0xE   0xBD16             POP      {R1,R2,R4,PC}
+    225          }
+    226          
+    227          /***************************************************************************//**
+    228           * Stream getchar implementation
+    229           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    230          sl_status_t sl_iostream_getchar(sl_iostream_t *stream,
+    231                                          char *c)
+    232          {
+   \                     sl_iostream_getchar: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    233            return sl_iostream_read(stream, c, 1, NULL);
+   \        0x6   0x2300             MOVS     R3,#+0
+   \        0x8   0x2201             MOVS     R2,#+1
+   \        0xA   0x0021             MOVS     R1,R4
+   \        0xC   0x0028             MOVS     R0,R5
+   \        0xE   0x.... 0x....      BL       sl_iostream_read
+   \       0x12   0xBD32             POP      {R1,R4,R5,PC}
+    234          }
+    235          
+    236          /***************************************************************************//**
+    237           * Stream vprintf implementation
+    238           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    239          sl_status_t sl_iostream_vprintf(sl_iostream_t *stream,
+    240                                          const char *format,
+    241                                          va_list argp)
+    242          {
+   \                     sl_iostream_vprintf: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x0017             MOVS     R7,R2
+    243          #if !defined(SL_CATALOG_PRINTF_PRESENT)
+    244            sl_iostream_t *default_stream;
+    245          #endif
+    246            sl_iostream_t *output_stream = stream;
+   \        0xA   0x002C             MOVS     R4,R5
+    247            sl_status_t status = SL_STATUS_OK;
+   \        0xC   0xF05F 0x0800      MOVS     R8,#+0
+    248            int ret;
+    249          
+    250          #if defined(SL_CATALOG_PRINTF_PRESENT)
+    251            if (output_stream == SL_IOSTREAM_STDOUT) {
+    252              output_stream = sl_iostream_get_default();
+    253            }
+    254            ret = vfctprintf(stream_putchar, output_stream, format, argp);
+    255          #else
+    256            if (output_stream == SL_IOSTREAM_STDOUT) {
+   \       0x10   0x2C00             CMP      R4,#+0
+   \       0x12   0xD104             BNE.N    ??sl_iostream_vprintf_0
+    257              default_stream = sl_iostream_get_default();
+   \       0x14   0x.... 0x....      BL       sl_iostream_get_default
+   \       0x18   0x4681             MOV      R9,R0
+    258              output_stream = default_stream;
+   \       0x1A   0x464C             MOV      R4,R9
+   \       0x1C   0xE007             B.N      ??sl_iostream_vprintf_1
+    259            } else {
+    260              default_stream = sl_iostream_get_default();
+   \                     ??sl_iostream_vprintf_0: (+1)
+   \       0x1E   0x.... 0x....      BL       sl_iostream_get_default
+   \       0x22   0x4681             MOV      R9,R0
+    261              if (default_stream != output_stream) {
+   \       0x24   0x45A1             CMP      R9,R4
+   \       0x26   0xD002             BEQ.N    ??sl_iostream_vprintf_1
+    262                sl_iostream_set_default(output_stream);
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0x.... 0x....      BL       sl_iostream_set_default
+    263              }
+    264            }
+    265          
+    266            ret = vprintf(format, argp);
+   \                     ??sl_iostream_vprintf_1: (+1)
+   \       0x2E   0x0039             MOVS     R1,R7
+   \       0x30   0x0030             MOVS     R0,R6
+   \       0x32   0x.... 0x....      BL       vprintf
+   \       0x36   0x4682             MOV      R10,R0
+    267            if (default_stream != output_stream) {
+   \       0x38   0x45A1             CMP      R9,R4
+   \       0x3A   0xD002             BEQ.N    ??sl_iostream_vprintf_2
+    268              sl_iostream_set_default(default_stream);
+   \       0x3C   0x4648             MOV      R0,R9
+   \       0x3E   0x.... 0x....      BL       sl_iostream_set_default
+    269            }
+    270          #endif
+    271            if (ret <= 0) {
+   \                     ??sl_iostream_vprintf_2: (+1)
+   \       0x42   0xF1BA 0x0F01      CMP      R10,#+1
+   \       0x46   0xDA01             BGE.N    ??sl_iostream_vprintf_3
+    272              status = SL_STATUS_OBJECT_WRITE;
+   \       0x48   0x2037             MOVS     R0,#+55
+   \       0x4A   0x4680             MOV      R8,R0
+    273            }
+    274          
+    275            return status;
+   \                     ??sl_iostream_vprintf_3: (+1)
+   \       0x4C   0x4640             MOV      R0,R8
+   \       0x4E   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    276          }
+    277          
+    278          /***************************************************************************//**
+    279           * Stream printf implementation
+    280           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    281          sl_status_t sl_iostream_printf(sl_iostream_t *stream,
+    282                                         const char *format,
+    283                                         ...)
+    284          {
+   \                     sl_iostream_printf: (+1)
+   \        0x0   0xB40C             PUSH     {R2,R3}
+   \        0x2   0xB570             PUSH     {R4-R6,LR}
+   \        0x4   0x0006             MOVS     R6,R0
+   \        0x6   0x000C             MOVS     R4,R1
+    285            sl_status_t status;
+    286            va_list argp;
+    287            va_start(argp, format);
+   \        0x8   0xAD04             ADD      R5,SP,#+16
+    288            status = sl_iostream_vprintf(stream, format, argp);
+   \        0xA   0x002A             MOVS     R2,R5
+   \        0xC   0x0021             MOVS     R1,R4
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       sl_iostream_vprintf
+    289            va_end(argp);
+    290            return status;
+   \       0x14   0xBC70             POP      {R4-R6}
+   \       0x16   0xF85D 0xFB0C      LDR      PC,[SP], #+12
+    291          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     sli_iostream_default
+    292          
+    293          /***************************************************************************//**
+    294           * putchar implementation for sl_iostream_printf; called by fnctprintf()
+    295           ******************************************************************************/
+    296          #if defined(SL_CATALOG_PRINTF_PRESENT)
+    297          static void stream_putchar(char character,
+    298                                     void *arg)
+    299          {
+    300            sl_iostream_putchar((sl_iostream_t *)arg, character);
+    301          }
+    302          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   sl_iostream_get_default
+        16   -> CORE_EnterCritical
+        16   -> CORE_ExitCritical
+      16   sl_iostream_getchar
+        16   -> sl_iostream_read
+      24   sl_iostream_printf
+        24   -> sl_iostream_vprintf
+      16   sl_iostream_putchar
+        16   -> sl_iostream_write
+      32   sl_iostream_read
+        32   -- Indirect call
+        32   -> sl_iostream_get_default
+      16   sl_iostream_set_default
+        16   -> CORE_EnterCritical
+        16   -> CORE_ExitCritical
+      32   sl_iostream_vprintf
+        32   -> sl_iostream_get_default
+        32   -> sl_iostream_set_default
+        32   -> vprintf
+      16   sl_iostream_write
+        16   -- Indirect call
+        16   -> sl_iostream_get_default
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+      24  sl_iostream_get_default
+      20  sl_iostream_getchar
+      12  sl_iostream_null
+      26  sl_iostream_printf
+      16  sl_iostream_putchar
+      62  sl_iostream_read
+      24  sl_iostream_set_default
+      82  sl_iostream_vprintf
+      44  sl_iostream_write
+       4  sli_iostream_default
+
+ 
+  16 bytes in section .bss
+ 302 bytes in section .text
+ 
+ 302 bytes of CODE memory
+  16 bytes of DATA memory
+
+Errors: none
+Warnings: none

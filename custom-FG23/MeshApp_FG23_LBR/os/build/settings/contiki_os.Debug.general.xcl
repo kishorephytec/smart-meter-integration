@@ -1,0 +1,15 @@
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armPROC.dll" 
+
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armSIM2.dll" 
+
+"C:\Users\embed\OneDrive\Documents\gitFw\vayu_stack_source_code_fg23\Kimbal_MeshApp_FG23\os\build\Debug\Exe\contiki_os.out" 
+
+--plugin="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armbat.dll" 
+
+--device_macro="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\debugger\SiliconLaboratories\Gecko_SE.dmac" 
+
+--device_macro="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\debugger\SiliconLaboratories\Trace_xG23.dmac" 
+
+
+
+

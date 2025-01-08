@@ -1,0 +1,21 @@
+"--endian=little" 
+
+"--cpu=Cortex-M33" 
+
+"--cmse" 
+
+"--fpu=VFPv5_SP" 
+
+"-p" 
+
+"C:\Program Files\IAR Systems\Embedded Workbench 9.2\arm\config\debugger\SiliconLaboratories\EFR32FG23A020F512GM40.ddf" 
+
+"--semihosting" 
+
+"--device=EFR32FG23A020F512GM40" 
+
+"--multicore_nr_of_cores=1" 
+
+
+
+

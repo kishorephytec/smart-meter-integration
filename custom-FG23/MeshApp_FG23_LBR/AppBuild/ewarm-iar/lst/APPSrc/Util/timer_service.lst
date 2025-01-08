@@ -1,0 +1,1061 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         30/Apr/2024  13:12:23
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\ProAppSrc\Util\timer_manager\timer_service.c
+#    Command line                 =
+#        -f
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\APPSrc\Util\timer_service.lst.rsp
+#        (D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\ProAppSrc\Util\timer_manager\timer_service.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\APPSrc\Util
+#        --diag_suppress Pa050 -o
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\APPSrc\Util
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\APPSrc\Util\timer_service.o.d
+#    Locale                       =  C
+#    List file                    =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\APPSrc\Util\timer_service.lst
+#    Object file                  =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\APPSrc\Util\timer_service.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\ProAppSrc\Util\timer_manager\timer_service.c
+      1          /** \file timer_service.c
+      2           *******************************************************************************
+      3           ** \brief Implements the OS dependant part of the timer service
+      4           **
+      5           ** \cond STD_FILE_HEADER
+      6           **
+      7           ** COPYRIGHT(c) 2023-24 Procubed Innovations Pvt Ltd. 
+      8           ** All rights reserved.
+      9           **
+     10           ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     11           ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     12           ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     13           ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     14           ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     15           ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     16           ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     17           **
+     18           *******************************************************************************
+     19           **  \endcond
+     20           */
+     21          
+     22          /*
+     23          ********************************************************************************
+     24          * File inclusion
+     25          ********************************************************************************
+     26          */
+     27          
+     28          #include "StackPHYConf.h"
+     29          #include "common.h"
+     30          #include "queue_latest.h"
+     31          #include "list_latest.h"
+     32          #include "hw_tmr.h"
+     33          #include "sw_timer.h"
+     34          #include "timer_service.h"
+     35          #include "event_manager.h"
+     36          
+     37          #if RAIL_TIMER_INTERFACE_USED
+     38          #include "rail_timer_interface.h"
+     39          #endif
+     40          /*
+     41          ** =============================================================================
+     42          ** Private Macro definitions
+     43          ** =============================================================================
+     44          */
+     45          	
+     46          /**< Indicates a software timer is just created  */
+     47          #define SW_TMR_CREATED 1
+     48          
+     49          /**< Indicates that a software timer is active/running  */
+     50          #define SW_TMR_ACTIVE  2
+     51          
+     52          /**< Indicates that a software timer is expired  */
+     53          #define SW_TMR_EXPIRED 3
+     54          
+     55          /**< Indicates that a software timer is stopped */
+     56          #define SW_TMR_STOPPED 4
+     57          
+     58          /**< Indicates that the software timer was requested to be stopped from timer 
+     59          *    interrupt context */
+     60          //#define SW_TMR_ISR_REQ_STOP  1
+     61          
+     62          /**< Indicates that the software timer was requested to be start from timer 
+     63          *    interrupt context */
+     64          //#define SW_TMR_ISR_REQ_START 2
+     65          
+     66          /**< Indicates software timer expiry event */
+     67          //#define SW_TMR_EXPIRE_EVENT    SST_HIGHEST_PRIO_EVENT
+     68          
+     69          /**< Indicates software timer ISR request event */
+     70          //#define SW_TMR_ISR_REQ_EVENT   0x02
+     71          
+     72          /*
+     73          ** =============================================================================
+     74          ** Private Structures, Unions & enums Type Definitions
+     75          ** =============================================================================
+     76          **/
+     77          
+     78          /* None */
+     79          
+     80          /*
+     81          ** =============================================================================
+     82          ** Private Variable Definitions
+     83          ** =============================================================================
+     84          */
+     85          
+
+   \                                 In section .bss, align 4
+     86          static sw_tmr_module_t tmr_mod_ins;
+   \                     tmr_mod_ins:
+   \        0x0                      DS8 52
+
+   \                                 In section .bss, align 4
+     87          static hw_tmr_t hw_tmr_ins;
+   \                     hw_tmr_ins:
+   \        0x0                      DS8 16
+
+   \                                 In section .bss, align 1
+     88          volatile unsigned char timer_trigger = 0;
+   \                     timer_trigger:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+     89          volatile unsigned char sys_time_roll_over_event = 0;
+   \                     sys_time_roll_over_event:
+   \        0x0                      DS8 1
+     90          
+     91          /*
+     92          ** =============================================================================
+     93          ** Private Function Definitions
+     94          ** =============================================================================
+     95          */
+     96          
+     97          static bool  tmr_start( sw_tmr_t *pTmr_ins, uint8_t add_to_pend );
+     98          //Sagar: Not Used
+     99          /*static void sw_tmr_thread_notif( sw_tmr_module_t *pTmr_mod_ins, base_t event, void *pParam );*/
+    100          static void timer_expiry_notify( sw_tmr_module_t *pTmr_mod_ins );
+    101          
+    102          /*
+    103          ** =============================================================================
+    104          ** External Variable Declarations
+    105          ** =============================================================================
+    106          */
+    107          
+    108          /* None */
+    109          
+    110          /*
+    111          ** =============================================================================
+    112          ** External Function Prototypes
+    113          ** =============================================================================
+    114          */
+    115          
+    116          extern void handle_system_time_rollover( sw_tmr_module_t *pTmr_mod_ins );
+    117          
+    118          /*
+    119          ** =============================================================================
+    120          ** Public Variables Definitions
+    121          ** =============================================================================
+    122          **/
+    123          
+
+   \                                 In section .bss, align 4
+    124          p3time_t system_time_high_32 = 0;
+   \                     system_time_high_32:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    125          sw_tmr_module_t* gpTmr_mod_ins  = 0;
+   \                     gpTmr_mod_ins:
+   \        0x0                      DS8 4
+    126          
+    127          /*
+    128          ** =============================================================================
+    129          ** Public Function Prototypes
+    130          ** =============================================================================
+    131          */
+    132          
+    133          /* None */
+    134          
+    135          /*
+    136          ** =============================================================================
+    137          ** Public Function Definitions
+    138          ** =============================================================================
+    139          */
+    140          
+
+   \                                 In section .text, align 2, keep-with-next
+    141          void tmr_service_init(void)
+    142          {
+   \                     tmr_service_init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    143          
+    144            gpTmr_mod_ins = &tmr_mod_ins;  
+   \        0x2   0x....             LDR.N    R0,??DataTable10
+   \        0x4   0x....             LDR.N    R1,??DataTable10_1
+   \        0x6   0x6008             STR      R0,[R1, #+0]
+    145            hw_tmr_ins.tmr_channel = HW_TIMER_CHANNEL_0;        
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0x....             LDR.N    R1,??DataTable10_2
+   \        0xC   0x7008             STRB     R0,[R1, #+0]
+    146            hw_tmr_ins.cb  = (cb_routine_t)timer_expiry_notify;
+   \        0xE   0x.... 0x....      ADR.W    R0,timer_expiry_notify
+   \       0x12   0x....             LDR.N    R1,??DataTable10_2
+   \       0x14   0x6048             STR      R0,[R1, #+4]
+    147            hw_tmr_ins.ctx = ( void* )&tmr_mod_ins;
+   \       0x16   0x....             LDR.N    R0,??DataTable10
+   \       0x18   0x....             LDR.N    R1,??DataTable10_2
+   \       0x1A   0x6088             STR      R0,[R1, #+8]
+    148            hw_tmr_ins.timer_added_in_irq = 0x0;
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \       0x1E   0x....             LDR.N    R1,??DataTable10_2
+   \       0x20   0x73C8             STRB     R0,[R1, #+15]
+    149            
+    150            gpTmr_mod_ins->hw_timer_if.pHw_tmr_ins = &hw_tmr_ins;
+   \       0x22   0x....             LDR.N    R0,??DataTable10_2
+   \       0x24   0x....             LDR.N    R1,??DataTable10_1
+   \       0x26   0x6809             LDR      R1,[R1, #+0]
+   \       0x28   0x6108             STR      R0,[R1, #+16]
+    151            gpTmr_mod_ins->hw_timer_if.hw_tmr_get_time = hw_tmr_get_time;
+   \       0x2A   0x....             LDR.N    R0,??DataTable10_3
+   \       0x2C   0x....             LDR.N    R1,??DataTable10_1
+   \       0x2E   0x6809             LDR      R1,[R1, #+0]
+   \       0x30   0x6208             STR      R0,[R1, #+32]
+    152            gpTmr_mod_ins->hw_timer_if.hw_tmr_init = hw_tmr_init;
+   \       0x32   0x....             LDR.N    R0,??DataTable10_4
+   \       0x34   0x....             LDR.N    R1,??DataTable10_1
+   \       0x36   0x6809             LDR      R1,[R1, #+0]
+   \       0x38   0x6148             STR      R0,[R1, #+20]
+    153            gpTmr_mod_ins->hw_timer_if.hw_tmr_start = hw_tmr_start;
+   \       0x3A   0x....             LDR.N    R0,??DataTable10_5
+   \       0x3C   0x....             LDR.N    R1,??DataTable10_1
+   \       0x3E   0x6809             LDR      R1,[R1, #+0]
+   \       0x40   0x6188             STR      R0,[R1, #+24]
+    154            gpTmr_mod_ins->hw_timer_if.hw_tmr_stop = hw_tmr_stop;
+   \       0x42   0x....             LDR.N    R0,??DataTable10_6
+   \       0x44   0x....             LDR.N    R1,??DataTable10_1
+   \       0x46   0x6809             LDR      R1,[R1, #+0]
+   \       0x48   0x61C8             STR      R0,[R1, #+28]
+    155            gpTmr_mod_ins->hw_timer_if.hw_tmr_delay = hw_tmr_delay;
+   \       0x4A   0x....             LDR.N    R0,??DataTable10_7
+   \       0x4C   0x....             LDR.N    R1,??DataTable10_1
+   \       0x4E   0x6809             LDR      R1,[R1, #+0]
+   \       0x50   0x6288             STR      R0,[R1, #+40]
+    156            gpTmr_mod_ins->hw_timer_if.hw_tmr_rand = hw_tmr_rand;
+   \       0x52   0x....             LDR.N    R0,??DataTable10_8
+   \       0x54   0x....             LDR.N    R1,??DataTable10_1
+   \       0x56   0x6809             LDR      R1,[R1, #+0]
+   \       0x58   0x6248             STR      R0,[R1, #+36]
+    157              
+    158            sw_tmr_init(gpTmr_mod_ins);
+   \       0x5A   0x....             LDR.N    R0,??DataTable10_1
+   \       0x5C   0x6800             LDR      R0,[R0, #+0]
+   \       0x5E   0x.... 0x....      BL       sw_tmr_init
+    159            
+    160          // create a thred in case of an OS being used
+    161            return;
+   \       0x62   0xBD01             POP      {R0,PC}
+    162          }
+    163          
+    164          /******************************************************************************/
+    165          
+
+   \                                 In section .text, align 2, keep-with-next
+    166          void timer_task( void )
+    167          {
+   \                     timer_task: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    168          	sw_tmr_t* p_sw_tmr = NULL;
+   \        0x2   0x2500             MOVS     R5,#+0
+    169          // 	irq_state_t flags = __get_interrupt_state();//Umesh
+    170          //        flags = irq_disable();
+    171              
+    172          	if( timer_trigger )
+   \        0x4   0x....             LDR.N    R0,??DataTable10_9
+   \        0x6   0x7800             LDRB     R0,[R0, #+0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD013             BEQ.N    ??timer_task_0
+    173          	{
+    174          		timer_trigger--;
+   \        0xC   0x....             LDR.N    R0,??DataTable10_9
+   \        0xE   0x7800             LDRB     R0,[R0, #+0]
+   \       0x10   0x1E40             SUBS     R0,R0,#+1
+   \       0x12   0x....             LDR.N    R1,??DataTable10_9
+   \       0x14   0x7008             STRB     R0,[R1, #+0]
+    175          		/*process roll over event if any, first*/
+    176          		if(sys_time_roll_over_event)
+   \       0x16   0x....             LDR.N    R0,??DataTable10_10
+   \       0x18   0x7800             LDRB     R0,[R0, #+0]
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD006             BEQ.N    ??timer_task_1
+    177          		{
+    178          			handle_system_time_rollover( gpTmr_mod_ins );
+   \       0x1E   0x....             LDR.N    R0,??DataTable10_1
+   \       0x20   0x6800             LDR      R0,[R0, #+0]
+   \       0x22   0x.... 0x....      BL       handle_system_time_rollover
+    179          			sys_time_roll_over_event = 0;
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x....             LDR.N    R1,??DataTable10_10
+   \       0x2A   0x7008             STRB     R0,[R1, #+0]
+    180          		}
+    181          		
+    182          		update_expired_tmr_list(gpTmr_mod_ins);
+   \                     ??timer_task_1: (+1)
+   \       0x2C   0x....             LDR.N    R0,??DataTable10_1
+   \       0x2E   0x6800             LDR      R0,[R0, #+0]
+   \       0x30   0x.... 0x....      BL       update_expired_tmr_list
+    183          	}
+    184          //	irq_enable( flags );	
+    185          	invoke_expired_timer_cbs(gpTmr_mod_ins);								  
+   \                     ??timer_task_0: (+1)
+   \       0x34   0x....             LDR.N    R0,??DataTable10_1
+   \       0x36   0x6800             LDR      R0,[R0, #+0]
+   \       0x38   0x.... 0x....      BL       invoke_expired_timer_cbs
+    186          	if( ( p_sw_tmr = (sw_tmr_t*)list_entry_get_start(&(gpTmr_mod_ins->isr_req_q))  ) != NULL )
+   \       0x3C   0x....             LDR.N    R0,??DataTable10_1
+   \       0x3E   0x6800             LDR      R0,[R0, #+0]
+   \       0x40   0x3030             ADDS     R0,R0,#+48
+   \       0x42   0x.... 0x....      BL       list_entry_get_start
+   \       0x46   0x0004             MOVS     R4,R0
+   \       0x48   0x2C00             CMP      R4,#+0
+   \       0x4A   0xD00B             BEQ.N    ??timer_task_2
+    187          	{
+    188          		
+    189          		/*timer is stopped start it again*/
+    190          		tmr_stop( p_sw_tmr);
+   \       0x4C   0x0020             MOVS     R0,R4
+   \       0x4E   0x.... 0x....      BL       tmr_stop
+    191          		tmr_start_relative( p_sw_tmr );
+   \       0x52   0x0020             MOVS     R0,R4
+   \       0x54   0x.... 0x....      BL       tmr_start_relative
+    192                          list_entry_set_start( &(gpTmr_mod_ins->isr_req_q), NULL );
+   \       0x58   0x2100             MOVS     R1,#+0
+   \       0x5A   0x....             LDR.N    R0,??DataTable10_1
+   \       0x5C   0x6800             LDR      R0,[R0, #+0]
+   \       0x5E   0x3030             ADDS     R0,R0,#+48
+   \       0x60   0x.... 0x....      BL       list_entry_set_start
+    193          		
+    194          	}
+    195          //	flags = irq_disable();	
+    196          	if(!timer_trigger)
+   \                     ??timer_task_2: (+1)
+   \       0x64   0x....             LDR.N    R0,??DataTable10_9
+   \       0x66   0x7800             LDRB     R0,[R0, #+0]
+   \       0x68   0x2800             CMP      R0,#+0
+   \       0x6A   0xD102             BNE.N    ??timer_task_3
+    197          	{
+    198          	    event_clear(TIMER_EXPIRY_EVENT);
+   \       0x6C   0x2001             MOVS     R0,#+1
+   \       0x6E   0x.... 0x....      BL       event_clear
+    199          	}
+    200          //	irq_enable( flags );		
+    201          	return;
+   \                     ??timer_task_3: (+1)
+   \       0x72   0xBD31             POP      {R0,R4,R5,PC}
+    202          }
+    203          /******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    204          void tmr_create_one_shot_timer( sw_tmr_t *pTmr_ins,stime_t period,sw_tmr_cb_t cb,void* param )
+    205          {
+   \                     tmr_create_one_shot_timer: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x001F             MOVS     R7,R3
+    206          	sw_tmr_create( pTmr_ins, period, cb, param );
+   \        0xA   0x003B             MOVS     R3,R7
+   \        0xC   0x0032             MOVS     R2,R6
+   \        0xE   0x0029             MOVS     R1,R5
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0x.... 0x....      BL       sw_tmr_create
+    207          	return;
+   \       0x16   0xBDF1             POP      {R0,R4-R7,PC}
+    208          }
+    209          /******************************************************************************/
+    210          // Sagar: Not Used
+    211          /*
+    212          bool tmr_create_periodic_timer( sw_tmr_t *pTmr_ins,stime_t period,sw_tmr_cb_t cb,void* param )
+    213          {
+    214          	return sw_tmr_create( pTmr_ins, SW_TMR_PERIODIC, period, cb, param );
+    215              
+    216          }
+    217          */
+    218          /******************************************************************************/
+    219          
+
+   \                                 In section .text, align 2, keep-with-next
+    220          bool  tmr_start_relative( sw_tmr_t *pTmr_ins )
+    221          {
+   \                     tmr_start_relative: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    222            uint8_t add_to_pend = 0;
+   \        0x4   0x2500             MOVS     R5,#+0
+    223            
+    224            p3time_t curr  = gpTmr_mod_ins->hw_timer_if.hw_tmr_get_time( gpTmr_mod_ins->hw_timer_if.pHw_tmr_ins );
+   \        0x6   0x....             LDR.N    R0,??DataTable10_1
+   \        0x8   0x6800             LDR      R0,[R0, #+0]
+   \        0xA   0x6900             LDR      R0,[R0, #+16]
+   \        0xC   0x....             LDR.N    R1,??DataTable10_1
+   \        0xE   0x6809             LDR      R1,[R1, #+0]
+   \       0x10   0x6A09             LDR      R1,[R1, #+32]
+   \       0x12   0x4788             BLX      R1
+   \       0x14   0x0006             MOVS     R6,R0
+    225            tmr_stop(pTmr_ins);		      
+   \       0x16   0x0020             MOVS     R0,R4
+   \       0x18   0x.... 0x....      BL       tmr_stop
+    226            if( pTmr_ins->state >= SW_TMR_CREATED )
+   \       0x1C   0x79A0             LDRB     R0,[R4, #+6]
+   \       0x1E   0x2800             CMP      R0,#+0
+   \       0x20   0xD00D             BEQ.N    ??tmr_start_relative_0
+    227            {
+    228              pTmr_ins->exp_time = pTmr_ins->period + curr;
+   \       0x22   0x68E0             LDR      R0,[R4, #+12]
+   \       0x24   0x1830             ADDS     R0,R6,R0
+   \       0x26   0x60A0             STR      R0,[R4, #+8]
+    229             
+    230              if( pTmr_ins->exp_time < curr )
+   \       0x28   0x68A0             LDR      R0,[R4, #+8]
+   \       0x2A   0x42B0             CMP      R0,R6
+   \       0x2C   0xD201             BCS.N    ??tmr_start_relative_1
+    231              {
+    232                add_to_pend = 1;
+   \       0x2E   0x2001             MOVS     R0,#+1
+   \       0x30   0x0005             MOVS     R5,R0
+    233              }
+    234                    
+    235              return tmr_start( pTmr_ins,add_to_pend );
+   \                     ??tmr_start_relative_1: (+1)
+   \       0x32   0x0029             MOVS     R1,R5
+   \       0x34   0xB2C9             UXTB     R1,R1
+   \       0x36   0x0020             MOVS     R0,R4
+   \       0x38   0x.... 0x....      BL       tmr_start
+   \       0x3C   0xE000             B.N      ??tmr_start_relative_2
+    236            }  
+    237            return FALSE;
+   \                     ??tmr_start_relative_0: (+1)
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \                     ??tmr_start_relative_2: (+1)
+   \       0x40   0xBD70             POP      {R4-R6,PC}
+    238          }
+    239          
+    240          /******************************************************************************/
+    241          
+
+   \                                 In section .text, align 2, keep-with-next
+    242          bool  tmr_start_absolute( sw_tmr_t *pTmr_ins, p3time_t point_in_time, stime_t period)
+    243          {
+   \                     tmr_start_absolute: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    244            uint8_t add_to_pend = 0;
+   \        0x8   0x2700             MOVS     R7,#+0
+    245            tmr_stop(pTmr_ins);
+   \        0xA   0x0020             MOVS     R0,R4
+   \        0xC   0x.... 0x....      BL       tmr_stop
+    246            if( pTmr_ins->state >= SW_TMR_CREATED )
+   \       0x10   0x79A0             LDRB     R0,[R4, #+6]
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD00C             BEQ.N    ??tmr_start_absolute_0
+    247            {
+    248              pTmr_ins->exp_time = point_in_time + period;
+   \       0x16   0x1970             ADDS     R0,R6,R5
+   \       0x18   0x60A0             STR      R0,[R4, #+8]
+    249          
+    250          	if( pTmr_ins->exp_time < point_in_time )
+   \       0x1A   0x68A0             LDR      R0,[R4, #+8]
+   \       0x1C   0x42A8             CMP      R0,R5
+   \       0x1E   0xD201             BCS.N    ??tmr_start_absolute_1
+    251          	{
+    252          		add_to_pend = 1;
+   \       0x20   0x2001             MOVS     R0,#+1
+   \       0x22   0x0007             MOVS     R7,R0
+    253          	}
+    254              return tmr_start( pTmr_ins,add_to_pend );   
+   \                     ??tmr_start_absolute_1: (+1)
+   \       0x24   0x0039             MOVS     R1,R7
+   \       0x26   0xB2C9             UXTB     R1,R1
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0x.... 0x....      BL       tmr_start
+   \       0x2E   0xE000             B.N      ??tmr_start_absolute_2
+    255            } 
+    256            return FALSE;
+   \                     ??tmr_start_absolute_0: (+1)
+   \       0x30   0x2000             MOVS     R0,#+0
+   \                     ??tmr_start_absolute_2: (+1)
+   \       0x32   0xBDF2             POP      {R1,R4-R7,PC}
+    257          }
+    258          
+    259          
+    260          /******************************************************************************/
+    261          
+    262          
+
+   \                                 In section .text, align 2, keep-with-next
+    263          void tmr_delay(uint32_t delay_tks)
+    264          {
+   \                     tmr_delay: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    265              if ( delay_tks !=0 )
+   \        0x4   0x2C00             CMP      R4,#+0
+   \        0x6   0xD004             BEQ.N    ??tmr_delay_0
+    266              {
+    267                    sw_tmr_delay(gpTmr_mod_ins,delay_tks);
+   \        0x8   0x0021             MOVS     R1,R4
+   \        0xA   0x....             LDR.N    R0,??DataTable10_1
+   \        0xC   0x6800             LDR      R0,[R0, #+0]
+   \        0xE   0x.... 0x....      BL       sw_tmr_delay
+    268              }
+    269              return;
+   \                     ??tmr_delay_0: (+1)
+   \       0x12   0xBD10             POP      {R4,PC}
+    270          }
+    271          
+    272          /******************************************************************************/
+    273          
+
+   \                                 In section .text, align 2, keep-with-next
+    274          void  tmr_stop( sw_tmr_t *pTmr_ins )
+    275          {
+   \                     tmr_stop: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    276              if( pTmr_ins != NULL )
+   \        0x4   0x2C00             CMP      R4,#+0
+   \        0x6   0xD008             BEQ.N    ??tmr_stop_0
+    277              {
+    278              	if( pTmr_ins->state != SW_TMR_ACTIVE )
+   \        0x8   0x79A0             LDRB     R0,[R4, #+6]
+   \        0xA   0x2802             CMP      R0,#+2
+   \        0xC   0xD106             BNE.N    ??tmr_stop_1
+    279                  goto sw_tmr_stop_exit;
+    280              	
+    281              	sw_tmr_stop(gpTmr_mod_ins,pTmr_ins );
+   \                     ??tmr_stop_2: (+1)
+   \        0xE   0x0021             MOVS     R1,R4
+   \       0x10   0x....             LDR.N    R0,??DataTable10_1
+   \       0x12   0x6800             LDR      R0,[R0, #+0]
+   \       0x14   0x.... 0x....      BL       sw_tmr_stop
+   \       0x18   0xE000             B.N      ??tmr_stop_1
+    282              }
+    283              else 
+    284              {
+    285              	return;
+   \                     ??tmr_stop_0: (+1)
+   \       0x1A   0xE001             B.N      ??tmr_stop_3
+    286              }
+    287              sw_tmr_stop_exit:
+    288                  pTmr_ins->state = SW_TMR_STOPPED;
+   \                     ??tmr_stop_1: (+1)
+   \       0x1C   0x2004             MOVS     R0,#+4
+   \       0x1E   0x71A0             STRB     R0,[R4, #+6]
+    289              //sw_tmr_stop_exit1:  // Raka
+    290              return;
+   \                     ??tmr_stop_3: (+1)
+   \       0x20   0xBD10             POP      {R4,PC}
+    291          }
+    292          
+    293          /******************************************************************************/
+    294          
+
+   \                                 In section .text, align 2, keep-with-next
+    295          p3time_t timer_current_time_get(void)
+    296          {
+   \                     timer_current_time_get: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    297          	return sw_current_time_get( gpTmr_mod_ins );
+   \        0x2   0x....             LDR.N    R0,??DataTable10_1
+   \        0x4   0x6800             LDR      R0,[R0, #+0]
+   \        0x6   0x.... 0x....      BL       sw_current_time_get
+   \        0xA   0xBD02             POP      {R1,PC}
+    298          }
+    299          /******************************************************************************/
+    300          
+
+   \                                 In section .text, align 2, keep-with-next
+    301          p3time_t timer_current_time_get_high_32(void)
+    302          {
+    303          	return system_time_high_32;
+   \                     timer_current_time_get_high_32: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_11
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR
+    304          }
+    305          /******************************************************************************/
+    306          
+
+   \                                 In section .text, align 2, keep-with-next
+    307          uint64_t get_time_now_64 (void)
+    308          {
+   \                     get_time_now_64: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    309            uint64_t current_time = 0;
+   \        0x2   0x2400             MOVS     R4,#+0
+   \        0x4   0x2500             MOVS     R5,#+0
+    310          #if RAIL_TIMER_INTERFACE_USED
+    311              current_time = get_currunt_time_from_rail();
+   \        0x6   0x.... 0x....      BL       get_currunt_time_from_rail
+   \        0xA   0x2100             MOVS     R1,#+0
+    312          #else
+    313                current_time = (uint64_t)system_time_high_32 << 32;
+    314            
+    315            current_time = current_time|(uint32_t)sw_current_time_get( gpTmr_mod_ins );  
+    316            
+    317          #endif  
+    318            return current_time;
+   \        0xC   0xBD34             POP      {R2,R4,R5,PC}
+    319          }
+    320          
+
+   \                                 In section .text, align 2, keep-with-next
+    321          uint8_t timer_rand_get(void)
+    322          {
+   \                     timer_rand_get: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    323          	return sw_tmr_rand_get( gpTmr_mod_ins );
+   \        0x2   0x....             LDR.N    R0,??DataTable10_1
+   \        0x4   0x6800             LDR      R0,[R0, #+0]
+   \        0x6   0x.... 0x....      BL       sw_tmr_rand_get
+   \        0xA   0xBD02             POP      {R1,PC}
+    324          }
+    325          /******************************************************************************/
+    326          // Sagar: Not Used
+    327          /*
+    328          static void 
+    329          sw_tmr_thread_notif( sw_tmr_module_t *pTmr_mod_ins, base_t event, 
+    330                                void *pParam )
+    331          {
+    332             
+    333          	queue_item_put( &pTmr_mod_ins->isr_req_q, pParam );
+    334          	//post the event to timer thread in case of OS being used
+    335          
+    336          	return;
+    337          }
+    338          */
+    339          
+    340          /******************************************************************************/
+    341          
+    342          //Sagar Not Used
+    343          
+
+   \                                 In section .text, align 2, keep-with-next
+    344          stime_t tmr_get_remaining_time(sw_tmr_t *pTmr_ins)
+    345          {
+   \                     tmr_get_remaining_time: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    346                stime_t rem_time = 0;
+   \        0x4   0x2500             MOVS     R5,#+0
+    347                if(pTmr_ins != NULL)
+   \        0x6   0x2C00             CMP      R4,#+0
+   \        0x8   0xD005             BEQ.N    ??tmr_get_remaining_time_0
+    348                {
+    349                        rem_time = sw_tmr_remaining_time_get( gpTmr_mod_ins, pTmr_ins );
+   \        0xA   0x0021             MOVS     R1,R4
+   \        0xC   0x....             LDR.N    R0,??DataTable10_1
+   \        0xE   0x6800             LDR      R0,[R0, #+0]
+   \       0x10   0x.... 0x....      BL       sw_tmr_remaining_time_get
+    350                        return rem_time;
+   \       0x14   0xE000             B.N      ??tmr_get_remaining_time_1
+    351                }	
+    352                return 0;
+   \                     ??tmr_get_remaining_time_0: (+1)
+   \       0x16   0x2000             MOVS     R0,#+0
+   \                     ??tmr_get_remaining_time_1: (+1)
+   \       0x18   0xBD32             POP      {R1,R4,R5,PC}
+    353              
+    354          }
+    355          
+    356          
+    357          /******************************************************************************/
+    358          
+    359          //Sagar Not Used
+    360          /*
+    361          stime_t tmr_get_min_of_all_rem_timer()
+    362          {	
+    363          	stime_t min_time = 0;
+    364          	if( gpTmr_mod_ins != NULL )
+    365          	{
+    366          		min_time = sw_tmr_get_min_of_all_remaining_time( gpTmr_mod_ins );
+    367          		return min_time;
+    368          	}
+    369          	return min_time;
+    370          }
+    371          */
+    372          /******************************************************************************/
+    373          
+    374          /*
+    375          ** =============================================================================
+    376          ** Private Function Prototypes
+    377          ** =============================================================================
+    378          */
+    379          
+
+   \                                 In section .text, align 2, keep-with-next
+    380          static bool  tmr_start( sw_tmr_t *pTmr_ins, uint8_t add_to_pend )
+    381          {   
+   \                     tmr_start: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    382          //    irq_state_t flags = __get_interrupt_state();//Umesh
+    383          //    flags = irq_disable();	
+    384              sw_tmr_add_to_active_list( gpTmr_mod_ins, pTmr_ins	,add_to_pend );    
+   \        0x6   0x002A             MOVS     R2,R5
+   \        0x8   0xB2D2             UXTB     R2,R2
+   \        0xA   0x0021             MOVS     R1,R4
+   \        0xC   0x....             LDR.N    R0,??DataTable10_1
+   \        0xE   0x6800             LDR      R0,[R0, #+0]
+   \       0x10   0x.... 0x....      BL       sw_tmr_add_to_active_list
+    385          //    irq_enable(flags);
+    386          
+    387              return TRUE;
+   \       0x14   0x2001             MOVS     R0,#+1
+   \       0x16   0xBD32             POP      {R1,R4,R5,PC}
+    388          }
+    389          
+    390          /******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    391          static void timer_expiry_notify( sw_tmr_module_t *pTmr_mod_ins )
+    392          {
+   \                     timer_expiry_notify: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    393            
+    394          #ifndef EFM32_TARGET_IAR
+    395          	if(!system_time)
+    396                    
+    397          #endif          
+    398          	{
+    399                      if( !(((hw_tmr_t*)(gpTmr_mod_ins->hw_timer_if.pHw_tmr_ins))->rollover_handled ) )
+   \        0x4   0x....             LDR.N    R0,??DataTable10_1
+   \        0x6   0x6800             LDR      R0,[R0, #+0]
+   \        0x8   0x6900             LDR      R0,[R0, #+16]
+   \        0xA   0x7B80             LDRB     R0,[R0, #+14]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD10C             BNE.N    ??timer_expiry_notify_0
+    400                      {
+    401                           sys_time_roll_over_event = 1;
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0x....             LDR.N    R1,??DataTable10_10
+   \       0x14   0x7008             STRB     R0,[R1, #+0]
+    402                           system_time_high_32++;
+   \       0x16   0x....             LDR.N    R0,??DataTable10_11
+   \       0x18   0x6800             LDR      R0,[R0, #+0]
+   \       0x1A   0x1C40             ADDS     R0,R0,#+1
+   \       0x1C   0x....             LDR.N    R1,??DataTable10_11
+   \       0x1E   0x6008             STR      R0,[R1, #+0]
+    403                           ((hw_tmr_t*)(gpTmr_mod_ins->hw_timer_if.pHw_tmr_ins))->rollover_handled = 1;
+   \       0x20   0x2001             MOVS     R0,#+1
+   \       0x22   0x....             LDR.N    R1,??DataTable10_1
+   \       0x24   0x6809             LDR      R1,[R1, #+0]
+   \       0x26   0x6909             LDR      R1,[R1, #+16]
+   \       0x28   0x7388             STRB     R0,[R1, #+14]
+    404                      }
+    405          	}
+    406          
+    407                  
+    408          	timer_trigger += 1;
+   \                     ??timer_expiry_notify_0: (+1)
+   \       0x2A   0x....             LDR.N    R0,??DataTable10_9
+   \       0x2C   0x7800             LDRB     R0,[R0, #+0]
+   \       0x2E   0x1C40             ADDS     R0,R0,#+1
+   \       0x30   0x....             LDR.N    R1,??DataTable10_9
+   \       0x32   0x7008             STRB     R0,[R1, #+0]
+    409          	event_set(TIMER_EXPIRY_EVENT);
+   \       0x34   0x2001             MOVS     R0,#+1
+   \       0x36   0x.... 0x....      BL       event_set
+    410          	//signal_event_to_mac_task();
+    411          }
+   \       0x3A   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \        0x0   0x....'....        DC32     tmr_mod_ins
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \        0x0   0x....'....        DC32     gpTmr_mod_ins
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \        0x0   0x....'....        DC32     hw_tmr_ins
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_3:
+   \        0x0   0x....'....        DC32     hw_tmr_get_time
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_4:
+   \        0x0   0x....'....        DC32     hw_tmr_init
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_5:
+   \        0x0   0x....'....        DC32     hw_tmr_start
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_6:
+   \        0x0   0x....'....        DC32     hw_tmr_stop
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_7:
+   \        0x0   0x....'....        DC32     hw_tmr_delay
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_8:
+   \        0x0   0x....'....        DC32     hw_tmr_rand
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_9:
+   \        0x0   0x....'....        DC32     timer_trigger
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_10:
+   \        0x0   0x....'....        DC32     sys_time_roll_over_event
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_11:
+   \        0x0   0x....'....        DC32     system_time_high_32
+    412          /******************************************************************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   get_time_now_64
+        16   -> get_currunt_time_from_rail
+       8   timer_current_time_get
+         8   -> sw_current_time_get
+       0   timer_current_time_get_high_32
+       8   timer_expiry_notify
+         8   -> event_set
+       8   timer_rand_get
+         8   -> sw_tmr_rand_get
+      16   timer_task
+        16   -> event_clear
+        16   -> handle_system_time_rollover
+        16   -> invoke_expired_timer_cbs
+        16   -> list_entry_get_start
+        16   -> list_entry_set_start
+        16   -> tmr_start_relative
+        16   -> tmr_stop
+        16   -> update_expired_tmr_list
+      24   tmr_create_one_shot_timer
+        24   -> sw_tmr_create
+       8   tmr_delay
+         8   -> sw_tmr_delay
+      16   tmr_get_remaining_time
+        16   -> sw_tmr_remaining_time_get
+       8   tmr_service_init
+         8   -> sw_tmr_init
+      16   tmr_start
+        16   -> sw_tmr_add_to_active_list
+      24   tmr_start_absolute
+        24   -> tmr_start
+        24   -> tmr_stop
+      16   tmr_start_relative
+        16   -- Indirect call
+        16   -> tmr_start
+        16   -> tmr_stop
+       8   tmr_stop
+         8   -> sw_tmr_stop
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_10
+       4  ??DataTable10_11
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+       4  ??DataTable10_6
+       4  ??DataTable10_7
+       4  ??DataTable10_8
+       4  ??DataTable10_9
+      14  get_time_now_64
+       4  gpTmr_mod_ins
+      16  hw_tmr_ins
+       1  sys_time_roll_over_event
+       4  system_time_high_32
+      12  timer_current_time_get
+       6  timer_current_time_get_high_32
+      60  timer_expiry_notify
+      12  timer_rand_get
+     116  timer_task
+       1  timer_trigger
+      24  tmr_create_one_shot_timer
+      20  tmr_delay
+      26  tmr_get_remaining_time
+      52  tmr_mod_ins
+     100  tmr_service_init
+      24  tmr_start
+      52  tmr_start_absolute
+      66  tmr_start_relative
+      34  tmr_stop
+
+ 
+  78 bytes in section .bss
+ 614 bytes in section .text
+ 
+ 614 bytes of CODE memory
+  78 bytes of DATA memory
+
+Errors: none
+Warnings: none

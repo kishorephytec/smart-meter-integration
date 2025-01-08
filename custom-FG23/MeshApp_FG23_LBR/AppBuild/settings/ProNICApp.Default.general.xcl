@@ -1,0 +1,19 @@
+"C:\Program Files\IAR Systems\Embedded Workbench 9.2\arm\bin\armPROC.dll" 
+
+"C:\Program Files\IAR Systems\Embedded Workbench 9.2\arm\bin\armJLINK.dll" 
+
+"D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\exe\ProNICApp.out" 
+
+--plugin="C:\Program Files\IAR Systems\Embedded Workbench 9.2\arm\bin\armLibSupportUniversal.dll" 
+
+--device_macro="C:\Program Files\IAR Systems\Embedded Workbench 9.2\arm/config/debugger/SiliconLaboratories/Gecko_RESET.dmac" 
+
+--device_macro="C:\Program Files\IAR Systems\Embedded Workbench 9.2\arm/config/debugger/SiliconLaboratories/Gecko_SE.dmac" 
+
+--device_macro="C:\Program Files\IAR Systems\Embedded Workbench 9.2\arm/config/debugger/SiliconLaboratories/Trace_xG23.dmac" 
+
+--flash_loader="C:\Program Files\IAR Systems\Embedded Workbench 9.2\arm/config/flashloader/SiliconLaboratories/FlashGECKOS2C3.board" 
+
+
+
+

@@ -1,0 +1,2615 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         02/Dec/2024  12:57:48
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\emdrv\dmadrv\src\dmadrv.c
+#    Command line      =
+#        -f
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_8171704489610867858.dir\dmadrv.o.rsp
+#        (D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\emdrv\dmadrv\src\dmadrv.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\src_8171704489610867858.dir
+#        --diag_suppress Pa050 -o
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_8171704489610867858.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_8171704489610867858.dir\dmadrv.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\src_8171704489610867858.dir\dmadrv.lst
+#    Object file       =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_8171704489610867858.dir\dmadrv.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\emdrv\dmadrv\src\dmadrv.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief DMADRV API implementation.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include <stdbool.h>
+     32          #include <stddef.h>
+     33          
+     34          #include "em_device.h"
+     35          #include "em_cmu.h"
+     36          #include "em_core.h"
+     37          
+     38          #include "dmadrv.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp bool LDMA_ChannelEnabled(int)
+   \                     LDMA_ChannelEnabled: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0x2900             CMP      R1,#+0
+   \        0x4   0xD401             BMI.N    ??LDMA_ChannelEnabled_0
+   \        0x6   0x2920             CMP      R1,#+32
+   \        0x8   0xDB01             BLT.N    ??LDMA_ChannelEnabled_1
+   \                     ??LDMA_ChannelEnabled_0: (+1)
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0xE005             B.N      ??LDMA_ChannelEnabled_2
+   \                     ??LDMA_ChannelEnabled_1: (+1)
+   \        0xE   0x.... 0x....      LDR.W    R0,??DataTable14
+   \       0x12   0x6800             LDR      R0,[R0, #+0]
+   \       0x14   0x40C8             LSRS     R0,R0,R1
+   \       0x16   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \                     ??LDMA_ChannelEnabled_2: (+1)
+   \       0x1A   0x4770             BX       LR
+     39          
+     40          #if defined(EMDRV_DMADRV_UDMA)
+     41          #include "dmactrl.h"
+     42          #endif
+     43          
+     44          /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
+     45          
+     46          #if !defined(EMDRV_DMADRV_DMA_CH_COUNT) \
+     47            || (EMDRV_DMADRV_DMA_CH_COUNT > DMA_CHAN_COUNT)
+     48          #define EMDRV_DMADRV_DMA_CH_COUNT DMA_CHAN_COUNT
+     49          #endif
+     50          
+     51          typedef enum {
+     52            dmaDirectionMemToPeripheral,
+     53            dmaDirectionPeripheralToMem
+     54          } DmaDirection_t;
+     55          
+     56          typedef enum {
+     57            dmaModeBasic,
+     58            dmaModePingPong
+     59          } DmaMode_t;
+     60          
+     61          typedef struct {
+     62            DMADRV_Callback_t callback;
+     63            void              *userParam;
+     64            unsigned int      callbackCount;
+     65          #if defined(EMDRV_DMADRV_UDMA)
+     66            int               length;
+     67          #endif
+     68            bool              allocated;
+     69          #if defined(EMDRV_DMADRV_LDMA)
+     70            DmaMode_t         mode;
+     71          #endif
+     72          } ChTable_t;
+     73          
+
+   \                                 In section .bss, align 1
+     74          static bool initialized = false;
+   \                     initialized:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+     75          static ChTable_t chTable[EMDRV_DMADRV_DMA_CH_COUNT];
+   \                     chTable:
+   \        0x0                      DS8 128
+     76          
+     77          #if defined(EMDRV_DMADRV_UDMA)
+     78          static DMA_CB_TypeDef dmaCallBack[EMDRV_DMADRV_DMA_CH_COUNT];
+     79          #endif
+     80          
+     81          #if defined(EMDRV_DMADRV_LDMA)
+
+   \                                 In section .rodata, align 4
+     82          const LDMA_TransferCfg_t xferCfg = LDMA_TRANSFER_CFG_PERIPHERAL(0);
+   \                     xferCfg:
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00
+   \        0xE                      DS8 2
+
+   \                                 In section .rodata, align 4
+     83          const LDMA_Descriptor_t m2p = LDMA_DESCRIPTOR_SINGLE_M2P_BYTE(NULL, NULL, 1UL);
+   \                     m2p:
+   \        0x0   0x00 0x00          DC8 0, 0, 16, 48
+   \              0x10 0x30
+   \        0x4   0x0000'0000        DC32 0, 0
+   \              0x0000'0000
+   \        0xC   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00
+
+   \                                 In section .rodata, align 4
+     84          const LDMA_Descriptor_t p2m = LDMA_DESCRIPTOR_SINGLE_P2M_BYTE(NULL, NULL, 1UL);
+   \                     p2m:
+   \        0x0   0x00 0x00          DC8 0, 0, 16, 3
+   \              0x10 0x03
+   \        0x4   0x0000'0000        DC32 0, 0
+   \              0x0000'0000
+   \        0xC   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00
+     85          
+     86          typedef struct {
+     87            LDMA_Descriptor_t desc[2];
+     88          } DmaXfer_t;
+     89          
+
+   \                                 In section .bss, align 4
+     90          static DmaXfer_t dmaXfer[EMDRV_DMADRV_DMA_CH_COUNT];
+   \                     dmaXfer:
+   \        0x0                      DS8 256
+     91          #endif
+     92          
+     93          static Ecode_t StartTransfer(DmaMode_t             mode,
+     94                                       DmaDirection_t        direction,
+     95                                       unsigned int          channelId,
+     96                                       DMADRV_PeripheralSignal_t
+     97                                       peripheralSignal,
+     98                                       void                  *buf0,
+     99                                       void                  *buf1,
+    100                                       void                  *buf2,
+    101                                       bool                  bufInc,
+    102                                       int                   len,
+    103                                       DMADRV_DataSize_t     size,
+    104                                       DMADRV_Callback_t     callback,
+    105                                       void                  *cbUserParam);
+    106          
+    107          /// @endcond
+    108          
+    109          /***************************************************************************//**
+    110           * @brief
+    111           *  Allocate (reserve) a DMA channel.
+    112           *
+    113           * @param[out] channelId
+    114           *  The channel ID assigned by DMADRV.
+    115           *
+    116           * @param[in] capabilities
+    117           *  Not used.
+    118           *
+    119           * @return
+    120           *  @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    121           *  DMADRV @ref Ecode_t is returned.
+    122           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    123          Ecode_t DMADRV_AllocateChannel(unsigned int *channelId, void *capabilities)
+    124          {
+   \                     DMADRV_AllocateChannel: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    125            int i;
+    126            (void)capabilities;
+    127            CORE_DECLARE_IRQ_STATE;
+    128          
+    129            if ( !initialized ) {
+   \        0x6   0x.... 0x....      LDR.W    R0,??DataTable14_1
+   \        0xA   0x7800             LDRB     R0,[R0, #+0]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD102             BNE.N    ??DMADRV_AllocateChannel_0
+    130              return ECODE_EMDRV_DMADRV_NOT_INITIALIZED;
+   \       0x10   0x.... 0x....      LDR.W    R0,??DataTable14_2
+   \       0x14   0xE025             B.N      ??DMADRV_AllocateChannel_1
+    131            }
+    132          
+    133            if ( channelId == NULL ) {
+   \                     ??DMADRV_AllocateChannel_0: (+1)
+   \       0x16   0x2C00             CMP      R4,#+0
+   \       0x18   0xD102             BNE.N    ??DMADRV_AllocateChannel_2
+    134              return ECODE_EMDRV_DMADRV_PARAM_ERROR;
+   \       0x1A   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x1E   0xE020             B.N      ??DMADRV_AllocateChannel_1
+    135            }
+    136          
+    137            CORE_ENTER_ATOMIC();
+   \                     ??DMADRV_AllocateChannel_2: (+1)
+   \       0x20   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x24   0x0006             MOVS     R6,R0
+    138            for ( i = 0; i < (int)EMDRV_DMADRV_DMA_CH_COUNT; i++ ) {
+   \       0x26   0x2700             MOVS     R7,#+0
+   \                     ??DMADRV_AllocateChannel_3: (+1)
+   \       0x28   0x2F08             CMP      R7,#+8
+   \       0x2A   0xDA15             BGE.N    ??DMADRV_AllocateChannel_4
+    139              if ( !chTable[i].allocated ) {
+   \       0x2C   0x.... 0x....      LDR.W    R1,??DataTable14_4
+   \       0x30   0x0138             LSLS     R0,R7,#+4
+   \       0x32   0x4408             ADD      R0,R1,R0
+   \       0x34   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x36   0x2800             CMP      R0,#+0
+   \       0x38   0xD10C             BNE.N    ??DMADRV_AllocateChannel_5
+    140                *channelId           = i;
+   \       0x3A   0x6027             STR      R7,[R4, #+0]
+    141                chTable[i].allocated = true;
+   \       0x3C   0x2001             MOVS     R0,#+1
+   \       0x3E   0x013A             LSLS     R2,R7,#+4
+   \       0x40   0x440A             ADD      R2,R1,R2
+   \       0x42   0x7310             STRB     R0,[R2, #+12]
+    142                chTable[i].callback  = NULL;
+   \       0x44   0x2200             MOVS     R2,#+0
+   \       0x46   0x0138             LSLS     R0,R7,#+4
+   \       0x48   0x500A             STR      R2,[R1, R0]
+    143                CORE_EXIT_ATOMIC();
+   \       0x4A   0x0030             MOVS     R0,R6
+   \       0x4C   0x.... 0x....      BL       CORE_ExitAtomic
+    144                return ECODE_EMDRV_DMADRV_OK;
+   \       0x50   0x2000             MOVS     R0,#+0
+   \       0x52   0xE006             B.N      ??DMADRV_AllocateChannel_1
+    145              }
+    146            }
+   \                     ??DMADRV_AllocateChannel_5: (+1)
+   \       0x54   0x1C7F             ADDS     R7,R7,#+1
+   \       0x56   0xE7E7             B.N      ??DMADRV_AllocateChannel_3
+    147            CORE_EXIT_ATOMIC();
+   \                     ??DMADRV_AllocateChannel_4: (+1)
+   \       0x58   0x0030             MOVS     R0,R6
+   \       0x5A   0x.... 0x....      BL       CORE_ExitAtomic
+    148            return ECODE_EMDRV_DMADRV_CHANNELS_EXHAUSTED;
+   \       0x5E   0x.... 0x....      LDR.W    R0,??DataTable14_5
+   \                     ??DMADRV_AllocateChannel_1: (+1)
+   \       0x62   0xBDF2             POP      {R1,R4-R7,PC}
+    149          }
+    150          
+    151          /***************************************************************************//**
+    152           * @brief
+    153           *  Deinitialize DMADRV.
+    154           *
+    155           * @details
+    156           *  If DMA channels are not currently allocated, it will disable DMA hardware
+    157           *  and mask associated interrupts.
+    158           *
+    159           * @return
+    160           *  @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    161           *  DMADRV @ref Ecode_t is returned.
+    162           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    163          Ecode_t DMADRV_DeInit(void)
+    164          {
+   \                     DMADRV_DeInit: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    165            int i;
+    166            bool inUse;
+    167            CORE_DECLARE_IRQ_STATE;
+    168          
+    169            inUse = false;
+   \        0x2   0x2400             MOVS     R4,#+0
+    170          
+    171            CORE_ENTER_ATOMIC();
+   \        0x4   0x.... 0x....      BL       CORE_EnterAtomic
+   \        0x8   0x0005             MOVS     R5,R0
+    172            for ( i = 0; i < (int)EMDRV_DMADRV_DMA_CH_COUNT; i++ ) {
+   \        0xA   0x2600             MOVS     R6,#+0
+   \                     ??DMADRV_DeInit_0: (+1)
+   \        0xC   0x2E08             CMP      R6,#+8
+   \        0xE   0xDA0B             BGE.N    ??DMADRV_DeInit_1
+    173              if ( chTable[i].allocated ) {
+   \       0x10   0x.... 0x....      LDR.W    R1,??DataTable14_4
+   \       0x14   0x0130             LSLS     R0,R6,#+4
+   \       0x16   0x4408             ADD      R0,R1,R0
+   \       0x18   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD002             BEQ.N    ??DMADRV_DeInit_2
+    174                inUse = true;
+   \       0x1E   0x2001             MOVS     R0,#+1
+   \       0x20   0x0004             MOVS     R4,R0
+    175                break;
+   \       0x22   0xE001             B.N      ??DMADRV_DeInit_1
+    176              }
+    177            }
+   \                     ??DMADRV_DeInit_2: (+1)
+   \       0x24   0x1C76             ADDS     R6,R6,#+1
+   \       0x26   0xE7F1             B.N      ??DMADRV_DeInit_0
+    178          
+    179            if ( !inUse ) {
+   \                     ??DMADRV_DeInit_1: (+1)
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0xB2C0             UXTB     R0,R0
+   \       0x2C   0x2800             CMP      R0,#+0
+   \       0x2E   0xD10A             BNE.N    ??DMADRV_DeInit_3
+    180          #if defined(EMDRV_DMADRV_UDMA)
+    181              NVIC_DisableIRQ(DMA_IRQn);
+    182              DMA->IEN    = _DMA_IEN_RESETVALUE;
+    183              DMA->CONFIG = _DMA_CONFIG_RESETVALUE;
+    184              CMU_ClockEnable(cmuClock_DMA, false);
+    185          #elif defined(EMDRV_DMADRV_LDMA)
+    186              LDMA_DeInit();
+   \       0x30   0x.... 0x....      BL       LDMA_DeInit
+    187          #endif
+    188              initialized = false;
+   \       0x34   0x2100             MOVS     R1,#+0
+   \       0x36   0x.... 0x....      LDR.W    R0,??DataTable14_1
+   \       0x3A   0x7001             STRB     R1,[R0, #+0]
+    189              CORE_EXIT_ATOMIC();
+   \       0x3C   0x0028             MOVS     R0,R5
+   \       0x3E   0x.... 0x....      BL       CORE_ExitAtomic
+    190              return ECODE_EMDRV_DMADRV_OK;
+   \       0x42   0x2000             MOVS     R0,#+0
+   \       0x44   0xE004             B.N      ??DMADRV_DeInit_4
+    191            }
+    192            CORE_EXIT_ATOMIC();
+   \                     ??DMADRV_DeInit_3: (+1)
+   \       0x46   0x0028             MOVS     R0,R5
+   \       0x48   0x.... 0x....      BL       CORE_ExitAtomic
+    193          
+    194            return ECODE_EMDRV_DMADRV_IN_USE;
+   \       0x4C   0x.... 0x....      LDR.W    R0,??DataTable14_6
+   \                     ??DMADRV_DeInit_4: (+1)
+   \       0x50   0xBD70             POP      {R4-R6,PC}
+    195          }
+    196          
+    197          /***************************************************************************//**
+    198           * @brief
+    199           *  Free an allocated (reserved) DMA channel.
+    200           *
+    201           * @param[in] channelId
+    202           *  The channel ID to free.
+    203           *
+    204           * @return
+    205           *  @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    206           *  DMADRV @ref Ecode_t is returned.
+    207           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    208          Ecode_t DMADRV_FreeChannel(unsigned int channelId)
+    209          {
+   \                     DMADRV_FreeChannel: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    210            CORE_DECLARE_IRQ_STATE;
+    211          
+    212            if ( !initialized ) {
+   \        0x4   0x.... 0x....      LDR.W    R0,??DataTable14_1
+   \        0x8   0x7800             LDRB     R0,[R0, #+0]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD102             BNE.N    ??DMADRV_FreeChannel_0
+    213              return ECODE_EMDRV_DMADRV_NOT_INITIALIZED;
+   \        0xE   0x.... 0x....      LDR.W    R0,??DataTable14_2
+   \       0x12   0xE01C             B.N      ??DMADRV_FreeChannel_1
+    214            }
+    215          
+    216            if ( channelId >= EMDRV_DMADRV_DMA_CH_COUNT ) {
+   \                     ??DMADRV_FreeChannel_0: (+1)
+   \       0x14   0x2C08             CMP      R4,#+8
+   \       0x16   0xD302             BCC.N    ??DMADRV_FreeChannel_2
+    217              return ECODE_EMDRV_DMADRV_PARAM_ERROR;
+   \       0x18   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x1C   0xE017             B.N      ??DMADRV_FreeChannel_1
+    218            }
+    219          
+    220            CORE_ENTER_ATOMIC();
+   \                     ??DMADRV_FreeChannel_2: (+1)
+   \       0x1E   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x22   0x0005             MOVS     R5,R0
+    221            if ( chTable[channelId].allocated ) {
+   \       0x24   0x.... 0x....      LDR.W    R1,??DataTable14_4
+   \       0x28   0x0120             LSLS     R0,R4,#+4
+   \       0x2A   0x4408             ADD      R0,R1,R0
+   \       0x2C   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x2E   0x2800             CMP      R0,#+0
+   \       0x30   0xD008             BEQ.N    ??DMADRV_FreeChannel_3
+    222              chTable[channelId].allocated = false;
+   \       0x32   0x2000             MOVS     R0,#+0
+   \       0x34   0x0122             LSLS     R2,R4,#+4
+   \       0x36   0x4411             ADD      R1,R1,R2
+   \       0x38   0x7308             STRB     R0,[R1, #+12]
+    223              CORE_EXIT_ATOMIC();
+   \       0x3A   0x0028             MOVS     R0,R5
+   \       0x3C   0x.... 0x....      BL       CORE_ExitAtomic
+    224              return ECODE_EMDRV_DMADRV_OK;
+   \       0x40   0x2000             MOVS     R0,#+0
+   \       0x42   0xE004             B.N      ??DMADRV_FreeChannel_1
+    225            }
+    226            CORE_EXIT_ATOMIC();
+   \                     ??DMADRV_FreeChannel_3: (+1)
+   \       0x44   0x0028             MOVS     R0,R5
+   \       0x46   0x.... 0x....      BL       CORE_ExitAtomic
+    227          
+    228            return ECODE_EMDRV_DMADRV_ALREADY_FREED;
+   \       0x4A   0x.... 0x....      LDR.W    R0,??DataTable14_7
+   \                     ??DMADRV_FreeChannel_1: (+1)
+   \       0x4E   0xBD32             POP      {R1,R4,R5,PC}
+    229          }
+    230          
+    231          /***************************************************************************//**
+    232           * @brief
+    233           *  Initialize DMADRV.
+    234           *
+    235           * @details
+    236           *  The DMA hardware is initialized.
+    237           *
+    238           * @return
+    239           *  @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    240           *  DMADRV @ref Ecode_t is returned.
+    241           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    242          Ecode_t DMADRV_Init(void)
+    243          {
+   \                     DMADRV_Init: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    244            int i;
+    245            CORE_DECLARE_IRQ_STATE;
+    246          #if defined(EMDRV_DMADRV_UDMA)
+    247            DMA_Init_TypeDef dmaInit;
+    248          #elif defined(EMDRV_DMADRV_LDMA)
+    249            LDMA_Init_t dmaInit = LDMA_INIT_DEFAULT;
+   \        0x2   0x.... 0x....      LDR.W    R0,??DataTable14_8
+   \        0x6   0x6800             LDR      R0,[R0, #+0]
+   \        0x8   0x9000             STR      R0,[SP, #+0]
+    250            dmaInit.ldmaInitCtrlNumFixed = EMDRV_DMADRV_DMA_CH_PRIORITY;
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    251          #endif
+    252          
+    253            CORE_ENTER_ATOMIC();
+   \       0x10   0x.... 0x....      BL       CORE_EnterAtomic
+   \       0x14   0x0004             MOVS     R4,R0
+    254            if ( initialized ) {
+   \       0x16   0x.... 0x....      LDR.W    R1,??DataTable14_1
+   \       0x1A   0x7808             LDRB     R0,[R1, #+0]
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD005             BEQ.N    ??DMADRV_Init_0
+    255              CORE_EXIT_ATOMIC();
+   \       0x20   0x0020             MOVS     R0,R4
+   \       0x22   0x.... 0x....      BL       CORE_ExitAtomic
+    256              return ECODE_EMDRV_DMADRV_ALREADY_INITIALIZED;
+   \       0x26   0x.... 0x....      LDR.W    R0,??DataTable14_9
+   \       0x2A   0xE016             B.N      ??DMADRV_Init_1
+    257            }
+    258            initialized = true;
+   \                     ??DMADRV_Init_0: (+1)
+   \       0x2C   0x2001             MOVS     R0,#+1
+   \       0x2E   0x7008             STRB     R0,[R1, #+0]
+    259            CORE_EXIT_ATOMIC();
+   \       0x30   0x0020             MOVS     R0,R4
+   \       0x32   0x.... 0x....      BL       CORE_ExitAtomic
+    260          
+    261            if ( EMDRV_DMADRV_DMA_IRQ_PRIORITY >= (1 << __NVIC_PRIO_BITS) ) {
+    262              return ECODE_EMDRV_DMADRV_PARAM_ERROR;
+    263            }
+    264          
+    265            for ( i = 0; i < (int)EMDRV_DMADRV_DMA_CH_COUNT; i++ ) {
+   \       0x36   0x2500             MOVS     R5,#+0
+   \                     ??DMADRV_Init_2: (+1)
+   \       0x38   0x2D08             CMP      R5,#+8
+   \       0x3A   0xDA07             BGE.N    ??DMADRV_Init_3
+    266              chTable[i].allocated = false;
+   \       0x3C   0x2000             MOVS     R0,#+0
+   \       0x3E   0x.... 0x....      LDR.W    R2,??DataTable14_4
+   \       0x42   0x0129             LSLS     R1,R5,#+4
+   \       0x44   0x4411             ADD      R1,R2,R1
+   \       0x46   0x7308             STRB     R0,[R1, #+12]
+    267            }
+   \       0x48   0x1C6D             ADDS     R5,R5,#+1
+   \       0x4A   0xE7F5             B.N      ??DMADRV_Init_2
+    268          
+    269          #if defined(EMDRV_DMADRV_UDMA)
+    270            NVIC_SetPriority(DMA_IRQn, EMDRV_DMADRV_DMA_IRQ_PRIORITY);
+    271            dmaInit.hprot        = 0;
+    272            dmaInit.controlBlock = dmaControlBlock;
+    273            DMA_Init(&dmaInit);
+    274          #elif defined(EMDRV_DMADRV_LDMA)
+    275            dmaInit.ldmaInitIrqPriority = EMDRV_DMADRV_DMA_IRQ_PRIORITY;
+   \                     ??DMADRV_Init_3: (+1)
+   \       0x4C   0x2004             MOVS     R0,#+4
+   \       0x4E   0xF88D 0x0003      STRB     R0,[SP, #+3]
+    276            LDMA_Init(&dmaInit);
+   \       0x52   0x4668             MOV      R0,SP
+   \       0x54   0x.... 0x....      BL       LDMA_Init
+    277          #endif
+    278          
+    279            return ECODE_EMDRV_DMADRV_OK;
+   \       0x58   0x2000             MOVS     R0,#+0
+   \                     ??DMADRV_Init_1: (+1)
+   \       0x5A   0xBD32             POP      {R1,R4,R5,PC}
+    280          }
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x1E 0x00          DC8 30, 0, 0, 3
+   \              0x00 0x03
+    281          
+    282          #if defined(EMDRV_DMADRV_LDMA) || defined(DOXYGEN)
+    283          /***************************************************************************//**
+    284           * @brief
+    285           *  Start an LDMA transfer.
+    286           *
+    287           * @details
+    288           *  This function is similar to the emlib LDMA function.
+    289           *
+    290           * @param[in] channelId
+    291           *  The channel ID to use.
+    292           *
+    293           * @param[in] transfer
+    294           *  A DMA transfer configuration data structure.
+    295           *
+    296           * @param[in] descriptor
+    297           *  A DMA transfer descriptor, can be an array of descriptors linked together.
+    298           *
+    299           * @param[in] callback
+    300           *  An optional callback function for signalling completion. May be NULL if not
+    301           *  needed.
+    302           *
+    303           * @param[in] cbUserParam
+    304           *  An optional user parameter to feed to the callback function. May be NULL if
+    305           *  not needed.
+    306           *
+    307           * @return
+    308           *   @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    309           *   DMADRV @ref Ecode_t is returned.
+    310           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    311          Ecode_t DMADRV_LdmaStartTransfer(int                channelId,
+    312                                           LDMA_TransferCfg_t *transfer,
+    313                                           LDMA_Descriptor_t  *descriptor,
+    314                                           DMADRV_Callback_t  callback,
+    315                                           void               *cbUserParam)
+    316          {
+   \                     DMADRV_LdmaStartTransfer: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+   \        0xC   0xF8DD 0x8020      LDR      R8,[SP, #+32]
+    317            ChTable_t *ch;
+    318          
+    319            if ( !initialized ) {
+   \       0x10   0x.... 0x....      LDR.W    R0,??DataTable14_1
+   \       0x14   0x7800             LDRB     R0,[R0, #+0]
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD102             BNE.N    ??DMADRV_LdmaStartTransfer_0
+    320              return ECODE_EMDRV_DMADRV_NOT_INITIALIZED;
+   \       0x1A   0x.... 0x....      LDR.W    R0,??DataTable14_2
+   \       0x1E   0xE01D             B.N      ??DMADRV_LdmaStartTransfer_1
+    321            }
+    322          
+    323            if ( channelId >= (int)EMDRV_DMADRV_DMA_CH_COUNT ) {
+   \                     ??DMADRV_LdmaStartTransfer_0: (+1)
+   \       0x20   0x2C08             CMP      R4,#+8
+   \       0x22   0xDB02             BLT.N    ??DMADRV_LdmaStartTransfer_2
+    324              return ECODE_EMDRV_DMADRV_PARAM_ERROR;
+   \       0x24   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x28   0xE018             B.N      ??DMADRV_LdmaStartTransfer_1
+    325            }
+    326          
+    327            ch = &chTable[channelId];
+   \                     ??DMADRV_LdmaStartTransfer_2: (+1)
+   \       0x2A   0x.... 0x....      LDR.W    R1,??DataTable14_4
+   \       0x2E   0x0120             LSLS     R0,R4,#+4
+   \       0x30   0xEB01 0x0900      ADD      R9,R1,R0
+    328            if ( ch->allocated == false ) {
+   \       0x34   0xF899 0x000C      LDRB     R0,[R9, #+12]
+   \       0x38   0x2800             CMP      R0,#+0
+   \       0x3A   0xD102             BNE.N    ??DMADRV_LdmaStartTransfer_3
+    329              return ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED;
+   \       0x3C   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \       0x40   0xE00C             B.N      ??DMADRV_LdmaStartTransfer_1
+    330            }
+    331          
+    332            ch->callback      = callback;
+   \                     ??DMADRV_LdmaStartTransfer_3: (+1)
+   \       0x42   0xF8C9 0x7000      STR      R7,[R9, #+0]
+    333            ch->userParam     = cbUserParam;
+   \       0x46   0xF8C9 0x8004      STR      R8,[R9, #+4]
+    334            ch->callbackCount = 0;
+   \       0x4A   0x2000             MOVS     R0,#+0
+   \       0x4C   0xF8C9 0x0008      STR      R0,[R9, #+8]
+    335            LDMA_StartTransfer(channelId, transfer, descriptor);
+   \       0x50   0x0032             MOVS     R2,R6
+   \       0x52   0x0029             MOVS     R1,R5
+   \       0x54   0x0020             MOVS     R0,R4
+   \       0x56   0x.... 0x....      BL       LDMA_StartTransfer
+    336          
+    337            return ECODE_EMDRV_DMADRV_OK;
+   \       0x5A   0x2000             MOVS     R0,#+0
+   \                     ??DMADRV_LdmaStartTransfer_1: (+1)
+   \       0x5C   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+    338          }
+    339          #endif
+    340          
+    341          /***************************************************************************//**
+    342           * @brief
+    343           *  Start a memory to a peripheral DMA transfer.
+    344           *
+    345           * @param[in] channelId
+    346           *  The channel ID to use for the transfer.
+    347           *
+    348           * @param[in] peripheralSignal
+    349           *  Selects which peripheral/peripheralsignal to use.
+    350           *
+    351           * @param[in] dst
+    352           *  A destination (peripheral register) memory address.
+    353           *
+    354           * @param[in] src
+    355           *  A source memory address.
+    356           *
+    357           * @param[in] srcInc
+    358           *  Set to true to enable source address increment (increments according to
+    359           *  @a size parameter).
+    360           *
+    361           * @param[in] len
+    362           *  A number of items (of @a size size) to transfer.
+    363           *
+    364           * @param[in] size
+    365           *  An item size, byte, halfword or word.
+    366           *
+    367           * @param[in] callback
+    368           *  A function to call on DMA completion, use NULL if not needed.
+    369           *
+    370           * @param[in] cbUserParam
+    371           *  An optional user parameter to feed to the callback function. Use NULL if
+    372           *  not needed.
+    373           *
+    374           * @return
+    375           *   @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    376           *   DMADRV @ref Ecode_t is returned.
+    377           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    378          Ecode_t DMADRV_MemoryPeripheral(unsigned int          channelId,
+    379                                          DMADRV_PeripheralSignal_t
+    380                                          peripheralSignal,
+    381                                          void                  *dst,
+    382                                          void                  *src,
+    383                                          bool                  srcInc,
+    384                                          int                   len,
+    385                                          DMADRV_DataSize_t     size,
+    386                                          DMADRV_Callback_t     callback,
+    387                                          void                  *cbUserParam)
+    388          {
+   \                     DMADRV_MemoryPeripheral: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB088             SUB      SP,SP,#+32
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    389            return StartTransfer(dmaModeBasic,
+    390                                 dmaDirectionMemToPeripheral,
+    391                                 channelId,
+    392                                 peripheralSignal,
+    393                                 dst,
+    394                                 src,
+    395                                 NULL,
+    396                                 srcInc,
+    397                                 len,
+    398                                 size,
+    399                                 callback,
+    400                                 cbUserParam);
+   \        0xC   0x9812             LDR      R0,[SP, #+72]
+   \        0xE   0x9007             STR      R0,[SP, #+28]
+   \       0x10   0x9811             LDR      R0,[SP, #+68]
+   \       0x12   0x9006             STR      R0,[SP, #+24]
+   \       0x14   0xF89D 0x0040      LDRB     R0,[SP, #+64]
+   \       0x18   0x9005             STR      R0,[SP, #+20]
+   \       0x1A   0x980F             LDR      R0,[SP, #+60]
+   \       0x1C   0x9004             STR      R0,[SP, #+16]
+   \       0x1E   0xF89D 0x0038      LDRB     R0,[SP, #+56]
+   \       0x22   0x9003             STR      R0,[SP, #+12]
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0x9002             STR      R0,[SP, #+8]
+   \       0x28   0x9701             STR      R7,[SP, #+4]
+   \       0x2A   0x9600             STR      R6,[SP, #+0]
+   \       0x2C   0x002B             MOVS     R3,R5
+   \       0x2E   0x0022             MOVS     R2,R4
+   \       0x30   0x2100             MOVS     R1,#+0
+   \       0x32   0x2000             MOVS     R0,#+0
+   \       0x34   0x.... 0x....      BL       StartTransfer
+   \       0x38   0xB009             ADD      SP,SP,#+36
+   \       0x3A   0xBDF0             POP      {R4-R7,PC}
+    401          }
+    402          
+    403          /***************************************************************************//**
+    404           * @brief
+    405           *  Start a memory to a peripheral ping-pong DMA transfer.
+    406           *
+    407           * @param[in] channelId
+    408           *  The channel ID to use for the transfer.
+    409           *
+    410           * @param[in] peripheralSignal
+    411           *  Selects which peripheral/peripheralsignal to use.
+    412           *
+    413           * @param[in] dst
+    414           *  A destination (peripheral register) memory address.
+    415           *
+    416           * @param[in] src0
+    417           *  A source memory address of the first (ping) buffer.
+    418           *
+    419           * @param[in] src1
+    420           *  A source memory address of the second (pong) buffer.
+    421           *
+    422           * @param[in] srcInc
+    423           *  Set to true to enable source address increment (increments according to
+    424           *  @a size parameter).
+    425           *
+    426           * @param[in] len
+    427           *  A number of items (of @a size size) to transfer.
+    428           *
+    429           * @param[in] size
+    430           *  An item size, byte, halfword or word.
+    431           *
+    432           * @param[in] callback
+    433           *  A function to call on DMA completion, use NULL if not needed.
+    434           *
+    435           * @param[in] cbUserParam
+    436           *  An optional user parameter to feed to the callback function. Use NULL if
+    437           *  not needed.
+    438           *
+    439           * @return
+    440           *   @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    441           *   DMADRV @ref Ecode_t is returned.
+    442           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    443          Ecode_t DMADRV_MemoryPeripheralPingPong(
+    444            unsigned int          channelId,
+    445            DMADRV_PeripheralSignal_t
+    446            peripheralSignal,
+    447            void                  *dst,
+    448            void                  *src0,
+    449            void                  *src1,
+    450            bool                  srcInc,
+    451            int                   len,
+    452            DMADRV_DataSize_t     size,
+    453            DMADRV_Callback_t     callback,
+    454            void                  *cbUserParam)
+    455          {
+   \                     DMADRV_MemoryPeripheralPingPong: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB088             SUB      SP,SP,#+32
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    456            return StartTransfer(dmaModePingPong,
+    457                                 dmaDirectionMemToPeripheral,
+    458                                 channelId,
+    459                                 peripheralSignal,
+    460                                 dst,
+    461                                 src0,
+    462                                 src1,
+    463                                 srcInc,
+    464                                 len,
+    465                                 size,
+    466                                 callback,
+    467                                 cbUserParam);
+   \        0xC   0x9813             LDR      R0,[SP, #+76]
+   \        0xE   0x9007             STR      R0,[SP, #+28]
+   \       0x10   0x9812             LDR      R0,[SP, #+72]
+   \       0x12   0x9006             STR      R0,[SP, #+24]
+   \       0x14   0xF89D 0x0044      LDRB     R0,[SP, #+68]
+   \       0x18   0x9005             STR      R0,[SP, #+20]
+   \       0x1A   0x9810             LDR      R0,[SP, #+64]
+   \       0x1C   0x9004             STR      R0,[SP, #+16]
+   \       0x1E   0xF89D 0x003C      LDRB     R0,[SP, #+60]
+   \       0x22   0x9003             STR      R0,[SP, #+12]
+   \       0x24   0x980E             LDR      R0,[SP, #+56]
+   \       0x26   0x9002             STR      R0,[SP, #+8]
+   \       0x28   0x9701             STR      R7,[SP, #+4]
+   \       0x2A   0x9600             STR      R6,[SP, #+0]
+   \       0x2C   0x002B             MOVS     R3,R5
+   \       0x2E   0x0022             MOVS     R2,R4
+   \       0x30   0x2100             MOVS     R1,#+0
+   \       0x32   0x2001             MOVS     R0,#+1
+   \       0x34   0x.... 0x....      BL       StartTransfer
+   \       0x38   0xB009             ADD      SP,SP,#+36
+   \       0x3A   0xBDF0             POP      {R4-R7,PC}
+    468          }
+    469          
+    470          /***************************************************************************//**
+    471           * @brief
+    472           *  Start a peripheral to memory DMA transfer.
+    473           *
+    474           * @param[in] channelId
+    475           *  The channel ID to use for the transfer.
+    476           *
+    477           * @param[in] peripheralSignal
+    478           *  Selects which peripheral/peripheralsignal to use.
+    479           *
+    480           * @param[in] dst
+    481           *  A destination memory address.
+    482           *
+    483           * @param[in] src
+    484           *  A source memory (peripheral register) address.
+    485           *
+    486           * @param[in] dstInc
+    487           *  Set to true to enable destination address increment (increments according
+    488           *  to @a size parameter).
+    489           *
+    490           * @param[in] len
+    491           *  A number of items (of @a size size) to transfer.
+    492           *
+    493           * @param[in] size
+    494           *  An item size, byte, halfword or word.
+    495           *
+    496           * @param[in] callback
+    497           *  A function to call on DMA completion, use NULL if not needed.
+    498           *
+    499           * @param[in] cbUserParam
+    500           *  An optional user parameter to feed to the callback function. Use NULL if
+    501           *  not needed.
+    502           *
+    503           * @return
+    504           *   @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    505           *   DMADRV @ref Ecode_t is returned.
+    506           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    507          Ecode_t DMADRV_PeripheralMemory(unsigned int          channelId,
+    508                                          DMADRV_PeripheralSignal_t
+    509                                          peripheralSignal,
+    510                                          void                  *dst,
+    511                                          void                  *src,
+    512                                          bool                  dstInc,
+    513                                          int                   len,
+    514                                          DMADRV_DataSize_t     size,
+    515                                          DMADRV_Callback_t     callback,
+    516                                          void                  *cbUserParam)
+    517          {
+   \                     DMADRV_PeripheralMemory: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB088             SUB      SP,SP,#+32
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    518            return StartTransfer(dmaModeBasic,
+    519                                 dmaDirectionPeripheralToMem,
+    520                                 channelId,
+    521                                 peripheralSignal,
+    522                                 dst,
+    523                                 src,
+    524                                 NULL,
+    525                                 dstInc,
+    526                                 len,
+    527                                 size,
+    528                                 callback,
+    529                                 cbUserParam);
+   \        0xC   0x9812             LDR      R0,[SP, #+72]
+   \        0xE   0x9007             STR      R0,[SP, #+28]
+   \       0x10   0x9811             LDR      R0,[SP, #+68]
+   \       0x12   0x9006             STR      R0,[SP, #+24]
+   \       0x14   0xF89D 0x0040      LDRB     R0,[SP, #+64]
+   \       0x18   0x9005             STR      R0,[SP, #+20]
+   \       0x1A   0x980F             LDR      R0,[SP, #+60]
+   \       0x1C   0x9004             STR      R0,[SP, #+16]
+   \       0x1E   0xF89D 0x0038      LDRB     R0,[SP, #+56]
+   \       0x22   0x9003             STR      R0,[SP, #+12]
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0x9002             STR      R0,[SP, #+8]
+   \       0x28   0x9701             STR      R7,[SP, #+4]
+   \       0x2A   0x9600             STR      R6,[SP, #+0]
+   \       0x2C   0x002B             MOVS     R3,R5
+   \       0x2E   0x0022             MOVS     R2,R4
+   \       0x30   0x2101             MOVS     R1,#+1
+   \       0x32   0x2000             MOVS     R0,#+0
+   \       0x34   0x.... 0x....      BL       StartTransfer
+   \       0x38   0xB009             ADD      SP,SP,#+36
+   \       0x3A   0xBDF0             POP      {R4-R7,PC}
+    530          }
+    531          
+    532          /***************************************************************************//**
+    533           * @brief
+    534           *  Start a peripheral to memory ping-pong DMA transfer.
+    535           *
+    536           * @param[in] channelId
+    537           *  The channel ID to use for the transfer.
+    538           *
+    539           * @param[in] peripheralSignal
+    540           *  Selects which peripheral/peripheralsignal to use.
+    541           *
+    542           * @param[in] dst0
+    543           *  A destination memory address of the first (ping) buffer.
+    544           *
+    545           * @param[in] dst1
+    546           *  A destination memory address of the second (pong) buffer.
+    547           *
+    548           * @param[in] src
+    549           *  A source memory (peripheral register) address.
+    550           *
+    551           * @param[in] dstInc
+    552           *  Set to true to enable destination address increment (increments according
+    553           *  to @a size parameter).
+    554           *
+    555           * @param[in] len
+    556           *  A number of items (of @a size size) to transfer.
+    557           *
+    558           * @param[in] size
+    559           *  An item size, byte, halfword or word.
+    560           *
+    561           * @param[in] callback
+    562           *  A function to call on DMA completion, use NULL if not needed.
+    563           *
+    564           * @param[in] cbUserParam
+    565           *  An optional user parameter to feed to the callback function. Use NULL if
+    566           *  not needed.
+    567           *
+    568           * @return
+    569           *   @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    570           *   DMADRV @ref Ecode_t is returned.
+    571           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    572          Ecode_t DMADRV_PeripheralMemoryPingPong(
+    573            unsigned int          channelId,
+    574            DMADRV_PeripheralSignal_t
+    575            peripheralSignal,
+    576            void                  *dst0,
+    577            void                  *dst1,
+    578            void                  *src,
+    579            bool                  dstInc,
+    580            int                   len,
+    581            DMADRV_DataSize_t     size,
+    582            DMADRV_Callback_t     callback,
+    583            void                  *cbUserParam)
+    584          {
+   \                     DMADRV_PeripheralMemoryPingPong: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB088             SUB      SP,SP,#+32
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    585            return StartTransfer(dmaModePingPong,
+    586                                 dmaDirectionPeripheralToMem,
+    587                                 channelId,
+    588                                 peripheralSignal,
+    589                                 dst0,
+    590                                 dst1,
+    591                                 src,
+    592                                 dstInc,
+    593                                 len,
+    594                                 size,
+    595                                 callback,
+    596                                 cbUserParam);
+   \        0xC   0x9813             LDR      R0,[SP, #+76]
+   \        0xE   0x9007             STR      R0,[SP, #+28]
+   \       0x10   0x9812             LDR      R0,[SP, #+72]
+   \       0x12   0x9006             STR      R0,[SP, #+24]
+   \       0x14   0xF89D 0x0044      LDRB     R0,[SP, #+68]
+   \       0x18   0x9005             STR      R0,[SP, #+20]
+   \       0x1A   0x9810             LDR      R0,[SP, #+64]
+   \       0x1C   0x9004             STR      R0,[SP, #+16]
+   \       0x1E   0xF89D 0x003C      LDRB     R0,[SP, #+60]
+   \       0x22   0x9003             STR      R0,[SP, #+12]
+   \       0x24   0x980E             LDR      R0,[SP, #+56]
+   \       0x26   0x9002             STR      R0,[SP, #+8]
+   \       0x28   0x9701             STR      R7,[SP, #+4]
+   \       0x2A   0x9600             STR      R6,[SP, #+0]
+   \       0x2C   0x002B             MOVS     R3,R5
+   \       0x2E   0x0022             MOVS     R2,R4
+   \       0x30   0x2101             MOVS     R1,#+1
+   \       0x32   0x2001             MOVS     R0,#+1
+   \       0x34   0x.... 0x....      BL       StartTransfer
+   \       0x38   0xB009             ADD      SP,SP,#+36
+   \       0x3A   0xBDF0             POP      {R4-R7,PC}
+    597          }
+    598          
+    599          /***************************************************************************//**
+    600           * @brief
+    601           *  Pause an ongoing DMA transfer.
+    602           *
+    603           * @param[in] channelId
+    604           *  The channel ID of the transfer to pause.
+    605           *
+    606           * @return
+    607           *  @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    608           *  DMADRV @ref Ecode_t is returned.
+    609           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    610          Ecode_t DMADRV_PauseTransfer(unsigned int channelId)
+    611          {
+   \                     DMADRV_PauseTransfer: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    612            if ( !initialized ) {
+   \        0x4   0x.... 0x....      LDR.W    R0,??DataTable14_1
+   \        0x8   0x7800             LDRB     R0,[R0, #+0]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD102             BNE.N    ??DMADRV_PauseTransfer_0
+    613              return ECODE_EMDRV_DMADRV_NOT_INITIALIZED;
+   \        0xE   0x.... 0x....      LDR.W    R0,??DataTable14_2
+   \       0x12   0xE013             B.N      ??DMADRV_PauseTransfer_1
+    614            }
+    615          
+    616            if ( channelId >= EMDRV_DMADRV_DMA_CH_COUNT ) {
+   \                     ??DMADRV_PauseTransfer_0: (+1)
+   \       0x14   0x2C08             CMP      R4,#+8
+   \       0x16   0xD302             BCC.N    ??DMADRV_PauseTransfer_2
+    617              return ECODE_EMDRV_DMADRV_PARAM_ERROR;
+   \       0x18   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x1C   0xE00E             B.N      ??DMADRV_PauseTransfer_1
+    618            }
+    619          
+    620            if ( chTable[channelId].allocated == false ) {
+   \                     ??DMADRV_PauseTransfer_2: (+1)
+   \       0x1E   0x.... 0x....      LDR.W    R1,??DataTable14_4
+   \       0x22   0x0120             LSLS     R0,R4,#+4
+   \       0x24   0x4408             ADD      R0,R1,R0
+   \       0x26   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x28   0x2800             CMP      R0,#+0
+   \       0x2A   0xD102             BNE.N    ??DMADRV_PauseTransfer_3
+    621              return ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED;
+   \       0x2C   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \       0x30   0xE004             B.N      ??DMADRV_PauseTransfer_1
+    622            }
+    623          
+    624          #if defined(EMDRV_DMADRV_UDMA)
+    625            DMA_ChannelRequestEnable(channelId, false);
+    626          #elif defined(EMDRV_DMADRV_LDMA)
+    627            LDMA_EnableChannelRequest(channelId, false);
+   \                     ??DMADRV_PauseTransfer_3: (+1)
+   \       0x32   0x2100             MOVS     R1,#+0
+   \       0x34   0x0020             MOVS     R0,R4
+   \       0x36   0x.... 0x....      BL       LDMA_EnableChannelRequest
+    628          #endif
+    629          
+    630            return ECODE_EMDRV_DMADRV_OK;
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \                     ??DMADRV_PauseTransfer_1: (+1)
+   \       0x3C   0xBD10             POP      {R4,PC}
+    631          }
+    632          
+    633          /***************************************************************************//**
+    634           * @brief
+    635           *  Resume an ongoing DMA transfer.
+    636           *
+    637           * @param[in] channelId
+    638           *  The channel ID of the transfer to resume.
+    639           *
+    640           * @return
+    641           *  @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    642           *  DMADRV @ref Ecode_t is returned.
+    643           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    644          Ecode_t DMADRV_ResumeTransfer(unsigned int channelId)
+    645          {
+   \                     DMADRV_ResumeTransfer: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    646            if ( !initialized ) {
+   \        0x4   0x.... 0x....      LDR.W    R0,??DataTable14_1
+   \        0x8   0x7800             LDRB     R0,[R0, #+0]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD102             BNE.N    ??DMADRV_ResumeTransfer_0
+    647              return ECODE_EMDRV_DMADRV_NOT_INITIALIZED;
+   \        0xE   0x.... 0x....      LDR.W    R0,??DataTable14_2
+   \       0x12   0xE013             B.N      ??DMADRV_ResumeTransfer_1
+    648            }
+    649          
+    650            if ( channelId >= EMDRV_DMADRV_DMA_CH_COUNT ) {
+   \                     ??DMADRV_ResumeTransfer_0: (+1)
+   \       0x14   0x2C08             CMP      R4,#+8
+   \       0x16   0xD302             BCC.N    ??DMADRV_ResumeTransfer_2
+    651              return ECODE_EMDRV_DMADRV_PARAM_ERROR;
+   \       0x18   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x1C   0xE00E             B.N      ??DMADRV_ResumeTransfer_1
+    652            }
+    653          
+    654            if ( chTable[channelId].allocated == false ) {
+   \                     ??DMADRV_ResumeTransfer_2: (+1)
+   \       0x1E   0x.... 0x....      LDR.W    R1,??DataTable14_4
+   \       0x22   0x0120             LSLS     R0,R4,#+4
+   \       0x24   0x4408             ADD      R0,R1,R0
+   \       0x26   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x28   0x2800             CMP      R0,#+0
+   \       0x2A   0xD102             BNE.N    ??DMADRV_ResumeTransfer_3
+    655              return ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED;
+   \       0x2C   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \       0x30   0xE004             B.N      ??DMADRV_ResumeTransfer_1
+    656            }
+    657          
+    658          #if defined(EMDRV_DMADRV_UDMA)
+    659            DMA_ChannelRequestEnable(channelId, true);
+    660          #elif defined(EMDRV_DMADRV_LDMA)
+    661            LDMA_EnableChannelRequest(channelId, true);
+   \                     ??DMADRV_ResumeTransfer_3: (+1)
+   \       0x32   0x2101             MOVS     R1,#+1
+   \       0x34   0x0020             MOVS     R0,R4
+   \       0x36   0x.... 0x....      BL       LDMA_EnableChannelRequest
+    662          #endif
+    663          
+    664            return ECODE_EMDRV_DMADRV_OK;
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \                     ??DMADRV_ResumeTransfer_1: (+1)
+   \       0x3C   0xBD10             POP      {R4,PC}
+    665          }
+    666          
+    667          /***************************************************************************//**
+    668           * @brief
+    669           *  Stop an ongoing DMA transfer.
+    670           *
+    671           * @param[in] channelId
+    672           *  The channel ID of the transfer to stop.
+    673           *
+    674           * @return
+    675           *  @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    676           *  DMADRV @ref Ecode_t is returned.
+    677           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    678          Ecode_t DMADRV_StopTransfer(unsigned int channelId)
+    679          {
+   \                     DMADRV_StopTransfer: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    680            if ( !initialized ) {
+   \        0x4   0x.... 0x....      LDR.W    R0,??DataTable14_1
+   \        0x8   0x7800             LDRB     R0,[R0, #+0]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD102             BNE.N    ??DMADRV_StopTransfer_0
+    681              return ECODE_EMDRV_DMADRV_NOT_INITIALIZED;
+   \        0xE   0x.... 0x....      LDR.W    R0,??DataTable14_2
+   \       0x12   0xE012             B.N      ??DMADRV_StopTransfer_1
+    682            }
+    683          
+    684            if ( channelId >= EMDRV_DMADRV_DMA_CH_COUNT ) {
+   \                     ??DMADRV_StopTransfer_0: (+1)
+   \       0x14   0x2C08             CMP      R4,#+8
+   \       0x16   0xD302             BCC.N    ??DMADRV_StopTransfer_2
+    685              return ECODE_EMDRV_DMADRV_PARAM_ERROR;
+   \       0x18   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x1C   0xE00D             B.N      ??DMADRV_StopTransfer_1
+    686            }
+    687          
+    688            if ( chTable[channelId].allocated == false ) {
+   \                     ??DMADRV_StopTransfer_2: (+1)
+   \       0x1E   0x.... 0x....      LDR.W    R1,??DataTable14_4
+   \       0x22   0x0120             LSLS     R0,R4,#+4
+   \       0x24   0x4408             ADD      R0,R1,R0
+   \       0x26   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x28   0x2800             CMP      R0,#+0
+   \       0x2A   0xD102             BNE.N    ??DMADRV_StopTransfer_3
+    689              return ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED;
+   \       0x2C   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \       0x30   0xE003             B.N      ??DMADRV_StopTransfer_1
+    690            }
+    691          
+    692          #if defined(EMDRV_DMADRV_UDMA)
+    693            DMA_ChannelEnable(channelId, false);
+    694          #elif defined(EMDRV_DMADRV_LDMA)
+    695            LDMA_StopTransfer(channelId);
+   \                     ??DMADRV_StopTransfer_3: (+1)
+   \       0x32   0x0020             MOVS     R0,R4
+   \       0x34   0x.... 0x....      BL       LDMA_StopTransfer
+    696          #endif
+    697          
+    698            return ECODE_EMDRV_DMADRV_OK;
+   \       0x38   0x2000             MOVS     R0,#+0
+   \                     ??DMADRV_StopTransfer_1: (+1)
+   \       0x3A   0xBD10             POP      {R4,PC}
+    699          }
+    700          
+    701          /***************************************************************************//**
+    702           * @brief
+    703           *  Check if a transfer is running.
+    704           *
+    705           * @param[in] channelId
+    706           *  The channel ID of the transfer to check.
+    707           *
+    708           * @param[out] active
+    709           *  True if transfer is running, false otherwise.
+    710           *
+    711           * @return
+    712           *  @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    713           *  DMADRV @ref Ecode_t is returned.
+    714           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    715          Ecode_t DMADRV_TransferActive(unsigned int channelId, bool *active)
+    716          {
+   \                     DMADRV_TransferActive: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    717            if ( !initialized ) {
+   \        0x6   0x.... 0x....      LDR.W    R0,??DataTable14_1
+   \        0xA   0x7800             LDRB     R0,[R0, #+0]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD102             BNE.N    ??DMADRV_TransferActive_0
+    718              return ECODE_EMDRV_DMADRV_NOT_INITIALIZED;
+   \       0x10   0x.... 0x....      LDR.W    R0,??DataTable14_2
+   \       0x14   0xE01B             B.N      ??DMADRV_TransferActive_1
+    719            }
+    720          
+    721            if ( (channelId >= EMDRV_DMADRV_DMA_CH_COUNT)
+    722                 || (active == NULL) ) {
+   \                     ??DMADRV_TransferActive_0: (+1)
+   \       0x16   0x2D08             CMP      R5,#+8
+   \       0x18   0xD201             BCS.N    ??DMADRV_TransferActive_2
+   \       0x1A   0x2C00             CMP      R4,#+0
+   \       0x1C   0xD102             BNE.N    ??DMADRV_TransferActive_3
+    723              return ECODE_EMDRV_DMADRV_PARAM_ERROR;
+   \                     ??DMADRV_TransferActive_2: (+1)
+   \       0x1E   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x22   0xE014             B.N      ??DMADRV_TransferActive_1
+    724            }
+    725          
+    726            if ( chTable[channelId].allocated == false ) {
+   \                     ??DMADRV_TransferActive_3: (+1)
+   \       0x24   0x.... 0x....      LDR.W    R1,??DataTable14_4
+   \       0x28   0x0128             LSLS     R0,R5,#+4
+   \       0x2A   0x4408             ADD      R0,R1,R0
+   \       0x2C   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x2E   0x2800             CMP      R0,#+0
+   \       0x30   0xD102             BNE.N    ??DMADRV_TransferActive_4
+    727              return ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED;
+   \       0x32   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \       0x36   0xE00A             B.N      ??DMADRV_TransferActive_1
+    728            }
+    729          
+    730          #if defined(EMDRV_DMADRV_UDMA)
+    731            if ( DMA_ChannelEnabled(channelId) )
+    732          #elif defined(EMDRV_DMADRV_LDMA)
+    733            if ( LDMA_ChannelEnabled(channelId) )
+   \                     ??DMADRV_TransferActive_4: (+1)
+   \       0x38   0x0028             MOVS     R0,R5
+   \       0x3A   0x.... 0x....      BL       LDMA_ChannelEnabled
+   \       0x3E   0x2800             CMP      R0,#+0
+   \       0x40   0xD002             BEQ.N    ??DMADRV_TransferActive_5
+    734          #endif
+    735            {
+    736              *active = true;
+   \       0x42   0x2001             MOVS     R0,#+1
+   \       0x44   0x7020             STRB     R0,[R4, #+0]
+   \       0x46   0xE001             B.N      ??DMADRV_TransferActive_6
+    737            } else {
+    738              *active = false;
+   \                     ??DMADRV_TransferActive_5: (+1)
+   \       0x48   0x2000             MOVS     R0,#+0
+   \       0x4A   0x7020             STRB     R0,[R4, #+0]
+    739            }
+    740          
+    741            return ECODE_EMDRV_DMADRV_OK;
+   \                     ??DMADRV_TransferActive_6: (+1)
+   \       0x4C   0x2000             MOVS     R0,#+0
+   \                     ??DMADRV_TransferActive_1: (+1)
+   \       0x4E   0xBD32             POP      {R1,R4,R5,PC}
+    742          }
+    743          
+    744          /***************************************************************************//**
+    745           * @brief
+    746           *  Check if a transfer complete is pending.
+    747           *
+    748           * @details
+    749           *  Will check the channel interrupt flag. This assumes that the DMA is configured
+    750           *  to give a completion interrupt.
+    751           *
+    752           * @param[in] channelId
+    753           *  The channel ID of the transfer to check.
+    754           *
+    755           * @param[out] pending
+    756           *  True if a transfer complete is pending, false otherwise.
+    757           *
+    758           * @return
+    759           *  @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    760           *  DMADRV @ref Ecode_t is returned.
+    761           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    762          Ecode_t DMADRV_TransferCompletePending(unsigned int channelId, bool *pending)
+    763          {
+   \                     DMADRV_TransferCompletePending: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+    764            if ( !initialized ) {
+   \        0x2   0x....             LDR.N    R0,??DataTable14_1
+   \        0x4   0x7800             LDRB     R0,[R0, #+0]
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD101             BNE.N    ??DMADRV_TransferCompletePending_0
+    765              return ECODE_EMDRV_DMADRV_NOT_INITIALIZED;
+   \        0xA   0x....             LDR.N    R0,??DataTable14_2
+   \        0xC   0xE018             B.N      ??DMADRV_TransferCompletePending_1
+    766            }
+    767          
+    768            if ( (channelId >= EMDRV_DMADRV_DMA_CH_COUNT)
+    769                 || (pending == NULL) ) {
+   \                     ??DMADRV_TransferCompletePending_0: (+1)
+   \        0xE   0x2A08             CMP      R2,#+8
+   \       0x10   0xD201             BCS.N    ??DMADRV_TransferCompletePending_2
+   \       0x12   0x2900             CMP      R1,#+0
+   \       0x14   0xD101             BNE.N    ??DMADRV_TransferCompletePending_3
+    770              return ECODE_EMDRV_DMADRV_PARAM_ERROR;
+   \                     ??DMADRV_TransferCompletePending_2: (+1)
+   \       0x16   0x....             LDR.N    R0,??DataTable14_3
+   \       0x18   0xE012             B.N      ??DMADRV_TransferCompletePending_1
+    771            }
+    772          
+    773            if ( chTable[channelId].allocated == false ) {
+   \                     ??DMADRV_TransferCompletePending_3: (+1)
+   \       0x1A   0x....             LDR.N    R3,??DataTable14_4
+   \       0x1C   0x0110             LSLS     R0,R2,#+4
+   \       0x1E   0x4418             ADD      R0,R3,R0
+   \       0x20   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x22   0x2800             CMP      R0,#+0
+   \       0x24   0xD101             BNE.N    ??DMADRV_TransferCompletePending_4
+    774              return ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED;
+   \       0x26   0x....             LDR.N    R0,??DataTable14_10
+   \       0x28   0xE00A             B.N      ??DMADRV_TransferCompletePending_1
+    775            }
+    776          
+    777          #if defined(EMDRV_DMADRV_UDMA)
+    778            if ( DMA->IF & (1 << channelId) )
+    779          #elif defined(EMDRV_DMADRV_LDMA)
+    780            if ( LDMA->IF & (1 << channelId) )
+   \                     ??DMADRV_TransferCompletePending_4: (+1)
+   \       0x2A   0x....             LDR.N    R0,??DataTable14_11
+   \       0x2C   0x6800             LDR      R0,[R0, #+0]
+   \       0x2E   0x40D0             LSRS     R0,R0,R2
+   \       0x30   0x07C0             LSLS     R0,R0,#+31
+   \       0x32   0xD502             BPL.N    ??DMADRV_TransferCompletePending_5
+    781          #endif
+    782            {
+    783              *pending = true;
+   \       0x34   0x2001             MOVS     R0,#+1
+   \       0x36   0x7008             STRB     R0,[R1, #+0]
+   \       0x38   0xE001             B.N      ??DMADRV_TransferCompletePending_6
+    784            } else {
+    785              *pending = false;
+   \                     ??DMADRV_TransferCompletePending_5: (+1)
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \       0x3C   0x7008             STRB     R0,[R1, #+0]
+    786            }
+    787          
+    788            return ECODE_EMDRV_DMADRV_OK;
+   \                     ??DMADRV_TransferCompletePending_6: (+1)
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \                     ??DMADRV_TransferCompletePending_1: (+1)
+   \       0x40   0x4770             BX       LR
+    789          }
+    790          
+    791          /***************************************************************************//**
+    792           * @brief
+    793           *  Check if a transfer has completed.
+    794           *
+    795           * @note
+    796           *  This function should be used in a polled environment.
+    797           *  Will only work reliably for transfers NOT using the completion interrupt.
+    798           *  On UDMA, it will only work on basic transfers on the primary channel.
+    799           *
+    800           * @param[in] channelId
+    801           *  The channel ID of the transfer to check.
+    802           *
+    803           * @param[out] done
+    804           *  True if a transfer has completed, false otherwise.
+    805           *
+    806           * @return
+    807           *  @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    808           *  DMADRV @ref Ecode_t is returned.
+    809           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    810          Ecode_t DMADRV_TransferDone(unsigned int channelId, bool *done)
+    811          {
+   \                     DMADRV_TransferDone: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    812          #if defined(EMDRV_DMADRV_UDMA)
+    813            uint32_t remaining, iflag;
+    814          #endif
+    815          
+    816            if ( !initialized ) {
+   \        0x6   0x....             LDR.N    R0,??DataTable14_1
+   \        0x8   0x7800             LDRB     R0,[R0, #+0]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD101             BNE.N    ??DMADRV_TransferDone_0
+    817              return ECODE_EMDRV_DMADRV_NOT_INITIALIZED;
+   \        0xE   0x....             LDR.N    R0,??DataTable14_2
+   \       0x10   0xE012             B.N      ??DMADRV_TransferDone_1
+    818            }
+    819          
+    820            if ( (channelId >= EMDRV_DMADRV_DMA_CH_COUNT)
+    821                 || (done == NULL) ) {
+   \                     ??DMADRV_TransferDone_0: (+1)
+   \       0x12   0x2D08             CMP      R5,#+8
+   \       0x14   0xD201             BCS.N    ??DMADRV_TransferDone_2
+   \       0x16   0x2C00             CMP      R4,#+0
+   \       0x18   0xD101             BNE.N    ??DMADRV_TransferDone_3
+    822              return ECODE_EMDRV_DMADRV_PARAM_ERROR;
+   \                     ??DMADRV_TransferDone_2: (+1)
+   \       0x1A   0x....             LDR.N    R0,??DataTable14_3
+   \       0x1C   0xE00C             B.N      ??DMADRV_TransferDone_1
+    823            }
+    824          
+    825            if ( chTable[channelId].allocated == false ) {
+   \                     ??DMADRV_TransferDone_3: (+1)
+   \       0x1E   0x....             LDR.N    R1,??DataTable14_4
+   \       0x20   0x0128             LSLS     R0,R5,#+4
+   \       0x22   0x4408             ADD      R0,R1,R0
+   \       0x24   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD101             BNE.N    ??DMADRV_TransferDone_4
+    826              return ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED;
+   \       0x2A   0x....             LDR.N    R0,??DataTable14_10
+   \       0x2C   0xE004             B.N      ??DMADRV_TransferDone_1
+    827            }
+    828          
+    829          #if defined(EMDRV_DMADRV_UDMA)
+    830            CORE_ATOMIC_SECTION(
+    831              /* This works for primary channel only ! */
+    832              remaining = (dmaControlBlock[channelId].CTRL
+    833                           & _DMA_CTRL_N_MINUS_1_MASK)
+    834                          >> _DMA_CTRL_N_MINUS_1_SHIFT;
+    835              iflag = DMA->IF;
+    836              )
+    837          
+    838            if ( (remaining == 0) && (iflag & (1 << channelId)) ) {
+    839              *done = true;
+    840            } else {
+    841              *done = false;
+    842            }
+    843          #elif defined(EMDRV_DMADRV_LDMA)
+    844            *done = LDMA_TransferDone(channelId);
+   \                     ??DMADRV_TransferDone_4: (+1)
+   \       0x2E   0x0028             MOVS     R0,R5
+   \       0x30   0x.... 0x....      BL       LDMA_TransferDone
+   \       0x34   0x7020             STRB     R0,[R4, #+0]
+    845          #endif
+    846          
+    847            return ECODE_EMDRV_DMADRV_OK;
+   \       0x36   0x2000             MOVS     R0,#+0
+   \                     ??DMADRV_TransferDone_1: (+1)
+   \       0x38   0xBD32             POP      {R1,R4,R5,PC}
+    848          }
+    849          
+    850          /***************************************************************************//**
+    851           * @brief
+    852           *  Get number of items remaining in a transfer.
+    853           *
+    854           * @note
+    855           *  This function does not take into account that a DMA transfer with
+    856           *  a chain of linked transfers might be ongoing. It will only check the
+    857           *  count for the current transfer.
+    858           *  On UDMA, it will only work on the primary channel.
+    859           *
+    860           * @param[in] channelId
+    861           *  The channel ID of the transfer to check.
+    862           *
+    863           * @param[out] remaining
+    864           *  A number of items remaining in the transfer.
+    865           *
+    866           * @return
+    867           *  @ref ECODE_EMDRV_DMADRV_OK on success. On failure, an appropriate
+    868           *  DMADRV @ref Ecode_t is returned.
+    869           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    870          Ecode_t DMADRV_TransferRemainingCount(unsigned int channelId,
+    871                                                int *remaining)
+    872          {
+   \                     DMADRV_TransferRemainingCount: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    873          #if defined(EMDRV_DMADRV_UDMA)
+    874            uint32_t remain, iflag;
+    875          #endif
+    876          
+    877            if ( !initialized ) {
+   \        0x6   0x....             LDR.N    R0,??DataTable14_1
+   \        0x8   0x7800             LDRB     R0,[R0, #+0]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD101             BNE.N    ??DMADRV_TransferRemainingCount_0
+    878              return ECODE_EMDRV_DMADRV_NOT_INITIALIZED;
+   \        0xE   0x....             LDR.N    R0,??DataTable14_2
+   \       0x10   0xE012             B.N      ??DMADRV_TransferRemainingCount_1
+    879            }
+    880          
+    881            if ( (channelId >= EMDRV_DMADRV_DMA_CH_COUNT)
+    882                 || (remaining == NULL) ) {
+   \                     ??DMADRV_TransferRemainingCount_0: (+1)
+   \       0x12   0x2D08             CMP      R5,#+8
+   \       0x14   0xD201             BCS.N    ??DMADRV_TransferRemainingCount_2
+   \       0x16   0x2C00             CMP      R4,#+0
+   \       0x18   0xD101             BNE.N    ??DMADRV_TransferRemainingCount_3
+    883              return ECODE_EMDRV_DMADRV_PARAM_ERROR;
+   \                     ??DMADRV_TransferRemainingCount_2: (+1)
+   \       0x1A   0x....             LDR.N    R0,??DataTable14_3
+   \       0x1C   0xE00C             B.N      ??DMADRV_TransferRemainingCount_1
+    884            }
+    885          
+    886            if ( chTable[channelId].allocated == false ) {
+   \                     ??DMADRV_TransferRemainingCount_3: (+1)
+   \       0x1E   0x....             LDR.N    R1,??DataTable14_4
+   \       0x20   0x0128             LSLS     R0,R5,#+4
+   \       0x22   0x4408             ADD      R0,R1,R0
+   \       0x24   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD101             BNE.N    ??DMADRV_TransferRemainingCount_4
+    887              return ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED;
+   \       0x2A   0x....             LDR.N    R0,??DataTable14_10
+   \       0x2C   0xE004             B.N      ??DMADRV_TransferRemainingCount_1
+    888            }
+    889          
+    890          #if defined(EMDRV_DMADRV_UDMA)
+    891            CORE_ATOMIC_SECTION(
+    892              /* This works for the primary channel only ! */
+    893              remain = (dmaControlBlock[channelId].CTRL
+    894                        & _DMA_CTRL_N_MINUS_1_MASK)
+    895                       >> _DMA_CTRL_N_MINUS_1_SHIFT;
+    896              iflag = DMA->IF;
+    897              )
+    898          
+    899            if ( (remain == 0) && (iflag & (1 << channelId)) ) {
+    900              *remaining = 0;
+    901            } else {
+    902              *remaining = 1 + remain;
+    903            }
+    904          #elif defined(EMDRV_DMADRV_LDMA)
+    905            *remaining = LDMA_TransferRemainingCount(channelId);
+   \                     ??DMADRV_TransferRemainingCount_4: (+1)
+   \       0x2E   0x0028             MOVS     R0,R5
+   \       0x30   0x.... 0x....      BL       LDMA_TransferRemainingCount
+   \       0x34   0x6020             STR      R0,[R4, #+0]
+    906          #endif
+    907          
+    908            return ECODE_EMDRV_DMADRV_OK;
+   \       0x36   0x2000             MOVS     R0,#+0
+   \                     ??DMADRV_TransferRemainingCount_1: (+1)
+   \       0x38   0xBD32             POP      {R1,R4,R5,PC}
+    909          }
+    910          
+    911          /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
+    912          
+    913          #if defined(EMDRV_DMADRV_LDMA)
+    914          /***************************************************************************//**
+    915           * @brief
+    916           *  An interrupt handler for LDMA.
+    917           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    918          void LDMA_IRQHandler(void)
+    919          {
+   \                     LDMA_IRQHandler: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+    920            bool stop;
+    921            ChTable_t *ch;
+    922            uint32_t pending, chnum, chmask;
+    923          
+    924            /* Get all pending and enabled interrupts. */
+    925            pending  = LDMA->IF;
+   \        0x4   0x....             LDR.N    R0,??DataTable14_11
+   \        0x6   0x6806             LDR      R6,[R0, #+0]
+    926            pending &= LDMA->IEN;
+   \        0x8   0x....             LDR.N    R0,??DataTable14_12
+   \        0xA   0x6800             LDR      R0,[R0, #+0]
+   \        0xC   0x4006             ANDS     R6,R0,R6
+    927          
+    928            /* Check for LDMA error. */
+    929            if ( pending & LDMA_IF_ERROR ) {
+   \        0xE   0x2E00             CMP      R6,#+0
+   \       0x10   0xD500             BPL.N    ??LDMA_IRQHandler_0
+    930              /* Loop to enable debugger to see what has happened. */
+    931              while (true) {
+   \                     ??LDMA_IRQHandler_1: (+1)
+   \       0x12   0xE7FE             B.N      ??LDMA_IRQHandler_1
+    932                /* Wait forever. */
+    933              }
+    934            }
+    935          
+    936            /* Iterate over all LDMA channels. */
+    937            for ( chnum = 0, chmask = 1;
+   \                     ??LDMA_IRQHandler_0: (+1)
+   \       0x14   0x2700             MOVS     R7,#+0
+   \       0x16   0xF05F 0x0801      MOVS     R8,#+1
+    938                  chnum < EMDRV_DMADRV_DMA_CH_COUNT;
+   \                     ??LDMA_IRQHandler_2: (+1)
+   \       0x1A   0x2F08             CMP      R7,#+8
+   \       0x1C   0xD234             BCS.N    ??LDMA_IRQHandler_3
+    939                  chnum++, chmask <<= 1 ) {
+    940              if ( pending & chmask ) {
+   \       0x1E   0xEA16 0x0F08      TST      R6,R8
+   \       0x22   0xD02D             BEQ.N    ??LDMA_IRQHandler_4
+    941                /* Clear the interrupt flag. */
+    942          #if defined (LDMA_HAS_SET_CLEAR)
+    943                LDMA->IF_CLR = chmask;
+   \       0x24   0x....             LDR.N    R0,??DataTable14_13
+   \       0x26   0xF8C0 0x8000      STR      R8,[R0, #+0]
+    944          #else
+    945                LDMA->IFC = chmask;
+    946          #endif
+    947          
+    948                ch = &chTable[chnum];
+   \       0x2A   0x....             LDR.N    R1,??DataTable14_4
+   \       0x2C   0x0138             LSLS     R0,R7,#+4
+   \       0x2E   0x4408             ADD      R0,R1,R0
+   \       0x30   0x0005             MOVS     R5,R0
+    949                if ( ch->callback != NULL ) {
+   \       0x32   0x6828             LDR      R0,[R5, #+0]
+   \       0x34   0x2800             CMP      R0,#+0
+   \       0x36   0xD023             BEQ.N    ??LDMA_IRQHandler_4
+    950                  ch->callbackCount++;
+   \       0x38   0x68A8             LDR      R0,[R5, #+8]
+   \       0x3A   0x1C40             ADDS     R0,R0,#+1
+   \       0x3C   0x60A8             STR      R0,[R5, #+8]
+    951                  stop = !ch->callback(chnum, ch->callbackCount, ch->userParam);
+   \       0x3E   0x686A             LDR      R2,[R5, #+4]
+   \       0x40   0x68A9             LDR      R1,[R5, #+8]
+   \       0x42   0x0038             MOVS     R0,R7
+   \       0x44   0x682B             LDR      R3,[R5, #+0]
+   \       0x46   0x4798             BLX      R3
+   \       0x48   0x2800             CMP      R0,#+0
+   \       0x4A   0xD101             BNE.N    ??LDMA_IRQHandler_5
+   \       0x4C   0x2401             MOVS     R4,#+1
+   \       0x4E   0xE000             B.N      ??LDMA_IRQHandler_6
+   \                     ??LDMA_IRQHandler_5: (+1)
+   \       0x50   0x2400             MOVS     R4,#+0
+    952          
+    953                  if ( (ch->mode == dmaModePingPong) && stop ) {
+   \                     ??LDMA_IRQHandler_6: (+1)
+   \       0x52   0x7B68             LDRB     R0,[R5, #+13]
+   \       0x54   0x2801             CMP      R0,#+1
+   \       0x56   0xD113             BNE.N    ??LDMA_IRQHandler_4
+   \       0x58   0x0020             MOVS     R0,R4
+   \       0x5A   0xB2C0             UXTB     R0,R0
+   \       0x5C   0x2800             CMP      R0,#+0
+   \       0x5E   0xD00F             BEQ.N    ??LDMA_IRQHandler_4
+    954                    dmaXfer[chnum].desc[0].xfer.link = 0;
+   \       0x60   0x....             LDR.N    R0,??DataTable14_14
+   \       0x62   0x0179             LSLS     R1,R7,#+5
+   \       0x64   0xEB00 0x0201      ADD      R2,R0,R1
+   \       0x68   0x68D1             LDR      R1,[R2, #+12]
+   \       0x6A   0xF031 0x0102      BICS     R1,R1,#0x2
+   \       0x6E   0x60D1             STR      R1,[R2, #+12]
+    955                    dmaXfer[chnum].desc[1].xfer.link = 0;
+   \       0x70   0x0179             LSLS     R1,R7,#+5
+   \       0x72   0x4408             ADD      R0,R0,R1
+   \       0x74   0xF110 0x0110      ADDS     R1,R0,#+16
+   \       0x78   0x68C8             LDR      R0,[R1, #+12]
+   \       0x7A   0xF030 0x0002      BICS     R0,R0,#0x2
+   \       0x7E   0x60C8             STR      R0,[R1, #+12]
+    956                  }
+    957                }
+    958              }
+    959            }
+   \                     ??LDMA_IRQHandler_4: (+1)
+   \       0x80   0x1C7F             ADDS     R7,R7,#+1
+   \       0x82   0xEA5F 0x0848      LSLS     R8,R8,#+1
+   \       0x86   0xE7C8             B.N      ??LDMA_IRQHandler_2
+    960          }
+   \                     ??LDMA_IRQHandler_3: (+1)
+   \       0x88   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    961          #endif /* defined( EMDRV_DMADRV_LDMA ) */
+    962          
+    963          #if defined(EMDRV_DMADRV_UDMA)
+    964          /***************************************************************************//**
+    965           * @brief
+    966           *  A callback function for UDMA basic transfers.
+    967           ******************************************************************************/
+    968          static void DmaBasicCallback(unsigned int channel, bool primary, void *user)
+    969          {
+    970            ChTable_t *ch = &chTable[channel];
+    971            (void)user;
+    972            (void)primary;
+    973          
+    974            if ( ch->callback != NULL ) {
+    975              ch->callbackCount++;
+    976              ch->callback(channel, ch->callbackCount, ch->userParam);
+    977            }
+    978          }
+    979          #endif
+    980          
+    981          #if defined(EMDRV_DMADRV_UDMA)
+    982          /***************************************************************************//**
+    983           * @brief
+    984           *  A callback function for UDMA ping-pong transfers.
+    985           ******************************************************************************/
+    986          static void DmaPingPongCallback(unsigned int channel, bool primary, void *user)
+    987          {
+    988            bool stop = true;
+    989            ChTable_t *ch = &chTable[channel];
+    990          
+    991            (void)user;
+    992          
+    993            if ( ch->callback != NULL ) {
+    994              ch->callbackCount++;
+    995              stop = !ch->callback(channel, ch->callbackCount, ch->userParam);
+    996            }
+    997          
+    998            DMA_RefreshPingPong(channel,
+    999                                primary,
+   1000                                false,
+   1001                                NULL,
+   1002                                NULL,
+   1003                                ch->length - 1,
+   1004                                stop);
+   1005          }
+   1006          #endif
+   1007          
+   1008          #if defined(EMDRV_DMADRV_UDMA)
+   1009          /***************************************************************************//**
+   1010           * @brief
+   1011           *  Start a UDMA transfer.
+   1012           ******************************************************************************/
+   1013          static Ecode_t StartTransfer(DmaMode_t             mode,
+   1014                                       DmaDirection_t        direction,
+   1015                                       unsigned int          channelId,
+   1016                                       DMADRV_PeripheralSignal_t
+   1017                                       peripheralSignal,
+   1018                                       void                  *buf0,
+   1019                                       void                  *buf1,
+   1020                                       void                  *buf2,
+   1021                                       bool                  bufInc,
+   1022                                       int                   len,
+   1023                                       DMADRV_DataSize_t     size,
+   1024                                       DMADRV_Callback_t     callback,
+   1025                                       void                  *cbUserParam)
+   1026          {
+   1027            ChTable_t *ch;
+   1028            DMA_CfgChannel_TypeDef chCfg;
+   1029            DMA_CfgDescr_TypeDef   descrCfg;
+   1030          
+   1031            if ( !initialized ) {
+   1032              return ECODE_EMDRV_DMADRV_NOT_INITIALIZED;
+   1033            }
+   1034          
+   1035            if ( (channelId >= EMDRV_DMADRV_DMA_CH_COUNT)
+   1036                 || (buf0 == NULL)
+   1037                 || (buf1 == NULL)
+   1038                 || (len > DMADRV_MAX_XFER_COUNT)
+   1039                 || ((mode == dmaModePingPong) && (buf2 == NULL)) ) {
+   1040              return ECODE_EMDRV_DMADRV_PARAM_ERROR;
+   1041            }
+   1042          
+   1043            ch = &chTable[channelId];
+   1044            if ( ch->allocated == false ) {
+   1045              return ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED;
+   1046            }
+   1047          
+   1048            /* Se tup the interrupt callback routine. */
+   1049            if ( mode == dmaModeBasic ) {
+   1050              dmaCallBack[channelId].cbFunc  = DmaBasicCallback;
+   1051            } else {
+   1052              dmaCallBack[channelId].cbFunc  = DmaPingPongCallback;
+   1053            }
+   1054            dmaCallBack[channelId].userPtr = NULL;
+   1055          
+   1056            /* Set up the channel */
+   1057            chCfg.highPri = false;              /* Can't use hi pri with peripherals. */
+   1058          
+   1059            /* Whether the interrupt is needed. */
+   1060            if ( (callback != NULL) || (mode == dmaModePingPong) ) {
+   1061              chCfg.enableInt = true;
+   1062            } else {
+   1063              chCfg.enableInt = false;
+   1064            }
+   1065            chCfg.select = peripheralSignal;
+   1066            chCfg.cb     = &dmaCallBack[channelId];
+   1067            DMA_CfgChannel(channelId, &chCfg);
+   1068          
+   1069            /* Set up the channel descriptor. */
+   1070            if ( direction == dmaDirectionMemToPeripheral ) {
+   1071              if ( bufInc ) {
+   1072                if ( size == dmadrvDataSize1 ) {
+   1073                  descrCfg.srcInc = dmaDataInc1;
+   1074                } else if ( size == dmadrvDataSize2 ) {
+   1075                  descrCfg.srcInc = dmaDataInc2;
+   1076                } else { /* dmadrvDataSize4 */
+   1077                  descrCfg.srcInc = dmaDataInc4;
+   1078                }
+   1079              } else {
+   1080                descrCfg.srcInc = dmaDataIncNone;
+   1081              }
+   1082              descrCfg.dstInc = dmaDataIncNone;
+   1083            } else {
+   1084              if ( bufInc ) {
+   1085                if ( size == dmadrvDataSize1 ) {
+   1086                  descrCfg.dstInc = dmaDataInc1;
+   1087                } else if ( size == dmadrvDataSize2 ) {
+   1088                  descrCfg.dstInc = dmaDataInc2;
+   1089                } else { /* dmadrvDataSize4 */
+   1090                  descrCfg.dstInc = dmaDataInc4;
+   1091                }
+   1092              } else {
+   1093                descrCfg.dstInc = dmaDataIncNone;
+   1094              }
+   1095              descrCfg.srcInc = dmaDataIncNone;
+   1096            }
+   1097            descrCfg.size    = (DMA_DataSize_TypeDef)size;
+   1098            descrCfg.arbRate = dmaArbitrate1;
+   1099            descrCfg.hprot   = 0;
+   1100            DMA_CfgDescr(channelId, true, &descrCfg);
+   1101            if ( mode == dmaModePingPong ) {
+   1102              DMA_CfgDescr(channelId, false, &descrCfg);
+   1103            }
+   1104          
+   1105            ch->callback      = callback;
+   1106            ch->userParam     = cbUserParam;
+   1107            ch->callbackCount = 0;
+   1108            ch->length        = len;
+   1109          
+   1110            DMA->IFC = 1 << channelId;
+   1111          
+   1112            /* Start the DMA cycle. */
+   1113            if ( mode == dmaModeBasic ) {
+   1114              DMA_ActivateBasic(channelId, true, false, buf0, buf1, len - 1);
+   1115            } else {
+   1116              if ( direction == dmaDirectionMemToPeripheral ) {
+   1117                DMA_ActivatePingPong(channelId,
+   1118                                     false,
+   1119                                     buf0,                              /* dest */
+   1120                                     buf1,                              /* src  */
+   1121                                     len - 1,
+   1122                                     buf0,                              /* dest */
+   1123                                     buf2,                              /* src  */
+   1124                                     len - 1);
+   1125              } else {
+   1126                DMA_ActivatePingPong(channelId,
+   1127                                     false,
+   1128                                     buf0,                              /* dest */
+   1129                                     buf2,                              /* src  */
+   1130                                     len - 1,
+   1131                                     buf1,                              /* dest */
+   1132                                     buf2,                              /* src  */
+   1133                                     len - 1);
+   1134              }
+   1135            }
+   1136          
+   1137            return ECODE_EMDRV_DMADRV_OK;
+   1138          }
+   1139          #endif /* defined( EMDRV_DMADRV_UDMA ) */
+   1140          
+   1141          #if defined(EMDRV_DMADRV_LDMA)
+   1142          /***************************************************************************//**
+   1143           * @brief
+   1144           *  Start an LDMA transfer.
+   1145           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1146          static Ecode_t StartTransfer(DmaMode_t             mode,
+   1147                                       DmaDirection_t        direction,
+   1148                                       unsigned int          channelId,
+   1149                                       DMADRV_PeripheralSignal_t
+   1150                                       peripheralSignal,
+   1151                                       void                  *buf0,
+   1152                                       void                  *buf1,
+   1153                                       void                  *buf2,
+   1154                                       bool                  bufInc,
+   1155                                       int                   len,
+   1156                                       DMADRV_DataSize_t     size,
+   1157                                       DMADRV_Callback_t     callback,
+   1158                                       void                  *cbUserParam)
+   1159          {
+   \                     StartTransfer: (+1)
+   \        0x0   0xE92D 0x4FFA      PUSH     {R1,R3-R11,LR}
+   \        0x4   0xB085             SUB      SP,SP,#+20
+   \        0x6   0x4681             MOV      R9,R0
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x9C11             LDR      R4,[SP, #+68]
+   \        0xC   0x9D12             LDR      R5,[SP, #+72]
+   \        0xE   0x9F14             LDR      R7,[SP, #+80]
+   \       0x10   0xF8DD 0x8058      LDR      R8,[SP, #+88]
+   1160            ChTable_t *ch;
+   1161            LDMA_TransferCfg_t xfer;
+   1162            LDMA_Descriptor_t *desc;
+   1163          
+   1164            if ( !initialized ) {
+   \       0x14   0x....             LDR.N    R0,??DataTable14_1
+   \       0x16   0x7800             LDRB     R0,[R0, #+0]
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD101             BNE.N    ??StartTransfer_0
+   1165              return ECODE_EMDRV_DMADRV_NOT_INITIALIZED;
+   \       0x1C   0x....             LDR.N    R0,??DataTable14_2
+   \       0x1E   0xE0A9             B.N      ??StartTransfer_1
+   1166            }
+   1167          
+   1168            if ( (channelId >= EMDRV_DMADRV_DMA_CH_COUNT)
+   1169                 || (buf0 == NULL)
+   1170                 || (buf1 == NULL)
+   1171                 || (len > DMADRV_MAX_XFER_COUNT)
+   1172                 || ((mode == dmaModePingPong) && (buf2 == NULL)) ) {
+   \                     ??StartTransfer_0: (+1)
+   \       0x20   0x2E08             CMP      R6,#+8
+   \       0x22   0xD20E             BCS.N    ??StartTransfer_2
+   \       0x24   0x9810             LDR      R0,[SP, #+64]
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD00B             BEQ.N    ??StartTransfer_2
+   \       0x2A   0x2C00             CMP      R4,#+0
+   \       0x2C   0xD009             BEQ.N    ??StartTransfer_2
+   \       0x2E   0xF640 0x0001      MOVW     R0,#+2049
+   \       0x32   0x4287             CMP      R7,R0
+   \       0x34   0xDA05             BGE.N    ??StartTransfer_2
+   \       0x36   0x4648             MOV      R0,R9
+   \       0x38   0xB2C0             UXTB     R0,R0
+   \       0x3A   0x2801             CMP      R0,#+1
+   \       0x3C   0xD103             BNE.N    ??StartTransfer_3
+   \       0x3E   0x2D00             CMP      R5,#+0
+   \       0x40   0xD101             BNE.N    ??StartTransfer_3
+   1173              return ECODE_EMDRV_DMADRV_PARAM_ERROR;
+   \                     ??StartTransfer_2: (+1)
+   \       0x42   0x....             LDR.N    R0,??DataTable14_3
+   \       0x44   0xE096             B.N      ??StartTransfer_1
+   1174            }
+   1175          
+   1176            ch = &chTable[channelId];
+   \                     ??StartTransfer_3: (+1)
+   \       0x46   0x....             LDR.N    R1,??DataTable14_4
+   \       0x48   0x0130             LSLS     R0,R6,#+4
+   \       0x4A   0x4408             ADD      R0,R1,R0
+   \       0x4C   0x9000             STR      R0,[SP, #+0]
+   1177            if ( ch->allocated == false ) {
+   \       0x4E   0x9800             LDR      R0,[SP, #+0]
+   \       0x50   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x52   0x2800             CMP      R0,#+0
+   \       0x54   0xD101             BNE.N    ??StartTransfer_4
+   1178              return ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED;
+   \       0x56   0x....             LDR.N    R0,??DataTable14_10
+   \       0x58   0xE08C             B.N      ??StartTransfer_1
+   1179            }
+   1180          
+   1181            xfer = xferCfg;
+   \                     ??StartTransfer_4: (+1)
+   \       0x5A   0xA801             ADD      R0,SP,#+4
+   \       0x5C   0x2110             MOVS     R1,#+16
+   \       0x5E   0x.... 0x....      BL       __aeabi_memclr4
+   1182            desc = &dmaXfer[channelId].desc[0];
+   \       0x62   0x.... 0x....      LDR.W    R11,??DataTable14_14
+   \       0x66   0x0170             LSLS     R0,R6,#+5
+   \       0x68   0xEB0B 0x0A00      ADD      R10,R11,R0
+   1183          
+   1184            if ( direction == dmaDirectionMemToPeripheral ) {
+   \       0x6C   0xF89D 0x0014      LDRB     R0,[SP, #+20]
+   \       0x70   0x2800             CMP      R0,#+0
+   \       0x72   0xD10E             BNE.N    ??StartTransfer_5
+   1185              *desc = m2p;
+   \       0x74   0x4650             MOV      R0,R10
+   \       0x76   0x....             LDR.N    R1,??DataTable14_15
+   \       0x78   0x2210             MOVS     R2,#+16
+   \       0x7A   0x.... 0x....      BL       __aeabi_memcpy4
+   1186              if ( !bufInc ) {
+   \       0x7E   0xF89D 0x004C      LDRB     R0,[SP, #+76]
+   \       0x82   0x2800             CMP      R0,#+0
+   \       0x84   0xD113             BNE.N    ??StartTransfer_6
+   1187                desc->xfer.srcInc = ldmaCtrlSrcIncNone;
+   \       0x86   0x4651             MOV      R1,R10
+   \       0x88   0x6808             LDR      R0,[R1, #+0]
+   \       0x8A   0xF050 0x7040      ORRS     R0,R0,#0x3000000
+   \       0x8E   0x6008             STR      R0,[R1, #+0]
+   \       0x90   0xE00D             B.N      ??StartTransfer_6
+   1188              }
+   1189            } else {
+   1190              *desc = p2m;
+   \                     ??StartTransfer_5: (+1)
+   \       0x92   0x4650             MOV      R0,R10
+   \       0x94   0x....             LDR.N    R1,??DataTable14_16
+   \       0x96   0x2210             MOVS     R2,#+16
+   \       0x98   0x.... 0x....      BL       __aeabi_memcpy4
+   1191              if ( !bufInc ) {
+   \       0x9C   0xF89D 0x004C      LDRB     R0,[SP, #+76]
+   \       0xA0   0x2800             CMP      R0,#+0
+   \       0xA2   0xD104             BNE.N    ??StartTransfer_6
+   1192                desc->xfer.dstInc = ldmaCtrlDstIncNone;
+   \       0xA4   0x4651             MOV      R1,R10
+   \       0xA6   0x6808             LDR      R0,[R1, #+0]
+   \       0xA8   0xF050 0x5040      ORRS     R0,R0,#0x30000000
+   \       0xAC   0x6008             STR      R0,[R1, #+0]
+   1193              }
+   1194            }
+   1195          
+   1196            xfer.ldmaReqSel    = peripheralSignal;
+   \                     ??StartTransfer_6: (+1)
+   \       0xAE   0x9806             LDR      R0,[SP, #+24]
+   \       0xB0   0x9001             STR      R0,[SP, #+4]
+   1197            desc->xfer.xferCnt = len - 1;
+   \       0xB2   0x4652             MOV      R2,R10
+   \       0xB4   0x1E78             SUBS     R0,R7,#+1
+   \       0xB6   0x6811             LDR      R1,[R2, #+0]
+   \       0xB8   0xF360 0x110E      BFI      R1,R0,#+4,#+11
+   \       0xBC   0x6011             STR      R1,[R2, #+0]
+   1198            desc->xfer.dstAddr = (uint32_t)(uint8_t *)buf0;
+   \       0xBE   0x9810             LDR      R0,[SP, #+64]
+   \       0xC0   0xF8CA 0x0008      STR      R0,[R10, #+8]
+   1199            desc->xfer.srcAddr = (uint32_t)(uint8_t *)buf1;
+   \       0xC4   0xF8CA 0x4004      STR      R4,[R10, #+4]
+   1200            desc->xfer.size    = size;
+   \       0xC8   0x4650             MOV      R0,R10
+   \       0xCA   0xF89D 0x1054      LDRB     R1,[SP, #+84]
+   \       0xCE   0x6802             LDR      R2,[R0, #+0]
+   \       0xD0   0xF361 0x629B      BFI      R2,R1,#+26,#+2
+   \       0xD4   0x6002             STR      R2,[R0, #+0]
+   1201          
+   1202            if ( mode == dmaModePingPong ) {
+   \       0xD6   0x4648             MOV      R0,R9
+   \       0xD8   0xB2C0             UXTB     R0,R0
+   \       0xDA   0x2801             CMP      R0,#+1
+   \       0xDC   0xD12C             BNE.N    ??StartTransfer_7
+   1203              desc->xfer.linkMode = ldmaLinkModeRel;
+   \       0xDE   0x4650             MOV      R0,R10
+   \       0xE0   0x68C1             LDR      R1,[R0, #+12]
+   \       0xE2   0xF051 0x0101      ORRS     R1,R1,#0x1
+   \       0xE6   0x60C1             STR      R1,[R0, #+12]
+   1204              desc->xfer.link     = 1;
+   \       0xE8   0x4650             MOV      R0,R10
+   \       0xEA   0x68C1             LDR      R1,[R0, #+12]
+   \       0xEC   0xF051 0x0102      ORRS     R1,R1,#0x2
+   \       0xF0   0x60C1             STR      R1,[R0, #+12]
+   1205              desc->xfer.linkAddr = 4;      /* Refer to the "pong" descriptor. */
+   \       0xF2   0x4651             MOV      R1,R10
+   \       0xF4   0x7B08             LDRB     R0,[R1, #+12]
+   \       0xF6   0xF010 0x0003      ANDS     R0,R0,#0x3
+   \       0xFA   0xF050 0x0010      ORRS     R0,R0,#0x10
+   \       0xFE   0x60C8             STR      R0,[R1, #+12]
+   1206          
+   1207              /* Set the "pong" descriptor equal to the "ping" descriptor. */
+   1208              dmaXfer[channelId].desc[1] = *desc;
+   \      0x100   0x0170             LSLS     R0,R6,#+5
+   \      0x102   0x4458             ADD      R0,R11,R0
+   \      0x104   0x3010             ADDS     R0,R0,#+16
+   \      0x106   0x4651             MOV      R1,R10
+   \      0x108   0x2210             MOVS     R2,#+16
+   \      0x10A   0x.... 0x....      BL       __aeabi_memcpy4
+   1209              /* Refer to the "ping" descriptor. */
+   1210              dmaXfer[channelId].desc[1].xfer.linkAddr = -4;
+   \      0x10E   0x0170             LSLS     R0,R6,#+5
+   \      0x110   0x4458             ADD      R0,R11,R0
+   \      0x112   0x3010             ADDS     R0,R0,#+16
+   \      0x114   0x7B01             LDRB     R1,[R0, #+12]
+   \      0x116   0xF011 0x0103      ANDS     R1,R1,#0x3
+   \      0x11A   0xF071 0x010F      ORNS     R1,R1,#+15
+   \      0x11E   0x60C1             STR      R1,[R0, #+12]
+   1211              dmaXfer[channelId].desc[1].xfer.srcAddr = (uint32_t)(uint8_t *)buf2;
+   \      0x120   0x0170             LSLS     R0,R6,#+5
+   \      0x122   0x4458             ADD      R0,R11,R0
+   \      0x124   0x6145             STR      R5,[R0, #+20]
+   1212          
+   1213              if ( direction == dmaDirectionPeripheralToMem ) {
+   \      0x126   0xF89D 0x0014      LDRB     R0,[SP, #+20]
+   \      0x12A   0x2801             CMP      R0,#+1
+   \      0x12C   0xD104             BNE.N    ??StartTransfer_7
+   1214                dmaXfer[channelId].desc[1].xfer.dstAddr = (uint32_t)(uint8_t *)buf1;
+   \      0x12E   0x0170             LSLS     R0,R6,#+5
+   \      0x130   0x4458             ADD      R0,R11,R0
+   \      0x132   0x6184             STR      R4,[R0, #+24]
+   1215                desc->xfer.srcAddr = (uint32_t)(uint8_t *)buf2;
+   \      0x134   0xF8CA 0x5004      STR      R5,[R10, #+4]
+   1216              }
+   1217            }
+   1218          
+   1219            /* Whether an interrupt is needed. */
+   1220            if ( (callback == NULL) && (mode == dmaModeBasic) ) {
+   \                     ??StartTransfer_7: (+1)
+   \      0x138   0x4640             MOV      R0,R8
+   \      0x13A   0x2800             CMP      R0,#+0
+   \      0x13C   0xD108             BNE.N    ??StartTransfer_8
+   \      0x13E   0x4648             MOV      R0,R9
+   \      0x140   0xB2C0             UXTB     R0,R0
+   \      0x142   0x2800             CMP      R0,#+0
+   \      0x144   0xD104             BNE.N    ??StartTransfer_8
+   1221              desc->xfer.doneIfs = 0;
+   \      0x146   0x4651             MOV      R1,R10
+   \      0x148   0x6808             LDR      R0,[R1, #+0]
+   \      0x14A   0xF430 0x1080      BICS     R0,R0,#0x100000
+   \      0x14E   0x6008             STR      R0,[R1, #+0]
+   1222            }
+   1223          
+   1224            ch->callback      = callback;
+   \                     ??StartTransfer_8: (+1)
+   \      0x150   0x9800             LDR      R0,[SP, #+0]
+   \      0x152   0xF8C0 0x8000      STR      R8,[R0, #+0]
+   1225            ch->userParam     = cbUserParam;
+   \      0x156   0x9817             LDR      R0,[SP, #+92]
+   \      0x158   0x9900             LDR      R1,[SP, #+0]
+   \      0x15A   0x6048             STR      R0,[R1, #+4]
+   1226            ch->callbackCount = 0;
+   \      0x15C   0x2100             MOVS     R1,#+0
+   \      0x15E   0x9800             LDR      R0,[SP, #+0]
+   \      0x160   0x6081             STR      R1,[R0, #+8]
+   1227            ch->mode          = mode;
+   \      0x162   0x9800             LDR      R0,[SP, #+0]
+   \      0x164   0xF880 0x900D      STRB     R9,[R0, #+13]
+   1228          
+   1229            LDMA_StartTransfer(channelId, &xfer, desc);
+   \      0x168   0x4652             MOV      R2,R10
+   \      0x16A   0xA901             ADD      R1,SP,#+4
+   \      0x16C   0x0030             MOVS     R0,R6
+   \      0x16E   0x.... 0x....      BL       LDMA_StartTransfer
+   1230          
+   1231            return ECODE_EMDRV_DMADRV_OK;
+   \      0x172   0x2000             MOVS     R0,#+0
+   \                     ??StartTransfer_1: (+1)
+   \      0x174   0xB007             ADD      SP,SP,#+28
+   \      0x176   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+   1232          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14:
+   \        0x0   0x5004'002C        DC32     0x5004002c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_1:
+   \        0x0   0x....'....        DC32     initialized
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_2:
+   \        0x0   0xF000'8002        DC32     0xf0008002
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_3:
+   \        0x0   0xF000'8001        DC32     0xf0008001
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_4:
+   \        0x0   0x....'....        DC32     chTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_5:
+   \        0x0   0xF000'8004        DC32     0xf0008004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_6:
+   \        0x0   0xF000'8005        DC32     0xf0008005
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_7:
+   \        0x0   0xF000'8006        DC32     0xf0008006
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_8:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_9:
+   \        0x0   0xF000'8003        DC32     0xf0008003
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_10:
+   \        0x0   0xF000'8007        DC32     0xf0008007
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_11:
+   \        0x0   0x5004'0050        DC32     0x50040050
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_12:
+   \        0x0   0x5004'0054        DC32     0x50040054
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_13:
+   \        0x0   0x5004'2050        DC32     0x50042050
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_14:
+   \        0x0   0x....'....        DC32     dmaXfer
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_15:
+   \        0x0   0x....'....        DC32     m2p
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_16:
+   \        0x0   0x....'....        DC32     p2m
+   1233          #endif /* defined( EMDRV_DMADRV_LDMA ) */
+   1234          
+   1235          /// @endcond
+   1236          
+   1237          // ******** THE REST OF THE FILE IS DOCUMENTATION ONLY !***********************
+   1238          /// @addtogroup dmadrv DMADRV - DMA Driver
+   1239          /// @brief Direct Memory Access Driver
+   1240          /// @{
+   1241          ///
+   1242          ///   @details
+   1243          ///
+   1244          ///   @li @ref dmadrv_intro
+   1245          ///   @li @ref dmadrv_conf
+   1246          ///   @li @ref dmadrv_api
+   1247          ///   @li @ref dmadrv_example
+   1248          ///
+   1249          ///   @n @section dmadrv_intro Introduction
+   1250          ///
+   1251          ///   The DMADRV driver supports writing code using DMA which will work
+   1252          ///   regardless of the type of the DMA controller on the underlying microcontroller.
+   1253          ///   Additionally, DMA can be used in several modules that are
+   1254          ///   completely unaware of each other.
+   1255          ///   The driver does not preclude use of the native emlib API of the underlying
+   1256          ///   DMA controller. On the contrary, it will often result in more efficient
+   1257          ///   code and is necessary for complex DMA operations. The housekeeping
+   1258          ///   functions of this driver are valuable even in this use-case.
+   1259          ///
+   1260          ///   The dmadrv.c and dmadrv.h source files are in the
+   1261          ///   emdrv/dmadrv folder.
+   1262          ///
+   1263          ///   @note DMA transfer completion callback functions are called from within the
+   1264          ///   DMA interrupt handler.
+   1265          ///
+   1266          ///   @n @section dmadrv_conf Configuration Options
+   1267          ///
+   1268          ///   Some properties of the DMADRV driver are compile-time configurable. These
+   1269          ///   properties are stored in a file named dmadrv_config.h. A template for this
+   1270          ///   file, containing default values, is in the emdrv/config folder.
+   1271          ///   Currently the configuration options are as follows:
+   1272          ///   @li The interrupt priority of the DMA peripheral.
+   1273          ///   @li A number of DMA channels to support.
+   1274          ///   @li Use the native emlib API belonging to the underlying DMA hardware in
+   1275          ///      combination with the DMADRV API.
+   1276          ///
+   1277          ///   Both configuration options will help reduce the driver's RAM footprint.
+   1278          ///
+   1279          ///   To configure DMADRV, provide a custom configuration file. This is an
+   1280          ///   example dmadrv_config.h file:
+   1281          ///   @code{.c}
+   1282          /// #ifndef __SILICON_LABS_DMADRV_CONFIG_H__
+   1283          /// #define __SILICON_LABS_DMADRV_CONFIG_H__
+   1284          ///
+   1285          ///   // DMADRV DMA interrupt priority configuration option.
+   1286          ///   // Set DMA interrupt priority. Range is 0..7, 0 is the highest priority.
+   1287          /// #define EMDRV_DMADRV_DMA_IRQ_PRIORITY 4
+   1288          ///
+   1289          ///   // DMADRV channel count configuration option.
+   1290          ///   // A number of DMA channels to support. A lower DMA channel count will reduce
+   1291          ///   // RAM footprint.
+   1292          /// #define EMDRV_DMADRV_DMA_CH_COUNT 4
+   1293          ///
+   1294          /// #endif
+   1295          ///   @endcode
+   1296          ///
+   1297          ///   @n @section dmadrv_api The API
+   1298          ///
+   1299          ///   This section contains brief descriptions of the API functions.
+   1300          ///   For more information about input and output parameters and return values,
+   1301          ///   click on the hyperlinked function names. Most functions return an error
+   1302          ///   code, @ref ECODE_EMDRV_DMADRV_OK is returned on success,
+   1303          ///   see @ref ecode and @ref dmadrv_error_codes for other error codes.
+   1304          ///
+   1305          ///   The application code must include @em dmadrv.h header file.
+   1306          ///
+   1307          ///   @ref DMADRV_Init(), @ref DMADRV_DeInit() @n
+   1308          ///    These functions initialize or deinitialize the DMADRV driver. Typically,
+   1309          ///    @htmlonly DMADRV_Init() @endhtmlonly is called once in the startup code.
+   1310          ///
+   1311          ///   @ref DMADRV_AllocateChannel(), @ref DMADRV_FreeChannel() @n
+   1312          ///    DMA channel reserve and release functions. It is recommended that
+   1313          ///    application code check that @htmlonly DMADRV_AllocateChannel() @endhtmlonly
+   1314          ///    returns @htmlonly ECODE_EMDRV_DMADRV_OK @endhtmlonly before starting a DMA
+   1315          ///    transfer.
+   1316          ///
+   1317          ///   @ref DMADRV_MemoryPeripheral() @n
+   1318          ///    Start a DMA transfer from memory to a peripheral.
+   1319          ///
+   1320          ///   @ref DMADRV_PeripheralMemory() @n
+   1321          ///    Start a DMA transfer from a peripheral to memory.
+   1322          ///
+   1323          ///   @ref DMADRV_MemoryPeripheralPingPong() @n
+   1324          ///    Start a DMA ping-pong transfer from memory to a peripheral.
+   1325          ///
+   1326          ///   @ref DMADRV_PeripheralMemoryPingPong() @n
+   1327          ///    Start a DMA ping-pong transfer from a peripheral to memory.
+   1328          ///
+   1329          ///   @ref DMADRV_LdmaStartTransfer() @n
+   1330          ///    Start a DMA transfer on an LDMA controller.
+   1331          ///
+   1332          ///   @ref DMADRV_StopTransfer() @n
+   1333          ///    Stop an ongoing DMA transfer.
+   1334          ///
+   1335          ///   @ref DMADRV_TransferActive() @n
+   1336          ///    Check if a transfer is ongoing.
+   1337          ///
+   1338          ///   @ref DMADRV_TransferCompletePending() @n
+   1339          ///    Check if a transfer completion is pending.
+   1340          ///
+   1341          ///   @ref DMADRV_TransferDone() @n
+   1342          ///    Check if a transfer has completed.
+   1343          ///
+   1344          ///   @ref DMADRV_TransferRemainingCount() @n
+   1345          ///    Get number of items remaining in a transfer.
+   1346          ///
+   1347          ///   @n @section dmadrv_example Example
+   1348          ///   Transfer a text string to USART1.
+   1349          ///   @code{.c}
+   1350          /// #include "dmadrv.h"
+   1351          ///
+   1352          ///   char str[] = "Hello DMA !";
+   1353          ///   unsigned int channel;
+   1354          ///
+   1355          ///   int main( void )
+   1356          ///   {
+   1357          ///   // Initialize DMA.
+   1358          ///   DMADRV_Init();
+   1359          ///
+   1360          ///   // Request a DMA channel.
+   1361          ///   DMADRV_AllocateChannel( &channel, NULL );
+   1362          ///
+   1363          ///   // Start the DMA transfer.
+   1364          ///   DMADRV_MemoryPeripheral( channel,
+   1365          ///                           dmadrvPeripheralSignal_USART1_TXBL,
+   1366          ///                           (void*)&(USART1->TXDATA),
+   1367          ///                           str,
+   1368          ///                           true,
+   1369          ///                           sizeof( str ),
+   1370          ///                           dmadrvDataSize1,
+   1371          ///                           NULL,
+   1372          ///                           NULL );
+   1373          ///
+   1374          ///   return 0;
+   1375          ///   }
+   1376          ///   @endcode
+   1377          ///
+   1378          /// @} end group dmadrv ********************************************************
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   DMADRV_AllocateChannel
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+      16   DMADRV_DeInit
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+        16   -> LDMA_DeInit
+      16   DMADRV_FreeChannel
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+      16   DMADRV_Init
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+        16   -> LDMA_Init
+      32   DMADRV_LdmaStartTransfer
+        32   -> LDMA_StartTransfer
+      56   DMADRV_MemoryPeripheral
+        56   -> StartTransfer
+      56   DMADRV_MemoryPeripheralPingPong
+        56   -> StartTransfer
+       8   DMADRV_PauseTransfer
+         8   -> LDMA_EnableChannelRequest
+      56   DMADRV_PeripheralMemory
+        56   -> StartTransfer
+      56   DMADRV_PeripheralMemoryPingPong
+        56   -> StartTransfer
+       8   DMADRV_ResumeTransfer
+         8   -> LDMA_EnableChannelRequest
+       8   DMADRV_StopTransfer
+         8   -> LDMA_StopTransfer
+      16   DMADRV_TransferActive
+        16   -> LDMA_ChannelEnabled
+       0   DMADRV_TransferCompletePending
+      16   DMADRV_TransferDone
+        16   -> LDMA_TransferDone
+      16   DMADRV_TransferRemainingCount
+        16   -> LDMA_TransferRemainingCount
+       0   LDMA_ChannelEnabled
+      24   LDMA_IRQHandler
+        24   -- Indirect call
+      64   StartTransfer
+        64   -> LDMA_StartTransfer
+        64   -> __aeabi_memclr4
+        64   -> __aeabi_memcpy4
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable14_10
+       4  ??DataTable14_11
+       4  ??DataTable14_12
+       4  ??DataTable14_13
+       4  ??DataTable14_14
+       4  ??DataTable14_15
+       4  ??DataTable14_16
+       4  ??DataTable14_2
+       4  ??DataTable14_3
+       4  ??DataTable14_4
+       4  ??DataTable14_5
+       4  ??DataTable14_6
+       4  ??DataTable14_7
+       4  ??DataTable14_8
+       4  ??DataTable14_9
+       4  ?_0
+     100  DMADRV_AllocateChannel
+      82  DMADRV_DeInit
+      80  DMADRV_FreeChannel
+      92  DMADRV_Init
+      96  DMADRV_LdmaStartTransfer
+      60  DMADRV_MemoryPeripheral
+      60  DMADRV_MemoryPeripheralPingPong
+      62  DMADRV_PauseTransfer
+      60  DMADRV_PeripheralMemory
+      60  DMADRV_PeripheralMemoryPingPong
+      62  DMADRV_ResumeTransfer
+      60  DMADRV_StopTransfer
+      80  DMADRV_TransferActive
+      66  DMADRV_TransferCompletePending
+      58  DMADRV_TransferDone
+      58  DMADRV_TransferRemainingCount
+      28  LDMA_ChannelEnabled
+     140  LDMA_IRQHandler
+     378  StartTransfer
+     128  chTable
+     256  dmaXfer
+       1  initialized
+      16  m2p
+      16  p2m
+      16  xferCfg
+
+ 
+   385 bytes in section .bss
+    52 bytes in section .rodata
+ 1'750 bytes in section .text
+ 
+ 1'750 bytes of CODE  memory
+    52 bytes of CONST memory
+   385 bytes of DATA  memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,1083 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         02/Dec/2024  12:57:40
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\ProAppSrc\FANApp\AppSrc\fan_app_auto.c
+#    Command line                 =
+#        -f
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Src_14949699383848397354.dir\fan_app_auto.o.rsp
+#        (D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\ProAppSrc\FANApp\AppSrc\fan_app_auto.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\Src_14949699383848397354.dir
+#        --diag_suppress Pa050 -o
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Src_14949699383848397354.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Src_14949699383848397354.dir\fan_app_auto.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\Src_14949699383848397354.dir\fan_app_auto.lst
+#    Object file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Src_14949699383848397354.dir\fan_app_auto.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\ProAppSrc\FANApp\AppSrc\fan_app_auto.c
+      1          /** \file fan_app_auto.c
+      2          *******************************************************************************
+      3          ** \brief Implements the auto configuration for running the code in auto mode
+      4          **
+      5          ** \cond STD_FILE_HEADER
+      6          **
+      7          ** COPYRIGHT(c) 2023-24 Procubed Innovations Pvt Ltd.
+      8          ** All rights reserved.
+      9          **
+     10          ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     11          ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     12          ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     13          ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     14          ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     15          ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     16          ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     17          **
+     18          *******************************************************************************
+     19          **  \endcond
+     20          */
+     21          
+     22          /*******************************************************************************
+     23          * File inclusion
+     24          *******************************************************************************/
+     25          #include "StackAppConf.h"
+     26          #include "common.h"
+     27          #include "em_device.h"
+     28          #include "em_system.h"
+     29          #include "list_latest.h"
+     30          #include "queue_latest.h"
+     31          #include "uart_hal.h"
+     32          #include "mac.h"
+     33          #include "hif_utility.h"
+     34          #include "hif_service.h"
+     35          #include "buff_mgmt.h"
+     36          #include "buffer_service.h"
+     37          #include "hw_tmr.h"
+     38          #include "sw_timer.h"
+     39          #include "mac_interface_layer.h"
+     40          #include "sm.h"
+     41          #include "contiki-net.h"
+     42          #include "ie_element_info.h"
+     43          #include "network-manager.h"
+     44          #include "fan_app_auto.h"
+     45          #include "fan_app_test_harness.h"
+     46          #include "fan_api.h"
+     47          #include "fan_factorycmd.h"
+     48          #include "phy.h"
+     49          
+     50          /*
+     51          ** ============================================================================
+     52          ** Private Structures, Unions & enums Type Definitions
+     53          ** ============================================================================
+     54          */
+     55          
+     56          /*None*/
+     57          
+     58          /*
+     59          ** ============================================================================
+     60          ** Private Variable Definitions
+     61          ** ============================================================================
+     62          */
+     63          
+     64          /*None*/
+     65          
+     66          /*
+     67          ** ============================================================================
+     68          ** Public Variable Definitions
+     69          ** ============================================================================
+     70          */
+     71          
+
+   \                                 In section .bss, align 4
+     72          broadcast_timing_t broadcast_timing;
+   \                     broadcast_timing:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 4
+     73          bc_ch_schedule_t broadcast_ie;
+   \                     broadcast_ie:
+   \        0x0                      DS8 76
+
+   \                                 In section .bss, align 4
+     74          us_ch_schedule_t unicast_ie;
+   \                     unicast_ie:
+   \        0x0                      DS8 60
+
+   \                                 In section .bss, align 4
+     75          pan_metrics_t pan_ie_param;
+   \                     pan_ie_param:
+   \        0x0                      DS8 12
+
+   \                                 In section .bss, align 4
+     76          gtk_key_t gtk_hash_ie;
+   \                     gtk_hash_ie:
+   \        0x0                      DS8 68
+
+   \                                 In section .bss, align 2
+     77          panversion_t panversion_ie;
+   \                     panversion_ie:
+   \        0x0                      DS8 2
+     78          
+     79          /*
+     80          ** ============================================================================
+     81          ** External Variable Declarations
+     82          ** ============================================================================
+     83          */
+     84          
+     85          extern void send_host_apd_bootup();
+     86          extern void send_mac_addr(uint8_t *buff , uint16_t len);
+     87          extern uint8_t phyModeMapArr[8];
+     88          void set_async_channel_range(void);
+
+   \                                 In section .bss, align 1
+     89          uint8_t total_channel_lenth_uicast = 0x00; 
+   \                     total_channel_lenth_uicast:
+   \        0x0                      DS8 1
+     90          
+     91          #if(APP_NVM_FEATURE_ENABLED == 1)
+     92          extern nvm_structure_t store_nvm_param;
+     93          #endif
+     94          
+     95          extern uint8_t process_telec_set_operating_country( uint8_t CountryCode  ) ;
+     96          /*
+     97          ** ============================================================================
+     98          ** Private Macro definitions
+     99          ** ============================================================================
+    100          */
+    101          
+    102          
+    103          
+    104          /*
+    105          
+    106          USA configuration:
+    107          ******************************
+    108          
+    109          Index   PhyMode    RegDomain  OPClass DataRate(ksymbol/s)  ChanSpacing (kHz)        
+    110          0       1              1        1       50                 200
+    111          1       2              1        1       100                200
+    112          2       3              1        2       150                400
+    113          3       4              1        2       200                400    [ Not Used In FAN] 
+    114          4       5              1        3       300                600
+    115          
+    116          India Configuration:
+    117          ***************************
+    118          Freq Band (MHz)	Region	Regulatory      Operating          PHY Modes                  ChanSpacing (kHz)	      Total Num Chan	  Chan Center Freq0 (MHz)
+    119                                  Domain Value    Class 
+    120           							
+    121          865-867d	IN	   0x05	        1	        Operating Mode #1a	        100	                        19	        865.1
+    122                                                  2	        Operating Mode #2a & #3	        200	                        10	        865.1
+    123          
+    124          
+    125          Index   PhyMode    RegDomain  OPClass DataRate(ksymbol/s)  ChanSpacing (kHz)        
+    126          0       1              5        1       50                 100
+    127          1       2              5        2       100                200
+    128          2       3              5        2       150                200
+    129          
+    130          */
+    131          
+    132          #define  STACK_OPERATIONAL_MODE       RUN_MODE          //FACTORY_MODE ; //RUN_MODE;
+    133          
+    134          #define DEF_PHYMODE             PHY_MODE_SELECT_ID    // 0 : 50 , 1: 100 , 2 : 150
+    135          
+    136          #define DEF_FIXEDCHANNELNO      6
+    137          #define DEF_REGULATORYDOMAIN    5  // INDIA
+    138          #define DEF_OPERATINGCLASS      2    // 1 : 50 ; 2 100 , 
+    139          #define DEF_CHANEELFUNCTION     0 // 0 for fixed and 2 For DH1CF 
+    140          
+    141          #define DEF_USEPARENTBSIE       1
+    142          #define DEF_ROUTINGMETHOD       1  //0 – Layer 2 routing  :: 1 - Layer 3 routing
+    143          #define DEF_PANVERSION          0x1234
+    144          #define DEF_FANTPSVERSION       0x01
+    145          
+    146          #define DEF_BROADCASTDWELL      100
+    147          #define DEF_UNICASTDWELL        15
+    148          #define DEF_BROADCASTINTERVAL   1020  // 4*( max of (UDI, BDI)
+    149          #define DEF_CLOCKDRIFT          0x00
+    150          #define DEF_TA                  0x00
+    151          #define DEF_BSI                 0x2233
+    152          
+    153          #define DEF_NETNAME             "Phytec"
+    154          #define DEF_PANID               0x0001
+    155          #define DEF_ROUTINGCOST         0
+    156          #define DEF_PANSIZE             1000
+    157          
+    158          #define RUNNING_DEVICE_TYPE     PAN_COORD_NODE_TYPE //PAN_COORD_NODE_TYPE (0x00): for LBR :::  COORD_NODE_TYPE (0x01) :for  router    
+    159          
+    160          
+    161          extern void check_status_to_start_network();
+    162          /*
+    163          ** ============================================================================
+    164          ** Private Function Prototypes
+    165          ** ============================================================================
+    166          */
+    167          
+    168          /*None*/
+    169          
+    170          /*
+    171          ** ============================================================================
+    172          ** Public Function Definitions
+    173          ** ============================================================================
+    174          */
+    175          
+    176           
+    177            
+    178            
+
+   \                                 In section .text, align 4, keep-with-next
+    179          void configure_device_run_param()
+    180          {
+   \                     configure_device_run_param: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0xB0A8             SUB      SP,SP,#+160
+    181          #if(AUTO_CONFIG_ENABLE == 1)
+    182            
+    183            /*
+    184            The Channel Plan field is a 3 bit unsigned integer populated as follows: 1488
+    185            1. The Channel Plan field MUST be set to 0  For Regulatory Domain and Operating Class 
+    186            2. The Channel Plan field MUST be set to 1 For CH0,Channel Spacing, and Number Of Channel
+    187            
+    188            The Channel Function 
+    189            1. The Channel Function field MUST be set to 0 when a single, Fixed Channel
+    190            2. The Channel Function field MUST be set to 1 For TR51CF
+    191            3. The Channel Function field MUST be set to 2 For DH1CF 
+    192            4. The Channel Function field MUST be set to 3 For Vendor Defined 
+    193            
+    194            The Excluded Channel Control field 
+    195            1. The Excluded Channel Control field MUST be set to 0 when no excluded channels
+    196            2. The Excluded Channel Control field MUST be set to 1 when an Excluded Channel Range field 
+    197            3. The Excluded Channel Control field MUST be set to 2 when an Excluded Channel Mask field 
+    198            */
+    199            uint8_t   Ch_plan = 0;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    200            uint8_t   ch_func = DEF_CHANEELFUNCTION;
+   \        0xC   0x2700             MOVS     R7,#+0
+    201            uint8_t   ex_ch_control = 0;
+   \        0xE   0x2400             MOVS     R4,#+0
+    202            
+    203            uint64_t MACAddr = 0;
+                            ^
+Warning[Pe177]: variable "MACAddr" was declared but never referenced
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0x2100             MOVS     R1,#+0
+   \       0x14   0xE9CD 0x010C      STRD     R0,R1,[SP, #+48]
+    204            
+    205            node_basic_config_t* p_basic_cfg = &(fan_nwk_manager_app.node_basic_cfg);
+   \       0x18   0x4DD3             LDR.N    R5,??configure_device_run_param_0
+   \       0x1A   0xF115 0x060C      ADDS     R6,R5,#+12
+    206            
+    207            uint8_t self_ieee_addr[8] = {SELF_LONG_ADDRESS};
+   \       0x1E   0xAB09             ADD      R3,SP,#+36
+   \       0x20   0x48D2             LDR.N    R0,??configure_device_run_param_0+4
+   \       0x22   0xE9D0 0x2100      LDRD     R2,R1,[R0, #+0]
+   \       0x26   0xE9C3 0x2100      STRD     R2,R1,[R3, #+0]
+    208            uint8_t net_name[] = {DEF_NETNAME};
+   \       0x2A   0xA807             ADD      R0,SP,#+28
+   \       0x2C   0x49D0             LDR.N    R1,??configure_device_run_param_0+8
+   \       0x2E   0x2207             MOVS     R2,#+7
+   \       0x30   0x.... 0x....      BL       __aeabi_memcpy
+    209            
+    210          //  uint8_t GTK0_Key_temp[16] = { 0x00, 0x00, 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00};
+    211            uint8_t GTK0_Key_temp[16] = { 0x01, 0x02, 0x03 , 0x04 , 0x05 , 0x06 , 0x07 , 0x08 , 0x09 , 0x0A , 0x0B , 0x0C , 0x0D , 0x0E , 0x0F , 0x10};
+   \       0x34   0xA824             ADD      R0,SP,#+144
+   \       0x36   0x49CF             LDR.N    R1,??configure_device_run_param_0+12
+   \       0x38   0x2210             MOVS     R2,#+16
+   \       0x3A   0x.... 0x....      BL       __aeabi_memcpy4
+    212          //  uint8_t GTK1_Key_temp[16] = { 0x00, 0x00, 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00};
+    213            uint8_t GTK1_Key_temp[16] = { 0x11, 0x12, 0x13 , 0x14 , 0x15 , 0x16 , 0x17 , 0x18 , 0x19 , 0x1A , 0x1B , 0x1C , 0x1D , 0x1E , 0x1F , 0x22};
+   \       0x3E   0xA820             ADD      R0,SP,#+128
+   \       0x40   0x49CD             LDR.N    R1,??configure_device_run_param_0+16
+   \       0x42   0x2210             MOVS     R2,#+16
+   \       0x44   0x.... 0x....      BL       __aeabi_memcpy4
+    214          //  uint8_t GTK2_Key_temp[16] = { 0x00, 0x00, 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00};
+    215            uint8_t GTK2_Key_temp[16] = { 0x21, 0x22, 0x23 , 0x24 , 0x25 , 0x26 , 0x27 , 0x28 , 0x29 , 0x2A , 0x2B , 0x2C , 0x2D , 0x2E , 0x2F , 0x33};
+   \       0x48   0xA81C             ADD      R0,SP,#+112
+   \       0x4A   0x49CC             LDR.N    R1,??configure_device_run_param_0+20
+   \       0x4C   0x2210             MOVS     R2,#+16
+   \       0x4E   0x.... 0x....      BL       __aeabi_memcpy4
+    216          //  uint8_t GTK3_Key_temp[16] = { 0x00, 0x00, 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00};
+    217            uint8_t GTK3_Key_temp[16] = { 0x31, 0x32, 0x33 , 0x34 , 0x35 , 0x36 , 0x37 , 0x38 , 0x39 , 0x3A , 0x3B , 0x3C , 0x3D , 0x3E , 0x3F , 0x44};
+   \       0x52   0xA818             ADD      R0,SP,#+96
+   \       0x54   0x49CA             LDR.N    R1,??configure_device_run_param_0+24
+   \       0x56   0x2210             MOVS     R2,#+16
+   \       0x58   0x.... 0x....      BL       __aeabi_memcpy4
+    218            
+    219            gtk_hash_ie.gtkl = 0x0F; /* 0x01 for 1 GTK; 0x03 for 2 GTK; 0x07 for 3 GTK; 0x0F for 4 GTK */
+   \       0x5C   0xF8DF 0xA324      LDR.W    R10,??configure_device_run_param_0+28
+   \       0x60   0x200F             MOVS     R0,#+15
+   \       0x62   0xF88A 0x0000      STRB     R0,[R10, #+0]
+    220            
+    221            uint8_t b_ex_ch_mask[17] = {0x0A,0x1B,0x2C,0x3D,0x00,0x00,0x4E,0x5F,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+   \       0x66   0xA813             ADD      R0,SP,#+76
+   \       0x68   0x49C7             LDR.N    R1,??configure_device_run_param_0+32
+   \       0x6A   0x2214             MOVS     R2,#+20
+   \       0x6C   0x.... 0x....      BL       __aeabi_memcpy4
+    222            uint8_t u_ex_ch_mask[17] = {0x0A,0x1B,0x2C,0x3D,0x00,0x00,0x4E,0x5F,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+   \       0x70   0xA80E             ADD      R0,SP,#+56
+   \       0x72   0x49C6             LDR.N    R1,??configure_device_run_param_0+36
+   \       0x74   0x2214             MOVS     R2,#+20
+   \       0x76   0x.... 0x....      BL       __aeabi_memcpy4
+    223            
+    224            
+    225            //process_telec_set_operating_country( RUNNING_COUNTRY_CODE ) ;
+    226            
+    227            p_basic_cfg->fan_device_type = RUNNING_DEVICE_TYPE ;
+   \       0x7A   0x2000             MOVS     R0,#+0
+   \       0x7C   0x7070             STRB     R0,[R6, #+1]
+    228            p_basic_cfg->phy_mode = phyModeMapArr[DEF_PHYMODE]; 
+   \       0x7E   0x48C4             LDR.N    R0,??configure_device_run_param_0+40
+   \       0x80   0x7840             LDRB     R0,[R0, #+1]
+   \       0x82   0x70B0             STRB     R0,[R6, #+2]
+    229            p_basic_cfg->selected_channel = DEF_FIXEDCHANNELNO;   
+   \       0x84   0x2006             MOVS     R0,#+6
+   \       0x86   0x80B0             STRH     R0,[R6, #+4]
+    230            p_basic_cfg->selected_pan_id = DEF_PANID;
+   \       0x88   0x2001             MOVS     R0,#+1
+   \       0x8A   0x80F0             STRH     R0,[R6, #+6]
+    231            
+    232           
+    233            // INDIA Configuration ...
+    234            
+    235            if(p_basic_cfg->phy_mode == 0x01) 
+   \       0x8C   0x78B0             LDRB     R0,[R6, #+2]
+   \       0x8E   0x2801             CMP      R0,#+1
+   \       0x90   0xD103             BNE.N    ??configure_device_run_param_1
+    236            {
+    237              total_channel_lenth_uicast = 29;
+   \       0x92   0x211D             MOVS     R1,#+29
+   \       0x94   0x48BF             LDR.N    R0,??configure_device_run_param_0+44
+   \       0x96   0x7001             STRB     R1,[R0, #+0]
+   \       0x98   0xE008             B.N      ??configure_device_run_param_2
+    238            }
+    239            else if((p_basic_cfg->phy_mode == 0x02) || (p_basic_cfg->phy_mode == 0x04))
+   \                     ??configure_device_run_param_1: (+1)
+   \       0x9A   0x78B0             LDRB     R0,[R6, #+2]
+   \       0x9C   0x2802             CMP      R0,#+2
+   \       0x9E   0xD002             BEQ.N    ??configure_device_run_param_3
+   \       0xA0   0x78B0             LDRB     R0,[R6, #+2]
+   \       0xA2   0x2804             CMP      R0,#+4
+   \       0xA4   0xD102             BNE.N    ??configure_device_run_param_2
+    240            {
+    241              total_channel_lenth_uicast = 15;
+   \                     ??configure_device_run_param_3: (+1)
+   \       0xA6   0x210F             MOVS     R1,#+15
+   \       0xA8   0x48BA             LDR.N    R0,??configure_device_run_param_0+44
+   \       0xAA   0x7001             STRB     R1,[R0, #+0]
+    242            }
+    243              
+    244            
+    245            // Set the MAC address As device ID ....
+    246            //MACAddr =  SYSTEM_GetUnique();  
+    247            //mem_rev_cpy( p_basic_cfg->self_ieee_addr, (uint8_t *)&MACAddr, sizeof (uint64_t) );
+    248            mem_rev_cpy( p_basic_cfg->self_ieee_addr, &self_ieee_addr[0], sizeof (uint64_t) ) ;
+   \                     ??configure_device_run_param_2: (+1)
+   \       0xAC   0x2208             MOVS     R2,#+8
+   \       0xAE   0xA909             ADD      R1,SP,#+36
+   \       0xB0   0xF116 0x0008      ADDS     R0,R6,#+8
+   \       0xB4   0x.... 0x....      BL       mem_rev_cpy
+    249            
+    250            
+    251            //cmd-6
+    252            process_set_net_name_ie(net_name, strlen((char const*)net_name));   
+   \       0xB8   0xA807             ADD      R0,SP,#+28
+   \       0xBA   0x.... 0x....      BL       strlen
+   \       0xBE   0x0001             MOVS     R1,R0
+   \       0xC0   0xB289             UXTH     R1,R1
+   \       0xC2   0xA807             ADD      R0,SP,#+28
+   \       0xC4   0x.... 0x....      BL       process_set_net_name_ie
+    253            
+    254            //cmd-7
+    255            panversion_ie.PANVERSION = UIP_HTONS(DEF_PANVERSION);  
+   \       0xC8   0x48B3             LDR.N    R0,??configure_device_run_param_0+48
+   \       0xCA   0xF243 0x4112      MOVW     R1,#+13330
+   \       0xCE   0x8001             STRH     R1,[R0, #+0]
+    256            process_set_panversion_ie((uint8_t *)&panversion_ie, 2);    
+   \       0xD0   0x2102             MOVS     R1,#+2
+   \       0xD2   0x.... 0x....      BL       process_set_panversion_ie
+    257            
+    258            //cmd-8
+    259            memcpy(gtk_hash_ie.gtk0_key, GTK0_Key_temp, 16);
+   \       0xD6   0x2010             MOVS     R0,#+16
+   \       0xD8   0x9006             STR      R0,[SP, #+24]
+   \       0xDA   0xA824             ADD      R0,SP,#+144
+   \       0xDC   0x9005             STR      R0,[SP, #+20]
+   \       0xDE   0xF11A 0x0801      ADDS     R8,R10,#+1
+   \       0xE2   0x9A06             LDR      R2,[SP, #+24]
+   \       0xE4   0x9905             LDR      R1,[SP, #+20]
+   \       0xE6   0x4640             MOV      R0,R8
+   \       0xE8   0x.... 0x....      BL       __aeabi_memcpy
+    260            memcpy(gtk_hash_ie.gtk1_key, GTK1_Key_temp, 16);
+   \       0xEC   0x2010             MOVS     R0,#+16
+   \       0xEE   0x9004             STR      R0,[SP, #+16]
+   \       0xF0   0xA820             ADD      R0,SP,#+128
+   \       0xF2   0x9003             STR      R0,[SP, #+12]
+   \       0xF4   0xF11A 0x0811      ADDS     R8,R10,#+17
+   \       0xF8   0x9A04             LDR      R2,[SP, #+16]
+   \       0xFA   0x9903             LDR      R1,[SP, #+12]
+   \       0xFC   0x4640             MOV      R0,R8
+   \       0xFE   0x.... 0x....      BL       __aeabi_memcpy
+    261            memcpy(gtk_hash_ie.gtk2_key, GTK2_Key_temp, 16);
+   \      0x102   0x2010             MOVS     R0,#+16
+   \      0x104   0x9002             STR      R0,[SP, #+8]
+   \      0x106   0xA81C             ADD      R0,SP,#+112
+   \      0x108   0x9001             STR      R0,[SP, #+4]
+   \      0x10A   0xF11A 0x0821      ADDS     R8,R10,#+33
+   \      0x10E   0x9A02             LDR      R2,[SP, #+8]
+   \      0x110   0x9901             LDR      R1,[SP, #+4]
+   \      0x112   0x4640             MOV      R0,R8
+   \      0x114   0x.... 0x....      BL       __aeabi_memcpy
+    262            memcpy(gtk_hash_ie.gtk3_key, GTK3_Key_temp, 16);
+   \      0x118   0xF05F 0x0910      MOVS     R9,#+16
+   \      0x11C   0xF10D 0x0860      ADD      R8,SP,#+96
+   \      0x120   0xF11A 0x0B31      ADDS     R11,R10,#+49
+   \      0x124   0x464A             MOV      R2,R9
+   \      0x126   0x4641             MOV      R1,R8
+   \      0x128   0x4658             MOV      R0,R11
+   \      0x12A   0x.... 0x....      BL       __aeabi_memcpy
+    263            
+    264            //if(fan_nwk_manager_app.node_basic_cfg.fan_device_type != COORD_NODE_TYPE)
+    265              process_set_gtk_hash_ie((uint8_t *)&gtk_hash_ie, sizeof (gtk_hash_ie));  
+   \      0x12E   0x2141             MOVS     R1,#+65
+   \      0x130   0x4650             MOV      R0,R10
+   \      0x132   0x.... 0x....      BL       process_set_gtk_hash_ie
+    266            
+    267            //cmd-9
+    268            //best parent selection using pan-size,root=0,R1=1, R2=2, R3=3    
+    269            pan_ie_param.pan_size = UIP_HTONS(DEF_PANSIZE);
+   \      0x136   0x4899             LDR.N    R0,??configure_device_run_param_0+52
+   \      0x138   0xF64E 0x0103      MOVW     R1,#+59395
+   \      0x13C   0x8001             STRH     R1,[R0, #+0]
+    270            //for root it should be 0 and for router and leaf node, it is updated after J5 from ETX.
+    271            pan_ie_param.routing_cost = UIP_HTONS(DEF_ROUTINGCOST);
+   \      0x13E   0x2100             MOVS     R1,#+0
+   \      0x140   0x8041             STRH     R1,[R0, #+2]
+    272            pan_ie_param.parent_bs_ie_use = DEF_USEPARENTBSIE;
+   \      0x142   0x2101             MOVS     R1,#+1
+   \      0x144   0x7101             STRB     R1,[R0, #+4]
+    273            pan_ie_param.routing_methood = DEF_ROUTINGMETHOD;
+   \      0x146   0x2101             MOVS     R1,#+1
+   \      0x148   0x7141             STRB     R1,[R0, #+5]
+    274            pan_ie_param.fan_tps_version = DEF_FANTPSVERSION; 
+   \      0x14A   0x2101             MOVS     R1,#+1
+   \      0x14C   0x7181             STRB     R1,[R0, #+6]
+    275            
+    276            process_set_pan_ie((uint8_t *)&pan_ie_param, 7);
+   \      0x14E   0x2107             MOVS     R1,#+7
+   \      0x150   0x.... 0x....      BL       process_set_pan_ie
+    277            
+    278            /*cmd-4:Set Broadcast Information Element IE*/
+    279            broadcast_ie.bcast_interval = UIP_HTONL(DEF_BROADCASTINTERVAL);
+   \      0x154   0xF8DF 0xA248      LDR.W    R10,??configure_device_run_param_0+56
+   \      0x158   0x4892             LDR.N    R0,??configure_device_run_param_0+60
+   \      0x15A   0xF8CA 0x0000      STR      R0,[R10, #+0]
+    280            broadcast_ie.bcast_sched_id = UIP_HTONS(DEF_BSI);
+   \      0x15E   0xF243 0x3022      MOVW     R0,#+13090
+   \      0x162   0xF8AA 0x0004      STRH     R0,[R10, #+4]
+    281            broadcast_ie.bs_schedule.dwell_interval = DEF_BROADCASTDWELL;
+   \      0x166   0x2064             MOVS     R0,#+100
+   \      0x168   0xF88A 0x0006      STRB     R0,[R10, #+6]
+    282            broadcast_ie.bs_schedule.clock_drift = DEF_CLOCKDRIFT;
+   \      0x16C   0x2000             MOVS     R0,#+0
+   \      0x16E   0xF88A 0x0007      STRB     R0,[R10, #+7]
+    283            broadcast_ie.bs_schedule.timing_accuracy = DEF_TA;
+   \      0x172   0x2000             MOVS     R0,#+0
+   \      0x174   0xF88A 0x0008      STRB     R0,[R10, #+8]
+    284            
+    285            broadcast_ie.bs_schedule.channel_plan = Ch_plan; //0x01;
+   \      0x178   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \      0x17C   0xF88A 0x0009      STRB     R0,[R10, #+9]
+    286            broadcast_ie.bs_schedule.channel_function = ch_func; //0x00;
+   \      0x180   0xF88A 0x700A      STRB     R7,[R10, #+10]
+    287            broadcast_ie.bs_schedule.excludded_channel_control = ex_ch_control; //0x02;
+   \      0x184   0xF88A 0x400B      STRB     R4,[R10, #+11]
+    288            
+    289            
+    290            if(broadcast_ie.bs_schedule.channel_plan == CH_REG_OP_PRESENT)
+   \      0x188   0xF89A 0x0009      LDRB     R0,[R10, #+9]
+   \      0x18C   0x2800             CMP      R0,#+0
+   \      0x18E   0xD106             BNE.N    ??configure_device_run_param_4
+    291            {
+    292              broadcast_ie.un_channel_plan.ch_reg_op.reg_domain = DEF_REGULATORYDOMAIN;
+   \      0x190   0x2005             MOVS     R0,#+5
+   \      0x192   0xF88A 0x0036      STRB     R0,[R10, #+54]
+    293              broadcast_ie.un_channel_plan.ch_reg_op.op_class = DEF_OPERATINGCLASS;
+   \      0x196   0x2002             MOVS     R0,#+2
+   \      0x198   0xF88A 0x0037      STRB     R0,[R10, #+55]
+   \      0x19C   0xE00E             B.N      ??configure_device_run_param_5
+    294            }
+    295            else if(broadcast_ie.bs_schedule.channel_plan ==CH_EXPLICIT_PRESENT)
+   \                     ??configure_device_run_param_4: (+1)
+   \      0x19E   0xF89A 0x0009      LDRB     R0,[R10, #+9]
+   \      0x1A2   0x2801             CMP      R0,#+1
+   \      0x1A4   0xD10A             BNE.N    ??configure_device_run_param_5
+    296            {
+    297              
+    298              // Raka :: 04-July-2018, we are not using this configuration.
+    299              broadcast_ie.un_channel_plan.ch_explicit.ch0 = 0x0DC438;
+   \      0x1A6   0x4880             LDR.N    R0,??configure_device_run_param_0+64
+   \      0x1A8   0xF8CA 0x0036      STR      R0,[R10, #+54]
+    300              broadcast_ie.un_channel_plan.ch_explicit.channel_spacing = 0x02;
+   \      0x1AC   0x2002             MOVS     R0,#+2
+   \      0x1AE   0xF88A 0x003A      STRB     R0,[R10, #+58]
+    301              broadcast_ie.un_channel_plan.ch_explicit.num_chans = UIP_HTONS( total_channel_lenth_uicast); 
+   \      0x1B2   0x4878             LDR.N    R0,??configure_device_run_param_0+44
+   \      0x1B4   0x7800             LDRB     R0,[R0, #+0]
+   \      0x1B6   0x0200             LSLS     R0,R0,#+8
+   \      0x1B8   0xF8AA 0x003B      STRH     R0,[R10, #+59]
+    302            }
+    303            
+    304            broadcast_ie.channel_fixed.fixed_chan = UIP_HTONS(p_basic_cfg->selected_channel); 
+   \                     ??configure_device_run_param_5: (+1)
+   \      0x1BC   0x88B1             LDRH     R1,[R6, #+4]
+   \      0x1BE   0x88B0             LDRH     R0,[R6, #+4]
+   \      0x1C0   0xB280             UXTH     R0,R0
+   \      0x1C2   0x0A00             LSRS     R0,R0,#+8
+   \      0x1C4   0xEA50 0x2001      ORRS     R0,R0,R1, LSL #+8
+   \      0x1C8   0xF8AA 0x003D      STRH     R0,[R10, #+61]
+    305            broadcast_ie.bs_schedule.chan_hop_count = 0x00;
+   \      0x1CC   0x2000             MOVS     R0,#+0
+   \      0x1CE   0xF88A 0x000C      STRB     R0,[R10, #+12]
+    306            broadcast_ie.bs_schedule.chan_hop_list[0] = 0x00;
+   \      0x1D2   0x2000             MOVS     R0,#+0
+   \      0x1D4   0xF88A 0x000E      STRB     R0,[R10, #+14]
+    307            
+    308            if (broadcast_ie.bs_schedule.excludded_channel_control == 0x01)
+   \      0x1D8   0xF89A 0x000B      LDRB     R0,[R10, #+11]
+   \      0x1DC   0x2801             CMP      R0,#+1
+   \      0x1DE   0xD12C             BNE.N    ??configure_device_run_param_6
+    309            {
+    310              // Excluded channel Range
+    311              memset(broadcast_ie.bs_schedule.excluded_channels.excluded_channel_mask,0,32);
+   \      0x1E0   0xF05F 0x0B20      MOVS     R11,#+32
+   \      0x1E4   0xF05F 0x0800      MOVS     R8,#+0
+   \      0x1E8   0xF11A 0x0912      ADDS     R9,R10,#+18
+   \      0x1EC   0x4642             MOV      R2,R8
+   \      0x1EE   0x4659             MOV      R1,R11
+   \      0x1F0   0x4648             MOV      R0,R9
+   \      0x1F2   0x.... 0x....      BL       __aeabi_memset
+    312              //Total number of excluded channels
+    313              broadcast_ie.bs_schedule.excluded_channels.excluded_channel_ranges.num_of_ranges = 0x03;
+   \      0x1F6   0x2003             MOVS     R0,#+3
+   \      0x1F8   0xF88A 0x0012      STRB     R0,[R10, #+18]
+    314              broadcast_ie.bs_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[0].start_ch = 0x000A;
+   \      0x1FC   0x200A             MOVS     R0,#+10
+   \      0x1FE   0xF8AA 0x0013      STRH     R0,[R10, #+19]
+    315              broadcast_ie.bs_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[0].end_ch = 0x0014;
+   \      0x202   0x2014             MOVS     R0,#+20
+   \      0x204   0xF8AA 0x0015      STRH     R0,[R10, #+21]
+    316              broadcast_ie.bs_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[1].start_ch = 0x0032;
+   \      0x208   0x2032             MOVS     R0,#+50
+   \      0x20A   0xF8AA 0x0017      STRH     R0,[R10, #+23]
+    317              broadcast_ie.bs_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[1].end_ch = 0x003C; 
+   \      0x20E   0x203C             MOVS     R0,#+60
+   \      0x210   0xF8AA 0x0019      STRH     R0,[R10, #+25]
+    318              broadcast_ie.bs_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[2].start_ch = 0x0064;
+   \      0x214   0x2064             MOVS     R0,#+100
+   \      0x216   0xF8AA 0x001B      STRH     R0,[R10, #+27]
+    319              broadcast_ie.bs_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[2].end_ch = 0x0080;
+   \      0x21A   0x2080             MOVS     R0,#+128
+   \      0x21C   0xF8AA 0x001D      STRH     R0,[R10, #+29]
+    320              broadcast_ie.bs_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[3].start_ch = 0x0000;
+   \      0x220   0x2000             MOVS     R0,#+0
+   \      0x222   0xF8AA 0x001F      STRH     R0,[R10, #+31]
+    321              broadcast_ie.bs_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[3].end_ch = 0x0000;  
+   \      0x226   0x2000             MOVS     R0,#+0
+   \      0x228   0xF8AA 0x0021      STRH     R0,[R10, #+33]
+    322              broadcast_ie.bs_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[4].start_ch = 0x0000;
+   \      0x22C   0x2000             MOVS     R0,#+0
+   \      0x22E   0xF8AA 0x0023      STRH     R0,[R10, #+35]
+    323              broadcast_ie.bs_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[4].end_ch = 0x0000;
+   \      0x232   0x2000             MOVS     R0,#+0
+   \      0x234   0xF8AA 0x0025      STRH     R0,[R10, #+37]
+   \      0x238   0xE00E             B.N      ??configure_device_run_param_7
+    324            }
+    325            else if (broadcast_ie.bs_schedule.excludded_channel_control == 0x02)
+   \                     ??configure_device_run_param_6: (+1)
+   \      0x23A   0xF89A 0x000B      LDRB     R0,[R10, #+11]
+   \      0x23E   0x2802             CMP      R0,#+2
+   \      0x240   0xD10A             BNE.N    ??configure_device_run_param_7
+    326            {
+    327              //Excluded channel mask 
+    328              memcpy(broadcast_ie.bs_schedule.excluded_channels.excluded_channel_mask, &b_ex_ch_mask[0], 17); 
+   \      0x242   0xF05F 0x0B11      MOVS     R11,#+17
+   \      0x246   0xF10D 0x084C      ADD      R8,SP,#+76
+   \      0x24A   0xF11A 0x0912      ADDS     R9,R10,#+18
+   \      0x24E   0x465A             MOV      R2,R11
+   \      0x250   0x4641             MOV      R1,R8
+   \      0x252   0x4648             MOV      R0,R9
+   \      0x254   0x.... 0x....      BL       __aeabi_memcpy
+    329            }
+    330            //ex_channel_mask;    
+    331            process_broadcast_ie_set_req((uint8_t *)&broadcast_ie, sizeof(broadcast_ie)); 
+   \                     ??configure_device_run_param_7: (+1)
+   \      0x258   0x214A             MOVS     R1,#+74
+   \      0x25A   0x4650             MOV      R0,R10
+   \      0x25C   0x.... 0x....      BL       process_broadcast_ie_set_req
+    332            
+    333            
+    334            
+    335            /* Unicast Channel Information  */
+    336            unicast_ie.us_schedule.dwell_interval = DEF_UNICASTDWELL;
+   \      0x260   0xF8DF 0x8148      LDR.W    R8,??configure_device_run_param_0+68
+   \      0x264   0x200F             MOVS     R0,#+15
+   \      0x266   0xF888 0x0000      STRB     R0,[R8, #+0]
+    337            unicast_ie.us_schedule.clock_drift = DEF_CLOCKDRIFT;
+   \      0x26A   0x2000             MOVS     R0,#+0
+   \      0x26C   0xF888 0x0001      STRB     R0,[R8, #+1]
+    338            unicast_ie.us_schedule.timing_accuracy = DEF_TA;
+   \      0x270   0x2000             MOVS     R0,#+0
+   \      0x272   0xF888 0x0002      STRB     R0,[R8, #+2]
+    339            
+    340            unicast_ie.us_schedule.channel_plan = Ch_plan ; 
+   \      0x276   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \      0x27A   0xF888 0x0003      STRB     R0,[R8, #+3]
+    341            unicast_ie.us_schedule.channel_function = ch_func; 
+   \      0x27E   0xF888 0x7004      STRB     R7,[R8, #+4]
+    342            unicast_ie.us_schedule.excludded_channel_control = ex_ch_control;  
+   \      0x282   0xF888 0x4005      STRB     R4,[R8, #+5]
+    343            
+    344            if(unicast_ie.us_schedule.channel_plan ==CH_REG_OP_PRESENT)
+   \      0x286   0xF898 0x0003      LDRB     R0,[R8, #+3]
+   \      0x28A   0x2800             CMP      R0,#+0
+   \      0x28C   0xD106             BNE.N    ??configure_device_run_param_8
+    345            {
+    346              unicast_ie.un_channel_plan.ch_reg_op.reg_domain = DEF_REGULATORYDOMAIN;
+   \      0x28E   0x2005             MOVS     R0,#+5
+   \      0x290   0xF888 0x0030      STRB     R0,[R8, #+48]
+    347              unicast_ie.un_channel_plan.ch_reg_op.op_class = DEF_OPERATINGCLASS;
+   \      0x294   0x2002             MOVS     R0,#+2
+   \      0x296   0xF888 0x0031      STRB     R0,[R8, #+49]
+   \      0x29A   0xE00E             B.N      ??configure_device_run_param_9
+    348            }
+    349            else if(unicast_ie.us_schedule.channel_plan ==CH_EXPLICIT_PRESENT)
+   \                     ??configure_device_run_param_8: (+1)
+   \      0x29C   0xF898 0x0003      LDRB     R0,[R8, #+3]
+   \      0x2A0   0x2801             CMP      R0,#+1
+   \      0x2A2   0xD10A             BNE.N    ??configure_device_run_param_9
+    350            {
+    351              // Raka :: 04-July-2018, we are not using this configuration.
+    352              unicast_ie.un_channel_plan.ch_explicit.ch0 = 0x0DC438;
+   \      0x2A4   0x4840             LDR.N    R0,??configure_device_run_param_0+64
+   \      0x2A6   0xF8C8 0x0030      STR      R0,[R8, #+48]
+    353              unicast_ie.un_channel_plan.ch_explicit.channel_spacing = 0x02;
+   \      0x2AA   0x2002             MOVS     R0,#+2
+   \      0x2AC   0xF888 0x0034      STRB     R0,[R8, #+52]
+    354              unicast_ie.un_channel_plan.ch_explicit.num_chans = UIP_HTONS (total_channel_lenth_uicast); 
+   \      0x2B0   0x4838             LDR.N    R0,??configure_device_run_param_0+44
+   \      0x2B2   0x7800             LDRB     R0,[R0, #+0]
+   \      0x2B4   0x0200             LSLS     R0,R0,#+8
+   \      0x2B6   0xF8A8 0x0035      STRH     R0,[R8, #+53]
+    355            }
+    356            unicast_ie.channel_fixed.fixed_chan = UIP_HTONS(p_basic_cfg->selected_channel); 
+   \                     ??configure_device_run_param_9: (+1)
+   \      0x2BA   0x88B0             LDRH     R0,[R6, #+4]
+   \      0x2BC   0x88B1             LDRH     R1,[R6, #+4]
+   \      0x2BE   0xB289             UXTH     R1,R1
+   \      0x2C0   0x0A09             LSRS     R1,R1,#+8
+   \      0x2C2   0xEA51 0x2100      ORRS     R1,R1,R0, LSL #+8
+   \      0x2C6   0xF8A8 0x1037      STRH     R1,[R8, #+55]
+    357            unicast_ie.us_schedule.chan_hop_count = 0x00;
+   \      0x2CA   0x2000             MOVS     R0,#+0
+   \      0x2CC   0xF888 0x0006      STRB     R0,[R8, #+6]
+    358            unicast_ie.us_schedule.chan_hop_list[0] = 0x00;
+   \      0x2D0   0x2000             MOVS     R0,#+0
+   \      0x2D2   0xF888 0x0008      STRB     R0,[R8, #+8]
+    359            
+    360            if (unicast_ie.us_schedule.excludded_channel_control == 0x01)
+   \      0x2D6   0xF898 0x0005      LDRB     R0,[R8, #+5]
+   \      0x2DA   0x2801             CMP      R0,#+1
+   \      0x2DC   0xD12C             BNE.N    ??configure_device_run_param_10
+    361            {
+    362              // Excluded channel Range
+    363              memset(unicast_ie.us_schedule.excluded_channels.excluded_channel_mask,0,32);
+   \      0x2DE   0xF05F 0x0B20      MOVS     R11,#+32
+   \      0x2E2   0xF05F 0x0900      MOVS     R9,#+0
+   \      0x2E6   0xF118 0x0A0C      ADDS     R10,R8,#+12
+   \      0x2EA   0x464A             MOV      R2,R9
+   \      0x2EC   0x4659             MOV      R1,R11
+   \      0x2EE   0x4650             MOV      R0,R10
+   \      0x2F0   0x.... 0x....      BL       __aeabi_memset
+    364              //total number of excluded channels
+    365              unicast_ie.us_schedule.excluded_channels.excluded_channel_ranges.num_of_ranges = 0x02;
+   \      0x2F4   0x2002             MOVS     R0,#+2
+   \      0x2F6   0xF888 0x000C      STRB     R0,[R8, #+12]
+    366              unicast_ie.us_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[0].start_ch = 0x000A;
+   \      0x2FA   0x200A             MOVS     R0,#+10
+   \      0x2FC   0xF8A8 0x000D      STRH     R0,[R8, #+13]
+    367              unicast_ie.us_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[0].end_ch = 0x0014;
+   \      0x300   0x2014             MOVS     R0,#+20
+   \      0x302   0xF8A8 0x000F      STRH     R0,[R8, #+15]
+    368              unicast_ie.us_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[1].start_ch = 0x0032;
+   \      0x306   0x2032             MOVS     R0,#+50
+   \      0x308   0xF8A8 0x0011      STRH     R0,[R8, #+17]
+    369              unicast_ie.us_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[1].end_ch = 0x003C; 
+   \      0x30C   0x203C             MOVS     R0,#+60
+   \      0x30E   0xF8A8 0x0013      STRH     R0,[R8, #+19]
+    370              unicast_ie.us_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[2].start_ch = 0x006E;
+   \      0x312   0x206E             MOVS     R0,#+110
+   \      0x314   0xF8A8 0x0015      STRH     R0,[R8, #+21]
+    371              unicast_ie.us_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[2].end_ch = 0x0079;
+   \      0x318   0x2079             MOVS     R0,#+121
+   \      0x31A   0xF8A8 0x0017      STRH     R0,[R8, #+23]
+    372              unicast_ie.us_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[3].start_ch = 0x0079;
+   \      0x31E   0x2079             MOVS     R0,#+121
+   \      0x320   0xF8A8 0x0019      STRH     R0,[R8, #+25]
+    373              unicast_ie.us_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[3].end_ch = 0x003B;  
+   \      0x324   0x203B             MOVS     R0,#+59
+   \      0x326   0xF8A8 0x001B      STRH     R0,[R8, #+27]
+    374              unicast_ie.us_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[4].start_ch = 0x003D;
+   \      0x32A   0x203D             MOVS     R0,#+61
+   \      0x32C   0xF8A8 0x001D      STRH     R0,[R8, #+29]
+    375              unicast_ie.us_schedule.excluded_channels.excluded_channel_ranges.ex_ch_range[4].end_ch = 0x0080; 
+   \      0x330   0x2080             MOVS     R0,#+128
+   \      0x332   0xF8A8 0x001F      STRH     R0,[R8, #+31]
+   \      0x336   0xE00E             B.N      ??configure_device_run_param_11
+    376            }
+    377            else if (unicast_ie.us_schedule.excludded_channel_control == 0x02)
+   \                     ??configure_device_run_param_10: (+1)
+   \      0x338   0xF898 0x0005      LDRB     R0,[R8, #+5]
+   \      0x33C   0x2802             CMP      R0,#+2
+   \      0x33E   0xD10A             BNE.N    ??configure_device_run_param_11
+    378            {
+    379              //Excluded channel mask 
+    380              memcpy(unicast_ie.us_schedule.excluded_channels.excluded_channel_mask, &u_ex_ch_mask[0], 17);
+   \      0x340   0xF05F 0x0911      MOVS     R9,#+17
+   \      0x344   0xF10D 0x0B38      ADD      R11,SP,#+56
+   \      0x348   0xF118 0x0A0C      ADDS     R10,R8,#+12
+   \      0x34C   0x464A             MOV      R2,R9
+   \      0x34E   0x4659             MOV      R1,R11
+   \      0x350   0x4650             MOV      R0,R10
+   \      0x352   0x.... 0x....      BL       __aeabi_memcpy
+    381            }
+    382            
+    383            fan_nwk_manager_app.node_basic_cfg.operational_mode = STACK_OPERATIONAL_MODE; 
+   \                     ??configure_device_run_param_11: (+1)
+   \      0x356   0x2001             MOVS     R0,#+1
+   \      0x358   0x7328             STRB     R0,[R5, #+12]
+    384            process_unicast_ie_set_req((uint8_t *)&unicast_ie, sizeof(unicast_ie)); 
+   \      0x35A   0x2139             MOVS     R1,#+57
+   \      0x35C   0x4640             MOV      R0,R8
+   \      0x35E   0x.... 0x....      BL       process_unicast_ie_set_req
+    385          
+    386          
+    387          #if (APP_NVM_FEATURE_ENABLED == 1)
+    388            
+    389            fan_nwk_manager_app.nvm_write_to_start = true;
+    390            nvm_store_node_basic_info();
+    391            check_status_to_start_network();
+    392          #endif
+    393          
+    394          #else
+    395            /* configure through tool enable this*/
+    396            fan_nwk_manager_app.node_basic_cfg.fan_device_type = DEVICE_TYPE;
+    397          #endif   // for #if(AUTO_CONFIG_ENABLE == 1)
+    398            
+    399          }
+   \      0x362   0xB029             ADD      SP,SP,#+164
+   \      0x364   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+   \                     ??configure_device_run_param_0:
+   \      0x368   0x....'....        DC32     fan_nwk_manager_app
+   \      0x36C   0x....'....        DC32     ?_0
+   \      0x370   0x....'....        DC32     ?_7
+   \      0x374   0x....'....        DC32     ?_1
+   \      0x378   0x....'....        DC32     ?_2
+   \      0x37C   0x....'....        DC32     ?_3
+   \      0x380   0x....'....        DC32     ?_4
+   \      0x384   0x....'....        DC32     gtk_hash_ie
+   \      0x388   0x....'....        DC32     ?_5
+   \      0x38C   0x....'....        DC32     ?_6
+   \      0x390   0x....'....        DC32     phyModeMapArr
+   \      0x394   0x....'....        DC32     total_channel_lenth_uicast
+   \      0x398   0x....'....        DC32     panversion_ie
+   \      0x39C   0x....'....        DC32     pan_ie_param
+   \      0x3A0   0x....'....        DC32     broadcast_ie
+   \      0x3A4   0xFC03'0000        DC32     0xfc030000
+   \      0x3A8   0x000D'C438        DC32     0xdc438
+   \      0x3AC   0x....'....        DC32     unicast_ie
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x50 0x68          DC8 "Phytec"
+   \              0x79 0x74    
+   \              0x65 0x63    
+   \              0x00
+   \        0x7                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 1
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x01
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x01 0x02          DC8 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+   \              0x03 0x04    
+   \              0x05 0x06    
+   \              0x07 0x08    
+   \              0x09 0x0A    
+   \              0x0B 0x0C    
+   \              0x0D 0x0E    
+   \              0x0F 0x10
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x11 0x12          DC8 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 34
+   \              0x13 0x14    
+   \              0x15 0x16    
+   \              0x17 0x18    
+   \              0x19 0x1A    
+   \              0x1B 0x1C    
+   \              0x1D 0x1E    
+   \              0x1F 0x22
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x21 0x22          DC8 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 51
+   \              0x23 0x24    
+   \              0x25 0x26    
+   \              0x27 0x28    
+   \              0x29 0x2A    
+   \              0x2B 0x2C    
+   \              0x2D 0x2E    
+   \              0x2F 0x33
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x31 0x32          DC8 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 68
+   \              0x33 0x34    
+   \              0x35 0x36    
+   \              0x37 0x38    
+   \              0x39 0x3A    
+   \              0x3B 0x3C    
+   \              0x3D 0x3E    
+   \              0x3F 0x44
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x0A 0x1B          DC8 10, 27, 44, 61, 0, 0, 78, 95, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x2C 0x3D    
+   \              0x00 0x00    
+   \              0x4E 0x5F    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00
+   \       0x11                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x0A 0x1B          DC8 10, 27, 44, 61, 0, 0, 78, 95, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x2C 0x3D    
+   \              0x00 0x00    
+   \              0x4E 0x5F    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00
+   \       0x11                      DS8 3
+    400          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     200   configure_device_run_param
+       200   -> __aeabi_memcpy
+       200   -> __aeabi_memcpy4
+       200   -> __aeabi_memset
+       200   -> mem_rev_cpy
+       200   -> process_broadcast_ie_set_req
+       200   -> process_set_gtk_hash_ie
+       200   -> process_set_net_name_ie
+       200   -> process_set_pan_ie
+       200   -> process_set_panversion_ie
+       200   -> process_unicast_ie_set_req
+       200   -> strlen
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       8  ?_0
+      16  ?_1
+      16  ?_2
+      16  ?_3
+      16  ?_4
+      20  ?_5
+      20  ?_6
+       8  ?_7
+      76  broadcast_ie
+       8  broadcast_timing
+     944  configure_device_run_param
+      68  gtk_hash_ie
+      12  pan_ie_param
+       2  panversion_ie
+       1  total_channel_lenth_uicast
+      60  unicast_ie
+
+ 
+ 227 bytes in section .bss
+ 120 bytes in section .rodata
+ 944 bytes in section .text
+ 
+ 944 bytes of CODE  memory
+ 120 bytes of CONST memory
+ 227 bytes of DATA  memory
+
+Errors: none
+Warnings: 1

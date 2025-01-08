@@ -1,0 +1,1353 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         30/Apr/2024  13:12:24
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\system_efr32fg23.c
+#    Command line      =
+#        -f
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\Device\SiliconLabs\EFR32FG23\Source\system_efr32fg23.lst.rsp
+#        (D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\system_efr32fg23.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\Device\SiliconLabs\EFR32FG23\Source
+#        --diag_suppress Pa050 -o
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\Device\SiliconLabs\EFR32FG23\Source
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\Device\SiliconLabs\EFR32FG23\Source\system_efr32fg23.o.d
+#    Locale            =  C
+#    List file         =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\Device\SiliconLabs\EFR32FG23\Source\system_efr32fg23.lst
+#    Object file       =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\Device\SiliconLabs\EFR32FG23\Source\system_efr32fg23.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\system_efr32fg23.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief CMSIS Cortex-M33 system support for EFR32FG23 devices.
+      4           ******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2023 Silicon Laboratories, Inc. www.silabs.com</b>
+      7           ******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           *****************************************************************************/
+     30          
+     31          #include <stdint.h>
+     32          #include "em_device.h"
+
+   \                                 In section .text, align 4, keep-with-next
+   \   static __vfp void __NVIC_EnableIRQ(IRQn_Type)
+   \                     __NVIC_EnableIRQ: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0xB249             SXTB     R1,R1
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xD409             BMI.N    ??__NVIC_EnableIRQ_0
+   \        0x8   0x2201             MOVS     R2,#+1
+   \        0xA   0xF010 0x011F      ANDS     R1,R0,#0x1F
+   \        0xE   0x408A             LSLS     R2,R2,R1
+   \       0x10   0x....             LDR.N    R1,??DataTable13
+   \       0x12   0x0003             MOVS     R3,R0
+   \       0x14   0xB25B             SXTB     R3,R3
+   \       0x16   0x095B             LSRS     R3,R3,#+5
+   \       0x18   0xF841 0x2023      STR      R2,[R1, R3, LSL #+2]
+   \                     ??__NVIC_EnableIRQ_0: (+1)
+   \       0x1C   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void __NVIC_ClearPendingIRQ(IRQn_Type)
+   \                     __NVIC_ClearPendingIRQ: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0xB249             SXTB     R1,R1
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xD409             BMI.N    ??__NVIC_ClearPendingIRQ_0
+   \        0x8   0x2201             MOVS     R2,#+1
+   \        0xA   0xF010 0x011F      ANDS     R1,R0,#0x1F
+   \        0xE   0x408A             LSLS     R2,R2,R1
+   \       0x10   0x....             LDR.N    R1,??DataTable13_1
+   \       0x12   0x0003             MOVS     R3,R0
+   \       0x14   0xB25B             SXTB     R3,R3
+   \       0x16   0x095B             LSRS     R3,R3,#+5
+   \       0x18   0xF841 0x2023      STR      R2,[R1, R3, LSL #+2]
+   \                     ??__NVIC_ClearPendingIRQ_0: (+1)
+   \       0x1C   0x4770             BX       LR
+     33          
+     34          /*******************************************************************************
+     35           ******************************   DEFINES   ************************************
+     36           ******************************************************************************/
+     37          
+     38          // System oscillator frequencies. These frequencies are normally constant
+     39          // for a target, but they are made configurable in order to allow run-time
+     40          // handling of different boards. The crystal oscillator clocks can be set
+     41          // compile time to a non-default value by defining respective nFXO_FREQ
+     42          // values according to board design. By defining the nFXO_FREQ to 0,
+     43          // one indicates that the oscillator is not present, in order to save some
+     44          // SW footprint.
+     45          
+     46          #if !defined(FSRCO_FREQ)
+     47          // FSRCO frequency
+     48          #define FSRCO_FREQ    (20000000UL)
+     49          #endif
+     50          
+     51          #if !defined(HFXO_FREQ)
+     52          // HFXO frequency
+     53          #define HFXO_FREQ    (39000000UL)
+     54          #endif
+     55          
+     56          #if !defined(HFRCODPLL_STARTUP_FREQ)
+     57          // HFRCODPLL startup frequency
+     58          #define HFRCODPLL_STARTUP_FREQ    (19000000UL)
+     59          #endif
+     60          
+     61          #if !defined(HFRCODPLL_MAX_FREQ)
+     62          // Maximum HFRCODPLL frequency
+     63          #define HFRCODPLL_MAX_FREQ    (80000000UL)
+     64          #endif
+     65          
+     66          // CLKIN0 input
+     67          #if !defined(CLKIN0_FREQ)
+     68          #define CLKIN0_FREQ    (0UL)
+     69          #endif
+     70          
+     71          #if !defined(LFRCO_MAX_FREQ)
+     72          // LFRCO frequency, tuned to below frequency during manufacturing.
+     73          #define LFRCO_FREQ    (32768UL)
+     74          #endif
+     75          
+     76          #if !defined(ULFRCO_FREQ)
+     77          // ULFRCO frequency
+     78          #define ULFRCO_FREQ    (1000UL)
+     79          #endif
+     80          
+     81          #if !defined(LFXO_FREQ)
+     82          // LFXO frequency
+     83          #define LFXO_FREQ    (LFRCO_FREQ)
+     84          #endif
+     85          
+     86          /*******************************************************************************
+     87           **************************   LOCAL VARIABLES   ********************************
+     88           ******************************************************************************/
+     89          
+     90          #if (HFXO_FREQ > 0) && !defined(SYSTEM_NO_STATIC_MEMORY)
+     91          // NOTE: Gecko bootloaders can't have static variable allocation.
+     92          // System HFXO clock frequency
+
+   \                                 In section .data, align 4
+     93          static uint32_t SystemHFXOClock = HFXO_FREQ;
+   \                     SystemHFXOClock:
+   \        0x0   0x0253'17C0        DC32 39'000'000
+     94          #endif
+     95          
+     96          #if (LFXO_FREQ > 0) && !defined(SYSTEM_NO_STATIC_MEMORY)
+     97          // System LFXO clock frequency
+
+   \                                 In section .data, align 4
+     98          static uint32_t SystemLFXOClock = LFXO_FREQ;
+   \                     SystemLFXOClock:
+   \        0x0   0x0000'8000        DC32 32'768
+     99          #endif
+    100          
+    101          #if !defined(SYSTEM_NO_STATIC_MEMORY)
+    102          // System HFRCODPLL clock frequency
+
+   \                                 In section .data, align 4
+    103          static uint32_t SystemHFRCODPLLClock = HFRCODPLL_STARTUP_FREQ;
+   \                     SystemHFRCODPLLClock:
+   \        0x0   0x0121'EAC0        DC32 19'000'000
+    104          #endif
+    105          
+    106          /*******************************************************************************
+    107           **************************   GLOBAL VARIABLES   *******************************
+    108           ******************************************************************************/
+    109          
+    110          #if !defined(SYSTEM_NO_STATIC_MEMORY)
+    111          
+    112          /**
+    113           * @brief
+    114           *   System System Clock Frequency (Core Clock).
+    115           *
+    116           * @details
+    117           *   Required CMSIS global variable that must be kept up-to-date.
+    118           */
+
+   \                                 In section .data, align 4
+    119          uint32_t SystemCoreClock = HFRCODPLL_STARTUP_FREQ;
+   \                     SystemCoreClock:
+   \        0x0   0x0121'EAC0        DC32 19'000'000
+    120          
+    121          #endif
+    122          
+    123          /*---------------------------------------------------------------------------
+    124           * Exception / Interrupt Vector table
+    125           *---------------------------------------------------------------------------*/
+    126          extern const tVectorEntry __VECTOR_TABLE[16 + EXT_IRQ_COUNT];
+    127          
+    128          /*******************************************************************************
+    129           **************************   GLOBAL FUNCTIONS   *******************************
+    130           ******************************************************************************/
+    131          
+    132          /**************************************************************************//**
+    133           * @brief
+    134           *   Initialize the system.
+    135           *
+    136           * @details
+    137           *   Do required generic HW system init.
+    138           *
+    139           * @note
+    140           *   This function is invoked during system init, before the main() routine
+    141           *   and any data has been initialized. For this reason, it cannot do any
+    142           *   initialization of variables etc.
+    143           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    144          void SystemInit(void)
+    145          {
+   \                     SystemInit: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    146          #if defined (__VTOR_PRESENT) && (__VTOR_PRESENT == 1U)
+    147            SCB->VTOR = (uint32_t) (&__VECTOR_TABLE[0]);
+   \        0x2   0x....             LDR.N    R0,??DataTable13_2
+   \        0x4   0x....             LDR.N    R1,??DataTable13_3
+   \        0x6   0x6008             STR      R0,[R1, #+0]
+    148          #endif
+    149          
+    150          #if defined(UNALIGNED_SUPPORT_DISABLE)
+    151            SCB->CCR |= SCB_CCR_UNALIGN_TRP_Msk;
+    152          #endif
+    153          
+    154          #if (__FPU_PRESENT == 1)
+    155            SCB->CPACR |= ((3U << 10U * 2U)           /* set CP10 Full Access */
+    156                           | (3U << 11U * 2U));       /* set CP11 Full Access */
+   \        0x8   0x....             LDR.N    R0,??DataTable13_4
+   \        0xA   0x6800             LDR      R0,[R0, #+0]
+   \        0xC   0xF450 0x0070      ORRS     R0,R0,#0xF00000
+   \       0x10   0x....             LDR.N    R1,??DataTable13_4
+   \       0x12   0x6008             STR      R0,[R1, #+0]
+    157          #endif
+    158          
+    159          /* Secure app takes care of moving between the security states.
+    160           * SL_TRUSTZONE_SECURE MACRO is for secure access.
+    161           * SL_TRUSTZONE_NONSECURE MACRO is for non-secure access.
+    162           * When both the MACROS are not defined, during start-up below code makes sure
+    163           * that all the peripherals are accessed from non-secure address except SMU,
+    164           * as SMU is used to configure the trustzone state of the system. */
+    165          #if !defined(SL_TRUSTZONE_SECURE) && !defined(SL_TRUSTZONE_NONSECURE) \
+    166            && defined(__TZ_PRESENT)
+    167            CMU->CLKEN1_SET = CMU_CLKEN1_SMU;
+   \       0x14   0xF44F 0x4080      MOV      R0,#+16384
+   \       0x18   0x....             LDR.N    R1,??DataTable13_5
+   \       0x1A   0x6008             STR      R0,[R1, #+0]
+    168          
+    169            // config SMU to Secure and other peripherals to Non-Secure.
+    170            SMU->PPUSATD0_CLR = _SMU_PPUSATD0_MASK;
+   \       0x1C   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \       0x20   0x....             LDR.N    R1,??DataTable13_6
+   \       0x22   0x6008             STR      R0,[R1, #+0]
+    171          #if defined (SEMAILBOX_PRESENT)
+    172            SMU->PPUSATD1_CLR = (_SMU_PPUSATD1_MASK & (~SMU_PPUSATD1_SMU & ~SMU_PPUSATD1_SEMAILBOX));
+   \       0x24   0x....             LDR.N    R0,??DataTable13_7
+   \       0x26   0x....             LDR.N    R1,??DataTable13_8
+   \       0x28   0x6008             STR      R0,[R1, #+0]
+    173          #else
+    174            SMU->PPUSATD1_CLR = (_SMU_PPUSATD1_MASK & ~SMU_PPUSATD1_SMU);
+    175          #endif
+    176          
+    177            // SAU treats all accesses as non-secure
+    178          #if defined(__ARM_FEATURE_CMSE) && (__ARM_FEATURE_CMSE == 3U)
+    179            SAU->CTRL = SAU_CTRL_ALLNS_Msk;
+   \       0x2A   0x2002             MOVS     R0,#+2
+   \       0x2C   0x....             LDR.N    R1,??DataTable13_9
+   \       0x2E   0x6008             STR      R0,[R1, #+0]
+    180            __DSB();
+   \       0x30   0xF3BF 0x8F4F      DSB      SY
+    181            __ISB();
+   \       0x34   0xF3BF 0x8F6F      ISB      SY
+    182          #else
+    183            #error "The startup code requires access to the CMSE toolchain extension to set proper SAU settings."
+    184          #endif // __ARM_FEATURE_CMSE
+    185          
+    186          // Clear and Enable the SMU PPUSEC and BMPUSEC interrupt.
+    187            NVIC_ClearPendingIRQ(SMU_SECURE_IRQn);
+   \       0x38   0x2000             MOVS     R0,#+0
+   \       0x3A   0x.... 0x....      BL       __NVIC_ClearPendingIRQ
+    188            SMU->IF_CLR = SMU_IF_PPUSEC | SMU_IF_BMPUSEC;
+   \       0x3E   0xF45F 0x3040      MOVS     R0,#+196608
+   \       0x42   0x....             LDR.N    R1,??DataTable13_10
+   \       0x44   0x6008             STR      R0,[R1, #+0]
+    189            NVIC_EnableIRQ(SMU_SECURE_IRQn);
+   \       0x46   0x2000             MOVS     R0,#+0
+   \       0x48   0x.... 0x....      BL       __NVIC_EnableIRQ
+    190            SMU->IEN = SMU_IEN_PPUSEC | SMU_IEN_BMPUSEC;
+   \       0x4C   0xF45F 0x3040      MOVS     R0,#+196608
+   \       0x50   0x....             LDR.N    R1,??DataTable13_11
+   \       0x52   0x6008             STR      R0,[R1, #+0]
+    191          #endif //SL_TRUSTZONE_SECURE
+    192          }
+   \       0x54   0xBD01             POP      {R0,PC}
+    193          
+    194          #if !defined(SL_LEGACY_LINKER)
+    195          /**************************************************************************//**
+    196           * @brief
+    197           *   Copy data.
+    198           *
+    199           * @details
+    200           *   Used to copy data from Flash to Ram at startup and runtime.
+    201           *
+    202           * @param[in] from
+    203           *   Pointer to the source address in Flash.
+    204           *
+    205           * @param[in] to
+    206           *   Pointer to the destination address in Ram.
+    207           *
+    208           * @param[in] size
+    209           *   Size of data to copy.
+    210           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    211          void FlashToRamCopy(uint32_t *from,
+    212                              uint32_t *to,
+    213                              uint32_t size)
+    214          {
+    215            if (size != 0) {
+   \                     FlashToRamCopy: (+1)
+   \        0x0   0x2A00             CMP      R2,#+0
+   \        0x2   0xD008             BEQ.N    ??FlashToRamCopy_0
+    216              while (size--) {
+   \                     ??FlashToRamCopy_1: (+1)
+   \        0x4   0x0013             MOVS     R3,R2
+   \        0x6   0x1E5A             SUBS     R2,R3,#+1
+   \        0x8   0x2B00             CMP      R3,#+0
+   \        0xA   0xD004             BEQ.N    ??FlashToRamCopy_0
+    217                *to++ = *from++;
+   \        0xC   0x6803             LDR      R3,[R0, #+0]
+   \        0xE   0x600B             STR      R3,[R1, #+0]
+   \       0x10   0x1D00             ADDS     R0,R0,#+4
+   \       0x12   0x1D09             ADDS     R1,R1,#+4
+   \       0x14   0xE7F6             B.N      ??FlashToRamCopy_1
+    218              }
+    219            }
+    220          }
+   \                     ??FlashToRamCopy_0: (+1)
+   \       0x16   0x4770             BX       LR
+    221          #endif
+    222          
+    223          /**************************************************************************//**
+    224           * @brief
+    225           *   Get current HFRCODPLL frequency.
+    226           *
+    227           * @note
+    228           *   This is a EFR32FG23 specific function, not part of the
+    229           *   CMSIS definition.
+    230           *
+    231           * @return
+    232           *   HFRCODPLL frequency in Hz.
+    233           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    234          uint32_t SystemHFRCODPLLClockGet(void)
+    235          {
+    236          #if !defined(SYSTEM_NO_STATIC_MEMORY)
+    237            return SystemHFRCODPLLClock;
+   \                     SystemHFRCODPLLClockGet: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable13_12
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR
+    238          #else
+    239            uint32_t ret = 0UL;
+    240          
+    241            // Get oscillator frequency band
+    242            switch ((HFRCO0->CAL & _HFRCO_CAL_FREQRANGE_MASK)
+    243                    >> _HFRCO_CAL_FREQRANGE_SHIFT) {
+    244              case 0:
+    245                switch (HFRCO0->CAL & _HFRCO_CAL_CLKDIV_MASK) {
+    246                  case HFRCO_CAL_CLKDIV_DIV1:
+    247                    ret = 4000000UL;
+    248                    break;
+    249          
+    250                  case HFRCO_CAL_CLKDIV_DIV2:
+    251                    ret = 2000000UL;
+    252                    break;
+    253          
+    254                  case HFRCO_CAL_CLKDIV_DIV4:
+    255                    ret = 1000000UL;
+    256                    break;
+    257          
+    258                  default:
+    259                    ret = 0UL;
+    260                    break;
+    261                }
+    262                break;
+    263          
+    264              case 3:
+    265                ret = 7000000UL;
+    266                break;
+    267          
+    268              case 6:
+    269                ret = 13000000UL;
+    270                break;
+    271          
+    272              case 7:
+    273                ret = 16000000UL;
+    274                break;
+    275          
+    276              case 8:
+    277                ret = 19000000UL;
+    278                break;
+    279          
+    280              case 10:
+    281                ret = 26000000UL;
+    282                break;
+    283          
+    284              case 11:
+    285                ret = 32000000UL;
+    286                break;
+    287          
+    288              case 12:
+    289                ret = 38000000UL;
+    290                break;
+    291          
+    292              case 13:
+    293                ret = 48000000UL;
+    294                break;
+    295          
+    296              case 14:
+    297                ret = 56000000UL;
+    298                break;
+    299          
+    300              case 15:
+    301                ret = 64000000UL;
+    302                break;
+    303          
+    304              case 16:
+    305                ret = 80000000UL;
+    306                break;
+    307          
+    308              default:
+    309                break;
+    310            }
+    311            return ret;
+    312          #endif
+    313          }
+    314          
+    315          /**************************************************************************//**
+    316           * @brief
+    317           *   Set HFRCODPLL frequency value.
+    318           *
+    319           * @note
+    320           *   This is a EFR32FG23 specific function, not part of the
+    321           *   CMSIS definition.
+    322           *
+    323           * @param[in] freq
+    324           *   HFRCODPLL frequency in Hz.
+    325           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    326          void SystemHFRCODPLLClockSet(uint32_t freq)
+    327          {
+    328          #if !defined(SYSTEM_NO_STATIC_MEMORY)
+    329            SystemHFRCODPLLClock = freq;
+   \                     SystemHFRCODPLLClockSet: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable13_12
+   \        0x2   0x6008             STR      R0,[R1, #+0]
+    330          #else
+    331            (void) freq; // Unused parameter
+    332          #endif
+    333          }
+   \        0x4   0x4770             BX       LR
+    334          
+    335          /***************************************************************************//**
+    336           * @brief
+    337           *   Get the current system clock frequency (SYSCLK).
+    338           *
+    339           * @details
+    340           *   Calculate and get the current core clock frequency based on the current
+    341           *   hardware configuration.
+    342           *
+    343           * @note
+    344           *   This is an EFR32FG23 specific function, not part of the
+    345           *   CMSIS definition.
+    346           *
+    347           * @return
+    348           *   Current system clock (SYSCLK) frequency in Hz.
+    349           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    350          uint32_t SystemSYSCLKGet(void)
+    351          {
+   \                     SystemSYSCLKGet: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    352            uint32_t ret = 0U;
+   \        0x2   0x2400             MOVS     R4,#+0
+    353          
+    354            // Find clock source
+    355            switch (CMU->SYSCLKCTRL & _CMU_SYSCLKCTRL_CLKSEL_MASK) {
+   \        0x4   0x....             LDR.N    R0,??DataTable13_13
+   \        0x6   0x6800             LDR      R0,[R0, #+0]
+   \        0x8   0xF010 0x0007      ANDS     R0,R0,#0x7
+   \        0xC   0x2801             CMP      R0,#+1
+   \        0xE   0xD009             BEQ.N    ??SystemSYSCLKGet_0
+   \       0x10   0xD30A             BCC.N    ??SystemSYSCLKGet_1
+   \       0x12   0x2803             CMP      R0,#+3
+   \       0x14   0xD003             BEQ.N    ??SystemSYSCLKGet_2
+   \       0x16   0xD207             BCS.N    ??SystemSYSCLKGet_1
+    356              case _CMU_SYSCLKCTRL_CLKSEL_HFRCODPLL:
+    357                ret = SystemHFRCODPLLClockGet();
+   \                     ??SystemSYSCLKGet_3: (+1)
+   \       0x18   0x.... 0x....      BL       SystemHFRCODPLLClockGet
+    358                break;
+   \       0x1C   0xE005             B.N      ??SystemSYSCLKGet_4
+    359          
+    360          #if (HFXO_FREQ > 0U)
+    361              case _CMU_SYSCLKCTRL_CLKSEL_HFXO:
+    362          #if defined(SYSTEM_NO_STATIC_MEMORY)
+    363                ret = HFXO_FREQ;
+    364          #else
+    365                ret = SystemHFXOClock;
+   \                     ??SystemSYSCLKGet_2: (+1)
+   \       0x1E   0x....             LDR.N    R0,??DataTable13_14
+   \       0x20   0x6800             LDR      R0,[R0, #+0]
+    366          #endif
+    367                break;
+   \       0x22   0xE002             B.N      ??SystemSYSCLKGet_4
+    368          #endif
+    369          
+    370          #if (CLKIN0_FREQ > 0U)
+    371              case _CMU_SYSCLKCTRL_CLKSEL_CLKIN0:
+    372                ret = CLKIN0_FREQ;
+    373                break;
+    374          #endif
+    375          
+    376              case _CMU_SYSCLKCTRL_CLKSEL_FSRCO:
+    377                ret = FSRCO_FREQ;
+   \                     ??SystemSYSCLKGet_0: (+1)
+   \       0x24   0x....             LDR.N    R0,??DataTable13_15
+    378                break;
+   \       0x26   0xE000             B.N      ??SystemSYSCLKGet_4
+    379          
+    380              default:
+    381                // Unknown clock source.
+    382                while (1) {
+   \                     ??SystemSYSCLKGet_1: (+1)
+   \       0x28   0xE7FE             B.N      ??SystemSYSCLKGet_1
+    383                }
+    384            }
+    385            return ret;
+   \                     ??SystemSYSCLKGet_4: (+1)
+   \       0x2A   0xBD10             POP      {R4,PC}
+    386          }
+    387          
+    388          /***************************************************************************//**
+    389           * @brief
+    390           *   Get the current system core clock frequency (HCLK).
+    391           *
+    392           * @details
+    393           *   Calculate and get the current core clock frequency based on the current
+    394           *   configuration. Assuming that the SystemCoreClock global variable is
+    395           *   maintained, the core clock frequency is stored in that variable as well.
+    396           *   This function will however calculate the core clock based on actual HW
+    397           *   configuration. It will also update the SystemCoreClock global variable.
+    398           *
+    399           * @note
+    400           *   This is a EFR32FG23 specific function, not part of the
+    401           *   CMSIS definition.
+    402           *
+    403           * @return
+    404           *   The current core clock (HCLK) frequency in Hz.
+    405           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    406          uint32_t SystemHCLKGet(void)
+    407          {
+   \                     SystemHCLKGet: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    408            uint32_t presc, ret;
+    409          
+    410            ret = SystemSYSCLKGet();
+   \        0x2   0x.... 0x....      BL       SystemSYSCLKGet
+    411          
+    412            presc = (CMU->SYSCLKCTRL & _CMU_SYSCLKCTRL_HCLKPRESC_MASK)
+    413                    >> _CMU_SYSCLKCTRL_HCLKPRESC_SHIFT;
+   \        0x6   0x....             LDR.N    R1,??DataTable13_13
+   \        0x8   0x6809             LDR      R1,[R1, #+0]
+   \        0xA   0xF3C1 0x3103      UBFX     R1,R1,#+12,#+4
+    414          
+    415            ret /= presc + 1U;
+   \        0xE   0x1C4A             ADDS     R2,R1,#+1
+   \       0x10   0xFBB0 0xF0F2      UDIV     R0,R0,R2
+    416          
+    417          #if !defined(SYSTEM_NO_STATIC_MEMORY)
+    418            // Keep CMSIS system clock variable up-to-date
+    419            SystemCoreClock = ret;
+   \       0x14   0x....             LDR.N    R2,??DataTable13_16
+   \       0x16   0x6010             STR      R0,[R2, #+0]
+    420          #endif
+    421          
+    422            return ret;
+   \       0x18   0xBD02             POP      {R1,PC}
+    423          }
+    424          
+    425          /***************************************************************************//**
+    426           * @brief
+    427           *   Get the maximum core clock frequency.
+    428           *
+    429           * @note
+    430           *   This is a EFR32FG23 specific function, not part of the
+    431           *   CMSIS definition.
+    432           *
+    433           * @return
+    434           *   The maximum core clock frequency in Hz.
+    435           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    436          uint32_t SystemMaxCoreClockGet(void)
+    437          {
+    438            return(HFRCODPLL_MAX_FREQ > HFXO_FREQ \
+    439                   ? HFRCODPLL_MAX_FREQ : HFXO_FREQ);
+   \                     SystemMaxCoreClockGet: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable13_17
+   \        0x2   0x4770             BX       LR
+    440          }
+    441          
+    442          /**************************************************************************//**
+    443           * @brief
+    444           *   Get high frequency crystal oscillator clock frequency for target system.
+    445           *
+    446           * @note
+    447           *   This is a EFR32FG23 specific function, not part of the
+    448           *   CMSIS definition.
+    449           *
+    450           * @return
+    451           *   HFXO frequency in Hz. 0 if the external crystal oscillator is not present.
+    452           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    453          uint32_t SystemHFXOClockGet(void)
+    454          {
+    455            // The external crystal oscillator is not present if HFXO_FREQ==0
+    456          #if (HFXO_FREQ > 0U)
+    457          #if defined(SYSTEM_NO_STATIC_MEMORY)
+    458            return HFXO_FREQ;
+    459          #else
+    460            return SystemHFXOClock;
+   \                     SystemHFXOClockGet: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable13_14
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR
+    461          #endif
+    462          #else
+    463            return 0U;
+    464          #endif
+    465          }
+    466          
+    467          /**************************************************************************//**
+    468           * @brief
+    469           *   Set high frequency crystal oscillator clock frequency for target system.
+    470           *
+    471           * @note
+    472           *   This function is mainly provided for being able to handle target systems
+    473           *   with different HF crystal oscillator frequencies run-time. If used, it
+    474           *   should probably only be used once during system startup.
+    475           *
+    476           * @note
+    477           *   This is a EFR32FG23 specific function, not part of the
+    478           *   CMSIS definition.
+    479           *
+    480           * @param[in] freq
+    481           *   HFXO frequency in Hz used for target.
+    482           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    483          void SystemHFXOClockSet(uint32_t freq)
+    484          {
+   \                     SystemHFXOClockSet: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    485            // External crystal oscillator present?
+    486          #if (HFXO_FREQ > 0) && !defined(SYSTEM_NO_STATIC_MEMORY)
+    487            SystemHFXOClock = freq;
+   \        0x4   0x....             LDR.N    R0,??DataTable13_14
+   \        0x6   0x6004             STR      R4,[R0, #+0]
+    488          
+    489            // Update core clock frequency if HFXO is used to clock core
+    490            if ((CMU->SYSCLKCTRL & _CMU_SYSCLKCTRL_CLKSEL_MASK)
+    491                == _CMU_SYSCLKCTRL_CLKSEL_HFXO) {
+   \        0x8   0x....             LDR.N    R0,??DataTable13_13
+   \        0xA   0x6800             LDR      R0,[R0, #+0]
+   \        0xC   0xF010 0x0007      ANDS     R0,R0,#0x7
+   \       0x10   0x2803             CMP      R0,#+3
+   \       0x12   0xD101             BNE.N    ??SystemHFXOClockSet_0
+    492              // This function will update the global variable
+    493              SystemHCLKGet();
+   \       0x14   0x.... 0x....      BL       SystemHCLKGet
+    494            }
+    495          #else
+    496            (void) freq; // Unused parameter
+    497          #endif
+    498          }
+   \                     ??SystemHFXOClockSet_0: (+1)
+   \       0x18   0xBD10             POP      {R4,PC}
+    499          
+    500          /**************************************************************************//**
+    501           * @brief
+    502           *   Get current CLKIN0 frequency.
+    503           *
+    504           * @note
+    505           *   This is a EFR32FG23 specific function, not part of the
+    506           *   CMSIS definition.
+    507           *
+    508           * @return
+    509           *   CLKIN0 frequency in Hz.
+    510           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    511          uint32_t SystemCLKIN0Get(void)
+    512          {
+    513            return CLKIN0_FREQ;
+   \                     SystemCLKIN0Get: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR
+    514          }
+    515          
+    516          /**************************************************************************//**
+    517           * @brief
+    518           *   Get FSRCO frequency.
+    519           *
+    520           * @note
+    521           *   This is a EFR32FG23 specific function, not part of the
+    522           *   CMSIS definition.
+    523           *
+    524           * @return
+    525           *   FSRCO frequency in Hz.
+    526           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    527          uint32_t SystemFSRCOClockGet(void)
+    528          {
+    529            return FSRCO_FREQ;
+   \                     SystemFSRCOClockGet: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable13_15
+   \        0x2   0x4770             BX       LR
+    530          }
+    531          
+    532          /**************************************************************************//**
+    533           * @brief
+    534           *   Get current HFRCOEM23 frequency.
+    535           *
+    536           * @note
+    537           *   This is a EFR32FG23 specific function, not part of the
+    538           *   CMSIS definition.
+    539           *
+    540           * @return
+    541           *   HFRCOEM23 frequency in Hz.
+    542           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    543          uint32_t SystemHFRCOEM23ClockGet(void)
+    544          {
+    545            uint32_t ret = 0UL;
+   \                     SystemHFRCOEM23ClockGet: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+    546          
+    547            // Get oscillator frequency band
+    548            switch ((HFRCOEM23->CAL & _HFRCO_CAL_FREQRANGE_MASK)
+    549                    >> _HFRCO_CAL_FREQRANGE_SHIFT) {
+   \        0x2   0x....             LDR.N    R1,??DataTable13_18
+   \        0x4   0x6809             LDR      R1,[R1, #+0]
+   \        0x6   0x0C09             LSRS     R1,R1,#+16
+   \        0x8   0xF011 0x011F      ANDS     R1,R1,#0x1F
+   \        0xC   0x2900             CMP      R1,#+0
+   \        0xE   0xD00C             BEQ.N    ??SystemHFRCOEM23ClockGet_0
+   \       0x10   0x2906             CMP      R1,#+6
+   \       0x12   0xD023             BEQ.N    ??SystemHFRCOEM23ClockGet_1
+   \       0x14   0x2907             CMP      R1,#+7
+   \       0x16   0xD024             BEQ.N    ??SystemHFRCOEM23ClockGet_2
+   \       0x18   0x2908             CMP      R1,#+8
+   \       0x1A   0xD025             BEQ.N    ??SystemHFRCOEM23ClockGet_3
+   \       0x1C   0x290A             CMP      R1,#+10
+   \       0x1E   0xD026             BEQ.N    ??SystemHFRCOEM23ClockGet_4
+   \       0x20   0x290B             CMP      R1,#+11
+   \       0x22   0xD027             BEQ.N    ??SystemHFRCOEM23ClockGet_5
+   \       0x24   0x290C             CMP      R1,#+12
+   \       0x26   0xD028             BEQ.N    ??SystemHFRCOEM23ClockGet_6
+   \       0x28   0xE02A             B.N      ??SystemHFRCOEM23ClockGet_7
+    550              case 0:
+    551                switch (HFRCOEM23->CAL & _HFRCO_CAL_CLKDIV_MASK) {
+   \                     ??SystemHFRCOEM23ClockGet_0: (+1)
+   \       0x2A   0x....             LDR.N    R1,??DataTable13_18
+   \       0x2C   0x6809             LDR      R1,[R1, #+0]
+   \       0x2E   0xF011 0x7140      ANDS     R1,R1,#0x3000000
+   \       0x32   0x2900             CMP      R1,#+0
+   \       0x34   0xD006             BEQ.N    ??SystemHFRCOEM23ClockGet_8
+   \       0x36   0xF1B1 0x7F80      CMP      R1,#+16777216
+   \       0x3A   0xD006             BEQ.N    ??SystemHFRCOEM23ClockGet_9
+   \       0x3C   0xF1B1 0x7F00      CMP      R1,#+33554432
+   \       0x40   0xD006             BEQ.N    ??SystemHFRCOEM23ClockGet_10
+   \       0x42   0xE008             B.N      ??SystemHFRCOEM23ClockGet_11
+    552                  case HFRCO_CAL_CLKDIV_DIV1:
+    553                    ret = 4000000UL;
+   \                     ??SystemHFRCOEM23ClockGet_8: (+1)
+   \       0x44   0x....             LDR.N    R1,??DataTable13_19
+   \       0x46   0x0008             MOVS     R0,R1
+    554                    break;
+   \       0x48   0xE007             B.N      ??SystemHFRCOEM23ClockGet_12
+    555          
+    556                  case HFRCO_CAL_CLKDIV_DIV2:
+    557                    ret = 2000000UL;
+   \                     ??SystemHFRCOEM23ClockGet_9: (+1)
+   \       0x4A   0x....             LDR.N    R1,??DataTable13_20
+   \       0x4C   0x0008             MOVS     R0,R1
+    558                    break;
+   \       0x4E   0xE004             B.N      ??SystemHFRCOEM23ClockGet_12
+    559          
+    560                  case HFRCO_CAL_CLKDIV_DIV4:
+    561                    ret = 1000000UL;
+   \                     ??SystemHFRCOEM23ClockGet_10: (+1)
+   \       0x50   0x....             LDR.N    R1,??DataTable13_21
+   \       0x52   0x0008             MOVS     R0,R1
+    562                    break;
+   \       0x54   0xE001             B.N      ??SystemHFRCOEM23ClockGet_12
+    563          
+    564                  default:
+    565                    ret = 0UL;
+   \                     ??SystemHFRCOEM23ClockGet_11: (+1)
+   \       0x56   0x2100             MOVS     R1,#+0
+   \       0x58   0x0008             MOVS     R0,R1
+    566                    break;
+    567                }
+    568                break;
+   \                     ??SystemHFRCOEM23ClockGet_12: (+1)
+   \       0x5A   0xE011             B.N      ??SystemHFRCOEM23ClockGet_13
+    569          
+    570              case 6:
+    571                ret = 13000000UL;
+   \                     ??SystemHFRCOEM23ClockGet_1: (+1)
+   \       0x5C   0x....             LDR.N    R1,??DataTable13_22
+   \       0x5E   0x0008             MOVS     R0,R1
+    572                break;
+   \       0x60   0xE00E             B.N      ??SystemHFRCOEM23ClockGet_13
+    573          
+    574              case 7:
+    575                ret = 16000000UL;
+   \                     ??SystemHFRCOEM23ClockGet_2: (+1)
+   \       0x62   0x....             LDR.N    R1,??DataTable13_23
+   \       0x64   0x0008             MOVS     R0,R1
+    576                break;
+   \       0x66   0xE00B             B.N      ??SystemHFRCOEM23ClockGet_13
+    577          
+    578              case 8:
+    579                ret = 19000000UL;
+   \                     ??SystemHFRCOEM23ClockGet_3: (+1)
+   \       0x68   0x....             LDR.N    R1,??DataTable13_24
+   \       0x6A   0x0008             MOVS     R0,R1
+    580                break;
+   \       0x6C   0xE008             B.N      ??SystemHFRCOEM23ClockGet_13
+    581          
+    582              case 10:
+    583                ret = 26000000UL;
+   \                     ??SystemHFRCOEM23ClockGet_4: (+1)
+   \       0x6E   0x....             LDR.N    R1,??DataTable13_25
+   \       0x70   0x0008             MOVS     R0,R1
+    584                break;
+   \       0x72   0xE005             B.N      ??SystemHFRCOEM23ClockGet_13
+    585          
+    586              case 11:
+    587                ret = 32000000UL;
+   \                     ??SystemHFRCOEM23ClockGet_5: (+1)
+   \       0x74   0x....             LDR.N    R1,??DataTable13_26
+   \       0x76   0x0008             MOVS     R0,R1
+    588                break;
+   \       0x78   0xE002             B.N      ??SystemHFRCOEM23ClockGet_13
+    589          
+    590              case 12:
+    591                ret = 40000000UL;
+   \                     ??SystemHFRCOEM23ClockGet_6: (+1)
+   \       0x7A   0x....             LDR.N    R1,??DataTable13_27
+   \       0x7C   0x0008             MOVS     R0,R1
+    592                break;
+   \       0x7E   0xE7FF             B.N      ??SystemHFRCOEM23ClockGet_13
+    593          
+    594              default:
+    595                break;
+    596            }
+    597            return ret;
+   \                     ??SystemHFRCOEM23ClockGet_7: (+1)
+   \                     ??SystemHFRCOEM23ClockGet_13: (+1)
+   \       0x80   0x4770             BX       LR
+    598          }
+    599          
+    600          /**************************************************************************//**
+    601           * @brief
+    602           *   Get low frequency RC oscillator clock frequency for target system.
+    603           *
+    604           * @note
+    605           *   This is a EFR32FG23 specific function, not part of the
+    606           *   CMSIS definition.
+    607           *
+    608           * @return
+    609           *   LFRCO frequency in Hz.
+    610           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    611          uint32_t SystemLFRCOClockGet(void)
+    612          {
+    613            return LFRCO_FREQ;
+   \                     SystemLFRCOClockGet: (+1)
+   \        0x0   0xF44F 0x4000      MOV      R0,#+32768
+   \        0x4   0x4770             BX       LR
+    614          }
+    615          
+    616          /**************************************************************************//**
+    617           * @brief
+    618           *   Get ultra low frequency RC oscillator clock frequency for target system.
+    619           *
+    620           * @note
+    621           *   This is a EFR32FG23 specific function, not part of the
+    622           *   CMSIS definition.
+    623           *
+    624           * @return
+    625           *   ULFRCO frequency in Hz.
+    626           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    627          uint32_t SystemULFRCOClockGet(void)
+    628          {
+    629            // The ULFRCO frequency is not tuned, and can be very inaccurate
+    630            return ULFRCO_FREQ;
+   \                     SystemULFRCOClockGet: (+1)
+   \        0x0   0xF44F 0x707A      MOV      R0,#+1000
+   \        0x4   0x4770             BX       LR
+    631          }
+    632          
+    633          /**************************************************************************//**
+    634           * @brief
+    635           *   Get low frequency crystal oscillator clock frequency for target system.
+    636           *
+    637           * @note
+    638           *   This is a EFR32FG23 specific function, not part of the
+    639           *   CMSIS definition.
+    640           *
+    641           * @return
+    642           *   LFXO frequency in Hz.
+    643           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    644          uint32_t SystemLFXOClockGet(void)
+    645          {
+    646            // External crystal present?
+    647          #if (LFXO_FREQ > 0U)
+    648          #if defined(SYSTEM_NO_STATIC_MEMORY)
+    649            return LFXO_FREQ;
+    650          #else
+    651            return SystemLFXOClock;
+   \                     SystemLFXOClockGet: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable13_28
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR
+    652          #endif
+    653          #else
+    654            return 0U;
+    655          #endif
+    656          }
+    657          
+    658          /**************************************************************************//**
+    659           * @brief
+    660           *   Set low frequency crystal oscillator clock frequency for target system.
+    661           *
+    662           * @note
+    663           *   This function is mainly provided for being able to handle target systems
+    664           *   with different HF crystal oscillator frequencies run-time. If used, it
+    665           *   should probably only be used once during system startup.
+    666           *
+    667           * @note
+    668           *   This is a EFR32FG23 specific function, not part of the
+    669           *   CMSIS definition.
+    670           *
+    671           * @param[in] freq
+    672           *   LFXO frequency in Hz used for target.
+    673           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    674          void SystemLFXOClockSet(uint32_t freq)
+    675          {
+    676            // External crystal oscillator present?
+    677          #if (LFXO_FREQ > 0U) && !defined(SYSTEM_NO_STATIC_MEMORY)
+    678            SystemLFXOClock = freq;
+   \                     SystemLFXOClockSet: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable13_28
+   \        0x2   0x6008             STR      R0,[R1, #+0]
+    679          #else
+    680            (void) freq; // Unused parameter
+    681          #endif
+    682          }
+   \        0x4   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13:
+   \        0x0   0xE000'E100        DC32     0xe000e100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_1:
+   \        0x0   0xE000'E280        DC32     0xe000e280
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_2:
+   \        0x0   0x....'....        DC32     __vector_table
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_3:
+   \        0x0   0xE000'ED08        DC32     0xe000ed08
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_4:
+   \        0x0   0xE000'ED88        DC32     0xe000ed88
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_5:
+   \        0x0   0x5000'9068        DC32     0x50009068
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_6:
+   \        0x0   0x4400'A060        DC32     0x4400a060
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_7:
+   \        0x0   0x017F'FF7F        DC32     0x17fff7f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_8:
+   \        0x0   0x4400'A064        DC32     0x4400a064
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_9:
+   \        0x0   0xE000'EDD0        DC32     0xe000edd0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_10:
+   \        0x0   0x4400'A00C        DC32     0x4400a00c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_11:
+   \        0x0   0x4400'8010        DC32     0x44008010
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_12:
+   \        0x0   0x....'....        DC32     SystemHFRCODPLLClock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_13:
+   \        0x0   0x5000'8070        DC32     0x50008070
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_14:
+   \        0x0   0x....'....        DC32     SystemHFXOClock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_15:
+   \        0x0   0x0131'2D00        DC32     0x1312d00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_16:
+   \        0x0   0x....'....        DC32     SystemCoreClock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_17:
+   \        0x0   0x04C4'B400        DC32     0x4c4b400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_18:
+   \        0x0   0x5A00'0008        DC32     0x5a000008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_19:
+   \        0x0   0x003D'0900        DC32     0x3d0900
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_20:
+   \        0x0   0x001E'8480        DC32     0x1e8480
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_21:
+   \        0x0   0x000F'4240        DC32     0xf4240
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_22:
+   \        0x0   0x00C6'5D40        DC32     0xc65d40
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_23:
+   \        0x0   0x00F4'2400        DC32     0xf42400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_24:
+   \        0x0   0x0121'EAC0        DC32     0x121eac0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_25:
+   \        0x0   0x018C'BA80        DC32     0x18cba80
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_26:
+   \        0x0   0x01E8'4800        DC32     0x1e84800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_27:
+   \        0x0   0x0262'5A00        DC32     0x2625a00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_28:
+   \        0x0   0x....'....        DC32     SystemLFXOClock
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   FlashToRamCopy
+       0   SystemCLKIN0Get
+       0   SystemFSRCOClockGet
+       8   SystemHCLKGet
+         8   -> SystemSYSCLKGet
+       0   SystemHFRCODPLLClockGet
+       0   SystemHFRCODPLLClockSet
+       0   SystemHFRCOEM23ClockGet
+       0   SystemHFXOClockGet
+       8   SystemHFXOClockSet
+         8   -> SystemHCLKGet
+       8   SystemInit
+         8   -> __NVIC_ClearPendingIRQ
+         8   -> __NVIC_EnableIRQ
+       0   SystemLFRCOClockGet
+       0   SystemLFXOClockGet
+       0   SystemLFXOClockSet
+       0   SystemMaxCoreClockGet
+       8   SystemSYSCLKGet
+         8   -> SystemHFRCODPLLClockGet
+       0   SystemULFRCOClockGet
+       0   __NVIC_ClearPendingIRQ
+       0   __NVIC_EnableIRQ
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable13
+       4  ??DataTable13_1
+       4  ??DataTable13_10
+       4  ??DataTable13_11
+       4  ??DataTable13_12
+       4  ??DataTable13_13
+       4  ??DataTable13_14
+       4  ??DataTable13_15
+       4  ??DataTable13_16
+       4  ??DataTable13_17
+       4  ??DataTable13_18
+       4  ??DataTable13_19
+       4  ??DataTable13_2
+       4  ??DataTable13_20
+       4  ??DataTable13_21
+       4  ??DataTable13_22
+       4  ??DataTable13_23
+       4  ??DataTable13_24
+       4  ??DataTable13_25
+       4  ??DataTable13_26
+       4  ??DataTable13_27
+       4  ??DataTable13_28
+       4  ??DataTable13_3
+       4  ??DataTable13_4
+       4  ??DataTable13_5
+       4  ??DataTable13_6
+       4  ??DataTable13_7
+       4  ??DataTable13_8
+       4  ??DataTable13_9
+      24  FlashToRamCopy
+       4  SystemCLKIN0Get
+       4  SystemCoreClock
+       4  SystemFSRCOClockGet
+      26  SystemHCLKGet
+       4  SystemHFRCODPLLClock
+       6  SystemHFRCODPLLClockGet
+       6  SystemHFRCODPLLClockSet
+     130  SystemHFRCOEM23ClockGet
+       4  SystemHFXOClock
+       6  SystemHFXOClockGet
+      26  SystemHFXOClockSet
+      86  SystemInit
+       6  SystemLFRCOClockGet
+       4  SystemLFXOClock
+       6  SystemLFXOClockGet
+       6  SystemLFXOClockSet
+       4  SystemMaxCoreClockGet
+      44  SystemSYSCLKGet
+       6  SystemULFRCOClockGet
+      30  __NVIC_ClearPendingIRQ
+      30  __NVIC_EnableIRQ
+
+ 
+  16 bytes in section .data
+ 566 bytes in section .text
+ 
+ 566 bytes of CODE memory
+  16 bytes of DATA memory
+
+Errors: none
+Warnings: none

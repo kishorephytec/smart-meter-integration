@@ -1,0 +1,682 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         30/Apr/2024  13:12:22
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\ProAppSrc\Util\hif\hif_service.c
+#    Command line                 =
+#        -f
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\APPSrc\Util\hif_service.lst.rsp
+#        (D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\ProAppSrc\Util\hif\hif_service.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\APPSrc\Util
+#        --diag_suppress Pa050 -o
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\APPSrc\Util
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\APPSrc\Util\hif_service.o.d
+#    Locale                       =  C
+#    List file                    =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\APPSrc\Util\hif_service.lst
+#    Object file                  =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\APPSrc\Util\hif_service.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\ProAppSrc\Util\hif\hif_service.c
+      1          /** \file hif_service.c
+      2           *******************************************************************************
+      3           ** \brief 
+      4           ** Implements the Host interface functionality
+      5           **
+      6           ** \cond STD_FILE_HEADER
+      7           **
+      8           ** COPYRIGHT(c) 2023-24 Procubed Innovations Pvt Ltd.
+      9           ** All rights reserved.
+     10           **
+     11           ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     12           ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     13           ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     14           ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     15           ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     16           ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     17           ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     18           **
+     19           *******************************************************************************
+     20           **  \endcond
+     21           */
+     22          
+     23          /*
+     24          ********************************************************************************
+     25          * File inclusion
+     26          ********************************************************************************
+     27          */
+     28          
+     29          #include "StackPHYConf.h"
+     30          #include "common.h"
+     31          #include "queue_latest.h"
+     32          #include "uart_hal.h"
+     33          #include "hif_utility.h"
+     34          #include "event_manager.h"
+     35          #include "sw_timer.h"
+     36          #include "timer_service.h"
+     37          #if APP_LBR_ROUTER
+     38          #if(APP_HIF_PROCESS_FEATURE_ENABLED == 1)
+     39          #include "hif_process.h"
+     40          #endif
+     41          #endif
+     42          //#include "buffer_service.h"
+     43          
+     44          /*
+     45          ** =============================================================================
+     46          ** Private Macro definitions
+     47          ** =============================================================================
+     48          */
+     49          	
+     50          /* None */
+     51          
+     52          /*
+     53          ** =============================================================================
+     54          ** Private Structures, Unions & enums Type Definitions
+     55          ** =============================================================================
+     56          **/
+     57          
+     58          /* None */
+     59          
+     60          /*
+     61          ** =============================================================================
+     62          ** Private Variable Definitions
+     63          ** =============================================================================
+     64          */
+     65          
+
+   \                                 In section .data, align 4
+     66          drv_calls_t driver = 
+   \                     driver:
+   \        0x0   0x0000'0000        DC32 0x0, uart_hal_write, uart_hal_read, UART_init, UART_close
+
+   \              0x....'....  
+
+   \              0x....'....  
+
+   \              0x....'....  
+
+   \              0x....'....
+     67          {
+     68          	NULL,
+     69          	uart_hal_write,
+     70          	uart_hal_read,
+     71          	UART_init,
+     72          	UART_close
+     73          };
+     74          
+
+   \                                 In section .bss, align 4
+     75          static hif_t* mp_hif;
+   \                     mp_hif:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 2
+     76          static uint16_t rx_buff_wrong_queue_cnt = 0;
+   \                     rx_buff_wrong_queue_cnt:
+   \        0x0                      DS8 2
+     77          
+     78          /*
+     79          ** =============================================================================
+     80          ** Private Function Prototypes
+     81          ** =============================================================================
+     82          */
+     83          
+     84          static void hif_service_notify( uint8_t evt );
+     85          
+     86          /*
+     87          ** =============================================================================
+     88          ** External Variable Declarations
+     89          ** =============================================================================
+     90          */
+     91          
+     92          extern uint8_t heap[];
+     93          #if APP_LBR_ROUTER
+     94          extern sw_tmr_t uart_debug;//@Umesh 05_12_2018
+     95          #endif
+     96          //extern uart_hal_data_t uart_hal_info;
+     97          
+     98          /*
+     99          ** =============================================================================
+    100          ** External Function Prototypes
+    101          ** =============================================================================
+    102          */
+    103          
+    104          //extern void signal_event_to_mac_task( uint8_t event );
+    105          
+    106          /*
+    107          ** =============================================================================
+    108          ** Public Variables Definitions
+    109          ** =============================================================================
+    110          **/
+    111          
+    112          void clear_buffer_and_state(void *uart_data);
+    113          
+    114          /*
+    115          ** =============================================================================
+    116          ** Public Function Prototypes
+    117          ** =============================================================================
+    118          */
+    119          
+    120          /* None */
+    121          
+    122          /*
+    123          ** =============================================================================
+    124          ** Public Function Definitions
+    125          ** =============================================================================
+    126          */
+    127          
+
+   \                                 In section .text, align 2, keep-with-next
+    128          void hif_service_init(hif_t* p_hif_data) //To be called from main
+    129          {
+   \                     hif_service_init: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    130          
+    131          	mp_hif = p_hif_data;
+   \        0x4   0x....             LDR.N    R0,??DataTable2
+   \        0x6   0x6004             STR      R4,[R0, #+0]
+    132          	p_hif_data->p_hif_heap = heap;
+   \        0x8   0x....             LDR.N    R0,??DataTable2_1
+   \        0xA   0x63E0             STR      R0,[R4, #+60]
+    133          
+    134          	hif_module_init
+    135          	( 
+    136          		p_hif_data,
+    137          		hif_service_notify,
+    138          		&driver 
+    139          	);
+   \        0xC   0x....             LDR.N    R2,??DataTable2_2
+   \        0xE   0x.... 0x....      ADR.W    R1,hif_service_notify
+   \       0x12   0x0020             MOVS     R0,R4
+   \       0x14   0x.... 0x....      BL       hif_module_init
+    140          #if APP_LBR_ROUTER        
+    141                  /*calling one-shot timer for hif*//*Umesh 17-sep-2018*/
+    142                  tmr_create_one_shot_timer
+    143                  (
+    144                      &(uart_debug),
+    145                      180000,//200000, //code working on 180000 for 2048 pkt,from cal culation timer value is set to 213333. 
+    146                      (sw_tmr_cb_t)&clear_buffer_and_state,
+    147                      NULL//&uart_hal_info
+    148                  );
+   \       0x18   0x2300             MOVS     R3,#+0
+   \       0x1A   0x....             LDR.N    R2,??DataTable2_3
+   \       0x1C   0x....             LDR.N    R1,??DataTable2_4
+   \       0x1E   0x....             LDR.N    R0,??DataTable2_5
+   \       0x20   0x.... 0x....      BL       tmr_create_one_shot_timer
+    149          #endif
+    150          }
+   \       0x24   0xBD10             POP      {R4,PC}
+    151          
+    152          /*----------------------------------------------------------------------------*/
+    153          
+
+   \                                 In section .text, align 2, keep-with-next
+    154          void hif_task_init(void) //To be called from main after hif_service_init() call
+    155          {
+    156          	//create task
+    157          }
+   \                     hif_task_init: (+1)
+   \        0x0   0x4770             BX       LR
+    158          
+    159          /*----------------------------------------------------------------------------*/
+    160          
+
+   \                                 In section .text, align 2, keep-with-next
+    161          void hif_task(hif_t* p_hif)
+    162          {
+   \                     hif_task: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+    163          	hif_buff_t* pBuffer = NULL;
+   \        0x4   0x2400             MOVS     R4,#+0
+    164          	pBuffer = ( hif_buff_t* )queue_peek( &( p_hif->recv_q ));
+   \        0x6   0xF116 0x0018      ADDS     R0,R6,#+24
+   \        0xA   0x.... 0x....      BL       queue_peek
+   \        0xE   0x0005             MOVS     R5,R0
+    165          	if ( NULL != pBuffer )
+   \       0x10   0x2D00             CMP      R5,#+0
+   \       0x12   0xD002             BEQ.N    ??hif_task_0
+    166          	{
+    167          		/*Packet recieved*/
+    168          		hif_proc_packet_from_host( p_hif );
+   \       0x14   0x0030             MOVS     R0,R6
+   \       0x16   0x.... 0x....      BL       hif_proc_packet_from_host
+    169          	}
+    170          
+    171          	pBuffer = ( hif_buff_t* )queue_peek( &( p_hif->send_q ));
+   \                     ??hif_task_0: (+1)
+   \       0x1A   0xF116 0x000C      ADDS     R0,R6,#+12
+   \       0x1E   0x.... 0x....      BL       queue_peek
+   \       0x22   0x0004             MOVS     R4,R0
+    172          	
+    173          	if ( NULL != pBuffer )
+   \       0x24   0x2C00             CMP      R4,#+0
+   \       0x26   0xD002             BEQ.N    ??hif_task_1
+    174          	{
+    175                          /*Packet Transmitt*/
+    176          		hif_send_packet_to_host( p_hif );
+   \       0x28   0x0030             MOVS     R0,R6
+   \       0x2A   0x.... 0x....      BL       hif_send_packet_to_host
+    177          	}
+    178          
+    179          }
+   \                     ??hif_task_1: (+1)
+   \       0x2E   0xBD70             POP      {R4-R6,PC}
+    180          /*----------------------------------------------------------------------------*/
+    181          
+
+   \                                 In section .text, align 2, keep-with-next
+    182          void ReceiveProcess(void)
+    183          {
+   \                     ReceiveProcess: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    184          	uint16_t queueCnt = 0;
+   \        0x2   0x2600             MOVS     R6,#+0
+    185          	hif_buff_t* pBuffer = NULL;
+   \        0x4   0x2700             MOVS     R7,#+0
+    186          	pBuffer = ( hif_buff_t* )queue_peek( &( mp_hif->recv_q ));
+   \        0x6   0x....             LDR.N    R0,??DataTable2
+   \        0x8   0x6800             LDR      R0,[R0, #+0]
+   \        0xA   0x3018             ADDS     R0,R0,#+24
+   \        0xC   0x.... 0x....      BL       queue_peek
+   \       0x10   0x0004             MOVS     R4,R0
+    187                  queueCnt = queue_count_get( &( mp_hif->recv_q ));
+   \       0x12   0x....             LDR.N    R0,??DataTable2
+   \       0x14   0x6800             LDR      R0,[R0, #+0]
+   \       0x16   0x3018             ADDS     R0,R0,#+24
+   \       0x18   0x.... 0x....      BL       queue_count_get
+   \       0x1C   0x0005             MOVS     R5,R0
+    188          	if ( NULL != pBuffer )
+   \       0x1E   0x2C00             CMP      R4,#+0
+   \       0x20   0xD010             BEQ.N    ??ReceiveProcess_0
+    189          	{
+    190          		/*Packet recieved*/
+    191          		hif_proc_packet_from_host( mp_hif );
+   \       0x22   0x....             LDR.N    R0,??DataTable2
+   \       0x24   0x6800             LDR      R0,[R0, #+0]
+   \       0x26   0x.... 0x....      BL       hif_proc_packet_from_host
+    192                          // Raka  :: As per current logic this condition should never fail 
+    193                          // and we should not get into else  anytime. If we are going to else
+    194                          // we need to relook into this condition.
+    195                          if (queueCnt == 1)
+   \       0x2A   0x0028             MOVS     R0,R5
+   \       0x2C   0xB280             UXTH     R0,R0
+   \       0x2E   0x2801             CMP      R0,#+1
+   \       0x30   0xD103             BNE.N    ??ReceiveProcess_1
+    196                          {
+    197          #if ((RADIO_VALIDATION ==1 )|| ( SNIFFER == 1) || (APP_HIF_PROCESS_FEATURE_ENABLED == 0))          
+    198                            event_clear(HIF_RX_EVENT);
+   \       0x32   0x2003             MOVS     R0,#+3
+   \       0x34   0x.... 0x....      BL       event_clear
+   \       0x38   0xE004             B.N      ??ReceiveProcess_0
+    199          #endif
+    200                          }
+    201                          else
+    202                          {
+    203                            rx_buff_wrong_queue_cnt++;
+   \                     ??ReceiveProcess_1: (+1)
+   \       0x3A   0x....             LDR.N    R0,??DataTable2_6
+   \       0x3C   0x8800             LDRH     R0,[R0, #+0]
+   \       0x3E   0x1C40             ADDS     R0,R0,#+1
+   \       0x40   0x....             LDR.N    R1,??DataTable2_6
+   \       0x42   0x8008             STRH     R0,[R1, #+0]
+    204                          }
+    205                          
+    206          	}
+    207          #if (RADIO_VALIDATION || SNIFFER)     
+    208          	else
+    209          	{
+    210          		event_clear(HIF_RX_EVENT);
+    211          	}
+    212          #endif
+    213          }
+   \                     ??ReceiveProcess_0: (+1)
+   \       0x44   0xBDF1             POP      {R0,R4-R7,PC}
+    214          /*----------------------------------------------------------------------------*/
+    215          
+
+   \                                 In section .text, align 2, keep-with-next
+    216          void TransmitProcess(void)
+    217          {
+   \                     TransmitProcess: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    218            uint16_t queueCnt = 0;
+   \        0x2   0x2400             MOVS     R4,#+0
+    219            hif_buff_t* pBuffer = NULL;
+   \        0x4   0x2500             MOVS     R5,#+0
+    220            queueCnt = queue_count_get( &( mp_hif->send_q ));
+   \        0x6   0x....             LDR.N    R0,??DataTable2
+   \        0x8   0x6800             LDR      R0,[R0, #+0]
+   \        0xA   0x300C             ADDS     R0,R0,#+12
+   \        0xC   0x.... 0x....      BL       queue_count_get
+   \       0x10   0x0006             MOVS     R6,R0
+    221            
+    222          /* Debdeep :: This do-while loop was implemented becouse tx packet was being accumulated in mp_hif->send_q.
+    223          But if uart driver is busy transmitting a previous packet then multiple hif tx event is posted by this do-while loop.
+    224          Now we need to see why tx packet was being accumulted in mp_hif->send_q previously */
+    225          //  do
+    226          //  {
+    227            
+    228            if (queueCnt <= 0)
+   \       0x12   0x0030             MOVS     R0,R6
+   \       0x14   0xB280             UXTH     R0,R0
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD103             BNE.N    ??TransmitProcess_0
+    229            {
+    230          #if ((RADIO_VALIDATION ==1 )|| ( SNIFFER == 1) || (APP_HIF_PROCESS_FEATURE_ENABLED == 0))
+    231              event_clear(HIF_TX_EVENT);
+   \       0x1A   0x2004             MOVS     R0,#+4
+   \       0x1C   0x.... 0x....      BL       event_clear
+    232          #endif
+    233              return;
+   \       0x20   0xE013             B.N      ??TransmitProcess_1
+    234            }
+    235            
+    236            pBuffer = ( hif_buff_t* )queue_peek( &( mp_hif->send_q ));
+   \                     ??TransmitProcess_0: (+1)
+   \       0x22   0x....             LDR.N    R0,??DataTable2
+   \       0x24   0x6800             LDR      R0,[R0, #+0]
+   \       0x26   0x300C             ADDS     R0,R0,#+12
+   \       0x28   0x.... 0x....      BL       queue_peek
+   \       0x2C   0x0004             MOVS     R4,R0
+    237            if ( NULL != pBuffer )
+   \       0x2E   0x2C00             CMP      R4,#+0
+   \       0x30   0xD004             BEQ.N    ??TransmitProcess_2
+    238            {
+    239              /*Packet transmitted*/
+    240              hif_send_packet_to_host( mp_hif );
+   \       0x32   0x....             LDR.N    R0,??DataTable2
+   \       0x34   0x6800             LDR      R0,[R0, #+0]
+   \       0x36   0x.... 0x....      BL       hif_send_packet_to_host
+   \       0x3A   0xE006             B.N      ??TransmitProcess_3
+    241            }
+    242            else
+    243            {
+    244          #if ((RADIO_VALIDATION ==1 )|| ( SNIFFER == 1) || (APP_HIF_PROCESS_FEATURE_ENABLED == 0))
+    245              event_clear(HIF_TX_EVENT);
+   \                     ??TransmitProcess_2: (+1)
+   \       0x3C   0x2004             MOVS     R0,#+4
+   \       0x3E   0x.... 0x....      BL       event_clear
+    246          #endif
+    247              mp_hif->send_q.count = 0;
+   \       0x42   0x2000             MOVS     R0,#+0
+   \       0x44   0x....             LDR.N    R1,??DataTable2
+   \       0x46   0x6809             LDR      R1,[R1, #+0]
+   \       0x48   0x8288             STRH     R0,[R1, #+20]
+    248            }
+    249          
+    250          //    queueCnt = queue_count_get( &( mp_hif->send_q ));
+    251          //  }while (queueCnt != 0);
+    252          }
+   \                     ??TransmitProcess_3: (+1)
+   \                     ??TransmitProcess_1: (+1)
+   \       0x4A   0xBD70             POP      {R4-R6,PC}
+    253          
+    254          /*
+    255          ** ============================================================================
+    256          ** Private Function Definitions
+    257          ** ============================================================================
+    258          */ 
+    259          
+    260          
+
+   \                                 In section .text, align 4, keep-with-next
+    261          static void hif_service_notify( uint8_t evt )
+    262          {
+   \                     hif_service_notify: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    263            if (evt == RX_PACKET_EVENT)
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0x2803             CMP      R0,#+3
+   \        0xA   0xD102             BNE.N    ??hif_service_notify_0
+    264            {
+    265          #if (((RADIO_VALIDATION == 1)|| (SNIFFER == 1) ) || (APP_HIF_PROCESS_FEATURE_ENABLED == 0))
+    266              event_set(HIF_RX_EVENT);
+   \        0xC   0x2003             MOVS     R0,#+3
+   \        0xE   0x.... 0x....      BL       event_set
+    267          #else
+    268              hif_process_rx (NULL);
+    269          #endif
+    270            }
+    271          }
+   \                     ??hif_service_notify_0: (+1)
+   \       0x12   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     mp_hif
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     heap
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x....'....        DC32     driver
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \        0x0   0x....'....        DC32     clear_buffer_and_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
+   \        0x0   0x0002'BF20        DC32     0x2bf20
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_5:
+   \        0x0   0x....'....        DC32     uart_debug
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_6:
+   \        0x0   0x....'....        DC32     rx_buff_wrong_queue_cnt
+    272          
+    273          /*----------------------------------------------------------------------------*/
+    274          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   ReceiveProcess
+        24   -> event_clear
+        24   -> hif_proc_packet_from_host
+        24   -> queue_count_get
+        24   -> queue_peek
+      16   TransmitProcess
+        16   -> event_clear
+        16   -> hif_send_packet_to_host
+        16   -> queue_count_get
+        16   -> queue_peek
+       8   hif_service_init
+         8   -> hif_module_init
+         8   -> tmr_create_one_shot_timer
+       8   hif_service_notify
+         8   -> event_set
+      16   hif_task
+        16   -> hif_proc_packet_from_host
+        16   -> hif_send_packet_to_host
+        16   -> queue_peek
+       0   hif_task_init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
+      70  ReceiveProcess
+      76  TransmitProcess
+      20  driver
+      38  hif_service_init
+      20  hif_service_notify
+      48  hif_task
+       2  hif_task_init
+       4  mp_hif
+       2  rx_buff_wrong_queue_cnt
+
+ 
+   6 bytes in section .bss
+  20 bytes in section .data
+ 282 bytes in section .text
+ 
+ 282 bytes of CODE memory
+  26 bytes of DATA memory
+
+Errors: none
+Warnings: none

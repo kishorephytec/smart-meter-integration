@@ -1,0 +1,2016 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         02/Dec/2024  12:57:56
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\main.c
+#    Command line                 =
+#        -f
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\main.o.rsp
+#        (D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\main.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\
+#        --diag_suppress Pa050 -o
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\main.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\main.lst
+#    Object file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\main.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#      __iar_require _Printf         
+#
+###############################################################################
+
+D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\main.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief main.c
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          // -----------------------------------------------------------------------------
+     32          //                                   Includes
+     33          // -----------------------------------------------------------------------------
+     34          
+     35          #include "common.h"
+     36          #include "StackAppConf.h"
+     37          #include "sl_component_catalog.h"
+     38          #include "sl_system_init.h"
+     39          
+     40          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+     41            #include "sl_power_manager.h"
+     42          #endif
+     43          
+     44          #include "app_init.h"
+
+   \                                 In section .text, align 4, keep-with-next
+   \   static __vfp void __NVIC_EnableIRQ(IRQn_Type)
+   \                     __NVIC_EnableIRQ: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0xB249             SXTB     R1,R1
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xD40A             BMI.N    ??__NVIC_EnableIRQ_0
+   \        0x8   0x2201             MOVS     R2,#+1
+   \        0xA   0xF010 0x011F      ANDS     R1,R0,#0x1F
+   \        0xE   0x408A             LSLS     R2,R2,R1
+   \       0x10   0x.... 0x....      LDR.W    R3,??DataTable8
+   \       0x14   0x0001             MOVS     R1,R0
+   \       0x16   0xB249             SXTB     R1,R1
+   \       0x18   0x0949             LSRS     R1,R1,#+5
+   \       0x1A   0xF843 0x2021      STR      R2,[R3, R1, LSL #+2]
+   \                     ??__NVIC_EnableIRQ_0: (+1)
+   \       0x1E   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void __NVIC_ClearPendingIRQ(IRQn_Type)
+   \                     __NVIC_ClearPendingIRQ: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0xB249             SXTB     R1,R1
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xD40A             BMI.N    ??__NVIC_ClearPendingIRQ_0
+   \        0x8   0x2201             MOVS     R2,#+1
+   \        0xA   0xF010 0x011F      ANDS     R1,R0,#0x1F
+   \        0xE   0x408A             LSLS     R2,R2,R1
+   \       0x10   0x.... 0x....      LDR.W    R3,??DataTable8_1
+   \       0x14   0x0001             MOVS     R1,R0
+   \       0x16   0xB249             SXTB     R1,R1
+   \       0x18   0x0949             LSRS     R1,R1,#+5
+   \       0x1A   0xF843 0x2021      STR      R2,[R3, R1, LSL #+2]
+   \                     ??__NVIC_ClearPendingIRQ_0: (+1)
+   \       0x1E   0x4770             BX       LR
+     45          #include "app_process.h"
+     46          
+     47          #if defined(SL_CATALOG_KERNEL_PRESENT)
+     48            #include "sl_system_kernel.h"
+     49            #include "app_task_init.h"
+     50          #else // SL_CATALOG_KERNEL_PRESENT
+     51            #include "sl_system_process_action.h"
+     52          #endif // SL_CATALOG_KERNEL_PRESENT
+     53          
+     54          #include "em_rmu.h"
+     55          #include "em_wdog.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void WDOGn_IntClear(WDOG_TypeDef *, uint32_t)
+   \                     WDOGn_IntClear: (+1)
+   \        0x0   0xF242 0x0218      MOVW     R2,#+8216
+   \        0x4   0x5081             STR      R1,[R0, R2]
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void WDOGn_IntEnable(WDOG_TypeDef *, uint32_t)
+   \                     WDOGn_IntEnable: (+1)
+   \        0x0   0xF241 0x021C      MOVW     R2,#+4124
+   \        0x4   0x5081             STR      R1,[R0, R2]
+   \        0x6   0x4770             BX       LR
+     56          
+     57          /*********************SW utility header file **********************************/
+     58          #include "uart_hal.h"
+     59          #include "list_latest.h"
+     60          #include "queue_latest.h"
+     61          #include "buff_mgmt.h"
+     62          #include "buffer_service.h"
+     63          #include "event_manager.h"
+     64          #include "sw_timer.h"
+     65          #include "timer_service.h"
+     66          #include "hif_utility.h"
+     67          #include "hif_service.h"
+     68          
+     69          /*********************MAC header file *****************************************/
+     70          #include "fan_mac_ie.h"
+     71          #include "mac_interface_layer.h"
+     72          #include "mac.h"
+     73          #include "sm.h"
+     74          #include "fan_mac_interface.h"
+     75          #include "ie_element_info.h"
+     76          #include "network-manager.h"
+     77          /*********************Application header file *********************************/
+     78          #include "fan_app_test_harness.h"
+     79          #include "fan_app_auto.h"
+     80          #include "fan_api.h"
+     81          
+     82          #if(APP_HIF_PROCESS_FEATURE_ENABLED == 1)   
+     83          #include "hif_process.h"
+     84          #endif
+     85             
+     86          #include "fan_factorycmd.h"
+     87          /********************Contiki Header file***************************************/
+     88          #include "contiki-net.h"
+     89          #include "contiki_mac_interface.h"
+     90          /*********************Layer Interface header file ******************************/
+     91             
+     92          #include "em_cmu.h"
+     93          #include "em_gpio.h"
+     94          #include "app_log.h"
+     95          #include "sl_app_log.h"
+
+  #warning "sl_app_log is deprecated and marked for removal in a later release. Please use app_log instead."
+   ^
+"D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\DebugLog\APP_LOG\sl_app_log.h",36  Warning[Pa183]: 
+          #warning directive: "sl_app_log is deprecated and marked for removal
+          in a later release. Please use app_log instead."
+     96          
+     97          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 1)
+     98          #include "ext_FLASH_app.h"
+     99          #endif
+    100             
+    101          #include "nvm3_default.h"
+    102          #include "sl_iostream_init_eusart_instances.h"
+    103          #include "sl_iostream_init_instances.h"
+    104          // -----------------------------------------------------------------------------
+    105          //                              Macros and Typedefs
+    106          // -----------------------------------------------------------------------------
+    107          
+    108          #define NVM3_DEFAULT_HANDLE_1 nvm3_defaultHandle
+    109          
+    110          #define SL_RAIL_UTIL_PA_POWER_DECI_DBM 100
+    111          #include "em_timer.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t TIMER_MaxCount(TIMER_TypeDef const *)
+   \                     TIMER_MaxCount: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+   \        0x2   0x.... 0x....      LDR.W    R2,??DataTable8_2
+   \        0x6   0x4290             CMP      R0,R2
+   \        0x8   0xD101             BNE.N    ??TIMER_MaxCount_0
+   \        0xA   0x2100             MOVS     R1,#+0
+   \        0xC   0xE019             B.N      ??TIMER_MaxCount_1
+   \                     ??TIMER_MaxCount_0: (+1)
+   \        0xE   0x.... 0x....      LDR.W    R1,??DataTable8_3
+   \       0x12   0x4288             CMP      R0,R1
+   \       0x14   0xD101             BNE.N    ??TIMER_MaxCount_2
+   \       0x16   0x2101             MOVS     R1,#+1
+   \       0x18   0xE013             B.N      ??TIMER_MaxCount_1
+   \                     ??TIMER_MaxCount_2: (+1)
+   \       0x1A   0x.... 0x....      LDR.W    R1,??DataTable8_4
+   \       0x1E   0x4288             CMP      R0,R1
+   \       0x20   0xD101             BNE.N    ??TIMER_MaxCount_3
+   \       0x22   0x2102             MOVS     R1,#+2
+   \       0x24   0xE00D             B.N      ??TIMER_MaxCount_1
+   \                     ??TIMER_MaxCount_3: (+1)
+   \       0x26   0x.... 0x....      LDR.W    R1,??DataTable8_5
+   \       0x2A   0x4288             CMP      R0,R1
+   \       0x2C   0xD101             BNE.N    ??TIMER_MaxCount_4
+   \       0x2E   0x2103             MOVS     R1,#+3
+   \       0x30   0xE007             B.N      ??TIMER_MaxCount_1
+   \                     ??TIMER_MaxCount_4: (+1)
+   \       0x32   0x.... 0x....      LDR.W    R1,??DataTable8_6
+   \       0x36   0x4288             CMP      R0,R1
+   \       0x38   0xD101             BNE.N    ??TIMER_MaxCount_5
+   \       0x3A   0x2104             MOVS     R1,#+4
+   \       0x3C   0xE001             B.N      ??TIMER_MaxCount_1
+   \                     ??TIMER_MaxCount_5: (+1)
+   \       0x3E   0xF05F 0x31FF      MOVS     R1,#+4294967295
+   \                     ??TIMER_MaxCount_1: (+1)
+   \       0x42   0xF111 0x0F01      CMN      R1,#+1
+   \       0x46   0xD001             BEQ.N    ??TIMER_MaxCount_6
+   \       0x48   0x2101             MOVS     R1,#+1
+   \       0x4A   0xE000             B.N      ??TIMER_MaxCount_7
+   \                     ??TIMER_MaxCount_6: (+1)
+   \       0x4C   0x2100             MOVS     R1,#+0
+   \                     ??TIMER_MaxCount_7: (+1)
+   \       0x4E   0xB2C9             UXTB     R1,R1
+   \       0x50   0x4290             CMP      R0,R2
+   \       0x52   0xD101             BNE.N    ??TIMER_MaxCount_8
+   \       0x54   0x2100             MOVS     R1,#+0
+   \       0x56   0xE019             B.N      ??TIMER_MaxCount_9
+   \                     ??TIMER_MaxCount_8: (+1)
+   \       0x58   0x.... 0x....      LDR.W    R1,??DataTable8_3
+   \       0x5C   0x4288             CMP      R0,R1
+   \       0x5E   0xD101             BNE.N    ??TIMER_MaxCount_10
+   \       0x60   0x2101             MOVS     R1,#+1
+   \       0x62   0xE013             B.N      ??TIMER_MaxCount_9
+   \                     ??TIMER_MaxCount_10: (+1)
+   \       0x64   0x.... 0x....      LDR.W    R1,??DataTable8_4
+   \       0x68   0x4288             CMP      R0,R1
+   \       0x6A   0xD101             BNE.N    ??TIMER_MaxCount_11
+   \       0x6C   0x2102             MOVS     R1,#+2
+   \       0x6E   0xE00D             B.N      ??TIMER_MaxCount_9
+   \                     ??TIMER_MaxCount_11: (+1)
+   \       0x70   0x.... 0x....      LDR.W    R1,??DataTable8_5
+   \       0x74   0x4288             CMP      R0,R1
+   \       0x76   0xD101             BNE.N    ??TIMER_MaxCount_12
+   \       0x78   0x2103             MOVS     R1,#+3
+   \       0x7A   0xE007             B.N      ??TIMER_MaxCount_9
+   \                     ??TIMER_MaxCount_12: (+1)
+   \       0x7C   0x.... 0x....      LDR.W    R1,??DataTable8_6
+   \       0x80   0x4288             CMP      R0,R1
+   \       0x82   0xD101             BNE.N    ??TIMER_MaxCount_13
+   \       0x84   0x2104             MOVS     R1,#+4
+   \       0x86   0xE001             B.N      ??TIMER_MaxCount_9
+   \                     ??TIMER_MaxCount_13: (+1)
+   \       0x88   0xF05F 0x31FF      MOVS     R1,#+4294967295
+   \                     ??TIMER_MaxCount_9: (+1)
+   \       0x8C   0x2900             CMP      R1,#+0
+   \       0x8E   0xD101             BNE.N    ??TIMER_MaxCount_14
+   \       0x90   0x2220             MOVS     R2,#+32
+   \       0x92   0xE080             B.N      ??TIMER_MaxCount_15
+   \                     ??TIMER_MaxCount_14: (+1)
+   \       0x94   0x4290             CMP      R0,R2
+   \       0x96   0xD101             BNE.N    ??TIMER_MaxCount_16
+   \       0x98   0x2100             MOVS     R1,#+0
+   \       0x9A   0xE019             B.N      ??TIMER_MaxCount_17
+   \                     ??TIMER_MaxCount_16: (+1)
+   \       0x9C   0x.... 0x....      LDR.W    R1,??DataTable8_3
+   \       0xA0   0x4288             CMP      R0,R1
+   \       0xA2   0xD101             BNE.N    ??TIMER_MaxCount_18
+   \       0xA4   0x2101             MOVS     R1,#+1
+   \       0xA6   0xE013             B.N      ??TIMER_MaxCount_17
+   \                     ??TIMER_MaxCount_18: (+1)
+   \       0xA8   0x.... 0x....      LDR.W    R1,??DataTable8_4
+   \       0xAC   0x4288             CMP      R0,R1
+   \       0xAE   0xD101             BNE.N    ??TIMER_MaxCount_19
+   \       0xB0   0x2102             MOVS     R1,#+2
+   \       0xB2   0xE00D             B.N      ??TIMER_MaxCount_17
+   \                     ??TIMER_MaxCount_19: (+1)
+   \       0xB4   0x.... 0x....      LDR.W    R1,??DataTable8_5
+   \       0xB8   0x4288             CMP      R0,R1
+   \       0xBA   0xD101             BNE.N    ??TIMER_MaxCount_20
+   \       0xBC   0x2103             MOVS     R1,#+3
+   \       0xBE   0xE007             B.N      ??TIMER_MaxCount_17
+   \                     ??TIMER_MaxCount_20: (+1)
+   \       0xC0   0x.... 0x....      LDR.W    R1,??DataTable8_6
+   \       0xC4   0x4288             CMP      R0,R1
+   \       0xC6   0xD101             BNE.N    ??TIMER_MaxCount_21
+   \       0xC8   0x2104             MOVS     R1,#+4
+   \       0xCA   0xE001             B.N      ??TIMER_MaxCount_17
+   \                     ??TIMER_MaxCount_21: (+1)
+   \       0xCC   0xF05F 0x31FF      MOVS     R1,#+4294967295
+   \                     ??TIMER_MaxCount_17: (+1)
+   \       0xD0   0x2901             CMP      R1,#+1
+   \       0xD2   0xD101             BNE.N    ??TIMER_MaxCount_22
+   \       0xD4   0x2210             MOVS     R2,#+16
+   \       0xD6   0xE05E             B.N      ??TIMER_MaxCount_23
+   \                     ??TIMER_MaxCount_22: (+1)
+   \       0xD8   0x4290             CMP      R0,R2
+   \       0xDA   0xD101             BNE.N    ??TIMER_MaxCount_24
+   \       0xDC   0x2100             MOVS     R1,#+0
+   \       0xDE   0xE019             B.N      ??TIMER_MaxCount_25
+   \                     ??TIMER_MaxCount_24: (+1)
+   \       0xE0   0x.... 0x....      LDR.W    R1,??DataTable8_3
+   \       0xE4   0x4288             CMP      R0,R1
+   \       0xE6   0xD101             BNE.N    ??TIMER_MaxCount_26
+   \       0xE8   0x2101             MOVS     R1,#+1
+   \       0xEA   0xE013             B.N      ??TIMER_MaxCount_25
+   \                     ??TIMER_MaxCount_26: (+1)
+   \       0xEC   0x.... 0x....      LDR.W    R1,??DataTable8_4
+   \       0xF0   0x4288             CMP      R0,R1
+   \       0xF2   0xD101             BNE.N    ??TIMER_MaxCount_27
+   \       0xF4   0x2102             MOVS     R1,#+2
+   \       0xF6   0xE00D             B.N      ??TIMER_MaxCount_25
+   \                     ??TIMER_MaxCount_27: (+1)
+   \       0xF8   0x.... 0x....      LDR.W    R1,??DataTable8_5
+   \       0xFC   0x4288             CMP      R0,R1
+   \       0xFE   0xD101             BNE.N    ??TIMER_MaxCount_28
+   \      0x100   0x2103             MOVS     R1,#+3
+   \      0x102   0xE007             B.N      ??TIMER_MaxCount_25
+   \                     ??TIMER_MaxCount_28: (+1)
+   \      0x104   0x.... 0x....      LDR.W    R1,??DataTable8_6
+   \      0x108   0x4288             CMP      R0,R1
+   \      0x10A   0xD101             BNE.N    ??TIMER_MaxCount_29
+   \      0x10C   0x2104             MOVS     R1,#+4
+   \      0x10E   0xE001             B.N      ??TIMER_MaxCount_25
+   \                     ??TIMER_MaxCount_29: (+1)
+   \      0x110   0xF05F 0x31FF      MOVS     R1,#+4294967295
+   \                     ??TIMER_MaxCount_25: (+1)
+   \      0x114   0x2902             CMP      R1,#+2
+   \      0x116   0xD101             BNE.N    ??TIMER_MaxCount_30
+   \      0x118   0x2210             MOVS     R2,#+16
+   \      0x11A   0xE03C             B.N      ??TIMER_MaxCount_23
+   \                     ??TIMER_MaxCount_30: (+1)
+   \      0x11C   0x4290             CMP      R0,R2
+   \      0x11E   0xD101             BNE.N    ??TIMER_MaxCount_31
+   \      0x120   0x2100             MOVS     R1,#+0
+   \      0x122   0xE015             B.N      ??TIMER_MaxCount_32
+   \                     ??TIMER_MaxCount_31: (+1)
+   \      0x124   0x....             LDR.N    R1,??DataTable8_3
+   \      0x126   0x4288             CMP      R0,R1
+   \      0x128   0xD101             BNE.N    ??TIMER_MaxCount_33
+   \      0x12A   0x2101             MOVS     R1,#+1
+   \      0x12C   0xE010             B.N      ??TIMER_MaxCount_32
+   \                     ??TIMER_MaxCount_33: (+1)
+   \      0x12E   0x....             LDR.N    R1,??DataTable8_4
+   \      0x130   0x4288             CMP      R0,R1
+   \      0x132   0xD101             BNE.N    ??TIMER_MaxCount_34
+   \      0x134   0x2102             MOVS     R1,#+2
+   \      0x136   0xE00B             B.N      ??TIMER_MaxCount_32
+   \                     ??TIMER_MaxCount_34: (+1)
+   \      0x138   0x....             LDR.N    R1,??DataTable8_5
+   \      0x13A   0x4288             CMP      R0,R1
+   \      0x13C   0xD101             BNE.N    ??TIMER_MaxCount_35
+   \      0x13E   0x2103             MOVS     R1,#+3
+   \      0x140   0xE006             B.N      ??TIMER_MaxCount_32
+   \                     ??TIMER_MaxCount_35: (+1)
+   \      0x142   0x....             LDR.N    R1,??DataTable8_6
+   \      0x144   0x4288             CMP      R0,R1
+   \      0x146   0xD101             BNE.N    ??TIMER_MaxCount_36
+   \      0x148   0x2104             MOVS     R1,#+4
+   \      0x14A   0xE001             B.N      ??TIMER_MaxCount_32
+   \                     ??TIMER_MaxCount_36: (+1)
+   \      0x14C   0xF05F 0x31FF      MOVS     R1,#+4294967295
+   \                     ??TIMER_MaxCount_32: (+1)
+   \      0x150   0x2903             CMP      R1,#+3
+   \      0x152   0xD101             BNE.N    ??TIMER_MaxCount_37
+   \      0x154   0x2210             MOVS     R2,#+16
+   \      0x156   0xE01E             B.N      ??TIMER_MaxCount_38
+   \                     ??TIMER_MaxCount_37: (+1)
+   \      0x158   0x4290             CMP      R0,R2
+   \      0x15A   0xD101             BNE.N    ??TIMER_MaxCount_39
+   \      0x15C   0x2000             MOVS     R0,#+0
+   \      0x15E   0xE015             B.N      ??TIMER_MaxCount_40
+   \                     ??TIMER_MaxCount_39: (+1)
+   \      0x160   0x....             LDR.N    R1,??DataTable8_3
+   \      0x162   0x4288             CMP      R0,R1
+   \      0x164   0xD101             BNE.N    ??TIMER_MaxCount_41
+   \      0x166   0x2001             MOVS     R0,#+1
+   \      0x168   0xE010             B.N      ??TIMER_MaxCount_40
+   \                     ??TIMER_MaxCount_41: (+1)
+   \      0x16A   0x....             LDR.N    R1,??DataTable8_4
+   \      0x16C   0x4288             CMP      R0,R1
+   \      0x16E   0xD101             BNE.N    ??TIMER_MaxCount_42
+   \      0x170   0x2002             MOVS     R0,#+2
+   \      0x172   0xE00B             B.N      ??TIMER_MaxCount_40
+   \                     ??TIMER_MaxCount_42: (+1)
+   \      0x174   0x....             LDR.N    R1,??DataTable8_5
+   \      0x176   0x4288             CMP      R0,R1
+   \      0x178   0xD101             BNE.N    ??TIMER_MaxCount_43
+   \      0x17A   0x2003             MOVS     R0,#+3
+   \      0x17C   0xE006             B.N      ??TIMER_MaxCount_40
+   \                     ??TIMER_MaxCount_43: (+1)
+   \      0x17E   0x....             LDR.N    R1,??DataTable8_6
+   \      0x180   0x4288             CMP      R0,R1
+   \      0x182   0xD101             BNE.N    ??TIMER_MaxCount_44
+   \      0x184   0x2004             MOVS     R0,#+4
+   \      0x186   0xE001             B.N      ??TIMER_MaxCount_40
+   \                     ??TIMER_MaxCount_44: (+1)
+   \      0x188   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \                     ??TIMER_MaxCount_40: (+1)
+   \      0x18C   0x2804             CMP      R0,#+4
+   \      0x18E   0xD101             BNE.N    ??TIMER_MaxCount_45
+   \      0x190   0x2210             MOVS     R2,#+16
+   \      0x192   0xE000             B.N      ??TIMER_MaxCount_38
+   \                     ??TIMER_MaxCount_45: (+1)
+   \      0x194   0x2200             MOVS     R2,#+0
+   \                     ??TIMER_MaxCount_38: (+1)
+   \                     ??TIMER_MaxCount_23: (+1)
+   \                     ??TIMER_MaxCount_15: (+1)
+   \      0x196   0x2001             MOVS     R0,#+1
+   \      0x198   0x2100             MOVS     R1,#+0
+   \      0x19A   0x.... 0x....      BL       __aeabi_llsl
+   \      0x19E   0x1E40             SUBS     R0,R0,#+1
+   \      0x1A0   0xF171 0x0100      SBCS     R1,R1,#+0
+   \      0x1A4   0xBD00             POP      {PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void TIMER_IntClear(TIMER_TypeDef *, uint32_t)
+   \                     TIMER_IntClear: (+1)
+   \        0x0   0xF242 0x0214      MOVW     R2,#+8212
+   \        0x4   0x5081             STR      R1,[R0, R2]
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void TIMER_IntEnable(TIMER_TypeDef *, uint32_t)
+   \                     TIMER_IntEnable: (+1)
+   \        0x0   0x6982             LDR      R2,[R0, #+24]
+   \        0x2   0x430A             ORRS     R2,R1,R2
+   \        0x4   0x6182             STR      R2,[R0, #+24]
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t TIMER_IntGet(TIMER_TypeDef *)
+   \                     TIMER_IntGet: (+1)
+   \        0x0   0x6940             LDR      R0,[R0, #+20]
+   \        0x2   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void TIMER_TopSet(TIMER_TypeDef *, uint32_t)
+   \                     TIMER_TopSet: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0x.... 0x....      BL       TIMER_MaxCount
+   \        0xC   0x42A8             CMP      R0,R5
+   \        0xE   0xD301             BCC.N    ??TIMER_TopSet_0
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0xE000             B.N      ??TIMER_TopSet_1
+   \                     ??TIMER_TopSet_0: (+1)
+   \       0x14   0x2000             MOVS     R0,#+0
+   \                     ??TIMER_TopSet_1: (+1)
+   \       0x16   0xB2C0             UXTB     R0,R0
+   \       0x18   0x6B20             LDR      R0,[R4, #+48]
+   \       0x1A   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \       0x1E   0x61E5             STR      R5,[R4, #+28]
+   \       0x20   0xBD31             POP      {R0,R4,R5,PC}
+    112          unsigned long resetCause;
+
+   \                                 In section .bss, align 4
+    113          volatile uint32_t startTicks = 0;
+   \                     startTicks:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    114          volatile uint32_t endTicks = 0;
+   \                     endTicks:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 1
+    115          volatile bool timerExpired = false;
+   \                     timerExpired:
+   \        0x0                      DS8 1
+    116          void TIMER2_IRQHandler();
+    117          void timer_2_init(void);
+
+   \                                 In section .bss, align 2
+    118          uint16_t timer_2_cout = 0;
+   \                     timer_2_cout:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 4
+    119          int data;
+   \                     `data`:
+   \        0x0                      DS8 4
+
+   \                                 In section .data, align 4
+    120          uint32_t key_1 = 1;
+   \                     key_1:
+   \        0x0   0x0000'0001        DC32 1
+
+   \                                 In section .bss, align 2
+    121          uint16_t counter =0;
+   \                     counter:
+   \        0x0                      DS8 2
+    122          
+    123          
+    124          
+    125          L3_PROCESS_NAME(etimer_process);
+    126          L3_PROCESS_NAME(udp_process);
+    127          
+    128          L3_PROCESS_NAME(ping6_process);
+    129          
+    130          #if(APP_NWK_MANAGER_PROCESS_FEATURE_ENABLED == 1)
+    131          L3_PROCESS_NAME(nwk_manager_process);
+    132          #endif
+    133          
+    134          #if ENABLE_DISABLE_DHCP_SERVICE 
+    135          L3_PROCESS_NAME(dhcpv6_process);
+    136          #endif
+    137          
+    138          L3_PROCESS_NAME(simple_udp_process);
+    139          L3_PROCESS_NAME(trickle_protocol_process);
+    140          
+    141          
+    142          #if(FAN_FRQ_HOPPING_FEATURE_ENABLED == 1)
+    143          L3_PROCESS_NAME(freq_hopping_process);
+    144          #endif
+    145          
+    146          #if(APP_HIF_PROCESS_FEATURE_ENABLED == 1)
+    147          L3_PROCESS_NAME(hif_process);
+    148          #endif
+    149          
+    150          // -----------------------------------------------------------------------------
+    151          //                          Static Function Declarations
+    152          // -----------------------------------------------------------------------------
+    153          
+    154          void initWDOG(void);
+    155          void clean_mac_neighbour_table ();
+    156          void delete_all_device_from_mac_pib (void);
+
+   \                                 In section .bss, align 1
+    157          uint8_t root_device=0;
+   \                     root_device:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+    158          uint32_t disable_int_count = 0;
+   \                     disable_int_count:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    159          uint32_t enable_int_count = 0;
+   \                     enable_int_count:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    160          hif_t hif = {0};
+   \                     hif:
+   \        0x0                      DS8 76
+    161          // -----------------------------------------------------------------------------
+    162          //                                Global Variables
+    163          // -----------------------------------------------------------------------------
+    164          extern uint8_t cold_boot_flag;
+    165          extern uint8_t response_laye_ID;
+    166          extern linkaddr_t linkaddr_node_addr;
+    167          extern fan_nwk_manager_sm_t fan_nwk_manager_app;
+    168          extern fan_mac_information_sm_t fan_mac_information_data;
+    169          extern white_list_t white_mac_list;
+    170          // -----------------------------------------------------------------------------
+    171          //                                Static Variables
+    172          // -----------------------------------------------------------------------------
+    173          //#if !defined(SL_CATALOG_KERNEL_PRESENT)
+    174          ///// A static handle of a RAIL instance
+    175          //static RAIL_Handle_t rail_handle;
+    176          //#endif
+    177          #if ENABLE_DISABLE_DHCP_SERVICE 
+    178          extern void server_service_init();
+    179          #endif
+    180          
+    181          extern void initialize_rpl (void);
+    182          extern uint8_t send_hif_conf_cb( uint8_t cmd_id,uint8_t status );
+    183          extern void configure_device_run_param();
+    184          
+    185          void test_UART_write ();
+    186          int main_testApp_wrapper( void );
+    187          void store_global_address();
+
+   \                                 In section .bss, align 4
+    188          uint8_t global_addr_device[16];
+   \                     global_addr_device:
+   \        0x0                      DS8 16
+    189          // GLOBAL VARIABLES 
+
+   \                                 In section .bss, align 4
+    190          unsigned long resetCause;
+   \                     resetCause:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 1
+    191          uint8_t TANSIT_KMP_ID = 0x00;
+   \                     TANSIT_KMP_ID:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+    192          uint32_t processor_active;
+   \                     processor_active:
+   \        0x0                      DS8 4
+    193          extern uint8_t rx_buffer[];
+    194          void cca_sample( void );
+    195          void APP_Task( void );
+
+   \                                 In section .bss, align 4
+    196          sw_tmr_t uhf_tmr; 
+   \                     uhf_tmr:
+   \        0x0                      DS8 24
+    197          extern void fan_nwk_manager_init( );
+    198          
+    199          void mem_reverse_cpy(uint8_t* dest, uint8_t* src, uint16_t len );
+    200          #ifdef MAC_ADDRESS_FILTERING_ENABLE
+    201          /*Umesh added here for mac filtering*/
+    202          typedef struct filter_addr
+    203          {
+    204            uint8_t mac_addr[8];
+    205          } filter_addr_t ;
+    206          /*----------------------------------------------------------------------------*/
+    207          filter_addr_t address_filter_list[10];   // used only for testing to adding filter
+    208          /*----------------------------------------------------------------------------*/
+    209          #endif
+    210          
+    211          #ifdef MAC_ADDRESS_FILTERING_ENABLE
+    212          #if(AUTO_CONFIG_ENABLE == 1)
+    213          void add_mac_filter();
+    214          #endif
+    215          #endif
+    216          //This function is a callback functionn to be called by Network manager once the
+    217          //network manager is in ready state. the action required in this function is to 
+    218          //be defined by upper layer.
+
+   \                                 In section .text, align 2, keep-with-next
+    219          void start_upper_layer(uint8_t* lladdress)
+    220          {   
+   \                     start_upper_layer: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    221            /* initialize the netstack */
+    222            netstack_init();
+   \        0x4   0x.... 0x....      BL       netstack_init
+    223            mem_reverse_cpy(linkaddr_node_addr.u8, lladdress, sizeof(uip_lladdr.addr));    
+   \        0x8   0x....             LDR.N    R6,??DataTable8_7
+   \        0xA   0x2208             MOVS     R2,#+8
+   \        0xC   0x0021             MOVS     R1,R4
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       mem_reverse_cpy
+    224            memcpy(uip_lladdr.addr, &linkaddr_node_addr, sizeof(uip_lladdr.addr)); 
+   \       0x14   0x2508             MOVS     R5,#+8
+   \       0x16   0x....             LDR.N    R7,??DataTable8_8
+   \       0x18   0x002A             MOVS     R2,R5
+   \       0x1A   0x0031             MOVS     R1,R6
+   \       0x1C   0x0038             MOVS     R0,R7
+   \       0x1E   0x.... 0x....      BL       __aeabi_memcpy
+    225            /*buffer queue Initialisation*/
+    226            queuebuf_init();
+   \       0x22   0x.... 0x....      BL       queuebuf_init
+    227           
+    228            /*stating TCP-IP Process*/
+    229            l3_process_start(&tcpip_process, NULL);  
+   \       0x26   0x2100             MOVS     R1,#+0
+   \       0x28   0x....             LDR.N    R0,??DataTable8_9
+   \       0x2A   0x.... 0x....      BL       l3_process_start
+    230            /*stating PING Process*/
+    231            l3_process_start(&ping6_process, NULL); 
+   \       0x2E   0x2100             MOVS     R1,#+0
+   \       0x30   0x....             LDR.N    R0,??DataTable8_10
+   \       0x32   0x.... 0x....      BL       l3_process_start
+    232            /*stating UDP Process*/
+    233            l3_process_start(&udp_process, NULL);
+   \       0x36   0x2100             MOVS     R1,#+0
+   \       0x38   0x....             LDR.N    R0,??DataTable8_11
+   \       0x3A   0x.... 0x....      BL       l3_process_start
+    234            /*stating DHCPv6 Process*/
+    235          #if ENABLE_DISABLE_DHCP_SERVICE  
+    236            l3_process_start(&dhcpv6_process, NULL);
+    237          #endif
+    238            
+    239            /*stating EAPOL Process*/
+    240          #if ( FAN_EAPOL_FEATURE_ENABLED == 1)                   //!(WITHOUT_EAPOL) //Umesh : used this macro for temp purpose
+    241            l3_process_start(&eapol_relay_process, NULL);
+    242          #endif  
+    243          
+    244            /*Server Service Initialisation*/
+    245          #if ((EFM32GG512 == 1) || (EFR32FG13P_LBR == 1)) && (HIF_INTERFACE_FOR_LINUX_RUNNING_DHCP == 0)
+    246          #if ENABLE_DISABLE_DHCP_SERVICE  
+    247            server_service_init();
+    248          #endif         
+    249          #endif  
+    250            initialize_rpl ();
+   \       0x3E   0x.... 0x....      BL       initialize_rpl
+    251            
+    252            if( fan_nwk_manager_app.node_basic_cfg.fan_device_type == PAN_COORD_NODE_TYPE )
+   \       0x42   0x....             LDR.N    R0,??DataTable8_12
+   \       0x44   0x7B40             LDRB     R0,[R0, #+13]
+   \       0x46   0x2800             CMP      R0,#+0
+   \       0x48   0xD10B             BNE.N    ??start_upper_layer_0
+    253            {
+    254                root_device = 1;
+   \       0x4A   0x2101             MOVS     R1,#+1
+   \       0x4C   0x....             LDR.N    R0,??DataTable8_13
+   \       0x4E   0x7001             STRB     R1,[R0, #+0]
+    255                cold_boot_flag = 0;//only using incase of router
+   \       0x50   0x2100             MOVS     R1,#+0
+   \       0x52   0x....             LDR.N    R0,??DataTable8_14
+   \       0x54   0x7001             STRB     R1,[R0, #+0]
+    256                rpl_dag_root_init_dag();
+   \       0x56   0x.... 0x....      BL       rpl_dag_root_init_dag
+    257                send_hif_conf_cb(NODE_START_STOP_CONF,0x00);
+   \       0x5A   0x2100             MOVS     R1,#+0
+   \       0x5C   0x2031             MOVS     R0,#+49
+   \       0x5E   0x.... 0x....      BL       send_hif_conf_cb
+    258          #if(APP_NVM_FEATURE_ENABLED == 1)
+    259                nvm_store_node_basic_info();   //Debdeep
+    260          #endif
+    261            }
+    262          #if (EFR32FG13P_LBR == 0x00)   
+    263              if((fan_mac_information_data.state_ind == JOIN_STATE_5)
+    264               &&(fan_mac_information_data.fan_node_type != PAN_COORD_NODE_TYPE)
+    265          #if(APP_NVM_FEATURE_ENABLED == 1)
+    266                 &&(fan_mac_information_data.is_start_from_nvm == true)
+    267          #endif
+    268                   )
+    269            {
+    270              #if(APP_NVM_FEATURE_ENABLED == 1)
+    271              if(fan_nwk_manager_app.nvm_write_to_start ==true)
+    272              {
+    273                rpl_instance_t *instance;
+    274                store_global_address();  //suneet :: when device boot up from join state 
+    275                nvm_load_link_stats_info();
+    276                nvm_load_ds6_info();
+    277                nvm_load_rpl_dio_info();
+    278                instance = rpl_get_instance(instance_table[0].instance_id);
+    279                rpl_set_default_instance(instance);
+    280                nvm_store_node_basic_info();   
+    281          
+    282              }
+    283              #endif
+    284            }
+    285          #endif  
+    286          }
+   \                     ??start_upper_layer_0: (+1)
+   \       0x62   0xBDF1             POP      {R0,R4-R7,PC}
+    287          
+    288          
+    289          
+    290          
+    291          
+    292          // -----------------------------------------------------------------------------
+    293          //                          Public Function Definitions
+    294          // -----------------------------------------------------------------------------
+    295          /******************************************************************************
+    296           * Main function
+    297           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    298           int main(void)
+    299          {
+   \                     main: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    300            // Initialize Silicon Labs device, system, service(s) and protocol stack(s).
+    301            // Note that if the kernel is present, processing task(s) will be created by
+    302            // this call.
+    303            sl_system_init();
+   \        0x2   0x.... 0x....      BL       sl_system_init
+    304             
+    305            sl_iostream_eusart_init_instances();
+   \        0x6   0x.... 0x....      BL       sl_iostream_eusart_init_instances
+    306            
+    307             //App_log Initilization
+    308            app_log_init();
+   \        0xA   0x.... 0x....      BL       app_log_init
+    309              // app_log("***********");  //For app Logs
+    310               //or
+    311                // sl_app_log("****************");
+    312            
+    313            
+    314            //NVM3 Initilisation
+    315            nvm3_initDefault();
+   \        0xE   0x.... 0x....      BL       nvm3_initDefault
+    316            
+    317             /* Store the cause of the last reset, and clear the reset cause register */
+    318            resetCause = RMU_ResetCauseGet();
+   \       0x12   0x....             LDR.N    R4,??DataTable8_15
+   \       0x14   0x.... 0x....      BL       RMU_ResetCauseGet
+   \       0x18   0x6020             STR      R0,[R4, #+0]
+    319          
+    320              /* Clear Reset causes so we know which reset matters the next time */
+    321            RMU_ResetCauseClear();
+   \       0x1A   0x.... 0x....      BL       RMU_ResetCauseClear
+    322            
+    323            //Resetting by WatchDog
+    324            if(resetCause==8)
+   \       0x1E   0x6820             LDR      R0,[R4, #+0]
+   \       0x20   0x2808             CMP      R0,#+8
+   \       0x22   0xD102             BNE.N    ??main_0
+    325            {
+    326              printf("Reseting the system by WatchDog timer\r\n");
+   \       0x24   0x....             LDR.N    R0,??DataTable8_16
+   \       0x26   0x.... 0x....      BL       printf
+    327            }
+    328            
+    329             //Resetting by Normal Reset
+    330            if(resetCause==64)
+   \                     ??main_0: (+1)
+   \       0x2A   0x6820             LDR      R0,[R4, #+0]
+   \       0x2C   0x2840             CMP      R0,#+64
+   \       0x2E   0xD102             BNE.N    ??main_1
+    331            {
+    332              printf("Reseting the system by Normal Reset\r\n");
+   \       0x30   0x....             LDR.N    R0,??DataTable8_17
+   \       0x32   0x.... 0x....      BL       printf
+    333            }
+    334            nvm3_readData(NVM3_DEFAULT_HANDLE_1, key_1, &data, 1);
+   \                     ??main_1: (+1)
+   \       0x36   0x....             LDR.N    R4,??DataTable8_18
+   \       0x38   0x....             LDR.N    R5,??DataTable8_19
+   \       0x3A   0x....             LDR.N    R6,??DataTable8_20
+   \       0x3C   0x2301             MOVS     R3,#+1
+   \       0x3E   0x0032             MOVS     R2,R6
+   \       0x40   0x6829             LDR      R1,[R5, #+0]
+   \       0x42   0x6820             LDR      R0,[R4, #+0]
+   \       0x44   0x.... 0x....      BL       nvm3_readData
+    335            counter = data;
+   \       0x48   0x....             LDR.N    R2,??DataTable8_21
+   \       0x4A   0x6830             LDR      R0,[R6, #+0]
+   \       0x4C   0x8010             STRH     R0,[R2, #+0]
+    336            counter++;
+   \       0x4E   0x8810             LDRH     R0,[R2, #+0]
+   \       0x50   0x1C40             ADDS     R0,R0,#+1
+   \       0x52   0x8010             STRH     R0,[R2, #+0]
+    337               //counter=0;
+    338            nvm3_writeData(NVM3_DEFAULT_HANDLE_1,
+    339                                                key_1,
+    340                                               &counter,
+    341                                                1);
+   \       0x54   0x2301             MOVS     R3,#+1
+   \       0x56   0x6829             LDR      R1,[R5, #+0]
+   \       0x58   0x6820             LDR      R0,[R4, #+0]
+   \       0x5A   0x.... 0x....      BL       nvm3_writeData
+    342            
+    343              /*RTC Initialisation*/
+    344              rtc_init();
+   \       0x5E   0x.... 0x....      BL       rtc_init
+    345          
+    346              /*Buffer Service Intitialization*/
+    347              buffer_service_init();
+   \       0x62   0x.... 0x....      BL       buffer_service_init
+    348              
+    349              /* HIF Interface Initialization*/
+    350              hif_service_init(&hif);    
+   \       0x66   0x....             LDR.N    R0,??DataTable8_22
+   \       0x68   0x.... 0x....      BL       hif_service_init
+    351              APPhifForToolTest_Init(); 
+   \       0x6C   0x.... 0x....      BL       APPhifForToolTest_Init
+    352              
+    353               /* Timer Service Initialization*/
+    354              tmr_service_init();
+   \       0x70   0x.... 0x....      BL       tmr_service_init
+    355           
+    356              /* initialize process manager. */
+    357              process_init();    
+   \       0x74   0x.... 0x....      BL       process_init
+    358            /*Cloclk intialisation*/
+    359              clock_init();    
+   \       0x78   0x.... 0x....      BL       clock_init
+    360             initWDOG();
+   \       0x7C   0x.... 0x....      BL       initWDOG
+    361             
+    362              
+    363             
+    364          #if(APP_EXTERNAL_FLASH_FEATURE_ENABLED == 1)    
+    365              //flash init
+    366          //    MX25_init();
+    367              //FlashReadWrite_Test();  
+    368          #endif   
+    369              
+    370          #if(APP_HIF_PROCESS_FEATURE_ENABLED == 1)    
+    371              /*Start The HIF Process*/
+    372              l3_process_start(&hif_process, NULL);
+    373          #endif
+    374              
+    375              /*Start Etimer Process*/
+    376              l3_process_start(&etimer_process, NULL);
+   \       0x80   0x2100             MOVS     R1,#+0
+   \       0x82   0x....             LDR.N    R0,??DataTable8_23
+   \       0x84   0x.... 0x....      BL       l3_process_start
+    377              /*Initialising CTimer*/
+    378              ctimer_init();
+   \       0x88   0x.... 0x....      BL       ctimer_init
+    379              /*Timers get initialized here : promac_process*/
+    380              l3_process_start(&promac_process, NULL);
+   \       0x8C   0x2100             MOVS     R1,#+0
+   \       0x8E   0x....             LDR.N    R0,??DataTable8_24
+   \       0x90   0x.... 0x....      BL       l3_process_start
+    381              
+    382          #if(FAN_FRQ_HOPPING_FEATURE_ENABLED == 1)
+    383              /*stating freq_hopping Process*/
+    384              l3_process_start(&freq_hopping_process, NULL);    
+    385          #endif
+    386              
+    387          #if(APP_NWK_MANAGER_PROCESS_FEATURE_ENABLED == 1)
+    388              /*Start N/W manager Process*/
+    389              l3_process_start(&nwk_manager_process, NULL);    
+    390          #endif
+    391              
+    392              APP_LED_GPIO_init ();
+   \       0x94   0x.... 0x....      BL       APP_LED_GPIO_init
+    393              
+    394               //LED2 Initilisation
+    395              APP_LED_2_GPIO_init ();
+   \       0x98   0x.... 0x....      BL       APP_LED_2_GPIO_init
+    396             // check_status_to_start_network();   //suneet :: status for boot from join state 5
+    397              
+    398          #ifdef MAC_ADDRESS_FILTERING_ENABLE
+    399          #if(AUTO_CONFIG_ENABLE == 1)
+    400              /*Adding mac adress for filtering*/
+    401              add_mac_filter();
+    402          #endif    
+    403          #endif
+    404              APP_LED_ON ();
+   \       0x9C   0x.... 0x....      BL       APP_LED_ON
+    405              if((fan_mac_information_data.state_ind != JOIN_STATE_5)
+    406          #if(APP_NVM_FEATURE_ENABLED == 1)
+    407                 &&(fan_mac_information_data.is_start_from_nvm != true)
+    408          #endif
+    409                   )
+   \       0xA0   0x....             LDR.N    R0,??DataTable8_25
+   \       0xA2   0x7A00             LDRB     R0,[R0, #+8]
+   \       0xA4   0x2806             CMP      R0,#+6
+   \       0xA6   0xD001             BEQ.N    ??main_2
+    410              {
+    411                  /*starting auto run mode */
+    412                    configure_device_run_param();
+   \       0xA8   0x.... 0x....      BL       configure_device_run_param
+    413              }
+    414          
+    415              if(fan_nwk_manager_app.node_basic_cfg.board_reset == 0x01)
+   \                     ??main_2: (+1)
+   \       0xAC   0x....             LDR.N    R0,??DataTable8_12
+   \       0xAE   0xF890 0x102E      LDRB     R1,[R0, #+46]
+   \       0xB2   0x2901             CMP      R1,#+1
+   \       0xB4   0xD102             BNE.N    ??main_3
+    416              {
+    417                fan_nwk_manager_app.node_basic_cfg.board_reset = 0x00;
+   \       0xB6   0x2100             MOVS     R1,#+0
+   \       0xB8   0xF880 0x102E      STRB     R1,[R0, #+46]
+    418          #if(APP_NVM_FEATURE_ENABLED == 1)
+    419                nvm_store_node_basic_info();
+    420          #endif
+    421              }
+    422              
+    423              // Start the Network manager ...
+    424              if((fan_nwk_manager_app.node_basic_cfg.operational_mode == RUN_MODE)
+    425          #if(APP_NVM_FEATURE_ENABLED == 1)
+    426                 &&(fan_mac_information_data.is_start_from_nvm == false)
+    427          #endif
+    428                   )
+   \                     ??main_3: (+1)
+   \       0xBC   0x7B00             LDRB     R0,[R0, #+12]
+   \       0xBE   0x2801             CMP      R0,#+1
+   \       0xC0   0xD101             BNE.N    ??main_4
+    429              {
+    430                  fan_nwk_manager_init ();
+   \       0xC2   0x.... 0x....      BL       fan_nwk_manager_init
+    431              }
+    432            
+    433              
+    434               
+    435              //setupSWOForPrint();
+    436              //stack_print_debug ("...\n");
+    437            while (1) {
+    438              
+    439              // Do not remove this call: Silicon Labs components process action routine
+    440              // must be called from the super loop.
+    441              sl_system_process_action();
+   \                     ??main_4: (+1)
+   \       0xC6   0x.... 0x....      BL       sl_system_process_action
+    442              // Application process.
+    443          
+    444            
+    445            WDOGn_Feed(DEFAULT_WDOG);
+   \       0xCA   0x....             LDR.N    R0,??DataTable8_26
+   \       0xCC   0x.... 0x....      BL       WDOGn_Feed
+   \       0xD0   0xE7F9             B.N      ??main_4
+    446            
+    447          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+    448              // Let the CPU go to sleep if the system allows it.
+    449              sl_power_manager_sleep();
+    450          #endif
+    451              
+    452            }
+    453            
+    454          
+    455          }
+    456          
+    457          // -----------------------------------------------------------------------------
+    458          //                          Static Function Definitions
+    459          // -----------------------------------------------------------------------------
+    460          
+    461          // time set for is 2 Min 
+    462          
+
+   \                                 In section .text, align 2, keep-with-next
+    463          void initWDOG(void)
+    464          {
+   \                     initWDOG: (+1)
+   \        0x0   0xB51F             PUSH     {R0-R4,LR}
+    465           // Enable clock for the WDOG module; has no effect on xG21
+    466            CMU_ClockEnable(cmuClock_WDOG0, true);
+   \        0x2   0x2101             MOVS     R1,#+1
+   \        0x4   0x202D             MOVS     R0,#+45
+   \        0x6   0x.... 0x....      BL       CMU_ClockEnable
+    467          
+    468            // Watchdog Initialize settings 
+    469            WDOG_Init_TypeDef wdogInit = WDOG_INIT_DEFAULT;
+   \        0xA   0x4668             MOV      R0,SP
+   \        0xC   0x....             LDR.N    R1,??DataTable8_27
+   \        0xE   0x2210             MOVS     R2,#+16
+   \       0x10   0x.... 0x....      BL       __aeabi_memcpy4
+    470            CMU_ClockSelectSet(cmuClock_WDOG0, cmuSelect_ULFRCO); /* ULFRCO as clock source */
+   \       0x14   0x210B             MOVS     R1,#+11
+   \       0x16   0x202D             MOVS     R0,#+45
+   \       0x18   0x.... 0x....      BL       CMU_ClockSelectSet
+    471            wdogInit.debugRun = true;
+   \       0x1C   0x2001             MOVS     R0,#+1
+   \       0x1E   0xF88D 0x0001      STRB     R0,[SP, #+1]
+    472            wdogInit.em3Run = true;
+   \       0x22   0x2001             MOVS     R0,#+1
+   \       0x24   0xF88D 0x0005      STRB     R0,[SP, #+5]
+    473            wdogInit.perSel = wdogPeriod_128k; // 2049 clock cycles of a 1kHz clock  wdogPeriod_2k for ~2 seconds period
+   \       0x28   0x200E             MOVS     R0,#+14
+   \       0x2A   0xF88D 0x000A      STRB     R0,[SP, #+10]
+    474          
+    475            // Initializing watchdog with chosen settings 
+    476            WDOGn_Init(DEFAULT_WDOG, &wdogInit);
+   \       0x2E   0x....             LDR.N    R4,??DataTable8_26
+   \       0x30   0x4669             MOV      R1,SP
+   \       0x32   0x0020             MOVS     R0,R4
+   \       0x34   0x.... 0x....      BL       WDOGn_Init
+    477            
+    478            NVIC_ClearPendingIRQ(WDOG0_IRQn);
+   \       0x38   0x202B             MOVS     R0,#+43
+   \       0x3A   0x.... 0x....      BL       __NVIC_ClearPendingIRQ
+    479            WDOGn_IntClear(DEFAULT_WDOG, WDOG_IF_WARN);
+   \       0x3E   0x2102             MOVS     R1,#+2
+   \       0x40   0x0020             MOVS     R0,R4
+   \       0x42   0x.... 0x....      BL       WDOGn_IntClear
+    480            NVIC_EnableIRQ(WDOG0_IRQn);
+   \       0x46   0x202B             MOVS     R0,#+43
+   \       0x48   0x.... 0x....      BL       __NVIC_EnableIRQ
+    481            WDOGn_IntEnable(DEFAULT_WDOG, WDOG_IEN_WARN);
+   \       0x4C   0x2102             MOVS     R1,#+2
+   \       0x4E   0x0020             MOVS     R0,R4
+   \       0x50   0x.... 0x....      BL       WDOGn_IntEnable
+    482          }
+   \       0x54   0xBD1F             POP      {R0-R4,PC}
+    483          
+    484          
+    485          #define TIMER3_INIT_DEFAULT                                                            \
+    486            {                                                                                   \
+    487              true,                 /* Enable timer when initialization completes. */           \
+    488              false,                /* Stop counter during debug halt. */                       \
+    489              timerPrescale32,       /* No prescaling. */                                        \
+    490              timerClkSelHFPerClk,  /* Select HFPER / HFPERB clock. */                          \
+    491              false,                /* Not 2x count mode. */                                    \
+    492              false,                /* No ATI. */                                               \
+    493              false,                /* No RSSCOIST. */                                          \
+    494              timerInputActionNone, /* No action on falling input edge. */                      \
+    495              timerInputActionNone, /* No action on rising input edge. */                       \
+    496              timerModeUp,          /* Up-counting. */                                          \
+    497              false,                /* Do not clear DMA requests when DMA channel is active. */ \
+    498              false,                /* Select X2 quadrature decode mode (if used). */           \
+    499              false,                /* Disable one shot. */                                     \
+    500              false,                /* Not started/stopped/reloaded by other timers. */         \
+    501              false                 /* Disable ability to start/stop/reload other timers. */    \
+    502            }
+    503          
+    504          
+    505          #define TIMER3_INITCC_DEFAULT                                                 \
+    506            {                                                                          \
+    507              timerEventEveryEdge,    /* Event on every capture. */                    \
+    508              timerEdgeRising,        /* Input capture edge on rising edge. */         \
+    509              0,                      /* Not used by default, select PRS channel 0. */ \
+    510              timerOutputActionNone,  /* No action on underflow. */                    \
+    511              timerOutputActionNone,  /* No action on overflow. */                     \
+    512              timerOutputActionNone,  /* No action on match. */                        \
+    513              timerCCModeOff,         /* Disable compare/capture channel. */           \
+    514              false,                  /* Disable filter. */                            \
+    515              false,                  /* No PRS input. */                              \
+    516              false,                  /* Clear output when counter disabled. */        \
+    517              false,                  /* Do not invert output. */                      \
+    518              timerPrsOutputDefault,  /* Use default PRS output configuration. */      \
+    519              timerPrsInputNone       /* No PRS input, so input type is none. */       \
+    520            }
+    521          
+
+   \                                 In section .text, align 2, keep-with-next
+    522          void TIMER2_IRQHandler()
+    523          {
+   \                     TIMER2_IRQHandler: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    524             uint16_t intFlags = TIMER_IntGet(TIMER2);
+   \        0x2   0x....             LDR.N    R5,??DataTable8_4
+   \        0x4   0x0028             MOVS     R0,R5
+   \        0x6   0x.... 0x....      BL       TIMER_IntGet
+   \        0xA   0x0004             MOVS     R4,R0
+    525            TIMER_IntClear(TIMER2, TIMER_IF_OF | TIMER_IF_CC0);
+   \        0xC   0x2111             MOVS     R1,#+17
+   \        0xE   0x0028             MOVS     R0,R5
+   \       0x10   0x.... 0x....      BL       TIMER_IntClear
+    526            
+    527            /* Overflow interrupt occured */
+    528            if(intFlags & TIMER_IF_OF)
+   \       0x14   0x07E0             LSLS     R0,R4,#+31
+   \       0x16   0xD505             BPL.N    ??TIMER2_IRQHandler_0
+    529            {
+    530            printf("Rx timer is running\r\n");
+   \       0x18   0x....             LDR.N    R0,??DataTable8_28
+   \       0x1A   0x.... 0x....      BL       printf
+    531              timerExpired = true;
+   \       0x1E   0x2101             MOVS     R1,#+1
+   \       0x20   0x....             LDR.N    R0,??DataTable8_29
+   \       0x22   0x7001             STRB     R1,[R0, #+0]
+    532            }
+    533            
+    534          }
+   \                     ??TIMER2_IRQHandler_0: (+1)
+   \       0x24   0xBD31             POP      {R0,R4,R5,PC}
+    535          
+    536          
+
+   \                                 In section .text, align 2, keep-with-next
+    537          void timer_2_init(void)
+    538          {
+   \                     timer_2_init: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0xB088             SUB      SP,SP,#+32
+    539          CMU_ClockEnable(cmuClock_TIMER2, true);  
+   \        0x4   0x2101             MOVS     R1,#+1
+   \        0x6   0x2026             MOVS     R0,#+38
+   \        0x8   0x.... 0x....      BL       CMU_ClockEnable
+   \        0xC   0x210D             MOVS     R1,#+13
+   \        0xE   0x2200             MOVS     R2,#+0
+   \       0x10   0xAC04             ADD      R4,SP,#+16
+   \       0x12   0x0020             MOVS     R0,R4
+   \       0x14   0x.... 0x....      BL       __aeabi_memset
+    540          
+    541            
+    542            TIMER_InitCC_TypeDef timerCCInit = TIMER3_INITCC_DEFAULT;
+    543            timerCCInit.mode = timerCCModePWM;
+   \       0x18   0x2003             MOVS     R0,#+3
+   \       0x1A   0xF88D 0x0016      STRB     R0,[SP, #+22]
+    544            TIMER_InitCC(TIMER2, 0, &timerCCInit);
+   \       0x1E   0x....             LDR.N    R4,??DataTable8_4
+   \       0x20   0xAA04             ADD      R2,SP,#+16
+   \       0x22   0x2100             MOVS     R1,#+0
+   \       0x24   0x0020             MOVS     R0,R4
+   \       0x26   0x.... 0x....      BL       TIMER_InitCC
+    545           
+    546             /* Set Top Value */
+    547            TIMER_TopSet(TIMER0, (0xFFFD-1));
+   \       0x2A   0xF64F 0x71FC      MOVW     R1,#+65532
+   \       0x2E   0x....             LDR.N    R0,??DataTable8_2
+   \       0x30   0x.... 0x....      BL       TIMER_TopSet
+    548            
+    549             TIMER_Init_TypeDef timerInit = TIMER3_INIT_DEFAULT;
+   \       0x34   0x4668             MOV      R0,SP
+   \       0x36   0x....             LDR.N    R1,??DataTable8_30
+   \       0x38   0x2210             MOVS     R2,#+16
+   \       0x3A   0x.... 0x....      BL       __aeabi_memcpy4
+    550            timerInit.prescale = timerPrescale1024;
+   \       0x3E   0xF240 0x30FF      MOVW     R0,#+1023
+   \       0x42   0xF8AD 0x0002      STRH     R0,[SP, #+2]
+    551            TIMER_Init(TIMER2, &timerInit);
+   \       0x46   0x4669             MOV      R1,SP
+   \       0x48   0x0020             MOVS     R0,R4
+   \       0x4A   0x.... 0x....      BL       TIMER_Init
+    552            
+    553             TIMER_IntEnable(TIMER2, TIMER_IF_OF ); 
+   \       0x4E   0x2101             MOVS     R1,#+1
+   \       0x50   0x0020             MOVS     R0,R4
+   \       0x52   0x.... 0x....      BL       TIMER_IntEnable
+    554            NVIC_EnableIRQ(TIMER2_IRQn);
+   \       0x56   0x2006             MOVS     R0,#+6
+   \       0x58   0x.... 0x....      BL       __NVIC_EnableIRQ
+    555          }
+   \       0x5C   0xB008             ADD      SP,SP,#+32
+   \       0x5E   0xBD10             POP      {R4,PC}
+    556          
+    557          
+    558          //void signal_event_to_mac_task( uint8_t prio )
+    559          //{
+    560          //  
+    561          //  
+    562          //}
+    563          
+
+   \                                 In section .text, align 2, keep-with-next
+    564          void indicate_mac_2_nhle( void )
+    565          {
+    566            /*enable the following code only in mac_test and not in any apps running
+    567            over MIL
+    568            event_set(MAC_2_NHLE_EVENT);
+    569            signal_event_to_mac_task();*/
+    570          }
+   \                     indicate_mac_2_nhle: (+1)
+   \        0x0   0x4770             BX       LR
+    571          
+    572          
+    573          
+    574          //void nvm_store_node_basic_info( void )
+    575          //{
+    576          // 
+    577          //}
+    578          
+    579          
+    580          //void nvm_load_read_fan_macself_info(void)
+    581          //{
+    582          //
+    583          //}
+    584          //
+
+   \                                 In section .text, align 2, keep-with-next
+    585          void reset_to_join_state_1 (void)
+    586          {
+   \                     reset_to_join_state_1: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    587          //  app_bm_free (supp_cred.wpa_sm_ptr);
+    588          //  memset (&supp_cred, 0, sizeof(supp_cred));
+    589            delete_all_device_from_mac_pib ();
+   \        0x2   0x.... 0x....      BL       delete_all_device_from_mac_pib
+    590            clean_mac_neighbour_table ();
+   \        0x6   0x.... 0x....      BL       clean_mac_neighbour_table
+    591            change_join_state (5);
+   \        0xA   0x2005             MOVS     R0,#+5
+   \        0xC   0x.... 0x....      BL       change_join_state
+    592          }
+   \       0x10   0xBD01             POP      {R0,PC}
+    593          //
+    594          //void upload_parameter_from_nvm()
+    595          //{
+    596          //
+    597          //}
+    598          //void nvm_store_write_fan_join_info(void)
+    599          //{
+    600          //
+    601          //}
+    602          //
+    603          //void nvm_store_write_fan_macself_info(void)
+    604          //{
+    605          //}
+    606          //
+    607          //void nvm_store_write_fan_macsecurity_info(void)
+    608          //{
+    609          // 
+    610          //}
+    611          //
+    612          //void nvm_store_mac_white_list_info( void )
+    613          //{
+    614          //
+    615          //}
+    616          //
+    617          //void l3_random_init (unsigned short seed)
+    618          //{
+    619          //  
+    620          //}
+    621          
+    622          //unsigned short l3_random_rand (void)
+    623          //{
+    624          //  return 0x1122;
+    625          //}
+    626          
+    627          //void stack_print_debug(const char *format, ...)
+    628          //{
+    629          ////    va_list vargs;
+    630          ////    va_start(vargs, format);
+    631          ////    vprintf(format, vargs);
+    632          ////    va_end(vargs);
+    633          //}
+    634          
+    635          
+    636          #if(FAN_EDFE_FEATURE_ENABLED == 1)
+    637          void enable_disable_edfe_frame(uint8_t value,uint8_t edfe_frame_type)
+    638          {
+    639            
+    640          }
+    641          
+    642          
+    643          void send_edfe_initial_frame(uint8_t *src_addr , uint8_t value,uint8_t edfe_frame_type)
+    644          {
+    645            
+    646          }
+    647          
+    648          #endif // #if(FAN_EDFE_FEATURE_ENABLED == 1)
+    649          /*
+    650          Raka .. This MACRO has been defined in mac.h and used in 
+    651          mac_rcv.c  function : process_pd_2_mac_incoming_frames
+    652          */
+    653          #ifdef MAC_ADDRESS_FILTERING_ENABLE 
+    654          
+    655          // Raka Need to check the condition of setting from tool and running in auto mode
+    656          #if(AUTO_CONFIG_ENABLE == 0)  
+    657          
+    658          uint8_t validate_filter_mac_address(uint8_t* ieee_address)
+    659          {
+    660            uint8_t i = 0;
+    661            if(white_mac_list.wht_mac_index == 0x00)
+    662            {
+    663              return 0;
+    664            }
+    665            else
+    666            {
+    667              for(i=0;i<white_mac_list.wht_mac_index;i++)
+    668              {
+    669                if(!memcmp(&white_mac_list.wht_list_macaddr[i],ieee_address,8))/*To pass pkt fw use(!) before memcmp and if not then remove (!) it*/
+    670                  return 0;
+    671              } 
+    672              return 1;
+    673            }
+    674          }
+    675          #else
+    676          
+    677          /*** note -- filtering of mac address in mac ***/
+    678          /*add mac address here for it will accept pkt from device*/
+    679          #define MAC_ADDRESS_OF_DEV_0	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xA1 
+    680          
+    681          #define MAC_ADDRESS_OF_DEV_1	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xA2  
+    682          
+    683          #define MAC_ADDRESS_OF_DEV_2	 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xA3
+    684          
+    685          
+    686          
+    687          //#define MAC_ADDRESS_OF_DEV_3	 0x11,0x22,0x33,0x44,0x00,0x00,0x00,0x03
+    688          //#define MAC_ADDRESS_OF_DEV_4	 0x11,0x22,0x33,0x44,0x00,0x00,0x00,0x04
+    689          //
+    690          //#define MAC_ADDRESS_OF_DEV_5	 0x11,0x22,0x33,0x44,0x00,0x00,0x00,0x05
+    691          //#define MAC_ADDRESS_OF_DEV_6	 0x11,0x22,0x33,0x44,0x00,0x00,0x00,0x06
+    692          //#define MAC_ADDRESS_OF_DEV_7	 0x11,0x22,0x33,0x44,0x00,0x00,0x00,0x07
+    693          //#define MAC_ADDRESS_OF_DEV_8	 0xAA,0xBB,0xCC,0xDD,0x00,0x00,0x00,0x23
+    694          //#define MAC_ADDRESS_OF_DEV_9	 0xAA,0xBB,0xCC,0xDD,0x00,0x00,0x00,0x24
+    695          //#define MAC_ADDRESS_OF_DEV_10    0xAA,0xBB,0xCC,0xDD,0x00,0x00,0x00,0x25
+    696          
+    697          uint8_t static_filter_index=0;
+    698          
+    699          uint8_t validate_filter_mac_address(uint8_t* ieee_address)
+    700          {
+    701            uint8_t i = 0;
+    702            for(i=0;i<static_filter_index;i++)
+    703            {
+    704              if(!memcmp(address_filter_list[i].mac_addr,ieee_address,8))/*To pass pkt fw use(!) before memcmp and if not then remove (!) it*/
+    705                  return 0;
+    706            } 
+    707            return 1;
+    708          }
+    709          
+    710          void add_address_to_filter_list(uint8_t *filter_addr)  // used only for testing to adding filter
+    711          {
+    712            uint8_t temp[8]={0};
+    713            mem_rev_cpy(temp,filter_addr,IEEE_ADDRESS_LENGTH);
+    714              while(static_filter_index<10)
+    715              {
+    716                mem_rev_cpy(address_filter_list[static_filter_index].mac_addr,filter_addr,8);
+    717                static_filter_index++;
+    718                return;
+    719              }  
+    720          } 
+    721          
+    722          void add_mac_filter()
+    723          {
+    724            uint8_t mac_addr_0[8]={MAC_ADDRESS_OF_DEV_0};
+    725            add_address_to_filter_list(mac_addr_0);
+    726            
+    727            uint8_t mac_addr_1[8]={MAC_ADDRESS_OF_DEV_1};
+    728            add_address_to_filter_list(mac_addr_1);  
+    729            
+    730            uint8_t mac_addr_2[8]={MAC_ADDRESS_OF_DEV_2};
+    731            add_address_to_filter_list(mac_addr_2);
+    732            
+    733            
+    734          //  uint8_t mac_addr_3[8]={MAC_ADDRESS_OF_DEV_3};
+    735          //  add_address_to_filter_list(mac_addr_3);
+    736          //  uint8_t mac_addr_4[8]={MAC_ADDRESS_OF_DEV_4};
+    737          //  add_address_to_filter_list(mac_addr_4);
+    738          //  uint8_t mac_addr_5[8]={MAC_ADDRESS_OF_DEV_5};
+    739          //  add_address_to_filter_list(mac_addr_5);
+    740          //  uint8_t mac_addr_6[8]={MAC_ADDRESS_OF_DEV_6};
+    741          //  add_address_to_filter_list(mac_addr_6);
+    742          //  uint8_t mac_addr_7[8]={MAC_ADDRESS_OF_DEV_7};
+    743          //  add_address_to_filter_list(mac_addr_7);
+    744          //  uint8_t mac_addr_8[8]={MAC_ADDRESS_OF_DEV_8};
+    745          //  add_address_to_filter_list(mac_addr_8);
+    746          //  uint8_t mac_addr_9[8]={MAC_ADDRESS_OF_DEV_9};
+    747          //  add_address_to_filter_list(mac_addr_9);
+    748          //  uint8_t mac_addr_10[8]={MAC_ADDRESS_OF_DEV_10};
+    749          //  add_address_to_filter_list(mac_addr_10);
+    750          }
+    751          #endif 
+    752          #endif 
+    753          // -----------------------------------------------------------------------------
+    754          //                          Function Definitions
+    755          // -----------------------------------------------------------------------------
+    756          
+
+   \                                 In section .bss, align 4
+    757          static int debug_reset_count = 0;
+   \                     debug_reset_count:
+   \        0x0                      DS8 4
+    758          extern void rpl_free_instance_and_dag (void);
+    759          extern void rpl_cancel_probing_timer (void);
+    760          extern void clean_ds6_nbr_table();
+    761          extern void clean_rpl_nbr_table (void);
+    762          extern void clean_link_stat_nbr_table (void);
+    763          extern void reset_pan_timeout_state (void);
+    764          extern void process_schedule_end_pa (void);
+    765          extern void process_schedule_end_pc (void);
+    766          
+    767          
+
+   \                                 In section .text, align 2, keep-with-next
+    768          void kill_process_and_clean_rpl_nbr()
+    769          {
+   \                     kill_process_and_clean_rpl_nbr: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    770            fan_mac_information_data.upper_layer_started = 0;
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x....             LDR.N    R0,??DataTable8_25
+   \        0x6   0x72C1             STRB     R1,[R0, #+11]
+    771            rpl_free_instance_and_dag ();
+   \        0x8   0x.... 0x....      BL       rpl_free_instance_and_dag
+    772            rpl_cancel_probing_timer ();
+   \        0xC   0x.... 0x....      BL       rpl_cancel_probing_timer
+    773            //clean_dhcp_credentials ();
+    774            clean_ds6_nbr_table ();
+   \       0x10   0x.... 0x....      BL       clean_ds6_nbr_table
+    775            clean_rpl_nbr_table ();
+   \       0x14   0x.... 0x....      BL       clean_rpl_nbr_table
+    776            clean_link_stat_nbr_table ();
+   \       0x18   0x.... 0x....      BL       clean_link_stat_nbr_table
+    777            reset_pan_timeout_state ();
+   \       0x1C   0x.... 0x....      BL       reset_pan_timeout_state
+    778            process_schedule_end_pc ();
+   \       0x20   0x.... 0x....      BL       process_schedule_end_pc
+    779            process_schedule_end_pa ();
+   \       0x24   0x.... 0x....      BL       process_schedule_end_pa
+    780            
+    781          #if(FAN_FRQ_HOPPING_FEATURE_ENABLED == 1)
+    782            stop_broadcast_schedule ();
+    783          #endif
+    784            
+    785            reset_to_join_state_1 ();
+   \       0x28   0x.... 0x....      BL       reset_to_join_state_1
+    786            debug_reset_count++;
+   \       0x2C   0x....             LDR.N    R1,??DataTable8_31
+   \       0x2E   0x6808             LDR      R0,[R1, #+0]
+   \       0x30   0x1C40             ADDS     R0,R0,#+1
+   \       0x32   0x6008             STR      R0,[R1, #+0]
+    787          }
+   \       0x34   0xBD01             POP      {R0,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \        0x0   0xE000'E100        DC32     0xe000e100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_1:
+   \        0x0   0xE000'E280        DC32     0xe000e280
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_2:
+   \        0x0   0x5004'8000        DC32     0x50048000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_3:
+   \        0x0   0x5004'C000        DC32     0x5004c000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_4:
+   \        0x0   0x5005'0000        DC32     0x50050000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_5:
+   \        0x0   0x5005'4000        DC32     0x50054000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_6:
+   \        0x0   0x5005'8000        DC32     0x50058000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_7:
+   \        0x0   0x....'....        DC32     linkaddr_node_addr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_8:
+   \        0x0   0x....'....        DC32     uip_lladdr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_9:
+   \        0x0   0x....'....        DC32     tcpip_process
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_10:
+   \        0x0   0x....'....        DC32     ping6_process
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_11:
+   \        0x0   0x....'....        DC32     udp_process
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_12:
+   \        0x0   0x....'....        DC32     fan_nwk_manager_app
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_13:
+   \        0x0   0x....'....        DC32     root_device
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_14:
+   \        0x0   0x....'....        DC32     cold_boot_flag
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_15:
+   \        0x0   0x....'....        DC32     resetCause
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_16:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_17:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_18:
+   \        0x0   0x....'....        DC32     nvm3_defaultHandle
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_19:
+   \        0x0   0x....'....        DC32     key_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_20:
+   \        0x0   0x....'....        DC32     `data`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_21:
+   \        0x0   0x....'....        DC32     counter
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_22:
+   \        0x0   0x....'....        DC32     hif
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_23:
+   \        0x0   0x....'....        DC32     etimer_process
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_24:
+   \        0x0   0x....'....        DC32     promac_process
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_25:
+   \        0x0   0x....'....        DC32     fan_mac_information_data
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_26:
+   \        0x0   0x5B00'4000        DC32     0x5b004000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_27:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_28:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_29:
+   \        0x0   0x....'....        DC32     timerExpired
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_30:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_31:
+   \        0x0   0x....'....        DC32     debug_reset_count
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x52 0x65          DC8 "Reseting the system by WatchDog timer\015\012"
+   \              0x73 0x65    
+   \              0x74 0x69    
+   \              0x6E 0x67    
+   \              0x20 0x74    
+   \              0x68 0x65    
+   \              0x20 0x73    
+   \              0x79 0x73    
+   \              0x74 0x65    
+   \              0x6D 0x20    
+   \              0x62 0x79    
+   \              0x20 0x57    
+   \              0x61 0x74    
+   \              0x63 0x68    
+   \              0x44 0x6F    
+   \              0x67 0x20    
+   \              0x74 0x69    
+   \              0x6D 0x65    
+   \              0x72 0x0D    
+   \              0x0A 0x00
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x52 0x65          DC8 "Reseting the system by Normal Reset\015\012"
+   \              0x73 0x65    
+   \              0x74 0x69    
+   \              0x6E 0x67    
+   \              0x20 0x74    
+   \              0x68 0x65    
+   \              0x20 0x73    
+   \              0x79 0x73    
+   \              0x74 0x65    
+   \              0x6D 0x20    
+   \              0x62 0x79    
+   \              0x20 0x4E    
+   \              0x6F 0x72    
+   \              0x6D 0x61    
+   \              0x6C 0x20    
+   \              0x52 0x65    
+   \              0x73 0x65    
+   \              0x74 0x0D    
+   \              0x0A 0x00
+   \       0x26                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x01 0x00          DC8 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x0F 0x00    
+   \              0x00 0x00
+   \        0xE                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x52 0x78          DC8 "Rx timer is running\015\012"
+   \              0x20 0x74    
+   \              0x69 0x6D    
+   \              0x65 0x72    
+   \              0x20 0x69    
+   \              0x73 0x20    
+   \              0x72 0x75    
+   \              0x6E 0x6E    
+   \              0x69 0x6E    
+   \              0x67 0x0D    
+   \              0x0A 0x00
+   \       0x16                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x01 0x00          DC8 1, 0
+   \        0x2   0x001F             DC16 31
+   \        0x4   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00
+    788          
+    789          
+    790          /******************************************************************************/
+    791          #if (EFR32FG13P_LBR == 0x00)  
+    792          static uip_ipaddr_t glob_fipaddr;
+    793          void store_global_address()
+    794          {
+    795            uint8_t *my_global_addr;
+    796            my_global_addr = (uint8_t *)get_self_global_addr();
+    797            memcpy(global_addr_device,my_global_addr,16);  
+    798            memcpy(glob_fipaddr.u8,global_addr_device,16);
+    799            uip_ds6_addr_add(&glob_fipaddr, 0, ADDR_DHCP);
+    800          }
+    801          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   TIMER2_IRQHandler
+        16   -> TIMER_IntClear
+        16   -> TIMER_IntGet
+        16   -> printf
+       0   TIMER_IntClear
+       0   TIMER_IntEnable
+       0   TIMER_IntGet
+       4   TIMER_MaxCount
+         4 __aeabi_llsl
+      16   TIMER_TopSet
+        16   -> TIMER_MaxCount
+       0   WDOGn_IntClear
+       0   WDOGn_IntEnable
+       0   __NVIC_ClearPendingIRQ
+       0   __NVIC_EnableIRQ
+       0   indicate_mac_2_nhle
+      24   initWDOG
+        24   -> CMU_ClockEnable
+        24   -> CMU_ClockSelectSet
+        24   -> WDOGn_Init
+        24   -> WDOGn_IntClear
+        24   -> WDOGn_IntEnable
+        24   -> __NVIC_ClearPendingIRQ
+        24   -> __NVIC_EnableIRQ
+        24   -> __aeabi_memcpy4
+       8   kill_process_and_clean_rpl_nbr
+         8   -> clean_ds6_nbr_table
+         8   -> clean_link_stat_nbr_table
+         8   -> clean_rpl_nbr_table
+         8   -> process_schedule_end_pa
+         8   -> process_schedule_end_pc
+         8   -> reset_pan_timeout_state
+         8   -> reset_to_join_state_1
+         8   -> rpl_cancel_probing_timer
+         8   -> rpl_free_instance_and_dag
+      16   main
+        16   -> APP_LED_2_GPIO_init
+        16   -> APP_LED_GPIO_init
+        16   -> APP_LED_ON
+        16   -> APPhifForToolTest_Init
+        16   -> RMU_ResetCauseClear
+        16   -> RMU_ResetCauseGet
+        16   -> WDOGn_Feed
+        16   -> app_log_init
+        16   -> buffer_service_init
+        16   -> clock_init
+        16   -> configure_device_run_param
+        16   -> ctimer_init
+        16   -> fan_nwk_manager_init
+        16   -> hif_service_init
+        16   -> initWDOG
+        16   -> l3_process_start
+        16   -> nvm3_initDefault
+        16   -> nvm3_readData
+        16   -> nvm3_writeData
+        16   -> printf
+        16   -> process_init
+        16   -> rtc_init
+        16   -> sl_iostream_eusart_init_instances
+        16   -> sl_system_init
+        16   -> sl_system_process_action
+        16   -> tmr_service_init
+       8   reset_to_join_state_1
+         8   -> change_join_state
+         8   -> clean_mac_neighbour_table
+         8   -> delete_all_device_from_mac_pib
+      24   start_upper_layer
+        24   -> __aeabi_memcpy
+        24   -> initialize_rpl
+        24   -> l3_process_start
+        24   -> mem_reverse_cpy
+        24   -> netstack_init
+        24   -> queuebuf_init
+        24   -> rpl_dag_root_init_dag
+        24   -> send_hif_conf_cb
+      40   timer_2_init
+        40   -> CMU_ClockEnable
+        40   -> TIMER_Init
+        40   -> TIMER_InitCC
+        40   -> TIMER_IntEnable
+        40   -> TIMER_TopSet
+        40   -> __NVIC_EnableIRQ
+        40   -> __aeabi_memcpy4
+        40   -> __aeabi_memset
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_10
+       4  ??DataTable8_11
+       4  ??DataTable8_12
+       4  ??DataTable8_13
+       4  ??DataTable8_14
+       4  ??DataTable8_15
+       4  ??DataTable8_16
+       4  ??DataTable8_17
+       4  ??DataTable8_18
+       4  ??DataTable8_19
+       4  ??DataTable8_2
+       4  ??DataTable8_20
+       4  ??DataTable8_21
+       4  ??DataTable8_22
+       4  ??DataTable8_23
+       4  ??DataTable8_24
+       4  ??DataTable8_25
+       4  ??DataTable8_26
+       4  ??DataTable8_27
+       4  ??DataTable8_28
+       4  ??DataTable8_29
+       4  ??DataTable8_3
+       4  ??DataTable8_30
+       4  ??DataTable8_31
+       4  ??DataTable8_4
+       4  ??DataTable8_5
+       4  ??DataTable8_6
+       4  ??DataTable8_7
+       4  ??DataTable8_8
+       4  ??DataTable8_9
+      40  ?_0
+      40  ?_1
+      16  ?_2
+      24  ?_3
+      16  ?_4
+       1  TANSIT_KMP_ID
+      38  TIMER2_IRQHandler
+       8  TIMER_IntClear
+       8  TIMER_IntEnable
+       4  TIMER_IntGet
+     422  TIMER_MaxCount
+      34  TIMER_TopSet
+       8  WDOGn_IntClear
+       8  WDOGn_IntEnable
+      32  __NVIC_ClearPendingIRQ
+      32  __NVIC_EnableIRQ
+       2  counter
+       4  data
+       4  debug_reset_count
+       4  disable_int_count
+       4  enable_int_count
+       4  endTicks
+      16  global_addr_device
+      76  hif
+       2  indicate_mac_2_nhle
+      86  initWDOG
+       4  key_1
+      54  kill_process_and_clean_rpl_nbr
+     210  main
+       4  processor_active
+       4  resetCause
+      18  reset_to_join_state_1
+       1  root_device
+       4  startTicks
+     100  start_upper_layer
+       1  timerExpired
+       2  timer_2_cout
+      96  timer_2_init
+      24  uhf_tmr
+
+ 
+   155 bytes in section .bss
+     4 bytes in section .data
+   136 bytes in section .rodata
+ 1'288 bytes in section .text
+ 
+ 1'288 bytes of CODE  memory
+   136 bytes of CONST memory
+   159 bytes of DATA  memory
+
+Errors: none
+Warnings: 1

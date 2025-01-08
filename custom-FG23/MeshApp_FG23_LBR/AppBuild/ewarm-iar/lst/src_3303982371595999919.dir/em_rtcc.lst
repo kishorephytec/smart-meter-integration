@@ -1,0 +1,424 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         02/Dec/2024  12:57:50
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\emlib\src\em_rtcc.c
+#    Command line      =
+#        -f
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_rtcc.o.rsp
+#        (D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\emlib\src\em_rtcc.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\src_3303982371595999919.dir
+#        --diag_suppress Pa050 -o
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_rtcc.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\src_3303982371595999919.dir\em_rtcc.lst
+#    Object file       =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_rtcc.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\emlib\src\em_rtcc.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Real Time Counter with Calendar (RTCC) Peripheral API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "em_rtcc.h"
+     32          #if defined(RTCC_COUNT) && (RTCC_COUNT == 1)
+     33          #include "em_bus.h"
+     34          
+     35          /***************************************************************************//**
+     36           * @addtogroup rtcc RTCC - Real Timer Counter/Calendar
+     37           * @brief Real Time Counter and Calendar (RTCC) Peripheral API
+     38           * @details
+     39           *  This module contains functions to control the RTCC peripheral of Silicon
+     40           *  Labs 32-bit MCUs and SoCs. The RTCC ensures timekeeping in low energy modes.
+     41           *  The RTCC also includes a BCD calendar mode for easy time and date keeping.
+     42           * @{
+     43           ******************************************************************************/
+     44          
+     45          /*******************************************************************************
+     46           *******************************   DEFINES   ***********************************
+     47           ******************************************************************************/
+     48          
+     49          /*******************************************************************************
+     50           **************************   LOCAL FUNCTIONS   ********************************
+     51           ******************************************************************************/
+     52          
+     53          /*******************************************************************************
+     54           **************************   GLOBAL FUNCTIONS   *******************************
+     55           ******************************************************************************/
+     56          
+     57          /***************************************************************************//**
+     58           * @brief
+     59           *   Configure the selected capture/compare channel of the RTCC.
+     60           *
+     61           * @details
+     62           *   Use this function to configure an RTCC channel.
+     63           *   Select capture/compare mode, match output action, overflow output action,
+     64           *   and PRS input configuration.
+     65           *   See the configuration structure @ref RTCC_CCChConf_TypeDef for more
+     66           *   details.
+     67           *
+     68           * @param[in] ch
+     69           *   A channel selector.
+     70           *
+     71           * @param[in] confPtr
+     72           *   A pointer to the configuration structure.
+     73           ******************************************************************************/
+     74          void RTCC_ChannelInit(int ch, RTCC_CCChConf_TypeDef const *confPtr)
+     75          {
+     76            EFM_ASSERT(RTCC_CH_VALID(ch));
+     77          
+     78          #if defined(_SILICON_LABS_32B_SERIES_1)
+     79            EFM_ASSERT((uint32_t)confPtr->compMask
+     80                       < (_RTCC_CC_CTRL_COMPMASK_MASK >> _RTCC_CC_CTRL_COMPMASK_SHIFT)
+     81                       + 1U);
+     82          
+     83            /** Configure the selected capture/compare channel. */
+     84            RTCC->CC[ch].CTRL = ((uint32_t)confPtr->chMode << _RTCC_CC_CTRL_MODE_SHIFT)
+     85                                | ((uint32_t)confPtr->compMatchOutAction << _RTCC_CC_CTRL_CMOA_SHIFT)
+     86                                | ((uint32_t)confPtr->prsSel << _RTCC_CC_CTRL_PRSSEL_SHIFT)
+     87                                | ((uint32_t)confPtr->inputEdgeSel << _RTCC_CC_CTRL_ICEDGE_SHIFT)
+     88                                | ((uint32_t)confPtr->compBase << _RTCC_CC_CTRL_COMPBASE_SHIFT)
+     89                                | ((uint32_t)confPtr->compMask << _RTCC_CC_CTRL_COMPMASK_SHIFT)
+     90                                | ((uint32_t)confPtr->dayCompMode << _RTCC_CC_CTRL_DAYCC_SHIFT);
+     91          #else
+     92          
+     93            /** Configure the selected capture/compare channel. */
+     94            RTCC->CC[ch].CTRL = ( (uint32_t)confPtr->chMode << _RTCC_CC_CTRL_MODE_SHIFT)
+     95                                | ( (uint32_t)confPtr->compMatchOutAction << _RTCC_CC_CTRL_CMOA_SHIFT)
+     96                                | ( (uint32_t)confPtr->inputEdgeSel << _RTCC_CC_CTRL_ICEDGE_SHIFT)
+     97                                | ( (uint32_t)confPtr->compBase << _RTCC_CC_CTRL_COMPBASE_SHIFT);
+     98            if (confPtr->chMode == rtccCapComChModeCapture) {
+     99              volatile uint32_t *reg = &PRS->CONSUMER_RTCC_CC0;
+    100              reg[ch] = confPtr->prsSel;
+    101            }
+    102          #endif
+    103          }
+    104          
+    105          /***************************************************************************//**
+    106           * @brief
+    107           *   Enable/disable RTCC counting.
+    108           *
+    109           * @param[in] enable
+    110           *   True to enable RTCC counting, false to disable counting.
+    111           ******************************************************************************/
+    112          void RTCC_Enable(bool enable)
+    113          {
+    114          #if defined (_RTCC_CTRL_ENABLE_SHIFT)
+    115            /* Bitbanding the enable bit in the CTRL register (atomic). */
+    116            BUS_RegBitWrite((&RTCC->CTRL), _RTCC_CTRL_ENABLE_SHIFT, (uint32_t)enable);
+    117          #elif defined (RTCC_CMD_START)
+    118          
+    119            /* Quick exit if we want to disable RTCC and it's already disabled. */
+    120            if ((RTCC->EN == 0U) && !enable) {
+    121              return;
+    122            }
+    123          
+    124            if (RTCC->EN != 0U) {
+    125              /* Modifying the enable bit while synchronization is active will BusFault */
+    126              RTCC_SyncWait();
+    127            }
+    128          
+    129            if (enable) {
+    130              RTCC->EN_SET = RTCC_EN_EN;
+    131              RTCC_Start();
+    132            } else {
+    133              RTCC_Stop();
+    134              RTCC_SyncWait();
+    135              RTCC->EN_CLR = RTCC_EN_EN;
+    136            }
+    137          #endif
+    138          }
+    139          
+    140          /***************************************************************************//**
+    141           * @brief
+    142           *   Initialize RTCC.
+    143           *
+    144           * @details
+    145           *   Note that the compare values must be set separately with RTCC_CompareSet(),
+    146           *   which should probably be done prior to the use of this function if
+    147           *   configuring the RTCC to start when initialization is completed.
+    148           *
+    149           * @param[in] init
+    150           *   A pointer to the RTCC initialization structure.
+    151           ******************************************************************************/
+    152          void RTCC_Init(const RTCC_Init_TypeDef *init)
+    153          {
+    154          #if defined (_RTCC_CTRL_MASK)
+    155            RTCC->CTRL = ((init->enable ? 1UL : 0UL) << _RTCC_CTRL_ENABLE_SHIFT)
+    156                         | ((init->debugRun ? 1UL : 0UL) << _RTCC_CTRL_DEBUGRUN_SHIFT)
+    157                         | ((init->precntWrapOnCCV0 ? 1UL : 0UL) << _RTCC_CTRL_PRECCV0TOP_SHIFT)
+    158                         | ((init->cntWrapOnCCV1 ? 1UL : 0UL) << _RTCC_CTRL_CCV1TOP_SHIFT)
+    159                         | ((uint32_t)init->presc << _RTCC_CTRL_CNTPRESC_SHIFT)
+    160                         | ((uint32_t)init->prescMode << _RTCC_CTRL_CNTTICK_SHIFT)
+    161          #if defined(_RTCC_CTRL_BUMODETSEN_MASK)
+    162                         | ((uint32_t)init->enaBackupModeSet << _RTCC_CTRL_BUMODETSEN_SHIFT)
+    163          #endif
+    164                         | ((init->enaOSCFailDetect ? 1UL : 0UL) << _RTCC_CTRL_OSCFDETEN_SHIFT)
+    165                         | ((uint32_t)init->cntMode << _RTCC_CTRL_CNTMODE_SHIFT)
+    166                         | ((init->disLeapYearCorr ? 1UL : 0UL) << _RTCC_CTRL_LYEARCORRDIS_SHIFT);
+    167          
+    168          #elif defined (_RTCC_CFG_MASK)
+    169            if (RTCC->EN != 0U) {
+    170              RTCC_SyncWait();
+    171            }
+    172            RTCC->EN_CLR = RTCC_EN_EN;
+    173            RTCC->CFG = ((init->debugRun ? 1UL : 0UL) << _RTCC_CFG_DEBUGRUN_SHIFT)
+    174                        | ( (init->precntWrapOnCCV0 ? 1UL : 0UL) << _RTCC_CFG_PRECNTCCV0TOP_SHIFT)
+    175                        | ( (init->cntWrapOnCCV1 ? 1UL : 0UL) << _RTCC_CFG_CNTCCV1TOP_SHIFT)
+    176                        | ( (uint32_t)init->presc << _RTCC_CFG_CNTPRESC_SHIFT)
+    177                        | ( (uint32_t)init->prescMode << _RTCC_CFG_CNTTICK_SHIFT);
+    178            RTCC->EN_SET = RTCC_EN_EN;
+    179            RTCC->CMD = init->enable ? RTCC_CMD_START : RTCC_CMD_STOP;
+    180          #endif
+    181          }
+    182          
+    183          /***************************************************************************//**
+    184           * @brief
+    185           *   Restore RTCC to its reset state.
+    186           ******************************************************************************/
+    187          void RTCC_Reset(void)
+    188          {
+    189            unsigned int i;
+    190          
+    191          #if defined(_RTCC_CTRL_MASK)
+    192            /* Restore all RTCC registers to their default values. */
+    193            RTCC_Unlock();
+    194            RTCC->CTRL    = _RTCC_CTRL_RESETVALUE;
+    195            RTCC->PRECNT  = _RTCC_PRECNT_RESETVALUE;
+    196            RTCC->CNT     = _RTCC_CNT_RESETVALUE;
+    197            RTCC->TIME    = _RTCC_TIME_RESETVALUE;
+    198            RTCC->DATE    = _RTCC_DATE_RESETVALUE;
+    199            RTCC->IEN     = _RTCC_IEN_RESETVALUE;
+    200            RTCC->IFC     = _RTCC_IFC_MASK;
+    201            RTCC_StatusClear();
+    202            RTCC->EM4WUEN = _RTCC_EM4WUEN_RESETVALUE;
+    203          
+    204            for (i = 0; i < RTCC_CC_NUM; i++) {
+    205              RTCC->CC[i].CTRL = _RTCC_CC_CTRL_RESETVALUE;
+    206              RTCC->CC[i].CCV  = _RTCC_CC_CCV_RESETVALUE;
+    207              RTCC->CC[i].TIME = _RTCC_CC_TIME_RESETVALUE;
+    208              RTCC->CC[i].DATE = _RTCC_CC_DATE_RESETVALUE;
+    209            }
+    210          
+    211          #elif defined(_RTCC_CFG_MASK)
+    212          
+    213            /* Restore all RTCC registers to their default values. */
+    214            RTCC_Unlock();
+    215            RTCC->EN_SET = RTCC_EN_EN;
+    216            RTCC_Stop();
+    217            RTCC_SyncWait();
+    218            RTCC->PRECNT  = _RTCC_PRECNT_RESETVALUE;
+    219            RTCC->CNT     = _RTCC_CNT_RESETVALUE;
+    220            RTCC->IEN     = _RTCC_IEN_RESETVALUE;
+    221            RTCC_IntClear(_RTCC_IF_MASK);
+    222            RTCC_StatusClear();
+    223          
+    224            for (i = 0; i < RTCC_CC_NUM; i++) {
+    225              RTCC->CC[i].CTRL = _RTCC_CC_CTRL_RESETVALUE;
+    226              RTCC->CC[i].OCVALUE  = _RTCC_CC_OCVALUE_RESETVALUE;
+    227            }
+    228            RTCC_SyncWait();
+    229            RTCC->EN_CLR = RTCC_EN_EN;
+    230            RTCC->CFG    = _RTCC_CFG_RESETVALUE;
+    231          #endif
+    232          }
+    233          
+    234          /***************************************************************************//**
+    235           * @brief
+    236           *   Clear the STATUS register.
+    237           ******************************************************************************/
+    238          void RTCC_StatusClear(void)
+    239          {
+    240          #if defined (RTCC_CMD_CLRSTATUS)
+    241            while ((RTCC->SYNCBUSY & RTCC_SYNCBUSY_CMD) != 0U) {
+    242              // Wait for synchronization.
+    243            }
+    244            RTCC->CMD = RTCC_CMD_CLRSTATUS;
+    245          #endif
+    246          }
+    247          
+    248          /** @} (end addtogroup rtcc) */
+    249          
+    250          #endif /* defined( RTCC_COUNT ) && ( RTCC_COUNT == 1 ) */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

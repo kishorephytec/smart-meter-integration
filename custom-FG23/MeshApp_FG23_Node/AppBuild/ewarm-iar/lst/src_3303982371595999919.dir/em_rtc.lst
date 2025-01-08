@@ -1,0 +1,547 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         26/Nov/2024  12:16:06
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\SiliconLabs\platform\emlib\src\em_rtc.c
+#    Command line      =
+#        -f
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_rtc.o.rsp
+#        (C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\SiliconLabs\platform\emlib\src\em_rtc.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\src_3303982371595999919.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\.\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\rpl\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\cpu\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\FLASH\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_rtc.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\src_3303982371595999919.dir\em_rtc.lst
+#    Object file       =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\src_3303982371595999919.dir\em_rtc.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\SiliconLabs\platform\emlib\src\em_rtc.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Real Time Counter (RTC) Peripheral API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "em_rtc.h"
+     32          #if defined(RTC_COUNT) && (RTC_COUNT > 0)
+     33          
+     34          #include "sl_assert.h"
+     35          #include "em_bus.h"
+     36          
+     37          /***************************************************************************//**
+     38           * @addtogroup rtc RTC - Real Time Counter
+     39           * @brief Real Time Counter (RTC) Peripheral API
+     40           * @details
+     41           *  This module contains functions to control the RTC peripheral of Silicon
+     42           *  Labs 32-bit MCUs and SoCs. The RTC ensures timekeeping in low energy modes.
+     43           * @{
+     44           ******************************************************************************/
+     45          
+     46          /*******************************************************************************
+     47           *******************************   DEFINES   ***********************************
+     48           ******************************************************************************/
+     49          
+     50          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     51          
+     52          /** Validation of valid comparator register for assert statements. */
+     53          #define RTC_COMP_REG_VALID(reg)    (((reg) < NUM_RTC_CHANNELS))
+     54          
+     55          /** @endcond */
+     56          
+     57          /*******************************************************************************
+     58           **************************   LOCAL FUNCTIONS   ********************************
+     59           ******************************************************************************/
+     60          
+     61          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     62          
+     63          #if defined(_EFM32_GECKO_FAMILY)
+     64          /***************************************************************************//**
+     65           * @brief
+     66           *   Wait for ongoing sync of register(s) to low-frequency domain to complete.
+     67           *
+     68           * @note
+     69           *   This only applies to the Gecko Family, see the reference manual
+     70           *   chapter about Access to Low Energy Peripherals (Asynchronos Registers)
+     71           *   for details. For Tiny Gecko and Giant Gecko, the RTC supports immediate
+     72           *   updates of registers and will automatically hold the bus until the
+     73           *   register has been updated.
+     74           *
+     75           * @param[in] mask
+     76           *   A bitmask corresponding to SYNCBUSY register defined bits, indicating
+     77           *   registers that must complete any ongoing synchronization.
+     78           ******************************************************************************/
+     79          __STATIC_INLINE void regSync(uint32_t mask)
+     80          {
+     81            /* Avoid deadlock if modifying the same register twice when freeze mode is */
+     82            /* activated. */
+     83            if (RTC->FREEZE & RTC_FREEZE_REGFREEZE) {
+     84              return;
+     85            }
+     86          
+     87            /* Wait for any pending previous write operations to have been completed */
+     88            /* in low-frequency domain. This is only required for the Gecko Family. */
+     89            while (RTC->SYNCBUSY & mask)
+     90              ;
+     91          }
+     92          #endif
+     93          
+     94          /** @endcond */
+     95          
+     96          /*******************************************************************************
+     97           **************************   GLOBAL FUNCTIONS   *******************************
+     98           ******************************************************************************/
+     99          
+    100          /***************************************************************************//**
+    101           * @brief
+    102           *   Get the RTC compare register value.
+    103           *
+    104           * @param[in] comp
+    105           *   A compare register to get. This value must be less than
+    106           *   @ref NUM_RTC_CHANNELS.
+    107           *
+    108           * @return
+    109           *   A compare register value, 0 if invalid register selected.
+    110           ******************************************************************************/
+    111          uint32_t RTC_CompareGet(unsigned int comp)
+    112          {
+    113            uint32_t ret;
+    114          
+    115            EFM_ASSERT(RTC_COMP_REG_VALID(comp));
+    116          
+    117          #if defined(_RTC_COMP_COMP_MASK)
+    118            ret = RTC->COMP[comp].COMP;
+    119          #elif defined(_RTC_COMP0_MASK)
+    120            /* Initialize selected compare value */
+    121            switch (comp) {
+    122              case 0:
+    123                ret = RTC->COMP0;
+    124                break;
+    125          
+    126              case 1:
+    127                ret = RTC->COMP1;
+    128                break;
+    129          
+    130              default:
+    131                /* An unknown compare register selected. */
+    132                ret = 0;
+    133                break;
+    134            }
+    135          #endif
+    136            return ret;
+    137          }
+    138          
+    139          /***************************************************************************//**
+    140           * @brief
+    141           *   Set the RTC compare register value.
+    142           *
+    143           * @note
+    144           *   The setting of a compare register requires synchronization into the
+    145           *   low-frequency domain. If the same register is modified before a previous
+    146           *   update has completed, this function will stall until the previous
+    147           *   synchronization has completed. This only applies to the Gecko Family. See
+    148           *   comments in the regSync() internal function call.
+    149           *
+    150           * @param[in] comp
+    151           *   A compare register to set. This value must be less than
+    152           *   @ref NUM_RTC_CHANNELS.
+    153           *
+    154           * @param[in] value
+    155           *   An initialization value (<= 0x00ffffff).
+    156           ******************************************************************************/
+    157          void RTC_CompareSet(unsigned int comp, uint32_t value)
+    158          {
+    159            volatile uint32_t *compReg;
+    160          #if defined(_EFM32_GECKO_FAMILY)
+    161            uint32_t          syncbusy;
+    162          #endif
+    163          
+    164            EFM_ASSERT(RTC_COMP_REG_VALID(comp));
+    165          
+    166          #if defined(_RTC_COMP_COMP_COMP_MASK)
+    167            EFM_ASSERT((value & ~(_RTC_COMP_COMP_COMP_MASK >> _RTC_COMP_COMP_COMP_SHIFT)) == 0);
+    168          #elif defined(_RTC_COMP0_COMP0_MASK)
+    169            EFM_ASSERT((value & ~(_RTC_COMP0_COMP0_MASK >> _RTC_COMP0_COMP0_SHIFT)) == 0);
+    170          #endif
+    171          
+    172          #if defined(_RTC_COMP_COMP_MASK)
+    173            compReg = &(RTC->COMP[comp].COMP);
+    174          #elif defined(_RTC_COMP0_MASK)
+    175            /* Initialize the selected compare value. */
+    176            switch (comp) {
+    177              case 0:
+    178                compReg = &(RTC->COMP0);
+    179          #if defined(_EFM32_GECKO_FAMILY)
+    180                syncbusy = RTC_SYNCBUSY_COMP0;
+    181          #endif
+    182                break;
+    183          
+    184              case 1:
+    185                compReg = &(RTC->COMP1);
+    186          #if defined(_EFM32_GECKO_FAMILY)
+    187                syncbusy = RTC_SYNCBUSY_COMP1;
+    188          #endif
+    189                break;
+    190          
+    191              default:
+    192                /* An unknown compare register selected. Abort. */
+    193                return;
+    194            }
+    195          #endif
+    196          
+    197          #if defined(_EFM32_GECKO_FAMILY)
+    198            /* LF register about to be modified requires sync. busy check. */
+    199            regSync(syncbusy);
+    200          #endif
+    201          
+    202            *compReg = value;
+    203          }
+    204          
+    205          /***************************************************************************//**
+    206           * @brief
+    207           *   Enable/disable RTC.
+    208           *
+    209           * @note
+    210           *   The enabling/disabling of RTC modifies the RTC CTRL register which
+    211           *   requires synchronization into the low-frequency domain. If this register is
+    212           *   modified before a previous update to the same register has completed, this
+    213           *   function will stall until the previous synchronization has completed. This
+    214           *   only applies to the Gecko Family. See comments in the regSync() internal
+    215           *   function call.
+    216           *
+    217           * @param[in] enable
+    218           *   True to enable counting, false to disable.
+    219           ******************************************************************************/
+    220          void RTC_Enable(bool enable)
+    221          {
+    222          #if defined(_EFM32_GECKO_FAMILY)
+    223            /* LF register about to be modified requires sync. busy check. */
+    224            regSync(RTC_SYNCBUSY_CTRL);
+    225          #endif
+    226          
+    227            BUS_RegBitWrite(&(RTC->CTRL), _RTC_CTRL_EN_SHIFT, enable);
+    228          
+    229          #if defined(_EFM32_GECKO_FAMILY)
+    230            /* Wait for CTRL to be updated before returning because a calling code may
+    231               depend on the CTRL register being updated after this function has
+    232               returned. */
+    233            regSync(RTC_SYNCBUSY_CTRL);
+    234          #endif
+    235          }
+    236          
+    237          #if defined(_RTC_FREEZE_MASK)
+    238          /***************************************************************************//**
+    239           * @brief
+    240           *   RTC register synchronization freeze control.
+    241           *
+    242           * @details
+    243           *   Some RTC registers require synchronization into the low-frequency (LF)
+    244           *   domain. The freeze feature allows for several registers to be
+    245           *   modified before passing them to the LF domain simultaneously (which
+    246           *   takes place when the freeze mode is disabled).
+    247           *
+    248           * @note
+    249           *   When enabling freeze mode, this function will wait for all current
+    250           *   ongoing RTC synchronization to LF domain to complete (normally
+    251           *   synchronization will not be in progress.) However, for this reason, when
+    252           *   using freeze mode, modifications of registers requiring LF synchronization
+    253           *   should be done within one freeze enable/disable block to avoid unnecessary
+    254           *   stalling. This only applies to the Gecko Family. See the reference manual
+    255           *   chapter about Access to Low Energy Peripherals (Asynchronos Registers)
+    256           *   for details.
+    257           *
+    258           * @param[in] enable
+    259           *   @li True - enable freeze, modified registers are not propagated to the
+    260           *       LF domain
+    261           *   @li False - disables freeze, modified registers are propagated to LF
+    262           *       domain
+    263           ******************************************************************************/
+    264          void RTC_FreezeEnable(bool enable)
+    265          {
+    266            if (enable) {
+    267          #if defined(_EFM32_GECKO_FAMILY)
+    268              /* Wait for any ongoing LF synchronization to complete to */
+    269              /* protect against the rare case when a user                            */
+    270              /* - modifies a register requiring LF sync                              */
+    271              /* - then enables freeze before LF sync completed                       */
+    272              /* - then modifies the same register again                              */
+    273              /* since modifying a register while it is in sync progress should be    */
+    274              /* avoided.                                                             */
+    275              while (RTC->SYNCBUSY)
+    276                ;
+    277          #endif
+    278              RTC->FREEZE = RTC_FREEZE_REGFREEZE;
+    279            } else {
+    280              RTC->FREEZE = 0;
+    281            }
+    282          }
+    283          #endif
+    284          
+    285          /***************************************************************************//**
+    286           * @brief
+    287           *   Initialize RTC.
+    288           *
+    289           * @details
+    290           *   Note that the compare values must be set separately with RTC_CompareSet()
+    291           *   prior to the use of this function if
+    292           *   configuring the RTC to start when initialization is completed.
+    293           *
+    294           * @note
+    295           *   The initialization of the RTC modifies the RTC CTRL register which requires
+    296           *   synchronization into the low-frequency domain. If this register is
+    297           *   modified before a previous update to the same register has completed, this
+    298           *   function will stall until the previous synchronization has completed. This
+    299           *   only applies to the Gecko Family. See comments in the regSync() internal
+    300           *   function call.
+    301           *
+    302           * @param[in] init
+    303           *   A pointer to the RTC initialization structure.
+    304           ******************************************************************************/
+    305          void RTC_Init(const RTC_Init_TypeDef *init)
+    306          {
+    307            uint32_t tmp;
+    308          
+    309            if (init->enable) {
+    310              tmp = RTC_CTRL_EN;
+    311            } else {
+    312              tmp = 0;
+    313            }
+    314          
+    315            /* Configure the DEBUGRUN flag, which sets whether or not counter should be
+    316             * updated when debugger is active. */
+    317            if (init->debugRun) {
+    318              tmp |= RTC_CTRL_DEBUGRUN;
+    319            }
+    320          
+    321            /* Configure COMP0TOP, which will use the COMP0 compare value as an
+    322             * overflow value, instead of default 24-bit 0x00ffffff. */
+    323            if (init->comp0Top) {
+    324              tmp |= RTC_CTRL_COMP0TOP;
+    325            }
+    326          
+    327          #if defined(_EFM32_GECKO_FAMILY)
+    328            /* LF register about to be modified requires sync. busy check. */
+    329            regSync(RTC_SYNCBUSY_CTRL);
+    330          #endif
+    331          
+    332            RTC->CTRL = tmp;
+    333          }
+    334          
+    335          /***************************************************************************//**
+    336           * @brief
+    337           *   Restore RTC to reset state.
+    338           ******************************************************************************/
+    339          void RTC_Reset(void)
+    340          {
+    341            /* Restore all essential RTC register to default configurations. */
+    342          #if defined(_RTC_FREEZE_MASK)
+    343            RTC->FREEZE = _RTC_FREEZE_RESETVALUE;
+    344          #endif
+    345            RTC->CTRL   = _RTC_CTRL_RESETVALUE;
+    346          #if defined(_RTC_COMP_COMP_MASK)
+    347            for (unsigned int ch = 0; ch < NUM_RTC_CHANNELS; ch++) {
+    348              RTC->COMP[ch].COMP = _RTC_COMP_COMP_RESETVALUE;
+    349            }
+    350          #elif defined(_RTC_COMP0_MASK)
+    351            RTC->COMP0  = _RTC_COMP0_RESETVALUE;
+    352            RTC->COMP1  = _RTC_COMP1_RESETVALUE;
+    353          #endif
+    354            RTC->IEN    = _RTC_IEN_RESETVALUE;
+    355            RTC->IFC    = _RTC_IFC_RESETVALUE;
+    356          
+    357          #if defined(_EFM32_GECKO_FAMILY)
+    358            /* Wait for CTRL, COMP0, and COMP1 to be updated before returning because the
+    359               calling code may depend on the register values being updated after
+    360               this function has returned. */
+    361            regSync(RTC_SYNCBUSY_CTRL | RTC_SYNCBUSY_COMP0 | RTC_SYNCBUSY_COMP1);
+    362          #endif
+    363          }
+    364          
+    365          /***************************************************************************//**
+    366           * @brief
+    367           *   Restart the RTC counter from zero.
+    368           ******************************************************************************/
+    369          void RTC_CounterReset(void)
+    370          {
+    371            /* A disable/enable sequence will start the counter at zero. */
+    372            RTC_Enable(false);
+    373            RTC_Enable(true);
+    374          }
+    375          
+    376          /** @} (end addtogroup rtc) */
+    377          #endif /* defined(RTC_COUNT) && (RTC_COUNT > 0) */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

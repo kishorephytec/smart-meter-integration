@@ -1,0 +1,1009 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         26/Nov/2024  12:15:56
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\ProAppSrc\Util\hif\hif_utility.c
+#    Command line      =
+#        -f
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir\hif_utility.o.rsp
+#        (C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\ProAppSrc\Util\hif\hif_utility.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\Util_9809783495009140069.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\.\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\rpl\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\cpu\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\FLASH\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir\hif_utility.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\Util_9809783495009140069.dir\hif_utility.lst
+#    Object file       =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir\hif_utility.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#
+###############################################################################
+
+C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\ProAppSrc\Util\hif\hif_utility.c
+      1          /** \file hif_utility.c
+      2           *******************************************************************************
+      3           ** \brief 
+      4           ** Implements the Host interface functionality
+      5           **
+      6           ** \cond STD_FILE_HEADER
+      7           **
+      8           ** COPYRIGHT(c) 2023-24 Procubed Innovations Pvt Ltd.
+      9           ** All rights reserved.
+     10           **
+     11           ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     12           ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     13           ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     14           ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     15           ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     16           ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     17           ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     18           **
+     19           *******************************************************************************
+     20           **  \endcond
+     21           */
+     22          #if 0 
+     23          /*******************************************************************************
+     24          * File inclusion
+     25          *******************************************************************************/
+     26          #include "StackPHYConf.h"
+     27          #include "common.h"
+     28          #include "queue_latest.h"
+     29          #include "buff_mgmt.h"
+     30          #include "uart_hal.h"
+     31          #include "list_latest.h"
+     32          #include "hw_tmr.h"
+     33          #include "sw_timer.h"
+     34          #include "sm.h"
+     35          #include "hif_utility.h"
+     36          #include "event_manager.h"
+     37          #include "timer_service.h"
+     38          
+     39          
+     40          
+     41          /*******************************************************************************
+     42          * Private macro definitions
+     43          *******************************************************************************/
+     44          
+     45          // Raka [13-Nov-2018] ::  The Length field is only changed in NEW HIF Format
+     46          /* Raka  ::::: 12 Nov 2018...................
+     47                      For referance ............................
+     48          
+     49                    uint8_t synccompak[2] = { 0x41,0x42 };
+     50                    uint16_t Len = 0x0001;
+     51                    uint16_t NewLen = 0x00;
+     52                    *(uint16_t*)&synccompak[0] = Len; //0x01 ,0x00 = 0x0001
+     53                    NewLen = *(uint16_t*)&synccompak[0] ;
+     54          */
+     55          
+     56          
+     57          /**< index to the SOF field in the received buffer*/
+     58          #define SOF				        0xA5
+     59          
+     60          /**< index to the class id field in the received buffer*/
+     61          #define PROTOCOL_ID_INDEX			0x03
+     62          
+     63          /**< index to the group id field in the received buffer*/
+     64          #define LAYER_ID_INDEX				0x04   
+     65          
+     66          /**< index to the primitive id field in the received buffer*/
+     67          #define COMMAND_ID_INDEX			0x05   
+     68          
+     69          /**< index to the length field in the received buffer.It is of 2 bytes. */
+     70          #define LEN_FLD_INDEX				0x06
+     71          
+     72          #define CRC_FLD_INDEX				0x08
+     73          
+     74          /**< index to the upper layer memory field */
+     75          #define NHLE_HEAP				0xFFFF0000
+     76          
+     77          /**< index to the lower layer memory field*/
+     78          #define NLLE_HEAP				0xFFFFFF00
+     79          
+     80          /**< default hif header length*/
+     81          #define HIF_HDR_LEN				0x09
+     82          
+     83          /**< default reserved area*/
+     84          #define RESERVED_AREA				0x04
+     85          
+     86          
+     87          #define PALDCKSUM_COMPORT_LEN                   2
+     88          
+     89          
+     90          
+     91          /******************************************************************************
+     92          * Private Structures, Unions & enums Type Definitions
+     93          ******************************************************************************/
+     94          enum 
+     95          {                                              
+     96              RX_INIT,
+     97              RX_BUFFER_SET,
+     98              RX_SOF_CHECKING,
+     99              READING_HDR,
+    100              READING_PLD,
+    101              READING_HDR_WITHOUT_HIF_FORMAT,
+    102              READING_PLD_LENGTH_WITHOUT_HIF_FORMAT,
+    103              READING_PLD_WITHOUT_HIF_FORMAT
+    104              
+    105          };
+    106          
+    107          /******************************************************************************
+    108          * Private Variable Definitions
+    109          ******************************************************************************/
+    110          
+    111          static hif_t* p_hif;
+    112          //uint32_t stop_time;
+    113          //uint32_t start_time;
+    114          //uint32_t buffer_stop_time;
+    115          /*
+    116          ** ============================================================================
+    117          ** Private Function Definitions
+    118          ** ============================================================================*/ 
+    119          
+    120          // call back to be registerd with the UART HAL module which gets invoked when the HALs 
+    121          //callback is invoked by the driver
+    122          //uint8_t hif2enetCommonTestInterface( uint8_t* pBuff,uint16_t len);
+    123          
+    124          uint32_t uart_debug_rx_count = 0;/*Umesh 12/12/2108*/
+    125          uint32_t pkt_drop_count_sw_tmr = 0;/*Umesh 12/12/2108*/
+    126          uint32_t uart_drop_else_bytes = 0;/*Umesh 12/12/2108*/
+    127          
+    128          uint8_t get_node_type( void );
+    129          static uint8_t hif_receive_in_process = 0;
+    130          
+    131          /*
+    132          ** ============================================================================
+    133          ** Public Variable Definitions
+    134          ** ============================================================================
+    135          */
+    136          #if APP_LBR_ROUTER
+    137          sw_tmr_t uart_debug;//@Umesh 05_12_2018
+    138          #endif
+    139          
+    140          
+    141          sw_tmr_t uart_rx_data_poll_tmr;
+    142          
+    143          #if(APP_USE_HIF_FOR_RAW_COMMUNICARION == 1)
+    144          extern void UART_poll_timer_expire_callback_to_App(void *uart_data);
+    145          #endif
+    146          
+    147          
+    148          /*
+    149          ** ============================================================================
+    150          ** External Variable and Function Declarations
+    151          ** ============================================================================
+    152          */
+    153          
+    154          extern void signal_event_to_mac_task(uint8_t event);
+    155          
+    156          #ifdef MAC_CFG_SECURITY_ENABLED	
+    157          	extern void cleanup_security_queues(uchar SetDefaultPIBValue);
+    158          #endif
+    159          
+    160          
+    161          extern void * app_bm_alloc( uint16_t length );    
+    162          extern void app_bm_free( uint8_t *pMem   );
+    163          //extern void App_exit_continuous_mode(void);
+    164          extern const uint16_t max_buffer_size;
+    165          extern void hif_process_tx (void *data);
+    166          /*
+    167          ** ============================================================================
+    168          ** Private Function Prototypes
+    169          ** ============================================================================
+    170          */
+    171          static uint8_t Generate_Checksum(hif_buff_t* pBuff);
+    172          static uint8_t Generate_Checksum_payload(uint8_t* pBuff , uint16_t payld_len);
+    173          static bool set_receive_buffer( hif_t* p_hif_data, bool new_buff );
+    174          static void hif_call_back (void *AppHandle, uint32_t  Event,void * p_hif_data );
+    175          
+    176          /*
+    177          ** ============================================================================
+    178          ** Public Function Definitions
+    179          ** ============================================================================
+    180          */
+    181          
+    182          /******************************************************************************/
+    183          /******************************************************************************/
+    184          
+    185          bool hif_module_init 
+    186          	( 
+    187          		hif_t* p_hif_data, 
+    188          		app_call_back_t app_call_back,
+    189          		drv_calls_t* driver_if
+    190          	)
+    191          {
+    192          	
+    193          	p_hif = p_hif_data;
+    194          	
+    195          	queue_initialise ( &p_hif_data->service_q );
+    196          	queue_initialise ( &p_hif_data->send_q );
+    197          	queue_initialise ( &p_hif_data->recv_q );
+    198          
+    199          	p_hif_data->driver.send = driver_if->send;
+    200          	p_hif_data->driver.recv = driver_if->recv;
+    201          	p_hif_data->driver.init = driver_if->init;
+    202          	p_hif_data->driver.deinit = driver_if->deinit;
+    203          	p_hif_data->app_call_back = app_call_back; 
+    204          	
+    205          	/*register hif call back along with initializing the driver*/
+    206          	p_hif_data->driver.init();
+    207          
+    208          	p_hif_data->rx_state = RX_INIT;
+    209          
+    210                  set_receive_buffer( p_hif_data, true );
+    211          
+    212          	uart_hal_register_back( hif_call_back,(void*)p_hif_data );
+    213          
+    214              return TRUE;
+    215          }
+    216          
+    217          /******************************************************************************/
+    218           
+    219          bool hif_register_parser 
+    220          	( 
+    221          		hif_t* p_hif_data, 
+    222                  hif_service_t *p_hif_service, 
+    223                  uint8_t group_id, 
+    224                  hif_reveice_cb_t hif_recv_cb 
+    225          	)
+    226          {
+    227          	p_hif_service->group_id = group_id;
+    228          	p_hif_service->hif_recv_cb = hif_recv_cb;
+    229          	queue_item_put( &( p_hif_data->service_q ),( queue_item_t* )p_hif_service );
+    230          	
+    231          	return true;
+    232          }
+    233          
+    234           /*****************************************************************************/
+    235          // RAka ::: Embedded code -->>> to ->>>> External Interface
+    236          uint8_t hif_send_msg_up(uint8_t* p_Msg, uint16_t msg_len, uint8_t layer_id, uint8_t protocol_id )
+    237          {
+    238              /*1) Allocatte a new UART Buffer of type hif_buff_t* 
+    239              2) Copy the packet from p_Msg, msg_len number of bytes into the newly 
+    240              allocated buffs from the place holder "data[0]" after putting class_id and
+    241              sub_class_id in  0th and 1st index of data array 
+    242              3) put the newly allocated buffer in the UART TX Q
+    243              4) send an TX_event to the UART thread */
+    244              hif_buff_t* pBuffer = NULL;
+    245          
+    246              uint8_t* p_data = (uint8_t*) app_bm_alloc( msg_len + HIF_HDR_LEN + RESERVED_AREA );
+    247          
+    248              if(  NULL != p_data )
+    249              {
+    250                    // Raka added for meter communication .....
+    251                    // hif group ID : 0xAA is used for RAW UART Communication with Meter...
+    252                    if( protocol_id == 0xAA)
+    253                    {
+    254                      
+    255                          pBuffer = (hif_buff_t*)(p_data-sizeof(queue_item_t *));
+    256                          
+    257                          //memcpy( &(pBuffer->data[0]), ((uint8_t*)&msg_len), 2);     //Change by shubham 
+    258                          
+    259                          *(uint16_t*)&pBuffer->data[0] = msg_len; 
+    260                           
+    261          		memcpy( &(pBuffer->data[2]), p_Msg, msg_len);                         
+    262          		
+    263                    }
+    264                    else
+    265                    {
+    266                    // Raka  ....
+    267                      
+    268                    pBuffer = (hif_buff_t*)(p_data-sizeof(queue_item_t *));
+    269                    /* start of frame== 0xA5,0xA5,0xA5*/
+    270                    pBuffer->data[0] = SOF;
+    271                    pBuffer->data[1] = SOF;
+    272                    pBuffer->data[2] = SOF;
+    273                    /*class id for zigbee or Wi-fi*/
+    274                    pBuffer->data[PROTOCOL_ID_INDEX] = protocol_id;
+    275                    /*sub_class id eg.mac or phy   */
+    276                    pBuffer->data[LAYER_ID_INDEX] = layer_id;
+    277                    /* command id i.e, present at the first byte of the buffer p_Msg*/
+    278                    pBuffer->data[COMMAND_ID_INDEX] = *p_Msg++;
+    279                    /* length of payload,(the payload begins one byte after the lenght field)*/          
+    280                    // substracted 1 for COM port , Application should send the data with COM port .. Raka 
+    281                    msg_len -= 1; 
+    282                            
+    283                    /* Raka [13-Nov-2018] :: Changed to the below 
+    284                    pBuffer->data[LEN_FLD_INDEX] = (uint8_t)msg_len; 
+    285                    pBuffer->data[LEN_FLD_INDEX+1] = (uint8_t)((msg_len & 0x0000FF00)>>0x08);          */
+    286                    
+    287                    *(uint16_t*)&pBuffer->data[LEN_FLD_INDEX] = msg_len;            
+    288                    /* calculate the checksum value using the function	
+    289                    store the result at the sixth byte of the pBuffer*/
+    290                    pBuffer->data[CRC_FLD_INDEX] =  Generate_Checksum(pBuffer);
+    291                    /* copy the source buffer(p_Msg+1) into dest buffer(pBuffer)                
+    292                    p_Msg+1 is done because the payload starts after the Command ID*/          
+    293                    memcpy( &(pBuffer->data[HIF_HDR_LEN]),p_Msg, msg_len);
+    294                    pBuffer->data[HIF_HDR_LEN+msg_len] =  Generate_Checksum_payload(&(pBuffer->data[HIF_HDR_LEN]) , msg_len);
+    295                    // Add the com port to the UART tx Buff...
+    296                    
+    297                    // +1 for increment of the index by  payload checksum filed....
+    298                    
+    299                    pBuffer->data[HIF_HDR_LEN+msg_len +1] = *(p_Msg + msg_len);
+    300                 // Raka added for meter communication .....
+    301          		
+    302                    }
+    303                // Raka Changes ends here ....
+    304                    
+    305                  /*put the allocated buffer in the send_q*/
+    306                  queue_item_put(&(p_hif->send_q),(queue_item_t*)pBuffer);
+    307          
+    308                  /*send an event to the HIF thread */
+    309          
+    310          #if ((RADIO_VALIDATION || SNIFFER) || (APP_HIF_PROCESS_FEATURE_ENABLED == 0))
+    311                  event_set(HIF_TX_EVENT);
+    312          #else 
+    313                  hif_process_tx (NULL);
+    314          #endif
+    315                  return HIF_SUCCESS;
+    316              }
+    317              return HIF_BUFF_FAILED;	
+    318          }
+    319          
+    320          /******************************************************************************/
+    321          /******************************************************************************/
+    322          // called from thread when RX event is recieved/ Packet has everything from SOF
+    323          bool hif_proc_packet_from_host( hif_t* p_hif_data )
+    324          {
+    325          	hif_service_t* p_curr_ser = NULL;
+    326          	hif_buff_t* p_hif_buff = NULL;
+    327          	queue_t* p_service_q = &( p_hif_data->service_q );
+    328          	
+    329          	uint8_t grp_id, status;
+    330          	uint8_t* p_data = NULL;
+    331                
+    332          	/*read the buffer from the rx queue*/
+    333          	p_hif_buff = ( hif_buff_t* )queue_item_get( &( p_hif_data->recv_q ) );
+    334                  
+    335          	p_data = p_hif_buff->data;
+    336          	
+    337          	if ( NULL != p_hif_buff )
+    338          	{
+    339                    // Meter Data Validation ...
+    340                    if (p_data[0] == 0x7E && (p_data[1] == 0xA0 ||p_data[1] == 0xA8)) // as per dlms- next packet continue
+    341                    {
+    342          		/*go thru the service q to get the appropriate handler 
+    343          		and invoke the same*/
+    344          		
+    345                          grp_id = 0xAA;
+    346          
+    347          		p_curr_ser = ( hif_service_t* )queue_item_scan_next( p_service_q,NULL );
+    348          		while ( NULL != p_curr_ser )
+    349          		{
+    350          			if ( grp_id ==  p_curr_ser->group_id )
+    351          			{
+    352          			   uint8_t len =  (0xFF & (uint8_t)p_data[2]) ;
+    353          			   //call the hif2mac or hif2phy function based on grp_id
+    354                                      status = p_curr_ser->hif_recv_cb(&p_data[0],len+2); // Header 2 byte in dlms protocol - shubham
+    355                                      
+    356                                          if ( HIF_SEND_CONF == status )
+    357          				{
+    358          					// the same buffer is used to fill conf primitive and 
+    359          					//put in the send_q using hif_send_msg_up()
+    360          					p_hif_data->app_call_back( RX_PACKET_EVENT, 0 );
+    361          					return true;
+    362          				}
+    363          				else
+    364          				{
+    365          					app_bm_free((((uint8_t*)p_hif_buff) + sizeof(queue_item_t *)) );
+    366          					return true;
+    367          				}
+    368          			}
+    369          
+    370          			p_curr_ser = ( hif_service_t* )queue_item_scan_next( p_service_q,( queue_item_t* )p_curr_ser);
+    371                          }
+    372                    }  
+    373          		/*go thru the service q to get the appropriate handler 
+    374          		and invoke the same*/
+    375                        else
+    376                        { 
+    377          		/*go thru the service q to get the appropriate handler 
+    378          		and invoke the same*/
+    379          		grp_id = p_data[ LAYER_ID_INDEX ];
+    380          
+    381          		p_curr_ser = ( hif_service_t* )queue_item_scan_next(p_service_q,NULL);
+    382          		while ( NULL != p_curr_ser )
+    383          		{
+    384          			if ( grp_id ==  p_curr_ser->group_id )
+    385          			{
+    386                                    
+    387                                    
+    388                                            /* Raka [13-Nov-2018] :: Changed to the below 
+    389          
+    390          				uint16_t len =  ((0x00FF & (uint16_t)p_data[LEN_FLD_INDEX]) << 8) |   (0x00FF & (uint16_t)p_data[LEN_FLD_INDEX+1]);
+    391          				*/
+    392                                          
+    393                                          uint16_t len =  *(uint16_t*)&p_data[LEN_FLD_INDEX];
+    394                                      
+    395                                          //call the hif2mac or hif2phy function based on grp_id
+    396                                          
+    397          				status = p_curr_ser->hif_recv_cb(&p_data[COMMAND_ID_INDEX],len);
+    398                                          
+    399                                        
+    400          				if ( HIF_SEND_CONF == status )
+    401          				{
+    402          					// the same buffer is used to fill conf primitive and 
+    403          					//put in the send_q using hif_send_msg_up()
+    404                                                  
+    405          					p_hif_data->app_call_back( RX_PACKET_EVENT, 0 );
+    406          					return true;
+    407          				}
+    408          				else
+    409          				{
+    410          					app_bm_free((((uint8_t*)p_hif_buff) + sizeof(queue_item_t *)));
+    411          					return true;
+    412          				}
+    413          			}
+    414                                  
+    415          			p_curr_ser = ( hif_service_t* )queue_item_scan_next(p_service_q,( queue_item_t* )p_curr_ser);
+    416                                  
+    417          		}//while
+    418                      }//if
+    419                  }
+    420          	return false;
+    421          }
+    422          
+    423          /******************************************************************************/
+    424          // called from thread when TX event is recieved. The packet is already having 
+    425          //all the contents as per the protocol so just send it
+    426          
+    427          bool hif_send_packet_to_host( hif_t* p_hif_data ) 
+    428          {
+    429          	hif_buff_t* p_hif_buff = NULL;
+    430          	
+    431          	uint16_t len = 0;
+    432          	
+    433          	p_hif_buff = ( hif_buff_t* )queue_item_get( &(p_hif_data->send_q) );
+    434          
+    435          
+    436          	if( NULL != p_hif_buff )
+    437          	{
+    438                      if((p_hif_buff->data[0] == 0xA5)&&(p_hif_buff->data[1] == 0xA5) && (p_hif_buff->data[2] == 0xA5))
+    439                      {
+    440                        
+    441                         /* Raka [13-Nov-2018] :: Changed to the below 
+    442                        if(p_hif_buff->data[LAYER_ID_INDEX] == GROUP_ID_BOARD_TO_BOARD_IF)
+    443                        {
+    444                          len =  ((0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX]) << 8) |   
+    445                                  (0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX + 1]);
+    446                          
+    447                        }
+    448                        else
+    449                        {
+    450                          len =  ((0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX+1]) << 8) |   
+    451                                  (0x00FF & (uint16_t)p_hif_buff->data[LEN_FLD_INDEX]);
+    452                        }
+    453                        */
+    454                        
+    455                        len = *(uint16_t*)&p_hif_buff->data[LEN_FLD_INDEX];
+    456                          
+    457          		if( (p_hif_data->driver.send( p_hif_buff->data, (len + HIF_HDR_LEN + PALDCKSUM_COMPORT_LEN )) ) < 0 )
+    458          		{
+    459          			/*could not submit the buffer UART TX, so requeue the message back 
+    460          			into the sendQ*/
+    461          			queue_front_put(&(p_hif_data->send_q),(queue_item_t*)p_hif_buff );
+    462          			
+    463          #if (((RADIO_VALIDATION == 1 ) || ( SNIFFER == 1) ) || (APP_HIF_PROCESS_FEATURE_ENABLED == 0))
+    464                  event_set(HIF_TX_EVENT);
+    465          #else 
+    466                  hif_process_tx (NULL);
+    467          #endif
+    468          			
+    469          			return false;
+    470          		}
+    471          
+    472          		p_hif_data->p_curr_tx_buff = p_hif_buff;
+    473          		return true;
+    474                    
+    475                      }
+    476                      else
+    477                         {
+    478                             // len = p_hif_buff->data[0];
+    479                              
+    480          //                    len =  ((0x00FF & (uint16_t)p_hif_buff->data[0]) << 8) |   
+    481          //                        (0x00FF & (uint16_t)p_hif_buff->data[1]);
+    482                              
+    483                           
+    484                           len = *(uint16_t*)&p_hif_buff->data[0];
+    485                           
+    486                           if( (p_hif_data->driver.send((&p_hif_buff->data[2]), len) ) < 0 )
+    487                           {
+    488                             /*could not submit the buffer UART TX, so requeue the message back 
+    489                             into the sendQ*/
+    490                             queue_front_put (&(p_hif_data->send_q),  (queue_item_t*)p_hif_buff );
+    491                             
+    492          #if (((RADIO_VALIDATION == 1 ) || ( SNIFFER == 1) ) || (APP_HIF_PROCESS_FEATURE_ENABLED == 0))
+    493                             event_set(HIF_TX_EVENT);
+    494          #else 
+    495                             hif_process_tx (NULL);
+    496          #endif
+    497                             return false;
+    498                           }
+    499          
+    500          		p_hif_data->p_curr_tx_buff = p_hif_buff;
+    501                          return true;
+    502                          
+    503                         }
+    504          
+    505                      
+    506          
+    507          	}
+    508          	return false;
+    509          }
+    510          
+    511          /******************************************************************************/
+    512          
+    513          uint8_t is_hif_receive_in_process (void)
+    514          {
+    515            if (get_node_type() == 0x00)
+    516              return hif_receive_in_process;
+    517            else
+    518              return 0;
+    519          }
+    520          
+    521          /******************************************************************************/
+    522          
+    523          #if(APP_USE_HIF_FOR_RAW_COMMUNICARION == 1)
+    524          
+    525          
+    526          static void hif_call_back (
+    527                                      void *AppHandle,
+    528                                      uint32_t  Event,
+    529                                      void *pArg
+    530                                    )
+    531          {
+    532            hif_t* p_hif_data = ( hif_t* )pArg;
+    533            //uint8_t crc = 0;
+    534           // static uint16_t payload_len = 0;
+    535           // uint8_t *buffer_ptr = NULL;
+    536            
+    537            //invoke the app call back which hif will have access as the app would 
+    538            //have registered during init
+    539            if( TX_COMPLETE_EVENT == Event )
+    540            {
+    541              app_bm_free(((uint8_t*)p_hif_data->p_curr_tx_buff)+sizeof(queue_item_t *));
+    542              p_hif_data->p_curr_tx_buff = NULL;
+    543              p_hif_data->app_call_back( TX_PACKET_SENT_EVENT, 0);
+    544              //set_receive_buffer( p_hif, false );
+    545            }
+    546            else if ( RX_COMPLETE_EVENT == Event )
+    547            {
+    548              uint8_t* p_data = p_hif_data->p_curr_rx_buff->data;
+    549              uint16_t len = 0x00;
+    550              
+    551              tmr_stop( &( uart_rx_data_poll_tmr ) );	
+    552              tmr_start_relative( &( uart_rx_data_poll_tmr ) );		
+    553              
+    554              switch ( p_hif_data->rx_state )
+    555              {
+    556              case RX_BUFFER_SET:
+    557                  hif_receive_in_process = 1;        
+    558                  len = 0x01;        
+    559                  p_hif_data->driver.recv(p_data ,len);
+    560                  p_hif_data->app_call_back( RX_COMPLETE_EVENT, *p_data );
+    561                  p_data += 0x01;
+    562                  p_hif_data->rx_state = READING_PLD_WITHOUT_HIF_FORMAT;
+    563                break;
+    564              case READING_PLD_WITHOUT_HIF_FORMAT:
+    565                  len = 0x01;
+    566                  p_hif_data->driver.recv(p_data ,len);    
+    567                  p_hif_data->app_call_back( RX_COMPLETE_EVENT, *p_data);
+    568                  p_data += 0x01;
+    569                break;    
+    570                      
+    571              default:
+    572                break;
+    573              }
+    574            }
+    575          }
+    576          
+    577          
+    578          
+    579          #else
+    580          static void hif_call_back (
+    581                                      void *AppHandle,
+    582                                      uint32_t  Event,
+    583                                      void *pArg
+    584                                    )
+    585          {
+    586            hif_t* p_hif_data = ( hif_t* )pArg;
+    587            uint8_t crc = 0;
+    588            static uint16_t payload_len = 0;
+    589            uint8_t *buffer_ptr = NULL;
+    590            
+    591            //invoke the app call back which hif will have access as the app would 
+    592            //have registered during init
+    593            if( TX_COMPLETE_EVENT == Event )
+    594            {
+    595              app_bm_free(((uint8_t*)p_hif_data->p_curr_tx_buff)+sizeof(queue_item_t *));
+    596              p_hif_data->p_curr_tx_buff = NULL;
+    597              p_hif_data->app_call_back( TX_PACKET_SENT_EVENT, 0);
+    598              
+    599            }
+    600            else if ( RX_COMPLETE_EVENT == Event )
+    601            {
+    602              uint8_t* p_data = p_hif_data->p_curr_rx_buff->data;
+    603              uint16_t len = 0x00;
+    604              
+    605              switch ( p_hif_data->rx_state )
+    606              {
+    607              case RX_BUFFER_SET:
+    608                if( p_data[ 0 ] == SOF )
+    609                {
+    610                  hif_receive_in_process = 1;
+    611                  p_data += 0x01;
+    612                  len = 0x02;
+    613                  p_hif_data->driver.recv(p_data ,len);
+    614                  p_hif_data->rx_state = RX_SOF_CHECKING;
+    615          #if APP_LBR_ROUTER        
+    616                  tmr_start_relative( &(uart_debug));//@Umesh 05_12_2018
+    617          #endif        
+    618                  //start_time = timer_current_time_get();
+    619                }
+    620                else
+    621                {
+    622                  uart_drop_else_bytes++;/*Umesh 12/12/2108*/
+    623          //        hif_receive_in_process = 0;
+    624                  p_hif_data->rx_state = RX_INIT;				
+    625                  set_receive_buffer( p_hif, false );
+    626                }
+    627                break;
+    628              case RX_SOF_CHECKING:
+    629                if( (p_data[ 0 ] == SOF )&&
+    630                   (p_data[ 1] == SOF ))
+    631                {
+    632          //        hif_receive_in_process = 1;
+    633                  p_data += 0x02;
+    634                  len = 0x06;
+    635                  // +1 Because we have read one byte out of 3 byte of the SOF series of 0xA5,0xA5,0xA5
+    636                  p_hif_data->driver.recv((p_data + 1) ,len);
+    637                  p_hif_data->rx_state = READING_HDR;
+    638                }
+    639                else
+    640                {
+    641          //        hif_receive_in_process = 0;
+    642                  p_hif_data->rx_state = RX_INIT;				
+    643                  set_receive_buffer( p_hif, false );
+    644          #if APP_LBR_ROUTER        
+    645                  tmr_stop(&uart_debug);//@Umesh 05_12_2018
+    646          #endif        
+    647                }
+    648                break;
+    649                
+    650              case READING_HDR:
+    651                crc = Generate_Checksum( p_hif_data->p_curr_rx_buff );      
+    652                if (crc == p_data[CRC_FLD_INDEX])
+    653                {
+    654                  
+    655                   /* Raka [13-Nov-2018] :: Changed to the below 
+    656                  len =  ((0x00FF & (uint16_t)p_data[LEN_FLD_INDEX]) << 8) | 
+    657                    (0x00FF & (uint16_t)p_data[LEN_FLD_INDEX+1]);
+    658                  payload_len = len ; 
+    659                  */
+    660                  
+    661                  payload_len = len  = *(uint16_t*)&p_data[LEN_FLD_INDEX];
+    662                    
+    663                  /*check if the length filed has a value greater 
+    664                  than the remaining buffer 
+    665                  size which is MAX_BUFF_SIZE - 4 */
+    666                  
+    667                  /*reading the remaing packet which is payload part*/
+    668                  if ( len < ( max_buffer_size - 4 ) )
+    669                  {
+    670          //          hif_receive_in_process = 1;
+    671                    p_hif_data->driver.recv(( p_data + HIF_HDR_LEN ) ,( len +PALDCKSUM_COMPORT_LEN));//Payload Checksum + USB Port [ COM Port]  =2 
+    672                    p_hif_data->rx_state = READING_PLD;                                          
+    673                  }
+    674                  else
+    675                  {
+    676          //          hif_receive_in_process = 0;
+    677                    p_hif_data->rx_state = RX_INIT;
+    678                    set_receive_buffer( p_hif, false );
+    679          #if APP_LBR_ROUTER          
+    680                    tmr_stop(&uart_debug);//@Umesh 05_12_2018
+    681          #endif          
+    682                  }
+    683                }
+    684                else
+    685                {
+    686          //        hif_receive_in_process = 0;
+    687                  p_hif_data->rx_state = RX_INIT;
+    688                  set_receive_buffer( p_hif, false );
+    689          #if APP_LBR_ROUTER        
+    690                  tmr_stop(&uart_debug);//@Umesh 05_12_2018
+    691          #endif        
+    692                }
+    693                break;
+    694                
+    695              case READING_PLD:
+    696                {
+    697                  hif_buff_t* ptr = NULL;
+    698                  uint8_t* data_ptr = NULL;
+    699                  
+    700                  buffer_ptr = (uint8_t*)app_bm_alloc (payload_len + HIF_HDR_LEN + PALDCKSUM_COMPORT_LEN + 5 ); //5 bytes Extra to safeguard
+    701                  crc = 0;
+    702                  if(buffer_ptr!=NULL)
+    703                  {
+    704                    ptr = (hif_buff_t*)(buffer_ptr - sizeof(queue_item_t *));
+    705                    data_ptr = (p_hif_data->p_curr_rx_buff->data + HIF_HDR_LEN); // 9 should replace as MACRO
+    706                    
+    707                    crc = Generate_Checksum_payload(data_ptr,payload_len );
+    708                    if (crc == p_data[ payload_len + HIF_HDR_LEN])
+    709                    {
+    710                      memcpy(ptr->data,p_hif_data->p_curr_rx_buff->data, (payload_len+HIF_HDR_LEN+PALDCKSUM_COMPORT_LEN));// check  ::(payload_len+9+2)
+    711                      queue_item_put(&( p_hif_data->recv_q ), (queue_item_t* )( ptr ) );
+    712                      p_hif_data->app_call_back( RX_PACKET_EVENT, 0 );
+    713                      hif_receive_in_process = 0;
+    714                    }
+    715                    else
+    716                    {
+    717                      hif_receive_in_process = 0;
+    718                      p_hif_data->rx_state = RX_INIT;
+    719                      set_receive_buffer( p_hif, false );	
+    720                    }
+    721                  }
+    722                  hif_receive_in_process = 0;
+    723                  p_hif_data->rx_state = RX_INIT;				
+    724                  set_receive_buffer( p_hif, false ); 
+    725                  //stop_time = timer_current_time_get();
+    726          #if APP_LBR_ROUTER        
+    727                  tmr_stop(&uart_debug);//@Umesh 05_12_2018
+    728          #endif        
+    729                  
+    730                }
+    731                break;
+    732                
+    733              default:
+    734                break;
+    735              }
+    736            }
+    737          }
+    738          
+    739          
+    740          #endif
+    741          
+    742          /******************************************************************************/
+    743          /*@umesh for hif cleanup after timeup*/
+    744          void clear_buffer_and_state(void *uart_data)
+    745          {
+    746              pkt_drop_count_sw_tmr++;
+    747          //    hif_t* p_hif_data = ( hif_t* )uart_data;
+    748          //    p_hif_data->rx_state = RX_INIT;				
+    749              set_receive_buffer( p_hif, false ); 
+    750              //buffer_stop_time = timer_current_time_get();
+    751              hif_receive_in_process = 0;
+    752          }
+    753          
+    754          /******************************************************************************/
+    755          
+    756          static uint8_t Generate_Checksum( hif_buff_t* pBuff )
+    757          {
+    758          	return ~((  pBuff->data[PROTOCOL_ID_INDEX]  + 
+    759          		    pBuff->data[LAYER_ID_INDEX]     +
+    760                              pBuff->data[COMMAND_ID_INDEX]   +
+    761                              pBuff->data[LEN_FLD_INDEX]      + 
+    762                              pBuff->data[LEN_FLD_INDEX+1] ));
+    763          }
+    764          
+    765          /******************************************************************************/
+    766          
+    767          static uint8_t Generate_Checksum_payload( uint8_t* pBuff ,uint16_t payld_len )
+    768          {
+    769            uint8_t calc_chksum  = 0 ;
+    770            uint16_t iCnt  =0;
+    771            
+    772            
+    773            for (iCnt = 0; iCnt<payld_len;iCnt++)
+    774            {
+    775                calc_chksum += *pBuff++;
+    776            }
+    777              
+    778          	return ~(calc_chksum);
+    779          }
+    780          
+    781          /******************************************************************************/
+    782          
+    783          static bool set_receive_buffer( hif_t* p_hif_data, bool new_buff )
+    784          {
+    785          	//allocate a buffer and set it for recieve using driver function.
+    786          	uint8_t* p_data;
+    787          #if APP_LBR_ROUTER        
+    788          	uart_debug_rx_count = 0; /*Umesh 12/12/2018*/
+    789          #endif	
+    790          	if ( new_buff )
+    791          	{
+    792          		p_data = (uint8_t*)app_bm_alloc( max_buffer_size );
+    793          		
+    794          		if ( NULL != p_data )
+    795          		{
+    796          			p_hif_data->p_curr_rx_buff = (hif_buff_t*)(p_data - sizeof(queue_item_t *));
+    797          			p_hif_data->rx_state = RX_BUFFER_SET;
+    798          			uart_hal_read(p_hif_data->p_curr_rx_buff->data,0x01);
+    799          			return true;
+    800          		}
+    801          		else
+    802          		{
+    803          #ifdef MAC_CFG_SECURITY_ENABLED				
+    804          			cleanup_security_queues(1); // Raka :: why the hell we are clearing the security pib's
+    805          #endif			
+    806          			p_data = (uint8_t*)app_bm_alloc( max_buffer_size );
+    807          			if ( NULL != p_data )
+    808          			{
+    809          				p_hif_data->p_curr_rx_buff = (hif_buff_t*)(p_data - sizeof(queue_item_t *));
+    810          				p_hif_data->rx_state = RX_BUFFER_SET;
+    811          				uart_hal_read(p_hif_data->p_curr_rx_buff->data,0x01);
+    812          				return true;
+    813          			}
+    814          		}
+    815          		
+    816          	}
+    817          	else
+    818          	{
+    819          		p_hif_data->rx_state = RX_BUFFER_SET;
+    820                          memset((uint8_t *)p_hif_data->p_curr_rx_buff->data, 0xFF, max_buffer_size);
+    821          		uart_hal_read(p_hif_data->p_curr_rx_buff->data,0x01);
+    822          	}
+    823          	
+    824          	return false;
+    825          }
+    826          
+    827          /******************************************************************************/
+    828          /******************************************************************************/
+    829          
+    830          void Indicate_Debug_Event( uint8_t event )
+    831          {
+    832          	//char event_msg[20] = {0xED,};
+    833          	//event_msg[1] = event;
+    834          	//const char msg[] = {"0x%x,0x%x \r\n\n "};
+    835          	//sprintf((char*)&(event_msg[1]),msg,0xED,event);
+    836          	//uart_hal_write((u8*)event_msg,sizeof(msg));
+    837          	//hif_send_msg_up((uint8_t*)event_msg, 1, 2);
+    838          	
+    839          }
+    840          #endif //#if 0 
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

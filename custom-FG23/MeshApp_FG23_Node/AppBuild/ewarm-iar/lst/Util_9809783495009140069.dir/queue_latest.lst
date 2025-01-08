@@ -1,0 +1,1164 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         26/Nov/2024  12:15:56
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\ProAppSrc\Util\queue_manager\queue_latest.c
+#    Command line                 =
+#        -f
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir\queue_latest.o.rsp
+#        (C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\ProAppSrc\Util\queue_manager\queue_latest.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\Util_9809783495009140069.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\.\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\rpl\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\cpu\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\FLASH\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir\queue_latest.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\Util_9809783495009140069.dir\queue_latest.lst
+#    Object file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\Util_9809783495009140069.dir\queue_latest.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\ProAppSrc\Util\queue_manager\queue_latest.c
+      1          /** \file queue_latest.c
+      2           *******************************************************************************
+      3           ** \brief This file provides the various queue functionalities.
+      4           **
+      5           ** This file provides the functions like initialize, put an item, putting an 
+      6           ** item at the front, getting an item from the queue, peeking into the queue, 
+      7           ** get the count of items, scanning through the next item in the queue and 
+      8           ** removing an item from the queue.
+      9           **
+     10           ** \cond STD_FILE_HEADER
+     11           **
+     12           ** COPYRIGHT(c) 2023-24 Procubed Innovations Pvt Ltd.
+     13           ** All rights reserved.
+     14           **
+     15           ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     16           ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     17           ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     18           ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     19           ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     20           ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     21           ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     22           **
+     23           *******************************************************************************
+     24           **  \endcond
+     25           */
+     26          
+     27          /*
+     28          ********************************************************************************
+     29          * File inclusion
+     30          ********************************************************************************
+     31          */
+     32          
+     33          #include "StackPHYConf.h"
+     34          #include "common.h"
+     35          #include "queue_latest.h"
+     36          #include "buff_mgmt.h"
+     37          
+     38          /*
+     39          ** =============================================================================
+     40          ** Private Macro definitions
+     41          ** =============================================================================
+     42          */
+     43          	
+     44          /* None */
+     45          
+     46          /*
+     47          ** =============================================================================
+     48          ** Private Structures, Unions & enums Type Definitions
+     49          ** =============================================================================
+     50          **/
+     51          
+     52          /* None */
+     53          
+     54          /*
+     55          ** =============================================================================
+     56          ** Private Variable Definitions
+     57          ** =============================================================================
+     58          */
+     59          
+     60          /* None */
+     61          
+     62          /*
+     63          ** =============================================================================
+     64          ** Private Function Prototypes
+     65          ** =============================================================================
+     66          */
+     67          
+     68          /* None */
+     69          
+     70          /*
+     71          ** =============================================================================
+     72          ** Private Function Definitions
+     73          ** =============================================================================
+     74          */
+     75          
+     76          /* None */
+     77          
+     78          /*
+     79          ** =============================================================================
+     80          ** External Variable Declarations
+     81          ** =============================================================================
+     82          */
+     83          
+     84          /*Umesh :01-02-2018*/
+     85          extern uint8_t heap[];
+     86          /*this is not used anywher in this file*/
+     87          
+     88          /*
+     89          ** =============================================================================
+     90          ** External Function Prototypes
+     91          ** =============================================================================
+     92          */
+     93          
+     94          extern void app_bm_free(
+     95              uint8_t *pMem      
+     96              );
+     97          
+     98          /*
+     99          ** =============================================================================
+    100          ** Public Variables Definitions
+    101          ** =============================================================================
+    102          **/
+    103          
+    104          /* None */
+    105          
+    106          /*
+    107          ** =============================================================================
+    108          ** Public Function Prototypes
+    109          ** =============================================================================
+    110          */
+    111          
+    112          /* None */
+    113          
+    114          /*
+    115          ** =============================================================================
+    116          ** Public Function Definitions
+    117          ** =============================================================================
+    118          */
+    119          
+
+   \                                 In section .text, align 2, keep-with-next
+    120          void queue_initialise(
+    121              queue_t * q 
+    122              )
+    123          {
+    124              q->count = 0;
+   \                     queue_initialise: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x8101             STRH     R1,[R0, #+8]
+    125              q->start = q->end = NULL;
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0x6041             STR      R1,[R0, #+4]
+   \        0x8   0x6841             LDR      R1,[R0, #+4]
+   \        0xA   0x6001             STR      R1,[R0, #+0]
+    126          }
+   \        0xC   0x4770             BX       LR
+    127          
+    128          /*----------------------------------------------------------------------------*/
+    129          
+
+   \                                 In section .text, align 2, keep-with-next
+    130          void queue_item_put(
+    131              queue_t * q,        
+    132              queue_item_t *item  
+    133              )
+    134          {
+    135          //    irq_state_t flags = __get_interrupt_state();//Umesh
+    136          //    flags = irq_disable();
+    137              item->link = NULL;
+   \                     queue_item_put: (+1)
+   \        0x0   0x2200             MOVS     R2,#+0
+   \        0x2   0x600A             STR      R2,[R1, #+0]
+    138          
+    139              /* if this is the first item set as queue start */
+    140              if ( q->start == NULL )
+   \        0x4   0x6802             LDR      R2,[R0, #+0]
+   \        0x6   0x2A00             CMP      R2,#+0
+   \        0x8   0xD101             BNE.N    ??queue_item_put_0
+    141              {
+    142                  q->start = item;
+   \        0xA   0x6001             STR      R1,[R0, #+0]
+   \        0xC   0xE001             B.N      ??queue_item_put_1
+    143              }
+    144              else
+    145              {
+    146                  /* not the first item */
+    147                  q->end->link = item;
+   \                     ??queue_item_put_0: (+1)
+   \        0xE   0x6842             LDR      R2,[R0, #+4]
+   \       0x10   0x6011             STR      R1,[R2, #+0]
+    148              }
+    149              q->end = item;
+   \                     ??queue_item_put_1: (+1)
+   \       0x12   0x6041             STR      R1,[R0, #+4]
+    150              q->count++;
+   \       0x14   0x8902             LDRH     R2,[R0, #+8]
+   \       0x16   0x1C52             ADDS     R2,R2,#+1
+   \       0x18   0x8102             STRH     R2,[R0, #+8]
+    151          //    irq_enable( flags );
+    152          }
+   \       0x1A   0x4770             BX       LR
+    153          
+    154          /*----------------------------------------------------------------------------*/
+    155          
+
+   \                                 In section .text, align 2, keep-with-next
+    156          void queue_front_put(
+    157              queue_t * q,      
+    158              queue_item_t *item 
+    159              )
+    160          
+    161          {
+   \                     queue_front_put: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    162          //    irq_state_t flags = irq_disable();
+    163          
+    164              if(item == NULL)
+   \        0x6   0x2C00             CMP      R4,#+0
+   \        0x8   0xD00D             BEQ.N    ??queue_front_put_0
+    165              {
+    166          //	irq_enable( flags );    
+    167              	return;
+    168              }
+    169          
+    170              /* if there is nothing on the queue just set the queue start */
+    171              /*if ( q->start == NULL )
+    172              {
+    173                  q->start = item;
+    174              }*/
+    175               if ( q->start != NULL )
+   \                     ??queue_front_put_1: (+1)
+   \        0xA   0x6828             LDR      R0,[R5, #+0]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD006             BEQ.N    ??queue_front_put_2
+    176              {
+    177                  /* not the first item, so make it the first item, as follows */
+    178          
+    179                  /* first make the new item point at the current first item */
+    180                  item->link = q->start;
+   \       0x10   0x6828             LDR      R0,[R5, #+0]
+   \       0x12   0x6020             STR      R0,[R4, #+0]
+    181          	q->start = item;
+   \       0x14   0x602C             STR      R4,[R5, #+0]
+    182          	q->count++;
+   \       0x16   0x8928             LDRH     R0,[R5, #+8]
+   \       0x18   0x1C40             ADDS     R0,R0,#+1
+   \       0x1A   0x8128             STRH     R0,[R5, #+8]
+   \       0x1C   0xE003             B.N      ??queue_front_put_3
+    183          
+    184              }
+    185              else
+    186              {
+    187          	 queue_item_put(q,item);   
+   \                     ??queue_front_put_2: (+1)
+   \       0x1E   0x0021             MOVS     R1,R4
+   \       0x20   0x0028             MOVS     R0,R5
+   \       0x22   0x.... 0x....      BL       queue_item_put
+    188              }
+    189          	/* now make the queue point at the new item */
+    190          	//q->start = item;
+    191              //q->count++;
+    192          //    irq_enable( flags );
+    193          
+    194          }
+   \                     ??queue_front_put_3: (+1)
+   \                     ??queue_front_put_0: (+1)
+   \       0x26   0xBD31             POP      {R0,R4,R5,PC}
+    195          
+    196          /*----------------------------------------------------------------------------*/
+    197          
+
+   \                                 In section .text, align 2, keep-with-next
+    198          queue_item_t *queue_item_get(
+    199               queue_t * q 
+    200               )
+    201          {
+   \                     queue_item_get: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    202              queue_item_t *item = NULL;
+   \        0x2   0x2200             MOVS     R2,#+0
+    203          //    irq_state_t flags = irq_disable();
+    204          
+    205              /* get first item on queue */
+    206              item = q->start;
+   \        0x4   0x6808             LDR      R0,[R1, #+0]
+    207          
+    208              if ( item != NULL )
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD006             BEQ.N    ??queue_item_get_0
+    209              {
+    210                  /* one less item on queue */
+    211                  q->count--;
+   \        0xA   0x890A             LDRH     R2,[R1, #+8]
+   \        0xC   0x1E52             SUBS     R2,R2,#+1
+   \        0xE   0x810A             STRH     R2,[R1, #+8]
+    212                  /* queue points at next item */
+    213                  q->start = item->link;
+   \       0x10   0x6802             LDR      R2,[R0, #+0]
+   \       0x12   0x600A             STR      R2,[R1, #+0]
+    214                  /* item is no longer linked */
+    215                  item->link = NULL;
+   \       0x14   0x2200             MOVS     R2,#+0
+   \       0x16   0x6002             STR      R2,[R0, #+0]
+    216              }
+    217          //    irq_enable( flags );
+    218          
+    219              return item;
+   \                     ??queue_item_get_0: (+1)
+   \       0x18   0x4770             BX       LR
+    220          }
+    221          
+    222          /*----------------------------------------------------------------------------*/
+    223          
+
+   \                                 In section .text, align 2, keep-with-next
+    224          queue_item_t *queue_peek(
+    225               queue_t * q
+    226               )
+    227          {
+   \                     queue_peek: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+    228              queue_item_t *item = NULL;
+   \        0x2   0x2100             MOVS     R1,#+0
+    229          //    irq_state_t flags = irq_disable();
+    230          
+    231              /* get first item on queue */
+    232              item = q->start;
+   \        0x4   0x6810             LDR      R0,[R2, #+0]
+    233          
+    234          //    irq_enable( flags );
+    235              return item;
+   \        0x6   0x4770             BX       LR
+    236          	//return q->start;
+    237          }
+    238          
+    239          /*----------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+    240          uint16_t queue_count_get(
+    241                queue_t * q 
+    242                )
+    243          {
+   \                     queue_count_get: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+    244              uint16_t count = 0;
+   \        0x2   0x2100             MOVS     R1,#+0
+    245          //    irq_state_t flags  = irq_disable();
+    246               
+    247              count = q->count;
+   \        0x4   0x8910             LDRH     R0,[R2, #+8]
+    248              
+    249          //    irq_enable(flags);
+    250              
+    251              return count;
+   \        0x6   0xB280             UXTH     R0,R0
+   \        0x8   0x4770             BX       LR
+    252          }
+    253          
+    254          /*----------------------------------------------------------------------------*/
+    255          
+
+   \                                 In section .text, align 2, keep-with-next
+    256          queue_item_t *queue_item_scan_next(
+    257             queue_t * q, /*queue to process */
+    258             queue_item_t *item /* place to start */
+    259            )
+    260          {
+   \                     queue_item_scan_next: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+    261              queue_item_t *next_item = NULL;
+   \        0x2   0x2300             MOVS     R3,#+0
+    262          //    irq_state_t flags = irq_disable();
+    263          
+    264              if ( item != NULL )
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xD001             BEQ.N    ??queue_item_scan_next_0
+    265              {
+    266                  next_item = item->link;
+   \        0x8   0x6808             LDR      R0,[R1, #+0]
+   \        0xA   0xE004             B.N      ??queue_item_scan_next_1
+    267          //        irq_enable(flags);
+    268          		//return item->link;
+    269              }
+    270              else if ( q != NULL )
+   \                     ??queue_item_scan_next_0: (+1)
+   \        0xC   0x2A00             CMP      R2,#+0
+   \        0xE   0xD001             BEQ.N    ??queue_item_scan_next_2
+    271              {
+    272                  next_item = q->start;
+   \       0x10   0x6810             LDR      R0,[R2, #+0]
+   \       0x12   0xE000             B.N      ??queue_item_scan_next_1
+    273          //        irq_enable(flags);
+    274          		//return q->start;
+    275              }
+    276              else
+    277              {
+    278                  next_item = NULL;
+   \                     ??queue_item_scan_next_2: (+1)
+   \       0x14   0x2000             MOVS     R0,#+0
+    279          //        irq_enable(flags);
+    280          		//return NULL;
+    281              }
+    282          //    irq_enable(flags);
+    283              return next_item;
+   \                     ??queue_item_scan_next_1: (+1)
+   \       0x16   0x4770             BX       LR
+    284          }
+    285          
+    286          /*----------------------------------------------------------------------------*/
+    287          
+
+   \                                 In section .text, align 2, keep-with-next
+    288          void queue_item_remove(
+    289          						queue_t *q, 
+    290          						queue_item_t *item 
+    291          					  )    
+    292          {
+   \                     queue_item_remove: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    293              queue_item_t *current_item = NULL;
+   \        0x6   0x2400             MOVS     R4,#+0
+    294          //    irq_state_t flags = irq_disable();
+    295          
+    296              if ( item != NULL )
+   \        0x8   0x2D00             CMP      R5,#+0
+   \        0xA   0xD01D             BEQ.N    ??queue_item_remove_0
+    297              {
+    298          
+    299                  /* are we attempting to remove the item at the start of the queue? */
+    300                  if (item == q->start)
+   \        0xC   0x6830             LDR      R0,[R6, #+0]
+   \        0xE   0x4285             CMP      R5,R0
+   \       0x10   0xD103             BNE.N    ??queue_item_remove_1
+    301                  {
+    302                      ( void )queue_item_get(q);
+   \       0x12   0x0030             MOVS     R0,R6
+   \       0x14   0x.... 0x....      BL       queue_item_get
+   \       0x18   0xE016             B.N      ??queue_item_remove_0
+    303                      //result = 1;
+    304                  }
+    305                  else
+    306                  {
+    307                      /* init the position in the queue */
+    308                      current_item = NULL;
+   \                     ??queue_item_remove_1: (+1)
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \       0x1C   0x0004             MOVS     R4,R0
+    309          
+    310                      /* now loop until either the end of queue, OR we find the item */
+    311                      for (;;)
+    312                      {
+    313                          current_item = queue_item_scan_next(q, current_item);
+   \                     ??queue_item_remove_2: (+1)
+   \       0x1E   0x0021             MOVS     R1,R4
+   \       0x20   0x0030             MOVS     R0,R6
+   \       0x22   0x.... 0x....      BL       queue_item_scan_next
+   \       0x26   0x0004             MOVS     R4,R0
+    314                          if (current_item == NULL)
+   \       0x28   0x2C00             CMP      R4,#+0
+   \       0x2A   0xD00D             BEQ.N    ??queue_item_remove_0
+    315                          {
+    316                              /* end of the queue, so exit result still 0 */
+    317                              break;
+    318                          }
+    319                          if (current_item->link == item)
+   \                     ??queue_item_remove_3: (+1)
+   \       0x2C   0x6820             LDR      R0,[R4, #+0]
+   \       0x2E   0x42A8             CMP      R0,R5
+   \       0x30   0xD1F5             BNE.N    ??queue_item_remove_2
+    320                          {
+    321                              /* we found it, so check if it was the end of the queue */
+    322                              if (q->end == current_item->link)
+   \       0x32   0x6871             LDR      R1,[R6, #+4]
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x4281             CMP      R1,R0
+   \       0x38   0xD100             BNE.N    ??queue_item_remove_4
+    323                              {
+    324                                  /* yes, so adjust q->end to point at the current item */
+    325                                  q->end = current_item;
+   \       0x3A   0x6074             STR      R4,[R6, #+4]
+    326                              }
+    327                              /* unlink it! */
+    328                              current_item->link = current_item->link->link;
+   \                     ??queue_item_remove_4: (+1)
+   \       0x3C   0x6820             LDR      R0,[R4, #+0]
+   \       0x3E   0x6800             LDR      R0,[R0, #+0]
+   \       0x40   0x6020             STR      R0,[R4, #+0]
+    329                              q->count--;
+   \       0x42   0x8930             LDRH     R0,[R6, #+8]
+   \       0x44   0x1E40             SUBS     R0,R0,#+1
+   \       0x46   0x8130             STRH     R0,[R6, #+8]
+    330                              //result = 1;
+    331                              break;
+    332                          }
+    333                      }
+    334                  }
+    335                  
+    336              }
+    337          //        irq_enable( flags );
+    338              return;
+   \                     ??queue_item_remove_0: (+1)
+   \       0x48   0xBD70             POP      {R4-R6,PC}
+    339          }
+    340          
+    341          /*----------------------------------------------------------------------------*/ 
+
+   \                                 In section .text, align 2, keep-with-next
+    342          queue_item_t* queue_item_get_last(
+    343                                                      queue_t * q 
+    344          								 )
+    345          {
+   \                     queue_item_get_last: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+   \        0x2   0x0001             MOVS     R1,R0
+    346              queue_item_t *end = NULL, *item = NULL;
+   \        0x4   0x2400             MOVS     R4,#+0
+   \        0x6   0x2300             MOVS     R3,#+0
+    347          //    irq_state_t flags = irq_disable();
+    348              //item = NULL;//Umesh commented
+    349          
+    350              /* get last item on list */
+    351              end = q->end;
+   \        0x8   0x684A             LDR      R2,[R1, #+4]
+    352              /* get first item on list */
+    353              item = q->start;
+   \        0xA   0x6808             LDR      R0,[R1, #+0]
+    354          
+    355              if (item != NULL)
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD013             BEQ.N    ??queue_item_get_last_0
+    356              {
+    357                  /* Is there only one entry on the list? */
+    358                  if (item == end)
+   \       0x10   0x4290             CMP      R0,R2
+   \       0x12   0xD104             BNE.N    ??queue_item_get_last_1
+    359                  {
+    360                      /* queue will be empty, reset start and end pointers */
+    361                      q->start = NULL;
+   \       0x14   0x2300             MOVS     R3,#+0
+   \       0x16   0x600B             STR      R3,[R1, #+0]
+    362                      q->end = NULL;
+   \       0x18   0x2300             MOVS     R3,#+0
+   \       0x1A   0x604B             STR      R3,[R1, #+4]
+   \       0x1C   0xE009             B.N      ??queue_item_get_last_2
+    363                  }
+    364                  else 
+    365          		{
+    366                      /* More than one element in the queue */
+    367                      while (item->link != end)
+   \                     ??queue_item_get_last_1: (+1)
+   \       0x1E   0x6803             LDR      R3,[R0, #+0]
+   \       0x20   0x4293             CMP      R3,R2
+   \       0x22   0xD001             BEQ.N    ??queue_item_get_last_3
+    368                      {
+    369                          item = item->link;
+   \       0x24   0x6800             LDR      R0,[R0, #+0]
+   \       0x26   0xE7FA             B.N      ??queue_item_get_last_1
+    370                      }
+    371                      q->end = item;
+   \                     ??queue_item_get_last_3: (+1)
+   \       0x28   0x6048             STR      R0,[R1, #+4]
+    372                      item = item->link;
+   \       0x2A   0x6800             LDR      R0,[R0, #+0]
+    373                      q->end->link = NULL;
+   \       0x2C   0x2400             MOVS     R4,#+0
+   \       0x2E   0x684B             LDR      R3,[R1, #+4]
+   \       0x30   0x601C             STR      R4,[R3, #+0]
+    374                  }
+    375                  /* Decrement the number of items in the queue */
+    376                  q->count--;
+   \                     ??queue_item_get_last_2: (+1)
+   \       0x32   0x890B             LDRH     R3,[R1, #+8]
+   \       0x34   0x1E5B             SUBS     R3,R3,#+1
+   \       0x36   0x810B             STRH     R3,[R1, #+8]
+    377              }    
+    378          //    irq_enable( flags );
+    379              return item;
+   \                     ??queue_item_get_last_0: (+1)
+   \       0x38   0xBC10             POP      {R4}
+   \       0x3A   0x4770             BX       LR
+    380          }
+    381          
+    382          /*----------------------------------------------------------------------------*/
+    383          // Sagar: Not Used
+    384          #if (0)
+    385          void queue_item_insert(queue_t * q, queue_item_t* item, uint8_t iterator)
+    386          {
+    387              uint8_t i = 0;
+    388          //    irq_state_t flags = 0;
+    389              queue_item_t *current = NULL;
+    390              
+    391          //    flags = irq_disable();
+    392          
+    393          	if (item != NULL)
+    394          	{
+    395          		current = q->start;
+    396          		/* Inserts item at front */ 
+    397          		if (iterator == 0)
+    398          		{
+    399          			queue_front_put( q, item );
+    400          		}
+    401          		/* Inserts item at end */
+    402          		else if (iterator == (q->count))
+    403                  {
+    404                      queue_item_put(q, item);
+    405                  }
+    406          		else
+    407          		{
+    408          			if ( iterator < q->count )
+    409          			{
+    410          				/* Find the location in the table */
+    411          				while( i++ != iterator-1 )  // We want to find the entry before the one we want to insert
+    412          				{
+    413          					current = current->link;
+    414          				}
+    415          				/* Insert the item in the given position */
+    416          				item->link = current->link;
+    417          				current->link = item;
+    418          				/* Update the queue counter */
+    419          				q->count++;	
+    420          			}
+    421          		}	
+    422          	}
+    423          //    irq_enable( flags );
+    424          }
+    425          #endif
+    426          
+    427          /*----------------------------------------------------------------------------*/
+    428          
+
+   \                                 In section .text, align 2, keep-with-next
+    429          queue_item_t* queue_item_read_from(queue_t *q, uint8_t iterator)
+    430          {
+   \                     queue_item_read_from: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+   \        0x2   0x0003             MOVS     R3,R0
+    431              queue_item_t *current = NULL;
+   \        0x4   0x2000             MOVS     R0,#+0
+    432          //    irq_state_t flags = irq_disable();
+    433              //current = NULL;//Umesh commented
+    434          
+    435              if ((q->start != NULL) && (iterator < q->count ))
+   \        0x6   0x681A             LDR      R2,[R3, #+0]
+   \        0x8   0x2A00             CMP      R2,#+0
+   \        0xA   0xD00E             BEQ.N    ??queue_item_read_from_0
+   \        0xC   0x000C             MOVS     R4,R1
+   \        0xE   0xB2E4             UXTB     R4,R4
+   \       0x10   0x891A             LDRH     R2,[R3, #+8]
+   \       0x12   0xB2A4             UXTH     R4,R4
+   \       0x14   0x4294             CMP      R4,R2
+   \       0x16   0xD208             BCS.N    ??queue_item_read_from_0
+    436              {	
+    437                  current = q->start;
+   \       0x18   0x681A             LDR      R2,[R3, #+0]
+   \       0x1A   0x0010             MOVS     R0,R2
+    438          	
+    439                  /* Find the location in the table */
+    440                  while( iterator-- != 0 )
+   \                     ??queue_item_read_from_1: (+1)
+   \       0x1C   0x000A             MOVS     R2,R1
+   \       0x1E   0x1E51             SUBS     R1,R2,#+1
+   \       0x20   0xB2D2             UXTB     R2,R2
+   \       0x22   0x2A00             CMP      R2,#+0
+   \       0x24   0xD001             BEQ.N    ??queue_item_read_from_0
+    441                  {
+    442                      current = current->link;
+   \       0x26   0x6800             LDR      R0,[R0, #+0]
+   \       0x28   0xE7F8             B.N      ??queue_item_read_from_1
+    443                  }	
+    444              }
+    445          //    irq_enable( flags );
+    446              return current;
+   \                     ??queue_item_read_from_0: (+1)
+   \       0x2A   0xBC10             POP      {R4}
+   \       0x2C   0x4770             BX       LR
+    447          }
+    448          
+    449          
+    450          /*----------------------------------------------------------------------------*/
+    451          
+
+   \                                 In section .text, align 2, keep-with-next
+    452          void queue_item_delete(queue_t *q, uint8_t iterator)
+    453          {
+   \                     queue_item_delete: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000E             MOVS     R6,R1
+    454              queue_item_t* item = NULL;
+   \        0x6   0x2400             MOVS     R4,#+0
+    455              queue_item_t *current = NULL;
+   \        0x8   0x2700             MOVS     R7,#+0
+    456          //    irq_state_t flags = irq_disable();
+    457              //item = NULL;//Umesh commented
+    458              //current = NULL;//Umesh commented
+    459          	
+    460              if (q->count > 0)
+   \        0xA   0x8928             LDRH     R0,[R5, #+8]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD029             BEQ.N    ??queue_item_delete_0
+    461              {		
+    462                  /* Are we trying to delete the first entry */
+    463                  if (iterator == 0)
+   \       0x10   0x0030             MOVS     R0,R6
+   \       0x12   0xB2C0             UXTB     R0,R0
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD104             BNE.N    ??queue_item_delete_1
+    464                  {
+    465                      item = queue_item_get(q);
+   \       0x18   0x0028             MOVS     R0,R5
+   \       0x1A   0x.... 0x....      BL       queue_item_get
+   \       0x1E   0x0004             MOVS     R4,R0
+   \       0x20   0xE020             B.N      ??queue_item_delete_0
+    466                  }
+    467          		/* Are we trying to remove the last entry */
+    468                  else if ( iterator == (q->count -1) )
+   \                     ??queue_item_delete_1: (+1)
+   \       0x22   0x0031             MOVS     R1,R6
+   \       0x24   0xB2C9             UXTB     R1,R1
+   \       0x26   0x8928             LDRH     R0,[R5, #+8]
+   \       0x28   0x1E40             SUBS     R0,R0,#+1
+   \       0x2A   0x4281             CMP      R1,R0
+   \       0x2C   0xD104             BNE.N    ??queue_item_delete_2
+    469                  {
+    470                      item  = queue_item_get_last(q);
+   \       0x2E   0x0028             MOVS     R0,R5
+   \       0x30   0x.... 0x....      BL       queue_item_get_last
+   \       0x34   0x0004             MOVS     R4,R0
+   \       0x36   0xE015             B.N      ??queue_item_delete_0
+    471                  }
+    472                  else	
+    473                  {
+    474          			if ( iterator < q->count )
+   \                     ??queue_item_delete_2: (+1)
+   \       0x38   0x0031             MOVS     R1,R6
+   \       0x3A   0xB2C9             UXTB     R1,R1
+   \       0x3C   0x8928             LDRH     R0,[R5, #+8]
+   \       0x3E   0xB289             UXTH     R1,R1
+   \       0x40   0x4281             CMP      R1,R0
+   \       0x42   0xD20F             BCS.N    ??queue_item_delete_0
+    475          			{
+    476          				/* Find the location before the one we want to remove */
+    477          				current = q->start;		
+   \       0x44   0x6828             LDR      R0,[R5, #+0]
+   \       0x46   0x0007             MOVS     R7,R0
+    478          
+    479          				while( iterator-- != 1 )
+   \                     ??queue_item_delete_3: (+1)
+   \       0x48   0x0030             MOVS     R0,R6
+   \       0x4A   0x1E46             SUBS     R6,R0,#+1
+   \       0x4C   0xB2C0             UXTB     R0,R0
+   \       0x4E   0x2801             CMP      R0,#+1
+   \       0x50   0xD001             BEQ.N    ??queue_item_delete_4
+    480          				{
+    481          					current = current->link;
+   \       0x52   0x683F             LDR      R7,[R7, #+0]
+   \       0x54   0xE7F8             B.N      ??queue_item_delete_3
+    482          				}
+    483          			
+    484          				/* Get the one we want to remove */
+    485          				item = current->link;
+   \                     ??queue_item_delete_4: (+1)
+   \       0x56   0x6838             LDR      R0,[R7, #+0]
+   \       0x58   0x0004             MOVS     R4,R0
+    486          			
+    487          				/* Unlink the unwanted item */
+    488          				current->link = item->link;
+   \       0x5A   0x6820             LDR      R0,[R4, #+0]
+   \       0x5C   0x6038             STR      R0,[R7, #+0]
+    489          				/* Update the queue counter */
+    490          				q->count--;
+   \       0x5E   0x8928             LDRH     R0,[R5, #+8]
+   \       0x60   0x1E40             SUBS     R0,R0,#+1
+   \       0x62   0x8128             STRH     R0,[R5, #+8]
+    491          			}
+    492                  }
+    493              }
+    494                  
+    495              /* free the memory allocated for the item */
+    496              if ( item != NULL_POINTER )
+   \                     ??queue_item_delete_0: (+1)
+   \       0x64   0x2C00             CMP      R4,#+0
+   \       0x66   0xD002             BEQ.N    ??queue_item_delete_5
+    497              {
+    498                  app_bm_free((void *) item);
+   \       0x68   0x0020             MOVS     R0,R4
+   \       0x6A   0x.... 0x....      BL       app_bm_free
+    499              }
+    500              
+    501          //   irq_enable( flags );
+    502          }
+   \                     ??queue_item_delete_5: (+1)
+   \       0x6E   0xBDF1             POP      {R0,R4-R7,PC}
+    503          /*----------------------------------------------------------------------------*/
+    504          
+
+   \                                 In section .text, align 2, keep-with-next
+    505          void dhcpv6_queue_item_delete(queue_t *q, uint8_t iterator)
+    506          {
+   \                     dhcpv6_queue_item_delete: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000E             MOVS     R6,R1
+    507           queue_item_t* item = NULL;
+   \        0x6   0x2400             MOVS     R4,#+0
+    508              queue_item_t *current = NULL;
+   \        0x8   0x2700             MOVS     R7,#+0
+    509          //    irq_state_t flags = irq_disable();
+    510              //item = NULL;//Umesh commented
+    511              //current = NULL;//Umesh commented
+    512          	
+    513              if (q->count > 0)
+   \        0xA   0x8928             LDRH     R0,[R5, #+8]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD029             BEQ.N    ??dhcpv6_queue_item_delete_0
+    514              {		
+    515                  /* Are we trying to delete the first entry */
+    516                  if (iterator == 0)
+   \       0x10   0x0030             MOVS     R0,R6
+   \       0x12   0xB2C0             UXTB     R0,R0
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD104             BNE.N    ??dhcpv6_queue_item_delete_1
+    517                  {
+    518                      item = queue_item_get(q);
+   \       0x18   0x0028             MOVS     R0,R5
+   \       0x1A   0x.... 0x....      BL       queue_item_get
+   \       0x1E   0x0004             MOVS     R4,R0
+   \       0x20   0xE020             B.N      ??dhcpv6_queue_item_delete_0
+    519                  }
+    520          		/* Are we trying to remove the last entry */
+    521                  else if ( iterator == (q->count -1) )
+   \                     ??dhcpv6_queue_item_delete_1: (+1)
+   \       0x22   0x0031             MOVS     R1,R6
+   \       0x24   0xB2C9             UXTB     R1,R1
+   \       0x26   0x8928             LDRH     R0,[R5, #+8]
+   \       0x28   0x1E40             SUBS     R0,R0,#+1
+   \       0x2A   0x4281             CMP      R1,R0
+   \       0x2C   0xD104             BNE.N    ??dhcpv6_queue_item_delete_2
+    522                  {
+    523                      item  = queue_item_get_last(q);
+   \       0x2E   0x0028             MOVS     R0,R5
+   \       0x30   0x.... 0x....      BL       queue_item_get_last
+   \       0x34   0x0004             MOVS     R4,R0
+   \       0x36   0xE015             B.N      ??dhcpv6_queue_item_delete_0
+    524                  }
+    525                  else	
+    526                  {
+    527          			if ( iterator < q->count )
+   \                     ??dhcpv6_queue_item_delete_2: (+1)
+   \       0x38   0x0031             MOVS     R1,R6
+   \       0x3A   0xB2C9             UXTB     R1,R1
+   \       0x3C   0x8928             LDRH     R0,[R5, #+8]
+   \       0x3E   0xB289             UXTH     R1,R1
+   \       0x40   0x4281             CMP      R1,R0
+   \       0x42   0xD20F             BCS.N    ??dhcpv6_queue_item_delete_0
+    528          			{
+    529          				/* Find the location before the one we want to remove */
+    530          				current = q->start;		
+   \       0x44   0x6828             LDR      R0,[R5, #+0]
+   \       0x46   0x0007             MOVS     R7,R0
+    531          
+    532          				while( iterator-- != 1 )
+   \                     ??dhcpv6_queue_item_delete_3: (+1)
+   \       0x48   0x0030             MOVS     R0,R6
+   \       0x4A   0x1E46             SUBS     R6,R0,#+1
+   \       0x4C   0xB2C0             UXTB     R0,R0
+   \       0x4E   0x2801             CMP      R0,#+1
+   \       0x50   0xD001             BEQ.N    ??dhcpv6_queue_item_delete_4
+    533          				{
+    534          					current = current->link;
+   \       0x52   0x683F             LDR      R7,[R7, #+0]
+   \       0x54   0xE7F8             B.N      ??dhcpv6_queue_item_delete_3
+    535          				}
+    536          			
+    537          				/* Get the one we want to remove */
+    538          				item = current->link;
+   \                     ??dhcpv6_queue_item_delete_4: (+1)
+   \       0x56   0x6838             LDR      R0,[R7, #+0]
+   \       0x58   0x0004             MOVS     R4,R0
+    539                                          
+    540          				/* Unlink the unwanted item */
+    541          				current->link = item->link;
+   \       0x5A   0x6820             LDR      R0,[R4, #+0]
+   \       0x5C   0x6038             STR      R0,[R7, #+0]
+    542          				/* Update the queue counter */
+    543          				q->count--;
+   \       0x5E   0x8928             LDRH     R0,[R5, #+8]
+   \       0x60   0x1E40             SUBS     R0,R0,#+1
+   \       0x62   0x8128             STRH     R0,[R5, #+8]
+    544          			}
+    545                  }
+    546              }
+    547                  
+    548              /* free the memory allocated for the item */
+    549              if ( item != NULL_POINTER )
+   \                     ??dhcpv6_queue_item_delete_0: (+1)
+   \       0x64   0x2C00             CMP      R4,#+0
+   \       0x66   0xD002             BEQ.N    ??dhcpv6_queue_item_delete_5
+    550              {
+    551                  app_bm_free((void *) item);
+   \       0x68   0x0020             MOVS     R0,R4
+   \       0x6A   0x.... 0x....      BL       app_bm_free
+    552              }
+    553              
+    554          //   irq_enable( flags );
+    555          
+    556          }
+   \                     ??dhcpv6_queue_item_delete_5: (+1)
+   \       0x6E   0xBDF1             POP      {R0,R4-R7,PC}
+    557          /*----------------------------------------------------------------------------*/ 
+    558          
+
+   \                                 In section .text, align 2, keep-with-next
+    559          void queue_delete(queue_t * q)
+    560          {
+   \                     queue_delete: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+    561              queue_item_t *current = NULL, *tmp = NULL;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x2600             MOVS     R6,#+0
+    562          //    irq_state_t flags = irq_disable();
+    563          
+    564              current = q->start;
+   \        0x8   0x682C             LDR      R4,[R5, #+0]
+    565          
+    566              if (current != NULL_POINTER)
+   \        0xA   0x2C00             CMP      R4,#+0
+   \        0xC   0xD00F             BEQ.N    ??queue_delete_0
+    567          	{	
+    568                  while( current->link != NULL_POINTER )
+   \                     ??queue_delete_1: (+1)
+   \        0xE   0x6820             LDR      R0,[R4, #+0]
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD006             BEQ.N    ??queue_delete_2
+    569                  {
+    570                      tmp = current->link;
+   \       0x14   0x6820             LDR      R0,[R4, #+0]
+   \       0x16   0x0006             MOVS     R6,R0
+    571                      app_bm_free( (void *) current);
+   \       0x18   0x0020             MOVS     R0,R4
+   \       0x1A   0x.... 0x....      BL       app_bm_free
+    572                      current = tmp;
+   \       0x1E   0x0034             MOVS     R4,R6
+   \       0x20   0xE7F5             B.N      ??queue_delete_1
+    573                  }
+    574                  app_bm_free((void *) current);
+   \                     ??queue_delete_2: (+1)
+   \       0x22   0x0020             MOVS     R0,R4
+   \       0x24   0x.... 0x....      BL       app_bm_free
+    575                  queue_initialise(q);	
+   \       0x28   0x0028             MOVS     R0,R5
+   \       0x2A   0x.... 0x....      BL       queue_initialise
+    576              }    
+    577          //    irq_enable(flags);
+    578          }
+   \                     ??queue_delete_0: (+1)
+   \       0x2E   0xBD70             POP      {R4-R6,PC}
+    579          
+    580          /*----------------------------------------------------------------------------*/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   dhcpv6_queue_item_delete
+        24   -> app_bm_free
+        24   -> queue_item_get
+        24   -> queue_item_get_last
+       0   queue_count_get
+      16   queue_delete
+        16   -> app_bm_free
+        16   -> queue_initialise
+      16   queue_front_put
+        16   -> queue_item_put
+       0   queue_initialise
+      24   queue_item_delete
+        24   -> app_bm_free
+        24   -> queue_item_get
+        24   -> queue_item_get_last
+       0   queue_item_get
+       4   queue_item_get_last
+       0   queue_item_put
+       4   queue_item_read_from
+      16   queue_item_remove
+        16   -> queue_item_get
+        16   -> queue_item_scan_next
+       0   queue_item_scan_next
+       0   queue_peek
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     112  dhcpv6_queue_item_delete
+      10  queue_count_get
+      48  queue_delete
+      40  queue_front_put
+      14  queue_initialise
+     112  queue_item_delete
+      26  queue_item_get
+      60  queue_item_get_last
+      28  queue_item_put
+      46  queue_item_read_from
+      74  queue_item_remove
+      24  queue_item_scan_next
+       8  queue_peek
+
+ 
+ 602 bytes in section .text
+ 
+ 602 bytes of CODE memory
+
+Errors: none
+Warnings: none

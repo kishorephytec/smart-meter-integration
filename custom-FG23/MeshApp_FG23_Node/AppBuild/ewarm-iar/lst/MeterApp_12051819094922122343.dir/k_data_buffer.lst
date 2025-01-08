@@ -1,0 +1,845 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         26/Nov/2024  12:15:57
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\MeterApp\src\k_data_buffer.c
+#    Command line      =
+#        -f
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir\k_data_buffer.o.rsp
+#        (C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\MeterApp\src\k_data_buffer.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\MeterApp_12051819094922122343.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\.\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\rpl\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\cpu\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\FLASH\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir\k_data_buffer.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\MeterApp_12051819094922122343.dir\k_data_buffer.lst
+#    Object file       =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir\k_data_buffer.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\MeterApp\src\k_data_buffer.c
+      1          #include "k_data_buffer.h"
+      2          
+      3          
+
+   \                                 In section .text, align 2, keep-with-next
+      4          void init_data_struct(data_struct_t* buff, uint8_t* data, uint16_t length)
+      5          {
+      6              buff->data_buffer = data;
+   \                     init_data_struct: (+1)
+   \        0x0   0x6001             STR      R1,[R0, #+0]
+      7              buff->data_ptr = 0;
+   \        0x2   0x2300             MOVS     R3,#+0
+   \        0x4   0x8083             STRH     R3,[R0, #+4]
+      8              buff->data_size = 0;
+   \        0x6   0x2300             MOVS     R3,#+0
+   \        0x8   0x80C3             STRH     R3,[R0, #+6]
+      9              buff->data_capacity = length;
+   \        0xA   0x8102             STRH     R2,[R0, #+8]
+     10          }
+   \        0xC   0x4770             BX       LR
+     11          
+
+   \                                 In section .text, align 2, keep-with-next
+     12          void clear_data_buffer(data_struct_t* buff)
+     13          {
+     14              buff->data_buffer = 0;
+   \                     clear_data_buffer: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+     15              buff->data_ptr = 0;
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0x8081             STRH     R1,[R0, #+4]
+     16              buff->data_size = 0;
+   \        0x8   0x2100             MOVS     R1,#+0
+   \        0xA   0x80C1             STRH     R1,[R0, #+6]
+     17              buff->data_capacity = 0;
+   \        0xC   0x2100             MOVS     R1,#+0
+   \        0xE   0x8101             STRH     R1,[R0, #+8]
+     18          }
+   \       0x10   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+     19          void copy_data_buffer(data_struct_t* buff, const uint8_t* data, uint16_t data_len, uint8_t AppendData)
+     20          {
+   \                     copy_data_buffer: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+     21              if (buff->data_capacity >= (buff->data_size + data_len))
+   \        0xC   0x8920             LDRH     R0,[R4, #+8]
+   \        0xE   0x88E1             LDRH     R1,[R4, #+6]
+   \       0x10   0xFA11 0xF186      UXTAH    R1,R1,R6
+   \       0x14   0x4288             CMP      R0,R1
+   \       0x16   0xDB15             BLT.N    ??copy_data_buffer_0
+     22              {
+     23                  if (!AppendData)
+   \       0x18   0x0038             MOVS     R0,R7
+   \       0x1A   0xB2C0             UXTB     R0,R0
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD101             BNE.N    ??copy_data_buffer_1
+     24                  {
+     25                      buff->data_size = 0;
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0x80E0             STRH     R0,[R4, #+6]
+     26                  }
+     27                  memcpy(&buff->data_buffer[buff->data_size], data, data_len);
+   \                     ??copy_data_buffer_1: (+1)
+   \       0x24   0x46B0             MOV      R8,R6
+   \       0x26   0xFA1F 0xF888      UXTH     R8,R8
+   \       0x2A   0x46A9             MOV      R9,R5
+   \       0x2C   0x6821             LDR      R1,[R4, #+0]
+   \       0x2E   0x88E0             LDRH     R0,[R4, #+6]
+   \       0x30   0xEB01 0x0A00      ADD      R10,R1,R0
+   \       0x34   0x4642             MOV      R2,R8
+   \       0x36   0x4649             MOV      R1,R9
+   \       0x38   0x4650             MOV      R0,R10
+   \       0x3A   0x.... 0x....      BL       __aeabi_memcpy
+     28                  buff->data_size += data_len;
+   \       0x3E   0x88E0             LDRH     R0,[R4, #+6]
+   \       0x40   0x1830             ADDS     R0,R6,R0
+   \       0x42   0x80E0             STRH     R0,[R4, #+6]
+     29              }
+     30          }
+   \                     ??copy_data_buffer_0: (+1)
+   \       0x44   0xE8BD 0x87F0      POP      {R4-R10,PC}
+     31          
+
+   \                                 In section .text, align 2, keep-with-next
+     32          uint8_t get_8(data_struct_t* buff)
+     33          {
+   \                     get_8: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+     34              uint8_t ret = 0;
+   \        0x2   0x2000             MOVS     R0,#+0
+     35              if (buff->data_capacity >= (buff->data_size + 1))
+   \        0x4   0x890B             LDRH     R3,[R1, #+8]
+   \        0x6   0x88CA             LDRH     R2,[R1, #+6]
+   \        0x8   0x1C52             ADDS     R2,R2,#+1
+   \        0xA   0x4293             CMP      R3,R2
+   \        0xC   0xDB06             BLT.N    ??get_8_0
+     36              {
+     37                  ret = buff->data_buffer[buff->data_ptr++];
+   \        0xE   0x888A             LDRH     R2,[R1, #+4]
+   \       0x10   0x1C53             ADDS     R3,R2,#+1
+   \       0x12   0x808B             STRH     R3,[R1, #+4]
+   \       0x14   0x680B             LDR      R3,[R1, #+0]
+   \       0x16   0xB292             UXTH     R2,R2
+   \       0x18   0x5C9A             LDRB     R2,[R3, R2]
+   \       0x1A   0x0010             MOVS     R0,R2
+     38              }
+     39              return ret;
+   \                     ??get_8_0: (+1)
+   \       0x1C   0xB2C0             UXTB     R0,R0
+   \       0x1E   0x4770             BX       LR
+     40          }
+
+   \                                 In section .text, align 2, keep-with-next
+     41          uint16_t get_16(data_struct_t* buff)
+     42          {
+   \                     get_16: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+   \        0x2   0x0001             MOVS     R1,R0
+     43              uint16_t ret = 0;
+   \        0x4   0x2000             MOVS     R0,#+0
+     44              if (buff->data_capacity >= (buff->data_size + 2))
+   \        0x6   0x890B             LDRH     R3,[R1, #+8]
+   \        0x8   0x88CA             LDRH     R2,[R1, #+6]
+   \        0xA   0x1C92             ADDS     R2,R2,#+2
+   \        0xC   0x4293             CMP      R3,R2
+   \        0xE   0xDB0C             BLT.N    ??get_16_0
+     45              {
+     46                  ret = ((uint16_t)(((buff->data_buffer[buff->data_ptr] & 0xFF)) << 8) |
+     47                      ((uint16_t)(buff->data_buffer[buff->data_ptr + 1] & 0xFF)));
+   \       0x10   0x680B             LDR      R3,[R1, #+0]
+   \       0x12   0x888A             LDRH     R2,[R1, #+4]
+   \       0x14   0x5C9A             LDRB     R2,[R3, R2]
+   \       0x16   0x680C             LDR      R4,[R1, #+0]
+   \       0x18   0x888B             LDRH     R3,[R1, #+4]
+   \       0x1A   0x4423             ADD      R3,R4,R3
+   \       0x1C   0x785B             LDRB     R3,[R3, #+1]
+   \       0x1E   0xEA53 0x2302      ORRS     R3,R3,R2, LSL #+8
+   \       0x22   0x0018             MOVS     R0,R3
+     48                  buff->data_ptr += 2;
+   \       0x24   0x888A             LDRH     R2,[R1, #+4]
+   \       0x26   0x1C92             ADDS     R2,R2,#+2
+   \       0x28   0x808A             STRH     R2,[R1, #+4]
+     49              }
+     50              return ret;
+   \                     ??get_16_0: (+1)
+   \       0x2A   0xB280             UXTH     R0,R0
+   \       0x2C   0xBC10             POP      {R4}
+   \       0x2E   0x4770             BX       LR
+     51          }
+
+   \                                 In section .text, align 2, keep-with-next
+     52          uint32_t get_32(data_struct_t* buff)
+     53          {
+   \                     get_32: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+   \        0x2   0x0002             MOVS     R2,R0
+     54              uint32_t ret = 0;
+   \        0x4   0x2000             MOVS     R0,#+0
+     55              if (buff->data_capacity >= (buff->data_size + 4))
+   \        0x6   0x8913             LDRH     R3,[R2, #+8]
+   \        0x8   0x88D1             LDRH     R1,[R2, #+6]
+   \        0xA   0x1D09             ADDS     R1,R1,#+4
+   \        0xC   0x428B             CMP      R3,R1
+   \        0xE   0xDB18             BLT.N    ??get_32_0
+     56              {
+     57                  ret = ((uint32_t)((buff->data_buffer[buff->data_ptr] & 0xFF)) << 24 |
+     58                      ((uint32_t)(buff->data_buffer[buff->data_ptr + 1] & 0xFF)) << 16 |
+     59                      ((uint32_t)(buff->data_buffer[buff->data_ptr + 2] & 0xFF)) << 8 |
+     60                      ((uint32_t)(buff->data_buffer[buff->data_ptr + 3] & 0xFF)));
+   \       0x10   0x6813             LDR      R3,[R2, #+0]
+   \       0x12   0x8891             LDRH     R1,[R2, #+4]
+   \       0x14   0x5C59             LDRB     R1,[R3, R1]
+   \       0x16   0x6814             LDR      R4,[R2, #+0]
+   \       0x18   0x8893             LDRH     R3,[R2, #+4]
+   \       0x1A   0x4423             ADD      R3,R4,R3
+   \       0x1C   0x785B             LDRB     R3,[R3, #+1]
+   \       0x1E   0x041B             LSLS     R3,R3,#+16
+   \       0x20   0xEA53 0x6301      ORRS     R3,R3,R1, LSL #+24
+   \       0x24   0x6814             LDR      R4,[R2, #+0]
+   \       0x26   0x8891             LDRH     R1,[R2, #+4]
+   \       0x28   0x4421             ADD      R1,R4,R1
+   \       0x2A   0x7889             LDRB     R1,[R1, #+2]
+   \       0x2C   0xEA53 0x2301      ORRS     R3,R3,R1, LSL #+8
+   \       0x30   0x6814             LDR      R4,[R2, #+0]
+   \       0x32   0x8891             LDRH     R1,[R2, #+4]
+   \       0x34   0x4421             ADD      R1,R4,R1
+   \       0x36   0x78C9             LDRB     R1,[R1, #+3]
+   \       0x38   0x430B             ORRS     R3,R1,R3
+   \       0x3A   0x0018             MOVS     R0,R3
+     61                  buff->data_ptr += 4;
+   \       0x3C   0x8891             LDRH     R1,[R2, #+4]
+   \       0x3E   0x1D09             ADDS     R1,R1,#+4
+   \       0x40   0x8091             STRH     R1,[R2, #+4]
+     62              }
+     63              return ret;
+   \                     ??get_32_0: (+1)
+   \       0x42   0xBC10             POP      {R4}
+   \       0x44   0x4770             BX       LR
+     64          }
+     65          
+
+   \                                 In section .text, align 2, keep-with-next
+     66          uint64_t get_64(data_struct_t* buff)
+     67          {
+   \                     get_64: (+1)
+   \        0x0   0xB4D8             PUSH     {R3,R4,R6,R7}
+   \        0x2   0x0004             MOVS     R4,R0
+     68              uint64_t ret = 0;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x2100             MOVS     R1,#+0
+     69              if (buff->data_capacity >= (buff->data_size + 8))
+   \        0x8   0x8923             LDRH     R3,[R4, #+8]
+   \        0xA   0x88E2             LDRH     R2,[R4, #+6]
+   \        0xC   0x3208             ADDS     R2,R2,#+8
+   \        0xE   0x4293             CMP      R3,R2
+   \       0x10   0xDB4D             BLT.N    ??get_64_0
+     70              {
+     71                  ret = (((uint64_t)buff->data_buffer[buff->data_ptr] & 0xFF) << 56) |
+     72                      (((uint64_t)buff->data_buffer[buff->data_ptr + 1] & 0xFF) << 48) |
+     73                      (((uint64_t)buff->data_buffer[buff->data_ptr + 2] & 0xFF) << 40) |
+     74                      (((uint64_t)buff->data_buffer[buff->data_ptr + 3] & 0xFF) << 32) |
+     75                      (((uint64_t)buff->data_buffer[buff->data_ptr + 4] & 0xFF) << 24) |
+     76                      (((uint64_t)buff->data_buffer[buff->data_ptr + 5] & 0xFF) << 16) |
+     77                      (((uint64_t)buff->data_buffer[buff->data_ptr + 6] & 0xFF) << 8) |
+     78                      (((uint64_t)buff->data_buffer[buff->data_ptr + 7] & 0xFF));
+   \       0x12   0x6823             LDR      R3,[R4, #+0]
+   \       0x14   0x88A2             LDRH     R2,[R4, #+4]
+   \       0x16   0x5C9E             LDRB     R6,[R3, R2]
+   \       0x18   0x2700             MOVS     R7,#+0
+   \       0x1A   0x0637             LSLS     R7,R6,#+24
+   \       0x1C   0x2600             MOVS     R6,#+0
+   \       0x1E   0x6823             LDR      R3,[R4, #+0]
+   \       0x20   0x88A2             LDRH     R2,[R4, #+4]
+   \       0x22   0x441A             ADD      R2,R3,R2
+   \       0x24   0x7852             LDRB     R2,[R2, #+1]
+   \       0x26   0x2300             MOVS     R3,#+0
+   \       0x28   0x0413             LSLS     R3,R2,#+16
+   \       0x2A   0x2200             MOVS     R2,#+0
+   \       0x2C   0x4316             ORRS     R6,R6,R2
+   \       0x2E   0x431F             ORRS     R7,R7,R3
+   \       0x30   0x6823             LDR      R3,[R4, #+0]
+   \       0x32   0x88A2             LDRH     R2,[R4, #+4]
+   \       0x34   0x441A             ADD      R2,R3,R2
+   \       0x36   0x7892             LDRB     R2,[R2, #+2]
+   \       0x38   0x2300             MOVS     R3,#+0
+   \       0x3A   0x0213             LSLS     R3,R2,#+8
+   \       0x3C   0x2200             MOVS     R2,#+0
+   \       0x3E   0x4316             ORRS     R6,R6,R2
+   \       0x40   0x431F             ORRS     R7,R7,R3
+   \       0x42   0x6823             LDR      R3,[R4, #+0]
+   \       0x44   0x88A2             LDRH     R2,[R4, #+4]
+   \       0x46   0x441A             ADD      R2,R3,R2
+   \       0x48   0x78D2             LDRB     R2,[R2, #+3]
+   \       0x4A   0x2300             MOVS     R3,#+0
+   \       0x4C   0x0013             MOVS     R3,R2
+   \       0x4E   0x2200             MOVS     R2,#+0
+   \       0x50   0x4316             ORRS     R6,R6,R2
+   \       0x52   0x431F             ORRS     R7,R7,R3
+   \       0x54   0x6823             LDR      R3,[R4, #+0]
+   \       0x56   0x88A2             LDRH     R2,[R4, #+4]
+   \       0x58   0x441A             ADD      R2,R3,R2
+   \       0x5A   0x7912             LDRB     R2,[R2, #+4]
+   \       0x5C   0x2300             MOVS     R3,#+0
+   \       0x5E   0x061B             LSLS     R3,R3,#+24
+   \       0x60   0xEA43 0x2312      ORR      R3,R3,R2, LSR #+8
+   \       0x64   0x0612             LSLS     R2,R2,#+24
+   \       0x66   0x4316             ORRS     R6,R6,R2
+   \       0x68   0x431F             ORRS     R7,R7,R3
+   \       0x6A   0x6823             LDR      R3,[R4, #+0]
+   \       0x6C   0x88A2             LDRH     R2,[R4, #+4]
+   \       0x6E   0x441A             ADD      R2,R3,R2
+   \       0x70   0x7952             LDRB     R2,[R2, #+5]
+   \       0x72   0x2300             MOVS     R3,#+0
+   \       0x74   0x041B             LSLS     R3,R3,#+16
+   \       0x76   0xEA43 0x4312      ORR      R3,R3,R2, LSR #+16
+   \       0x7A   0x0412             LSLS     R2,R2,#+16
+   \       0x7C   0x4316             ORRS     R6,R6,R2
+   \       0x7E   0x431F             ORRS     R7,R7,R3
+   \       0x80   0x6822             LDR      R2,[R4, #+0]
+   \       0x82   0x88A3             LDRH     R3,[R4, #+4]
+   \       0x84   0x441A             ADD      R2,R2,R3
+   \       0x86   0x7992             LDRB     R2,[R2, #+6]
+   \       0x88   0x2300             MOVS     R3,#+0
+   \       0x8A   0x021B             LSLS     R3,R3,#+8
+   \       0x8C   0xEA43 0x6312      ORR      R3,R3,R2, LSR #+24
+   \       0x90   0x0212             LSLS     R2,R2,#+8
+   \       0x92   0x4316             ORRS     R6,R6,R2
+   \       0x94   0x431F             ORRS     R7,R7,R3
+   \       0x96   0x6823             LDR      R3,[R4, #+0]
+   \       0x98   0x88A2             LDRH     R2,[R4, #+4]
+   \       0x9A   0x441A             ADD      R2,R3,R2
+   \       0x9C   0x79D2             LDRB     R2,[R2, #+7]
+   \       0x9E   0x2300             MOVS     R3,#+0
+   \       0xA0   0x4332             ORRS     R2,R6,R2
+   \       0xA2   0x433B             ORRS     R3,R7,R3
+   \       0xA4   0x0010             MOVS     R0,R2
+   \       0xA6   0x0019             MOVS     R1,R3
+     79                  buff->data_ptr += 8;
+   \       0xA8   0x88A2             LDRH     R2,[R4, #+4]
+   \       0xAA   0x3208             ADDS     R2,R2,#+8
+   \       0xAC   0x80A2             STRH     R2,[R4, #+4]
+     80              }
+     81              return ret;
+   \                     ??get_64_0: (+1)
+   \       0xAE   0xBCD4             POP      {R2,R4,R6,R7}
+   \       0xB0   0x4770             BX       LR
+     82          }
+     83          
+
+   \                                 In section .text, align 2, keep-with-next
+     84          uint16_t get_strings_length(data_struct_t* buff)
+     85          {
+   \                     get_strings_length: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     86              uint16_t length = get_8(buff);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       get_8
+   \        0xA   0x0005             MOVS     R5,R0
+     87              if (length < 0x80)
+   \        0xC   0x0028             MOVS     R0,R5
+   \        0xE   0xB280             UXTH     R0,R0
+   \       0x10   0x2880             CMP      R0,#+128
+   \       0x12   0xDA02             BGE.N    ??get_strings_length_0
+     88              {
+     89                  return length;
+   \       0x14   0x0028             MOVS     R0,R5
+   \       0x16   0xB280             UXTH     R0,R0
+   \       0x18   0xE009             B.N      ??get_strings_length_1
+     90              }
+     91              else
+     92              {
+     93                  length = get_8(buff);
+   \                     ??get_strings_length_0: (+1)
+   \       0x1A   0x0020             MOVS     R0,R4
+   \       0x1C   0x.... 0x....      BL       get_8
+   \       0x20   0x0006             MOVS     R6,R0
+     94                  length = length << 8;
+   \       0x22   0x0236             LSLS     R6,R6,#+8
+     95                  length |= get_8(buff);
+   \       0x24   0x0020             MOVS     R0,R4
+   \       0x26   0x.... 0x....      BL       get_8
+   \       0x2A   0x4330             ORRS     R0,R0,R6
+     96              }
+     97              return length;
+   \       0x2C   0xB280             UXTH     R0,R0
+   \                     ??get_strings_length_1: (+1)
+   \       0x2E   0xBD70             POP      {R4-R6,PC}
+     98          }
+     99          
+    100          
+
+   \                                 In section .text, align 2, keep-with-next
+    101          void set_8(data_struct_t* buff, uint8_t value, int16_t index)
+    102          {
+   \                     set_8: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+    103              if (index <= 0)
+   \        0x2   0x0013             MOVS     R3,R2
+   \        0x4   0xB21B             SXTH     R3,R3
+   \        0x6   0x2B01             CMP      R3,#+1
+   \        0x8   0xDA04             BGE.N    ??set_8_0
+    104              {
+    105                  index = buff->data_size++;
+   \        0xA   0x88C4             LDRH     R4,[R0, #+6]
+   \        0xC   0x1C63             ADDS     R3,R4,#+1
+   \        0xE   0x80C3             STRH     R3,[R0, #+6]
+   \       0x10   0xB224             SXTH     R4,R4
+   \       0x12   0x0022             MOVS     R2,R4
+    106              }
+    107              buff->data_buffer[index] = value;
+   \                     ??set_8_0: (+1)
+   \       0x14   0x6804             LDR      R4,[R0, #+0]
+   \       0x16   0x0013             MOVS     R3,R2
+   \       0x18   0xB21B             SXTH     R3,R3
+   \       0x1A   0x54E1             STRB     R1,[R4, R3]
+    108          }
+   \       0x1C   0xBC10             POP      {R4}
+   \       0x1E   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+    109          void set_16(data_struct_t* buff, uint16_t value, int16_t index)
+    110          {
+   \                     set_16: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+    111              if (index <= 0)
+   \        0x2   0x0013             MOVS     R3,R2
+   \        0x4   0xB21B             SXTH     R3,R3
+   \        0x6   0x2B01             CMP      R3,#+1
+   \        0x8   0xDA05             BGE.N    ??set_16_0
+    112              {
+    113                  index = buff->data_size;
+   \        0xA   0xF9B0 0x3006      LDRSH    R3,[R0, #+6]
+   \        0xE   0x001A             MOVS     R2,R3
+    114                  buff->data_size += 2;
+   \       0x10   0x88C3             LDRH     R3,[R0, #+6]
+   \       0x12   0x1C9B             ADDS     R3,R3,#+2
+   \       0x14   0x80C3             STRH     R3,[R0, #+6]
+    115              }
+    116              buff->data_buffer[index++] = 0xFF & (uint8_t)(value >> 8);
+   \                     ??set_16_0: (+1)
+   \       0x16   0x000D             MOVS     R5,R1
+   \       0x18   0xB2AD             UXTH     R5,R5
+   \       0x1A   0x0A2D             LSRS     R5,R5,#+8
+   \       0x1C   0x6804             LDR      R4,[R0, #+0]
+   \       0x1E   0x0013             MOVS     R3,R2
+   \       0x20   0xB21B             SXTH     R3,R3
+   \       0x22   0x54E5             STRB     R5,[R4, R3]
+   \       0x24   0x1C52             ADDS     R2,R2,#+1
+    117              buff->data_buffer[index] = 0xFF & (uint8_t)(value);
+   \       0x26   0x6804             LDR      R4,[R0, #+0]
+   \       0x28   0x0013             MOVS     R3,R2
+   \       0x2A   0xB21B             SXTH     R3,R3
+   \       0x2C   0x54E1             STRB     R1,[R4, R3]
+    118          }
+   \       0x2E   0xBC30             POP      {R4,R5}
+   \       0x30   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+    119          void set_32(data_struct_t* buff, uint32_t value, int16_t index)
+    120          {
+   \                     set_32: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+    121              if (index <= 0)
+   \        0x2   0x0013             MOVS     R3,R2
+   \        0x4   0xB21B             SXTH     R3,R3
+   \        0x6   0x2B01             CMP      R3,#+1
+   \        0x8   0xDA05             BGE.N    ??set_32_0
+    122              {
+    123                  index = buff->data_size;
+   \        0xA   0xF9B0 0x3006      LDRSH    R3,[R0, #+6]
+   \        0xE   0x001A             MOVS     R2,R3
+    124                  buff->data_size += 4;
+   \       0x10   0x88C3             LDRH     R3,[R0, #+6]
+   \       0x12   0x1D1B             ADDS     R3,R3,#+4
+   \       0x14   0x80C3             STRH     R3,[R0, #+6]
+    125              }
+    126              buff->data_buffer[index++] = 0xFF & (uint8_t)(value >> 24);
+   \                     ??set_32_0: (+1)
+   \       0x16   0x000D             MOVS     R5,R1
+   \       0x18   0x0E2D             LSRS     R5,R5,#+24
+   \       0x1A   0x6804             LDR      R4,[R0, #+0]
+   \       0x1C   0x0013             MOVS     R3,R2
+   \       0x1E   0xB21B             SXTH     R3,R3
+   \       0x20   0x54E5             STRB     R5,[R4, R3]
+   \       0x22   0x1C52             ADDS     R2,R2,#+1
+    127              buff->data_buffer[index++] = 0xFF & (uint8_t)(value >> 16);
+   \       0x24   0x000D             MOVS     R5,R1
+   \       0x26   0x0C2D             LSRS     R5,R5,#+16
+   \       0x28   0x6804             LDR      R4,[R0, #+0]
+   \       0x2A   0x0013             MOVS     R3,R2
+   \       0x2C   0xB21B             SXTH     R3,R3
+   \       0x2E   0x54E5             STRB     R5,[R4, R3]
+   \       0x30   0x1C52             ADDS     R2,R2,#+1
+    128              buff->data_buffer[index++] = 0xFF & (uint8_t)(value >> 8);
+   \       0x32   0x000D             MOVS     R5,R1
+   \       0x34   0x0A2D             LSRS     R5,R5,#+8
+   \       0x36   0x6804             LDR      R4,[R0, #+0]
+   \       0x38   0x0013             MOVS     R3,R2
+   \       0x3A   0xB21B             SXTH     R3,R3
+   \       0x3C   0x54E5             STRB     R5,[R4, R3]
+   \       0x3E   0x1C52             ADDS     R2,R2,#+1
+    129              buff->data_buffer[index] = 0xFF & (uint8_t)(value);
+   \       0x40   0x6804             LDR      R4,[R0, #+0]
+   \       0x42   0x0013             MOVS     R3,R2
+   \       0x44   0xB21B             SXTH     R3,R3
+   \       0x46   0x54E1             STRB     R1,[R4, R3]
+    130          }
+   \       0x48   0xBC30             POP      {R4,R5}
+   \       0x4A   0x4770             BX       LR
+    131          
+
+   \                                 In section .text, align 2, keep-with-next
+    132          void set_uint64(data_struct_t* buff, uint64_t value, int16_t index)
+    133          {
+   \                     set_uint64: (+1)
+   \        0x0   0xB470             PUSH     {R4-R6}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0xF9BD 0x500C      LDRSH    R5,[SP, #+12]
+    134          
+    135              if (index <= 0)
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0xB200             SXTH     R0,R0
+   \        0xC   0x2801             CMP      R0,#+1
+   \        0xE   0xDA05             BGE.N    ??set_uint64_0
+    136              {
+    137                  index = buff->data_size;
+   \       0x10   0xF9B4 0x0006      LDRSH    R0,[R4, #+6]
+   \       0x14   0x0005             MOVS     R5,R0
+    138                  buff->data_size += 4;
+   \       0x16   0x88E0             LDRH     R0,[R4, #+6]
+   \       0x18   0x1D00             ADDS     R0,R0,#+4
+   \       0x1A   0x80E0             STRH     R0,[R4, #+6]
+    139              }
+    140              buff->data_buffer[index++] = 0xFF & (uint8_t)(value >> 56);
+   \                     ??set_uint64_0: (+1)
+   \       0x1C   0x0010             MOVS     R0,R2
+   \       0x1E   0x0019             MOVS     R1,R3
+   \       0x20   0x0E08             LSRS     R0,R1,#+24
+   \       0x22   0x2100             MOVS     R1,#+0
+   \       0x24   0x6826             LDR      R6,[R4, #+0]
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0xB209             SXTH     R1,R1
+   \       0x2A   0x5470             STRB     R0,[R6, R1]
+   \       0x2C   0x1C6D             ADDS     R5,R5,#+1
+    141              buff->data_buffer[index++] = 0xFF & (uint8_t)(value >> 48);
+   \       0x2E   0x0010             MOVS     R0,R2
+   \       0x30   0x0019             MOVS     R1,R3
+   \       0x32   0x0C08             LSRS     R0,R1,#+16
+   \       0x34   0x2100             MOVS     R1,#+0
+   \       0x36   0x6826             LDR      R6,[R4, #+0]
+   \       0x38   0x0029             MOVS     R1,R5
+   \       0x3A   0xB209             SXTH     R1,R1
+   \       0x3C   0x5470             STRB     R0,[R6, R1]
+   \       0x3E   0x1C6D             ADDS     R5,R5,#+1
+    142              buff->data_buffer[index++] = 0xFF & (uint8_t)(value >> 40);
+   \       0x40   0x0010             MOVS     R0,R2
+   \       0x42   0x0019             MOVS     R1,R3
+   \       0x44   0x0A08             LSRS     R0,R1,#+8
+   \       0x46   0x2100             MOVS     R1,#+0
+   \       0x48   0x6826             LDR      R6,[R4, #+0]
+   \       0x4A   0x0029             MOVS     R1,R5
+   \       0x4C   0xB209             SXTH     R1,R1
+   \       0x4E   0x5470             STRB     R0,[R6, R1]
+   \       0x50   0x1C6D             ADDS     R5,R5,#+1
+    143              buff->data_buffer[index++] = 0xFF & (uint8_t)(value >> 32);
+   \       0x52   0x6821             LDR      R1,[R4, #+0]
+   \       0x54   0x0028             MOVS     R0,R5
+   \       0x56   0xB200             SXTH     R0,R0
+   \       0x58   0x540B             STRB     R3,[R1, R0]
+   \       0x5A   0x1C6D             ADDS     R5,R5,#+1
+    144              buff->data_buffer[index++] = 0xFF & (uint8_t)(value >> 24);
+   \       0x5C   0x0016             MOVS     R6,R2
+   \       0x5E   0x0E36             LSRS     R6,R6,#+24
+   \       0x60   0x6821             LDR      R1,[R4, #+0]
+   \       0x62   0x0028             MOVS     R0,R5
+   \       0x64   0xB200             SXTH     R0,R0
+   \       0x66   0x540E             STRB     R6,[R1, R0]
+   \       0x68   0x1C6D             ADDS     R5,R5,#+1
+    145              buff->data_buffer[index++] = 0xFF & (uint8_t)(value >> 16);
+   \       0x6A   0x0016             MOVS     R6,R2
+   \       0x6C   0x0C36             LSRS     R6,R6,#+16
+   \       0x6E   0x6821             LDR      R1,[R4, #+0]
+   \       0x70   0x0028             MOVS     R0,R5
+   \       0x72   0xB200             SXTH     R0,R0
+   \       0x74   0x540E             STRB     R6,[R1, R0]
+   \       0x76   0x1C6D             ADDS     R5,R5,#+1
+    146              buff->data_buffer[index++] = 0xFF & (uint8_t)(value >> 8);
+   \       0x78   0x0016             MOVS     R6,R2
+   \       0x7A   0xB2B6             UXTH     R6,R6
+   \       0x7C   0x0A36             LSRS     R6,R6,#+8
+   \       0x7E   0x6821             LDR      R1,[R4, #+0]
+   \       0x80   0x0028             MOVS     R0,R5
+   \       0x82   0xB200             SXTH     R0,R0
+   \       0x84   0x540E             STRB     R6,[R1, R0]
+   \       0x86   0x1C6D             ADDS     R5,R5,#+1
+    147              buff->data_buffer[index] = 0xFF & (uint8_t)(value);
+   \       0x88   0x6821             LDR      R1,[R4, #+0]
+   \       0x8A   0x0028             MOVS     R0,R5
+   \       0x8C   0xB200             SXTH     R0,R0
+   \       0x8E   0x540A             STRB     R2,[R1, R0]
+    148          }
+   \       0x90   0xBC70             POP      {R4-R6}
+   \       0x92   0x4770             BX       LR
+    149          
+
+   \                                 In section .text, align 2, keep-with-next
+    150          void set_string(data_struct_t* buff, string_type_e string_type, uint8_t* data, uint16_t data_len)
+    151          {
+   \                     set_string: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x001F             MOVS     R7,R3
+    152              if (string_type != STR_TYPE_NULL)
+   \        0xA   0x0028             MOVS     R0,R5
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD01F             BEQ.N    ??set_string_0
+    153              {
+    154                  set_8(buff, string_type, APPND);
+   \       0x12   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x16   0x0029             MOVS     R1,R5
+   \       0x18   0xB2C9             UXTB     R1,R1
+   \       0x1A   0x0020             MOVS     R0,R4
+   \       0x1C   0x.... 0x....      BL       set_8
+    155                  if (data_len < 0x80)
+   \       0x20   0x0038             MOVS     R0,R7
+   \       0x22   0xB280             UXTH     R0,R0
+   \       0x24   0x2880             CMP      R0,#+128
+   \       0x26   0xDA07             BGE.N    ??set_string_1
+    156                  {
+    157                      set_8(buff, (uint8_t)data_len, APPND);
+   \       0x28   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x2C   0x0039             MOVS     R1,R7
+   \       0x2E   0xB2C9             UXTB     R1,R1
+   \       0x30   0x0020             MOVS     R0,R4
+   \       0x32   0x.... 0x....      BL       set_8
+   \       0x36   0xE00C             B.N      ??set_string_0
+    158                  }
+    159                  else
+    160                  {
+    161                      set_8(buff, 0x82, APPND);
+   \                     ??set_string_1: (+1)
+   \       0x38   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x3C   0x2182             MOVS     R1,#+130
+   \       0x3E   0x0020             MOVS     R0,R4
+   \       0x40   0x.... 0x....      BL       set_8
+    162                      set_16(buff, data_len, APPND);
+   \       0x44   0xF05F 0x32FF      MOVS     R2,#+4294967295
+   \       0x48   0x0039             MOVS     R1,R7
+   \       0x4A   0xB289             UXTH     R1,R1
+   \       0x4C   0x0020             MOVS     R0,R4
+   \       0x4E   0x.... 0x....      BL       set_16
+    163                  }
+    164              }
+    165              copy_data_buffer(buff, data, data_len, 1);
+   \                     ??set_string_0: (+1)
+   \       0x52   0x2301             MOVS     R3,#+1
+   \       0x54   0x003A             MOVS     R2,R7
+   \       0x56   0xB292             UXTH     R2,R2
+   \       0x58   0x0031             MOVS     R1,R6
+   \       0x5A   0x0020             MOVS     R0,R4
+   \       0x5C   0x.... 0x....      BL       copy_data_buffer
+    166          }
+   \       0x60   0xBDF1             POP      {R0,R4-R7,PC}
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   clear_data_buffer
+      32   copy_data_buffer
+        32   -> __aeabi_memcpy
+       4   get_16
+       4   get_32
+      16   get_64
+       0   get_8
+      16   get_strings_length
+        16   -> get_8
+       0   init_data_struct
+       8   set_16
+       8   set_32
+       4   set_8
+      24   set_string
+        24   -> copy_data_buffer
+        24   -> set_16
+        24   -> set_8
+      12   set_uint64
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      18  clear_data_buffer
+      72  copy_data_buffer
+      48  get_16
+      70  get_32
+     178  get_64
+      32  get_8
+      48  get_strings_length
+      14  init_data_struct
+      50  set_16
+      76  set_32
+      32  set_8
+      98  set_string
+     148  set_uint64
+
+ 
+ 884 bytes in section .text
+ 
+ 884 bytes of CODE memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,655 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         02/Dec/2024  12:57:46
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\NVM\nvm3\src\nvm3_hal_flash.c
+#    Command line                 =
+#        -f
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Src_12316784073195354395.dir\nvm3_hal_flash.o.rsp
+#        (D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\NVM\nvm3\src\nvm3_hal_flash.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\Src_12316784073195354395.dir
+#        --diag_suppress Pa050 -o
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Src_12316784073195354395.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Src_12316784073195354395.dir\nvm3_hal_flash.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\Src_12316784073195354395.dir\nvm3_hal_flash.lst
+#    Object file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\Src_12316784073195354395.dir\nvm3_hal_flash.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\NVM\nvm3\src\nvm3_hal_flash.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Non-Volatile Memory Wear-Leveling driver HAL implementation
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include <stdbool.h>
+     32          #include <string.h>
+     33          #include "nvm3.h"
+     34          #include "nvm3_hal_flash.h"
+     35          #include "em_system.h"
+     36          #include "em_msc.h"
+     37          
+     38          /***************************************************************************//**
+     39           * @addtogroup nvm3
+     40           * @{
+     41           ******************************************************************************/
+     42          
+     43          /***************************************************************************//**
+     44           * @addtogroup nvm3hal
+     45           * @{
+     46           ******************************************************************************/
+     47          
+     48          /******************************************************************************
+     49           ******************************    MACROS    **********************************
+     50           *****************************************************************************/
+     51          
+     52          #define CHECK_DATA  1           ///< Macro defining if data should be checked
+     53          
+     54          /******************************************************************************
+     55           ***************************   LOCAL VARIABLES   ******************************
+     56           *****************************************************************************/
+     57          
+     58          /******************************************************************************
+     59           ***************************   LOCAL FUNCTIONS   ******************************
+     60           *****************************************************************************/
+     61          
+     62          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     63          
+     64          /***************************************************************************//**
+     65           * @brief
+     66           *   Convert return type.
+     67           *
+     68           * @details
+     69           *   This function converts between the return type of the emlib and the
+     70           *   NVM3 API.
+     71           *
+     72           * @param[in] result
+     73           *   Operation result.
+     74           *
+     75           * @return
+     76           *   Returns remapped status code.
+     77           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     78          static Ecode_t convertMscStatusToNvm3Status(MSC_Status_TypeDef result)
+     79          {
+   \                     convertMscStatusToNvm3Status: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+     80            Ecode_t ret;
+     81          
+     82            switch (result) {
+   \        0x2   0x0008             MOVS     R0,R1
+   \        0x4   0xB240             SXTB     R0,R0
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD003             BEQ.N    ??convertMscStatusToNvm3Status_0
+   \        0xA   0xF1B0 0x3FFF      CMP      R0,#+4294967295
+   \        0xE   0xD002             BEQ.N    ??convertMscStatusToNvm3Status_1
+   \       0x10   0xE003             B.N      ??convertMscStatusToNvm3Status_2
+     83              case mscReturnOk:
+     84                ret = ECODE_NVM3_OK;
+   \                     ??convertMscStatusToNvm3Status_0: (+1)
+   \       0x12   0x2000             MOVS     R0,#+0
+     85                break;
+   \       0x14   0xE002             B.N      ??convertMscStatusToNvm3Status_3
+     86              case mscReturnInvalidAddr:
+     87                ret = ECODE_NVM3_ERR_INT_ADDR_INVALID;
+   \                     ??convertMscStatusToNvm3Status_1: (+1)
+   \       0x16   0x....             LDR.N    R0,??DataTable2
+     88                break;
+   \       0x18   0xE000             B.N      ??convertMscStatusToNvm3Status_3
+     89              default:
+     90                ret = ECODE_NVM3_ERR_INT_EMULATOR;
+   \                     ??convertMscStatusToNvm3Status_2: (+1)
+   \       0x1A   0x....             LDR.N    R0,??DataTable2_1
+     91                break;
+     92            }
+     93          
+     94            return ret;
+   \                     ??convertMscStatusToNvm3Status_3: (+1)
+   \       0x1C   0x4770             BX       LR
+     95          }
+     96          
+     97          // Check if the page is erased.
+
+   \                                 In section .text, align 2, keep-with-next
+     98          static bool isErased(void *adr, size_t len)
+     99          {
+   \                     isErased: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0002             MOVS     R2,R0
+    100            size_t i;
+    101            size_t cnt;
+    102            uint32_t *dat = adr;
+   \        0x4   0x0013             MOVS     R3,R2
+    103          
+    104            cnt = len / sizeof(uint32_t);
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x08A4             LSRS     R4,R4,#+2
+    105            for (i = 0U; i < cnt; i++) {
+   \        0xA   0x2500             MOVS     R5,#+0
+   \                     ??isErased_0: (+1)
+   \        0xC   0x42A5             CMP      R5,R4
+   \        0xE   0xD208             BCS.N    ??isErased_1
+    106              if (*dat != 0xFFFFFFFFUL) {
+   \       0x10   0x6818             LDR      R0,[R3, #+0]
+   \       0x12   0xF110 0x0F01      CMN      R0,#+1
+   \       0x16   0xD001             BEQ.N    ??isErased_2
+    107                return false;
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0xE003             B.N      ??isErased_3
+    108              }
+    109              dat++;
+   \                     ??isErased_2: (+1)
+   \       0x1C   0x1D1B             ADDS     R3,R3,#+4
+    110            }
+   \       0x1E   0x1C6D             ADDS     R5,R5,#+1
+   \       0x20   0xE7F4             B.N      ??isErased_0
+    111          
+    112            return true;
+   \                     ??isErased_1: (+1)
+   \       0x22   0x2001             MOVS     R0,#+1
+   \                     ??isErased_3: (+1)
+   \       0x24   0xBC30             POP      {R4,R5}
+   \       0x26   0x4770             BX       LR
+    113          }
+    114          
+    115          /** @endcond */
+    116          
+
+   \                                 In section .text, align 2, keep-with-next
+    117          static Ecode_t nvm3_halFlashOpen(nvm3_HalPtr_t nvmAdr, size_t flashSize)
+    118          {
+   \                     nvm3_halFlashOpen: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    119            (void)nvmAdr;
+    120            (void)flashSize;
+    121            MSC_Init();
+   \        0x6   0x.... 0x....      BL       MSC_Init
+    122          
+    123            return ECODE_NVM3_OK;
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0xBD32             POP      {R1,R4,R5,PC}
+    124          }
+    125          
+
+   \                                 In section .text, align 2, keep-with-next
+    126          static void nvm3_halFlashClose(void)
+    127          {
+   \                     nvm3_halFlashClose: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    128            MSC_Deinit();
+   \        0x2   0x.... 0x....      BL       MSC_Deinit
+    129          }
+   \        0x6   0xBD01             POP      {R0,PC}
+    130          
+
+   \                                 In section .text, align 2, keep-with-next
+    131          static Ecode_t nvm3_halFlashGetInfo(nvm3_HalInfo_t *halInfo)
+    132          {
+   \                     nvm3_halFlashGetInfo: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    133            SYSTEM_ChipRevision_TypeDef chipRev;
+    134          
+    135            SYSTEM_ChipRevisionGet(&chipRev);
+   \        0x4   0x4668             MOV      R0,SP
+   \        0x6   0x.... 0x....      BL       SYSTEM_ChipRevisionGet
+    136          #if defined(_SYSCFG_CHIPREV_PARTNUMBER_MASK)
+    137            halInfo->deviceFamilyPartNumber = chipRev.partNumber;
+    138          #else
+    139            halInfo->deviceFamilyPartNumber = chipRev.family;
+   \        0xA   0xF89D 0x0002      LDRB     R0,[SP, #+2]
+   \        0xE   0x8020             STRH     R0,[R4, #+0]
+    140          #endif
+    141            halInfo->memoryMapped = 1;
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0x70E0             STRB     R0,[R4, #+3]
+    142          #if defined(_SILICON_LABS_32B_SERIES_2)
+    143            halInfo->writeSize = NVM3_HAL_WRITE_SIZE_32;
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0x70A0             STRB     R0,[R4, #+2]
+    144          #else
+    145            halInfo->writeSize = NVM3_HAL_WRITE_SIZE_16;
+    146          #endif
+    147            halInfo->pageSize = SYSTEM_GetFlashPageSize();
+   \       0x18   0x.... 0x....      BL       SYSTEM_GetFlashPageSize
+   \       0x1C   0x6060             STR      R0,[R4, #+4]
+    148          
+    149            return ECODE_NVM3_OK;
+   \       0x1E   0x2000             MOVS     R0,#+0
+   \       0x20   0xBD16             POP      {R1,R2,R4,PC}
+    150          }
+    151          
+
+   \                                 In section .text, align 2, keep-with-next
+    152          static void nvm3_halFlashAccess(nvm3_HalNvmAccessCode_t access)
+    153          {
+    154            (void)access;
+    155          }
+   \                     nvm3_halFlashAccess: (+1)
+   \        0x0   0x4770             BX       LR
+    156          
+
+   \                                 In section .text, align 2, keep-with-next
+    157          static Ecode_t nvm3_halFlashReadWords(nvm3_HalPtr_t nvmAdr, void *dst, size_t wordCnt)
+    158          {
+   \                     nvm3_halFlashReadWords: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x0014             MOVS     R4,R2
+    159            uint32_t *pSrc = (uint32_t *)nvmAdr;
+   \        0xA   0x002F             MOVS     R7,R5
+    160            uint32_t *pDst = dst;
+   \        0xC   0x46B0             MOV      R8,R6
+    161          
+    162            if ((((size_t)pSrc % 4) == 0) && (((size_t)pDst % 4) == 0)) {
+   \        0xE   0xF017 0x0003      ANDS     R0,R7,#0x3
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD10D             BNE.N    ??nvm3_halFlashReadWords_0
+   \       0x16   0xF018 0x0003      ANDS     R0,R8,#0x3
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD109             BNE.N    ??nvm3_halFlashReadWords_0
+    163              while (wordCnt > 0U) {
+   \                     ??nvm3_halFlashReadWords_1: (+1)
+   \       0x1E   0x2C00             CMP      R4,#+0
+   \       0x20   0xD010             BEQ.N    ??nvm3_halFlashReadWords_2
+    164                *pDst++ = *pSrc++;
+   \       0x22   0x6838             LDR      R0,[R7, #+0]
+   \       0x24   0xF8C8 0x0000      STR      R0,[R8, #+0]
+   \       0x28   0x1D3F             ADDS     R7,R7,#+4
+   \       0x2A   0xF118 0x0804      ADDS     R8,R8,#+4
+    165                wordCnt--;
+   \       0x2E   0x1E64             SUBS     R4,R4,#+1
+   \       0x30   0xE7F5             B.N      ??nvm3_halFlashReadWords_1
+    166              }
+    167            } else {
+    168              (void)memcpy(dst, nvmAdr, wordCnt * sizeof(uint32_t));
+   \                     ??nvm3_halFlashReadWords_0: (+1)
+   \       0x32   0xEA5F 0x0B84      LSLS     R11,R4,#+2
+   \       0x36   0x46A9             MOV      R9,R5
+   \       0x38   0x46B2             MOV      R10,R6
+   \       0x3A   0x465A             MOV      R2,R11
+   \       0x3C   0x4649             MOV      R1,R9
+   \       0x3E   0x4650             MOV      R0,R10
+   \       0x40   0x.... 0x....      BL       __aeabi_memcpy
+    169            }
+    170          
+    171            return ECODE_NVM3_OK;
+   \                     ??nvm3_halFlashReadWords_2: (+1)
+   \       0x44   0x2000             MOVS     R0,#+0
+   \       0x46   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}
+    172          }
+    173          
+
+   \                                 In section .text, align 2, keep-with-next
+    174          static Ecode_t nvm3_halFlashWriteWords(nvm3_HalPtr_t nvmAdr, void const *src, size_t wordCnt)
+    175          {
+   \                     nvm3_halFlashWriteWords: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x4683             MOV      R11,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+    176            const uint32_t *pSrc = src;
+   \        0xA   0x002F             MOVS     R7,R5
+    177            uint32_t *pDst = (uint32_t *)nvmAdr;
+   \        0xC   0x46D8             MOV      R8,R11
+    178            MSC_Status_TypeDef mscSta;
+    179            Ecode_t halSta;
+    180            size_t byteCnt;
+    181          
+    182            byteCnt = wordCnt * sizeof(uint32_t);
+   \        0xE   0xEA5F 0x0986      LSLS     R9,R6,#+2
+    183            mscSta = MSC_WriteWord(pDst, pSrc, byteCnt);
+   \       0x12   0x464A             MOV      R2,R9
+   \       0x14   0x0039             MOVS     R1,R7
+   \       0x16   0x4640             MOV      R0,R8
+   \       0x18   0x.... 0x....      BL       MSC_WriteWord
+   \       0x1C   0x4682             MOV      R10,R0
+    184            halSta = convertMscStatusToNvm3Status(mscSta);
+   \       0x1E   0x4650             MOV      R0,R10
+   \       0x20   0xB240             SXTB     R0,R0
+   \       0x22   0x.... 0x....      BL       convertMscStatusToNvm3Status
+   \       0x26   0x0004             MOVS     R4,R0
+    185          
+    186          #if CHECK_DATA
+    187            if (halSta == ECODE_NVM3_OK) {
+   \       0x28   0x2C00             CMP      R4,#+0
+   \       0x2A   0xD108             BNE.N    ??nvm3_halFlashWriteWords_0
+    188              if (memcmp(pDst, pSrc, byteCnt) != 0) {
+   \       0x2C   0x464A             MOV      R2,R9
+   \       0x2E   0x0039             MOVS     R1,R7
+   \       0x30   0x4640             MOV      R0,R8
+   \       0x32   0x.... 0x....      BL       memcmp
+   \       0x36   0x2800             CMP      R0,#+0
+   \       0x38   0xD001             BEQ.N    ??nvm3_halFlashWriteWords_0
+    189                halSta = ECODE_NVM3_ERR_WRITE_FAILED;
+   \       0x3A   0x....             LDR.N    R0,??DataTable2_2
+   \       0x3C   0x0004             MOVS     R4,R0
+    190              }
+    191            }
+    192          #endif
+    193          
+    194            return halSta;
+   \                     ??nvm3_halFlashWriteWords_0: (+1)
+   \       0x3E   0x0020             MOVS     R0,R4
+   \       0x40   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}
+    195          }
+    196          
+
+   \                                 In section .text, align 2, keep-with-next
+    197          static Ecode_t nvm3_halFlashPageErase(nvm3_HalPtr_t nvmAdr)
+    198          {
+   \                     nvm3_halFlashPageErase: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+    199            MSC_Status_TypeDef mscSta;
+    200            Ecode_t halSta;
+    201          
+    202            mscSta = MSC_ErasePage((uint32_t *)nvmAdr);
+   \        0x4   0x0028             MOVS     R0,R5
+   \        0x6   0x.... 0x....      BL       MSC_ErasePage
+   \        0xA   0x0006             MOVS     R6,R0
+    203            halSta = convertMscStatusToNvm3Status(mscSta);
+   \        0xC   0x0030             MOVS     R0,R6
+   \        0xE   0xB240             SXTB     R0,R0
+   \       0x10   0x.... 0x....      BL       convertMscStatusToNvm3Status
+   \       0x14   0x0004             MOVS     R4,R0
+    204          
+    205          #if CHECK_DATA
+    206            if (halSta == ECODE_NVM3_OK) {
+   \       0x16   0x2C00             CMP      R4,#+0
+   \       0x18   0xD109             BNE.N    ??nvm3_halFlashPageErase_0
+    207              if (!isErased(nvmAdr, SYSTEM_GetFlashPageSize())) {
+   \       0x1A   0x.... 0x....      BL       SYSTEM_GetFlashPageSize
+   \       0x1E   0x0001             MOVS     R1,R0
+   \       0x20   0x0028             MOVS     R0,R5
+   \       0x22   0x.... 0x....      BL       isErased
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD101             BNE.N    ??nvm3_halFlashPageErase_0
+    208                halSta = ECODE_NVM3_ERR_ERASE_FAILED;
+   \       0x2A   0x....             LDR.N    R0,??DataTable2_3
+   \       0x2C   0x0004             MOVS     R4,R0
+    209              }
+    210            }
+    211          #endif
+    212          
+    213            return halSta;
+   \                     ??nvm3_halFlashPageErase_0: (+1)
+   \       0x2E   0x0020             MOVS     R0,R4
+   \       0x30   0xBD70             POP      {R4-R6,PC}
+    214          }
+    215          
+    216          /*******************************************************************************
+    217           ***************************   GLOBAL VARIABLES   ******************************
+    218           ******************************************************************************/
+    219          
+
+   \                                 In section .rodata, align 4
+    220          const nvm3_HalHandle_t nvm3_halFlashHandle = {
+   \                     nvm3_halFlashHandle:
+   \        0x0   0x....'....        DC32 nvm3_halFlashOpen, nvm3_halFlashClose, nvm3_halFlashGetInfo
+   \              0x....'....  
+   \              0x....'....
+   \        0xC   0x....'....        DC32 nvm3_halFlashAccess, nvm3_halFlashPageErase
+   \              0x....'....
+   \       0x14   0x....'....        DC32 nvm3_halFlashReadWords, nvm3_halFlashWriteWords
+   \              0x....'....
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0xF000'E021        DC32     0xf000e021
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0xF000'E024        DC32     0xf000e024
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0xF000'E010        DC32     0xf000e010
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \        0x0   0xF000'E00E        DC32     0xf000e00e
+    221            .open = nvm3_halFlashOpen,                    ///< Set the open function
+    222            .close = nvm3_halFlashClose,                  ///< Set the close function
+    223            .getInfo = nvm3_halFlashGetInfo,              ///< Set the get-info function
+    224            .access = nvm3_halFlashAccess,                ///< Set the access function
+    225            .pageErase = nvm3_halFlashPageErase,          ///< Set the page-erase function
+    226            .readWords = nvm3_halFlashReadWords,          ///< Set the read-words function
+    227            .writeWords = nvm3_halFlashWriteWords,        ///< Set the write-words function
+    228          };
+    229          
+    230          /** @} (end addtogroup nvm3hal) */
+    231          /** @} (end addtogroup nvm3) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   convertMscStatusToNvm3Status
+       8   isErased
+       0   nvm3_halFlashAccess
+       8   nvm3_halFlashClose
+         8   -> MSC_Deinit
+      16   nvm3_halFlashGetInfo
+        16   -> SYSTEM_ChipRevisionGet
+        16   -> SYSTEM_GetFlashPageSize
+      16   nvm3_halFlashOpen
+        16   -> MSC_Init
+      16   nvm3_halFlashPageErase
+        16   -> MSC_ErasePage
+        16   -> SYSTEM_GetFlashPageSize
+        16   -> convertMscStatusToNvm3Status
+        16   -> isErased
+      40   nvm3_halFlashReadWords
+        40   -> __aeabi_memcpy
+      40   nvm3_halFlashWriteWords
+        40   -> MSC_WriteWord
+        40   -> convertMscStatusToNvm3Status
+        40   -> memcmp
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+      30  convertMscStatusToNvm3Status
+      40  isErased
+       2  nvm3_halFlashAccess
+       8  nvm3_halFlashClose
+      34  nvm3_halFlashGetInfo
+      28  nvm3_halFlashHandle
+      14  nvm3_halFlashOpen
+      50  nvm3_halFlashPageErase
+      74  nvm3_halFlashReadWords
+      68  nvm3_halFlashWriteWords
+
+ 
+  28 bytes in section .rodata
+ 336 bytes in section .text
+ 
+ 336 bytes of CODE  memory
+  28 bytes of CONST memory
+
+Errors: none
+Warnings: none

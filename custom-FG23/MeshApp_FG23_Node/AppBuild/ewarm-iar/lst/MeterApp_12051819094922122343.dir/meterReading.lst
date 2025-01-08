@@ -1,0 +1,413 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         26/Nov/2024  12:15:58
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\MeterApp\src\meterReading.c
+#    Command line                 =
+#        -f
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir\meterReading.o.rsp
+#        (C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\MeterApp\src\meterReading.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\MeterApp_12051819094922122343.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\.\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\rpl\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\cpu\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\FLASH\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir\meterReading.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\MeterApp_12051819094922122343.dir\meterReading.lst
+#    Object file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\MeterApp_12051819094922122343.dir\meterReading.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\MeterApp\src\meterReading.c
+      1          /** \file meterReading.c
+      2           *******************************************************************************
+      3           ** \brief Implements the functionality of Meter Integeration.
+      4           **
+      5           ** \cond STD_FILE_HEADER
+      6           **
+      7           ** COPYRIGHT(c) 2023-24 Procubed Innovations Pvt Ltd. 
+      8           ** All rights reserved.
+      9           **
+     10           ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     11           ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     12           ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     13           ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     14           ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     15           ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     16           ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     17           **
+     18           *******************************************************************************
+     19           **  \endcond
+     20           */
+     21          
+     22          /*******************************************************************************
+     23          * File inclusion
+     24          *******************************************************************************/
+     25          #include "common.h"
+     26          #include "meterreading.h"
+     27          #include "queue_latest.h"
+     28          #include "buff_mgmt.h"
+     29          #include "uart_hal.h"
+     30          #include "list_latest.h"
+     31          #include "hw_tmr.h"
+     32          #include "sw_timer.h"
+     33          #include "sm.h"
+     34          #include "hif_utility.h"
+     35          #include "event_manager.h"
+     36          #include "l3_process_interface.h"
+     37          #include "uip.h"
+     38          #include "simple-udp.h"
+     39          
+     40          /******************************************************************************/
+     41          /******************************************************************************/
+     42          /******************************************************************************/
+     43          
+     44          //[Kimbal]
+     45          //extern hif_t hif;
+     46          
+     47          //hif_service_t hif_meter_Communication_service;
+     48          
+     49          /******************************************************************************/
+     50          /******************************************************************************/
+     51          /******************************************************************************/
+     52          
+
+   \                                 In section .text, align 2, keep-with-next
+     53          uint8_t hif2MeterCommunicationInterface( uint8_t* pBuff,uint16_t len)
+     54          {
+   \                     hif2MeterCommunicationInterface: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+     55            //send_udp_pkt(pBuff,len);
+     56            // TO Do 
+     57            
+     58            return 0;
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x4770             BX       LR
+     59          }
+     60          /******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     61          void meter_data_wr_for_read(uint8_t *buff, uint8_t length)
+     62          {
+     63          
+     64             // hif_send_msg_up(buff,length,0xAA);
+     65            // TO Do 
+     66             
+     67                      
+     68          }								
+   \                     meter_data_wr_for_read: (+1)
+   \        0x0   0x4770             BX       LR
+     69          /******************************************************************************/
+     70          //kimbal
+     71          #if 0
+     72          void APPhif_raw_for_meter_interface ()
+     73          {
+     74            
+     75             // hif group ID : 0xAA is used for RAW UART Communication with Meter...
+     76            
+     77            hif_register_parser
+     78               (
+     79                    &hif,
+     80                    &hif_meter_Communication_service,
+     81                    0xAA,
+     82                    hif2MeterCommunicationInterface
+     83               );
+     84          
+     85             
+     86             
+     87            
+     88          }
+     89          
+     90          /******************************************************************************/
+     91          /******************************************************************************/
+     92          
+     93          
+     94          L3_PROCESS_NAME(app_process_manager);
+     95          L3_PROCESS(app_process_manager, "Application Main process");
+     96          
+     97          
+     98          
+     99          void app_thread_start( void )
+    100          {
+    101            l3_process_start(&app_process_manager, NULL);   
+    102          }
+    103          
+    104          static uint8_t application_thread_process_event_handler(l3_process_event_t ev, l3_process_data_t data)
+    105          {
+    106          
+    107            switch (ev)
+    108            {
+    109            case APP_EV_UART_DATA_RCVD :
+    110              {
+    111                
+    112              }
+    113              break;
+    114            case APP_EV_UART_DATA_SEND_OVER_UDP:
+    115              {
+    116                // Receive the data from UART .. now send Over UDP based on data type
+    117              }
+    118              break;
+    119            case APP_EV_UART_DATA_SEND:
+    120              {
+    121                
+    122              }
+    123              break;
+    124            case APP_EV_RECVD_UDP_SEND_TO_UART:
+    125              {
+    126                
+    127              }
+    128              break;    
+    129              
+    130            default:
+    131              break;
+    132              
+    133            }
+    134            return 0;
+    135          }
+    136          
+    137          
+    138          
+    139          L3_PROCESS_THREAD(app_process_manager, ev, data)
+    140          {
+    141            L3_PROCESS_BEGIN();
+    142            
+    143            while(1) 
+    144            {
+    145              L3_PROCESS_YIELD();
+    146              application_thread_process_event_handler(ev, data);
+    147            }
+    148            L3_PROCESS_END();
+    149          }
+    150          
+    151          
+    152          void application_thread_post_event( l3_process_event_t ev, uint8_t* data)
+    153          {
+    154            l3_process_post(&app_process_manager, ev, data);
+    155          }
+    156          
+    157          
+    158          void app_uart_data_recvd_send_over_udp(uint8_t* Appdata)
+    159          {
+    160            application_thread_post_event(APP_EV_UART_DATA_SEND_OVER_UDP, NULL);    
+    161          } 
+    162          
+    163          
+    164          /******************************************************************************/
+    165          static struct simple_udp_connection normal_data_udp_connection;
+    166          #define ADD_PUSH_DATA_PORT_NO  8355
+    167          
+    168          void normal_data_udp_rcv_callback (struct simple_udp_connection *c,
+    169                   const uip_ipaddr_t *sender_addr,
+    170                   uint16_t sender_port,
+    171                   const uip_ipaddr_t *receiver_addr,
+    172                   uint16_t receiver_port,
+    173                   const uint8_t *data,
+    174                   uint16_t datalen)
+    175          {
+    176            
+    177            // received the data from UDP as command to put on Meter or for self process
+    178            // If it is for Meter put it over UART
+    179            
+    180            
+    181          }
+    182          
+    183          void App_UDP_init_register_port ()
+    184          {
+    185              simple_udp_register(&normal_data_udp_connection, ADD_PUSH_DATA_PORT_NO,
+    186                                NULL, ADD_PUSH_DATA_PORT_NO, normal_data_udp_rcv_callback);
+    187              
+    188          }
+    189          
+    190          
+    191          /******************************************************************************/
+    192          
+    193          
+    194          /******************************************************************************/
+    195          
+    196          
+    197          
+    198          /******************************************************************************/
+    199          
+    200          
+    201          
+    202          /******************************************************************************/
+    203          
+    204          
+    205          
+    206          /******************************************************************************/
+    207          
+    208          
+    209          /******************************************************************************/
+    210          
+    211          
+    212          
+    213          
+    214          
+    215          #endif
+    216          /******************************************************************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   hif2MeterCommunicationInterface
+       0   meter_data_wr_for_read
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       6  hif2MeterCommunicationInterface
+       2  meter_data_wr_for_read
+
+ 
+ 8 bytes in section .text
+ 
+ 8 bytes of CODE memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,882 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         02/Dec/2024  12:57:43
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\os\cpu\clock.c
+#    Command line                 =
+#        -f
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\HAL_18155169353449485031.dir\clock.o.rsp
+#        (D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\os\cpu\clock.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\HAL_18155169353449485031.dir
+#        --diag_suppress Pa050 -o
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\HAL_18155169353449485031.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\HAL_18155169353449485031.dir\clock.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\HAL_18155169353449485031.dir\clock.lst
+#    Object file                  =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\HAL_18155169353449485031.dir\clock.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\os\cpu\clock.c
+      1          /** \file clock.c
+      2           **
+      3           ** \brief Implements APIs for Clock.
+      4           **
+      5           ** \cond STD_FILE_HEADER
+      6           **
+      7           ** COPYRIGHT(c) 2023-24 Procubed Innovations Pvt Ltd.
+      8           ** All rights reserved.
+      9           **
+     10           ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     11           ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     12           ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     13           ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     14           ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     15           ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     16           ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     17           **
+     18           *******************************************************************************
+     19           **  \endcond
+     20           */
+     21          
+     22          /*
+     23          ********************************************************************************
+     24          * File inclusion
+     25          ********************************************************************************
+     26          */
+     27          
+     28          #include "StackAppConf.h"
+     29          #include "common.h"
+     30          #include "l3_configuration.h"
+     31          #include "l3_timer_utility.h"
+     32          
+     33          //#include "sys/clock.h"
+     34          //#include "sys/etimer.h"
+     35          //#include "sys/energest.h"
+     36          //#include "sys/clock.h"
+     37          //#include "sys/etimer.h"
+     38          //#include "sys/energest.h"
+     39          
+     40          //#include "sfr-bits.h"
+     41          //#include "cc253x.h"
+     42          //#include "r_cg_macrodriver.h"
+     43          //#include "r_cg_timer.h"
+     44          /* Start user code for include. Do not edit comment generated here */
+     45          /* End user code. Do not edit comment generated here */
+     46          //#include "r_cg_userdefine.h"
+     47          //#include "energest.h"
+     48          #include "em_rtcc.h"
+     49          #include "em_cmu.h"
+     50          #include "time.h"
+     51          
+     52          #define RTC_PRESENT
+     53          
+     54          //#define CLOCK_USING_MAC_SOFT_TIMER
+     55          //#define CLOCK_USING_MAC_SYSTEM_TIMER
+     56          
+     57          #ifdef CLOCK_USING_MAC_SOFT_TIMER
+     58          
+     59          #include "board.h"
+     60          #include "list_latest.h"
+     61          #include "queue_latest.h"
+     62          #include "buff_mgmt.h"
+     63          #include "hw_tmr.h"
+     64          #include "sw_timer.h"
+     65          #include "timer_service.h"
+     66          
+     67          //#include "r_cg_port.h"
+     68          //#include "r_cg_wdt.h"
+     69          #endif
+     70          
+     71          /*
+     72          ** =============================================================================
+     73          ** Private Macro definitions
+     74          ** =============================================================================
+     75          */
+     76          	
+     77          //#define MAX_TICKS (~((clock_time_t)0) / 2)
+     78          #define MAX_TICKS (0x7FFF)
+     79          
+     80          /*
+     81          ** =============================================================================
+     82          ** Private Structures, Unions & enums Type Definitions
+     83          ** =============================================================================
+     84          **/
+     85          
+     86          /* None */
+     87          
+     88          /*
+     89          ** =============================================================================
+     90          ** Private Variable Definitions
+     91          ** =============================================================================
+     92          */
+     93          
+     94          /* Do NOT remove the absolute address and do NOT remove the initialiser here */
+     95          //__xdata __at(0x0000) unsigned long timer_value = 0; // TODO
+     96          static volatile unsigned long timer_value = 0;
+     97          
+     98          /* Sleep timer runs on the 32k RC osc. */
+     99          /* One clock tick is 7.8 ms */
+    100          //#define TICK_VAL (32768/128)  /* 256 */
+    101          #ifdef CLOCK_USING_MAC_SOFT_TIMER
+    102          static sw_tmr_t sw_tmr_for_clock;  
+    103          
+    104          /*
+    105          ** =============================================================================
+    106          ** Private Function Prototypes
+    107          ** =============================================================================
+    108          */
+    109          
+    110          //static void sw_mac_clock_timer_expiry_handler( void* s, void* tmr  );
+    111          #endif
+    112          #define SLEEPTIMER_EVENT_OF (0x01)
+    113          #define SLEEPTIMER_EVENT_COMP (0x02)
+    114          #define SL_SLEEPTIMER_FREQ_DIVIDER  1
+    115          
+    116          /* RTC variables. Used for converting RTC counter to system time */
+    117          static uint16_t   rtcCountsPerSec       = 0;
+                                   ^
+Warning[Pe177]: variable "rtcCountsPerSec" was declared but never referenced
+
+   \                                 In section .bss, align 8
+    118          static time_t     rtcStartTime          = 0;
+   \                     rtcStartTime:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 4
+    119          static uint32_t   rtcOverflowCounter    = 0;
+   \                     rtcOverflowCounter:
+   \        0x0                      DS8 4
+    120          static uint32_t   rtcOverflowInterval   = 0;
+                                   ^
+Warning[Pe177]: variable "rtcOverflowInterval" was declared but never
+          referenced
+    121          static uint32_t   rtcOverflowIntervalR  = 0;
+                                   ^
+Warning[Pe177]: variable "rtcOverflowIntervalR" was declared but never
+          referenced
+    122          
+    123          #define RTC_COUNTS_PER_SEC          32768 
+    124          
+    125          //#define MAX_TICKS (~((clock_time_t)0) / 2)
+    126          
+    127          //#define MAX_TICKS (0x7FFF)
+    128          /*---------------------------------------------------------------------------*/
+    129          /* Do NOT remove the absolute address and do NOT remove the initialiser here */
+    130          //__xdata __at(0x0000) unsigned long timer_value = 0; // TODO
+    131          
+
+   \                                 In section .bss, align 8
+    132          static volatile clock_time_t count = 0; /* Uptime in ticks */
+   \                     count:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 8
+    133          static volatile clock_time_t seconds = 0; /* Uptime in secs */
+   \                     seconds:
+   \        0x0                      DS8 8
+    134          
+    135          /*
+    136          ** =============================================================================
+    137          ** Private Function Definitions
+    138          ** =============================================================================
+    139          */
+    140          
+    141          /* None */
+    142          
+    143          /*
+    144          ** =============================================================================
+    145          ** External Variable Declarations
+    146          ** =============================================================================
+    147          */
+    148          
+    149          //static uint32_t timer_expiry_point = 0;
+    150          //static uint32_t max_ticks = MAX_TICKS;
+    151          
+    152          /*
+    153          ** =============================================================================
+    154          ** External Function Prototypes
+    155          ** =============================================================================
+    156          */
+    157          
+    158          /* None */
+    159          
+    160          /*
+    161          ** =============================================================================
+    162          ** Public Variables Definitions
+    163          ** =============================================================================
+    164          **/
+    165          
+    166          /* None */
+    167          
+    168          /*
+    169          ** =============================================================================
+    170          ** Public Function Prototypes
+    171          ** =============================================================================
+    172          */
+    173          
+    174          /* None */
+    175          
+    176          /*
+    177          ** =============================================================================
+    178          ** Public Function Definitions
+    179          ** =============================================================================
+    180          */
+    181          
+    182          /**
+    183           * One delay is about 0.6 us, so this function delays for len * 0.6 us
+    184           */
+    185          
+    186          /*Umesh :31-01-2018*/
+    187          //static void
+    188          //clock_delay(unsigned int len)
+    189          //{
+    190          //  unsigned int i;
+    191          //  for(i = 0; i< len; i++) {
+    192          //    //_asm(nop);
+    193          //    __no_operation();
+    194          //    __no_operation();
+    195          //    __no_operation();
+    196          //    __no_operation();
+    197          //     /*TBDAnand.. This needs to be difined properly. And also the unit of this 
+    198          //    delay need to be defined*/
+    199          //  }
+    200          //}
+    201          /*this function is not used and called from anywhere*/
+    202          
+    203          /*---------------------------------------------------------------------------*/
+    204          /**
+    205           * Wait for a multiple of ~3906.25 (a tick)
+    206           */
+    207          //static void
+    208          //clock_wait(clock_time_t i)
+    209          //{
+    210          //  clock_time_t start;
+    211          //
+    212          //  start = clock_time();
+    213          //  while(clock_time() - start < (clock_time_t)i);
+    214          //}
+    215          /*this function is not used and called from anywhere*/
+    216          /*---------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+    217          CCIF clock_time_t
+    218          clock_time(void)
+    219          {
+    220            //return RTCC_CounterGet();
+    221            return count;
+   \                     clock_time: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable5
+   \        0x2   0xE9D0 0x0100      LDRD     R0,R1,[R0, #+0]
+   \        0x6   0x4770             BX       LR
+    222          }
+    223          /*---------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+    224          CCIF unsigned long
+    225          clock_seconds(void)
+    226          {
+    227            return seconds;
+   \                     clock_seconds: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable5_1
+   \        0x2   0xE9D0 0x0100      LDRD     R0,R1,[R0, #+0]
+   \        0x6   0x4770             BX       LR
+    228          }
+    229          /*---------------------------------------------------------------------------*/
+    230          /*
+    231           * There is some ambiguity between TI cc2530 software examples and information
+    232           * in the datasheet.
+    233           *
+    234           * TI examples appear to be writing to SLEEPCMD, initialising hardware in a
+    235           * fashion semi-similar to cc2430
+    236           *
+    237           * However, the datasheet claims that those bits in SLEEPCMD are reserved
+    238           *
+    239           * The code here goes by the datasheet (ignore TI examples) and seems to work.
+    240           */
+
+   \                                 In section .text, align 2, keep-with-next
+    241          void
+    242          clock_init(void)
+    243          {
+    244          #ifdef CLOCK_USING_MAC_SOFT_TIMER
+    245            tmr_create_one_shot_timer
+    246            (
+    247                    &(sw_tmr_for_clock),
+    248                    15625U, // usecs
+    249                    (sw_tmr_cb_t) sw_mac_clock_timer_expiry_handler,
+    250                    NULL
+    251            );
+    252            
+    253            tmr_start_relative( &(sw_tmr_for_clock ) );
+    254          #else 
+    255          #ifdef CLOCK_USING_MAC_SYSTEM_TIMER
+    256          
+    257          #else
+    258           //R_TAU0_Channel2_Start();
+    259          #endif
+    260          #endif
+    261            
+    262          }
+   \                     clock_init: (+1)
+   \        0x0   0x4770             BX       LR
+    263          /*---------------------------------------------------------------------------*/
+    264          //#if(0)
+    265          //#ifdef SDCC
+    266          //  void clock_isr(void) __interrupt(ST_VECTOR)
+    267          //#else
+    268          //  #pragma vector=ST_VECTOR
+    269          //  __near_func __interrupt void clock_isr(void)
+    270          //#endif
+    271          //#endif
+    272          //void timer2_interrupt_callback(void)
+    273          //{
+    274          //  DISABLE_INTERRUPTS();
+    275          //  ENERGEST_ON(ENERGEST_TYPE_IRQ);
+    276          //
+    277          //  /*
+    278          //   * If the Sleep timer throws an interrupt while we are powering down to
+    279          //   * PM1, we need to abort the power down. Clear SLEEP.MODE, this will signal
+    280          //   * main() to abort the PM1 transition
+    281          //   *
+    282          //   * On cc2430 this would be:
+    283          //   * SLEEPCMD &= 0xFC;
+    284          //   */
+    285          //
+    286          //  /*
+    287          //   * Read value of the ST0:ST1:ST2, add TICK_VAL and write it back.
+    288          //   * Next interrupt occurs after the current time + TICK_VAL
+    289          //   */
+    290          ////  timer_value = ST0;
+    291          ////  timer_value += ((unsigned long int) ST1) << 8;
+    292          ////  timer_value += ((unsigned long int) ST2) << 16;
+    293          ////  timer_value += TICK_VAL;
+    294          ////  ST2 = (unsigned char) (timer_value >> 16);
+    295          ////  ST1 = (unsigned char) (timer_value >> 8);
+    296          ////  ST0 = (unsigned char) timer_value;
+    297          //  
+    298          //  //Increment after every 3906 us
+    299          //  
+    300          //     if( P1 & 0x20 )//check if set
+    301          //     {
+    302          //       //reset
+    303          //       P1 &= 0xDF;
+    304          //       
+    305          //     }
+    306          //     else
+    307          //     {
+    308          //        P1 |= 0x20;
+    309          //     }
+    310          //  
+    311          //  ++count;
+    312          //  
+    313          //  /* Make sure the CLOCK_CONF_SECOND is a power of two, to ensure
+    314          //     that the modulo operation below becomes a logical and and not
+    315          //     an expensive divide. Algorithm from Wikipedia:
+    316          //     http://en.wikipedia.org/wiki/Power_of_two */
+    317          //#if (CLOCK_CONF_SECOND & (CLOCK_CONF_SECOND - 1)) != 0
+    318          //#error CLOCK_CONF_SECOND must be a power of two (i.e., 1, 2, 4, 8, 16, 32, 64, ...).
+    319          //#error Change CLOCK_CONF_SECOND in contiki-conf.h.
+    320          //#endif
+    321          //  if(count % CLOCK_CONF_SECOND == 0) {
+    322          //    ++seconds;//3906 us * 256(CLOCK_CONF_SECOND)= 1 sec
+    323          //  }
+    324          //  if( !etimer_poll_event_pending() )
+    325          //  {
+    326          //        if(etimer_pending()
+    327          //          && (etimer_next_expiration_time() - count - 1) > MAX_TICKS) {
+    328          //        etimer_request_poll();
+    329          //  }
+    330          //
+    331          //  }
+    332          //  
+    333          ////  STIF = 0; /* IRCON.STIF */
+    334          //  TMIF02 = 0U;    /* clear INTTM02 interrupt flag */// TBDAnand... this may not be required since it is a interval timer
+    335          //  ENERGEST_OFF(ENERGEST_TYPE_IRQ);
+    336          //  ENABLE_INTERRUPTS();
+    337          //}
+    338          /*----------------------------------------------------------------------------*/
+    339          
+    340          void handle_phy_busy_rx_error (void);
+    341          
+    342          #ifdef CLOCK_USING_MAC_SYSTEM_TIMER
+
+   \                                 In section .text, align 2, keep-with-next
+    343          void clock_tick_processor( void )
+    344          {
+   \                     clock_tick_processor: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    345            ++count;
+   \        0x2   0x....             LDR.N    R2,??DataTable5
+   \        0x4   0xE9D2 0x0100      LDRD     R0,R1,[R2, #+0]
+   \        0x8   0x1C40             ADDS     R0,R0,#+1
+   \        0xA   0xF171 0x31FF      SBCS     R1,R1,#+4294967295
+   \        0xE   0xE9C2 0x0100      STRD     R0,R1,[R2, #+0]
+    346            if(count % CLOCK_CONF_SECOND == 0) {
+   \       0x12   0xE9D2 0x0100      LDRD     R0,R1,[R2, #+0]
+   \       0x16   0xF44F 0x727A      MOV      R2,#+1000
+   \       0x1A   0x2300             MOVS     R3,#+0
+   \       0x1C   0x.... 0x....      BL       __aeabi_uldivmod
+   \       0x20   0x2B00             CMP      R3,#+0
+   \       0x22   0xD10B             BNE.N    ??clock_tick_processor_0
+   \       0x24   0x2A00             CMP      R2,#+0
+   \       0x26   0xD109             BNE.N    ??clock_tick_processor_0
+    347              ++seconds;
+   \       0x28   0x....             LDR.N    R2,??DataTable5_1
+   \       0x2A   0xE9D2 0x0100      LDRD     R0,R1,[R2, #+0]
+   \       0x2E   0x1C40             ADDS     R0,R0,#+1
+   \       0x30   0xF171 0x31FF      SBCS     R1,R1,#+4294967295
+   \       0x34   0xE9C2 0x0100      STRD     R0,R1,[R2, #+0]
+    348              handle_phy_busy_rx_error ();
+   \       0x38   0x.... 0x....      BL       handle_phy_busy_rx_error
+    349            }
+    350            
+    351            if(l3_etimer_pending()) 
+   \                     ??clock_tick_processor_0: (+1)
+   \       0x3C   0x.... 0x....      BL       l3_etimer_pending
+   \       0x40   0x2800             CMP      R0,#+0
+   \       0x42   0xD001             BEQ.N    ??clock_tick_processor_1
+    352            {
+    353          //    timer_expiry_point = etimer_next_expiration_time() - count - 1;
+    354          //    if( (timer_expiry_point) > max_ticks )
+    355                l3_etimer_request_poll();
+   \       0x44   0x.... 0x....      BL       l3_etimer_request_poll
+    356            }
+    357          }
+   \                     ??clock_tick_processor_1: (+1)
+   \       0x48   0xBD01             POP      {R0,PC}
+    358          #endif
+    359          /*---------------------------------------------------------------------------*/
+    360          
+    361          /*-------------------------Debdeep added for RTC------------------------------*/
+    362          //void rtcSetup(void)
+    363          //{
+    364          //
+    365          //  RTCC_Init_TypeDef rtcInit;
+    366          //
+    367          //  /* Configure RTC */
+    368          //  rtcInit.debugRun = false;
+    369          //  rtcInit.comp0Top = false;
+    370          //  rtcInit.enable = false;
+    371          //
+    372          //  /* Initialize RTC */
+    373          //  RTCC_Init(&rtcInit);
+    374          //
+    375          //  /* Enable COMP0 interrupt to update the display */
+    376          //  /* Enable overflow interrupt to keep track of overflows */
+    377          //  RTCC_IntEnable(RTC_IEN_COMP0 | RTC_IEN_OF);
+    378          //  
+    379          //  /* Enable RTC */
+    380          //  RTCC_Enable(true);
+    381          //}
+    382          
+    383          /***************************************************************************//**
+    384           * @brief Set the epoch offset
+    385           *
+    386           * @param[in] timeptr
+    387           *   Calendar struct which is converted to unix time and used as new epoch 
+    388           *   offset
+    389           *
+    390           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    391          void clockSetStartCalendar(struct tm * timeptr)
+    392          {
+   \                     clockSetStartCalendar: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    393            rtcStartTime = mktime(timeptr); 
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       mktime
+   \        0xA   0x....             LDR.N    R2,??DataTable5_2
+   \        0xC   0xE9C2 0x0100      STRD     R0,R1,[R2, #+0]
+    394          }
+   \       0x10   0xBD10             POP      {R4,PC}
+    395          
+    396          extern void mem_rev_cpy(uint8_t* dest, uint8_t* src, uint16_t len );
+
+   \                                 In section .text, align 2, keep-with-next
+    397          void set_rtc_start_time (uint8_t *data, uint16_t len)
+    398          {
+   \                     set_rtc_start_time: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x2108             MOVS     R1,#+8
+   \        0xA   0x2200             MOVS     R2,#+0
+   \        0xC   0x466E             MOV      R6,SP
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memset
+    399            uint8_t time_now[8] = {0};
+    400            
+    401            memcpy (time_now, data, len);
+   \       0x14   0x46A8             MOV      R8,R5
+   \       0x16   0xFA1F 0xF888      UXTH     R8,R8
+   \       0x1A   0x0026             MOVS     R6,R4
+   \       0x1C   0x466F             MOV      R7,SP
+   \       0x1E   0x4642             MOV      R2,R8
+   \       0x20   0x0031             MOVS     R1,R6
+   \       0x22   0x0038             MOVS     R0,R7
+   \       0x24   0x.... 0x....      BL       __aeabi_memcpy
+    402            mem_rev_cpy ((uint8_t *)&rtcStartTime, time_now + 4, sizeof (rtcStartTime));
+   \       0x28   0x2208             MOVS     R2,#+8
+   \       0x2A   0xA901             ADD      R1,SP,#+4
+   \       0x2C   0x....             LDR.N    R0,??DataTable5_2
+   \       0x2E   0x.... 0x....      BL       mem_rev_cpy
+    403          //  rtcStartTime = time_now;
+    404          }
+   \       0x32   0xE8BD 0x81F3      POP      {R0,R1,R4-R8,PC}
+    405          
+
+   \                                 In section .text, align 2, keep-with-next
+    406          void rtc_init (void)
+    407          {
+    408          //   RTCC_Init_TypeDef rtcc_init   = RTCC_INIT_DEFAULT;
+    409          //  RTCC_CCChConf_TypeDef channel = RTCC_CH_INIT_COMPARE_DEFAULT;
+    410          //
+    411          //  CMU_ClockEnable(cmuClock_RTCC, true);
+    412          //
+    413          //  rtcc_init.enable = false;
+    414          //  rtcc_init.presc = (RTCC_CntPresc_TypeDef)(CMU_PrescToLog2(SL_SLEEPTIMER_FREQ_DIVIDER - 1));
+    415          //#if (SL_SLEEPTIMER_DEBUGRUN == 1)
+    416          //  rtcc_init.debugRun = true;
+    417          //#endif
+    418          //
+    419          //  RTCC_Init(&rtcc_init);
+    420          //
+    421          //  // Compare channel starts disabled and is enabled only when compare match interrupt is enabled.
+    422          //  channel.chMode = rtccCapComChModeOff;
+    423          //  RTCC_ChannelInit(1u, &channel);
+    424          //
+    425          //  RTCC_IntDisable(_RTCC_IEN_MASK);
+    426          //  RTCC_IntClear(_RTCC_IF_MASK);
+    427          //  RTCC_CounterSet(0u);
+    428          //
+    429          //  RTCC_Enable(true);
+    430          //
+    431          //  NVIC_ClearPendingIRQ(RTCC_IRQn);
+    432          //  NVIC_EnableIRQ(RTCC_IRQn);
+    433          }
+   \                     rtc_init: (+1)
+   \        0x0   0x4770             BX       LR
+    434          
+
+   \                                 In section .bss, align 4
+    435          uint32_t rtc_check = 0;
+   \                     rtc_check:
+   \        0x0                      DS8 4
+    436          
+
+   \                                 In section .text, align 2, keep-with-next
+    437          void check_rtc ()
+    438          {
+    439            //rtc_check = ( RTC->CNT / rtcCountsPerSec );
+    440          }
+   \                     check_rtc: (+1)
+   \        0x0   0x4770             BX       LR
+    441          
+
+   \                                 In section .text, align 2, keep-with-next
+    442          time_t __time32 (time_t * timer)
+    443          {
+   \                     __time32: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+    444            time_t t;
+    445          
+    446            /* Add the time offset */
+    447          //  t = rtcStartTime;
+    448          //
+    449          //  /* Add time based on number of counter overflows*/
+    450          //  t += rtcOverflowCounter * rtcOverflowInterval;
+    451          //
+    452          //  /* Add remainder if the overflow interval is not an integer */   
+    453          //  if ( rtcOverflowIntervalR != 0 )
+    454          //  {
+    455          //    t += (rtcOverflowCounter * rtcOverflowIntervalR) / rtcCountsPerSec;
+    456          //  }
+    457          //  
+    458          //  /* Add the number of seconds for RTC */
+    459          //  t += ( RTCC->CNT / rtcCountsPerSec );
+    460          //
+    461          //  /* Copy system time to timer if not NULL*/  
+    462          //  if ( timer != NULL )
+    463          //  {
+    464          //    *timer = t;
+    465          //  }
+    466          
+    467            return t;
+                          ^
+Warning[Go029]: Variable "t" is used uninitialized at this location in the
+          sourcecode.
+   \        0x2   0x4770             BX       LR
+    468          }
+    469          
+    470          /***************************************************************************//**
+    471           * @brief Call this function on counter overflow to let CLOCK know how many
+    472           *        overflows has occured since start time
+    473           *
+    474           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    475          uint32_t clockOverflow(void)
+    476          {
+    477            rtcOverflowCounter++;
+   \                     clockOverflow: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable5_3
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+   \        0x4   0x1C40             ADDS     R0,R0,#+1
+   \        0x6   0x6008             STR      R0,[R1, #+0]
+    478            return rtcOverflowCounter;
+   \        0x8   0x6808             LDR      R0,[R1, #+0]
+   \        0xA   0x4770             BX       LR
+    479          }
+    480          
+    481          /***************************************************************************//**
+    482           * @brief RTC Interrupt Handler
+    483           *
+    484           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    485          void RTCC_IRQHandler(void)
+    486          {
+    487          //  uint8_t local_flag = 0;
+    488          //  uint32_t irq_flag;
+    489          //
+    490          //  irq_flag = RTCC_IntGet();
+    491          //
+    492          //  if (irq_flag & RTCC_IF_OF) {
+    493          //    local_flag |= SLEEPTIMER_EVENT_OF;
+    494          //  }
+    495          //  if (irq_flag & RTCC_IF_CC1) {
+    496          //    local_flag |= SLEEPTIMER_EVENT_COMP;
+    497          //  }
+    498          //  RTCC_IntClear(irq_flag & (RTCC_IF_OF | RTCC_IF_CC1 | RTCC_IF_CC0));
+    499          //  clock_tick_processor();
+    500          }
+   \                     RTCC_IRQHandler: (+1)
+   \        0x0   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \        0x0   0x....'....        DC32     count
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \        0x0   0x....'....        DC32     seconds
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \        0x0   0x....'....        DC32     rtcStartTime
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \        0x0   0x....'....        DC32     rtcOverflowCounter
+    501          /*----------------------------------------------------------------------------*/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   RTCC_IRQHandler
+       0   __time32
+       0   check_rtc
+       0   clockOverflow
+       8   clockSetStartCalendar
+         8   -> mktime
+       0   clock_init
+       0   clock_seconds
+       8   clock_tick_processor
+         8   -> handle_phy_busy_rx_error
+         8   -> l3_etimer_pending
+         8   -> l3_etimer_request_poll
+         8 __aeabi_uldivmod
+       0   clock_time
+       0   rtc_init
+      32   set_rtc_start_time
+        32   -> __aeabi_memcpy
+        32   -> __aeabi_memset
+        32   -> mem_rev_cpy
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       2  RTCC_IRQHandler
+       4  __time32
+       2  check_rtc
+      12  clockOverflow
+      18  clockSetStartCalendar
+       2  clock_init
+       8  clock_seconds
+      74  clock_tick_processor
+       8  clock_time
+       8  count
+       4  rtcOverflowCounter
+       8  rtcStartTime
+       4  rtc_check
+       2  rtc_init
+       8  seconds
+      54  set_rtc_start_time
+
+ 
+  32 bytes in section .bss
+ 202 bytes in section .text
+ 
+ 202 bytes of CODE memory
+  32 bytes of DATA memory
+
+Errors: none
+Warnings: 4

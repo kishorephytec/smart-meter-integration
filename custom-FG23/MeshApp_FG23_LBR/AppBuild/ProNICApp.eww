@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\..\os\build\contiki_os.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\L3\build\L3.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\MAC\build\MAC_lib.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\PHY\build\PHY_Lib.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\ProNICApp.ewp</path>
+    </project>
+    <batchBuild>
+        <batchDefinition>
+            <name>App_Build</name>
+            <member>
+                <project>PHY_Lib</project>
+                <configuration>Debug</configuration>
+            </member>
+            <member>
+                <project>MAC_lib</project>
+                <configuration>Debug</configuration>
+            </member>
+            <member>
+                <project>contiki_os</project>
+                <configuration>Debug</configuration>
+            </member>
+            <member>
+                <project>L3</project>
+                <configuration>Debug</configuration>
+            </member>
+            <member>
+                <project>ProNICApp</project>
+                <configuration>Default</configuration>
+            </member>
+        </batchDefinition>
+    </batchBuild>
+</workspace>

@@ -1,0 +1,313 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         02/Dec/2024  12:57:46
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\autogen\sl_device_init_clocks.c
+#    Command line      =
+#        -f
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\autogen_4020999569460366166.dir\sl_device_init_clocks.o.rsp
+#        (D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\autogen\sl_device_init_clocks.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\autogen_4020999569460366166.dir
+#        --diag_suppress Pa050 -o
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\autogen_4020999569460366166.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\autogen_4020999569460366166.dir\sl_device_init_clocks.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\autogen_4020999569460366166.dir\sl_device_init_clocks.lst
+#    Object file       =
+#        D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\autogen_4020999569460366166.dir\sl_device_init_clocks.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\FG23\FG23_final_code\MeshApp_FG23_LBR\Kimbal_MeshApp_FG23_LBR\SiliconLabs\autogen\sl_device_init_clocks.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Device initialization for clocks.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          #include "sl_device_init_clocks.h"
+     31          
+     32          #include "em_cmu.h"
+     33          
+
+   \                                 In section .text, align 4, keep-with-next
+     34          sl_status_t sl_device_init_clocks(void)
+     35          {
+   \                     sl_device_init_clocks: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     36            CMU_CLOCK_SELECT_SET(SYSCLK, HFXO);
+   \        0x2   0x.... 0x....      BL       sli_em_cmu_HFXOSetForceEnable
+   \        0x6   0x.... 0x....      BL       sli_em_cmu_SYSCLKInitPreClockSelect
+   \        0xA   0x4A1B             LDR.N    R2,??sl_device_init_clocks_0
+   \        0xC   0x2003             MOVS     R0,#+3
+   \        0xE   0x6811             LDR      R1,[R2, #+0]
+   \       0x10   0xF360 0x0102      BFI      R1,R0,#+0,#+3
+   \       0x14   0x6011             STR      R1,[R2, #+0]
+   \       0x16   0x.... 0x....      BL       sli_em_cmu_SYSCLKInitPostClockSelect
+   \       0x1A   0x4818             LDR.N    R0,??sl_device_init_clocks_0+4
+   \       0x1C   0x6800             LDR      R0,[R0, #+0]
+   \       0x1E   0x01C0             LSLS     R0,R0,#+7
+   \       0x20   0xD403             BMI.N    ??sl_device_init_clocks_1
+   \       0x22   0xF45F 0x3080      MOVS     R0,#+65536
+   \       0x26   0x4916             LDR.N    R1,??sl_device_init_clocks_0+8
+   \       0x28   0x6008             STR      R0,[R1, #+0]
+     37          #if defined(_CMU_EM01GRPACLKCTRL_MASK)
+     38            CMU_CLOCK_SELECT_SET(EM01GRPACLK, HFXO);
+   \                     ??sl_device_init_clocks_1: (+1)
+   \       0x2A   0x4A16             LDR.N    R2,??sl_device_init_clocks_0+12
+   \       0x2C   0x2002             MOVS     R0,#+2
+   \       0x2E   0x6811             LDR      R1,[R2, #+0]
+   \       0x30   0xF360 0x0102      BFI      R1,R0,#+0,#+3
+   \       0x34   0x6011             STR      R1,[R2, #+0]
+     39          #endif
+     40          #if defined(_CMU_EM01GRPBCLKCTRL_MASK)
+     41            CMU_CLOCK_SELECT_SET(EM01GRPBCLK, HFXO);
+     42          #endif
+     43          #if defined(_CMU_EM01GRPCCLKCTRL_MASK)
+     44            CMU_CLOCK_SELECT_SET(EM01GRPCCLK, HFXO);
+   \       0x36   0x4A14             LDR.N    R2,??sl_device_init_clocks_0+16
+   \       0x38   0x6811             LDR      R1,[R2, #+0]
+   \       0x3A   0xF360 0x0102      BFI      R1,R0,#+0,#+3
+   \       0x3E   0x6011             STR      R1,[R2, #+0]
+     45          #endif
+     46            CMU_CLOCK_SELECT_SET(EM23GRPACLK, LFRCO);
+   \       0x40   0x4912             LDR.N    R1,??sl_device_init_clocks_0+20
+   \       0x42   0x2001             MOVS     R0,#+1
+   \       0x44   0x680A             LDR      R2,[R1, #+0]
+   \       0x46   0xF360 0x0201      BFI      R2,R0,#+0,#+2
+   \       0x4A   0x600A             STR      R2,[R1, #+0]
+     47            CMU_CLOCK_SELECT_SET(EM4GRPACLK, LFRCO);
+   \       0x4C   0x4910             LDR.N    R1,??sl_device_init_clocks_0+24
+   \       0x4E   0x680A             LDR      R2,[R1, #+0]
+   \       0x50   0xF360 0x0201      BFI      R2,R0,#+0,#+2
+   \       0x54   0x600A             STR      R2,[R1, #+0]
+     48          #if defined(RTCC_PRESENT)
+     49            CMU_CLOCK_SELECT_SET(RTCC, LFRCO);
+     50          #endif
+     51          #if defined(SYSRTC_PRESENT)
+     52            CMU_CLOCK_SELECT_SET(SYSRTC, LFRCO);
+   \       0x56   0x4A0F             LDR.N    R2,??sl_device_init_clocks_0+28
+   \       0x58   0x6811             LDR      R1,[R2, #+0]
+   \       0x5A   0xF360 0x0101      BFI      R1,R0,#+0,#+2
+   \       0x5E   0x6011             STR      R1,[R2, #+0]
+     53          #endif
+     54            CMU_CLOCK_SELECT_SET(WDOG0, LFRCO);
+   \       0x60   0x4A0D             LDR.N    R2,??sl_device_init_clocks_0+32
+   \       0x62   0x6811             LDR      R1,[R2, #+0]
+   \       0x64   0xF360 0x0102      BFI      R1,R0,#+0,#+3
+   \       0x68   0x6011             STR      R1,[R2, #+0]
+     55          #if WDOG_COUNT > 1
+     56            CMU_CLOCK_SELECT_SET(WDOG1, LFRCO);
+   \       0x6A   0x4A0C             LDR.N    R2,??sl_device_init_clocks_0+36
+   \       0x6C   0x6811             LDR      R1,[R2, #+0]
+   \       0x6E   0xF360 0x0102      BFI      R1,R0,#+0,#+3
+   \       0x72   0x6011             STR      R1,[R2, #+0]
+     57          #endif
+     58          
+     59            return SL_STATUS_OK;
+   \       0x74   0x2000             MOVS     R0,#+0
+   \       0x76   0xBD02             POP      {R1,PC}
+   \                     ??sl_device_init_clocks_0:
+   \       0x78   0x5000'8070        DC32     0x50008070
+   \       0x7C   0x5A00'4028        DC32     0x5a004028
+   \       0x80   0x5A00'6028        DC32     0x5a006028
+   \       0x84   0x5000'8120        DC32     0x50008120
+   \       0x88   0x5000'8128        DC32     0x50008128
+   \       0x8C   0x5000'8140        DC32     0x50008140
+   \       0x90   0x5000'8160        DC32     0x50008160
+   \       0x94   0x5000'8240        DC32     0x50008240
+   \       0x98   0x5000'8200        DC32     0x50008200
+   \       0x9C   0x5000'8208        DC32     0x50008208
+     60          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   sl_device_init_clocks
+         8   -> sli_em_cmu_HFXOSetForceEnable
+         8   -> sli_em_cmu_SYSCLKInitPostClockSelect
+         8   -> sli_em_cmu_SYSCLKInitPreClockSelect
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     160  sl_device_init_clocks
+
+ 
+ 160 bytes in section .text
+ 
+ 160 bytes of CODE memory
+
+Errors: none
+Warnings: none

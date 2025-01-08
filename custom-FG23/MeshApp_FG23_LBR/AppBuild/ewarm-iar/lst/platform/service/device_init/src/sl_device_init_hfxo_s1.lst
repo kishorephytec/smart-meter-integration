@@ -1,0 +1,380 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         30/Apr/2024  13:12:20
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\device_init\src\sl_device_init_hfxo_s1.c
+#    Command line      =
+#        -f
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\service\device_init\src\sl_device_init_hfxo_s1.lst.rsp
+#        (D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\device_init\src\sl_device_init_hfxo_s1.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\service\device_init\src
+#        --diag_suppress Pa050 -o
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\device_init\src
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\device_init\src\sl_device_init_hfxo_s1.o.d
+#    Locale            =  C
+#    List file         =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\service\device_init\src\sl_device_init_hfxo_s1.lst
+#    Object file       =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\device_init\src\sl_device_init_hfxo_s1.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\device_init\src\sl_device_init_hfxo_s1.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Device initialization for HFXO.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          #include "sl_device_init_hfxo.h"
+     31          #include "sl_device_init_hfxo_config.h"
+     32          
+     33          #include "em_cmu.h"
+     34          
+     35          // Fetch CTUNE value from USERDATA page as a manufacturing token
+     36          #define MFG_CTUNE_ADDR 0x0FE00100UL
+     37          #define MFG_CTUNE_VAL  (*((uint16_t *) (MFG_CTUNE_ADDR)))
+     38          
+
+   \                                 In section .text, align 4, keep-with-next
+     39          sl_status_t sl_device_init_hfxo(void)
+     40          {
+   \                     sl_device_init_hfxo: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0xB08A             SUB      SP,SP,#+40
+     41            CMU_HFXOInit_TypeDef hfxoInit = CMU_HFXOINIT_DEFAULT;
+   \        0x4   0x4668             MOV      R0,SP
+   \        0x6   0x4923             LDR.N    R1,??sl_device_init_hfxo_0
+   \        0x8   0x2228             MOVS     R2,#+40
+   \        0xA   0x.... 0x....      BL       __aeabi_memcpy4
+     42            hfxoInit.mode = SL_DEVICE_INIT_HFXO_MODE;
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0x9007             STR      R0,[SP, #+28]
+     43          
+     44            if (SL_DEVICE_INIT_HFXO_MODE == cmuHfxoOscMode_ExternalSine) {
+     45              hfxoInit = (CMU_HFXOInit_TypeDef)CMU_HFXOINIT_EXTERNAL_SINE;
+     46            }
+     47          
+     48            int ctune = -1;
+   \       0x12   0xF05F 0x34FF      MOVS     R4,#+4294967295
+     49          
+     50          #if defined(_DEVINFO_MODXOCAL_HFXOCTUNEXIANA_MASK)
+     51            // Use HFXO tuning value from DEVINFO if available (PCB modules)
+     52            if ((DEVINFO->MODULEINFO & _DEVINFO_MODULEINFO_HFXOCALVAL_MASK) == 0) {
+   \       0x16   0x4820             LDR.N    R0,??sl_device_init_hfxo_0+0x4
+   \       0x18   0x6800             LDR      R0,[R0, #+0]
+   \       0x1A   0x0300             LSLS     R0,R0,#+12
+   \       0x1C   0xD404             BMI.N    ??sl_device_init_hfxo_1
+     53              ctune = DEVINFO->MODXOCAL & _DEVINFO_MODXOCAL_HFXOCTUNEXIANA_MASK;
+   \       0x1E   0x481F             LDR.N    R0,??sl_device_init_hfxo_0+0x8
+   \       0x20   0x6800             LDR      R0,[R0, #+0]
+   \       0x22   0xF000 0x00FF      AND      R0,R0,#0xFF
+   \       0x26   0x0004             MOVS     R4,R0
+     54            }
+     55          #endif
+     56          
+     57            // Use HFXO tuning value from MFG token in UD page if not already set
+     58            if ((ctune == -1) && (MFG_CTUNE_VAL != 0xFFFF)) {
+   \                     ??sl_device_init_hfxo_1: (+1)
+   \       0x28   0xF114 0x0F01      CMN      R4,#+1
+   \       0x2C   0xD10A             BNE.N    ??sl_device_init_hfxo_2
+   \       0x2E   0x481C             LDR.N    R0,??sl_device_init_hfxo_0+0xC
+   \       0x30   0x8800             LDRH     R0,[R0, #+0]
+   \       0x32   0xF64F 0x71FF      MOVW     R1,#+65535
+   \       0x36   0xB280             UXTH     R0,R0
+   \       0x38   0x4288             CMP      R0,R1
+   \       0x3A   0xD003             BEQ.N    ??sl_device_init_hfxo_2
+     59              ctune = MFG_CTUNE_VAL;
+   \       0x3C   0x4818             LDR.N    R0,??sl_device_init_hfxo_0+0xC
+   \       0x3E   0x8800             LDRH     R0,[R0, #+0]
+   \       0x40   0xB280             UXTH     R0,R0
+   \       0x42   0x0004             MOVS     R4,R0
+     60            }
+     61          
+     62            // Use HFXO tuning value from configuration header as fallback
+     63            if (ctune == -1) {
+   \                     ??sl_device_init_hfxo_2: (+1)
+   \       0x44   0xF114 0x0F01      CMN      R4,#+1
+   \       0x48   0xD101             BNE.N    ??sl_device_init_hfxo_3
+     64              ctune = SL_DEVICE_INIT_HFXO_CTUNE;
+   \       0x4A   0x208C             MOVS     R0,#+140
+   \       0x4C   0x0004             MOVS     R4,R0
+     65            }
+     66          
+     67            // Configure CTUNE XI and XO.
+     68            if (ctune != -1) {
+   \                     ??sl_device_init_hfxo_3: (+1)
+   \       0x4E   0xF114 0x0F01      CMN      R4,#+1
+   \       0x52   0xD013             BEQ.N    ??sl_device_init_hfxo_4
+     69              hfxoInit.ctuneXiAna = (uint8_t)ctune;
+   \       0x54   0x0020             MOVS     R0,R4
+   \       0x56   0xF88D 0x0019      STRB     R0,[SP, #+25]
+     70          
+     71              // Ensure CTUNE XO plus a delta is within the correct range. The delta accounts for internal chip
+     72              // load imbalance on some series 2 chips.
+     73              ctune += CMU_HFXOCTuneDeltaGet();
+   \       0x5A   0x.... 0x....      BL       CMU_HFXOCTuneDeltaGet
+   \       0x5E   0x1900             ADDS     R0,R0,R4
+   \       0x60   0x0004             MOVS     R4,R0
+     74              if (ctune < 0) {
+   \       0x62   0x2C00             CMP      R4,#+0
+   \       0x64   0xD502             BPL.N    ??sl_device_init_hfxo_5
+     75                ctune = 0;
+   \       0x66   0x2000             MOVS     R0,#+0
+   \       0x68   0x0004             MOVS     R4,R0
+   \       0x6A   0xE004             B.N      ??sl_device_init_hfxo_6
+     76              } else if (ctune > ((int)(_HFXO_XTALCTRL_CTUNEXOANA_MASK >> _HFXO_XTALCTRL_CTUNEXOANA_SHIFT))) {
+   \                     ??sl_device_init_hfxo_5: (+1)
+   \       0x6C   0xF5B4 0x7F80      CMP      R4,#+256
+   \       0x70   0xDB01             BLT.N    ??sl_device_init_hfxo_6
+     77                ctune = (int)(_HFXO_XTALCTRL_CTUNEXOANA_MASK >> _HFXO_XTALCTRL_CTUNEXOANA_SHIFT);
+   \       0x72   0x20FF             MOVS     R0,#+255
+   \       0x74   0x0004             MOVS     R4,R0
+     78              }
+     79              hfxoInit.ctuneXoAna = (uint8_t)ctune;
+   \                     ??sl_device_init_hfxo_6: (+1)
+   \       0x76   0x0020             MOVS     R0,R4
+   \       0x78   0xF88D 0x0018      STRB     R0,[SP, #+24]
+     80            }
+     81          
+     82            SystemHFXOClockSet(SL_DEVICE_INIT_HFXO_FREQ);
+   \                     ??sl_device_init_hfxo_4: (+1)
+   \       0x7C   0x4809             LDR.N    R0,??sl_device_init_hfxo_0+0x10
+   \       0x7E   0x.... 0x....      BL       SystemHFXOClockSet
+     83            CMU_HFXOInit(&hfxoInit);
+   \       0x82   0x4668             MOV      R0,SP
+   \       0x84   0x.... 0x....      BL       CMU_HFXOInit
+     84            CMU_HFXOPrecisionSet(SL_DEVICE_INIT_HFXO_PRECISION);
+   \       0x88   0x2032             MOVS     R0,#+50
+   \       0x8A   0x.... 0x....      BL       CMU_HFXOPrecisionSet
+     85          
+     86            return SL_STATUS_OK;
+   \       0x8E   0x2000             MOVS     R0,#+0
+   \       0x90   0xB00A             ADD      SP,SP,#+40
+   \       0x92   0xBD10             POP      {R4,PC}
+   \                     ??sl_device_init_hfxo_0:
+   \       0x94   0x....'....        DC32     ?_0
+   \       0x98   0x0FE0'814C        DC32     0xfe0814c
+   \       0x9C   0x0FE0'8150        DC32     0xfe08150
+   \       0xA0   0x0FE0'0100        DC32     0xfe00100
+   \       0xA4   0x0253'17C0        DC32     0x25317c0
+     87          }
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x0000'000B        DC32 11, 12, 3
+
+   \              0x0000'000C  
+
+   \              0x0000'0003
+   \        0xC   0x00 0x00          DC8 0, 0, 32, 32
+
+   \              0x20 0x20
+   \       0x10   0x0000'0000        DC32 0, 2
+
+   \              0x0000'0002
+   \       0x18   0x3C 0x3C          DC8 60, 60, 60, 0
+
+   \              0x3C 0x00
+   \       0x1C   0x0000'0000        DC32 0
+   \       0x20   0x00 0x00          DC8 0, 0, 0, 0, 0, 0
+
+   \              0x00 0x00    
+
+   \              0x00 0x00
+   \       0x26                      DS8 2
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      48   sl_device_init_hfxo
+        48   -> CMU_HFXOCTuneDeltaGet
+        48   -> CMU_HFXOInit
+        48   -> CMU_HFXOPrecisionSet
+        48   -> SystemHFXOClockSet
+        48   -> __aeabi_memcpy4
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      40  ?_0
+     168  sl_device_init_hfxo
+
+ 
+  40 bytes in section .rodata
+ 168 bytes in section .text
+ 
+ 168 bytes of CODE  memory
+  40 bytes of CONST memory
+
+Errors: none
+Warnings: none

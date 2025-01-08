@@ -1,0 +1,1644 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         30/Apr/2024  13:12:25
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\emlib\src\em_gpio.c
+#    Command line      =
+#        -f
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\emlib\src\em_gpio.lst.rsp
+#        (D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\emlib\src\em_gpio.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\emlib\src
+#        --diag_suppress Pa050 -o
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\emlib\src
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\emlib\src\em_gpio.o.d
+#    Locale            =  C
+#    List file         =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\emlib\src\em_gpio.lst
+#    Object file       =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\emlib\src\em_gpio.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\emlib\src\em_gpio.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief General Purpose IO (GPIO) peripheral API
+      4           *   devices.
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * SPDX-License-Identifier: Zlib
+     11           *
+     12           * The licensor of this software is Silicon Laboratories Inc.
+     13           *
+     14           * This software is provided 'as-is', without any express or implied
+     15           * warranty. In no event will the authors be held liable for any damages
+     16           * arising from the use of this software.
+     17           *
+     18           * Permission is granted to anyone to use this software for any purpose,
+     19           * including commercial applications, and to alter it and redistribute it
+     20           * freely, subject to the following restrictions:
+     21           *
+     22           * 1. The origin of this software must not be misrepresented; you must not
+     23           *    claim that you wrote the original software. If you use this software
+     24           *    in a product, an acknowledgment in the product documentation would be
+     25           *    appreciated but is not required.
+     26           * 2. Altered source versions must be plainly marked as such, and must not be
+     27           *    misrepresented as being the original software.
+     28           * 3. This notice may not be removed or altered from any source distribution.
+     29           *
+     30           ******************************************************************************/
+     31          
+     32          #include "em_gpio.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void BUS_RegBitWrite(uint32_t volatile *, unsigned int, unsigned int)
+   \                     BUS_RegBitWrite: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+   \        0x2   0x2920             CMP      R1,#+32
+   \        0x4   0xD201             BCS.N    ??BUS_RegBitWrite_0
+   \        0x6   0x2301             MOVS     R3,#+1
+   \        0x8   0xE000             B.N      ??BUS_RegBitWrite_1
+   \                     ??BUS_RegBitWrite_0: (+1)
+   \        0xA   0x2300             MOVS     R3,#+0
+   \                     ??BUS_RegBitWrite_1: (+1)
+   \        0xC   0xB2DB             UXTB     R3,R3
+   \        0xE   0x2A00             CMP      R2,#+0
+   \       0x10   0xD002             BEQ.N    ??BUS_RegBitWrite_2
+   \       0x12   0xF510 0x5380      ADDS     R3,R0,#+4096
+   \       0x16   0xE001             B.N      ??BUS_RegBitWrite_3
+   \                     ??BUS_RegBitWrite_2: (+1)
+   \       0x18   0xF510 0x5300      ADDS     R3,R0,#+8192
+   \                     ??BUS_RegBitWrite_3: (+1)
+   \       0x1C   0x2401             MOVS     R4,#+1
+   \       0x1E   0x408C             LSLS     R4,R4,R1
+   \       0x20   0x601C             STR      R4,[R3, #+0]
+   \       0x22   0xBC10             POP      {R4}
+   \       0x24   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void BUS_RegMaskedWrite(uint32_t volatile *, uint32_t, uint32_t)
+   \                     BUS_RegMaskedWrite: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x.... 0x....      BL       CORE_EnterCritical
+   \        0xC   0x0007             MOVS     R7,R0
+   \        0xE   0x6821             LDR      R1,[R4, #+0]
+   \       0x10   0x43A9             BICS     R1,R1,R5
+   \       0x12   0xEA15 0x0006      ANDS     R0,R5,R6
+   \       0x16   0x4301             ORRS     R1,R0,R1
+   \       0x18   0x6021             STR      R1,[R4, #+0]
+   \       0x1A   0x0038             MOVS     R0,R7
+   \       0x1C   0x.... 0x....      BL       CORE_ExitCritical
+   \       0x20   0xBDF1             POP      {R0,R4-R7,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void GPIO_EM4SetPinRetention(bool)
+   \                     GPIO_EM4SetPinRetention: (+1)
+   \        0x0   0x.... 0x....      LDR.W    R1,??DataTable9
+   \        0x4   0x680A             LDR      R2,[R1, #+0]
+   \        0x6   0xF012 0x0230      ANDS     R2,R2,#0x30
+   \        0xA   0x2A20             CMP      R2,#+32
+   \        0xC   0xD016             BEQ.N    ??GPIO_EM4SetPinRetention_0
+   \                     ??GPIO_EM4SetPinRetention_1: (+1)
+   \        0xE   0x0001             MOVS     R1,R0
+   \       0x10   0xB2C9             UXTB     R1,R1
+   \       0x12   0x2900             CMP      R1,#+0
+   \       0x14   0xD00A             BEQ.N    ??GPIO_EM4SetPinRetention_2
+   \       0x16   0x.... 0x....      LDR.W    R1,??DataTable9
+   \       0x1A   0x6809             LDR      R1,[R1, #+0]
+   \       0x1C   0xF031 0x0130      BICS     R1,R1,#0x30
+   \       0x20   0xF051 0x0110      ORRS     R1,R1,#0x10
+   \       0x24   0x.... 0x....      LDR.W    R3,??DataTable9
+   \       0x28   0x6019             STR      R1,[R3, #+0]
+   \       0x2A   0xE007             B.N      ??GPIO_EM4SetPinRetention_3
+   \                     ??GPIO_EM4SetPinRetention_2: (+1)
+   \       0x2C   0x.... 0x....      LDR.W    R1,??DataTable9
+   \       0x30   0x6809             LDR      R1,[R1, #+0]
+   \       0x32   0xF031 0x0130      BICS     R1,R1,#0x30
+   \       0x36   0x.... 0x....      LDR.W    R3,??DataTable9
+   \       0x3A   0x6019             STR      R1,[R3, #+0]
+   \                     ??GPIO_EM4SetPinRetention_3: (+1)
+   \                     ??GPIO_EM4SetPinRetention_0: (+1)
+   \       0x3C   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void GPIO_IntClear(uint32_t)
+   \                     GPIO_IntClear: (+1)
+   \        0x0   0x.... 0x....      LDR.W    R1,??DataTable9_1
+   \        0x4   0x6008             STR      R0,[R1, #+0]
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void GPIO_PinOutClear(uint8_t, unsigned int)
+   \                     GPIO_PinOutClear: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0xB2D2             UXTB     R2,R2
+   \        0x6   0x2A00             CMP      R2,#+0
+   \        0x8   0xD102             BNE.N    ??GPIO_PinOutClear_0
+   \        0xA   0xF240 0x12FF      MOVW     R2,#+511
+   \        0xE   0xE03C             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_0: (+1)
+   \       0x10   0x0002             MOVS     R2,R0
+   \       0x12   0xB2D2             UXTB     R2,R2
+   \       0x14   0x2A01             CMP      R2,#+1
+   \       0x16   0xD101             BNE.N    ??GPIO_PinOutClear_2
+   \       0x18   0x2203             MOVS     R2,#+3
+   \       0x1A   0xE036             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_2: (+1)
+   \       0x1C   0x0002             MOVS     R2,R0
+   \       0x1E   0xB2D2             UXTB     R2,R2
+   \       0x20   0x2A02             CMP      R2,#+2
+   \       0x22   0xD101             BNE.N    ??GPIO_PinOutClear_3
+   \       0x24   0x22FF             MOVS     R2,#+255
+   \       0x26   0xE030             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_3: (+1)
+   \       0x28   0x0002             MOVS     R2,R0
+   \       0x2A   0xB2D2             UXTB     R2,R2
+   \       0x2C   0x2A03             CMP      R2,#+3
+   \       0x2E   0xD101             BNE.N    ??GPIO_PinOutClear_4
+   \       0x30   0x220F             MOVS     R2,#+15
+   \       0x32   0xE02A             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_4: (+1)
+   \       0x34   0x0002             MOVS     R2,R0
+   \       0x36   0xB2D2             UXTB     R2,R2
+   \       0x38   0x2A04             CMP      R2,#+4
+   \       0x3A   0xD101             BNE.N    ??GPIO_PinOutClear_5
+   \       0x3C   0x2200             MOVS     R2,#+0
+   \       0x3E   0xE024             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_5: (+1)
+   \       0x40   0x0002             MOVS     R2,R0
+   \       0x42   0xB2D2             UXTB     R2,R2
+   \       0x44   0x2A05             CMP      R2,#+5
+   \       0x46   0xD101             BNE.N    ??GPIO_PinOutClear_6
+   \       0x48   0x2200             MOVS     R2,#+0
+   \       0x4A   0xE01E             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_6: (+1)
+   \       0x4C   0x0002             MOVS     R2,R0
+   \       0x4E   0xB2D2             UXTB     R2,R2
+   \       0x50   0x2A06             CMP      R2,#+6
+   \       0x52   0xD101             BNE.N    ??GPIO_PinOutClear_7
+   \       0x54   0x2200             MOVS     R2,#+0
+   \       0x56   0xE018             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_7: (+1)
+   \       0x58   0x0002             MOVS     R2,R0
+   \       0x5A   0xB2D2             UXTB     R2,R2
+   \       0x5C   0x2A07             CMP      R2,#+7
+   \       0x5E   0xD101             BNE.N    ??GPIO_PinOutClear_8
+   \       0x60   0x2200             MOVS     R2,#+0
+   \       0x62   0xE012             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_8: (+1)
+   \       0x64   0x0002             MOVS     R2,R0
+   \       0x66   0xB2D2             UXTB     R2,R2
+   \       0x68   0x2A08             CMP      R2,#+8
+   \       0x6A   0xD101             BNE.N    ??GPIO_PinOutClear_9
+   \       0x6C   0x2200             MOVS     R2,#+0
+   \       0x6E   0xE00C             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_9: (+1)
+   \       0x70   0x0002             MOVS     R2,R0
+   \       0x72   0xB2D2             UXTB     R2,R2
+   \       0x74   0x2A09             CMP      R2,#+9
+   \       0x76   0xD101             BNE.N    ??GPIO_PinOutClear_10
+   \       0x78   0x2200             MOVS     R2,#+0
+   \       0x7A   0xE006             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_10: (+1)
+   \       0x7C   0x0002             MOVS     R2,R0
+   \       0x7E   0xB2D2             UXTB     R2,R2
+   \       0x80   0x2A0A             CMP      R2,#+10
+   \       0x82   0xD101             BNE.N    ??GPIO_PinOutClear_11
+   \       0x84   0x2200             MOVS     R2,#+0
+   \       0x86   0xE000             B.N      ??GPIO_PinOutClear_1
+   \                     ??GPIO_PinOutClear_11: (+1)
+   \       0x88   0x2200             MOVS     R2,#+0
+   \                     ??GPIO_PinOutClear_1: (+1)
+   \       0x8A   0x40CA             LSRS     R2,R2,R1
+   \       0x8C   0xF012 0x0201      ANDS     R2,R2,#0x1
+   \       0x90   0x2301             MOVS     R3,#+1
+   \       0x92   0x408B             LSLS     R3,R3,R1
+   \       0x94   0x.... 0x....      LDR.W    R4,??DataTable9_2
+   \       0x98   0x0005             MOVS     R5,R0
+   \       0x9A   0xB2ED             UXTB     R5,R5
+   \       0x9C   0x2230             MOVS     R2,#+48
+   \       0x9E   0x4355             MULS     R5,R2,R5
+   \       0xA0   0xEB04 0x0205      ADD      R2,R4,R5
+   \       0xA4   0x6113             STR      R3,[R2, #+16]
+   \       0xA6   0xBC30             POP      {R4,R5}
+   \       0xA8   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void GPIO_PinOutSet(uint8_t, unsigned int)
+   \                     GPIO_PinOutSet: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0xB2D2             UXTB     R2,R2
+   \        0x6   0x2A00             CMP      R2,#+0
+   \        0x8   0xD102             BNE.N    ??GPIO_PinOutSet_0
+   \        0xA   0xF240 0x12FF      MOVW     R2,#+511
+   \        0xE   0xE03C             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_0: (+1)
+   \       0x10   0x0002             MOVS     R2,R0
+   \       0x12   0xB2D2             UXTB     R2,R2
+   \       0x14   0x2A01             CMP      R2,#+1
+   \       0x16   0xD101             BNE.N    ??GPIO_PinOutSet_2
+   \       0x18   0x2203             MOVS     R2,#+3
+   \       0x1A   0xE036             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_2: (+1)
+   \       0x1C   0x0002             MOVS     R2,R0
+   \       0x1E   0xB2D2             UXTB     R2,R2
+   \       0x20   0x2A02             CMP      R2,#+2
+   \       0x22   0xD101             BNE.N    ??GPIO_PinOutSet_3
+   \       0x24   0x22FF             MOVS     R2,#+255
+   \       0x26   0xE030             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_3: (+1)
+   \       0x28   0x0002             MOVS     R2,R0
+   \       0x2A   0xB2D2             UXTB     R2,R2
+   \       0x2C   0x2A03             CMP      R2,#+3
+   \       0x2E   0xD101             BNE.N    ??GPIO_PinOutSet_4
+   \       0x30   0x220F             MOVS     R2,#+15
+   \       0x32   0xE02A             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_4: (+1)
+   \       0x34   0x0002             MOVS     R2,R0
+   \       0x36   0xB2D2             UXTB     R2,R2
+   \       0x38   0x2A04             CMP      R2,#+4
+   \       0x3A   0xD101             BNE.N    ??GPIO_PinOutSet_5
+   \       0x3C   0x2200             MOVS     R2,#+0
+   \       0x3E   0xE024             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_5: (+1)
+   \       0x40   0x0002             MOVS     R2,R0
+   \       0x42   0xB2D2             UXTB     R2,R2
+   \       0x44   0x2A05             CMP      R2,#+5
+   \       0x46   0xD101             BNE.N    ??GPIO_PinOutSet_6
+   \       0x48   0x2200             MOVS     R2,#+0
+   \       0x4A   0xE01E             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_6: (+1)
+   \       0x4C   0x0002             MOVS     R2,R0
+   \       0x4E   0xB2D2             UXTB     R2,R2
+   \       0x50   0x2A06             CMP      R2,#+6
+   \       0x52   0xD101             BNE.N    ??GPIO_PinOutSet_7
+   \       0x54   0x2200             MOVS     R2,#+0
+   \       0x56   0xE018             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_7: (+1)
+   \       0x58   0x0002             MOVS     R2,R0
+   \       0x5A   0xB2D2             UXTB     R2,R2
+   \       0x5C   0x2A07             CMP      R2,#+7
+   \       0x5E   0xD101             BNE.N    ??GPIO_PinOutSet_8
+   \       0x60   0x2200             MOVS     R2,#+0
+   \       0x62   0xE012             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_8: (+1)
+   \       0x64   0x0002             MOVS     R2,R0
+   \       0x66   0xB2D2             UXTB     R2,R2
+   \       0x68   0x2A08             CMP      R2,#+8
+   \       0x6A   0xD101             BNE.N    ??GPIO_PinOutSet_9
+   \       0x6C   0x2200             MOVS     R2,#+0
+   \       0x6E   0xE00C             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_9: (+1)
+   \       0x70   0x0002             MOVS     R2,R0
+   \       0x72   0xB2D2             UXTB     R2,R2
+   \       0x74   0x2A09             CMP      R2,#+9
+   \       0x76   0xD101             BNE.N    ??GPIO_PinOutSet_10
+   \       0x78   0x2200             MOVS     R2,#+0
+   \       0x7A   0xE006             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_10: (+1)
+   \       0x7C   0x0002             MOVS     R2,R0
+   \       0x7E   0xB2D2             UXTB     R2,R2
+   \       0x80   0x2A0A             CMP      R2,#+10
+   \       0x82   0xD101             BNE.N    ??GPIO_PinOutSet_11
+   \       0x84   0x2200             MOVS     R2,#+0
+   \       0x86   0xE000             B.N      ??GPIO_PinOutSet_1
+   \                     ??GPIO_PinOutSet_11: (+1)
+   \       0x88   0x2200             MOVS     R2,#+0
+   \                     ??GPIO_PinOutSet_1: (+1)
+   \       0x8A   0x40CA             LSRS     R2,R2,R1
+   \       0x8C   0xF012 0x0201      ANDS     R2,R2,#0x1
+   \       0x90   0x2301             MOVS     R3,#+1
+   \       0x92   0x408B             LSLS     R3,R3,R1
+   \       0x94   0x.... 0x....      LDR.W    R4,??DataTable9_3
+   \       0x98   0x0005             MOVS     R5,R0
+   \       0x9A   0xB2ED             UXTB     R5,R5
+   \       0x9C   0x2230             MOVS     R2,#+48
+   \       0x9E   0x4355             MULS     R5,R2,R5
+   \       0xA0   0xEB04 0x0205      ADD      R2,R4,R5
+   \       0xA4   0x6113             STR      R3,[R2, #+16]
+   \       0xA6   0xBC30             POP      {R4,R5}
+   \       0xA8   0x4770             BX       LR
+     33          
+     34          #if defined(GPIO_COUNT) && (GPIO_COUNT > 0)
+     35          
+     36          /***************************************************************************//**
+     37           * @addtogroup gpio GPIO - General Purpose Input/Output
+     38           * @brief General Purpose Input/Output (GPIO) API
+     39           * @details
+     40           *  This module contains functions to control the GPIO peripheral of Silicon
+     41           *  Labs 32-bit MCUs and SoCs. The GPIO peripheral is used for pin configuration
+     42           *  and direct pin manipulation and sensing as well as routing for peripheral
+     43           *  pin connections.
+     44           * @{
+     45           ******************************************************************************/
+     46          
+     47          /*******************************************************************************
+     48           *******************************   DEFINES   ***********************************
+     49           ******************************************************************************/
+     50          
+     51          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     52          
+     53          /** Validation of the pin typically usable in assert statements. */
+     54          #define GPIO_DRIVEMODE_VALID(mode)    ((mode) <= 3)
+     55          #define GPIO_STRENGTH_VALID(strength) (!((strength)                          \
+     56                                                   & ~(_GPIO_P_CTRL_DRIVESTRENGTH_MASK \
+     57                                                       | _GPIO_P_CTRL_DRIVESTRENGTHALT_MASK)))
+     58          /** @endcond */
+     59          
+     60          /*******************************************************************************
+     61           **************************   GLOBAL FUNCTIONS   *******************************
+     62           ******************************************************************************/
+     63          
+     64          /***************************************************************************//**
+     65           * @brief
+     66           *   Sets the pin location of the debug pins (Serial Wire interface).
+     67           *
+     68           * @note
+     69           *   Changing the pins used for debugging uncontrolled, may result in a lockout.
+     70           *
+     71           * @param[in] location
+     72           *   The debug pin location to use (0-3).
+     73           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     74          void GPIO_DbgLocationSet(unsigned int location)
+     75          {
+     76          #if defined (_GPIO_ROUTE_SWLOCATION_MASK)
+     77            EFM_ASSERT(location < AFCHANLOC_MAX);
+     78          
+     79            GPIO->ROUTE = (GPIO->ROUTE & ~_GPIO_ROUTE_SWLOCATION_MASK)
+     80                          | (location << _GPIO_ROUTE_SWLOCATION_SHIFT);
+     81          #elif defined (_GPIO_ROUTELOC0_SWVLOC_MASK)
+     82            EFM_ASSERT(location < AFCHANLOC_MAX);
+     83          
+     84            GPIO->ROUTELOC0 = (GPIO->ROUTELOC0 & ~_GPIO_ROUTELOC0_SWVLOC_MASK)
+     85                              | (location << _GPIO_ROUTELOC0_SWVLOC_SHIFT);
+     86          #else
+     87            (void)location;
+     88          #endif
+     89          }
+   \                     GPIO_DbgLocationSet: (+1)
+   \        0x0   0x4770             BX       LR
+     90          
+     91          #if defined (_GPIO_P_CTRL_DRIVEMODE_MASK)
+     92          /***************************************************************************//**
+     93           * @brief
+     94           *   Sets drive mode for a GPIO port.
+     95           *
+     96           * @param[in] port
+     97           *   The GPIO port to access.
+     98           *
+     99           * @param[in] mode
+    100           *   Drive mode to use for the port.
+    101           ******************************************************************************/
+    102          void GPIO_DriveModeSet(GPIO_Port_TypeDef port, GPIO_DriveMode_TypeDef mode)
+    103          {
+    104            EFM_ASSERT(GPIO_PORT_VALID(port) && GPIO_DRIVEMODE_VALID(mode));
+    105          
+    106            GPIO->P[port].CTRL = (GPIO->P[port].CTRL & ~(_GPIO_P_CTRL_DRIVEMODE_MASK))
+    107                                 | (mode << _GPIO_P_CTRL_DRIVEMODE_SHIFT);
+    108          }
+    109          #endif
+    110          
+    111          #if defined (_GPIO_P_CTRL_DRIVESTRENGTH_MASK)
+    112          /***************************************************************************//**
+    113           * @brief
+    114           *   Sets the drive strength for a GPIO port.
+    115           *
+    116           * @param[in] port
+    117           *   The GPIO port to access.
+    118           *
+    119           * @param[in] strength
+    120           *   The drive strength to use for the port.
+    121           ******************************************************************************/
+    122          void GPIO_DriveStrengthSet(GPIO_Port_TypeDef port,
+    123                                     GPIO_DriveStrength_TypeDef strength)
+    124          {
+    125            EFM_ASSERT(GPIO_PORT_VALID(port) && GPIO_STRENGTH_VALID(strength));
+    126            BUS_RegMaskedWrite(&GPIO->P[port].CTRL,
+    127                               _GPIO_P_CTRL_DRIVESTRENGTH_MASK | _GPIO_P_CTRL_DRIVESTRENGTHALT_MASK,
+    128                               strength);
+    129          }
+    130          #endif
+    131          
+    132          /***************************************************************************//**
+    133           * @brief
+    134           *   Configure the GPIO external pin interrupt.
+    135           *
+    136           * @details
+    137           *   It is recommended to disable interrupts before configuring the GPIO pin interrupt.
+    138           *   See @ref GPIO_IntDisable() for more information.
+    139           *
+    140           *   The GPIO interrupt handler must be in place before enabling the
+    141           *   interrupt.
+    142           *
+    143           *   Notice that any pending interrupt for the selected interrupt is cleared
+    144           *   by this function.
+    145           *
+    146           * @note
+    147           *   On series 0 devices, the pin number parameter is not used. The
+    148           *   pin number used on these devices is hardwired to the interrupt with the
+    149           *   same number. @n
+    150           *   On series 1 devices, the pin number can be selected freely within a group.
+    151           *   Interrupt numbers are divided into 4 groups (intNo / 4) and valid pin
+    152           *   number within the interrupt groups are:
+    153           *       0: pins 0-3   (interrupt number 0-3)
+    154           *       1: pins 4-7   (interrupt number 4-7)
+    155           *       2: pins 8-11  (interrupt number 8-11)
+    156           *       3: pins 12-15 (interrupt number 12-15)
+    157           *
+    158           * @param[in] port
+    159           *   The port to associate with the @p pin.
+    160           *
+    161           * @param[in] pin
+    162           *   The pin number on the port.
+    163           *
+    164           * @param[in] intNo
+    165           *   The interrupt number to trigger.
+    166           *
+    167           * @param[in] risingEdge
+    168           *   Set to true if the interrupt will be enabled on the rising edge. Otherwise, false.
+    169           *
+    170           * @param[in] fallingEdge
+    171           *   Set to true if the interrupt will be enabled on the falling edge. Otherwise, false.
+    172           *
+    173           * @param[in] enable
+    174           *   Set to true if the interrupt will be enabled after the configuration is complete.
+    175           *   False to leave disabled. See @ref GPIO_IntDisable() and @ref GPIO_IntEnable().
+    176           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    177          void GPIO_ExtIntConfig(GPIO_Port_TypeDef port,
+    178                                 unsigned int pin,
+    179                                 unsigned int intNo,
+    180                                 bool risingEdge,
+    181                                 bool fallingEdge,
+    182                                 bool enable)
+    183          {
+   \                     GPIO_ExtIntConfig: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0x0006             MOVS     R6,R0
+   \        0x6   0x000F             MOVS     R7,R1
+   \        0x8   0x4690             MOV      R8,R2
+   \        0xA   0x4699             MOV      R9,R3
+   \        0xC   0x9C08             LDR      R4,[SP, #+32]
+   \        0xE   0x9D09             LDR      R5,[SP, #+36]
+    184          #if defined (_GPIO_EXTIPSELH_MASK)
+    185            uint32_t tmp = 0;
+   \       0x10   0xF05F 0x0A00      MOVS     R10,#+0
+    186          #endif
+    187          #if !defined(_GPIO_EXTIPINSELL_MASK)
+    188            (void)pin;
+    189          #endif
+    190          
+    191            EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));
+   \       0x14   0x0030             MOVS     R0,R6
+   \       0x16   0xB2C0             UXTB     R0,R0
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD102             BNE.N    ??GPIO_ExtIntConfig_0
+   \       0x1C   0xF240 0x10FF      MOVW     R0,#+511
+   \       0x20   0xE03C             B.N      ??GPIO_ExtIntConfig_1
+   \                     ??GPIO_ExtIntConfig_0: (+1)
+   \       0x22   0x0030             MOVS     R0,R6
+   \       0x24   0xB2C0             UXTB     R0,R0
+   \       0x26   0x2801             CMP      R0,#+1
+   \       0x28   0xD101             BNE.N    ??GPIO_ExtIntConfig_2
+   \       0x2A   0x2003             MOVS     R0,#+3
+   \       0x2C   0xE036             B.N      ??GPIO_ExtIntConfig_1
+   \                     ??GPIO_ExtIntConfig_2: (+1)
+   \       0x2E   0x0030             MOVS     R0,R6
+   \       0x30   0xB2C0             UXTB     R0,R0
+   \       0x32   0x2802             CMP      R0,#+2
+   \       0x34   0xD101             BNE.N    ??GPIO_ExtIntConfig_3
+   \       0x36   0x20FF             MOVS     R0,#+255
+   \       0x38   0xE030             B.N      ??GPIO_ExtIntConfig_1
+   \                     ??GPIO_ExtIntConfig_3: (+1)
+   \       0x3A   0x0030             MOVS     R0,R6
+   \       0x3C   0xB2C0             UXTB     R0,R0
+   \       0x3E   0x2803             CMP      R0,#+3
+   \       0x40   0xD101             BNE.N    ??GPIO_ExtIntConfig_4
+   \       0x42   0x200F             MOVS     R0,#+15
+   \       0x44   0xE02A             B.N      ??GPIO_ExtIntConfig_1
+   \                     ??GPIO_ExtIntConfig_4: (+1)
+   \       0x46   0x0030             MOVS     R0,R6
+   \       0x48   0xB2C0             UXTB     R0,R0
+   \       0x4A   0x2804             CMP      R0,#+4
+   \       0x4C   0xD101             BNE.N    ??GPIO_ExtIntConfig_5
+   \       0x4E   0x2000             MOVS     R0,#+0
+   \       0x50   0xE024             B.N      ??GPIO_ExtIntConfig_1
+   \                     ??GPIO_ExtIntConfig_5: (+1)
+   \       0x52   0x0030             MOVS     R0,R6
+   \       0x54   0xB2C0             UXTB     R0,R0
+   \       0x56   0x2805             CMP      R0,#+5
+   \       0x58   0xD101             BNE.N    ??GPIO_ExtIntConfig_6
+   \       0x5A   0x2000             MOVS     R0,#+0
+   \       0x5C   0xE01E             B.N      ??GPIO_ExtIntConfig_1
+   \                     ??GPIO_ExtIntConfig_6: (+1)
+   \       0x5E   0x0030             MOVS     R0,R6
+   \       0x60   0xB2C0             UXTB     R0,R0
+   \       0x62   0x2806             CMP      R0,#+6
+   \       0x64   0xD101             BNE.N    ??GPIO_ExtIntConfig_7
+   \       0x66   0x2000             MOVS     R0,#+0
+   \       0x68   0xE018             B.N      ??GPIO_ExtIntConfig_1
+   \                     ??GPIO_ExtIntConfig_7: (+1)
+   \       0x6A   0x0030             MOVS     R0,R6
+   \       0x6C   0xB2C0             UXTB     R0,R0
+   \       0x6E   0x2807             CMP      R0,#+7
+   \       0x70   0xD101             BNE.N    ??GPIO_ExtIntConfig_8
+   \       0x72   0x2000             MOVS     R0,#+0
+   \       0x74   0xE012             B.N      ??GPIO_ExtIntConfig_1
+   \                     ??GPIO_ExtIntConfig_8: (+1)
+   \       0x76   0x0030             MOVS     R0,R6
+   \       0x78   0xB2C0             UXTB     R0,R0
+   \       0x7A   0x2808             CMP      R0,#+8
+   \       0x7C   0xD101             BNE.N    ??GPIO_ExtIntConfig_9
+   \       0x7E   0x2000             MOVS     R0,#+0
+   \       0x80   0xE00C             B.N      ??GPIO_ExtIntConfig_1
+   \                     ??GPIO_ExtIntConfig_9: (+1)
+   \       0x82   0x0030             MOVS     R0,R6
+   \       0x84   0xB2C0             UXTB     R0,R0
+   \       0x86   0x2809             CMP      R0,#+9
+   \       0x88   0xD101             BNE.N    ??GPIO_ExtIntConfig_10
+   \       0x8A   0x2000             MOVS     R0,#+0
+   \       0x8C   0xE006             B.N      ??GPIO_ExtIntConfig_1
+   \                     ??GPIO_ExtIntConfig_10: (+1)
+   \       0x8E   0x0030             MOVS     R0,R6
+   \       0x90   0xB2C0             UXTB     R0,R0
+   \       0x92   0x280A             CMP      R0,#+10
+   \       0x94   0xD101             BNE.N    ??GPIO_ExtIntConfig_11
+   \       0x96   0x2000             MOVS     R0,#+0
+   \       0x98   0xE000             B.N      ??GPIO_ExtIntConfig_1
+   \                     ??GPIO_ExtIntConfig_11: (+1)
+   \       0x9A   0x2000             MOVS     R0,#+0
+   \                     ??GPIO_ExtIntConfig_1: (+1)
+   \       0x9C   0x40F8             LSRS     R0,R0,R7
+   \       0x9E   0xF010 0x0001      ANDS     R0,R0,#0x1
+    192          #if defined(_GPIO_EXTIPINSELL_MASK)
+    193            EFM_ASSERT(GPIO_INTNO_PIN_VALID(intNo, pin));
+   \       0xA2   0xEA5F 0x0098      LSRS     R0,R8,#+2
+   \       0xA6   0x0080             LSLS     R0,R0,#+2
+   \       0xA8   0x08B9             LSRS     R1,R7,#+2
+   \       0xAA   0x0089             LSLS     R1,R1,#+2
+   \       0xAC   0x4288             CMP      R0,R1
+   \       0xAE   0xD101             BNE.N    ??GPIO_ExtIntConfig_12
+   \       0xB0   0x2001             MOVS     R0,#+1
+   \       0xB2   0xE000             B.N      ??GPIO_ExtIntConfig_13
+   \                     ??GPIO_ExtIntConfig_12: (+1)
+   \       0xB4   0x2000             MOVS     R0,#+0
+   \                     ??GPIO_ExtIntConfig_13: (+1)
+   \       0xB6   0xB2C0             UXTB     R0,R0
+    194          #endif
+    195          
+    196            /* The EXTIPSELL register controls pins 0-7 and EXTIPSELH controls
+    197             * pins 8-15 of the interrupt configuration. */
+    198            if (intNo < 8) {
+   \       0xB8   0xF1B8 0x0F08      CMP      R8,#+8
+   \       0xBC   0xD20F             BCS.N    ??GPIO_ExtIntConfig_14
+    199              BUS_RegMaskedWrite(&GPIO->EXTIPSELL,
+    200                                 _GPIO_EXTIPSELL_EXTIPSEL0_MASK
+    201                                 << (_GPIO_EXTIPSELL_EXTIPSEL1_SHIFT * intNo),
+    202                                 (uint32_t)port << (_GPIO_EXTIPSELL_EXTIPSEL1_SHIFT * intNo));
+   \       0xBE   0x0032             MOVS     R2,R6
+   \       0xC0   0xB2D2             UXTB     R2,R2
+   \       0xC2   0x4640             MOV      R0,R8
+   \       0xC4   0xB2C0             UXTB     R0,R0
+   \       0xC6   0x0080             LSLS     R0,R0,#+2
+   \       0xC8   0x4082             LSLS     R2,R2,R0
+   \       0xCA   0x2103             MOVS     R1,#+3
+   \       0xCC   0x4640             MOV      R0,R8
+   \       0xCE   0xB2C0             UXTB     R0,R0
+   \       0xD0   0x0080             LSLS     R0,R0,#+2
+   \       0xD2   0x4081             LSLS     R1,R1,R0
+   \       0xD4   0x.... 0x....      LDR.W    R0,??DataTable9_4
+   \       0xD8   0x.... 0x....      BL       BUS_RegMaskedWrite
+   \       0xDC   0xE011             B.N      ??GPIO_ExtIntConfig_15
+    203            } else {
+    204          #if defined(_GPIO_EXTIPSELH_MASK)
+    205              tmp = intNo - 8;
+   \                     ??GPIO_ExtIntConfig_14: (+1)
+   \       0xDE   0xF1B8 0x0008      SUBS     R0,R8,#+8
+   \       0xE2   0x4682             MOV      R10,R0
+    206          #if defined(_GPIO_EXTIPSELH_EXTIPSEL0_MASK)
+    207              BUS_RegMaskedWrite(&GPIO->EXTIPSELH,
+    208                                 _GPIO_EXTIPSELH_EXTIPSEL0_MASK
+    209                                 << (_GPIO_EXTIPSELH_EXTIPSEL1_SHIFT * tmp),
+    210                                 (uint32_t)port << (_GPIO_EXTIPSELH_EXTIPSEL1_SHIFT * tmp));
+   \       0xE4   0x0032             MOVS     R2,R6
+   \       0xE6   0xB2D2             UXTB     R2,R2
+   \       0xE8   0x4650             MOV      R0,R10
+   \       0xEA   0xB2C0             UXTB     R0,R0
+   \       0xEC   0x0080             LSLS     R0,R0,#+2
+   \       0xEE   0x4082             LSLS     R2,R2,R0
+   \       0xF0   0x2103             MOVS     R1,#+3
+   \       0xF2   0x4650             MOV      R0,R10
+   \       0xF4   0xB2C0             UXTB     R0,R0
+   \       0xF6   0x0080             LSLS     R0,R0,#+2
+   \       0xF8   0x4081             LSLS     R1,R1,R0
+   \       0xFA   0x.... 0x....      LDR.W    R0,??DataTable9_5
+   \       0xFE   0x.... 0x....      BL       BUS_RegMaskedWrite
+    211          #elif defined(_GPIO_EXTIPSELH_EXTIPSEL8_MASK)
+    212              BUS_RegMaskedWrite(&GPIO->EXTIPSELH,
+    213                                 _GPIO_EXTIPSELH_EXTIPSEL8_MASK
+    214                                 << (_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT * tmp),
+    215                                 (uint32_t)port << (_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT * tmp));
+    216          #else
+    217          #error Invalid GPIO_EXTIPINSELH bit fields
+    218          #endif
+    219          #endif /* #if defined(_GPIO_EXTIPSELH_MASK) */
+    220            }
+    221          
+    222          #if defined(_GPIO_EXTIPINSELL_MASK)
+    223          
+    224            /* The EXTIPINSELL register controls interrupt 0-7 and EXTIPINSELH controls
+    225             * interrupt 8-15 of the interrupt/pin number mapping. */
+    226            if (intNo < 8) {
+   \                     ??GPIO_ExtIntConfig_15: (+1)
+   \      0x102   0xF1B8 0x0F08      CMP      R8,#+8
+   \      0x106   0xD20F             BCS.N    ??GPIO_ExtIntConfig_16
+    227              BUS_RegMaskedWrite(&GPIO->EXTIPINSELL,
+    228                                 _GPIO_EXTIPINSELL_EXTIPINSEL0_MASK
+    229                                 << (_GPIO_EXTIPINSELL_EXTIPINSEL1_SHIFT * intNo),
+    230                                 (uint32_t)((pin % 4) & _GPIO_EXTIPINSELL_EXTIPINSEL0_MASK)
+    231                                 << (_GPIO_EXTIPINSELL_EXTIPINSEL1_SHIFT * intNo));
+   \      0x108   0xF017 0x0203      ANDS     R2,R7,#0x3
+   \      0x10C   0x4640             MOV      R0,R8
+   \      0x10E   0xB2C0             UXTB     R0,R0
+   \      0x110   0x0080             LSLS     R0,R0,#+2
+   \      0x112   0x4082             LSLS     R2,R2,R0
+   \      0x114   0x2103             MOVS     R1,#+3
+   \      0x116   0x4640             MOV      R0,R8
+   \      0x118   0xB2C0             UXTB     R0,R0
+   \      0x11A   0x0080             LSLS     R0,R0,#+2
+   \      0x11C   0x4081             LSLS     R1,R1,R0
+   \      0x11E   0x.... 0x....      LDR.W    R0,??DataTable9_6
+   \      0x122   0x.... 0x....      BL       BUS_RegMaskedWrite
+   \      0x126   0xE00E             B.N      ??GPIO_ExtIntConfig_17
+    232            } else {
+    233          #if defined (_GPIO_EXTIPINSELH_EXTIPINSEL8_MASK)
+    234              BUS_RegMaskedWrite(&GPIO->EXTIPINSELH,
+    235                                 _GPIO_EXTIPINSELH_EXTIPINSEL8_MASK
+    236                                 << (_GPIO_EXTIPINSELH_EXTIPINSEL9_SHIFT * tmp),
+    237                                 (uint32_t)((pin % 4) & _GPIO_EXTIPINSELH_EXTIPINSEL8_MASK)
+    238                                 << (_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT * tmp));
+    239          #endif
+    240          #if defined (_GPIO_EXTIPINSELH_EXTIPINSEL0_MASK)
+    241              BUS_RegMaskedWrite(&GPIO->EXTIPINSELH,
+    242                                 _GPIO_EXTIPINSELH_EXTIPINSEL0_MASK
+    243                                 << (_GPIO_EXTIPINSELH_EXTIPINSEL1_SHIFT * tmp),
+    244                                 (uint32_t)((pin % 4) & _GPIO_EXTIPINSELH_EXTIPINSEL0_MASK)
+    245                                 << (_GPIO_EXTIPSELH_EXTIPSEL1_SHIFT * tmp));
+   \                     ??GPIO_ExtIntConfig_16: (+1)
+   \      0x128   0xF017 0x0203      ANDS     R2,R7,#0x3
+   \      0x12C   0x4650             MOV      R0,R10
+   \      0x12E   0xB2C0             UXTB     R0,R0
+   \      0x130   0x0080             LSLS     R0,R0,#+2
+   \      0x132   0x4082             LSLS     R2,R2,R0
+   \      0x134   0x2103             MOVS     R1,#+3
+   \      0x136   0x4650             MOV      R0,R10
+   \      0x138   0xB2C0             UXTB     R0,R0
+   \      0x13A   0x0080             LSLS     R0,R0,#+2
+   \      0x13C   0x4081             LSLS     R1,R1,R0
+   \      0x13E   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \      0x142   0x.... 0x....      BL       BUS_RegMaskedWrite
+    246          #endif
+    247            }
+    248          #endif
+    249          
+    250            /* Enable/disable the rising edge interrupt. */
+    251            BUS_RegBitWrite(&(GPIO->EXTIRISE), intNo, risingEdge);
+   \                     ??GPIO_ExtIntConfig_17: (+1)
+   \      0x146   0x464A             MOV      R2,R9
+   \      0x148   0xB2D2             UXTB     R2,R2
+   \      0x14A   0x4641             MOV      R1,R8
+   \      0x14C   0x.... 0x....      LDR.W    R0,??DataTable9_8
+   \      0x150   0x.... 0x....      BL       BUS_RegBitWrite
+    252          
+    253            /* Enable/disable the falling edge interrupt. */
+    254            BUS_RegBitWrite(&(GPIO->EXTIFALL), intNo, fallingEdge);
+   \      0x154   0x0022             MOVS     R2,R4
+   \      0x156   0xB2D2             UXTB     R2,R2
+   \      0x158   0x4641             MOV      R1,R8
+   \      0x15A   0x.... 0x....      LDR.W    R0,??DataTable9_9
+   \      0x15E   0x.... 0x....      BL       BUS_RegBitWrite
+    255          
+    256            /* Clear any pending interrupt. */
+    257            GPIO_IntClear(1 << intNo);
+   \      0x162   0x2001             MOVS     R0,#+1
+   \      0x164   0xFA10 0xF008      LSLS     R0,R0,R8
+   \      0x168   0x.... 0x....      BL       GPIO_IntClear
+    258          
+    259            /* Finally enable/disable interrupt. */
+    260            BUS_RegBitWrite(&(GPIO->IEN), intNo, enable);
+   \      0x16C   0x002A             MOVS     R2,R5
+   \      0x16E   0xB2D2             UXTB     R2,R2
+   \      0x170   0x4641             MOV      R1,R8
+   \      0x172   0x.... 0x....      LDR.W    R0,??DataTable9_10
+   \      0x176   0x.... 0x....      BL       BUS_RegBitWrite
+    261          }
+   \      0x17A   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    262          
+    263          #if _SILICON_LABS_32B_SERIES > 0
+    264          /***************************************************************************//**
+    265           * @brief
+    266           *   Configure EM4WU pins as external level-sensitive interrupts.
+    267           *
+    268           * @details
+    269           *   It is recommended to disable interrupts before configuring the GPIO pin interrupt.
+    270           *   See @ref GPIO_IntDisable() for more information.
+    271           *
+    272           *   The GPIO interrupt handler must be in place before enabling the
+    273           *   interrupt.
+    274           *
+    275           *   Notice that any pending interrupt for the selected interrupt is cleared
+    276           *   by this function.
+    277           *
+    278           * @note
+    279           *   The selected port/pin must be mapped to an existant EM4WU interrupt.
+    280           *   Each EM4WU signal is connected to a fixed pin.
+    281           *   Refer to the Alternate Function Table in the device Datasheet for the
+    282           *   location of each EM4WU signal. For example, on xG22 device, the interrupt
+    283           *   of EM4WU6 is fixed to pin PC00.
+    284           *
+    285           * @param[in] port
+    286           *   The port to associate with the @p pin.
+    287           *
+    288           * @param[in] pin
+    289           *   The pin number on the port.
+    290           *
+    291           * @param[in] intNo
+    292           *   The EM4WU interrupt number to trigger.
+    293           *
+    294           * @param[in] polarity
+    295           *   true = Active high level-sensitive interrupt.
+    296           *   false = Active low level-sensitive interrupt.
+    297           *
+    298           * @param[in] enable
+    299           *   Set to true if the interrupt will be enabled after the configuration is complete.
+    300           *   False to leave disabled. See @ref GPIO_IntDisable() and @ref GPIO_IntEnable().
+    301           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    302          void GPIO_EM4WUExtIntConfig(GPIO_Port_TypeDef port,
+    303                                      unsigned int pin,
+    304                                      uint32_t intNo,
+    305                                      bool polarity,
+    306                                      bool enable)
+    307          {
+   \                     GPIO_EM4WUExtIntConfig: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x0017             MOVS     R7,R2
+   \        0xA   0x4698             MOV      R8,R3
+   \        0xC   0x9C08             LDR      R4,[SP, #+32]
+    308            EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));
+   \        0xE   0x0028             MOVS     R0,R5
+   \       0x10   0xB2C0             UXTB     R0,R0
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD102             BNE.N    ??GPIO_EM4WUExtIntConfig_0
+   \       0x16   0xF240 0x10FF      MOVW     R0,#+511
+   \       0x1A   0xE03C             B.N      ??GPIO_EM4WUExtIntConfig_1
+   \                     ??GPIO_EM4WUExtIntConfig_0: (+1)
+   \       0x1C   0x0028             MOVS     R0,R5
+   \       0x1E   0xB2C0             UXTB     R0,R0
+   \       0x20   0x2801             CMP      R0,#+1
+   \       0x22   0xD101             BNE.N    ??GPIO_EM4WUExtIntConfig_2
+   \       0x24   0x2003             MOVS     R0,#+3
+   \       0x26   0xE036             B.N      ??GPIO_EM4WUExtIntConfig_1
+   \                     ??GPIO_EM4WUExtIntConfig_2: (+1)
+   \       0x28   0x0028             MOVS     R0,R5
+   \       0x2A   0xB2C0             UXTB     R0,R0
+   \       0x2C   0x2802             CMP      R0,#+2
+   \       0x2E   0xD101             BNE.N    ??GPIO_EM4WUExtIntConfig_3
+   \       0x30   0x20FF             MOVS     R0,#+255
+   \       0x32   0xE030             B.N      ??GPIO_EM4WUExtIntConfig_1
+   \                     ??GPIO_EM4WUExtIntConfig_3: (+1)
+   \       0x34   0x0028             MOVS     R0,R5
+   \       0x36   0xB2C0             UXTB     R0,R0
+   \       0x38   0x2803             CMP      R0,#+3
+   \       0x3A   0xD101             BNE.N    ??GPIO_EM4WUExtIntConfig_4
+   \       0x3C   0x200F             MOVS     R0,#+15
+   \       0x3E   0xE02A             B.N      ??GPIO_EM4WUExtIntConfig_1
+   \                     ??GPIO_EM4WUExtIntConfig_4: (+1)
+   \       0x40   0x0028             MOVS     R0,R5
+   \       0x42   0xB2C0             UXTB     R0,R0
+   \       0x44   0x2804             CMP      R0,#+4
+   \       0x46   0xD101             BNE.N    ??GPIO_EM4WUExtIntConfig_5
+   \       0x48   0x2000             MOVS     R0,#+0
+   \       0x4A   0xE024             B.N      ??GPIO_EM4WUExtIntConfig_1
+   \                     ??GPIO_EM4WUExtIntConfig_5: (+1)
+   \       0x4C   0x0028             MOVS     R0,R5
+   \       0x4E   0xB2C0             UXTB     R0,R0
+   \       0x50   0x2805             CMP      R0,#+5
+   \       0x52   0xD101             BNE.N    ??GPIO_EM4WUExtIntConfig_6
+   \       0x54   0x2000             MOVS     R0,#+0
+   \       0x56   0xE01E             B.N      ??GPIO_EM4WUExtIntConfig_1
+   \                     ??GPIO_EM4WUExtIntConfig_6: (+1)
+   \       0x58   0x0028             MOVS     R0,R5
+   \       0x5A   0xB2C0             UXTB     R0,R0
+   \       0x5C   0x2806             CMP      R0,#+6
+   \       0x5E   0xD101             BNE.N    ??GPIO_EM4WUExtIntConfig_7
+   \       0x60   0x2000             MOVS     R0,#+0
+   \       0x62   0xE018             B.N      ??GPIO_EM4WUExtIntConfig_1
+   \                     ??GPIO_EM4WUExtIntConfig_7: (+1)
+   \       0x64   0x0028             MOVS     R0,R5
+   \       0x66   0xB2C0             UXTB     R0,R0
+   \       0x68   0x2807             CMP      R0,#+7
+   \       0x6A   0xD101             BNE.N    ??GPIO_EM4WUExtIntConfig_8
+   \       0x6C   0x2000             MOVS     R0,#+0
+   \       0x6E   0xE012             B.N      ??GPIO_EM4WUExtIntConfig_1
+   \                     ??GPIO_EM4WUExtIntConfig_8: (+1)
+   \       0x70   0x0028             MOVS     R0,R5
+   \       0x72   0xB2C0             UXTB     R0,R0
+   \       0x74   0x2808             CMP      R0,#+8
+   \       0x76   0xD101             BNE.N    ??GPIO_EM4WUExtIntConfig_9
+   \       0x78   0x2000             MOVS     R0,#+0
+   \       0x7A   0xE00C             B.N      ??GPIO_EM4WUExtIntConfig_1
+   \                     ??GPIO_EM4WUExtIntConfig_9: (+1)
+   \       0x7C   0x0028             MOVS     R0,R5
+   \       0x7E   0xB2C0             UXTB     R0,R0
+   \       0x80   0x2809             CMP      R0,#+9
+   \       0x82   0xD101             BNE.N    ??GPIO_EM4WUExtIntConfig_10
+   \       0x84   0x2000             MOVS     R0,#+0
+   \       0x86   0xE006             B.N      ??GPIO_EM4WUExtIntConfig_1
+   \                     ??GPIO_EM4WUExtIntConfig_10: (+1)
+   \       0x88   0x0028             MOVS     R0,R5
+   \       0x8A   0xB2C0             UXTB     R0,R0
+   \       0x8C   0x280A             CMP      R0,#+10
+   \       0x8E   0xD101             BNE.N    ??GPIO_EM4WUExtIntConfig_11
+   \       0x90   0x2000             MOVS     R0,#+0
+   \       0x92   0xE000             B.N      ??GPIO_EM4WUExtIntConfig_1
+   \                     ??GPIO_EM4WUExtIntConfig_11: (+1)
+   \       0x94   0x2000             MOVS     R0,#+0
+   \                     ??GPIO_EM4WUExtIntConfig_1: (+1)
+   \       0x96   0x40F0             LSRS     R0,R0,R6
+   \       0x98   0xF010 0x0001      ANDS     R0,R0,#0x1
+    309          
+    310            // GPIO pin mode set.
+    311            GPIO_PinModeSet(port, pin, gpioModeInputPullFilter, (unsigned int)!polarity);
+   \       0x9C   0x4640             MOV      R0,R8
+   \       0x9E   0xB2C0             UXTB     R0,R0
+   \       0xA0   0x2800             CMP      R0,#+0
+   \       0xA2   0xD101             BNE.N    ??GPIO_EM4WUExtIntConfig_12
+   \       0xA4   0x2301             MOVS     R3,#+1
+   \       0xA6   0xE000             B.N      ??GPIO_EM4WUExtIntConfig_13
+   \                     ??GPIO_EM4WUExtIntConfig_12: (+1)
+   \       0xA8   0x2300             MOVS     R3,#+0
+   \                     ??GPIO_EM4WUExtIntConfig_13: (+1)
+   \       0xAA   0xB2DB             UXTB     R3,R3
+   \       0xAC   0x2203             MOVS     R2,#+3
+   \       0xAE   0x0031             MOVS     R1,R6
+   \       0xB0   0x0028             MOVS     R0,R5
+   \       0xB2   0xB2C0             UXTB     R0,R0
+   \       0xB4   0x.... 0x....      BL       GPIO_PinModeSet
+    312          
+    313            // Enable EM4WU function and set polarity
+    314            uint32_t polarityMask = (uint32_t)polarity << (intNo + _GPIO_EM4WUEN_EM4WUEN_SHIFT);
+   \       0xB8   0x4640             MOV      R0,R8
+   \       0xBA   0xB2C0             UXTB     R0,R0
+   \       0xBC   0xF117 0x0910      ADDS     R9,R7,#+16
+   \       0xC0   0xFA10 0xF909      LSLS     R9,R0,R9
+    315            uint32_t pinmask =  1UL << (intNo + _GPIO_EM4WUEN_EM4WUEN_SHIFT);
+   \       0xC4   0x2001             MOVS     R0,#+1
+   \       0xC6   0xF117 0x0A10      ADDS     R10,R7,#+16
+   \       0xCA   0xFA10 0xFA0A      LSLS     R10,R0,R10
+    316          
+    317            GPIO_EM4EnablePinWakeup(pinmask, polarityMask);
+   \       0xCE   0x4649             MOV      R1,R9
+   \       0xD0   0x4650             MOV      R0,R10
+   \       0xD2   0x.... 0x....      BL       GPIO_EM4EnablePinWakeup
+    318          
+    319            // Enable EM4WU interrupt
+    320          #if defined(_SILICON_LABS_32B_SERIES_1)
+    321            BUS_RegBitWrite(&(GPIO->IEN), intNo + _GPIO_IEN_EM4WU_SHIFT, enable);
+    322          #elif defined(_SILICON_LABS_32B_SERIES_2_CONFIG_1)
+    323            BUS_RegBitWrite(&(GPIO->IEN), intNo + _GPIO_IEN_EM4WUIEN_SHIFT, enable);
+    324          #else
+    325            BUS_RegBitWrite(&(GPIO->IEN), intNo + _GPIO_IEN_EM4WUIEN0_SHIFT, enable);
+   \       0xD6   0x0022             MOVS     R2,R4
+   \       0xD8   0xB2D2             UXTB     R2,R2
+   \       0xDA   0xF117 0x0110      ADDS     R1,R7,#+16
+   \       0xDE   0x....             LDR.N    R0,??DataTable9_10
+   \       0xE0   0x.... 0x....      BL       BUS_RegBitWrite
+    326          #endif
+    327          }
+   \       0xE4   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    328          #endif
+    329          
+    330          /***************************************************************************//**
+    331           * @brief
+    332           *   Set the mode for a GPIO pin.
+    333           *
+    334           * @param[in] port
+    335           *   The GPIO port to access.
+    336           *
+    337           * @param[in] pin
+    338           *   The pin number in the port.
+    339           *
+    340           * @param[in] mode
+    341           *   The desired pin mode.
+    342           *
+    343           * @param[in] out
+    344           *   A value to set for the pin in the DOUT register. The DOUT setting is important for
+    345           *   some input mode configurations to determine the pull-up/down direction.
+    346           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    347          void GPIO_PinModeSet(GPIO_Port_TypeDef port,
+    348                               unsigned int pin,
+    349                               GPIO_Mode_TypeDef mode,
+    350                               unsigned int out)
+    351          {
+   \                     GPIO_PinModeSet: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000F             MOVS     R7,R1
+   \        0x6   0x0014             MOVS     R4,R2
+   \        0x8   0x001D             MOVS     R5,R3
+    352            EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));
+   \        0xA   0x0030             MOVS     R0,R6
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD102             BNE.N    ??GPIO_PinModeSet_0
+   \       0x12   0xF240 0x10FF      MOVW     R0,#+511
+   \       0x16   0xE03C             B.N      ??GPIO_PinModeSet_1
+   \                     ??GPIO_PinModeSet_0: (+1)
+   \       0x18   0x0030             MOVS     R0,R6
+   \       0x1A   0xB2C0             UXTB     R0,R0
+   \       0x1C   0x2801             CMP      R0,#+1
+   \       0x1E   0xD101             BNE.N    ??GPIO_PinModeSet_2
+   \       0x20   0x2003             MOVS     R0,#+3
+   \       0x22   0xE036             B.N      ??GPIO_PinModeSet_1
+   \                     ??GPIO_PinModeSet_2: (+1)
+   \       0x24   0x0030             MOVS     R0,R6
+   \       0x26   0xB2C0             UXTB     R0,R0
+   \       0x28   0x2802             CMP      R0,#+2
+   \       0x2A   0xD101             BNE.N    ??GPIO_PinModeSet_3
+   \       0x2C   0x20FF             MOVS     R0,#+255
+   \       0x2E   0xE030             B.N      ??GPIO_PinModeSet_1
+   \                     ??GPIO_PinModeSet_3: (+1)
+   \       0x30   0x0030             MOVS     R0,R6
+   \       0x32   0xB2C0             UXTB     R0,R0
+   \       0x34   0x2803             CMP      R0,#+3
+   \       0x36   0xD101             BNE.N    ??GPIO_PinModeSet_4
+   \       0x38   0x200F             MOVS     R0,#+15
+   \       0x3A   0xE02A             B.N      ??GPIO_PinModeSet_1
+   \                     ??GPIO_PinModeSet_4: (+1)
+   \       0x3C   0x0030             MOVS     R0,R6
+   \       0x3E   0xB2C0             UXTB     R0,R0
+   \       0x40   0x2804             CMP      R0,#+4
+   \       0x42   0xD101             BNE.N    ??GPIO_PinModeSet_5
+   \       0x44   0x2000             MOVS     R0,#+0
+   \       0x46   0xE024             B.N      ??GPIO_PinModeSet_1
+   \                     ??GPIO_PinModeSet_5: (+1)
+   \       0x48   0x0030             MOVS     R0,R6
+   \       0x4A   0xB2C0             UXTB     R0,R0
+   \       0x4C   0x2805             CMP      R0,#+5
+   \       0x4E   0xD101             BNE.N    ??GPIO_PinModeSet_6
+   \       0x50   0x2000             MOVS     R0,#+0
+   \       0x52   0xE01E             B.N      ??GPIO_PinModeSet_1
+   \                     ??GPIO_PinModeSet_6: (+1)
+   \       0x54   0x0030             MOVS     R0,R6
+   \       0x56   0xB2C0             UXTB     R0,R0
+   \       0x58   0x2806             CMP      R0,#+6
+   \       0x5A   0xD101             BNE.N    ??GPIO_PinModeSet_7
+   \       0x5C   0x2000             MOVS     R0,#+0
+   \       0x5E   0xE018             B.N      ??GPIO_PinModeSet_1
+   \                     ??GPIO_PinModeSet_7: (+1)
+   \       0x60   0x0030             MOVS     R0,R6
+   \       0x62   0xB2C0             UXTB     R0,R0
+   \       0x64   0x2807             CMP      R0,#+7
+   \       0x66   0xD101             BNE.N    ??GPIO_PinModeSet_8
+   \       0x68   0x2000             MOVS     R0,#+0
+   \       0x6A   0xE012             B.N      ??GPIO_PinModeSet_1
+   \                     ??GPIO_PinModeSet_8: (+1)
+   \       0x6C   0x0030             MOVS     R0,R6
+   \       0x6E   0xB2C0             UXTB     R0,R0
+   \       0x70   0x2808             CMP      R0,#+8
+   \       0x72   0xD101             BNE.N    ??GPIO_PinModeSet_9
+   \       0x74   0x2000             MOVS     R0,#+0
+   \       0x76   0xE00C             B.N      ??GPIO_PinModeSet_1
+   \                     ??GPIO_PinModeSet_9: (+1)
+   \       0x78   0x0030             MOVS     R0,R6
+   \       0x7A   0xB2C0             UXTB     R0,R0
+   \       0x7C   0x2809             CMP      R0,#+9
+   \       0x7E   0xD101             BNE.N    ??GPIO_PinModeSet_10
+   \       0x80   0x2000             MOVS     R0,#+0
+   \       0x82   0xE006             B.N      ??GPIO_PinModeSet_1
+   \                     ??GPIO_PinModeSet_10: (+1)
+   \       0x84   0x0030             MOVS     R0,R6
+   \       0x86   0xB2C0             UXTB     R0,R0
+   \       0x88   0x280A             CMP      R0,#+10
+   \       0x8A   0xD101             BNE.N    ??GPIO_PinModeSet_11
+   \       0x8C   0x2000             MOVS     R0,#+0
+   \       0x8E   0xE000             B.N      ??GPIO_PinModeSet_1
+   \                     ??GPIO_PinModeSet_11: (+1)
+   \       0x90   0x2000             MOVS     R0,#+0
+   \                     ??GPIO_PinModeSet_1: (+1)
+   \       0x92   0x40F8             LSRS     R0,R0,R7
+   \       0x94   0xF010 0x0001      ANDS     R0,R0,#0x1
+    353          
+    354            /* If disabling a pin, do not modify DOUT to reduce the chance of */
+    355            /* a glitch/spike (may not be sufficient precaution in all use cases). */
+    356            if (mode != gpioModeDisabled) {
+   \       0x98   0x2C00             CMP      R4,#+0
+   \       0x9A   0xD00C             BEQ.N    ??GPIO_PinModeSet_12
+    357              if (out) {
+   \       0x9C   0x2D00             CMP      R5,#+0
+   \       0x9E   0xD005             BEQ.N    ??GPIO_PinModeSet_13
+    358                GPIO_PinOutSet(port, pin);
+   \       0xA0   0x0039             MOVS     R1,R7
+   \       0xA2   0x0030             MOVS     R0,R6
+   \       0xA4   0xB2C0             UXTB     R0,R0
+   \       0xA6   0x.... 0x....      BL       GPIO_PinOutSet
+   \       0xAA   0xE004             B.N      ??GPIO_PinModeSet_12
+    359              } else {
+    360                GPIO_PinOutClear(port, pin);
+   \                     ??GPIO_PinModeSet_13: (+1)
+   \       0xAC   0x0039             MOVS     R1,R7
+   \       0xAE   0x0030             MOVS     R0,R6
+   \       0xB0   0xB2C0             UXTB     R0,R0
+   \       0xB2   0x.... 0x....      BL       GPIO_PinOutClear
+    361              }
+    362            }
+    363          
+    364            /* There are two registers controlling the pins for each port. The MODEL
+    365             * register controls pins 0-7 and MODEH controls pins 8-15. */
+    366            if (pin < 8) {
+   \                     ??GPIO_PinModeSet_12: (+1)
+   \       0xB6   0x2F08             CMP      R7,#+8
+   \       0xB8   0xD216             BCS.N    ??GPIO_PinModeSet_14
+    367              // Cast parameter [mode] to 32 bits to fix C99 Undefined Behavior (see SEI CERT C INT34-C)
+    368              // Compiler assigned 8 bits for enum. Same thing for other branch.
+    369              BUS_RegMaskedWrite(&(GPIO->P[port].MODEL), 0xFu << (pin * 4), (uint32_t)mode << (pin * 4));
+   \       0xBA   0x0038             MOVS     R0,R7
+   \       0xBC   0xB2C0             UXTB     R0,R0
+   \       0xBE   0x0082             LSLS     R2,R0,#+2
+   \       0xC0   0xFA14 0xF202      LSLS     R2,R4,R2
+   \       0xC4   0x210F             MOVS     R1,#+15
+   \       0xC6   0x0038             MOVS     R0,R7
+   \       0xC8   0xB2C0             UXTB     R0,R0
+   \       0xCA   0x0080             LSLS     R0,R0,#+2
+   \       0xCC   0x4081             LSLS     R1,R1,R0
+   \       0xCE   0x....             LDR.N    R3,??DataTable9_11
+   \       0xD0   0x46B4             MOV      R12,R6
+   \       0xD2   0xFA5F 0xFC8C      UXTB     R12,R12
+   \       0xD6   0x2030             MOVS     R0,#+48
+   \       0xD8   0xFB00 0xFC0C      MUL      R12,R0,R12
+   \       0xDC   0xEB03 0x000C      ADD      R0,R3,R12
+   \       0xE0   0x1D00             ADDS     R0,R0,#+4
+   \       0xE2   0x.... 0x....      BL       BUS_RegMaskedWrite
+   \       0xE6   0xE017             B.N      ??GPIO_PinModeSet_15
+    370            } else {
+    371              BUS_RegMaskedWrite(&(GPIO->P[port].MODEH), 0xFu << ((pin - 8) * 4), (uint32_t)mode << ((pin - 8) * 4));
+   \                     ??GPIO_PinModeSet_14: (+1)
+   \       0xE8   0xF117 0x00F8      ADDS     R0,R7,#+248
+   \       0xEC   0xB2C0             UXTB     R0,R0
+   \       0xEE   0x0082             LSLS     R2,R0,#+2
+   \       0xF0   0xFA14 0xF202      LSLS     R2,R4,R2
+   \       0xF4   0x210F             MOVS     R1,#+15
+   \       0xF6   0xF117 0x00F8      ADDS     R0,R7,#+248
+   \       0xFA   0xB2C0             UXTB     R0,R0
+   \       0xFC   0x0080             LSLS     R0,R0,#+2
+   \       0xFE   0x4081             LSLS     R1,R1,R0
+   \      0x100   0x....             LDR.N    R3,??DataTable9_11
+   \      0x102   0x46B4             MOV      R12,R6
+   \      0x104   0xFA5F 0xFC8C      UXTB     R12,R12
+   \      0x108   0x2030             MOVS     R0,#+48
+   \      0x10A   0xFB00 0xFC0C      MUL      R12,R0,R12
+   \      0x10E   0xEB03 0x000C      ADD      R0,R3,R12
+   \      0x112   0x300C             ADDS     R0,R0,#+12
+   \      0x114   0x.... 0x....      BL       BUS_RegMaskedWrite
+    372            }
+    373          
+    374            if (mode == gpioModeDisabled) {
+   \                     ??GPIO_PinModeSet_15: (+1)
+   \      0x118   0x2C00             CMP      R4,#+0
+   \      0x11A   0xD10C             BNE.N    ??GPIO_PinModeSet_16
+    375              if (out) {
+   \      0x11C   0x2D00             CMP      R5,#+0
+   \      0x11E   0xD005             BEQ.N    ??GPIO_PinModeSet_17
+    376                GPIO_PinOutSet(port, pin);
+   \      0x120   0x0039             MOVS     R1,R7
+   \      0x122   0x0030             MOVS     R0,R6
+   \      0x124   0xB2C0             UXTB     R0,R0
+   \      0x126   0x.... 0x....      BL       GPIO_PinOutSet
+   \      0x12A   0xE004             B.N      ??GPIO_PinModeSet_16
+    377              } else {
+    378                GPIO_PinOutClear(port, pin);
+   \                     ??GPIO_PinModeSet_17: (+1)
+   \      0x12C   0x0039             MOVS     R1,R7
+   \      0x12E   0x0030             MOVS     R0,R6
+   \      0x130   0xB2C0             UXTB     R0,R0
+   \      0x132   0x.... 0x....      BL       GPIO_PinOutClear
+    379              }
+    380            }
+    381          }
+   \                     ??GPIO_PinModeSet_16: (+1)
+   \      0x136   0xBDF1             POP      {R0,R4-R7,PC}
+    382          
+    383          /***************************************************************************//**
+    384           * @brief
+    385           *   Get the mode for a GPIO pin.
+    386           *
+    387           * @param[in] port
+    388           *   The GPIO port to access.
+    389           *
+    390           * @param[in] pin
+    391           *   The pin number in the port.
+    392           *
+    393           * @return
+    394           *   The pin mode.
+    395           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    396          GPIO_Mode_TypeDef GPIO_PinModeGet(GPIO_Port_TypeDef port,
+    397                                            unsigned int pin)
+    398          {
+    399            EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));
+   \                     GPIO_PinModeGet: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+   \        0x2   0xB2D2             UXTB     R2,R2
+   \        0x4   0x2A00             CMP      R2,#+0
+   \        0x6   0xD102             BNE.N    ??GPIO_PinModeGet_0
+   \        0x8   0xF240 0x12FF      MOVW     R2,#+511
+   \        0xC   0xE03C             B.N      ??GPIO_PinModeGet_1
+   \                     ??GPIO_PinModeGet_0: (+1)
+   \        0xE   0x0002             MOVS     R2,R0
+   \       0x10   0xB2D2             UXTB     R2,R2
+   \       0x12   0x2A01             CMP      R2,#+1
+   \       0x14   0xD101             BNE.N    ??GPIO_PinModeGet_2
+   \       0x16   0x2203             MOVS     R2,#+3
+   \       0x18   0xE036             B.N      ??GPIO_PinModeGet_1
+   \                     ??GPIO_PinModeGet_2: (+1)
+   \       0x1A   0x0002             MOVS     R2,R0
+   \       0x1C   0xB2D2             UXTB     R2,R2
+   \       0x1E   0x2A02             CMP      R2,#+2
+   \       0x20   0xD101             BNE.N    ??GPIO_PinModeGet_3
+   \       0x22   0x22FF             MOVS     R2,#+255
+   \       0x24   0xE030             B.N      ??GPIO_PinModeGet_1
+   \                     ??GPIO_PinModeGet_3: (+1)
+   \       0x26   0x0002             MOVS     R2,R0
+   \       0x28   0xB2D2             UXTB     R2,R2
+   \       0x2A   0x2A03             CMP      R2,#+3
+   \       0x2C   0xD101             BNE.N    ??GPIO_PinModeGet_4
+   \       0x2E   0x220F             MOVS     R2,#+15
+   \       0x30   0xE02A             B.N      ??GPIO_PinModeGet_1
+   \                     ??GPIO_PinModeGet_4: (+1)
+   \       0x32   0x0002             MOVS     R2,R0
+   \       0x34   0xB2D2             UXTB     R2,R2
+   \       0x36   0x2A04             CMP      R2,#+4
+   \       0x38   0xD101             BNE.N    ??GPIO_PinModeGet_5
+   \       0x3A   0x2200             MOVS     R2,#+0
+   \       0x3C   0xE024             B.N      ??GPIO_PinModeGet_1
+   \                     ??GPIO_PinModeGet_5: (+1)
+   \       0x3E   0x0002             MOVS     R2,R0
+   \       0x40   0xB2D2             UXTB     R2,R2
+   \       0x42   0x2A05             CMP      R2,#+5
+   \       0x44   0xD101             BNE.N    ??GPIO_PinModeGet_6
+   \       0x46   0x2200             MOVS     R2,#+0
+   \       0x48   0xE01E             B.N      ??GPIO_PinModeGet_1
+   \                     ??GPIO_PinModeGet_6: (+1)
+   \       0x4A   0x0002             MOVS     R2,R0
+   \       0x4C   0xB2D2             UXTB     R2,R2
+   \       0x4E   0x2A06             CMP      R2,#+6
+   \       0x50   0xD101             BNE.N    ??GPIO_PinModeGet_7
+   \       0x52   0x2200             MOVS     R2,#+0
+   \       0x54   0xE018             B.N      ??GPIO_PinModeGet_1
+   \                     ??GPIO_PinModeGet_7: (+1)
+   \       0x56   0x0002             MOVS     R2,R0
+   \       0x58   0xB2D2             UXTB     R2,R2
+   \       0x5A   0x2A07             CMP      R2,#+7
+   \       0x5C   0xD101             BNE.N    ??GPIO_PinModeGet_8
+   \       0x5E   0x2200             MOVS     R2,#+0
+   \       0x60   0xE012             B.N      ??GPIO_PinModeGet_1
+   \                     ??GPIO_PinModeGet_8: (+1)
+   \       0x62   0x0002             MOVS     R2,R0
+   \       0x64   0xB2D2             UXTB     R2,R2
+   \       0x66   0x2A08             CMP      R2,#+8
+   \       0x68   0xD101             BNE.N    ??GPIO_PinModeGet_9
+   \       0x6A   0x2200             MOVS     R2,#+0
+   \       0x6C   0xE00C             B.N      ??GPIO_PinModeGet_1
+   \                     ??GPIO_PinModeGet_9: (+1)
+   \       0x6E   0x0002             MOVS     R2,R0
+   \       0x70   0xB2D2             UXTB     R2,R2
+   \       0x72   0x2A09             CMP      R2,#+9
+   \       0x74   0xD101             BNE.N    ??GPIO_PinModeGet_10
+   \       0x76   0x2200             MOVS     R2,#+0
+   \       0x78   0xE006             B.N      ??GPIO_PinModeGet_1
+   \                     ??GPIO_PinModeGet_10: (+1)
+   \       0x7A   0x0002             MOVS     R2,R0
+   \       0x7C   0xB2D2             UXTB     R2,R2
+   \       0x7E   0x2A0A             CMP      R2,#+10
+   \       0x80   0xD101             BNE.N    ??GPIO_PinModeGet_11
+   \       0x82   0x2200             MOVS     R2,#+0
+   \       0x84   0xE000             B.N      ??GPIO_PinModeGet_1
+   \                     ??GPIO_PinModeGet_11: (+1)
+   \       0x86   0x2200             MOVS     R2,#+0
+   \                     ??GPIO_PinModeGet_1: (+1)
+   \       0x88   0x40CA             LSRS     R2,R2,R1
+   \       0x8A   0xF012 0x0201      ANDS     R2,R2,#0x1
+    400          
+    401            if (pin < 8) {
+   \       0x8E   0x2908             CMP      R1,#+8
+   \       0x90   0xD20B             BCS.N    ??GPIO_PinModeGet_12
+    402              return (GPIO_Mode_TypeDef) ((GPIO->P[port].MODEL >> (pin * 4)) & 0xF);
+   \       0x92   0x....             LDR.N    R3,??DataTable9_11
+   \       0x94   0xB2C0             UXTB     R0,R0
+   \       0x96   0x2230             MOVS     R2,#+48
+   \       0x98   0x4350             MULS     R0,R2,R0
+   \       0x9A   0x4418             ADD      R0,R3,R0
+   \       0x9C   0x6840             LDR      R0,[R0, #+4]
+   \       0x9E   0xB2C9             UXTB     R1,R1
+   \       0xA0   0x0089             LSLS     R1,R1,#+2
+   \       0xA2   0x40C8             LSRS     R0,R0,R1
+   \       0xA4   0xF010 0x000F      ANDS     R0,R0,#0xF
+   \       0xA8   0xE00B             B.N      ??GPIO_PinModeGet_13
+    403            } else {
+    404              return (GPIO_Mode_TypeDef) ((GPIO->P[port].MODEH >> ((pin - 8) * 4)) & 0xF);
+   \                     ??GPIO_PinModeGet_12: (+1)
+   \       0xAA   0x....             LDR.N    R3,??DataTable9_11
+   \       0xAC   0xB2C0             UXTB     R0,R0
+   \       0xAE   0x2230             MOVS     R2,#+48
+   \       0xB0   0x4350             MULS     R0,R2,R0
+   \       0xB2   0x4418             ADD      R0,R3,R0
+   \       0xB4   0x68C0             LDR      R0,[R0, #+12]
+   \       0xB6   0x3908             SUBS     R1,R1,#+8
+   \       0xB8   0xB2C9             UXTB     R1,R1
+   \       0xBA   0x0089             LSLS     R1,R1,#+2
+   \       0xBC   0x40C8             LSRS     R0,R0,R1
+   \       0xBE   0xF010 0x000F      ANDS     R0,R0,#0xF
+   \                     ??GPIO_PinModeGet_13: (+1)
+   \       0xC2   0x4770             BX       LR
+    405            }
+    406          }
+    407          
+    408          #if defined(_GPIO_EM4WUEN_MASK)
+    409          /**************************************************************************//**
+    410           * @brief
+    411           *   Enable GPIO pin wake-up from EM4. When the function exits,
+    412           *   EM4 mode can be safely entered.
+    413           *
+    414           * @note
+    415           *   It is assumed that the GPIO pin modes are set correctly.
+    416           *   Valid modes are @ref gpioModeInput and @ref gpioModeInputPull.
+    417           *
+    418           * @param[in] pinmask
+    419           *   A bitmask containing the bitwise logic OR of which GPIO pin(s) to enable.
+    420           *   See Reference Manuals for a pinmask to the GPIO port/pin mapping.
+    421           * @param[in] polaritymask
+    422           *   A bitmask containing the bitwise logic OR of GPIO pin(s) wake-up polarity.
+    423           *   See Reference Manuals for pinmask-to-GPIO port/pin mapping.
+    424           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    425          void GPIO_EM4EnablePinWakeup(uint32_t pinmask, uint32_t polaritymask)
+    426          {
+   \                     GPIO_EM4EnablePinWakeup: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    427            EFM_ASSERT((pinmask & ~_GPIO_EM4WUEN_MASK) == 0);
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0xF36F 0x401B      BFC      R0,#+16,#+12
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD101             BNE.N    ??GPIO_EM4EnablePinWakeup_0
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0xE000             B.N      ??GPIO_EM4EnablePinWakeup_1
+   \                     ??GPIO_EM4EnablePinWakeup_0: (+1)
+   \       0x14   0x2000             MOVS     R0,#+0
+   \                     ??GPIO_EM4EnablePinWakeup_1: (+1)
+   \       0x16   0xB2C0             UXTB     R0,R0
+    428          
+    429          #if defined(_GPIO_EM4WUPOL_MASK)
+    430            EFM_ASSERT((polaritymask & ~_GPIO_EM4WUPOL_MASK) == 0);
+   \       0x18   0x0028             MOVS     R0,R5
+   \       0x1A   0xF36F 0x401B      BFC      R0,#+16,#+12
+   \       0x1E   0x2800             CMP      R0,#+0
+   \       0x20   0xD101             BNE.N    ??GPIO_EM4EnablePinWakeup_2
+   \       0x22   0x2001             MOVS     R0,#+1
+   \       0x24   0xE000             B.N      ??GPIO_EM4EnablePinWakeup_3
+   \                     ??GPIO_EM4EnablePinWakeup_2: (+1)
+   \       0x26   0x2000             MOVS     R0,#+0
+   \                     ??GPIO_EM4EnablePinWakeup_3: (+1)
+   \       0x28   0xB2C0             UXTB     R0,R0
+    431            GPIO->EM4WUPOL &= ~pinmask;               /* Set the wakeup polarity. */
+   \       0x2A   0x....             LDR.N    R0,??DataTable9_12
+   \       0x2C   0x6800             LDR      R0,[R0, #+0]
+   \       0x2E   0x43A0             BICS     R0,R0,R4
+   \       0x30   0x....             LDR.N    R1,??DataTable9_12
+   \       0x32   0x6008             STR      R0,[R1, #+0]
+    432            GPIO->EM4WUPOL |= pinmask & polaritymask;
+   \       0x34   0x....             LDR.N    R0,??DataTable9_12
+   \       0x36   0x6801             LDR      R1,[R0, #+0]
+   \       0x38   0xEA15 0x0004      ANDS     R0,R5,R4
+   \       0x3C   0x4301             ORRS     R1,R0,R1
+   \       0x3E   0x....             LDR.N    R0,??DataTable9_12
+   \       0x40   0x6001             STR      R1,[R0, #+0]
+    433          #elif defined(_GPIO_EXTILEVEL_MASK)
+    434            EFM_ASSERT((polaritymask & ~_GPIO_EXTILEVEL_MASK) == 0);
+    435            GPIO->EXTILEVEL &= ~pinmask;
+    436            GPIO->EXTILEVEL |= pinmask & polaritymask;
+    437          #endif
+    438            GPIO->EM4WUEN  |= pinmask;                /* Enable wakeup. */
+   \       0x42   0x....             LDR.N    R0,??DataTable9_13
+   \       0x44   0x6800             LDR      R0,[R0, #+0]
+   \       0x46   0x4320             ORRS     R0,R4,R0
+   \       0x48   0x....             LDR.N    R1,??DataTable9_13
+   \       0x4A   0x6008             STR      R0,[R1, #+0]
+    439          
+    440            GPIO_EM4SetPinRetention(true);            /* Enable the pin retention. */
+   \       0x4C   0x2001             MOVS     R0,#+1
+   \       0x4E   0x.... 0x....      BL       GPIO_EM4SetPinRetention
+    441          
+    442          #if defined(_GPIO_CMD_EM4WUCLR_MASK)
+    443            GPIO->CMD = GPIO_CMD_EM4WUCLR;            /* Clear the wake-up logic. */
+    444          #else
+    445            GPIO_IntClear(pinmask);
+   \       0x52   0x0020             MOVS     R0,R4
+   \       0x54   0x.... 0x....      BL       GPIO_IntClear
+    446          #endif
+    447          }
+   \       0x58   0xBD31             POP      {R0,R4,R5,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9:
+   \        0x0   0x5000'406C        DC32     0x5000406c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_1:
+   \        0x0   0x5003'E420        DC32     0x5003e420
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_2:
+   \        0x0   0x5003'E030        DC32     0x5003e030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_3:
+   \        0x0   0x5003'D030        DC32     0x5003d030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_4:
+   \        0x0   0x5003'C400        DC32     0x5003c400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_5:
+   \        0x0   0x5003'C404        DC32     0x5003c404
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_6:
+   \        0x0   0x5003'C408        DC32     0x5003c408
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_7:
+   \        0x0   0x5003'C40C        DC32     0x5003c40c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_8:
+   \        0x0   0x5003'C410        DC32     0x5003c410
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_9:
+   \        0x0   0x5003'C414        DC32     0x5003c414
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_10:
+   \        0x0   0x5003'C424        DC32     0x5003c424
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_11:
+   \        0x0   0x5003'C030        DC32     0x5003c030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_12:
+   \        0x0   0x5003'C430        DC32     0x5003c430
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_13:
+   \        0x0   0x5003'C42C        DC32     0x5003c42c
+    448          #endif
+    449          
+    450          /** @} (end addtogroup gpio) */
+    451          
+    452          #endif /* defined(GPIO_COUNT) && (GPIO_COUNT > 0) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       4   BUS_RegBitWrite
+      24   BUS_RegMaskedWrite
+        24   -> CORE_EnterCritical
+        24   -> CORE_ExitCritical
+       0   GPIO_DbgLocationSet
+      16   GPIO_EM4EnablePinWakeup
+        16   -> GPIO_EM4SetPinRetention
+        16   -> GPIO_IntClear
+       0   GPIO_EM4SetPinRetention
+      32   GPIO_EM4WUExtIntConfig
+        32   -> BUS_RegBitWrite
+        32   -> GPIO_EM4EnablePinWakeup
+        32   -> GPIO_PinModeSet
+      32   GPIO_ExtIntConfig
+        32   -> BUS_RegBitWrite
+        32   -> BUS_RegMaskedWrite
+        32   -> GPIO_IntClear
+       0   GPIO_IntClear
+       0   GPIO_PinModeGet
+      24   GPIO_PinModeSet
+        24   -> BUS_RegMaskedWrite
+        24   -> GPIO_PinOutClear
+        24   -> GPIO_PinOutSet
+       8   GPIO_PinOutClear
+       8   GPIO_PinOutSet
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable9
+       4  ??DataTable9_1
+       4  ??DataTable9_10
+       4  ??DataTable9_11
+       4  ??DataTable9_12
+       4  ??DataTable9_13
+       4  ??DataTable9_2
+       4  ??DataTable9_3
+       4  ??DataTable9_4
+       4  ??DataTable9_5
+       4  ??DataTable9_6
+       4  ??DataTable9_7
+       4  ??DataTable9_8
+       4  ??DataTable9_9
+      38  BUS_RegBitWrite
+      34  BUS_RegMaskedWrite
+       2  GPIO_DbgLocationSet
+      90  GPIO_EM4EnablePinWakeup
+      62  GPIO_EM4SetPinRetention
+     232  GPIO_EM4WUExtIntConfig
+     382  GPIO_ExtIntConfig
+       8  GPIO_IntClear
+     196  GPIO_PinModeGet
+     312  GPIO_PinModeSet
+     170  GPIO_PinOutClear
+     170  GPIO_PinOutSet
+
+ 
+ 1'752 bytes in section .text
+ 
+ 1'752 bytes of CODE memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,810 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         30/Apr/2024  13:12:22
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\DebugLog\APP_LOG\app_log.c
+#    Command line      =
+#        -f
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\DebugLog\APP_LOG\app_log.lst.rsp
+#        (D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\DebugLog\APP_LOG\app_log.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\DebugLog\APP_LOG
+#        --diag_suppress Pa050 -o
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\DebugLog\APP_LOG
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\DebugLog\APP_LOG\app_log.o.d
+#    Locale            =  C
+#    List file         =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\DebugLog\APP_LOG\app_log.lst
+#    Object file       =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\DebugLog\APP_LOG\app_log.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\DebugLog\APP_LOG\app_log.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Application log source file
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2021 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          #ifdef HOST_TOOLCHAIN
+     18          #include <time.h>
+     19          #if defined(POSIX) && POSIX == 1
+     20          #include <sys/time.h>
+     21          #else
+     22          #include <windows.h>
+     23          #endif // defined(POSIX) && POSIX == 1
+     24          
+     25          #define SL_WEAK
+     26          #else // HOST_TOOLCHAIN
+     27          #include "em_common.h"
+     28          #endif // HOST_TOOLCHAIN
+     29          
+     30          #ifdef SL_COMPONENT_CATALOG_PRESENT
+     31          #include "sl_component_catalog.h"
+     32          #endif // SL_COMPONENT_CATALOG_PRESENT
+     33          
+     34          #include "sl_status.h"
+     35          #include "app_log.h"
+     36          #include "app_log_config.h"
+     37          #include <string.h>
+     38          
+     39          #ifdef SL_CATALOG_SLEEPTIMER_PRESENT
+     40          #include "sl_sleeptimer.h"
+     41          #endif // SL_CATALOG_SLEEPTIMER_PRESENT
+     42          
+     43          // -----------------------------------------------------------------------------
+     44          // Global variables
+     45          
+     46          /// IOStream for logging
+
+   \                                 In section .bss, align 4
+     47          sl_iostream_t * app_log_iostream = NULL;
+   \                     app_log_iostream:
+   \        0x0                      DS8 4
+     48          
+     49          // -----------------------------------------------------------------------------
+     50          // Local variables
+     51          
+     52          #if APP_LOG_ENABLE == 1 && APP_LOG_COUNTER_ENABLE == 1
+     53          /// Counter for logging
+     54          static uint32_t counter = 0;
+     55          #endif // APP_LOG_ENABLE == 1 && APP_LOG_COUNTER_ENABLE == 1
+     56          
+     57          /// Simple filter status
+
+   \                                 In section .data, align 1
+     58          static bool level_filter_enabled = APP_LOG_LEVEL_FILTER_ENABLE;
+   \                     level_filter_enabled:
+   \        0x0   0x01               DC8 1
+     59          
+     60          /// Simple filter for logging
+
+   \                                 In section .data, align 1
+     61          static uint8_t level_filter_threshold = APP_LOG_LEVEL_FILTER_THRESHOLD;
+   \                     level_filter_threshold:
+   \        0x0   0x04               DC8 4
+     62          
+     63          /// Mask status
+
+   \                                 In section .bss, align 1
+     64          static bool level_mask_enabled = APP_LOG_LEVEL_MASK_ENABLE;
+   \                     level_mask_enabled:
+   \        0x0                      DS8 1
+     65          
+     66          /// Mask for logging
+
+   \                                 In section .data, align 1
+     67          static uint8_t level_mask =
+   \                     level_mask:
+   \        0x0   0x1F               DC8 31
+     68            (APP_LOG_LEVEL_MASK_CRITICAL << APP_LOG_LEVEL_CRITICAL)
+     69            | (APP_LOG_LEVEL_MASK_ERROR << APP_LOG_LEVEL_ERROR)
+     70            | (APP_LOG_LEVEL_MASK_WARNING << APP_LOG_LEVEL_WARNING)
+     71            | (APP_LOG_LEVEL_MASK_INFO << APP_LOG_LEVEL_INFO)
+     72            | (APP_LOG_LEVEL_MASK_DEBUG << APP_LOG_LEVEL_DEBUG);
+     73          
+     74          // -----------------------------------------------------------------------------
+     75          // Public functions
+     76          
+     77          /***************************************************************************//**
+     78           * Checking log level
+     79           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     80          bool _app_log_check_level(uint8_t level)
+     81          {
+   \                     _app_log_check_level: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+     82            bool ret = true;
+   \        0x2   0x2001             MOVS     R0,#+1
+     83            if (level_filter_enabled) {
+   \        0x4   0x....             LDR.N    R1,??DataTable10_2
+   \        0x6   0x7809             LDRB     R1,[R1, #+0]
+   \        0x8   0x2900             CMP      R1,#+0
+   \        0xA   0xD007             BEQ.N    ??_app_log_check_level_0
+     84              if (level > level_filter_threshold) {
+   \        0xC   0x....             LDR.N    R1,??DataTable10_3
+   \        0xE   0x7809             LDRB     R1,[R1, #+0]
+   \       0x10   0x0013             MOVS     R3,R2
+   \       0x12   0xB2DB             UXTB     R3,R3
+   \       0x14   0x4299             CMP      R1,R3
+   \       0x16   0xD201             BCS.N    ??_app_log_check_level_0
+     85                ret = false;
+   \       0x18   0x2100             MOVS     R1,#+0
+   \       0x1A   0x0008             MOVS     R0,R1
+     86              }
+     87            }
+     88            if (level_mask_enabled) {
+   \                     ??_app_log_check_level_0: (+1)
+   \       0x1C   0x....             LDR.N    R1,??DataTable10_4
+   \       0x1E   0x7809             LDRB     R1,[R1, #+0]
+   \       0x20   0x2900             CMP      R1,#+0
+   \       0x22   0xD007             BEQ.N    ??_app_log_check_level_1
+     89              if ( !(level_mask & (1 << level)) ) {
+   \       0x24   0x....             LDR.N    R1,??DataTable10_5
+   \       0x26   0x7809             LDRB     R1,[R1, #+0]
+   \       0x28   0x2301             MOVS     R3,#+1
+   \       0x2A   0x4093             LSLS     R3,R3,R2
+   \       0x2C   0x4219             TST      R1,R3
+   \       0x2E   0xD101             BNE.N    ??_app_log_check_level_1
+     90                ret = false;
+   \       0x30   0x2100             MOVS     R1,#+0
+   \       0x32   0x0008             MOVS     R0,R1
+     91              }
+     92            }
+     93            return ret;
+   \                     ??_app_log_check_level_1: (+1)
+   \       0x34   0xB2C0             UXTB     R0,R0
+   \       0x36   0x4770             BX       LR
+     94          }
+     95          
+     96          /***************************************************************************//**
+     97           * Enable or disable simple log level filter
+     98           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     99          void app_log_filter_threshold_enable(bool enable)
+    100          {
+    101            level_filter_enabled = enable;
+   \                     app_log_filter_threshold_enable: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable10_2
+   \        0x2   0x7008             STRB     R0,[R1, #+0]
+    102          }
+   \        0x4   0x4770             BX       LR
+    103          
+    104          /***************************************************************************//**
+    105           * Enable or disable masking for log levels
+    106           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    107          void app_log_filter_mask_enable(bool enable)
+    108          {
+    109            level_mask_enabled = enable;
+   \                     app_log_filter_mask_enable: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable10_4
+   \        0x2   0x7008             STRB     R0,[R1, #+0]
+    110          }
+   \        0x4   0x4770             BX       LR
+    111          
+    112          /***************************************************************************//**
+    113           * Set simple filter threshold log level
+    114           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    115          sl_status_t app_log_filter_threshold_set(uint8_t level)
+    116          {
+   \                     app_log_filter_threshold_set: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    117            sl_status_t sc = SL_STATUS_OK;
+   \        0x2   0x2000             MOVS     R0,#+0
+    118            if (level < APP_LOG_LEVEL_COUNT) {
+   \        0x4   0x000A             MOVS     R2,R1
+   \        0x6   0xB2D2             UXTB     R2,R2
+   \        0x8   0x2A05             CMP      R2,#+5
+   \        0xA   0xDA02             BGE.N    ??app_log_filter_threshold_set_0
+    119              level_filter_threshold = level;
+   \        0xC   0x....             LDR.N    R2,??DataTable10_3
+   \        0xE   0x7011             STRB     R1,[R2, #+0]
+   \       0x10   0xE001             B.N      ??app_log_filter_threshold_set_1
+    120            } else {
+    121              sc = SL_STATUS_INVALID_PARAMETER;
+   \                     ??app_log_filter_threshold_set_0: (+1)
+   \       0x12   0x2221             MOVS     R2,#+33
+   \       0x14   0x0010             MOVS     R0,R2
+    122            }
+    123            return sc;
+   \                     ??app_log_filter_threshold_set_1: (+1)
+   \       0x16   0x4770             BX       LR
+    124          }
+    125          
+    126          /***************************************************************************//**
+    127           * Set masks for log levels
+    128           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    129          sl_status_t app_log_filter_mask_set(uint8_t mask)
+    130          {
+   \                     app_log_filter_mask_set: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    131            sl_status_t sc = SL_STATUS_OK;
+   \        0x2   0x2000             MOVS     R0,#+0
+    132            if (mask < (1 << (APP_LOG_LEVEL_COUNT))) {
+   \        0x4   0x000A             MOVS     R2,R1
+   \        0x6   0xB2D2             UXTB     R2,R2
+   \        0x8   0x2A20             CMP      R2,#+32
+   \        0xA   0xDA02             BGE.N    ??app_log_filter_mask_set_0
+    133              level_mask = mask;
+   \        0xC   0x....             LDR.N    R2,??DataTable10_5
+   \        0xE   0x7011             STRB     R1,[R2, #+0]
+   \       0x10   0xE001             B.N      ??app_log_filter_mask_set_1
+    134            } else {
+    135              sc = SL_STATUS_INVALID_PARAMETER;
+   \                     ??app_log_filter_mask_set_0: (+1)
+   \       0x12   0x2221             MOVS     R2,#+33
+   \       0x14   0x0010             MOVS     R0,R2
+    136            }
+    137            return sc;
+   \                     ??app_log_filter_mask_set_1: (+1)
+   \       0x16   0x4770             BX       LR
+    138          }
+    139          
+    140          /***************************************************************************//**
+    141           * Get simple filter threshold log level
+    142           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    143          uint8_t app_log_filter_threshold_get(void)
+    144          {
+    145            return level_filter_threshold;
+   \                     app_log_filter_threshold_get: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_3
+   \        0x2   0x7800             LDRB     R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR
+    146          }
+    147          
+    148          /***************************************************************************//**
+    149           * Get masks for log levels
+    150           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    151          uint8_t app_log_filter_mask_get(void)
+    152          {
+    153            return level_mask;
+   \                     app_log_filter_mask_get: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_5
+   \        0x2   0x7800             LDRB     R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR
+    154          }
+    155          
+    156          /***************************************************************************//**
+    157           * Sets IO Stream
+    158           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    159          sl_status_t app_log_iostream_set(sl_iostream_t *stream)
+    160          {
+   \                     app_log_iostream_set: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    161            sl_status_t ret = SL_STATUS_INVALID_PARAMETER;
+   \        0x2   0x2021             MOVS     R0,#+33
+    162          
+    163            for (uint32_t i = 0; i < sl_iostream_instances_count; i++) {
+   \        0x4   0x2200             MOVS     R2,#+0
+   \                     ??app_log_iostream_set_0: (+1)
+   \        0x6   0x....             LDR.N    R3,??DataTable10_6
+   \        0x8   0x681B             LDR      R3,[R3, #+0]
+   \        0xA   0x429A             CMP      R2,R3
+   \        0xC   0xD20C             BCS.N    ??app_log_iostream_set_1
+    164              if (sl_iostream_instances_info[i]->handle == stream) {
+   \        0xE   0x....             LDR.N    R3,??DataTable10_7
+   \       0x10   0xF853 0x3022      LDR      R3,[R3, R2, LSL #+2]
+   \       0x14   0x681B             LDR      R3,[R3, #+0]
+   \       0x16   0x428B             CMP      R3,R1
+   \       0x18   0xD104             BNE.N    ??app_log_iostream_set_2
+    165                app_log_iostream = stream;
+   \       0x1A   0x....             LDR.N    R3,??DataTable10_8
+   \       0x1C   0x6019             STR      R1,[R3, #+0]
+    166                ret = SL_STATUS_OK;
+   \       0x1E   0x2300             MOVS     R3,#+0
+   \       0x20   0x0018             MOVS     R0,R3
+    167                break;
+   \       0x22   0xE001             B.N      ??app_log_iostream_set_1
+    168              }
+    169            }
+   \                     ??app_log_iostream_set_2: (+1)
+   \       0x24   0x1C52             ADDS     R2,R2,#+1
+   \       0x26   0xE7EE             B.N      ??app_log_iostream_set_0
+    170            return ret;
+   \                     ??app_log_iostream_set_1: (+1)
+   \       0x28   0x4770             BX       LR
+    171          }
+    172          
+    173          /***************************************************************************//**
+    174           * Get the current IO Stream for logging
+    175           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    176          sl_iostream_t * app_log_iostream_get(void)
+    177          {
+    178            return app_log_iostream;
+   \                     app_log_iostream_get: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable10_8
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR
+    179          }
+    180          
+    181          /******************************************************************************
+    182          * Log status string
+    183          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    184          void _app_log_status_string(sl_status_t sc)
+    185          {
+   \                     _app_log_status_string: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    186            sl_iostream_printf(app_log_iostream, "(");
+   \        0x4   0x....             ADR.N    R1,??DataTable10
+   \        0x6   0x....             LDR.N    R0,??DataTable10_8
+   \        0x8   0x6800             LDR      R0,[R0, #+0]
+   \        0xA   0x.... 0x....      BL       sl_iostream_printf
+    187            sl_iostream_t * default_stream_cfgd = sl_iostream_get_default();
+   \        0xE   0x.... 0x....      BL       sl_iostream_get_default
+   \       0x12   0x0005             MOVS     R5,R0
+    188            sl_iostream_set_default(app_log_iostream);
+   \       0x14   0x....             LDR.N    R0,??DataTable10_8
+   \       0x16   0x6800             LDR      R0,[R0, #+0]
+   \       0x18   0x.... 0x....      BL       sl_iostream_set_default
+    189            sl_status_print(sc);
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0x.... 0x....      BL       sl_status_print
+    190            sl_iostream_set_default(default_stream_cfgd);
+   \       0x22   0x0028             MOVS     R0,R5
+   \       0x24   0x.... 0x....      BL       sl_iostream_set_default
+    191            sl_iostream_printf(app_log_iostream, ") ");
+   \       0x28   0x....             ADR.N    R1,??DataTable10_1
+   \       0x2A   0x....             LDR.N    R0,??DataTable10_8
+   \       0x2C   0x6800             LDR      R0,[R0, #+0]
+   \       0x2E   0x.... 0x....      BL       sl_iostream_printf
+    192          }
+   \       0x32   0xBD31             POP      {R0,R4,R5,PC}
+    193          
+    194          /***************************************************************************//**
+    195           * Log time
+    196           ******************************************************************************/
+
+   \                                 In section .text, align 2
+    197          SL_WEAK void _app_log_time()
+    198          {
+    199            #if APP_LOG_ENABLE == 1 && APP_LOG_TIME_ENABLE == 1
+    200            #ifdef SL_CATALOG_SLEEPTIMER_PRESENT
+    201            uint32_t time_ms = (uint32_t)(sl_sleeptimer_get_tick_count64()
+    202                                          * 1000
+    203                                          / sl_sleeptimer_get_timer_frequency());
+    204            app_log_append(APP_LOG_TIME_FORMAT APP_LOG_SEPARATOR,
+    205                           (time_ms / 3600000),
+    206                           (time_ms / 60000) % 60,
+    207                           (time_ms / 1000) % 60,
+    208                           time_ms % 1000);
+    209            #endif // SL_CATALOG_SLEEPTIMER_PRESENT
+    210            #ifdef HOST_TOOLCHAIN
+    211            // Log time for host examples
+    212            #if defined(POSIX) && POSIX == 1
+    213            struct timeval tv;
+    214            struct tm *loc_time;
+    215          
+    216            if (gettimeofday(&tv, NULL) == 0) {
+    217              loc_time = localtime(&tv.tv_sec);
+    218              if (loc_time != NULL) {
+    219                app_log_append(APP_LOG_TIME_FORMAT APP_LOG_SEPARATOR,
+    220                               loc_time->tm_hour,
+    221                               loc_time->tm_min,
+    222                               loc_time->tm_sec,
+    223                               (uint32_t)(tv.tv_usec / 1000));
+    224              }
+    225            }
+    226            #else
+    227            SYSTEMTIME loc_time;
+    228          
+    229            GetLocalTime(&loc_time);
+    230            app_log_append(APP_LOG_TIME_FORMAT APP_LOG_SEPARATOR,
+    231                           loc_time.wHour,
+    232                           loc_time.wMinute,
+    233                           loc_time.wSecond,
+    234                           loc_time.wMilliseconds);
+    235            #endif // defined(POSIX) && POSIX == 1
+    236            #endif // HOST_TOOLCHAIN
+    237            #endif // APP_LOG_ENABLE == 1 && APP_LOG_TIME_ENABLE == 1
+    238          }
+   \                     _app_log_time: (+1)
+   \        0x0   0x4770             BX       LR
+    239          
+    240          /***************************************************************************//**
+    241           * Log counter
+    242           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    243          void _app_log_counter()
+    244          {
+    245            #if APP_LOG_ENABLE == 1 && APP_LOG_COUNTER_ENABLE == 1
+    246            app_log_append(APP_LOG_COUNTER_FORMAT
+    247                           APP_LOG_SEPARATOR,
+    248                           counter++);
+    249            #endif // APP_LOG_ENABLE == 1 && APP_LOG_COUNTER_ENABLE == 1
+    250          }
+   \                     _app_log_counter: (+1)
+   \        0x0   0x4770             BX       LR
+    251          
+    252          /******************************************************************************
+    253          * Application log init
+    254          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    255          void app_log_init()
+    256          {
+   \                     app_log_init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    257            // Init filter and mask
+    258            level_filter_enabled = APP_LOG_LEVEL_FILTER_ENABLE;
+   \        0x2   0x2001             MOVS     R0,#+1
+   \        0x4   0x....             LDR.N    R1,??DataTable10_2
+   \        0x6   0x7008             STRB     R0,[R1, #+0]
+    259            level_mask_enabled = APP_LOG_LEVEL_MASK_ENABLE;
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0x....             LDR.N    R1,??DataTable10_4
+   \        0xC   0x7008             STRB     R0,[R1, #+0]
+    260            level_filter_threshold = APP_LOG_LEVEL_FILTER_THRESHOLD;
+   \        0xE   0x2004             MOVS     R0,#+4
+   \       0x10   0x....             LDR.N    R1,??DataTable10_3
+   \       0x12   0x7008             STRB     R0,[R1, #+0]
+    261            level_mask = (APP_LOG_LEVEL_MASK_CRITICAL << APP_LOG_LEVEL_CRITICAL)
+    262                         | (APP_LOG_LEVEL_MASK_ERROR << APP_LOG_LEVEL_ERROR)
+    263                         | (APP_LOG_LEVEL_MASK_WARNING << APP_LOG_LEVEL_WARNING)
+    264                         | (APP_LOG_LEVEL_MASK_INFO << APP_LOG_LEVEL_INFO)
+    265                         | (APP_LOG_LEVEL_MASK_DEBUG << APP_LOG_LEVEL_DEBUG);
+   \       0x14   0x201F             MOVS     R0,#+31
+   \       0x16   0x....             LDR.N    R1,??DataTable10_5
+   \       0x18   0x7008             STRB     R0,[R1, #+0]
+    266            #if defined(APP_LOG_OVERRIDE_DEFAULT_STREAM) && APP_LOG_OVERRIDE_DEFAULT_STREAM == 1
+    267            char *name = APP_LOG_STREAM_INSTANCE;
+    268            sl_iostream_type_t type = APP_LOG_STREAM_TYPE;
+    269          
+    270            sl_iostream_t * iostream = NULL;
+    271            sl_iostream_t * iostream_type = NULL;
+    272          
+    273            for (uint32_t i = 0; i < sl_iostream_instances_count; i++) {
+    274              if (sl_iostream_instances_info[i]->type == type) {
+    275                if (strcmp(sl_iostream_instances_info[i]->name, name) == 0) {
+    276                  iostream = sl_iostream_instances_info[i]->handle;
+    277                  break;
+    278                }
+    279                if (iostream_type == NULL) {
+    280                  iostream_type = sl_iostream_instances_info[i]->handle;
+    281                }
+    282              }
+    283            }
+    284          
+    285            if (iostream == NULL) {
+    286              // The stream is not found by name
+    287              if (iostream_type != NULL) {
+    288                // Stream found by type
+    289                iostream = iostream_type;
+    290              } else {
+    291                // Not found stream, set to default
+    292                iostream = sl_iostream_get_default();
+    293              }
+    294            }
+    295          
+    296            app_log_iostream = iostream;
+    297            #else  // APP_LOG_OVERRIDE_DEFAULT_STREAM
+    298            app_log_iostream = sl_iostream_get_default();
+   \       0x1A   0x.... 0x....      BL       sl_iostream_get_default
+   \       0x1E   0x....             LDR.N    R1,??DataTable10_8
+   \       0x20   0x6008             STR      R0,[R1, #+0]
+    299            #endif // APP_LOG_OVERRIDE_DEFAULT_STREAM
+    300          }
+   \       0x22   0xBD01             POP      {R0,PC}
+    301          
+    302          /******************************************************************************
+    303          * Weak implementation of status print
+    304          ******************************************************************************/
+
+   \                                 In section .text, align 4
+    305          SL_WEAK void sl_status_print(sl_status_t status)
+    306          {
+   \                     sl_status_print: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    307            (void) status;
+    308            app_log_append(APP_LOG_UNRESOLVED_STATUS);
+   \        0x4   0xA102             ADR.N    R1,??sl_status_print_0
+   \        0x6   0x4803             LDR.N    R0,??sl_status_print_0+0x4
+   \        0x8   0x6800             LDR      R0,[R0, #+0]
+   \        0xA   0x.... 0x....      BL       sl_iostream_printf
+    309          }
+   \        0xE   0xBD10             POP      {R4,PC}
+   \                     ??sl_status_print_0:
+   \       0x10   0x3F 0x00          DC8      "?",0x0,0x0    
+
+   \              0x00 0x00
+   \       0x14   0x....'....        DC32     app_log_iostream
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \        0x0   0x28 0x00          DC8      "(",0x0,0x0    
+
+   \              0x00 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \        0x0   0x29 0x20          DC8      0x29, 0x20, 0x00, 0x00
+
+   \              0x00 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \        0x0   0x....'....        DC32     level_filter_enabled
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_3:
+   \        0x0   0x....'....        DC32     level_filter_threshold
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_4:
+   \        0x0   0x....'....        DC32     level_mask_enabled
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_5:
+   \        0x0   0x....'....        DC32     level_mask
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_6:
+   \        0x0   0x....'....        DC32     sl_iostream_instances_count
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_7:
+   \        0x0   0x....'....        DC32     sl_iostream_instances_info
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_8:
+   \        0x0   0x....'....        DC32     app_log_iostream
+
+   \                                 In section .rodata, align 2
+   \        0x0   0x28 0x00          DC8 "("
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x29 0x20          DC8 ") "
+
+   \              0x00
+   \        0x3                      DS8 1
+
+   \                                 In section .rodata, align 2
+   \        0x0   0x3F 0x00          DC8 "?"
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   _app_log_check_level
+       0   _app_log_counter
+      16   _app_log_status_string
+        16   -> sl_iostream_get_default
+        16   -> sl_iostream_printf
+        16   -> sl_iostream_set_default
+        16   -> sl_status_print
+       0   _app_log_time
+       0   app_log_filter_mask_enable
+       0   app_log_filter_mask_get
+       0   app_log_filter_mask_set
+       0   app_log_filter_threshold_enable
+       0   app_log_filter_threshold_get
+       0   app_log_filter_threshold_set
+       8   app_log_init
+         8   -> sl_iostream_get_default
+       0   app_log_iostream_get
+       0   app_log_iostream_set
+       8   sl_status_print
+         8   -> sl_iostream_printf
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+       4  ??DataTable10_6
+       4  ??DataTable10_7
+       4  ??DataTable10_8
+       2  ?_0
+       4  ?_1
+       2  ?_2
+      56  _app_log_check_level
+       2  _app_log_counter
+      52  _app_log_status_string
+       2  _app_log_time
+       6  app_log_filter_mask_enable
+       6  app_log_filter_mask_get
+      24  app_log_filter_mask_set
+       6  app_log_filter_threshold_enable
+       6  app_log_filter_threshold_get
+      24  app_log_filter_threshold_set
+      36  app_log_init
+       4  app_log_iostream
+       6  app_log_iostream_get
+      42  app_log_iostream_set
+       1  level_filter_enabled
+       1  level_filter_threshold
+       1  level_mask
+       1  level_mask_enabled
+      24  sl_status_print
+
+ 
+   5 bytes in section .bss
+   3 bytes in section .data
+   8 bytes in section .rodata
+ 328 bytes in section .text
+ 
+ 302 bytes of CODE  memory (+ 26 bytes shared)
+   8 bytes of CONST memory
+   8 bytes of DATA  memory
+
+Errors: none
+Warnings: none

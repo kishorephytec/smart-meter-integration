@@ -1,0 +1,853 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         30/Apr/2024  13:12:17
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\ProAppSrc\FANApp\AppSrc\eeprom_emulation.c
+#    Command line                 =
+#        -f
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\APPSrc\Fan_app\Src\eeprom_emulation.lst.rsp
+#        (D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\ProAppSrc\FANApp\AppSrc\eeprom_emulation.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\APPSrc\Fan_app\Src
+#        --diag_suppress Pa050 -o
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\APPSrc\Fan_app\Src
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\
+#        -On --use_c++_inline) --dependencies=n
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\APPSrc\Fan_app\Src\eeprom_emulation.o.d
+#    Locale                       =  C
+#    List file                    =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\APPSrc\Fan_app\Src\eeprom_emulation.lst
+#    Object file                  =
+#        D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\APPSrc\Fan_app\Src\eeprom_emulation.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\NITHISH\EFR32FG\EFR32FG23\TestBench\Kimbal\Kimbal_MeshApp_FG23_LBR\ProAppSrc\FANApp\AppSrc\eeprom_emulation.c
+      1          /**************************************************************************//**
+      2           * @file eeprom_emulation.c
+      3           * @brief EEPROM Emulation Demo Application functions
+      4           * @author Silicon Labs
+      5           * @version 1.10
+      6           ******************************************************************************
+      7           * @section License
+      8           * <b>(C) Copyright 2014 Silicon Labs, http://www.silabs.com</b>
+      9           *******************************************************************************
+     10           *
+     11           * Permission is granted to anyone to use this software for any purpose,
+     12           * including commercial applications, and to alter it and redistribute it
+     13           * freely, subject to the following restrictions:
+     14           *
+     15           * 1. The origin of this software must not be misrepresented; you must not
+     16           *    claim that you wrote the original software.
+     17           * 2. Altered source versions must be plainly marked as such, and must not be
+     18           *    misrepresented as being the original software.
+     19           * 3. This notice may not be removed or altered from any source distribution.
+     20           *
+     21           * DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no
+     22           * obligation to support this Software. Silicon Labs is providing the
+     23           * Software "AS IS", with no express or implied warranties of any kind,
+     24           * including, but not limited to, any implied warranties of merchantability
+     25           * or fitness for any particular purpose or warranties against infringement
+     26           * of any proprietary rights of a third party.
+     27           *
+     28           * Silicon Labs will not be liable for any consequential, incidental, or
+     29           * special damages, or any other relief, or for any claim by any third party,
+     30           * arising from your use of this Software.
+     31           *
+     32           ******************************************************************************/
+     33          #include "StackAppConf.h"
+     34          #include <stdlib.h>
+     35          
+     36          #if(APP_NVM_FEATURE_ENABLED == 1)
+     37          #include "em_msc.h"
+     38          #include "em_assert.h"
+     39          #include "eeprom_emulation.h"
+     40          
+     41          
+     42          /*******************************************************************************
+     43           **************************   GLOBAL VARIABLES   *******************************
+     44           ******************************************************************************/
+     45          
+     46          /* Variables to keep track of what pages are active and receiving. */
+     47          static int  activePageNumber    = -1;
+     48          static int  receivingPageNumber = -1;
+     49          
+     50          static bool initialized = false;
+     51          
+     52          /* Array of all pages allocated to the eeprom */
+     53          //static EE_Page_TypeDef pages[MAX_NUMBER_OF_PAGES];
+     54          static EE_Page_TypeDef pages[3];
+     55          
+     56          static int16_t         numberOfVariablesDeclared = 0;
+     57          static int16_t         numberOfActiveVariables = 0;
+     58          static int16_t         numberOfPagesAllocated;
+     59          
+     60          
+     61          /*******************************************************************************
+     62           **************************   LOCAL FUNCTIONS   ********************************
+     63           ******************************************************************************/
+     64          
+     65          /***************************************************************************//**
+     66          * @brief
+     67          *   Checks if all the bits in the page are 1's.
+     68          *
+     69          * @param[in]
+     70          *   Pointer to the page that is to be validated.
+     71          *
+     72          * @return
+     73          *   Returns the result of the check.
+     74          *
+     75          * @verbatim
+     76          *   true - All bits in the page are 1's.
+     77          *   false - One or more bits in the page are 0's.
+     78          * @endverbatim
+     79          *******************************************************************************/
+     80          static bool EE_validateIfErased(EE_Page_TypeDef *page)
+     81          {
+     82            uint32_t *address = page->startAddress;
+     83          
+     84            /* Iterate through all the words of the page, and validate that all bits are set. */
+     85            while (address <= page->endAddress)
+     86            {
+     87              if (*address != 0xFFFFFFFF)
+     88              {
+     89                /* 0 bit detected */
+     90                return false;
+     91              }
+     92              address++;
+     93            }
+     94            /* All bits are 1's. */
+     95            return true;
+     96          } 
+     97          
+     98          
+     99          /***************************************************************************//**
+    100           * @brief
+    101           *   Writes the desired data to the specified page.
+    102           *
+    103           * @param[in] page
+    104           *   Pointer to the page to write variable to.
+    105           *
+    106           * @param[in] virtualAddress
+    107           *   The virtual address of the variable to be written.
+    108           *
+    109           * @param[in] writeData
+    110           *   The data to be associated with the given virtual address.
+    111           *
+    112           * @return
+    113           *   Returns whether the write has been a success or not. In normal operation
+    114           *   a failed write indicates that the currently active page is full.
+    115           ******************************************************************************/
+    116          static bool EE_WriteToPage(EE_Page_TypeDef *page, uint16_t virtualAddress, uint16_t writeData)
+    117          {
+    118            /* Start at the second word. The fist one is reserved for status and erase count. */
+    119            uint32_t *address = page->startAddress + 1;
+    120            uint32_t virtualAddressAndData;
+    121          
+    122            /* Iterate through the page from the beginning, and stop at the fist empty word. */
+    123            while (address <= page->endAddress)
+    124            {
+    125              /* Empty word found. */
+    126              if (*address == 0xFFFFFFFF)
+    127              {
+    128                /* The virtual address and data is combined to a full word. */
+    129                virtualAddressAndData = ((uint32_t)(virtualAddress << 16) & 0xFFFF0000) | (uint32_t)(writeData);
+    130          
+    131                /* Make sure that the write to flash is a success. */
+    132                if (MSC_WriteWord(address, &virtualAddressAndData, SIZE_OF_VARIABLE) != mscReturnOk)
+    133                {
+    134                  /* Write failed. Halt for debug trace, if enabled. */
+    135                  EFM_ASSERT(0);
+    136                  return false;
+    137                }
+    138                /* Data written successfully. */
+    139                return true;
+    140              }
+    141              else
+    142              {
+    143                address++;
+    144              }
+    145            }
+    146            /* Reached the end of the page without finding any empty words. */
+    147            return false;
+    148          }
+    149          
+    150          
+    151          /***************************************************************************//**
+    152           * @brief
+    153           *   Erase all pages allocated to the eeprom emulator, and force page 0 to be
+    154           *   the active page.
+    155           *
+    156           * @return
+    157           *   Returns true if the format was successful. 
+    158           ******************************************************************************/
+    159          bool EE_Format(uint32_t numberOfPages)
+    160          {
+    161            uint32_t eraseCount = 0xFF000001;
+    162            int i;
+    163            msc_Return_TypeDef retStatus;
+    164            
+    165            /* Make the number of pages allocated accessible throughout the file. */
+    166            numberOfPagesAllocated = numberOfPages;
+    167          
+    168            /* Initialize the address of each page */
+    169            for (i = 0; i < numberOfPagesAllocated; i++)
+    170            {
+    171              pages[i].startAddress = (uint32_t *)(FLASH_SIZE - i * PAGE_SIZE - PAGE_SIZE);
+    172              pages[i].endAddress   = (uint32_t *)(FLASH_SIZE - i * PAGE_SIZE - 4);
+    173            }  
+    174            
+    175            /* Erase all pages allocated to the eeprom emulator*/
+    176            for (i = numberOfPagesAllocated - 1; i >= 0; i--)
+    177            {
+    178              /* Validate if the page is already erased, and erase it if not. */
+    179              if (!EE_validateIfErased(&pages[i]))
+    180              {
+    181                /* Erase the page, and return the status if the erase operation is unsuccessful. */
+    182                retStatus = MSC_ErasePage(pages[i].startAddress);
+    183                if (retStatus != mscReturnOk) {
+    184                  return false;
+    185                }
+    186              }
+    187            }
+    188          
+    189            /* Page 0 is the active page. */
+    190            activePageNumber = 0;
+    191          
+    192            /* There should be no receiving page. */
+    193            receivingPageNumber = -1;
+    194          
+    195            /* Write erase count of 1 to the page 0 head. */
+    196            retStatus = MSC_WriteWord(pages[activePageNumber].startAddress, &eraseCount, 4);
+    197            if (retStatus != mscReturnOk) {
+    198              return false;
+    199            }
+    200          
+    201            /* Set page status active to page 0. */
+    202            retStatus = EE_setPageStatusActive(&pages[activePageNumber]);
+    203            if ( retStatus != mscReturnOk ) {
+    204              return false;
+    205            }
+    206            
+    207            /** Successfully formatted pages */
+    208            return true;
+    209          }
+    210          
+    211          
+    212          /***************************************************************************//**
+    213           * @brief
+    214           *   Transfers the most recently written value of each variable, from the active
+    215           *   to a new receiving page.
+    216           *
+    217           * @param[in] var
+    218           *   Pointer to a variable whose data will be written to the first free word of
+    219           *   the receiving page. If var is a null pointer, this operation will be
+    220           *   skipped.
+    221           *
+    222           * @param[in] writeData
+    223           *   Data to be associated with var's virtual address, if var is not a null
+    224           *   pointer.
+    225           *
+    226           * @return
+    227           *   Returns the status of the last flash operation.
+    228           ******************************************************************************/
+    229          static msc_Return_TypeDef EE_TransferPage(EE_Variable_TypeDef *var, uint16_t writeData)
+    230          {
+    231            msc_Return_TypeDef retStatus;
+    232            uint32_t           *activeAddress;
+    233            uint32_t           *receivingAddress;
+    234            bool               newVariable;
+    235            uint32_t           eraseCount;
+    236          
+    237            /* If there is no receiving page predefined, set it to cycle through all allocated pages. */
+    238            if (receivingPageNumber == -1)
+    239            {
+    240              receivingPageNumber = activePageNumber + 1;
+    241          
+    242              if (receivingPageNumber >= numberOfPagesAllocated) {
+    243                receivingPageNumber = 0;
+    244              }
+    245          
+    246              /* Check if the new receiving page really is erased. */
+    247              if (!EE_validateIfErased(&pages[receivingPageNumber]))
+    248              {
+    249                /* If this page is not truly erased, it means that it has been written to
+    250                 * from outside this API, this could be an address conflict. */
+    251                EFM_ASSERT(0);
+    252                MSC_ErasePage(pages[receivingPageNumber].startAddress);
+    253              }
+    254            }
+    255          
+    256            /* Set the status of the receiving page */
+    257            EE_setPageStatusReceiving(&pages[receivingPageNumber]);
+    258          
+    259            /* If a variable was specified, write it to the receiving page */
+    260            if (var != NULL)
+    261            {
+    262              EE_WriteToPage(&pages[receivingPageNumber], var->virtualAddress, writeData);
+    263            }
+    264          
+    265            /* Start at the last word. */
+    266            activeAddress = pages[activePageNumber].endAddress;
+    267          
+    268            /* Iterate through all words in the active page. Each time a new virtual
+    269             * address is found, write it and it's data to the receiving page */
+    270            while (activeAddress > pages[activePageNumber].startAddress)
+    271            {
+    272              /* 0x0000 and 0xFFFF are not valid virtual addresses. */
+    273              if ((uint16_t)(*activeAddress >> 16) == 0x0000 || (uint16_t)(*activeAddress >> 16) == 0xFFFF) 
+    274              {
+    275                newVariable = false;
+    276              }
+    277              /* Omit when transfer is initiated from inside the EE_Init() function. */
+    278              else if (var != NULL && (uint16_t)(*activeAddress >> 16) > numberOfVariablesDeclared)
+    279              {
+    280                /* A virtual address outside the virtual address space, defined by the
+    281                 * number of variables declared, are considered garbage. */
+    282                newVariable = false;
+    283              }
+    284          
+    285              else
+    286              {
+    287                receivingAddress = pages[receivingPageNumber].startAddress + 1;
+    288          
+    289                /* Start at the beginning of the receiving page. Check if the variable is
+    290                 * already transfered. */
+    291                while (receivingAddress <= pages[receivingPageNumber].endAddress)
+    292                {
+    293                  /* Variable found, and is therefore already transferred. */
+    294                  if ((uint16_t)(*activeAddress >> 16) == (uint16_t)(*receivingAddress >> 16))
+    295                  {
+    296                    newVariable = false;
+    297                    break;
+    298                  }
+    299                  /* Empty word found. All transferred variables are checked.  */
+    300                  else if (*receivingAddress == 0xFFFFFFFF)
+    301                  {
+    302                    newVariable = true;
+    303                    break;
+    304                  }
+    305                  receivingAddress++;
+    306                }
+    307              }
+    308          
+    309              if (newVariable)
+    310              {
+    311                /* Write the new variable to the receiving page. */
+    312                EE_WriteToPage(&pages[receivingPageNumber], (uint16_t)(*activeAddress >> 16), (uint16_t)(*activeAddress));
+    313              }
+    314              activeAddress--;
+    315            }
+    316          
+    317            /* Update erase count */
+    318            eraseCount = EE_GetEraseCount();
+    319          
+    320            /* If a new page cycle is started, increment the erase count. */
+    321            if (receivingPageNumber == 0)
+    322              eraseCount++;
+    323          
+    324            /* Set the first byte, in this way the page status is not altered when the erase count is written. */
+    325            eraseCount = eraseCount | 0xFF000000;
+    326          
+    327            /* Write the erase count obtained to the active page head. */
+    328            retStatus = MSC_WriteWord(pages[receivingPageNumber].startAddress, &eraseCount, 4);
+    329            if (retStatus != mscReturnOk) {
+    330              return retStatus;
+    331            }
+    332          
+    333            /* Erase the old active page. */
+    334            retStatus = MSC_ErasePage(pages[activePageNumber].startAddress);
+    335            if (retStatus != mscReturnOk) {
+    336              return retStatus;
+    337            }
+    338          
+    339            /* Set the receiving page to be the new active page. */
+    340            retStatus = EE_setPageStatusActive(&pages[receivingPageNumber]);
+    341            if (retStatus != mscReturnOk) {
+    342              return retStatus;
+    343            }
+    344          
+    345            activePageNumber    = receivingPageNumber;
+    346            receivingPageNumber = -1;
+    347          
+    348            return mscReturnOk;
+    349          }
+    350          
+    351          
+    352          /*******************************************************************************
+    353           **************************   GLOBAL FUNCTIONS   *******************************
+    354           ******************************************************************************/
+    355          
+    356          /***************************************************************************//**
+    357           * @brief
+    358           *    Should be run once before any other eeprom emulator functions are called.
+    359           *    It restores the pages to a known good state in case of page status
+    360           *    corruption after a power loss or another unwanted system reset.
+    361           *
+    362           * @param[in] numberOfPages
+    363           *   Number of pages to be allocated to the eeprom emulator for the entire
+    364           *   lifetime of the application. Must be 2 or greater.
+    365           *
+    366           * @note
+    367           *   When choosing the number of pages to assign to the eeprom emulator, it is
+    368           *   highly recommended to have a good insight into how much data that will be
+    369           *   written to the eeprom emulator during the application lifetime. Using an
+    370           *   estimate of this data, and the maximum number of rewrite cycles the flash
+    371           *   is guaranteed to endure, it should be easy to get a good idea of how many
+    372           *   pages that are needed to keep flash wear within the recommended level
+    373           *   throughout the application lifetime.
+    374           *   It should also be noted that it is critical to have control over what
+    375           *   areas of the flash that is in use by other parts of the application, to
+    376           *   avoid possible conflicts and hard-to-find bugs.
+    377           *
+    378           * @return
+    379           *   Returns true if the initialization was successful. 
+    380           ******************************************************************************/
+    381          bool EE_Init(uint32_t numberOfPages)
+    382          {
+    383            /* Make sure that the eeprom emulator is only initialized once. More that one
+    384             * initialization may result in undefined behavior. */
+    385            EFM_ASSERT(!initialized);
+    386          
+    387            initialized = true;
+    388          
+    389            /* Number of pages must be at least 2. */
+    390            if (numberOfPages < 2) {
+    391              numberOfPages = DEFAULT_NUMBER_OF_PAGES;
+    392            }
+    393          
+    394            /* Make the number of pages allocated accessible throughout the file. */
+    395            numberOfPagesAllocated = numberOfPages;
+    396          
+    397            /* Initialize the address of each page */
+    398            uint32_t i;
+    399            for (i = 0; i < numberOfPages; i++)
+    400            {
+    401              pages[i].startAddress = (uint32_t *)(FLASH_SIZE - i * PAGE_SIZE - PAGE_SIZE);
+    402              pages[i].endAddress   = (uint32_t *)(FLASH_SIZE - i * PAGE_SIZE - 4);
+    403            }
+    404            
+    405            /* Check status of each page */
+    406            for (i = 0; i < numberOfPages; i++)
+    407            {
+    408              switch (EE_getPageStatus(&pages[i]))
+    409              {
+    410              case eePageStatusActive:
+    411                if (activePageNumber == -1)
+    412                {
+    413                  activePageNumber = i;
+    414                }
+    415                else  
+    416                {
+    417                  /* More than one active page found. This is an invalid system state. */
+    418                  return false;
+    419                }
+    420                break;
+    421              case eePageStatusReceiving:
+    422                if (receivingPageNumber == -1)
+    423                {
+    424                  receivingPageNumber = i;
+    425                }
+    426                else  
+    427                {
+    428                  /* More than one receiving page foudn. This is an invalid system state. */
+    429                  return false;
+    430                }
+    431                break;
+    432              case eePageStatusErased:
+    433                /* Validate if the page is really erased, and erase it if not. */
+    434                if (!EE_validateIfErased(&pages[i]))
+    435                {
+    436                  MSC_ErasePage(pages[i].startAddress);
+    437                }
+    438                break;
+    439              default:
+    440                /* Undefined page status, erase page. */
+    441                MSC_ErasePage(pages[i].startAddress);
+    442                break;
+    443              }
+    444            }
+    445          
+    446            /* No receiving or active page found. This is an invalid system state. */
+    447            if (receivingPageNumber == -1 && activePageNumber == -1)
+    448            {
+    449              return false;
+    450            }
+    451          
+    452            /* One active page only. All good. */
+    453            if (receivingPageNumber == -1)
+    454            {
+    455              return true;
+    456            }
+    457          
+    458            /* One receiving page only. */
+    459            else if (activePageNumber == -1)
+    460            {
+    461              /* Set current receiving page as active. */
+    462              activePageNumber    = receivingPageNumber;
+    463              receivingPageNumber = -1;
+    464              EE_setPageStatusActive(&pages[receivingPageNumber]);
+    465            }
+    466            /* Found exactly one active and one receiving page. */
+    467            else
+    468            {
+    469              /* Transfer variables from active to receiving page. */
+    470              EE_TransferPage(NULL, NULL);
+    471            }
+    472          
+    473            /* Initialization completed successfully */
+    474            return true;
+    475          }
+    476          
+    477          
+    478          /***************************************************************************//**
+    479           * @brief
+    480           *   Read the latest data associated with the given variable.
+    481           *
+    482           * @note
+    483           *   If attempting to read from an undeclared variable, or a variable that has
+    484           *   no valid value written to it, a null value will be returned.
+    485           *
+    486           * @param[in] var
+    487           *   Pointer to the variable with the virtual address to look for.
+    488           *
+    489           * @param[out] readData
+    490           *   Pointer to the memory area to write the read data to.
+    491           *
+    492           * @return
+    493           *   Returns whether the variable given was found or not.
+    494           ******************************************************************************/
+    495          bool EE_Read(EE_Variable_TypeDef *var, uint16_t *readData)
+    496          {
+    497            /* Make sure that the eeprom emulator is initialized. */
+    498            EFM_ASSERT(initialized);
+    499          
+    500            uint32_t *address;
+    501          
+    502            address = (pages[activePageNumber].endAddress);
+    503          
+    504            /* 0x0000 and 0xFFFF are illegal addresses. */
+    505            if (var->virtualAddress != 0x0000 && var->virtualAddress != 0xFFFF)
+    506            {
+    507              /* Iterate through the active page, starting from the end. */
+    508              while (address > pages[activePageNumber].startAddress)
+    509              {
+    510                /* Check if the stored virtual address matches the one wanted. */
+    511                if ((uint16_t)(*address >> 16) == var->virtualAddress)
+    512                {
+    513                  /* Correct virtual address found, return the corresponding data. */
+    514                  *readData = (uint16_t)(*address);
+    515                  return true;
+    516                }
+    517                address--;
+    518              }
+    519            }
+    520            /* Variable not found, return null value. */
+    521            *readData = 0x0000;
+    522            return false;
+    523          }
+    524          
+    525          
+    526          /***************************************************************************//**
+    527           * @brief
+    528           *   Writes the desired data, together with the given variable's virtual address
+    529           *   to the emulated eeprom memory.
+    530           *
+    531           * @param[in] var
+    532           *   Pointer to the variable to associate data with.
+    533           *
+    534           * @param[in] writeData
+    535           *   The 16 bit data to write to the flash memory. Any 16 bit data can be sent,
+    536           *   as long as it is casted to a uint16_t type.
+    537           ******************************************************************************/
+    538          void EE_Write(EE_Variable_TypeDef *var, uint16_t writeData)
+    539          {
+    540            /* Make sure that the eeprom emulator is initialized. */
+    541            EFM_ASSERT(initialized);
+    542          
+    543            /* Make sure that the virtual address is declared and valid. */
+    544            EFM_ASSERT(var->virtualAddress <= numberOfVariablesDeclared);
+    545          
+    546            uint16_t readData;
+    547          
+    548            /* Check whether the variable already has a value associated to it. */
+    549            if (EE_Read(var, &readData))
+    550            {
+    551              /* Do not write if data is duplicate. */
+    552              if (readData == writeData)
+    553              {
+    554                return;
+    555              }
+    556            }
+    557            /* Write to flash. */
+    558            if (!EE_WriteToPage(&pages[activePageNumber], var->virtualAddress, writeData))
+    559            {
+    560              /* The write was not successful, which indicates that the active page is full. */
+    561              EE_TransferPage(var, writeData);
+    562            }
+    563          }
+    564          
+    565          
+    566          /***************************************************************************//**
+    567          * @brief
+    568          *   If the variable no longer is needed, it can be deleted to free flash space.
+    569          *
+    570          * @note
+    571          *   The function writes 0x0000 to the virtual address field of all previous
+    572          *   versions of the input variable. All stored data with virtual address 0x0000
+    573          *   is marked as garbage, which will be collected on the next page transfer.
+    574          *
+    575          * @param[in] var
+    576          *   Pointer to the variable to be deleted from the emulated eeprom.
+    577          *******************************************************************************/
+    578          void EE_DeleteVariable(EE_Variable_TypeDef *var)
+    579          {
+    580            /* If the eeprom emulator is not initialized, this function has no meaning. */
+    581            if (!initialized)
+    582            {
+    583              /* Halt for debug trace. */
+    584              EFM_ASSERT(0);
+    585              return;
+    586            }
+    587          
+    588            uint32_t deleteData = 0x0000FFFF;
+    589          
+    590            uint32_t *address = (pages[activePageNumber].endAddress);
+    591            
+    592            /* Keep track if we actually removed a variable */
+    593            bool varDeleted = false;
+    594          
+    595            /* Iterate through the active page from the end. */
+    596            while (address > pages[activePageNumber].startAddress)
+    597            {
+    598              /* Write the virtual address 0x0000 to all instances of the chosen variable.
+    599               * Since 0x0000 is not a valid virtual address, the variable will not
+    600               * transferred to a new page on the next page transfer. */
+    601              if ((uint16_t)(*address >> 16) == var->virtualAddress)
+    602              {
+    603                MSC_WriteWord(address, &deleteData, sizeof deleteData);
+    604                varDeleted = true;
+    605              }
+    606              address--;
+    607            }
+    608            
+    609            if (varDeleted) {
+    610              numberOfActiveVariables--;
+    611            }
+    612          }
+    613          
+    614          
+    615          /***************************************************************************//**
+    616          * @brief
+    617          *   Assign a virtual address to a new variable.
+    618          *
+    619          * @note
+    620          *   All variables that is to be used in an application, should be declared
+    621          *   prior to any write operations to ensure that all variables are transfered
+    622          *   correctly whenever a page is full. The virtual addresses are assigned to
+    623          *   the variables according to the order of declaration. This means that in
+    624          *   case of a system reset, all variables must be declared in the same order on
+    625          *   each startup to retain its previous virtual address.
+    626          *
+    627          * @param[in] var
+    628          *   Pointer to variable to be assigned a virtual address.
+    629          * @return
+    630          *   Returns whether the declaration was successful. 
+    631          *******************************************************************************/
+    632          bool EE_DeclareVariable(EE_Variable_TypeDef *var)
+    633          {
+    634            if ( numberOfActiveVariables < MAX_ACTIVE_VARIABLES ) {
+    635              
+    636              /* The virtual addresses are assigned according to the order of declaration. */
+    637              var->virtualAddress = ++numberOfVariablesDeclared;
+    638              
+    639              numberOfActiveVariables++;
+    640          		
+    641              return true;
+    642            } else {
+    643              return false;
+    644            }
+    645          }
+    646          
+    647          
+    648          /***************************************************************************//**
+    649           * @brief
+    650           *   Returns the number of times all pages has been erased.
+    651           *
+    652           * @note
+    653           *   The erase count is the number of cycles where all the pages has been
+    654           *   erased. The value is always written to the 24 LSB of the first word on the
+    655           *   active page. The value is incremented each time data is transferred to
+    656           *   page 0.
+    657           *
+    658           * @return
+    659           *   Returns the number of complete erase cycles endured.
+    660           ******************************************************************************/
+    661          uint32_t EE_GetEraseCount(void)
+    662          {
+    663            /* Make sure that there is an active page */
+    664            EFM_ASSERT(activePageNumber != -1);
+    665          
+    666            uint32_t eraseCount;
+    667          
+    668            /* The number of erase cycles is the 24 LSB of the first word of the active page. */
+    669            eraseCount = (*(pages[activePageNumber].startAddress) & 0x00FFFFFF);
+    670          
+    671            /* if the page has never been erased, return 0. */
+    672            if (eraseCount == 0xFFFFFF) {
+    673              return 0;
+    674            }
+    675          
+    676            return eraseCount;
+    677          }
+    678          
+    679          #endif // #if(APP_NVM_FEATURE_ENABLED == 1)
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,717 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         24/Dec/2024  14:55:17
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\ProAppSrc\network-manager\app_mac_security_interface.c
+#    Command line                 =
+#        -f
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\network_manager_5005759070473877390.dir\app_mac_security_interface.o.rsp
+#        (C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\ProAppSrc\network-manager\app_mac_security_interface.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\network_manager_5005759070473877390.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\network_manager_5005759070473877390.dir
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\.\ -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\rpl\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\cpu\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\PHY\radio\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\FLASH\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\network_manager_5005759070473877390.dir\app_mac_security_interface.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\lst\network_manager_5005759070473877390.dir\app_mac_security_interface.lst
+#    Object file                  =
+#        C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\AppBuild\ewarm-iar\obj\network_manager_5005759070473877390.dir\app_mac_security_interface.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\PHYTEC\Desktop\custom-FG23\MeshApp_FG23_Node\ProAppSrc\network-manager\app_mac_security_interface.c
+      1          /** \file aap_mac_security_interface.c
+      2           *******************************************************************************
+      3           ** \brief Application Interface Layer to set the 802.15.4 MAC Security .
+      4           ** \defines  
+      5           **
+      6           ** \cond STD_FILE
+      7           **
+      8           ** COPYRIGHT(c) 2023-24 Procubed Innovations Pvt Ltd.
+      9           ** All rights reserved.
+     10           **
+     11           ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     12           ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     13           ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     14           ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     15           ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     16           ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     17           ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     18           **
+     19           *******************************************************************************
+     20           **  \endcond
+     21           */
+     22          
+     23          /*
+     24          ********************************************************************************
+     25          * File inclusion
+     26          ********************************************************************************
+     27          */
+     28          
+     29          #include "StackAppConf.h"
+     30          #include "common.h"
+     31          //#include "board.h"
+     32          #include "list_latest.h"
+     33          #include "queue_latest.h"
+     34          #include "mac.h"
+     35          #include "mac_interface_layer.h"
+     36          #include "sm.h"
+     37          #include "ie_element_info.h"
+     38          #include "network-manager.h"
+     39          #include "fan_mac_security.h"
+     40          
+     41          /*
+     42          ** =============================================================================
+     43          ** Private Macro definitions
+     44          ** =============================================================================
+     45          */
+     46          
+     47          #ifdef MAC_CFG_SECURITY_ENABLED
+     48          #define MAX_NO_OF_MAC_SECURITY_DEVICE_LIST  5
+     49          
+     50          #define DEF_KEY_SRC                      0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF
+     51          
+     52          #define DEF_KEY_USAGE_DESC               0x00, 0x00, 0x01, 0x00, 0x02, 0x00, \
+     53                                                   0x03, 0x01, 0x03, 0x02, 0x03, 0x03, \
+     54                                                   0x03, 0x04, 0x03, 0x05, 0x03, 0x06, \
+     55                                                   0x03, 0x07, 0x03, 0x08, 0x03, 0x09
+     56          
+     57          
+     58          #define MAX_KET_TABLE_DATA_BUFF 120 
+     59          
+     60          /*
+     61          ** =============================================================================
+     62          ** Private Structures, Unions & enums Type Definitions
+     63          ** =============================================================================
+     64          **/
+     65          
+     66          /* None */
+     67          
+     68          /*
+     69          ** =============================================================================
+     70          ** Private Variable Definitions
+     71          ** =============================================================================
+     72          */
+     73          
+     74          /* None */
+     75          
+     76          /*
+     77          ** =============================================================================
+     78          ** Private Function Prototypes
+     79          ** =============================================================================
+     80          */
+     81          
+     82          /*Umesh :31-01-2018*/
+     83          //static uint8_t indexofDeviceDes = 0;
+     84          /*this varriable is not used*/
+     85          
+     86          /*
+     87          ** =============================================================================
+     88          ** Private Function Definitions
+     89          ** =============================================================================
+     90          */
+     91          
+     92          /* None */
+     93          
+     94          /*
+     95          ** =============================================================================
+     96          ** External Variable Declarations
+     97          ** =============================================================================
+     98          */
+     99          extern fan_mac_security mac_key_list;
+    100          extern uint8_t key_id_index;
+    101          
+    102          /*
+    103          ** =============================================================================
+    104          ** External Function Prototypes
+    105          ** =============================================================================
+    106          */
+    107          
+    108          /* None */
+    109          
+    110          /*
+    111          ** =============================================================================
+    112          ** Public Variables Definitions
+    113          ** =============================================================================
+    114          **/
+    115          
+    116          /* None */
+    117          
+    118          /*
+    119          ** =============================================================================
+    120          ** Public Function Prototypes
+    121          ** =============================================================================
+    122          */
+    123              
+    124          void add_dev_desc_on_MAC_for_security(uint8_t* macAddrOfNeighbour);
+    125          /*Umesh : 31-01-2018*/
+    126          void  set_mac_frame_counter_cmd ( uint32_t frameCntr );
+    127          
+    128          extern uint8_t find_device_already_added_or_not(uint8_t *device_addr, uint8_t *dev_index);
+    129          /*this function is not called from anywhere*/
+    130          /*
+    131          ** =============================================================================
+    132          ** Public Function Definitions
+    133          ** =============================================================================
+    134          */
+    135          
+    136          /*----------------------------------------------------------------------------*/
+    137          /*\desc
+    138          **\param
+    139          **\return
+    140          */
+    141          /*----------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+    142          void reset_mac_frame_counter_cmd ( void )
+    143          {		
+   \                     reset_mac_frame_counter_cmd: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    144              uint32_t frameCntr = 0;
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x9000             STR      R0,[SP, #+0]
+    145              /*set the SECURITY to ON or OFF*/
+    146              MLME_SET_Request
+    147              (
+    148                      macFrameCounter,		
+    149                      0,
+    150                      0x0004,	
+    151                      &frameCntr	
+    152              );
+   \        0x6   0x466B             MOV      R3,SP
+   \        0x8   0x2204             MOVS     R2,#+4
+   \        0xA   0x2100             MOVS     R1,#+0
+   \        0xC   0x2077             MOVS     R0,#+119
+   \        0xE   0x.... 0x....      BL       MLME_SET_Request
+    153              		
+    154          }
+   \       0x12   0xBD01             POP      {R0,PC}
+    155          
+    156          /*----------------------------------------------------------------------------*/
+    157          /*\desc
+    158          **\param
+    159          **\return
+    160          */
+    161          /*----------------------------------------------------------------------------*/      
+
+   \                                 In section .text, align 2, keep-with-next
+    162          void  set_mac_frame_counter_cmd ( uint32_t frameCntr )
+    163          {		
+   \                     set_mac_frame_counter_cmd: (+1)
+   \        0x0   0xB501             PUSH     {R0,LR}
+    164            //  uint32_t frameCntr = 0;
+    165              /*set the SECURITY to ON or OFF*/
+    166              MLME_SET_Request
+    167              (
+    168                      macFrameCounter,		
+    169                      0,
+    170                      0x0004,	
+    171                      &frameCntr	
+    172              );  		
+   \        0x2   0x466B             MOV      R3,SP
+   \        0x4   0x2204             MOVS     R2,#+4
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0x2077             MOVS     R0,#+119
+   \        0xA   0x.... 0x....      BL       MLME_SET_Request
+    173          }
+   \        0xE   0xBD01             POP      {R0,PC}
+    174          /*----------------------------------------------------------------------------*/
+    175          /*\desc
+    176          **\param
+    177          **\return
+    178          */
+    179          /*----------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+    180          void  enable_disable_mac_security_cmd ( uint32_t enable_security_flag )
+    181          {		
+   \                     enable_disable_mac_security_cmd: (+1)
+   \        0x0   0xB501             PUSH     {R0,LR}
+    182          
+    183              /*set the SECURITY to ON or OFF*/
+    184              MLME_SET_Request
+    185              (
+    186                      macSecurityEnabled,		
+    187                      0,
+    188                      0x0001,	
+    189                      &enable_security_flag	
+    190              );
+   \        0x2   0x466B             MOV      R3,SP
+   \        0x4   0x2201             MOVS     R2,#+1
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0x205D             MOVS     R0,#+93
+   \        0xA   0x.... 0x....      BL       MLME_SET_Request
+    191              		
+    192          }
+   \        0xE   0xBD01             POP      {R0,PC}
+    193          /*----------------------------------------------------------------------------*/
+    194          /*\desc
+    195          **\param
+    196          **\return
+    197          */
+    198          /*----------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+    199          void add_security_key_descriptor_on_MAC()     
+    200          {
+   \                     add_security_key_descriptor_on_MAC: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB0A1             SUB      SP,SP,#+132
+   \        0x6   0x2178             MOVS     R1,#+120
+   \        0x8   0x2200             MOVS     R2,#+0
+   \        0xA   0xAC03             ADD      R4,SP,#+12
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0x.... 0x....      BL       __aeabi_memset
+    201            /*these macros are moved to private macro portion*/                                          
+    202                  uint8_t key_table_data[MAX_KET_TABLE_DATA_BUFF] = {0};    
+    203                 // uint8_t key_usage_desc[24] = {DEF_KEY_USAGE_DESC};
+    204                uint16_t mac_sec_keylen = 0x00;
+   \       0x12   0x2400             MOVS     R4,#+0
+    205                uint8_t total_mac_key_available = 0;
+   \       0x14   0x2500             MOVS     R5,#+0
+    206                    //uint8_t iCnt = 0;
+    207                    uint8_t keyIDX = mac_key_list.active_key_index;///* 0x01;*/ (key_id_index +1) ; 
+   \       0x16   0x....             LDR.N    R6,??DataTable1
+   \       0x18   0xF896 0x7044      LDRB     R7,[R6, #+68]
+    208                    uint8_t* pBuff = NULL;
+   \       0x1C   0x2000             MOVS     R0,#+0
+    209                    uint8_t key_source[8] = {DEF_KEY_SRC};       
+   \       0x1E   0xF10D 0x0C04      ADD      R12,SP,#+4
+   \       0x22   0x....             LDR.N    R1,??DataTable1_1
+   \       0x24   0xE9D1 0x3200      LDRD     R3,R2,[R1, #+0]
+   \       0x28   0xE9CC 0x3200      STRD     R3,R2,[R12, #+0]
+    210                    pBuff = key_table_data;
+   \       0x2C   0xA903             ADD      R1,SP,#+12
+    211                    
+    212                    for(int i = 0; i<MAX_MAC_SECURITY_KEY;i++)
+   \       0x2E   0x2200             MOVS     R2,#+0
+   \                     ??add_security_key_descriptor_on_MAC_0: (+1)
+   \       0x30   0x2A04             CMP      R2,#+4
+   \       0x32   0xDA08             BGE.N    ??add_security_key_descriptor_on_MAC_1
+    213                    {
+    214                      if(mac_key_list.MAC_SECURITY_KEY_LIST[i].MAC_KEY_INDEX != 0)
+   \       0x34   0x2011             MOVS     R0,#+17
+   \       0x36   0xFB00 0xF002      MUL      R0,R0,R2
+   \       0x3A   0x5C30             LDRB     R0,[R6, R0]
+   \       0x3C   0x2800             CMP      R0,#+0
+   \       0x3E   0xD000             BEQ.N    ??add_security_key_descriptor_on_MAC_2
+    215                      {
+    216                        total_mac_key_available++;
+   \       0x40   0x1C6D             ADDS     R5,R5,#+1
+    217                      }
+    218                    }
+   \                     ??add_security_key_descriptor_on_MAC_2: (+1)
+   \       0x42   0x1C52             ADDS     R2,R2,#+1
+   \       0x44   0xE7F4             B.N      ??add_security_key_descriptor_on_MAC_0
+    219                    
+    220                    /* KeyIdLookupList  */
+    221                    *pBuff++ = total_mac_key_available; 
+   \                     ??add_security_key_descriptor_on_MAC_1: (+1)
+   \       0x46   0x700D             STRB     R5,[R1, #+0]
+   \       0x48   0xF111 0x0901      ADDS     R9,R1,#+1
+    222                    mac_sec_keylen++;
+   \       0x4C   0x1C64             ADDS     R4,R4,#+1
+    223                    for(int i = 0; i<total_mac_key_available; i++)
+   \       0x4E   0xF05F 0x0800      MOVS     R8,#+0
+   \                     ??add_security_key_descriptor_on_MAC_3: (+1)
+   \       0x52   0x0028             MOVS     R0,R5
+   \       0x54   0xB2C0             UXTB     R0,R0
+   \       0x56   0x4580             CMP      R8,R0
+   \       0x58   0xDA17             BGE.N    ??add_security_key_descriptor_on_MAC_4
+    224                    {
+    225                       /* 8 Bytes of key source :: LookupData*/
+    226                      mem_rev_cpy(pBuff, key_source, KEY_SOURCE_LENGTH);
+   \       0x5A   0x2208             MOVS     R2,#+8
+   \       0x5C   0xA901             ADD      R1,SP,#+4
+   \       0x5E   0x4648             MOV      R0,R9
+   \       0x60   0x.... 0x....      BL       mem_rev_cpy
+    227                      pBuff+= KEY_SOURCE_LENGTH;
+   \       0x64   0xF119 0x0008      ADDS     R0,R9,#+8
+    228                      mac_sec_keylen += KEY_SOURCE_LENGTH;
+   \       0x68   0x3408             ADDS     R4,R4,#+8
+    229                       /* Key index  */
+    230                      *pBuff++ = keyIDX;//temprary patch for without eapol with security
+   \       0x6A   0x7007             STRB     R7,[R0, #+0]
+   \       0x6C   0xF110 0x0901      ADDS     R9,R0,#+1
+    231                      keyIDX++;
+   \       0x70   0x1C7F             ADDS     R7,R7,#+1
+    232                      if (keyIDX > total_mac_key_available)
+   \       0x72   0x0029             MOVS     R1,R5
+   \       0x74   0x0038             MOVS     R0,R7
+   \       0x76   0xB2C9             UXTB     R1,R1
+   \       0x78   0xB2C0             UXTB     R0,R0
+   \       0x7A   0x4281             CMP      R1,R0
+   \       0x7C   0xD201             BCS.N    ??add_security_key_descriptor_on_MAC_5
+    233                        keyIDX = 1;
+   \       0x7E   0x2001             MOVS     R0,#+1
+   \       0x80   0x0007             MOVS     R7,R0
+    234                      mac_sec_keylen++;
+   \                     ??add_security_key_descriptor_on_MAC_5: (+1)
+   \       0x82   0x1C64             ADDS     R4,R4,#+1
+    235                    }
+   \       0x84   0xF118 0x0801      ADDS     R8,R8,#+1
+   \       0x88   0xE7E3             B.N      ??add_security_key_descriptor_on_MAC_3
+    236                     /* LookupDataSize
+    237                      0x000 :: for 5 Bytes keysource 
+    238                      0x01 ::: for 9 Bytes keysource */
+    239          //          *pBuff++ = 0x01; 
+    240          //          mac_sec_keylen++;
+    241                    /* KeyDeviceList :: No of key device descriptors */
+    242                    /*KeyIdLookupListEntries*/
+    243                      *pBuff++ = total_mac_key_available; //[ Raka : 19-Nov-2017]
+   \                     ??add_security_key_descriptor_on_MAC_4: (+1)
+   \       0x8A   0xF889 0x5000      STRB     R5,[R9, #+0]
+   \       0x8E   0xF119 0x0001      ADDS     R0,R9,#+1
+   \       0x92   0x9000             STR      R0,[SP, #+0]
+    244                      mac_sec_keylen++;
+   \       0x94   0x1C64             ADDS     R4,R4,#+1
+    245                    /* Key device desc */
+    246          //          *pBuff++ = 0x00; //Device descriptor handle
+    247          //          *pBuff++ = 0x00;// Unique device
+    248          //          *pBuff++ = 0x00; //Black listed device or not
+    249                    
+    250                    
+    251          //          for(iCnt = 0; iCnt < MAX_NO_OF_MAC_SECURITY_DEVICE_LIST; iCnt++)
+    252          //          {
+    253          //            *pBuff++ = iCnt;  //0x00; //Device descriptor handle
+    254          //            *pBuff++ = 0x00; // Unique device
+    255          //            *pBuff++ = 0x00; //Black listed device or not
+    256          //          }
+    257          //          
+    258                    /* No of key usage descriptor */
+    259          //          *pBuff++ = 0x0C; // Frame type and cmd id
+    260                    
+    261          //          memcpy(pBuff, key_usage_desc, 0x18); // Frame type(1Byte) and cmd id(1Byte)
+    262          //          pBuff += 0x18;
+    263                   for(int i = 0; i<total_mac_key_available; i++)
+   \       0x96   0xF05F 0x0B00      MOVS     R11,#+0
+   \                     ??add_security_key_descriptor_on_MAC_6: (+1)
+   \       0x9A   0x0028             MOVS     R0,R5
+   \       0x9C   0xB2C0             UXTB     R0,R0
+   \       0x9E   0x4583             CMP      R11,R0
+   \       0xA0   0xDA15             BGE.N    ??add_security_key_descriptor_on_MAC_7
+    264                   {
+    265                    memcpy(&pBuff[i*17],&mac_key_list.MAC_SECURITY_KEY_LIST[i].MAC_KEY_INDEX, 17);
+   \       0xA2   0xF05F 0x0811      MOVS     R8,#+17
+   \       0xA6   0x2011             MOVS     R0,#+17
+   \       0xA8   0xFB00 0xF00B      MUL      R0,R0,R11
+   \       0xAC   0xEB06 0x0900      ADD      R9,R6,R0
+   \       0xB0   0x9900             LDR      R1,[SP, #+0]
+   \       0xB2   0x2011             MOVS     R0,#+17
+   \       0xB4   0xFB00 0xF00B      MUL      R0,R0,R11
+   \       0xB8   0xEB01 0x0A00      ADD      R10,R1,R0
+   \       0xBC   0x4642             MOV      R2,R8
+   \       0xBE   0x4649             MOV      R1,R9
+   \       0xC0   0x4650             MOV      R0,R10
+   \       0xC2   0x.... 0x....      BL       __aeabi_memcpy
+    266                    mac_sec_keylen += 17;
+   \       0xC6   0x3411             ADDS     R4,R4,#+17
+    267                   }
+   \       0xC8   0xF11B 0x0B01      ADDS     R11,R11,#+1
+   \       0xCC   0xE7E5             B.N      ??add_security_key_descriptor_on_MAC_6
+    268                    
+    269                    
+    270                    MLME_SET_Request
+    271                    (
+    272                        macKeyTable,
+    273                        0x00,
+    274                        mac_sec_keylen,
+    275                        &key_table_data[0]
+    276                    );    
+   \                     ??add_security_key_descriptor_on_MAC_7: (+1)
+   \       0xCE   0xAB03             ADD      R3,SP,#+12
+   \       0xD0   0x0022             MOVS     R2,R4
+   \       0xD2   0xB292             UXTH     R2,R2
+   \       0xD4   0x2100             MOVS     R1,#+0
+   \       0xD6   0x2071             MOVS     R0,#+113
+   \       0xD8   0x.... 0x....      BL       MLME_SET_Request
+    277          
+    278          }
+   \       0xDC   0xB021             ADD      SP,SP,#+132
+   \       0xDE   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    279          /*----------------------------------------------------------------------------*/
+    280          /*\desc: updating the mac_device_table
+    281          **\param: no param
+    282          **\return: nothing
+    283          */
+    284          
+    285          /*----------------------------------------------------------------------------*/
+    286          void print_mac_address (uint8_t *addr);
+
+   \                                 In section .text, align 2, keep-with-next
+    287          void add_dev_desc_on_MAC_for_security(uint8_t* macAddrOfNeighbour)
+    288          {  
+   \                     add_dev_desc_on_MAC_for_security: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0xB086             SUB      SP,SP,#+24
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x2114             MOVS     R1,#+20
+   \        0xA   0x2200             MOVS     R2,#+0
+   \        0xC   0xAD01             ADD      R5,SP,#+4
+   \        0xE   0x0028             MOVS     R0,R5
+   \       0x10   0x.... 0x....      BL       __aeabi_memset
+    289              uint8_t dev_desc_table[20] = {0};
+    290              uint8_t device_idx = 0;
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    291          
+    292              if (find_device_already_added_or_not (macAddrOfNeighbour, &device_idx) == 1)
+   \       0x1A   0x4669             MOV      R1,SP
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0x.... 0x....      BL       find_device_already_added_or_not
+   \       0x22   0x2801             CMP      R0,#+1
+   \       0x24   0xD016             BEQ.N    ??add_dev_desc_on_MAC_for_security_0
+    293              {
+    294                return;
+    295              }
+    296          
+    297          //    uint32_t short_addr = 0x0102; // Any Dummy Value
+    298              uint8_t *pBuff = dev_desc_table ; 
+   \                     ??add_dev_desc_on_MAC_for_security_1: (+1)
+   \       0x26   0xAD01             ADD      R5,SP,#+4
+    299          //    memcpy(pBuff, (uint8_t*)&fan_nwk_manager_app.node_basic_cfg.selected_pan_id, 0x02);  
+    300          
+    301          //    pBuff += 2;
+    302          //    memcpy(pBuff, (uint8_t*)&short_addr, 0x02);
+    303          //    pBuff += 2;
+    304              mem_rev_cpy (pBuff, macAddrOfNeighbour, 0x08);
+   \       0x28   0x2208             MOVS     R2,#+8
+   \       0x2A   0x0021             MOVS     R1,R4
+   \       0x2C   0x0028             MOVS     R0,R5
+   \       0x2E   0x.... 0x....      BL       mem_rev_cpy
+    305              pBuff += 8;
+   \       0x32   0xF115 0x0808      ADDS     R8,R5,#+8
+    306              memset (pBuff, 0x00, 0x04); // Frame counter - 4 bytes 
+   \       0x36   0x2504             MOVS     R5,#+4
+   \       0x38   0x2600             MOVS     R6,#+0
+   \       0x3A   0x4647             MOV      R7,R8
+   \       0x3C   0x0032             MOVS     R2,R6
+   \       0x3E   0x0029             MOVS     R1,R5
+   \       0x40   0x0038             MOVS     R0,R7
+   \       0x42   0x.... 0x....      BL       __aeabi_memset
+    307              MLME_SET_Request
+    308              (
+    309                  macDeviceTable,
+    310                  device_idx,
+    311                  0x0001,
+    312                  &dev_desc_table[0]
+    313              );
+   \       0x46   0xAB01             ADD      R3,SP,#+4
+   \       0x48   0x2201             MOVS     R2,#+1
+   \       0x4A   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \       0x4E   0x2073             MOVS     R0,#+115
+   \       0x50   0x.... 0x....      BL       MLME_SET_Request
+    314                  
+    315          
+    316          }
+   \                     ??add_dev_desc_on_MAC_for_security_0: (+1)
+   \       0x54   0xB006             ADD      SP,SP,#+24
+   \       0x56   0xE8BD 0x81F0      POP      {R4-R8,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     mac_key_list
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 255, 255
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0xFF 0xFF
+    317                
+    318          #endif
+    319                
+    320          /*----------------------------------------------------------------------------*/
+    321          
+    322          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      48   add_dev_desc_on_MAC_for_security
+        48   -> MLME_SET_Request
+        48   -> __aeabi_memset
+        48   -> find_device_already_added_or_not
+        48   -> mem_rev_cpy
+     168   add_security_key_descriptor_on_MAC
+       168   -> MLME_SET_Request
+       168   -> __aeabi_memcpy
+       168   -> __aeabi_memset
+       168   -> mem_rev_cpy
+       8   enable_disable_mac_security_cmd
+         8   -> MLME_SET_Request
+       8   reset_mac_frame_counter_cmd
+         8   -> MLME_SET_Request
+       8   set_mac_frame_counter_cmd
+         8   -> MLME_SET_Request
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       8  ?_0
+      90  add_dev_desc_on_MAC_for_security
+     226  add_security_key_descriptor_on_MAC
+      16  enable_disable_mac_security_cmd
+      20  reset_mac_frame_counter_cmd
+      16  set_mac_frame_counter_cmd
+
+ 
+   8 bytes in section .rodata
+ 376 bytes in section .text
+ 
+ 376 bytes of CODE  memory
+   8 bytes of CONST memory
+
+Errors: none
+Warnings: none

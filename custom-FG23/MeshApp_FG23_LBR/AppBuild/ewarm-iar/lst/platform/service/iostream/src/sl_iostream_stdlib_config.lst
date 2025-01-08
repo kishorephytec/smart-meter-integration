@@ -1,0 +1,228 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM         19/Apr/2024  10:29:05
+# Copyright 1999-2021 IAR Systems AB.
+#
+#    Cpu mode                 =  thumb
+#    Endian                   =  little
+#    Source file              =
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\iostream\src\sl_iostream_stdlib_config.c
+#    Command line             =
+#        -f
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\iostream\src\sl_iostream_stdlib_config.o.rsp
+#        (C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\iostream\src\sl_iostream_stdlib_config.c
+#        -D EFR32FG23A020F512GM40=1 -D SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -lC
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\service\iostream\src
+#        --diag_suppress Pa050 -o
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\iostream\src
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse -e --fpu=VFPv5_sp --dlib_config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.0\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\.\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\AppConfigs\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\config\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\autogen\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\HAL\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\NVM\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Include\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\buffer_manager\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\event_manager\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\list_manager\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\queue_manager\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\timer_manager\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\hif\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\raw_uart_if\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\Util\debug_console\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\Device\SiliconLabs\EFR32FG23\Include\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\CMSIS\Core\Include\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\device_init\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\mpu\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\common\toolchain\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\system\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\network-manager\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\RAIL_TRX\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MAC\Inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\wisun_modified\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\ProAppSrc\FANApp\AppInc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_callbacks\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ip\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\multicast\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\ipv6\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\rpl\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\OS_interface\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\L3\L2_L3_interface\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\cpu\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\contiki_mac_interface_layer\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\Interface_Layer\mac_sicslowpan_if\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emlib\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\os\platform\p3_lp_dk\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\common\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\pa-conversions\efr32xg1x\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_protocol\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\rail_lib\plugin\rail_util_rssi\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\PHY\radio\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\MeterApp\Inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\service\iostream\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\SiliconLabs\platform\emdrv\common\inc\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\FLASH\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\APP_LOG\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\config\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\DebugLog\response_print\
+#        -I
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\..\NVM\nvm3\inc\
+#        -On --use_c++_inline) --dependencies=n
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\iostream\src\sl_iostream_stdlib_config.o.d
+#    Locale                   =  C
+#    List file                =
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\lst\platform\service\iostream\src\sl_iostream_stdlib_config.lst
+#    Object file              =
+#        C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\AppBuild\ewarm-iar\obj\platform\service\iostream\src\sl_iostream_stdlib_config.o
+#    Runtime model:              
+#      __SystemLibrary        =  DLib
+#      __dlib_file_descriptor =  0
+#      __dlib_version         =  6
+#
+###############################################################################
+
+C:\RakaWork\EFR32FG23\Testbench\16-4-2024\Kimbal_MeshApp_FG23_LBR\SiliconLabs\platform\service\iostream\src\sl_iostream_stdlib_config.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief IO Stream Nanolib.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "stdio.h"
+     32          
+     33          /***************************************************************************//**
+     34           * Disable standard library buffering
+     35           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     36          void sl_iostream_stdlib_disable_buffering(void)
+     37          {
+     38          #if !defined(__CROSSWORKS_ARM) && defined(__GNUC__)
+     39            setvbuf(stdout, NULL, _IONBF, 0);   /*Set unbuffered mode for stdout (newlib)*/
+     40          #endif
+     41          }
+   \                     sl_iostream_stdlib_disable_buffering: (+1)
+   \        0x0   0x4770             BX       LR
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   sl_iostream_stdlib_disable_buffering
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       2  sl_iostream_stdlib_disable_buffering
+
+ 
+ 2 bytes in section .text
+ 
+ 2 bytes of CODE memory
+
+Errors: none
+Warnings: none
