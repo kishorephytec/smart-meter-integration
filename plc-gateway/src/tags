@@ -1,0 +1,122 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/root/plc-communication/src/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+%.o	Makefile	/^%.o : %.c $(DEPS) $/;"	t
+BAUDRATE	Uart.h	/^long BAUDRATE;$/;"	v	typeref:typename:long
+BOOT_DONE	boot-up-NC.h	/^        BOOT_DONE$/;"	e	enum:BootCases
+BOOT_UP_H_	boot-up-NC.h	/^#define BOOT_UP_H_$/;"	d
+BootCases	boot-up-NC.h	/^enum BootCases {$/;"	g
+BootResponse	boot-up-NC.h	/^enum BootResponse {$/;"	g
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -I. $(shell pkg-config --cflags libxml-2.0)$/;"	m
+COMMON_H_	common.h	/^#define COMMON_H_$/;"	d
+CONNECTED_METERS_REQUEST	mqtt.h	/^#define CONNECTED_METERS_REQUEST /;"	d
+CONNECTED_METERS_RESPONSE	mqtt.h	/^#define CONNECTED_METERS_RESPONSE /;"	d
+Create_PLC_Packet_And_send	Plc.c	/^void Create_PLC_Packet_And_send(unsigned char* data, unsigned short  len, unsigned char* system,/;"	f	typeref:typename:void
+DATABASE_H	database.h	/^#define DATABASE_H$/;"	d
+DEBUG	common.h	/^#define DEBUG	/;"	d
+DEBUG_1	common.h	/^#define DEBUG_1	/;"	d
+DEPS	Makefile	/^DEPS = common.h Uart.h timestamp.h mqtt.h Plc.h boot-up-NC.h database.h network-sync.h$/;"	m
+GET_NC_DATABASE_SIZE	boot-up-NC.h	/^        GET_NC_DATABASE_SIZE,$/;"	e	enum:BootCases
+GET_NETWORK_ID	boot-up-NC.h	/^        GET_NETWORK_ID,$/;"	e	enum:BootCases
+GET_NETWORK_SIZE	boot-up-NC.h	/^        GET_NETWORK_SIZE,$/;"	e	enum:BootCases
+GET_NODE_ID	boot-up-NC.h	/^        GET_NODE_ID,$/;"	e	enum:BootCases
+GET_RS_INFO	network-sync.h	/^        GET_RS_INFO$/;"	e	enum:Network_Sync_Cases
+GET_SERIAL_NUMBER	boot-up-NC.h	/^        GET_SERIAL_NUMBER,$/;"	e	enum:BootCases
+Generate_Checksum_payload	Plc.c	/^unsigned char Generate_Checksum_payload(unsigned char* data, size_t length) {$/;"	f	typeref:typename:unsigned char
+Interface	Uart_for_ARM_final.c	/^char	*Interface;$/;"	v	typeref:typename:char *
+LIBS	Makefile	/^LIBS = -lpthread -lmosquitto -lsqlite3 -ljson-c $(shell pkg-config --libs libxml-2.0)$/;"	m
+METER_SERIAL_NUMBER	mqtt.h	/^#define METER_SERIAL_NUMBER /;"	d
+MQTT_CLIENT_ID	mqtt.h	/^#define MQTT_CLIENT_ID /;"	d
+MQTT_H	mqtt.h	/^#define MQTT_H$/;"	d
+MQTT_HOST	mqtt.h	/^#define MQTT_HOST /;"	d
+MQTT_PORT	mqtt.h	/^#define MQTT_PORT /;"	d
+MQTT_PUB_TOPIC	mqtt.h	/^#define MQTT_PUB_TOPIC /;"	d
+MQTT_QOS	mqtt.h	/^#define MQTT_QOS /;"	d
+MQTT_RETAIN	mqtt.h	/^#define MQTT_RETAIN /;"	d
+MQTT_SUB_TOPIC	mqtt.h	/^#define MQTT_SUB_TOPIC /;"	d
+NC_DATABASE_ENTRY	network-sync.h	/^        NC_DATABASE_ENTRY = 0,$/;"	e	enum:Network_Sync_Cases
+NC_DATABASE_RESPONSE	network-sync.h	/^	NC_DATABASE_RESPONSE = 0,$/;"	e	enum:Network_Sync_Response
+NC_DATABASE_SIZE_RESPONSE	boot-up-NC.h	/^        NC_DATABASE_SIZE_RESPONSE,$/;"	e	enum:BootResponse
+NETWORK_ID_RESPONSE	boot-up-NC.h	/^        NETWORK_ID_RESPONSE,$/;"	e	enum:BootResponse
+NETWORK_SIZE_RESPONSE	boot-up-NC.h	/^	NETWORK_SIZE_RESPONSE,$/;"	e	enum:BootResponse
+NETWORK_SYNC_H_	network-sync.h	/^#define NETWORK_SYNC_H_$/;"	d
+NODE_ID_RESPONSE	boot-up-NC.h	/^        NODE_ID_RESPONSE$/;"	e	enum:BootResponse
+Network_Sync_Cases	network-sync.h	/^enum Network_Sync_Cases {$/;"	g
+Network_Sync_Response	network-sync.h	/^enum Network_Sync_Response {$/;"	g
+OBJ	Makefile	/^OBJ = Uart_for_ARM_final.o Uart.o timestamp.o mqtt.o Plc.o boot-up-NC.o database.o network-sync./;"	m
+ONE_ARG	common.h	/^#define ONE_ARG	/;"	d
+PKT_ADM	Plc.h	/^        PKT_ADM,$/;"	e	enum:state
+PKT_TX	Plc.h	/^	PKT_TX,$/;"	e	enum:state
+PLC_H_	Plc.h	/^#define PLC_H_$/;"	d
+RS_INFO_RESPONSE	network-sync.h	/^	RS_INFO_RESPONSE$/;"	e	enum:Network_Sync_Response
+RX_DATA	Plc.h	/^	RX_DATA$/;"	e	enum:state
+SERIAL_NUMBER_RESPONSE	boot-up-NC.h	/^        SERIAL_NUMBER_RESPONSE,$/;"	e	enum:BootResponse
+SOFT_RESET	boot-up-NC.h	/^        SOFT_RESET = 0,$/;"	e	enum:BootCases
+SOFT_RESET_RESPONSE1	boot-up-NC.h	/^	SOFT_RESET_RESPONSE1 = 0,$/;"	e	enum:BootResponse
+SOFT_RESET_RESPONSE2	boot-up-NC.h	/^	SOFT_RESET_RESPONSE2,$/;"	e	enum:BootResponse
+SOFT_RESET_RESPONSE3	boot-up-NC.h	/^	SOFT_RESET_RESPONSE3,$/;"	e	enum:BootResponse
+TIMESTAMP_H_	timestamp.h	/^#define TIMESTAMP_H_$/;"	d
+UART_Data_Reading	Uart.c	/^int UART_Data_Reading (void)$/;"	f	typeref:typename:int
+UART_H_	Uart.h	/^#define UART_H_$/;"	d
+binary_to_hex	database.c	/^void binary_to_hex(const char *input, int length, char *output) {$/;"	f	typeref:typename:void
+boot_response_state	boot-up-NC.c	/^enum BootResponse boot_response_state = SOFT_RESET_RESPONSE1;$/;"	v	typeref:enum:BootResponse
+boot_up_NC	boot-up-NC.c	/^int boot_up_NC()$/;"	f	typeref:typename:int
+clean	Makefile	/^clean :$/;"	t
+clear_network_db	database.c	/^void clear_network_db(){$/;"	f	typeref:typename:void
+fetch_meter_id	database.c	/^char* fetch_meter_id(const char* global_system, unsigned short system_len) {$/;"	f	typeref:typename:char *
+fetch_modem_number	database.c	/^char* fetch_modem_number() {$/;"	f	typeref:typename:char *
+fetch_node_id	database.c	/^char* fetch_node_id(unsigned char* system, unsigned short system_len) {$/;"	f	typeref:typename:char *
+get_baud	Uart.c	/^int get_baud(int baud)$/;"	f	typeref:typename:int
+get_timestamp	timestamp.c	/^void get_timestamp(char *timestamp) {$/;"	f	typeref:typename:void
+global_system	Plc.c	/^unsigned char global_system[256]; \/\/ Adjust the size based on your requirements$/;"	v	typeref:typename:unsigned char[256]
+global_system_len	Plc.c	/^unsigned short global_system_len = 0; \/\/ Global variable to store system_len$/;"	v	typeref:typename:unsigned short
+hexStringToBytes	mqtt.c	/^void hexStringToBytes(const char *hexString, unsigned char *output, int *output_len) {$/;"	f	typeref:typename:void
+hex_string_to_bytes	Plc.c	/^void hex_string_to_bytes(const char *hex_string, unsigned char *byte_array, size_t byte_array_le/;"	f	typeref:typename:void
+initialize_database	database.c	/^int initialize_database() {$/;"	f	typeref:typename:int
+initialize_network_syncDB	database.c	/^int initialize_network_syncDB() {$/;"	f	typeref:typename:int
+is_boot_up_phase	Uart.c	/^int is_boot_up_phase = 1;$/;"	v	typeref:typename:int
+lsb	network-sync.c	/^unsigned char lsb = 0;$/;"	v	typeref:typename:unsigned char
+main	Uart_for_ARM_final.c	/^int main(int argc, char	*argv[]) {$/;"	f	typeref:typename:int
+mosq	mqtt.c	/^static struct mosquitto *mosq = NULL;$/;"	v	typeref:struct:mosquitto *	file:
+mqtt_cleanup	mqtt.c	/^void mqtt_cleanup()$/;"	f	typeref:typename:void
+mqtt_initialise	mqtt.c	/^void mqtt_initialise()$/;"	f	typeref:typename:void
+mqtt_publish	mqtt.c	/^void mqtt_publish(const char *message, const char *topic, int len)$/;"	f	typeref:typename:void
+mqtt_publish_nodelist	mqtt.c	/^void mqtt_publish_nodelist(struct mosquitto *mosq, const char *json_data) {$/;"	f	typeref:typename:void
+msb	network-sync.c	/^unsigned char msb = 0;$/;"	v	typeref:typename:unsigned char
+network_response_state	network-sync.c	/^enum Network_Sync_Response network_response_state = NC_DATABASE_RESPONSE;$/;"	v	typeref:enum:Network_Sync_Response
+network_sync_NC	network-sync.c	/^int network_sync_NC() {$/;"	f	typeref:typename:int
+network_sync_state	network-sync.c	/^enum Network_Sync_Cases network_sync_state = NC_DATABASE_ENTRY;$/;"	v	typeref:enum:Network_Sync_Cases
+newtio	Uart.h	/^struct termios newtio; \/\/These are the new serial port parameters$/;"	v	typeref:struct:termios
+node_info_flag	network-sync.c	/^int node_info_flag = 0;$/;"	v	typeref:typename:int
+oldtio	Uart.h	/^struct termios oldtio; \/\/Just for saving old serail port settings$/;"	v	typeref:struct:termios
+on_connect	mqtt.c	/^void on_connect(struct mosquitto *mosq, void *obj, int rc)$/;"	f	typeref:typename:void
+on_message	mqtt.c	/^void on_message(struct mosquitto *mosq, void *obj, const struct mosquitto_message *msg)$/;"	f	typeref:typename:void
+process_boot_up_byte	boot-up-NC.c	/^int process_boot_up_byte(unsigned char rx_char, char *timestamp)$/;"	f	typeref:typename:int
+process_network_sync_byte	network-sync.c	/^int process_network_sync_byte(unsigned char rx_char, char *timestamp) {$/;"	f	typeref:typename:int
+process_uart_byte	Plc.c	/^int process_uart_byte(unsigned char rx_char, char *timestamp) {$/;"	f	typeref:typename:int
+restore_old_port_settings	Uart.c	/^	void restore_old_port_settings(void)$/;"	f	typeref:typename:void
+scheduler	Uart_for_ARM_final.c	/^void *scheduler(void *arg) {$/;"	f	typeref:typename:void *
+start_uart_rx_thread	Uart.c	/^	int start_uart_rx_thread(void)$/;"	f	typeref:typename:int
+state	Plc.h	/^enum state{$/;"	g
+store_data	database.c	/^void store_data(const char *type, const char *value) {$/;"	f	typeref:typename:void
+store_nc_database_size	database.c	/^void store_nc_database_size(int nc_db_size) {$/;"	f	typeref:typename:void
+store_network_id	database.c	/^void store_network_id(const char *network_id) {$/;"	f	typeref:typename:void
+store_network_size	database.c	/^void store_network_size(int network_size) {$/;"	f	typeref:typename:void
+store_network_sync_info	database.c	/^void store_network_sync_info(const char *node_id, const char *parent_id, const char *serial_numb/;"	f	typeref:typename:void
+store_node_id	database.c	/^void store_node_id(const char *node_id) {$/;"	f	typeref:typename:void
+store_serial_number	database.c	/^void store_serial_number(const char *serial_number) {$/;"	f	typeref:typename:void
+uart_deamon	Makefile	/^uart_deamon : $(OBJ)$/;"	t
+uart_file_discripter	Uart.h	/^int uart_file_discripter = -1;$/;"	v	typeref:typename:int
+uart_initialisation	Uart.c	/^int uart_initialisation(char	*Port)$/;"	f	typeref:typename:int
+uart_read_state	Plc.c	/^enum state uart_read_state = PKT_ADM;$/;"	v	typeref:enum:state
+uart_rx_thread	Uart.c	/^	void *uart_rx_thread( void *unused)$/;"	f	typeref:typename:void *
+write_2_Uart	Uart.c	/^int write_2_Uart(unsigned char *write_buffer, int length) {$/;"	f	typeref:typename:int
